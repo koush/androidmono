@@ -14,36 +14,36 @@ namespace org.apache.http.client.methods
 				return getMethod();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMethod31909;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String getMethod()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpDelete.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpDelete._getMethod31909) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpDelete.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpDelete._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpDelete31910;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public HttpDelete() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpDelete._HttpDelete31910.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpDelete._HttpDelete31910 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31910);
+			if (global::org.apache.http.client.methods.HttpDelete._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpDelete._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._m1);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpDelete31911;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public HttpDelete(java.net.URI arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpDelete._HttpDelete31911.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpDelete._HttpDelete31911 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "(Ljava/net/URI;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.methods.HttpDelete._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpDelete._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "(Ljava/net/URI;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpDelete31912;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public HttpDelete(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpDelete._HttpDelete31912.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpDelete._HttpDelete31912 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.methods.HttpDelete._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpDelete._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpDelete.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String METHOD_NAME

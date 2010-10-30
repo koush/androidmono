@@ -14,10 +14,10 @@ namespace android.bluetooth
 				return getAddress();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAddress2403;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public global::java.lang.String getAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getAddress", "()Ljava/lang/String;", ref global::android.bluetooth.BluetoothAdapter._getAddress2403) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getAddress", "()Ljava/lang/String;", ref global::android.bluetooth.BluetoothAdapter._m0) as java.lang.String;
 		}
 		public new global::java.lang.String Name
 		{
@@ -30,15 +30,15 @@ namespace android.bluetooth
 				setName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName2404;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getName", "()Ljava/lang/String;", ref global::android.bluetooth.BluetoothAdapter._getName2404) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getName", "()Ljava/lang/String;", ref global::android.bluetooth.BluetoothAdapter._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setName2405;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public bool setName(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "setName", "(Ljava/lang/String;)Z", ref global::android.bluetooth.BluetoothAdapter._setName2405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "setName", "(Ljava/lang/String;)Z", ref global::android.bluetooth.BluetoothAdapter._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int State
 		{
@@ -47,25 +47,25 @@ namespace android.bluetooth
 				return getState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getState2406;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public int getState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getState", "()I", ref global::android.bluetooth.BluetoothAdapter._getState2406);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getState", "()I", ref global::android.bluetooth.BluetoothAdapter._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _enable2407;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public bool enable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "enable", "()Z", ref global::android.bluetooth.BluetoothAdapter._enable2407);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "enable", "()Z", ref global::android.bluetooth.BluetoothAdapter._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _disable2408;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public bool disable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "disable", "()Z", ref global::android.bluetooth.BluetoothAdapter._disable2408);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "disable", "()Z", ref global::android.bluetooth.BluetoothAdapter._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEnabled2409;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public bool isEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "isEnabled", "()Z", ref global::android.bluetooth.BluetoothAdapter._isEnabled2409);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "isEnabled", "()Z", ref global::android.bluetooth.BluetoothAdapter._m6);
 		}
 		public static global::android.bluetooth.BluetoothAdapter DefaultAdapter
 		{
@@ -74,18 +74,18 @@ namespace android.bluetooth
 				return getDefaultAdapter();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultAdapter2410;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static global::android.bluetooth.BluetoothAdapter getDefaultAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.bluetooth.BluetoothAdapter._getDefaultAdapter2410.native == global::System.IntPtr.Zero)
-				global::android.bluetooth.BluetoothAdapter._getDefaultAdapter2410 = @__env.GetStaticMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "getDefaultAdapter", "()Landroid/bluetooth/BluetoothAdapter;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothAdapter>(@__env.CallStaticObjectMethod(android.bluetooth.BluetoothAdapter.staticClass, global::android.bluetooth.BluetoothAdapter._getDefaultAdapter2410)) as android.bluetooth.BluetoothAdapter;
+			if (global::android.bluetooth.BluetoothAdapter._m7.native == global::System.IntPtr.Zero)
+				global::android.bluetooth.BluetoothAdapter._m7 = @__env.GetStaticMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "getDefaultAdapter", "()Landroid/bluetooth/BluetoothAdapter;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothAdapter>(@__env.CallStaticObjectMethod(android.bluetooth.BluetoothAdapter.staticClass, global::android.bluetooth.BluetoothAdapter._m7)) as android.bluetooth.BluetoothAdapter;
 		}
-		internal static global::MonoJavaBridge.MethodId _getRemoteDevice2411;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public global::android.bluetooth.BluetoothDevice getRemoteDevice(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothDevice>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getRemoteDevice", "(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;", ref global::android.bluetooth.BluetoothAdapter._getRemoteDevice2411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.bluetooth.BluetoothDevice;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothDevice>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getRemoteDevice", "(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;", ref global::android.bluetooth.BluetoothAdapter._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.bluetooth.BluetoothDevice;
 		}
 		public new int ScanMode
 		{
@@ -94,25 +94,25 @@ namespace android.bluetooth
 				return getScanMode();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScanMode2412;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public int getScanMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getScanMode", "()I", ref global::android.bluetooth.BluetoothAdapter._getScanMode2412);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getScanMode", "()I", ref global::android.bluetooth.BluetoothAdapter._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _startDiscovery2413;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public bool startDiscovery()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "startDiscovery", "()Z", ref global::android.bluetooth.BluetoothAdapter._startDiscovery2413);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "startDiscovery", "()Z", ref global::android.bluetooth.BluetoothAdapter._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelDiscovery2414;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public bool cancelDiscovery()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "cancelDiscovery", "()Z", ref global::android.bluetooth.BluetoothAdapter._cancelDiscovery2414);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "cancelDiscovery", "()Z", ref global::android.bluetooth.BluetoothAdapter._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDiscovering2415;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public bool isDiscovering()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "isDiscovering", "()Z", ref global::android.bluetooth.BluetoothAdapter._isDiscovering2415);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.bluetooth.BluetoothAdapter.staticClass, "isDiscovering", "()Z", ref global::android.bluetooth.BluetoothAdapter._m12);
 		}
 		public new global::java.util.Set BondedDevices
 		{
@@ -121,23 +121,23 @@ namespace android.bluetooth
 				return getBondedDevices();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBondedDevices2416;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public global::java.util.Set getBondedDevices()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getBondedDevices", "()Ljava/util/Set;", ref global::android.bluetooth.BluetoothAdapter._getBondedDevices2416) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "getBondedDevices", "()Ljava/util/Set;", ref global::android.bluetooth.BluetoothAdapter._m13) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _listenUsingRfcommWithServiceRecord2417;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public global::android.bluetooth.BluetoothServerSocket listenUsingRfcommWithServiceRecord(java.lang.String arg0, java.util.UUID arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothServerSocket>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "listenUsingRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;", ref global::android.bluetooth.BluetoothAdapter._listenUsingRfcommWithServiceRecord2417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.bluetooth.BluetoothServerSocket;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothServerSocket>(this, global::android.bluetooth.BluetoothAdapter.staticClass, "listenUsingRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;", ref global::android.bluetooth.BluetoothAdapter._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.bluetooth.BluetoothServerSocket;
 		}
-		internal static global::MonoJavaBridge.MethodId _checkBluetoothAddress2418;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static bool checkBluetoothAddress(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.bluetooth.BluetoothAdapter._checkBluetoothAddress2418.native == global::System.IntPtr.Zero)
-				global::android.bluetooth.BluetoothAdapter._checkBluetoothAddress2418 = @__env.GetStaticMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "checkBluetoothAddress", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(android.bluetooth.BluetoothAdapter.staticClass, global::android.bluetooth.BluetoothAdapter._checkBluetoothAddress2418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.bluetooth.BluetoothAdapter._m15.native == global::System.IntPtr.Zero)
+				global::android.bluetooth.BluetoothAdapter._m15 = @__env.GetStaticMethodIDNoThrow(global::android.bluetooth.BluetoothAdapter.staticClass, "checkBluetoothAddress", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(android.bluetooth.BluetoothAdapter.staticClass, global::android.bluetooth.BluetoothAdapter._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int ERROR
 		{

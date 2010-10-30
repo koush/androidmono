@@ -15,20 +15,20 @@ namespace android.widget
 		internal Checkable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toggle16843;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.widget.Checkable.toggle()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Checkable_.staticClass, "toggle", "()V", ref global::android.widget.Checkable_._toggle16843);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Checkable_.staticClass, "toggle", "()V", ref global::android.widget.Checkable_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isChecked16844;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool android.widget.Checkable.isChecked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Checkable_.staticClass, "isChecked", "()Z", ref global::android.widget.Checkable_._isChecked16844);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.Checkable_.staticClass, "isChecked", "()Z", ref global::android.widget.Checkable_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _setChecked16845;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void android.widget.Checkable.setChecked(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V", ref global::android.widget.Checkable_._setChecked16845, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V", ref global::android.widget.Checkable_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Checkable_()
 		{

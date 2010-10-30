@@ -7,10 +7,10 @@ namespace android.content.pm
 		protected PathPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel3977;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PathPermission.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.PathPermission._writeToParcel3977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PathPermission.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.PathPermission._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String ReadPermission
 		{
@@ -19,10 +19,10 @@ namespace android.content.pm
 				return getReadPermission();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getReadPermission3978;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String getReadPermission()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PathPermission.staticClass, "getReadPermission", "()Ljava/lang/String;", ref global::android.content.pm.PathPermission._getReadPermission3978) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PathPermission.staticClass, "getReadPermission", "()Ljava/lang/String;", ref global::android.content.pm.PathPermission._m1) as java.lang.String;
 		}
 		public new global::java.lang.String WritePermission
 		{
@@ -31,43 +31,43 @@ namespace android.content.pm
 				return getWritePermission();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWritePermission3979;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.String getWritePermission()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PathPermission.staticClass, "getWritePermission", "()Ljava/lang/String;", ref global::android.content.pm.PathPermission._getWritePermission3979) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PathPermission.staticClass, "getWritePermission", "()Ljava/lang/String;", ref global::android.content.pm.PathPermission._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _PathPermission3980;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public PathPermission(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PathPermission._PathPermission3980.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PathPermission._PathPermission3980 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._PathPermission3980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.content.pm.PathPermission._m3.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PathPermission._m3 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PathPermission3981;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public PathPermission(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PathPermission._PathPermission3981.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PathPermission._PathPermission3981 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._PathPermission3981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.pm.PathPermission._m4.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PathPermission._m4 = @__env.GetMethodIDNoThrow(global::android.content.pm.PathPermission.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR3982;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2090;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PathPermission.staticClass, _CREATOR3982)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.PathPermission.staticClass, _CREATOR2090)) as android.os.Parcelable_Creator;
 			}
 		}
 		static PathPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.PathPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PathPermission"));
-			global::android.content.pm.PathPermission._CREATOR3982 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PathPermission.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.pm.PathPermission._CREATOR2090 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PathPermission.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

@@ -7,43 +7,43 @@ namespace android.webkit
 		protected WebViewDatabase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance16460;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.webkit.WebViewDatabase getInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebViewDatabase._getInstance16460.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebViewDatabase._getInstance16460 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.WebViewDatabase.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/webkit/WebViewDatabase;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._getInstance16460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebViewDatabase;
+			if (global::android.webkit.WebViewDatabase._m0.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebViewDatabase._m0 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.WebViewDatabase.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/webkit/WebViewDatabase;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebViewDatabase;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearFormData16461;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void clearFormData()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearFormData", "()V", ref global::android.webkit.WebViewDatabase._clearFormData16461);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearFormData", "()V", ref global::android.webkit.WebViewDatabase._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasUsernamePassword16462;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual bool hasUsernamePassword()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasUsernamePassword", "()Z", ref global::android.webkit.WebViewDatabase._hasUsernamePassword16462);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasUsernamePassword", "()Z", ref global::android.webkit.WebViewDatabase._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearUsernamePassword16463;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void clearUsernamePassword()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearUsernamePassword", "()V", ref global::android.webkit.WebViewDatabase._clearUsernamePassword16463);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearUsernamePassword", "()V", ref global::android.webkit.WebViewDatabase._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasHttpAuthUsernamePassword16464;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool hasHttpAuthUsernamePassword()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasHttpAuthUsernamePassword", "()Z", ref global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword16464);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasHttpAuthUsernamePassword", "()Z", ref global::android.webkit.WebViewDatabase._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearHttpAuthUsernamePassword16465;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void clearHttpAuthUsernamePassword()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearHttpAuthUsernamePassword", "()V", ref global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword16465);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, "clearHttpAuthUsernamePassword", "()V", ref global::android.webkit.WebViewDatabase._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasFormData16466;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool hasFormData()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasFormData", "()Z", ref global::android.webkit.WebViewDatabase._hasFormData16466);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, "hasFormData", "()Z", ref global::android.webkit.WebViewDatabase._m6);
 		}
 		static WebViewDatabase()
 		{

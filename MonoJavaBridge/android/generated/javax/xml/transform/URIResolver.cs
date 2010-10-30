@@ -13,10 +13,10 @@ namespace javax.xml.transform
 		internal URIResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolve31039;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::javax.xml.transform.Source javax.xml.transform.URIResolver.resolve(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.Source>(this, global::javax.xml.transform.URIResolver_.staticClass, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", ref global::javax.xml.transform.URIResolver_._resolve31039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.xml.transform.Source;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.transform.Source>(this, global::javax.xml.transform.URIResolver_.staticClass, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", ref global::javax.xml.transform.URIResolver_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.xml.transform.Source;
 		}
 		static URIResolver_()
 		{

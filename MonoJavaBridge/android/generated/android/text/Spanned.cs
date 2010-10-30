@@ -17,50 +17,50 @@ namespace android.text
 		internal Spanned_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpans12989;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object[] android.text.Spanned.getSpans(int arg0, int arg1, java.lang.Class arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.text.Spanned_.staticClass, "getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;", ref global::android.text.Spanned_._getSpans12989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.text.Spanned_.staticClass, "getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;", ref global::android.text.Spanned_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanStart12990;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int android.text.Spanned.getSpanStart(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanStart", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._getSpanStart12990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanStart", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanEnd12991;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int android.text.Spanned.getSpanEnd(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanEnd", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._getSpanEnd12991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanEnd", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanFlags12992;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int android.text.Spanned.getSpanFlags(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanFlags", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._getSpanFlags12992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "getSpanFlags", "(Ljava/lang/Object;)I", ref global::android.text.Spanned_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _nextSpanTransition12993;
+		private static global::MonoJavaBridge.MethodId _m4;
 		int android.text.Spanned.nextSpanTransition(int arg0, int arg1, java.lang.Class arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "nextSpanTransition", "(IILjava/lang/Class;)I", ref global::android.text.Spanned_._nextSpanTransition12993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "nextSpanTransition", "(IILjava/lang/Class;)I", ref global::android.text.Spanned_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString12994;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::java.lang.String java.lang.CharSequence.toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.Spanned_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.Spanned_._toString12994) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.Spanned_.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.Spanned_._m5) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _length12995;
+		private static global::MonoJavaBridge.MethodId _m6;
 		int java.lang.CharSequence.length()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "length", "()I", ref global::android.text.Spanned_._length12995);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.Spanned_.staticClass, "length", "()I", ref global::android.text.Spanned_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _charAt12996;
+		private static global::MonoJavaBridge.MethodId _m7;
 		char java.lang.CharSequence.charAt(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.text.Spanned_.staticClass, "charAt", "(I)C", ref global::android.text.Spanned_._charAt12996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.text.Spanned_.staticClass, "charAt", "(I)C", ref global::android.text.Spanned_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _subSequence12997;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.Spanned_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;", ref global::android.text.Spanned_._subSequence12997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.Spanned_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;", ref global::android.text.Spanned_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
 		}
 		static Spanned_()
 		{

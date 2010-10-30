@@ -7,13 +7,13 @@ namespace javax.microedition.khronos.egl
 		protected EGLDisplay(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _EGLDisplay28956;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public EGLDisplay() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28956.native == global::System.IntPtr.Zero)
-				global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28956 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28956);
+			if (global::javax.microedition.khronos.egl.EGLDisplay._m0.native == global::System.IntPtr.Zero)
+				global::javax.microedition.khronos.egl.EGLDisplay._m0 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, global::javax.microedition.khronos.egl.EGLDisplay._m0);
 			Init(@__env, handle);
 		}
 		static EGLDisplay()

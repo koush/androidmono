@@ -7,13 +7,13 @@ namespace android.net
 		internal Proxy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getPort7747;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int getPort(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Proxy._getPort7747.native == global::System.IntPtr.Zero)
-				global::android.net.Proxy._getPort7747 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getPort", "(Landroid/content/Context;)I");
-			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getPort7747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.net.Proxy._m0.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._m0 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getPort", "(Landroid/content/Context;)I");
+			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int DefaultPort
 		{
@@ -22,21 +22,21 @@ namespace android.net
 				return getDefaultPort();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultPort7748;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int getDefaultPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Proxy._getDefaultPort7748.native == global::System.IntPtr.Zero)
-				global::android.net.Proxy._getDefaultPort7748 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultPort", "()I");
-			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultPort7748);
+			if (global::android.net.Proxy._m1.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._m1 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultPort", "()I");
+			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getHost7749;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static global::java.lang.String getHost(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Proxy._getHost7749.native == global::System.IntPtr.Zero)
-				global::android.net.Proxy._getHost7749 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getHost", "(Landroid/content/Context;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getHost7749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.net.Proxy._m2.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._m2 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getHost", "(Landroid/content/Context;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public static global::java.lang.String DefaultHost
 		{
@@ -45,21 +45,21 @@ namespace android.net
 				return getDefaultHost();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultHost7750;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static global::java.lang.String getDefaultHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Proxy._getDefaultHost7750.native == global::System.IntPtr.Zero)
-				global::android.net.Proxy._getDefaultHost7750 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultHost", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultHost7750)) as java.lang.String;
+			if (global::android.net.Proxy._m3.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._m3 = @__env.GetStaticMethodIDNoThrow(global::android.net.Proxy.staticClass, "getDefaultHost", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._m3)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _Proxy7751;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public Proxy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.Proxy._Proxy7751.native == global::System.IntPtr.Zero)
-				global::android.net.Proxy._Proxy7751 = @__env.GetMethodIDNoThrow(global::android.net.Proxy.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Proxy.staticClass, global::android.net.Proxy._Proxy7751);
+			if (global::android.net.Proxy._m4.native == global::System.IntPtr.Zero)
+				global::android.net.Proxy._m4 = @__env.GetMethodIDNoThrow(global::android.net.Proxy.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Proxy.staticClass, global::android.net.Proxy._m4);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String PROXY_CHANGE_ACTION

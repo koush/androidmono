@@ -13,10 +13,10 @@ namespace org.apache.http.conn
 		internal ConnectionKeepAliveStrategy_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeepAliveDuration32090;
+		private static global::MonoJavaBridge.MethodId _m0;
 		long org.apache.http.conn.ConnectionKeepAliveStrategy.getKeepAliveDuration(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.conn.ConnectionKeepAliveStrategy_.staticClass, "getKeepAliveDuration", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)J", ref global::org.apache.http.conn.ConnectionKeepAliveStrategy_._getKeepAliveDuration32090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.conn.ConnectionKeepAliveStrategy_.staticClass, "getKeepAliveDuration", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)J", ref global::org.apache.http.conn.ConnectionKeepAliveStrategy_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static ConnectionKeepAliveStrategy_()
 		{

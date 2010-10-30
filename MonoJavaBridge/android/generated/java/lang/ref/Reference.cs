@@ -7,25 +7,25 @@ namespace java.lang.@ref
 		protected Reference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get20986;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.Object get()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.Reference.staticClass, "get", "()Ljava/lang/Object;", ref global::java.lang.@ref.Reference._get20986) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.@ref.Reference.staticClass, "get", "()Ljava/lang/Object;", ref global::java.lang.@ref.Reference._m0) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _clear20987;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.@ref.Reference.staticClass, "clear", "()V", ref global::java.lang.@ref.Reference._clear20987);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.@ref.Reference.staticClass, "clear", "()V", ref global::java.lang.@ref.Reference._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEnqueued20988;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual bool isEnqueued()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, "isEnqueued", "()Z", ref global::java.lang.@ref.Reference._isEnqueued20988);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, "isEnqueued", "()Z", ref global::java.lang.@ref.Reference._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _enqueue20989;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual bool enqueue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, "enqueue", "()Z", ref global::java.lang.@ref.Reference._enqueue20989);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.@ref.Reference.staticClass, "enqueue", "()Z", ref global::java.lang.@ref.Reference._m3);
 		}
 		static Reference()
 		{

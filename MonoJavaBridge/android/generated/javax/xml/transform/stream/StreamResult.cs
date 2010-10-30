@@ -18,10 +18,10 @@ namespace javax.xml.transform.stream
 				setOutputStream(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOutputStream31150;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.io.OutputStream getOutputStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getOutputStream", "()Ljava/io/OutputStream;", ref global::javax.xml.transform.stream.StreamResult._getOutputStream31150) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getOutputStream", "()Ljava/io/OutputStream;", ref global::javax.xml.transform.stream.StreamResult._m0) as java.io.OutputStream;
 		}
 		public new global::java.lang.String SystemId
 		{
@@ -34,10 +34,10 @@ namespace javax.xml.transform.stream
 				setSystemId(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId31151;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.stream.StreamResult._getSystemId31151) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.stream.StreamResult._m1) as java.lang.String;
 		}
 		public new global::java.io.Writer Writer
 		{
@@ -50,74 +50,74 @@ namespace javax.xml.transform.stream
 				setWriter(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWriter31152;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.io.Writer getWriter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getWriter", "()Ljava/io/Writer;", ref global::javax.xml.transform.stream.StreamResult._getWriter31152) as java.io.Writer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "getWriter", "()Ljava/io/Writer;", ref global::javax.xml.transform.stream.StreamResult._m2) as java.io.Writer;
 		}
-		internal static global::MonoJavaBridge.MethodId _setOutputStream31153;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setOutputStream(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setOutputStream", "(Ljava/io/OutputStream;)V", ref global::javax.xml.transform.stream.StreamResult._setOutputStream31153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setOutputStream", "(Ljava/io/OutputStream;)V", ref global::javax.xml.transform.stream.StreamResult._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId31154;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.stream.StreamResult._setSystemId31154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.stream.StreamResult._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId31155;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setSystemId(java.io.File arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setSystemId", "(Ljava/io/File;)V", ref global::javax.xml.transform.stream.StreamResult._setSystemId31155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setSystemId", "(Ljava/io/File;)V", ref global::javax.xml.transform.stream.StreamResult._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setWriter31156;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setWriter(java.io.Writer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setWriter", "(Ljava/io/Writer;)V", ref global::javax.xml.transform.stream.StreamResult._setWriter31156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.stream.StreamResult.staticClass, "setWriter", "(Ljava/io/Writer;)V", ref global::javax.xml.transform.stream.StreamResult._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _StreamResult31157;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public StreamResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.stream.StreamResult._StreamResult31157.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.stream.StreamResult._StreamResult31157 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._StreamResult31157);
+			if (global::javax.xml.transform.stream.StreamResult._m7.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.stream.StreamResult._m7 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._m7);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StreamResult31158;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public StreamResult(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.stream.StreamResult._StreamResult31158.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.stream.StreamResult._StreamResult31158 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._StreamResult31158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.transform.stream.StreamResult._m8.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.stream.StreamResult._m8 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StreamResult31159;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public StreamResult(java.io.Writer arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.stream.StreamResult._StreamResult31159.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.stream.StreamResult._StreamResult31159 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/Writer;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._StreamResult31159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.transform.stream.StreamResult._m9.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.stream.StreamResult._m9 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/Writer;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StreamResult31160;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public StreamResult(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.stream.StreamResult._StreamResult31160.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.stream.StreamResult._StreamResult31160 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._StreamResult31160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.transform.stream.StreamResult._m10.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.stream.StreamResult._m10 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StreamResult31161;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public StreamResult(java.io.File arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.stream.StreamResult._StreamResult31161.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.stream.StreamResult._StreamResult31161 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/File;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._StreamResult31161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.transform.stream.StreamResult._m11.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.stream.StreamResult._m11 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.stream.StreamResult.staticClass, "<init>", "(Ljava/io/File;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.stream.StreamResult.staticClass, global::javax.xml.transform.stream.StreamResult._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String FEATURE

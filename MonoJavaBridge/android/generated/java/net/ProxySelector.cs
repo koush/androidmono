@@ -7,33 +7,33 @@ namespace java.net
 		protected ProxySelector(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefault21671;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::java.net.ProxySelector getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ProxySelector._getDefault21671.native == global::System.IntPtr.Zero)
-				global::java.net.ProxySelector._getDefault21671 = @__env.GetStaticMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "getDefault", "()Ljava/net/ProxySelector;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._getDefault21671)) as java.net.ProxySelector;
+			if (global::java.net.ProxySelector._m0.native == global::System.IntPtr.Zero)
+				global::java.net.ProxySelector._m0 = @__env.GetStaticMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "getDefault", "()Ljava/net/ProxySelector;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._m0)) as java.net.ProxySelector;
 		}
-		internal static global::MonoJavaBridge.MethodId _setDefault21672;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void setDefault(java.net.ProxySelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ProxySelector._setDefault21672.native == global::System.IntPtr.Zero)
-				global::java.net.ProxySelector._setDefault21672 = @__env.GetStaticMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "setDefault", "(Ljava/net/ProxySelector;)V");
-			@__env.CallStaticVoidMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._setDefault21672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.net.ProxySelector._m1.native == global::System.IntPtr.Zero)
+				global::java.net.ProxySelector._m1 = @__env.GetStaticMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "setDefault", "(Ljava/net/ProxySelector;)V");
+			@__env.CallStaticVoidMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _select21673;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract global::java.util.List select(java.net.URI arg0);
-		internal static global::MonoJavaBridge.MethodId _connectFailed21674;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2);
-		internal static global::MonoJavaBridge.MethodId _ProxySelector21675;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public ProxySelector() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.ProxySelector._ProxySelector21675.native == global::System.IntPtr.Zero)
-				global::java.net.ProxySelector._ProxySelector21675 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._ProxySelector21675);
+			if (global::java.net.ProxySelector._m4.native == global::System.IntPtr.Zero)
+				global::java.net.ProxySelector._m4 = @__env.GetMethodIDNoThrow(global::java.net.ProxySelector.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._m4);
 			Init(@__env, handle);
 		}
 		static ProxySelector()
@@ -53,15 +53,15 @@ namespace java.net
 		internal ProxySelector_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _select21676;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.util.List select(java.net.URI arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.net.ProxySelector_.staticClass, "select", "(Ljava/net/URI;)Ljava/util/List;", ref global::java.net.ProxySelector_._select21676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.net.ProxySelector_.staticClass, "select", "(Ljava/net/URI;)Ljava/util/List;", ref global::java.net.ProxySelector_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _connectFailed21677;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.ProxySelector_.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", ref global::java.net.ProxySelector_._connectFailed21677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.ProxySelector_.staticClass, "connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", ref global::java.net.ProxySelector_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static ProxySelector_()
 		{

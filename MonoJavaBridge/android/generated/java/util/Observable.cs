@@ -7,58 +7,58 @@ namespace java.util
 		protected Observable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _addObserver26527;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void addObserver(java.util.Observer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "addObserver", "(Ljava/util/Observer;)V", ref global::java.util.Observable._addObserver26527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "addObserver", "(Ljava/util/Observer;)V", ref global::java.util.Observable._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteObserver26528;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void deleteObserver(java.util.Observer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "deleteObserver", "(Ljava/util/Observer;)V", ref global::java.util.Observable._deleteObserver26528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "deleteObserver", "(Ljava/util/Observer;)V", ref global::java.util.Observable._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _notifyObservers26529;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void notifyObservers()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "notifyObservers", "()V", ref global::java.util.Observable._notifyObservers26529);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "notifyObservers", "()V", ref global::java.util.Observable._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _notifyObservers26530;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void notifyObservers(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "notifyObservers", "(Ljava/lang/Object;)V", ref global::java.util.Observable._notifyObservers26530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "notifyObservers", "(Ljava/lang/Object;)V", ref global::java.util.Observable._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteObservers26531;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void deleteObservers()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "deleteObservers", "()V", ref global::java.util.Observable._deleteObservers26531);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "deleteObservers", "()V", ref global::java.util.Observable._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _setChanged26532;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected virtual void setChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "setChanged", "()V", ref global::java.util.Observable._setChanged26532);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "setChanged", "()V", ref global::java.util.Observable._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearChanged26533;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected virtual void clearChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "clearChanged", "()V", ref global::java.util.Observable._clearChanged26533);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Observable.staticClass, "clearChanged", "()V", ref global::java.util.Observable._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasChanged26534;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool hasChanged()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Observable.staticClass, "hasChanged", "()Z", ref global::java.util.Observable._hasChanged26534);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Observable.staticClass, "hasChanged", "()Z", ref global::java.util.Observable._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _countObservers26535;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int countObservers()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Observable.staticClass, "countObservers", "()I", ref global::java.util.Observable._countObservers26535);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Observable.staticClass, "countObservers", "()I", ref global::java.util.Observable._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _Observable26536;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public Observable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Observable._Observable26536.native == global::System.IntPtr.Zero)
-				global::java.util.Observable._Observable26536 = @__env.GetMethodIDNoThrow(global::java.util.Observable.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Observable.staticClass, global::java.util.Observable._Observable26536);
+			if (global::java.util.Observable._m9.native == global::System.IntPtr.Zero)
+				global::java.util.Observable._m9 = @__env.GetMethodIDNoThrow(global::java.util.Observable.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Observable.staticClass, global::java.util.Observable._m9);
 			Init(@__env, handle);
 		}
 		static Observable()

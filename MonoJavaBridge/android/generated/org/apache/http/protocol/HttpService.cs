@@ -7,10 +7,10 @@ namespace org.apache.http.protocol
 		protected HttpService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handleException33925;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual void handleException(org.apache.http.HttpException arg0, org.apache.http.HttpResponse arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "handleException", "(Lorg/apache/http/HttpException;Lorg/apache/http/HttpResponse;)V", ref global::org.apache.http.protocol.HttpService._handleException33925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "handleException", "(Lorg/apache/http/HttpException;Lorg/apache/http/HttpResponse;)V", ref global::org.apache.http.protocol.HttpService._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::org.apache.http.@params.HttpParams Params
 		{
@@ -23,15 +23,15 @@ namespace org.apache.http.protocol
 				setParams(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParams33926;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::org.apache.http.@params.HttpParams getParams()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.@params.HttpParams>(this, global::org.apache.http.protocol.HttpService.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;", ref global::org.apache.http.protocol.HttpService._getParams33926) as org.apache.http.@params.HttpParams;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.@params.HttpParams>(this, global::org.apache.http.protocol.HttpService.staticClass, "getParams", "()Lorg/apache/http/params/HttpParams;", ref global::org.apache.http.protocol.HttpService._m1) as org.apache.http.@params.HttpParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _setParams33927;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setParams(org.apache.http.@params.HttpParams arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setParams", "(Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.protocol.HttpService._setParams33927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setParams", "(Lorg/apache/http/params/HttpParams;)V", ref global::org.apache.http.protocol.HttpService._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.protocol.HttpProcessor HttpProcessor
 		{
@@ -40,10 +40,10 @@ namespace org.apache.http.protocol
 				setHttpProcessor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setHttpProcessor33928;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setHttpProcessor(org.apache.http.protocol.HttpProcessor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setHttpProcessor", "(Lorg/apache/http/protocol/HttpProcessor;)V", ref global::org.apache.http.protocol.HttpService._setHttpProcessor33928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setHttpProcessor", "(Lorg/apache/http/protocol/HttpProcessor;)V", ref global::org.apache.http.protocol.HttpService._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.ConnectionReuseStrategy ConnReuseStrategy
 		{
@@ -52,10 +52,10 @@ namespace org.apache.http.protocol
 				setConnReuseStrategy(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setConnReuseStrategy33929;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setConnReuseStrategy(org.apache.http.ConnectionReuseStrategy arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setConnReuseStrategy", "(Lorg/apache/http/ConnectionReuseStrategy;)V", ref global::org.apache.http.protocol.HttpService._setConnReuseStrategy33929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setConnReuseStrategy", "(Lorg/apache/http/ConnectionReuseStrategy;)V", ref global::org.apache.http.protocol.HttpService._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.HttpResponseFactory ResponseFactory
 		{
@@ -64,10 +64,10 @@ namespace org.apache.http.protocol
 				setResponseFactory(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setResponseFactory33930;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setResponseFactory(org.apache.http.HttpResponseFactory arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setResponseFactory", "(Lorg/apache/http/HttpResponseFactory;)V", ref global::org.apache.http.protocol.HttpService._setResponseFactory33930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setResponseFactory", "(Lorg/apache/http/HttpResponseFactory;)V", ref global::org.apache.http.protocol.HttpService._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.protocol.HttpRequestHandlerResolver HandlerResolver
 		{
@@ -76,10 +76,10 @@ namespace org.apache.http.protocol
 				setHandlerResolver(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setHandlerResolver33931;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setHandlerResolver(org.apache.http.protocol.HttpRequestHandlerResolver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setHandlerResolver", "(Lorg/apache/http/protocol/HttpRequestHandlerResolver;)V", ref global::org.apache.http.protocol.HttpService._setHandlerResolver33931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setHandlerResolver", "(Lorg/apache/http/protocol/HttpRequestHandlerResolver;)V", ref global::org.apache.http.protocol.HttpService._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.protocol.HttpExpectationVerifier ExpectationVerifier
 		{
@@ -88,28 +88,28 @@ namespace org.apache.http.protocol
 				setExpectationVerifier(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setExpectationVerifier33932;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setExpectationVerifier(org.apache.http.protocol.HttpExpectationVerifier arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setExpectationVerifier", "(Lorg/apache/http/protocol/HttpExpectationVerifier;)V", ref global::org.apache.http.protocol.HttpService._setExpectationVerifier33932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "setExpectationVerifier", "(Lorg/apache/http/protocol/HttpExpectationVerifier;)V", ref global::org.apache.http.protocol.HttpService._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _handleRequest33933;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void handleRequest(org.apache.http.HttpServerConnection arg0, org.apache.http.protocol.HttpContext arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "handleRequest", "(Lorg/apache/http/HttpServerConnection;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.protocol.HttpService._handleRequest33933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "handleRequest", "(Lorg/apache/http/HttpServerConnection;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.protocol.HttpService._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _doService33934;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected virtual void doService(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1, org.apache.http.protocol.HttpContext arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "doService", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.protocol.HttpService._doService33934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpService.staticClass, "doService", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V", ref global::org.apache.http.protocol.HttpService._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpService33935;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public HttpService(org.apache.http.protocol.HttpProcessor arg0, org.apache.http.ConnectionReuseStrategy arg1, org.apache.http.HttpResponseFactory arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.HttpService._HttpService33935.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.HttpService._HttpService33935 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpService.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/HttpResponseFactory;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._HttpService33935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.apache.http.protocol.HttpService._m10.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HttpService._m10 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpService.staticClass, "<init>", "(Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/HttpResponseFactory;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static HttpService()

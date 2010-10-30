@@ -7,20 +7,20 @@ namespace android.text.util
 		protected Rfc822Token(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals13653;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.util.Rfc822Token.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.text.util.Rfc822Token._equals13653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.util.Rfc822Token.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.text.util.Rfc822Token._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString13654;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._toString13654) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode13655;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Token.staticClass, "hashCode", "()I", ref global::android.text.util.Rfc822Token._hashCode13655);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.util.Rfc822Token.staticClass, "hashCode", "()I", ref global::android.text.util.Rfc822Token._m2);
 		}
 		public new global::java.lang.String Address
 		{
@@ -33,10 +33,10 @@ namespace android.text.util
 				setAddress(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAddress13656;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getAddress", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._getAddress13656) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getAddress", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._m3) as java.lang.String;
 		}
 		public new global::java.lang.String Name
 		{
@@ -49,20 +49,20 @@ namespace android.text.util
 				setName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName13657;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getName", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._getName13657) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getName", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._m4) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setName13658;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setName", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._setName13658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setName", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setComment13659;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setComment(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setComment", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._setComment13659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setComment", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String Comment
 		{
@@ -75,47 +75,47 @@ namespace android.text.util
 				setComment(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getComment13660;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.lang.String getComment()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getComment", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._getComment13660) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.util.Rfc822Token.staticClass, "getComment", "()Ljava/lang/String;", ref global::android.text.util.Rfc822Token._m7) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setAddress13661;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setAddress(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setAddress", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._setAddress13661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, "setAddress", "(Ljava/lang/String;)V", ref global::android.text.util.Rfc822Token._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _quoteNameIfNecessary13662;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static global::java.lang.String quoteNameIfNecessary(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Token._quoteNameIfNecessary13662.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Token._quoteNameIfNecessary13662 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteNameIfNecessary", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._quoteNameIfNecessary13662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.text.util.Rfc822Token._m9.native == global::System.IntPtr.Zero)
+				global::android.text.util.Rfc822Token._m9 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteNameIfNecessary", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _quoteName13663;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static global::java.lang.String quoteName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Token._quoteName13663.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Token._quoteName13663 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteName", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._quoteName13663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.text.util.Rfc822Token._m10.native == global::System.IntPtr.Zero)
+				global::android.text.util.Rfc822Token._m10 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteName", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _quoteComment13664;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static global::java.lang.String quoteComment(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Token._quoteComment13664.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Token._quoteComment13664 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteComment", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._quoteComment13664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.text.util.Rfc822Token._m11.native == global::System.IntPtr.Zero)
+				global::android.text.util.Rfc822Token._m11 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "quoteComment", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _Rfc822Token13665;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public Rfc822Token(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.util.Rfc822Token._Rfc822Token13665.native == global::System.IntPtr.Zero)
-				global::android.text.util.Rfc822Token._Rfc822Token13665 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._Rfc822Token13665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.util.Rfc822Token._m12.native == global::System.IntPtr.Zero)
+				global::android.text.util.Rfc822Token._m12 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Token.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static Rfc822Token()

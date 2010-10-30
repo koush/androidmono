@@ -7,20 +7,20 @@ namespace android.widget
 		protected ViewFlipper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow18269;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onAttachedToWindow", "()V", ref global::android.widget.ViewFlipper._onAttachedToWindow18269);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onAttachedToWindow", "()V", ref global::android.widget.ViewFlipper._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow18270;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onDetachedFromWindow", "()V", ref global::android.widget.ViewFlipper._onDetachedFromWindow18270);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onDetachedFromWindow", "()V", ref global::android.widget.ViewFlipper._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _onWindowVisibilityChanged18271;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void onWindowVisibilityChanged(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onWindowVisibilityChanged", "(I)V", ref global::android.widget.ViewFlipper._onWindowVisibilityChanged18271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "onWindowVisibilityChanged", "(I)V", ref global::android.widget.ViewFlipper._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int FlipInterval
 		{
@@ -29,25 +29,25 @@ namespace android.widget
 				setFlipInterval(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFlipInterval18272;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setFlipInterval(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "setFlipInterval", "(I)V", ref global::android.widget.ViewFlipper._setFlipInterval18272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "setFlipInterval", "(I)V", ref global::android.widget.ViewFlipper._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startFlipping18273;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void startFlipping()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "startFlipping", "()V", ref global::android.widget.ViewFlipper._startFlipping18273);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "startFlipping", "()V", ref global::android.widget.ViewFlipper._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopFlipping18274;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void stopFlipping()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "stopFlipping", "()V", ref global::android.widget.ViewFlipper._stopFlipping18274);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "stopFlipping", "()V", ref global::android.widget.ViewFlipper._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _isFlipping18275;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool isFlipping()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, "isFlipping", "()Z", ref global::android.widget.ViewFlipper._isFlipping18275);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, "isFlipping", "()Z", ref global::android.widget.ViewFlipper._m6);
 		}
 		public new bool AutoStart
 		{
@@ -56,32 +56,32 @@ namespace android.widget
 				setAutoStart(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAutoStart18276;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setAutoStart(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "setAutoStart", "(Z)V", ref global::android.widget.ViewFlipper._setAutoStart18276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ViewFlipper.staticClass, "setAutoStart", "(Z)V", ref global::android.widget.ViewFlipper._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAutoStart18277;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool isAutoStart()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, "isAutoStart", "()Z", ref global::android.widget.ViewFlipper._isAutoStart18277);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, "isAutoStart", "()Z", ref global::android.widget.ViewFlipper._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _ViewFlipper18278;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public ViewFlipper(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ViewFlipper._ViewFlipper18278.native == global::System.IntPtr.Zero)
-				global::android.widget.ViewFlipper._ViewFlipper18278 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._ViewFlipper18278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.ViewFlipper._m9.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewFlipper._m9 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ViewFlipper18279;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public ViewFlipper(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ViewFlipper._ViewFlipper18279.native == global::System.IntPtr.Zero)
-				global::android.widget.ViewFlipper._ViewFlipper18279 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._ViewFlipper18279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.ViewFlipper._m10.native == global::System.IntPtr.Zero)
+				global::android.widget.ViewFlipper._m10 = @__env.GetMethodIDNoThrow(global::android.widget.ViewFlipper.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static ViewFlipper()

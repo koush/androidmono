@@ -7,22 +7,22 @@ namespace javax.xml.parsers
 		protected ParserConfigurationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ParserConfigurationException30889;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ParserConfigurationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889);
+			if (global::javax.xml.parsers.ParserConfigurationException._m0.native == global::System.IntPtr.Zero)
+				global::javax.xml.parsers.ParserConfigurationException._m0 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ParserConfigurationException30890;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ParserConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.parsers.ParserConfigurationException._m1.native == global::System.IntPtr.Zero)
+				global::javax.xml.parsers.ParserConfigurationException._m1 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.ParserConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ParserConfigurationException()

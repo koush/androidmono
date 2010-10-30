@@ -7,18 +7,18 @@ namespace org.apache.http.impl.entity
 		protected LaxContentLengthStrategy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _determineLength33376;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual long determineLength(org.apache.http.HttpMessage arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.impl.entity.LaxContentLengthStrategy._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _LaxContentLengthStrategy33377;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public LaxContentLengthStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.entity.LaxContentLengthStrategy._LaxContentLengthStrategy33377.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.entity.LaxContentLengthStrategy._LaxContentLengthStrategy33377 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.LaxContentLengthStrategy._LaxContentLengthStrategy33377);
+			if (global::org.apache.http.impl.entity.LaxContentLengthStrategy._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.entity.LaxContentLengthStrategy._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.LaxContentLengthStrategy._m1);
 			Init(@__env, handle);
 		}
 		static LaxContentLengthStrategy()

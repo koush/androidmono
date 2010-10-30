@@ -7,28 +7,28 @@ namespace org.apache.http.impl.cookie
 		protected RFC2965VersionAttributeHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _parse33366;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void parse(org.apache.http.cookie.SetCookie arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._parse33366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "parse", "(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _match33367;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._match33367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _validate33368;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._validate33368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _RFC2965VersionAttributeHandler33369;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public RFC2965VersionAttributeHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._RFC2965VersionAttributeHandler33369.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._RFC2965VersionAttributeHandler33369 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._RFC2965VersionAttributeHandler33369);
+			if (global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2965VersionAttributeHandler.staticClass, global::org.apache.http.impl.cookie.RFC2965VersionAttributeHandler._m3);
 			Init(@__env, handle);
 		}
 		static RFC2965VersionAttributeHandler()

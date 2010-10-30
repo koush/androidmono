@@ -7,15 +7,15 @@ namespace org.apache.http.message
 		protected BufferedHeader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString33666;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._toString33666) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _clone33667;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, "clone", "()Ljava/lang/Object;", ref global::org.apache.http.message.BufferedHeader._clone33667) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, "clone", "()Ljava/lang/Object;", ref global::org.apache.http.message.BufferedHeader._m1) as java.lang.Object;
 		}
 		public new global::java.lang.String Name
 		{
@@ -24,10 +24,10 @@ namespace org.apache.http.message
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName33668;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._getName33668) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._m2) as java.lang.String;
 		}
 		public new global::java.lang.String Value
 		{
@@ -36,10 +36,10 @@ namespace org.apache.http.message
 				return getValue();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue33669;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._getValue33669) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.message.BufferedHeader._m3) as java.lang.String;
 		}
 		public new global::org.apache.http.HeaderElement[] Elements
 		{
@@ -48,10 +48,10 @@ namespace org.apache.http.message
 				return getElements();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getElements33670;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::org.apache.http.HeaderElement[] getElements()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.message.BufferedHeader._getElements33670) as org.apache.http.HeaderElement[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.message.BufferedHeader._m4) as org.apache.http.HeaderElement[];
 		}
 		public new global::org.apache.http.util.CharArrayBuffer Buffer
 		{
@@ -60,10 +60,10 @@ namespace org.apache.http.message
 				return getBuffer();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBuffer33671;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::org.apache.http.util.CharArrayBuffer getBuffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.util.CharArrayBuffer>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;", ref global::org.apache.http.message.BufferedHeader._getBuffer33671) as org.apache.http.util.CharArrayBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.util.CharArrayBuffer>(this, global::org.apache.http.message.BufferedHeader.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;", ref global::org.apache.http.message.BufferedHeader._m5) as org.apache.http.util.CharArrayBuffer;
 		}
 		public new int ValuePos
 		{
@@ -72,18 +72,18 @@ namespace org.apache.http.message
 				return getValuePos();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getValuePos33672;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getValuePos()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, "getValuePos", "()I", ref global::org.apache.http.message.BufferedHeader._getValuePos33672);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.BufferedHeader.staticClass, "getValuePos", "()I", ref global::org.apache.http.message.BufferedHeader._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _BufferedHeader33673;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public BufferedHeader(org.apache.http.util.CharArrayBuffer arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BufferedHeader._BufferedHeader33673.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BufferedHeader._BufferedHeader33673 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "<init>", "(Lorg/apache/http/util/CharArrayBuffer;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._BufferedHeader33673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.message.BufferedHeader._m7.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BufferedHeader._m7 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BufferedHeader.staticClass, "<init>", "(Lorg/apache/http/util/CharArrayBuffer;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BufferedHeader.staticClass, global::org.apache.http.message.BufferedHeader._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BufferedHeader()

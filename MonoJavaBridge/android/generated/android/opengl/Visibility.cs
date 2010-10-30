@@ -7,37 +7,37 @@ namespace android.opengl
 		protected Visibility(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _visibilityTest9490;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int visibilityTest(float[] arg0, int arg1, float[] arg2, int arg3, char[] arg4, int arg5, int arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.Visibility._visibilityTest9490.native == global::System.IntPtr.Zero)
-				global::android.opengl.Visibility._visibilityTest9490 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "visibilityTest", "([FI[FI[CII)I");
-			return @__env.CallStaticIntMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._visibilityTest9490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			if (global::android.opengl.Visibility._m0.native == global::System.IntPtr.Zero)
+				global::android.opengl.Visibility._m0 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "visibilityTest", "([FI[FI[CII)I");
+			return @__env.CallStaticIntMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 		}
-		internal static global::MonoJavaBridge.MethodId _frustumCullSpheres9491;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int frustumCullSpheres(float[] arg0, int arg1, float[] arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.Visibility._frustumCullSpheres9491.native == global::System.IntPtr.Zero)
-				global::android.opengl.Visibility._frustumCullSpheres9491 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "frustumCullSpheres", "([FI[FII[III)I");
-			return @__env.CallStaticIntMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._frustumCullSpheres9491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.opengl.Visibility._m1.native == global::System.IntPtr.Zero)
+				global::android.opengl.Visibility._m1 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "frustumCullSpheres", "([FI[FII[III)I");
+			return @__env.CallStaticIntMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
-		internal static global::MonoJavaBridge.MethodId _computeBoundingSphere9492;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void computeBoundingSphere(float[] arg0, int arg1, int arg2, float[] arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.Visibility._computeBoundingSphere9492.native == global::System.IntPtr.Zero)
-				global::android.opengl.Visibility._computeBoundingSphere9492 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "computeBoundingSphere", "([FII[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._computeBoundingSphere9492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.opengl.Visibility._m2.native == global::System.IntPtr.Zero)
+				global::android.opengl.Visibility._m2 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "computeBoundingSphere", "([FII[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _Visibility9493;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public Visibility() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.Visibility._Visibility9493.native == global::System.IntPtr.Zero)
-				global::android.opengl.Visibility._Visibility9493 = @__env.GetMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._Visibility9493);
+			if (global::android.opengl.Visibility._m3.native == global::System.IntPtr.Zero)
+				global::android.opengl.Visibility._m3 = @__env.GetMethodIDNoThrow(global::android.opengl.Visibility.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.Visibility.staticClass, global::android.opengl.Visibility._m3);
 			Init(@__env, handle);
 		}
 		static Visibility()

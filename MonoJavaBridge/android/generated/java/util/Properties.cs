@@ -7,97 +7,97 @@ namespace java.util
 		protected Properties(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setProperty26556;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.Object setProperty(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Properties.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", ref global::java.util.Properties._setProperty26556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Properties.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", ref global::java.util.Properties._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getProperty26557;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String getProperty(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Properties.staticClass, "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::java.util.Properties._getProperty26557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Properties.staticClass, "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::java.util.Properties._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getProperty26558;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.String getProperty(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Properties.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.util.Properties._getProperty26558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Properties.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.util.Properties._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _load26559;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void load(java.io.Reader arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "load", "(Ljava/io/Reader;)V", ref global::java.util.Properties._load26559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "load", "(Ljava/io/Reader;)V", ref global::java.util.Properties._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _load26560;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void load(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::java.util.Properties._load26560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::java.util.Properties._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _list26561;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void list(java.io.PrintStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "list", "(Ljava/io/PrintStream;)V", ref global::java.util.Properties._list26561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "list", "(Ljava/io/PrintStream;)V", ref global::java.util.Properties._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _list26562;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void list(java.io.PrintWriter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "list", "(Ljava/io/PrintWriter;)V", ref global::java.util.Properties._list26562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "list", "(Ljava/io/PrintWriter;)V", ref global::java.util.Properties._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _save26563;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void save(java.io.OutputStream arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "save", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._save26563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "save", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _store26564;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void store(java.io.Writer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "store", "(Ljava/io/Writer;Ljava/lang/String;)V", ref global::java.util.Properties._store26564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "store", "(Ljava/io/Writer;Ljava/lang/String;)V", ref global::java.util.Properties._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _store26565;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void store(java.io.OutputStream arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "store", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._store26565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "store", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _loadFromXML26566;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void loadFromXML(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "loadFromXML", "(Ljava/io/InputStream;)V", ref global::java.util.Properties._loadFromXML26566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "loadFromXML", "(Ljava/io/InputStream;)V", ref global::java.util.Properties._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _storeToXML26567;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void storeToXML(java.io.OutputStream arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V", ref global::java.util.Properties._storeToXML26567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V", ref global::java.util.Properties._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _storeToXML26568;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void storeToXML(java.io.OutputStream arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._storeToXML26568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Properties.staticClass, "storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;)V", ref global::java.util.Properties._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _propertyNames26569;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual global::java.util.Enumeration propertyNames()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.util.Properties.staticClass, "propertyNames", "()Ljava/util/Enumeration;", ref global::java.util.Properties._propertyNames26569) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.util.Properties.staticClass, "propertyNames", "()Ljava/util/Enumeration;", ref global::java.util.Properties._m13) as java.util.Enumeration;
 		}
-		internal static global::MonoJavaBridge.MethodId _stringPropertyNames26570;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.util.Set stringPropertyNames()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.Properties.staticClass, "stringPropertyNames", "()Ljava/util/Set;", ref global::java.util.Properties._stringPropertyNames26570) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.util.Properties.staticClass, "stringPropertyNames", "()Ljava/util/Set;", ref global::java.util.Properties._m14) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _Properties26571;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public Properties() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Properties._Properties26571.native == global::System.IntPtr.Zero)
-				global::java.util.Properties._Properties26571 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Properties.staticClass, global::java.util.Properties._Properties26571);
+			if (global::java.util.Properties._m15.native == global::System.IntPtr.Zero)
+				global::java.util.Properties._m15 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Properties.staticClass, global::java.util.Properties._m15);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Properties26572;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public Properties(java.util.Properties arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Properties._Properties26572.native == global::System.IntPtr.Zero)
-				global::java.util.Properties._Properties26572 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "(Ljava/util/Properties;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Properties.staticClass, global::java.util.Properties._Properties26572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Properties._m16.native == global::System.IntPtr.Zero)
+				global::java.util.Properties._m16 = @__env.GetMethodIDNoThrow(global::java.util.Properties.staticClass, "<init>", "(Ljava/util/Properties;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Properties.staticClass, global::java.util.Properties._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static Properties()

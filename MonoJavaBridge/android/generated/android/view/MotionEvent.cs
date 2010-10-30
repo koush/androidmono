@@ -7,10 +7,10 @@ namespace android.view
 		internal MotionEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString14378;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.MotionEvent.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.MotionEvent._toString14378) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.MotionEvent.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.MotionEvent._m0) as java.lang.String;
 		}
 		public new float Size
 		{
@@ -19,20 +19,20 @@ namespace android.view
 				return getSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSize14379;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public float getSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getSize", "()F", ref global::android.view.MotionEvent._getSize14379);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getSize", "()F", ref global::android.view.MotionEvent._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getSize14380;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public float getSize(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getSize", "(I)F", ref global::android.view.MotionEvent._getSize14380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getSize", "(I)F", ref global::android.view.MotionEvent._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getY14381;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public float getY(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getY", "(I)F", ref global::android.view.MotionEvent._getY14381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getY", "(I)F", ref global::android.view.MotionEvent._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float Y
 		{
@@ -41,15 +41,15 @@ namespace android.view
 				return getY();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getY14382;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public float getY()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getY", "()F", ref global::android.view.MotionEvent._getY14382);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getY", "()F", ref global::android.view.MotionEvent._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _getX14383;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public float getX(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getX", "(I)F", ref global::android.view.MotionEvent._getX14383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getX", "(I)F", ref global::android.view.MotionEvent._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float X
 		{
@@ -58,10 +58,10 @@ namespace android.view
 				return getX();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getX14384;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public float getX()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getX", "()F", ref global::android.view.MotionEvent._getX14384);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getX", "()F", ref global::android.view.MotionEvent._m6);
 		}
 		public new long EventTime
 		{
@@ -70,57 +70,57 @@ namespace android.view
 				return getEventTime();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEventTime14385;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public long getEventTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getEventTime", "()J", ref global::android.view.MotionEvent._getEventTime14385);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getEventTime", "()J", ref global::android.view.MotionEvent._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _obtain14386;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, float arg3, float arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MotionEvent._obtain14386.native == global::System.IntPtr.Zero)
-				global::android.view.MotionEvent._obtain14386 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFI)Landroid/view/MotionEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain14386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as android.view.MotionEvent;
+			if (global::android.view.MotionEvent._m8.native == global::System.IntPtr.Zero)
+				global::android.view.MotionEvent._m8 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFI)Landroid/view/MotionEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as android.view.MotionEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _obtain14387;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8, float arg9, float arg10, int arg11, int arg12)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MotionEvent._obtain14387.native == global::System.IntPtr.Zero)
-				global::android.view.MotionEvent._obtain14387 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIIFFFFIFFII)Landroid/view/MotionEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain14387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg12))) as android.view.MotionEvent;
+			if (global::android.view.MotionEvent._m9.native == global::System.IntPtr.Zero)
+				global::android.view.MotionEvent._m9 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIIFFFFIFFII)Landroid/view/MotionEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg12))) as android.view.MotionEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _obtain14388;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, float arg3, float arg4, float arg5, float arg6, int arg7, float arg8, float arg9, int arg10, int arg11)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MotionEvent._obtain14388.native == global::System.IntPtr.Zero)
-				global::android.view.MotionEvent._obtain14388 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFFFIFFII)Landroid/view/MotionEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain14388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11))) as android.view.MotionEvent;
+			if (global::android.view.MotionEvent._m10.native == global::System.IntPtr.Zero)
+				global::android.view.MotionEvent._m10 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFFFIFFII)Landroid/view/MotionEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11))) as android.view.MotionEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _obtain14389;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static global::android.view.MotionEvent obtain(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MotionEvent._obtain14389.native == global::System.IntPtr.Zero)
-				global::android.view.MotionEvent._obtain14389 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain14389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MotionEvent;
+			if (global::android.view.MotionEvent._m11.native == global::System.IntPtr.Zero)
+				global::android.view.MotionEvent._m11 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtain", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MotionEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _recycle14390;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public void recycle()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "recycle", "()V", ref global::android.view.MotionEvent._recycle14390);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "recycle", "()V", ref global::android.view.MotionEvent._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel14391;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.MotionEvent._writeToParcel14391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.MotionEvent._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents14392;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "describeContents", "()I", ref global::android.view.MotionEvent._describeContents14392);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "describeContents", "()I", ref global::android.view.MotionEvent._m14);
 		}
 		public new int Action
 		{
@@ -133,15 +133,15 @@ namespace android.view
 				setAction(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAction14393;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public int getAction()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getAction", "()I", ref global::android.view.MotionEvent._getAction14393);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getAction", "()I", ref global::android.view.MotionEvent._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _setAction14394;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public void setAction(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setAction", "(I)V", ref global::android.view.MotionEvent._setAction14394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setAction", "(I)V", ref global::android.view.MotionEvent._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MetaState
 		{
@@ -150,10 +150,10 @@ namespace android.view
 				return getMetaState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState14395;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public int getMetaState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getMetaState", "()I", ref global::android.view.MotionEvent._getMetaState14395);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getMetaState", "()I", ref global::android.view.MotionEvent._m17);
 		}
 		public new long DownTime
 		{
@@ -162,10 +162,10 @@ namespace android.view
 				return getDownTime();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDownTime14396;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public long getDownTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getDownTime", "()J", ref global::android.view.MotionEvent._getDownTime14396);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getDownTime", "()J", ref global::android.view.MotionEvent._m18);
 		}
 		public new int DeviceId
 		{
@@ -174,18 +174,18 @@ namespace android.view
 				return getDeviceId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeviceId14397;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public int getDeviceId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getDeviceId", "()I", ref global::android.view.MotionEvent._getDeviceId14397);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getDeviceId", "()I", ref global::android.view.MotionEvent._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _obtainNoHistory14398;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::android.view.MotionEvent obtainNoHistory(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MotionEvent._obtainNoHistory14398.native == global::System.IntPtr.Zero)
-				global::android.view.MotionEvent._obtainNoHistory14398 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtainNoHistory", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtainNoHistory14398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MotionEvent;
+			if (global::android.view.MotionEvent._m20.native == global::System.IntPtr.Zero)
+				global::android.view.MotionEvent._m20 = @__env.GetStaticMethodIDNoThrow(global::android.view.MotionEvent.staticClass, "obtainNoHistory", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.MotionEvent>(@__env.CallStaticObjectMethod(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MotionEvent;
 		}
 		public new int ActionMasked
 		{
@@ -194,10 +194,10 @@ namespace android.view
 				return getActionMasked();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getActionMasked14399;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public int getActionMasked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getActionMasked", "()I", ref global::android.view.MotionEvent._getActionMasked14399);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getActionMasked", "()I", ref global::android.view.MotionEvent._m21);
 		}
 		public new int ActionIndex
 		{
@@ -206,10 +206,10 @@ namespace android.view
 				return getActionIndex();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getActionIndex14400;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public int getActionIndex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getActionIndex", "()I", ref global::android.view.MotionEvent._getActionIndex14400);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getActionIndex", "()I", ref global::android.view.MotionEvent._m22);
 		}
 		public new float Pressure
 		{
@@ -218,15 +218,15 @@ namespace android.view
 				return getPressure();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPressure14401;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public float getPressure()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getPressure", "()F", ref global::android.view.MotionEvent._getPressure14401);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getPressure", "()F", ref global::android.view.MotionEvent._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPressure14402;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public float getPressure(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getPressure", "(I)F", ref global::android.view.MotionEvent._getPressure14402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getPressure", "(I)F", ref global::android.view.MotionEvent._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int PointerCount
 		{
@@ -235,20 +235,20 @@ namespace android.view
 				return getPointerCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPointerCount14403;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public int getPointerCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getPointerCount", "()I", ref global::android.view.MotionEvent._getPointerCount14403);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getPointerCount", "()I", ref global::android.view.MotionEvent._m25);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPointerId14404;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public int getPointerId(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getPointerId", "(I)I", ref global::android.view.MotionEvent._getPointerId14404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getPointerId", "(I)I", ref global::android.view.MotionEvent._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _findPointerIndex14405;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public int findPointerIndex(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "findPointerIndex", "(I)I", ref global::android.view.MotionEvent._findPointerIndex14405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "findPointerIndex", "(I)I", ref global::android.view.MotionEvent._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float RawX
 		{
@@ -257,10 +257,10 @@ namespace android.view
 				return getRawX();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRawX14406;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public float getRawX()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getRawX", "()F", ref global::android.view.MotionEvent._getRawX14406);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getRawX", "()F", ref global::android.view.MotionEvent._m28);
 		}
 		public new float RawY
 		{
@@ -269,10 +269,10 @@ namespace android.view
 				return getRawY();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRawY14407;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public float getRawY()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getRawY", "()F", ref global::android.view.MotionEvent._getRawY14407);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getRawY", "()F", ref global::android.view.MotionEvent._m29);
 		}
 		public new float XPrecision
 		{
@@ -281,10 +281,10 @@ namespace android.view
 				return getXPrecision();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getXPrecision14408;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public float getXPrecision()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getXPrecision", "()F", ref global::android.view.MotionEvent._getXPrecision14408);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getXPrecision", "()F", ref global::android.view.MotionEvent._m30);
 		}
 		public new float YPrecision
 		{
@@ -293,10 +293,10 @@ namespace android.view
 				return getYPrecision();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getYPrecision14409;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public float getYPrecision()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getYPrecision", "()F", ref global::android.view.MotionEvent._getYPrecision14409);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getYPrecision", "()F", ref global::android.view.MotionEvent._m31);
 		}
 		public new int HistorySize
 		{
@@ -305,55 +305,55 @@ namespace android.view
 				return getHistorySize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistorySize14410;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public int getHistorySize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getHistorySize", "()I", ref global::android.view.MotionEvent._getHistorySize14410);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getHistorySize", "()I", ref global::android.view.MotionEvent._m32);
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalEventTime14411;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public long getHistoricalEventTime(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalEventTime", "(I)J", ref global::android.view.MotionEvent._getHistoricalEventTime14411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalEventTime", "(I)J", ref global::android.view.MotionEvent._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalX14412;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public float getHistoricalX(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalX", "(II)F", ref global::android.view.MotionEvent._getHistoricalX14412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalX", "(II)F", ref global::android.view.MotionEvent._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalX14413;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public float getHistoricalX(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalX", "(I)F", ref global::android.view.MotionEvent._getHistoricalX14413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalX", "(I)F", ref global::android.view.MotionEvent._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalY14414;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public float getHistoricalY(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalY", "(I)F", ref global::android.view.MotionEvent._getHistoricalY14414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalY", "(I)F", ref global::android.view.MotionEvent._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalY14415;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public float getHistoricalY(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalY", "(II)F", ref global::android.view.MotionEvent._getHistoricalY14415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalY", "(II)F", ref global::android.view.MotionEvent._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalPressure14416;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public float getHistoricalPressure(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(I)F", ref global::android.view.MotionEvent._getHistoricalPressure14416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(I)F", ref global::android.view.MotionEvent._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalPressure14417;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public float getHistoricalPressure(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(II)F", ref global::android.view.MotionEvent._getHistoricalPressure14417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(II)F", ref global::android.view.MotionEvent._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalSize14418;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public float getHistoricalSize(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(II)F", ref global::android.view.MotionEvent._getHistoricalSize14418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(II)F", ref global::android.view.MotionEvent._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHistoricalSize14419;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public float getHistoricalSize(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(I)F", ref global::android.view.MotionEvent._getHistoricalSize14419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(I)F", ref global::android.view.MotionEvent._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int EdgeFlags
 		{
@@ -366,30 +366,30 @@ namespace android.view
 				setEdgeFlags(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEdgeFlags14420;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public int getEdgeFlags()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getEdgeFlags", "()I", ref global::android.view.MotionEvent._getEdgeFlags14420);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.MotionEvent.staticClass, "getEdgeFlags", "()I", ref global::android.view.MotionEvent._m42);
 		}
-		internal static global::MonoJavaBridge.MethodId _setEdgeFlags14421;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public void setEdgeFlags(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setEdgeFlags", "(I)V", ref global::android.view.MotionEvent._setEdgeFlags14421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setEdgeFlags", "(I)V", ref global::android.view.MotionEvent._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _offsetLocation14422;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public void offsetLocation(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "offsetLocation", "(FF)V", ref global::android.view.MotionEvent._offsetLocation14422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "offsetLocation", "(FF)V", ref global::android.view.MotionEvent._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setLocation14423;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public void setLocation(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setLocation", "(FF)V", ref global::android.view.MotionEvent._setLocation14423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "setLocation", "(FF)V", ref global::android.view.MotionEvent._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addBatch14424;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public void addBatch(long arg0, float arg1, float arg2, float arg3, float arg4, int arg5)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "addBatch", "(JFFFFI)V", ref global::android.view.MotionEvent._addBatch14424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.MotionEvent.staticClass, "addBatch", "(JFFFFI)V", ref global::android.view.MotionEvent._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		public static int ACTION_MASK
 		{
@@ -545,20 +545,20 @@ namespace android.view
 				return 8;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR14447;
+		internal static global::MonoJavaBridge.FieldId _CREATOR5650;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.MotionEvent.staticClass, _CREATOR14447)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.MotionEvent.staticClass, _CREATOR5650)) as android.os.Parcelable_Creator;
 			}
 		}
 		static MotionEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MotionEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MotionEvent"));
-			global::android.view.MotionEvent._CREATOR14447 = @__env.GetStaticFieldIDNoThrow(global::android.view.MotionEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.view.MotionEvent._CREATOR5650 = @__env.GetStaticFieldIDNoThrow(global::android.view.MotionEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

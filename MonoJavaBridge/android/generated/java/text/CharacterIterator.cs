@@ -22,55 +22,55 @@ namespace java.text
 		internal CharacterIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clone25254;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object java.text.CharacterIterator.clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.CharacterIterator_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.CharacterIterator_._clone25254) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.CharacterIterator_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.CharacterIterator_._m0) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _next25255;
+		private static global::MonoJavaBridge.MethodId _m1;
 		char java.text.CharacterIterator.next()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "next", "()C", ref global::java.text.CharacterIterator_._next25255);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "next", "()C", ref global::java.text.CharacterIterator_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _previous25256;
+		private static global::MonoJavaBridge.MethodId _m2;
 		char java.text.CharacterIterator.previous()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "previous", "()C", ref global::java.text.CharacterIterator_._previous25256);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "previous", "()C", ref global::java.text.CharacterIterator_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getIndex25257;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int java.text.CharacterIterator.getIndex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getIndex", "()I", ref global::java.text.CharacterIterator_._getIndex25257);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getIndex", "()I", ref global::java.text.CharacterIterator_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _current25258;
+		private static global::MonoJavaBridge.MethodId _m4;
 		char java.text.CharacterIterator.current()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "current", "()C", ref global::java.text.CharacterIterator_._current25258);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "current", "()C", ref global::java.text.CharacterIterator_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _setIndex25259;
+		private static global::MonoJavaBridge.MethodId _m5;
 		char java.text.CharacterIterator.setIndex(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "setIndex", "(I)C", ref global::java.text.CharacterIterator_._setIndex25259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "setIndex", "(I)C", ref global::java.text.CharacterIterator_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getBeginIndex25260;
+		private static global::MonoJavaBridge.MethodId _m6;
 		int java.text.CharacterIterator.getBeginIndex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getBeginIndex", "()I", ref global::java.text.CharacterIterator_._getBeginIndex25260);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getBeginIndex", "()I", ref global::java.text.CharacterIterator_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _getEndIndex25261;
+		private static global::MonoJavaBridge.MethodId _m7;
 		int java.text.CharacterIterator.getEndIndex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getEndIndex", "()I", ref global::java.text.CharacterIterator_._getEndIndex25261);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.CharacterIterator_.staticClass, "getEndIndex", "()I", ref global::java.text.CharacterIterator_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _last25262;
+		private static global::MonoJavaBridge.MethodId _m8;
 		char java.text.CharacterIterator.last()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "last", "()C", ref global::java.text.CharacterIterator_._last25262);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "last", "()C", ref global::java.text.CharacterIterator_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _first25263;
+		private static global::MonoJavaBridge.MethodId _m9;
 		char java.text.CharacterIterator.first()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "first", "()C", ref global::java.text.CharacterIterator_._first25263);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.text.CharacterIterator_.staticClass, "first", "()C", ref global::java.text.CharacterIterator_._m9);
 		}
 		static CharacterIterator_()
 		{

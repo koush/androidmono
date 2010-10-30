@@ -7,114 +7,114 @@ namespace java.nio
 		protected ShortBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get22361;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract short get();
-		internal static global::MonoJavaBridge.MethodId _get22362;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.nio.ShortBuffer get(short[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "get", "([S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._get22362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "get", "([S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _get22363;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.nio.ShortBuffer get(short[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "get", "([SII)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._get22363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "get", "([SII)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _get22364;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract short get(int arg0);
-		internal static global::MonoJavaBridge.MethodId _put22365;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.nio.ShortBuffer put(java.nio.ShortBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "(Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._put22365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "(Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22366;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract global::java.nio.ShortBuffer put(short arg0);
-		internal static global::MonoJavaBridge.MethodId _put22367;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract global::java.nio.ShortBuffer put(int arg0, short arg1);
-		internal static global::MonoJavaBridge.MethodId _put22368;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.nio.ShortBuffer put(short[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "([SII)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._put22368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "([SII)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22369;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::java.nio.ShortBuffer put(short[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "([S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._put22369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "put", "([S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _equals22370;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.nio.ShortBuffer._equals22370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.nio.ShortBuffer._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString22371;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.ShortBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.ShortBuffer._toString22371) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.ShortBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.ShortBuffer._m10) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode22372;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "hashCode", "()I", ref global::java.nio.ShortBuffer._hashCode22372);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "hashCode", "()I", ref global::java.nio.ShortBuffer._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo22373;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.nio.ShortBuffer._compareTo22373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.nio.ShortBuffer._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo22374;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int compareTo(java.nio.ShortBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/nio/ShortBuffer;)I", ref global::java.nio.ShortBuffer._compareTo22374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/nio/ShortBuffer;)I", ref global::java.nio.ShortBuffer._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDirect22375;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public abstract bool isDirect();
-		internal static global::MonoJavaBridge.MethodId _hasArray22376;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public sealed override bool hasArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, "hasArray", "()Z", ref global::java.nio.ShortBuffer._hasArray22376);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, "hasArray", "()Z", ref global::java.nio.ShortBuffer._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _array22377;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override global::java.lang.Object array()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "array", "()Ljava/lang/Object;", ref global::java.nio.ShortBuffer._array22377) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer.staticClass, "array", "()Ljava/lang/Object;", ref global::java.nio.ShortBuffer._m16) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _arrayOffset22378;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public sealed override int arrayOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "arrayOffset", "()I", ref global::java.nio.ShortBuffer._arrayOffset22378);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.ShortBuffer.staticClass, "arrayOffset", "()I", ref global::java.nio.ShortBuffer._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _wrap22379;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static global::java.nio.ShortBuffer wrap(short[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.ShortBuffer._wrap22379.native == global::System.IntPtr.Zero)
-				global::java.nio.ShortBuffer._wrap22379 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "wrap", "([SII)Ljava/nio/ShortBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._wrap22379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.ShortBuffer;
+			if (global::java.nio.ShortBuffer._m18.native == global::System.IntPtr.Zero)
+				global::java.nio.ShortBuffer._m18 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "wrap", "([SII)Ljava/nio/ShortBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _wrap22380;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static global::java.nio.ShortBuffer wrap(short[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.ShortBuffer._wrap22380.native == global::System.IntPtr.Zero)
-				global::java.nio.ShortBuffer._wrap22380 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "wrap", "([S)Ljava/nio/ShortBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._wrap22380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
+			if (global::java.nio.ShortBuffer._m19.native == global::System.IntPtr.Zero)
+				global::java.nio.ShortBuffer._m19 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "wrap", "([S)Ljava/nio/ShortBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _allocate22381;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::java.nio.ShortBuffer allocate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.ShortBuffer._allocate22381.native == global::System.IntPtr.Zero)
-				global::java.nio.ShortBuffer._allocate22381 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "allocate", "(I)Ljava/nio/ShortBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._allocate22381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
+			if (global::java.nio.ShortBuffer._m20.native == global::System.IntPtr.Zero)
+				global::java.nio.ShortBuffer._m20 = @__env.GetStaticMethodIDNoThrow(global::java.nio.ShortBuffer.staticClass, "allocate", "(I)Ljava/nio/ShortBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _duplicate22382;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public abstract global::java.nio.ShortBuffer duplicate();
-		internal static global::MonoJavaBridge.MethodId _slice22383;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public abstract global::java.nio.ShortBuffer slice();
-		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22384;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public abstract global::java.nio.ShortBuffer asReadOnlyBuffer();
-		internal static global::MonoJavaBridge.MethodId _compact22385;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public abstract global::java.nio.ShortBuffer compact();
-		internal static global::MonoJavaBridge.MethodId _order22386;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public abstract global::java.nio.ByteOrder order();
 		static ShortBuffer()
 		{
@@ -133,60 +133,60 @@ namespace java.nio
 		internal ShortBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get22387;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override short get()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.nio.ShortBuffer_.staticClass, "get", "()S", ref global::java.nio.ShortBuffer_._get22387);
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.nio.ShortBuffer_.staticClass, "get", "()S", ref global::java.nio.ShortBuffer_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _get22388;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override short get(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.nio.ShortBuffer_.staticClass, "get", "(I)S", ref global::java.nio.ShortBuffer_._get22388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.nio.ShortBuffer_.staticClass, "get", "(I)S", ref global::java.nio.ShortBuffer_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _put22389;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.nio.ShortBuffer put(short arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "put", "(S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._put22389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "put", "(S)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22390;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.nio.ShortBuffer put(int arg0, short arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "put", "(IS)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._put22390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "put", "(IS)Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDirect22391;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isDirect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer_.staticClass, "isDirect", "()Z", ref global::java.nio.ShortBuffer_._isDirect22391);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer_.staticClass, "isDirect", "()Z", ref global::java.nio.ShortBuffer_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _duplicate22392;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::java.nio.ShortBuffer duplicate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "duplicate", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._duplicate22392) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "duplicate", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m5) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _slice22393;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::java.nio.ShortBuffer slice()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "slice", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._slice22393) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "slice", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m6) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22394;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::java.nio.ShortBuffer asReadOnlyBuffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._asReadOnlyBuffer22394) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m7) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _compact22395;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override global::java.nio.ShortBuffer compact()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "compact", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._compact22395) as java.nio.ShortBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.ShortBuffer_.staticClass, "compact", "()Ljava/nio/ShortBuffer;", ref global::java.nio.ShortBuffer_._m8) as java.nio.ShortBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _order22396;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::java.nio.ByteOrder order()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.nio.ByteOrder>(this, global::java.nio.ShortBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;", ref global::java.nio.ShortBuffer_._order22396) as java.nio.ByteOrder;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.nio.ByteOrder>(this, global::java.nio.ShortBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;", ref global::java.nio.ShortBuffer_._m9) as java.nio.ByteOrder;
 		}
-		internal static global::MonoJavaBridge.MethodId _isReadOnly22397;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override bool isReadOnly()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer_.staticClass, "isReadOnly", "()Z", ref global::java.nio.ShortBuffer_._isReadOnly22397);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.ShortBuffer_.staticClass, "isReadOnly", "()Z", ref global::java.nio.ShortBuffer_._m10);
 		}
 		static ShortBuffer_()
 		{

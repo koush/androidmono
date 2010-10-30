@@ -18,10 +18,10 @@ namespace java.net
 				setLength(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength21373;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public int getLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getLength", "()I", ref global::java.net.DatagramPacket._getLength21373);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getLength", "()I", ref global::java.net.DatagramPacket._m0);
 		}
 		public new global::java.net.InetAddress Address
 		{
@@ -34,15 +34,15 @@ namespace java.net
 				setAddress(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAddress21374;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public global::java.net.InetAddress getAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramPacket.staticClass, "getAddress", "()Ljava/net/InetAddress;", ref global::java.net.DatagramPacket._getAddress21374) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramPacket.staticClass, "getAddress", "()Ljava/net/InetAddress;", ref global::java.net.DatagramPacket._m1) as java.net.InetAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _setLength21375;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void setLength(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setLength", "(I)V", ref global::java.net.DatagramPacket._setLength21375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setLength", "(I)V", ref global::java.net.DatagramPacket._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Offset
 		{
@@ -51,10 +51,10 @@ namespace java.net
 				return getOffset();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffset21376;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public int getOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getOffset", "()I", ref global::java.net.DatagramPacket._getOffset21376);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getOffset", "()I", ref global::java.net.DatagramPacket._m3);
 		}
 		public new int Port
 		{
@@ -67,10 +67,10 @@ namespace java.net
 				setPort(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPort21377;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public int getPort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getPort", "()I", ref global::java.net.DatagramPacket._getPort21377);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramPacket.staticClass, "getPort", "()I", ref global::java.net.DatagramPacket._m4);
 		}
 		public new byte[] Data
 		{
@@ -83,35 +83,35 @@ namespace java.net
 				setData(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getData21378;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public byte[] getData()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.net.DatagramPacket.staticClass, "getData", "()[B", ref global::java.net.DatagramPacket._getData21378) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.net.DatagramPacket.staticClass, "getData", "()[B", ref global::java.net.DatagramPacket._m5) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setData21379;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public void setData(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setData", "([B)V", ref global::java.net.DatagramPacket._setData21379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setData", "([B)V", ref global::java.net.DatagramPacket._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setData21380;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public void setData(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setData", "([BII)V", ref global::java.net.DatagramPacket._setData21380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setData", "([BII)V", ref global::java.net.DatagramPacket._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setAddress21381;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public void setAddress(java.net.InetAddress arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setAddress", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramPacket._setAddress21381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setAddress", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramPacket._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPort21382;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public void setPort(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setPort", "(I)V", ref global::java.net.DatagramPacket._setPort21382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setPort", "(I)V", ref global::java.net.DatagramPacket._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSocketAddress21383;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public void setSocketAddress(java.net.SocketAddress arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setSocketAddress", "(Ljava/net/SocketAddress;)V", ref global::java.net.DatagramPacket._setSocketAddress21383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramPacket.staticClass, "setSocketAddress", "(Ljava/net/SocketAddress;)V", ref global::java.net.DatagramPacket._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.net.SocketAddress SocketAddress
 		{
@@ -124,63 +124,63 @@ namespace java.net
 				setSocketAddress(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSocketAddress21384;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public global::java.net.SocketAddress getSocketAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramPacket.staticClass, "getSocketAddress", "()Ljava/net/SocketAddress;", ref global::java.net.DatagramPacket._getSocketAddress21384) as java.net.SocketAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramPacket.staticClass, "getSocketAddress", "()Ljava/net/SocketAddress;", ref global::java.net.DatagramPacket._m11) as java.net.SocketAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21385;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public DatagramPacket(byte[] arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21385.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21385 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.net.DatagramPacket._m12.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m12 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21386;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public DatagramPacket(byte[] arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21386.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21386 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BI)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.net.DatagramPacket._m13.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m13 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BI)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21387;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public DatagramPacket(byte[] arg0, int arg1, int arg2, java.net.InetAddress arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21387.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21387 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BIILjava/net/InetAddress;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::java.net.DatagramPacket._m14.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m14 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BIILjava/net/InetAddress;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21388;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public DatagramPacket(byte[] arg0, int arg1, int arg2, java.net.SocketAddress arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21388.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21388 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BIILjava/net/SocketAddress;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::java.net.DatagramPacket._m15.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m15 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BIILjava/net/SocketAddress;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21389;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public DatagramPacket(byte[] arg0, int arg1, java.net.InetAddress arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21389.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21389 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/InetAddress;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::java.net.DatagramPacket._m16.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m16 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/InetAddress;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramPacket21390;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public DatagramPacket(byte[] arg0, int arg1, java.net.SocketAddress arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramPacket._DatagramPacket21390.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramPacket._DatagramPacket21390 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/SocketAddress;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._DatagramPacket21390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.net.DatagramPacket._m17.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramPacket._m17 = @__env.GetMethodIDNoThrow(global::java.net.DatagramPacket.staticClass, "<init>", "([BILjava/net/SocketAddress;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static DatagramPacket()

@@ -7,30 +7,30 @@ namespace android.telephony
 		protected SignalStrength(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals11883;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.telephony.SignalStrength._equals11883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.telephony.SignalStrength._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString11884;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;", ref global::android.telephony.SignalStrength._toString11884) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;", ref global::android.telephony.SignalStrength._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode11885;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "hashCode", "()I", ref global::android.telephony.SignalStrength._hashCode11885);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "hashCode", "()I", ref global::android.telephony.SignalStrength._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel11886;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.SignalStrength.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.telephony.SignalStrength._writeToParcel11886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.SignalStrength.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.telephony.SignalStrength._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents11887;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "describeContents", "()I", ref global::android.telephony.SignalStrength._describeContents11887);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "describeContents", "()I", ref global::android.telephony.SignalStrength._m4);
 		}
 		public new int GsmSignalStrength
 		{
@@ -39,10 +39,10 @@ namespace android.telephony
 				return getGsmSignalStrength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGsmSignalStrength11888;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getGsmSignalStrength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getGsmSignalStrength", "()I", ref global::android.telephony.SignalStrength._getGsmSignalStrength11888);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getGsmSignalStrength", "()I", ref global::android.telephony.SignalStrength._m5);
 		}
 		public new int GsmBitErrorRate
 		{
@@ -51,10 +51,10 @@ namespace android.telephony
 				return getGsmBitErrorRate();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGsmBitErrorRate11889;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getGsmBitErrorRate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getGsmBitErrorRate", "()I", ref global::android.telephony.SignalStrength._getGsmBitErrorRate11889);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getGsmBitErrorRate", "()I", ref global::android.telephony.SignalStrength._m6);
 		}
 		public new int CdmaDbm
 		{
@@ -63,10 +63,10 @@ namespace android.telephony
 				return getCdmaDbm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCdmaDbm11890;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int getCdmaDbm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getCdmaDbm", "()I", ref global::android.telephony.SignalStrength._getCdmaDbm11890);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getCdmaDbm", "()I", ref global::android.telephony.SignalStrength._m7);
 		}
 		public new int CdmaEcio
 		{
@@ -75,10 +75,10 @@ namespace android.telephony
 				return getCdmaEcio();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCdmaEcio11891;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int getCdmaEcio()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getCdmaEcio", "()I", ref global::android.telephony.SignalStrength._getCdmaEcio11891);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getCdmaEcio", "()I", ref global::android.telephony.SignalStrength._m8);
 		}
 		public new int EvdoDbm
 		{
@@ -87,10 +87,10 @@ namespace android.telephony
 				return getEvdoDbm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEvdoDbm11892;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int getEvdoDbm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoDbm", "()I", ref global::android.telephony.SignalStrength._getEvdoDbm11892);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoDbm", "()I", ref global::android.telephony.SignalStrength._m9);
 		}
 		public new int EvdoEcio
 		{
@@ -99,10 +99,10 @@ namespace android.telephony
 				return getEvdoEcio();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEvdoEcio11893;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int getEvdoEcio()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoEcio", "()I", ref global::android.telephony.SignalStrength._getEvdoEcio11893);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoEcio", "()I", ref global::android.telephony.SignalStrength._m10);
 		}
 		public new int EvdoSnr
 		{
@@ -111,15 +111,15 @@ namespace android.telephony
 				return getEvdoSnr();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEvdoSnr11894;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int getEvdoSnr()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoSnr", "()I", ref global::android.telephony.SignalStrength._getEvdoSnr11894);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.SignalStrength.staticClass, "getEvdoSnr", "()I", ref global::android.telephony.SignalStrength._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _isGsm11895;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual bool isGsm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, "isGsm", "()Z", ref global::android.telephony.SignalStrength._isGsm11895);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, "isGsm", "()Z", ref global::android.telephony.SignalStrength._m12);
 		}
 		static SignalStrength()
 		{

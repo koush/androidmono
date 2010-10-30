@@ -7,15 +7,15 @@ namespace android.widget
 		protected DialerFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _append16964;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void append(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "append", "(Ljava/lang/String;)V", ref global::android.widget.DialerFilter._append16964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "append", "(Ljava/lang/String;)V", ref global::android.widget.DialerFilter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMode16965;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setMode(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setMode", "(I)V", ref global::android.widget.DialerFilter._setMode16965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setMode", "(I)V", ref global::android.widget.DialerFilter._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Mode
 		{
@@ -28,35 +28,35 @@ namespace android.widget
 				setMode(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMode16966;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.DialerFilter.staticClass, "getMode", "()I", ref global::android.widget.DialerFilter._getMode16966);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.DialerFilter.staticClass, "getMode", "()I", ref global::android.widget.DialerFilter._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyDown16967;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.DialerFilter._onKeyDown16967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.DialerFilter._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyUp16968;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.DialerFilter._onKeyUp16968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.DialerFilter._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFocusChanged16969;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V", ref global::android.widget.DialerFilter._onFocusChanged16969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V", ref global::android.widget.DialerFilter._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFinishInflate16970;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void onFinishInflate()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onFinishInflate", "()V", ref global::android.widget.DialerFilter._onFinishInflate16970);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onFinishInflate", "()V", ref global::android.widget.DialerFilter._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _isQwertyKeyboard16971;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool isQwertyKeyboard()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "isQwertyKeyboard", "()Z", ref global::android.widget.DialerFilter._isQwertyKeyboard16971);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.DialerFilter.staticClass, "isQwertyKeyboard", "()Z", ref global::android.widget.DialerFilter._m7);
 		}
 		public new string Letters
 		{
@@ -65,10 +65,10 @@ namespace android.widget
 				return getLetters().toString();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLetters16972;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::java.lang.CharSequence getLetters()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getLetters", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._getLetters16972) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getLetters", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._m8) as java.lang.CharSequence;
 		}
 		public new string Digits
 		{
@@ -77,10 +77,10 @@ namespace android.widget
 				return getDigits().toString();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDigits16973;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::java.lang.CharSequence getDigits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getDigits", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._getDigits16973) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getDigits", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._m9) as java.lang.CharSequence;
 		}
 		public new string FilterText
 		{
@@ -89,15 +89,15 @@ namespace android.widget
 				return getFilterText().toString();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilterText16974;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.lang.CharSequence getFilterText()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getFilterText", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._getFilterText16974) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.DialerFilter.staticClass, "getFilterText", "()Ljava/lang/CharSequence;", ref global::android.widget.DialerFilter._m10) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearText16975;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void clearText()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "clearText", "()V", ref global::android.widget.DialerFilter._clearText16975);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "clearText", "()V", ref global::android.widget.DialerFilter._m11);
 		}
 		public new global::android.text.TextWatcher LettersWatcher
 		{
@@ -106,10 +106,10 @@ namespace android.widget
 				setLettersWatcher(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setLettersWatcher16976;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setLettersWatcher(android.text.TextWatcher arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setLettersWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._setLettersWatcher16976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setLettersWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.text.TextWatcher DigitsWatcher
 		{
@@ -118,10 +118,10 @@ namespace android.widget
 				setDigitsWatcher(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDigitsWatcher16977;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setDigitsWatcher(android.text.TextWatcher arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setDigitsWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._setDigitsWatcher16977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setDigitsWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.text.TextWatcher FilterWatcher
 		{
@@ -130,37 +130,37 @@ namespace android.widget
 				setFilterWatcher(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFilterWatcher16978;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setFilterWatcher(android.text.TextWatcher arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setFilterWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._setFilterWatcher16978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "setFilterWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeFilterWatcher16979;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void removeFilterWatcher(android.text.TextWatcher arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "removeFilterWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._removeFilterWatcher16979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "removeFilterWatcher", "(Landroid/text/TextWatcher;)V", ref global::android.widget.DialerFilter._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onModeChange16980;
+		private static global::MonoJavaBridge.MethodId _m16;
 		protected virtual void onModeChange(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onModeChange", "(II)V", ref global::android.widget.DialerFilter._onModeChange16980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DialerFilter.staticClass, "onModeChange", "(II)V", ref global::android.widget.DialerFilter._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _DialerFilter16981;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public DialerFilter(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.DialerFilter._DialerFilter16981.native == global::System.IntPtr.Zero)
-				global::android.widget.DialerFilter._DialerFilter16981 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._DialerFilter16981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.DialerFilter._m17.native == global::System.IntPtr.Zero)
+				global::android.widget.DialerFilter._m17 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DialerFilter16982;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public DialerFilter(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.DialerFilter._DialerFilter16982.native == global::System.IntPtr.Zero)
-				global::android.widget.DialerFilter._DialerFilter16982 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._DialerFilter16982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.DialerFilter._m18.native == global::System.IntPtr.Zero)
+				global::android.widget.DialerFilter._m18 = @__env.GetMethodIDNoThrow(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int DIGITS_AND_LETTERS

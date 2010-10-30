@@ -14,13 +14,13 @@ namespace android.speech.tts
 			protected Engine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _Engine11719;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public Engine(android.speech.tts.TextToSpeech arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.speech.tts.TextToSpeech.Engine._Engine11719.native == global::System.IntPtr.Zero)
-					global::android.speech.tts.TextToSpeech.Engine._Engine11719 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.Engine.staticClass, "<init>", "(Landroid/speech/tts/TextToSpeech;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.Engine.staticClass, global::android.speech.tts.TextToSpeech.Engine._Engine11719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.speech.tts.TextToSpeech.Engine._m0.native == global::System.IntPtr.Zero)
+					global::android.speech.tts.TextToSpeech.Engine._m0 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.Engine.staticClass, "<init>", "(Landroid/speech/tts/TextToSpeech;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.Engine.staticClass, global::android.speech.tts.TextToSpeech.Engine._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			public static int DEFAULT_STREAM
@@ -171,10 +171,10 @@ namespace android.speech.tts
 			internal OnInitListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onInit11738;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.speech.tts.TextToSpeech.OnInitListener.onInit(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass, "onInit", "(I)V", ref global::android.speech.tts.TextToSpeech.OnInitListener_._onInit11738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass, "onInit", "(I)V", ref global::android.speech.tts.TextToSpeech.OnInitListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnInitListener_()
 			{
@@ -194,13 +194,13 @@ namespace android.speech.tts
 			protected OnInitListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnInitListenerDelegateWrapper11739;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnInitListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._OnInitListenerDelegateWrapper11739.native == global::System.IntPtr.Zero)
-					global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._OnInitListenerDelegateWrapper11739 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._OnInitListenerDelegateWrapper11739);
+				if (global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnInitListenerDelegateWrapper()
@@ -240,10 +240,10 @@ namespace android.speech.tts
 			internal OnUtteranceCompletedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onUtteranceCompleted11740;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.speech.tts.TextToSpeech.OnUtteranceCompletedListener.onUtteranceCompleted(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass, "onUtteranceCompleted", "(Ljava/lang/String;)V", ref global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_._onUtteranceCompleted11740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass, "onUtteranceCompleted", "(Ljava/lang/String;)V", ref global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnUtteranceCompletedListener_()
 			{
@@ -263,13 +263,13 @@ namespace android.speech.tts
 			protected OnUtteranceCompletedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnUtteranceCompletedListenerDelegateWrapper11741;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnUtteranceCompletedListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._OnUtteranceCompletedListenerDelegateWrapper11741.native == global::System.IntPtr.Zero)
-					global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._OnUtteranceCompletedListenerDelegateWrapper11741 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._OnUtteranceCompletedListenerDelegateWrapper11741);
+				if (global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass, global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnUtteranceCompletedListenerDelegateWrapper()
@@ -296,10 +296,10 @@ namespace android.speech.tts
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _shutdown11742;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void shutdown()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "shutdown", "()V", ref global::android.speech.tts.TextToSpeech._shutdown11742);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "shutdown", "()V", ref global::android.speech.tts.TextToSpeech._m0);
 		}
 		public new global::java.util.Locale Language
 		{
@@ -312,55 +312,55 @@ namespace android.speech.tts
 				setLanguage(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLanguage11743;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.util.Locale getLanguage()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::android.speech.tts.TextToSpeech.staticClass, "getLanguage", "()Ljava/util/Locale;", ref global::android.speech.tts.TextToSpeech._getLanguage11743) as java.util.Locale;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::android.speech.tts.TextToSpeech.staticClass, "getLanguage", "()Ljava/util/Locale;", ref global::android.speech.tts.TextToSpeech._m1) as java.util.Locale;
 		}
-		internal static global::MonoJavaBridge.MethodId _stop11744;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int stop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "stop", "()I", ref global::android.speech.tts.TextToSpeech._stop11744);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "stop", "()I", ref global::android.speech.tts.TextToSpeech._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _addSpeech11745;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int addSpeech(java.lang.String arg0, java.lang.String arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;I)I", ref global::android.speech.tts.TextToSpeech._addSpeech11745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;I)I", ref global::android.speech.tts.TextToSpeech._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _addSpeech11746;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int addSpeech(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._addSpeech11746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addEarcon11747;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int addEarcon(java.lang.String arg0, java.lang.String arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;I)I", ref global::android.speech.tts.TextToSpeech._addEarcon11747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;I)I", ref global::android.speech.tts.TextToSpeech._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _addEarcon11748;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int addEarcon(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._addEarcon11748, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _speak11749;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int speak(java.lang.String arg0, int arg1, java.util.HashMap arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "speak", "(Ljava/lang/String;ILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._speak11749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "speak", "(Ljava/lang/String;ILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _playEarcon11750;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int playEarcon(java.lang.String arg0, int arg1, java.util.HashMap arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "playEarcon", "(Ljava/lang/String;ILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._playEarcon11750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "playEarcon", "(Ljava/lang/String;ILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _playSilence11751;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int playSilence(long arg0, int arg1, java.util.HashMap arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "playSilence", "(JILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._playSilence11751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "playSilence", "(JILjava/util/HashMap;)I", ref global::android.speech.tts.TextToSpeech._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSpeaking11752;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool isSpeaking()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "isSpeaking", "()Z", ref global::android.speech.tts.TextToSpeech._isSpeaking11752);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "isSpeaking", "()Z", ref global::android.speech.tts.TextToSpeech._m10);
 		}
 		public new float SpeechRate
 		{
@@ -369,10 +369,10 @@ namespace android.speech.tts
 				setSpeechRate(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSpeechRate11753;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int setSpeechRate(float arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setSpeechRate", "(F)I", ref global::android.speech.tts.TextToSpeech._setSpeechRate11753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setSpeechRate", "(F)I", ref global::android.speech.tts.TextToSpeech._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float Pitch
 		{
@@ -381,30 +381,30 @@ namespace android.speech.tts
 				setPitch(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPitch11754;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int setPitch(float arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setPitch", "(F)I", ref global::android.speech.tts.TextToSpeech._setPitch11754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setPitch", "(F)I", ref global::android.speech.tts.TextToSpeech._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setLanguage11755;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int setLanguage(java.util.Locale arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setLanguage", "(Ljava/util/Locale;)I", ref global::android.speech.tts.TextToSpeech._setLanguage11755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setLanguage", "(Ljava/util/Locale;)I", ref global::android.speech.tts.TextToSpeech._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isLanguageAvailable11756;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual int isLanguageAvailable(java.util.Locale arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "isLanguageAvailable", "(Ljava/util/Locale;)I", ref global::android.speech.tts.TextToSpeech._isLanguageAvailable11756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "isLanguageAvailable", "(Ljava/util/Locale;)I", ref global::android.speech.tts.TextToSpeech._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _synthesizeToFile11757;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual int synthesizeToFile(java.lang.String arg0, java.util.HashMap arg1, java.lang.String arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "synthesizeToFile", "(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._synthesizeToFile11757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "synthesizeToFile", "(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnUtteranceCompletedListener11758;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual int setOnUtteranceCompletedListener(android.speech.tts.TextToSpeech.OnUtteranceCompletedListener arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setOnUtteranceCompletedListener", "(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I", ref global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener11758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setOnUtteranceCompletedListener", "(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I", ref global::android.speech.tts.TextToSpeech._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public int setOnUtteranceCompletedListener(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegate arg0)
 		{
@@ -417,10 +417,10 @@ namespace android.speech.tts
 				setEngineByPackageName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setEngineByPackageName11759;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual int setEngineByPackageName(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setEngineByPackageName", "(Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._setEngineByPackageName11759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "setEngineByPackageName", "(Ljava/lang/String;)I", ref global::android.speech.tts.TextToSpeech._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String DefaultEngine
 		{
@@ -429,23 +429,23 @@ namespace android.speech.tts
 				return getDefaultEngine();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultEngine11760;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual global::java.lang.String getDefaultEngine()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.speech.tts.TextToSpeech.staticClass, "getDefaultEngine", "()Ljava/lang/String;", ref global::android.speech.tts.TextToSpeech._getDefaultEngine11760) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.speech.tts.TextToSpeech.staticClass, "getDefaultEngine", "()Ljava/lang/String;", ref global::android.speech.tts.TextToSpeech._m18) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _areDefaultsEnforced11761;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual bool areDefaultsEnforced()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "areDefaultsEnforced", "()Z", ref global::android.speech.tts.TextToSpeech._areDefaultsEnforced11761);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, "areDefaultsEnforced", "()Z", ref global::android.speech.tts.TextToSpeech._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _TextToSpeech11762;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public TextToSpeech(android.content.Context arg0, android.speech.tts.TextToSpeech.OnInitListener arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.speech.tts.TextToSpeech._TextToSpeech11762.native == global::System.IntPtr.Zero)
-				global::android.speech.tts.TextToSpeech._TextToSpeech11762 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.staticClass, "<init>", "(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._TextToSpeech11762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.speech.tts.TextToSpeech._m20.native == global::System.IntPtr.Zero)
+				global::android.speech.tts.TextToSpeech._m20 = @__env.GetMethodIDNoThrow(global::android.speech.tts.TextToSpeech.staticClass, "<init>", "(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int SUCCESS

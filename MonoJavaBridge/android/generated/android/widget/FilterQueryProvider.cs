@@ -13,10 +13,10 @@ namespace android.widget
 		internal FilterQueryProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _runQuery17087;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;", ref global::android.widget.FilterQueryProvider_._runQuery17087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;", ref global::android.widget.FilterQueryProvider_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.Cursor;
 		}
 		static FilterQueryProvider_()
 		{
@@ -36,13 +36,13 @@ namespace android.widget
 		protected FilterQueryProviderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _FilterQueryProviderDelegateWrapper17088;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public FilterQueryProviderDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088.native == global::System.IntPtr.Zero)
-				global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProviderDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterQueryProviderDelegateWrapper.staticClass, global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088);
+			if (global::android.widget.FilterQueryProviderDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.widget.FilterQueryProviderDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProviderDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterQueryProviderDelegateWrapper.staticClass, global::android.widget.FilterQueryProviderDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static FilterQueryProviderDelegateWrapper()

@@ -20,10 +20,10 @@ namespace android.hardware
 			internal AutoFocusCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onAutoFocus6266;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.AutoFocusCallback.onAutoFocus(bool arg0, android.hardware.Camera arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.AutoFocusCallback_.staticClass, "onAutoFocus", "(ZLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.AutoFocusCallback_._onAutoFocus6266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.AutoFocusCallback_.staticClass, "onAutoFocus", "(ZLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.AutoFocusCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static AutoFocusCallback_()
 			{
@@ -43,13 +43,13 @@ namespace android.hardware
 			protected AutoFocusCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _AutoFocusCallbackDelegateWrapper6267;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public AutoFocusCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._AutoFocusCallbackDelegateWrapper6267.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._AutoFocusCallbackDelegateWrapper6267 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._AutoFocusCallbackDelegateWrapper6267);
+				if (global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.AutoFocusCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static AutoFocusCallbackDelegateWrapper()
@@ -89,10 +89,10 @@ namespace android.hardware
 			internal ErrorCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onError6268;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.ErrorCallback.onError(int arg0, android.hardware.Camera arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.ErrorCallback_.staticClass, "onError", "(ILandroid/hardware/Camera;)V", ref global::android.hardware.Camera.ErrorCallback_._onError6268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.ErrorCallback_.staticClass, "onError", "(ILandroid/hardware/Camera;)V", ref global::android.hardware.Camera.ErrorCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static ErrorCallback_()
 			{
@@ -112,13 +112,13 @@ namespace android.hardware
 			protected ErrorCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _ErrorCallbackDelegateWrapper6269;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public ErrorCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.ErrorCallbackDelegateWrapper._ErrorCallbackDelegateWrapper6269.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.ErrorCallbackDelegateWrapper._ErrorCallbackDelegateWrapper6269 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ErrorCallbackDelegateWrapper._ErrorCallbackDelegateWrapper6269);
+				if (global::android.hardware.Camera.ErrorCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.ErrorCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ErrorCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ErrorCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static ErrorCallbackDelegateWrapper()
@@ -158,10 +158,10 @@ namespace android.hardware
 			internal OnZoomChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onZoomChange6270;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.OnZoomChangeListener.onZoomChange(int arg0, bool arg1, android.hardware.Camera arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.OnZoomChangeListener_.staticClass, "onZoomChange", "(IZLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.OnZoomChangeListener_._onZoomChange6270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.OnZoomChangeListener_.staticClass, "onZoomChange", "(IZLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.OnZoomChangeListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnZoomChangeListener_()
 			{
@@ -181,13 +181,13 @@ namespace android.hardware
 			protected OnZoomChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnZoomChangeListenerDelegateWrapper6271;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnZoomChangeListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._OnZoomChangeListenerDelegateWrapper6271.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._OnZoomChangeListenerDelegateWrapper6271 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._OnZoomChangeListenerDelegateWrapper6271);
+				if (global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.OnZoomChangeListenerDelegateWrapper.staticClass, global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnZoomChangeListenerDelegateWrapper()
@@ -221,45 +221,45 @@ namespace android.hardware
 			protected Parameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _get6272;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual global::java.lang.String get(java.lang.String arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "get", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._get6272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "get", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _getInt6273;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual int getInt(java.lang.String arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getInt", "(Ljava/lang/String;)I", ref global::android.hardware.Camera.Parameters._getInt6273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getInt", "(Ljava/lang/String;)I", ref global::android.hardware.Camera.Parameters._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _remove6274;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual void remove(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "remove", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._remove6274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "remove", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _set6275;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual void set(java.lang.String arg0, java.lang.String arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "set", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._set6275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "set", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _set6276;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual void set(java.lang.String arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "set", "(Ljava/lang/String;I)V", ref global::android.hardware.Camera.Parameters._set6276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "set", "(Ljava/lang/String;I)V", ref global::android.hardware.Camera.Parameters._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _flatten6277;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual global::java.lang.String flatten()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "flatten", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._flatten6277) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "flatten", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m5) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _unflatten6278;
+			private static global::MonoJavaBridge.MethodId _m6;
 			public virtual void unflatten(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "unflatten", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._unflatten6278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "unflatten", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _setPreviewSize6279;
+			private static global::MonoJavaBridge.MethodId _m7;
 			public virtual void setPreviewSize(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewSize", "(II)V", ref global::android.hardware.Camera.Parameters._setPreviewSize6279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewSize", "(II)V", ref global::android.hardware.Camera.Parameters._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public new global::android.hardware.Camera.Size PreviewSize
 			{
@@ -268,10 +268,10 @@ namespace android.hardware
 					return getPreviewSize();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPreviewSize6280;
+			private static global::MonoJavaBridge.MethodId _m8;
 			public virtual global::android.hardware.Camera.Size getPreviewSize()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._getPreviewSize6280) as android.hardware.Camera.Size;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._m8) as android.hardware.Camera.Size;
 			}
 			public new global::java.util.List SupportedPreviewSizes
 			{
@@ -280,15 +280,15 @@ namespace android.hardware
 					return getSupportedPreviewSizes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedPreviewSizes6281;
+			private static global::MonoJavaBridge.MethodId _m9;
 			public virtual global::java.util.List getSupportedPreviewSizes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedPreviewSizes6281) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m9) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _setJpegThumbnailSize6282;
+			private static global::MonoJavaBridge.MethodId _m10;
 			public virtual void setJpegThumbnailSize(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegThumbnailSize", "(II)V", ref global::android.hardware.Camera.Parameters._setJpegThumbnailSize6282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegThumbnailSize", "(II)V", ref global::android.hardware.Camera.Parameters._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public new global::android.hardware.Camera.Size JpegThumbnailSize
 			{
@@ -297,10 +297,10 @@ namespace android.hardware
 					return getJpegThumbnailSize();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getJpegThumbnailSize6283;
+			private static global::MonoJavaBridge.MethodId _m11;
 			public virtual global::android.hardware.Camera.Size getJpegThumbnailSize()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegThumbnailSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._getJpegThumbnailSize6283) as android.hardware.Camera.Size;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegThumbnailSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._m11) as android.hardware.Camera.Size;
 			}
 			public new global::java.util.List SupportedJpegThumbnailSizes
 			{
@@ -309,15 +309,15 @@ namespace android.hardware
 					return getSupportedJpegThumbnailSizes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedJpegThumbnailSizes6284;
+			private static global::MonoJavaBridge.MethodId _m12;
 			public virtual global::java.util.List getSupportedJpegThumbnailSizes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedJpegThumbnailSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedJpegThumbnailSizes6284) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedJpegThumbnailSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m12) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _setJpegThumbnailQuality6285;
+			private static global::MonoJavaBridge.MethodId _m13;
 			public virtual void setJpegThumbnailQuality(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegThumbnailQuality", "(I)V", ref global::android.hardware.Camera.Parameters._setJpegThumbnailQuality6285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegThumbnailQuality", "(I)V", ref global::android.hardware.Camera.Parameters._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int JpegThumbnailQuality
 			{
@@ -330,15 +330,15 @@ namespace android.hardware
 					setJpegThumbnailQuality(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getJpegThumbnailQuality6286;
+			private static global::MonoJavaBridge.MethodId _m14;
 			public virtual int getJpegThumbnailQuality()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegThumbnailQuality", "()I", ref global::android.hardware.Camera.Parameters._getJpegThumbnailQuality6286);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegThumbnailQuality", "()I", ref global::android.hardware.Camera.Parameters._m14);
 			}
-			internal static global::MonoJavaBridge.MethodId _setJpegQuality6287;
+			private static global::MonoJavaBridge.MethodId _m15;
 			public virtual void setJpegQuality(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegQuality", "(I)V", ref global::android.hardware.Camera.Parameters._setJpegQuality6287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setJpegQuality", "(I)V", ref global::android.hardware.Camera.Parameters._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int JpegQuality
 			{
@@ -351,15 +351,15 @@ namespace android.hardware
 					setJpegQuality(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getJpegQuality6288;
+			private static global::MonoJavaBridge.MethodId _m16;
 			public virtual int getJpegQuality()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegQuality", "()I", ref global::android.hardware.Camera.Parameters._getJpegQuality6288);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getJpegQuality", "()I", ref global::android.hardware.Camera.Parameters._m16);
 			}
-			internal static global::MonoJavaBridge.MethodId _setPreviewFrameRate6289;
+			private static global::MonoJavaBridge.MethodId _m17;
 			public virtual void setPreviewFrameRate(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewFrameRate", "(I)V", ref global::android.hardware.Camera.Parameters._setPreviewFrameRate6289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewFrameRate", "(I)V", ref global::android.hardware.Camera.Parameters._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int PreviewFrameRate
 			{
@@ -372,10 +372,10 @@ namespace android.hardware
 					setPreviewFrameRate(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPreviewFrameRate6290;
+			private static global::MonoJavaBridge.MethodId _m18;
 			public virtual int getPreviewFrameRate()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewFrameRate", "()I", ref global::android.hardware.Camera.Parameters._getPreviewFrameRate6290);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewFrameRate", "()I", ref global::android.hardware.Camera.Parameters._m18);
 			}
 			public new global::java.util.List SupportedPreviewFrameRates
 			{
@@ -384,15 +384,15 @@ namespace android.hardware
 					return getSupportedPreviewFrameRates();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedPreviewFrameRates6291;
+			private static global::MonoJavaBridge.MethodId _m19;
 			public virtual global::java.util.List getSupportedPreviewFrameRates()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewFrameRates", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedPreviewFrameRates6291) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewFrameRates", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m19) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _setPreviewFormat6292;
+			private static global::MonoJavaBridge.MethodId _m20;
 			public virtual void setPreviewFormat(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewFormat", "(I)V", ref global::android.hardware.Camera.Parameters._setPreviewFormat6292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPreviewFormat", "(I)V", ref global::android.hardware.Camera.Parameters._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int PreviewFormat
 			{
@@ -405,10 +405,10 @@ namespace android.hardware
 					setPreviewFormat(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPreviewFormat6293;
+			private static global::MonoJavaBridge.MethodId _m21;
 			public virtual int getPreviewFormat()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewFormat", "()I", ref global::android.hardware.Camera.Parameters._getPreviewFormat6293);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPreviewFormat", "()I", ref global::android.hardware.Camera.Parameters._m21);
 			}
 			public new global::java.util.List SupportedPreviewFormats
 			{
@@ -417,15 +417,15 @@ namespace android.hardware
 					return getSupportedPreviewFormats();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedPreviewFormats6294;
+			private static global::MonoJavaBridge.MethodId _m22;
 			public virtual global::java.util.List getSupportedPreviewFormats()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewFormats", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedPreviewFormats6294) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPreviewFormats", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m22) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _setPictureSize6295;
+			private static global::MonoJavaBridge.MethodId _m23;
 			public virtual void setPictureSize(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPictureSize", "(II)V", ref global::android.hardware.Camera.Parameters._setPictureSize6295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPictureSize", "(II)V", ref global::android.hardware.Camera.Parameters._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public new global::android.hardware.Camera.Size PictureSize
 			{
@@ -434,10 +434,10 @@ namespace android.hardware
 					return getPictureSize();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPictureSize6296;
+			private static global::MonoJavaBridge.MethodId _m24;
 			public virtual global::android.hardware.Camera.Size getPictureSize()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPictureSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._getPictureSize6296) as android.hardware.Camera.Size;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPictureSize", "()Landroid/hardware/Camera$Size;", ref global::android.hardware.Camera.Parameters._m24) as android.hardware.Camera.Size;
 			}
 			public new global::java.util.List SupportedPictureSizes
 			{
@@ -446,15 +446,15 @@ namespace android.hardware
 					return getSupportedPictureSizes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedPictureSizes6297;
+			private static global::MonoJavaBridge.MethodId _m25;
 			public virtual global::java.util.List getSupportedPictureSizes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPictureSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedPictureSizes6297) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPictureSizes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m25) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _setPictureFormat6298;
+			private static global::MonoJavaBridge.MethodId _m26;
 			public virtual void setPictureFormat(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPictureFormat", "(I)V", ref global::android.hardware.Camera.Parameters._setPictureFormat6298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setPictureFormat", "(I)V", ref global::android.hardware.Camera.Parameters._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int PictureFormat
 			{
@@ -467,10 +467,10 @@ namespace android.hardware
 					setPictureFormat(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPictureFormat6299;
+			private static global::MonoJavaBridge.MethodId _m27;
 			public virtual int getPictureFormat()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPictureFormat", "()I", ref global::android.hardware.Camera.Parameters._getPictureFormat6299);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getPictureFormat", "()I", ref global::android.hardware.Camera.Parameters._m27);
 			}
 			public new global::java.util.List SupportedPictureFormats
 			{
@@ -479,10 +479,10 @@ namespace android.hardware
 					return getSupportedPictureFormats();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedPictureFormats6300;
+			private static global::MonoJavaBridge.MethodId _m28;
 			public virtual global::java.util.List getSupportedPictureFormats()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPictureFormats", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedPictureFormats6300) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedPictureFormats", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m28) as java.util.List;
 			}
 			public new int Rotation
 			{
@@ -491,10 +491,10 @@ namespace android.hardware
 					setRotation(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setRotation6301;
+			private static global::MonoJavaBridge.MethodId _m29;
 			public virtual void setRotation(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setRotation", "(I)V", ref global::android.hardware.Camera.Parameters._setRotation6301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setRotation", "(I)V", ref global::android.hardware.Camera.Parameters._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new double GpsLatitude
 			{
@@ -503,10 +503,10 @@ namespace android.hardware
 					setGpsLatitude(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setGpsLatitude6302;
+			private static global::MonoJavaBridge.MethodId _m30;
 			public virtual void setGpsLatitude(double arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsLatitude", "(D)V", ref global::android.hardware.Camera.Parameters._setGpsLatitude6302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsLatitude", "(D)V", ref global::android.hardware.Camera.Parameters._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new double GpsLongitude
 			{
@@ -515,10 +515,10 @@ namespace android.hardware
 					setGpsLongitude(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setGpsLongitude6303;
+			private static global::MonoJavaBridge.MethodId _m31;
 			public virtual void setGpsLongitude(double arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsLongitude", "(D)V", ref global::android.hardware.Camera.Parameters._setGpsLongitude6303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsLongitude", "(D)V", ref global::android.hardware.Camera.Parameters._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new double GpsAltitude
 			{
@@ -527,10 +527,10 @@ namespace android.hardware
 					setGpsAltitude(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setGpsAltitude6304;
+			private static global::MonoJavaBridge.MethodId _m32;
 			public virtual void setGpsAltitude(double arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsAltitude", "(D)V", ref global::android.hardware.Camera.Parameters._setGpsAltitude6304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsAltitude", "(D)V", ref global::android.hardware.Camera.Parameters._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new long GpsTimestamp
 			{
@@ -539,10 +539,10 @@ namespace android.hardware
 					setGpsTimestamp(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setGpsTimestamp6305;
+			private static global::MonoJavaBridge.MethodId _m33;
 			public virtual void setGpsTimestamp(long arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsTimestamp", "(J)V", ref global::android.hardware.Camera.Parameters._setGpsTimestamp6305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsTimestamp", "(J)V", ref global::android.hardware.Camera.Parameters._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.lang.String GpsProcessingMethod
 			{
@@ -551,15 +551,15 @@ namespace android.hardware
 					setGpsProcessingMethod(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setGpsProcessingMethod6306;
+			private static global::MonoJavaBridge.MethodId _m34;
 			public virtual void setGpsProcessingMethod(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsProcessingMethod", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setGpsProcessingMethod6306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setGpsProcessingMethod", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _removeGpsData6307;
+			private static global::MonoJavaBridge.MethodId _m35;
 			public virtual void removeGpsData()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "removeGpsData", "()V", ref global::android.hardware.Camera.Parameters._removeGpsData6307);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "removeGpsData", "()V", ref global::android.hardware.Camera.Parameters._m35);
 			}
 			public new global::java.lang.String WhiteBalance
 			{
@@ -572,15 +572,15 @@ namespace android.hardware
 					setWhiteBalance(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getWhiteBalance6308;
+			private static global::MonoJavaBridge.MethodId _m36;
 			public virtual global::java.lang.String getWhiteBalance()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getWhiteBalance", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getWhiteBalance6308) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getWhiteBalance", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m36) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setWhiteBalance6309;
+			private static global::MonoJavaBridge.MethodId _m37;
 			public virtual void setWhiteBalance(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setWhiteBalance", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setWhiteBalance6309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setWhiteBalance", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedWhiteBalance
 			{
@@ -589,10 +589,10 @@ namespace android.hardware
 					return getSupportedWhiteBalance();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedWhiteBalance6310;
+			private static global::MonoJavaBridge.MethodId _m38;
 			public virtual global::java.util.List getSupportedWhiteBalance()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedWhiteBalance", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedWhiteBalance6310) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedWhiteBalance", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m38) as java.util.List;
 			}
 			public new global::java.lang.String ColorEffect
 			{
@@ -605,15 +605,15 @@ namespace android.hardware
 					setColorEffect(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getColorEffect6311;
+			private static global::MonoJavaBridge.MethodId _m39;
 			public virtual global::java.lang.String getColorEffect()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getColorEffect", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getColorEffect6311) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getColorEffect", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m39) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setColorEffect6312;
+			private static global::MonoJavaBridge.MethodId _m40;
 			public virtual void setColorEffect(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setColorEffect", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setColorEffect6312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setColorEffect", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedColorEffects
 			{
@@ -622,10 +622,10 @@ namespace android.hardware
 					return getSupportedColorEffects();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedColorEffects6313;
+			private static global::MonoJavaBridge.MethodId _m41;
 			public virtual global::java.util.List getSupportedColorEffects()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedColorEffects", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedColorEffects6313) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedColorEffects", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m41) as java.util.List;
 			}
 			public new global::java.lang.String Antibanding
 			{
@@ -638,15 +638,15 @@ namespace android.hardware
 					setAntibanding(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getAntibanding6314;
+			private static global::MonoJavaBridge.MethodId _m42;
 			public virtual global::java.lang.String getAntibanding()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getAntibanding", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getAntibanding6314) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getAntibanding", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m42) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setAntibanding6315;
+			private static global::MonoJavaBridge.MethodId _m43;
 			public virtual void setAntibanding(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setAntibanding", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setAntibanding6315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setAntibanding", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedAntibanding
 			{
@@ -655,10 +655,10 @@ namespace android.hardware
 					return getSupportedAntibanding();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedAntibanding6316;
+			private static global::MonoJavaBridge.MethodId _m44;
 			public virtual global::java.util.List getSupportedAntibanding()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedAntibanding", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedAntibanding6316) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedAntibanding", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m44) as java.util.List;
 			}
 			public new global::java.lang.String SceneMode
 			{
@@ -671,15 +671,15 @@ namespace android.hardware
 					setSceneMode(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSceneMode6317;
+			private static global::MonoJavaBridge.MethodId _m45;
 			public virtual global::java.lang.String getSceneMode()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getSceneMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getSceneMode6317) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getSceneMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m45) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setSceneMode6318;
+			private static global::MonoJavaBridge.MethodId _m46;
 			public virtual void setSceneMode(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setSceneMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setSceneMode6318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setSceneMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedSceneModes
 			{
@@ -688,10 +688,10 @@ namespace android.hardware
 					return getSupportedSceneModes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedSceneModes6319;
+			private static global::MonoJavaBridge.MethodId _m47;
 			public virtual global::java.util.List getSupportedSceneModes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedSceneModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedSceneModes6319) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedSceneModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m47) as java.util.List;
 			}
 			public new global::java.lang.String FlashMode
 			{
@@ -704,15 +704,15 @@ namespace android.hardware
 					setFlashMode(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getFlashMode6320;
+			private static global::MonoJavaBridge.MethodId _m48;
 			public virtual global::java.lang.String getFlashMode()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getFlashMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getFlashMode6320) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getFlashMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m48) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setFlashMode6321;
+			private static global::MonoJavaBridge.MethodId _m49;
 			public virtual void setFlashMode(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setFlashMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setFlashMode6321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setFlashMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m49, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedFlashModes
 			{
@@ -721,10 +721,10 @@ namespace android.hardware
 					return getSupportedFlashModes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedFlashModes6322;
+			private static global::MonoJavaBridge.MethodId _m50;
 			public virtual global::java.util.List getSupportedFlashModes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedFlashModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedFlashModes6322) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedFlashModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m50) as java.util.List;
 			}
 			public new global::java.lang.String FocusMode
 			{
@@ -737,15 +737,15 @@ namespace android.hardware
 					setFocusMode(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getFocusMode6323;
+			private static global::MonoJavaBridge.MethodId _m51;
 			public virtual global::java.lang.String getFocusMode()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getFocusMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._getFocusMode6323) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.hardware.Camera.Parameters.staticClass, "getFocusMode", "()Ljava/lang/String;", ref global::android.hardware.Camera.Parameters._m51) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setFocusMode6324;
+			private static global::MonoJavaBridge.MethodId _m52;
 			public virtual void setFocusMode(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setFocusMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._setFocusMode6324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setFocusMode", "(Ljava/lang/String;)V", ref global::android.hardware.Camera.Parameters._m52, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new global::java.util.List SupportedFocusModes
 			{
@@ -754,10 +754,10 @@ namespace android.hardware
 					return getSupportedFocusModes();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getSupportedFocusModes6325;
+			private static global::MonoJavaBridge.MethodId _m53;
 			public virtual global::java.util.List getSupportedFocusModes()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedFocusModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getSupportedFocusModes6325) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getSupportedFocusModes", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m53) as java.util.List;
 			}
 			public new float FocalLength
 			{
@@ -766,10 +766,10 @@ namespace android.hardware
 					return getFocalLength();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getFocalLength6326;
+			private static global::MonoJavaBridge.MethodId _m54;
 			public virtual float getFocalLength()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getFocalLength", "()F", ref global::android.hardware.Camera.Parameters._getFocalLength6326);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getFocalLength", "()F", ref global::android.hardware.Camera.Parameters._m54);
 			}
 			public new float HorizontalViewAngle
 			{
@@ -778,10 +778,10 @@ namespace android.hardware
 					return getHorizontalViewAngle();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getHorizontalViewAngle6327;
+			private static global::MonoJavaBridge.MethodId _m55;
 			public virtual float getHorizontalViewAngle()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getHorizontalViewAngle", "()F", ref global::android.hardware.Camera.Parameters._getHorizontalViewAngle6327);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getHorizontalViewAngle", "()F", ref global::android.hardware.Camera.Parameters._m55);
 			}
 			public new float VerticalViewAngle
 			{
@@ -790,10 +790,10 @@ namespace android.hardware
 					return getVerticalViewAngle();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getVerticalViewAngle6328;
+			private static global::MonoJavaBridge.MethodId _m56;
 			public virtual float getVerticalViewAngle()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getVerticalViewAngle", "()F", ref global::android.hardware.Camera.Parameters._getVerticalViewAngle6328);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getVerticalViewAngle", "()F", ref global::android.hardware.Camera.Parameters._m56);
 			}
 			public new int ExposureCompensation
 			{
@@ -806,15 +806,15 @@ namespace android.hardware
 					setExposureCompensation(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getExposureCompensation6329;
+			private static global::MonoJavaBridge.MethodId _m57;
 			public virtual int getExposureCompensation()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._getExposureCompensation6329);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._m57);
 			}
-			internal static global::MonoJavaBridge.MethodId _setExposureCompensation6330;
+			private static global::MonoJavaBridge.MethodId _m58;
 			public virtual void setExposureCompensation(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setExposureCompensation", "(I)V", ref global::android.hardware.Camera.Parameters._setExposureCompensation6330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setExposureCompensation", "(I)V", ref global::android.hardware.Camera.Parameters._m58, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int MaxExposureCompensation
 			{
@@ -823,10 +823,10 @@ namespace android.hardware
 					return getMaxExposureCompensation();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getMaxExposureCompensation6331;
+			private static global::MonoJavaBridge.MethodId _m59;
 			public virtual int getMaxExposureCompensation()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMaxExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._getMaxExposureCompensation6331);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMaxExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._m59);
 			}
 			public new int MinExposureCompensation
 			{
@@ -835,10 +835,10 @@ namespace android.hardware
 					return getMinExposureCompensation();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getMinExposureCompensation6332;
+			private static global::MonoJavaBridge.MethodId _m60;
 			public virtual int getMinExposureCompensation()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMinExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._getMinExposureCompensation6332);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMinExposureCompensation", "()I", ref global::android.hardware.Camera.Parameters._m60);
 			}
 			public new float ExposureCompensationStep
 			{
@@ -847,10 +847,10 @@ namespace android.hardware
 					return getExposureCompensationStep();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getExposureCompensationStep6333;
+			private static global::MonoJavaBridge.MethodId _m61;
 			public virtual float getExposureCompensationStep()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getExposureCompensationStep", "()F", ref global::android.hardware.Camera.Parameters._getExposureCompensationStep6333);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getExposureCompensationStep", "()F", ref global::android.hardware.Camera.Parameters._m61);
 			}
 			public new int Zoom
 			{
@@ -863,20 +863,20 @@ namespace android.hardware
 					setZoom(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getZoom6334;
+			private static global::MonoJavaBridge.MethodId _m62;
 			public virtual int getZoom()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getZoom", "()I", ref global::android.hardware.Camera.Parameters._getZoom6334);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getZoom", "()I", ref global::android.hardware.Camera.Parameters._m62);
 			}
-			internal static global::MonoJavaBridge.MethodId _setZoom6335;
+			private static global::MonoJavaBridge.MethodId _m63;
 			public virtual void setZoom(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setZoom", "(I)V", ref global::android.hardware.Camera.Parameters._setZoom6335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, "setZoom", "(I)V", ref global::android.hardware.Camera.Parameters._m63, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isZoomSupported6336;
+			private static global::MonoJavaBridge.MethodId _m64;
 			public virtual bool isZoomSupported()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Parameters.staticClass, "isZoomSupported", "()Z", ref global::android.hardware.Camera.Parameters._isZoomSupported6336);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Parameters.staticClass, "isZoomSupported", "()Z", ref global::android.hardware.Camera.Parameters._m64);
 			}
 			public new int MaxZoom
 			{
@@ -885,10 +885,10 @@ namespace android.hardware
 					return getMaxZoom();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getMaxZoom6337;
+			private static global::MonoJavaBridge.MethodId _m65;
 			public virtual int getMaxZoom()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMaxZoom", "()I", ref global::android.hardware.Camera.Parameters._getMaxZoom6337);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, "getMaxZoom", "()I", ref global::android.hardware.Camera.Parameters._m65);
 			}
 			public new global::java.util.List ZoomRatios
 			{
@@ -897,15 +897,15 @@ namespace android.hardware
 					return getZoomRatios();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getZoomRatios6338;
+			private static global::MonoJavaBridge.MethodId _m66;
 			public virtual global::java.util.List getZoomRatios()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getZoomRatios", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._getZoomRatios6338) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.hardware.Camera.Parameters.staticClass, "getZoomRatios", "()Ljava/util/List;", ref global::android.hardware.Camera.Parameters._m66) as java.util.List;
 			}
-			internal static global::MonoJavaBridge.MethodId _isSmoothZoomSupported6339;
+			private static global::MonoJavaBridge.MethodId _m67;
 			public virtual bool isSmoothZoomSupported()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Parameters.staticClass, "isSmoothZoomSupported", "()Z", ref global::android.hardware.Camera.Parameters._isSmoothZoomSupported6339);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Parameters.staticClass, "isSmoothZoomSupported", "()Z", ref global::android.hardware.Camera.Parameters._m67);
 			}
 			public static global::java.lang.String WHITE_BALANCE_AUTO
 			{
@@ -1258,10 +1258,10 @@ namespace android.hardware
 			internal PictureCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onPictureTaken6387;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.PictureCallback.onPictureTaken(byte[] arg0, android.hardware.Camera arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.PictureCallback_.staticClass, "onPictureTaken", "([BLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.PictureCallback_._onPictureTaken6387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.PictureCallback_.staticClass, "onPictureTaken", "([BLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.PictureCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static PictureCallback_()
 			{
@@ -1281,13 +1281,13 @@ namespace android.hardware
 			protected PictureCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _PictureCallbackDelegateWrapper6388;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public PictureCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.PictureCallbackDelegateWrapper._PictureCallbackDelegateWrapper6388.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.PictureCallbackDelegateWrapper._PictureCallbackDelegateWrapper6388 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PictureCallbackDelegateWrapper._PictureCallbackDelegateWrapper6388);
+				if (global::android.hardware.Camera.PictureCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.PictureCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PictureCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PictureCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static PictureCallbackDelegateWrapper()
@@ -1327,10 +1327,10 @@ namespace android.hardware
 			internal PreviewCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onPreviewFrame6389;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.PreviewCallback.onPreviewFrame(byte[] arg0, android.hardware.Camera arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.PreviewCallback_.staticClass, "onPreviewFrame", "([BLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.PreviewCallback_._onPreviewFrame6389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.PreviewCallback_.staticClass, "onPreviewFrame", "([BLandroid/hardware/Camera;)V", ref global::android.hardware.Camera.PreviewCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static PreviewCallback_()
 			{
@@ -1350,13 +1350,13 @@ namespace android.hardware
 			protected PreviewCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _PreviewCallbackDelegateWrapper6390;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public PreviewCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.PreviewCallbackDelegateWrapper._PreviewCallbackDelegateWrapper6390.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.PreviewCallbackDelegateWrapper._PreviewCallbackDelegateWrapper6390 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PreviewCallbackDelegateWrapper._PreviewCallbackDelegateWrapper6390);
+				if (global::android.hardware.Camera.PreviewCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.PreviewCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.PreviewCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.PreviewCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static PreviewCallbackDelegateWrapper()
@@ -1396,10 +1396,10 @@ namespace android.hardware
 			internal ShutterCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onShutter6391;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.hardware.Camera.ShutterCallback.onShutter()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.ShutterCallback_.staticClass, "onShutter", "()V", ref global::android.hardware.Camera.ShutterCallback_._onShutter6391);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.ShutterCallback_.staticClass, "onShutter", "()V", ref global::android.hardware.Camera.ShutterCallback_._m0);
 			}
 			static ShutterCallback_()
 			{
@@ -1419,13 +1419,13 @@ namespace android.hardware
 			protected ShutterCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _ShutterCallbackDelegateWrapper6392;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public ShutterCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.ShutterCallbackDelegateWrapper._ShutterCallbackDelegateWrapper6392.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.ShutterCallbackDelegateWrapper._ShutterCallbackDelegateWrapper6392 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ShutterCallbackDelegateWrapper._ShutterCallbackDelegateWrapper6392);
+				if (global::android.hardware.Camera.ShutterCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.ShutterCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.ShutterCallbackDelegateWrapper.staticClass, global::android.hardware.Camera.ShutterCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static ShutterCallbackDelegateWrapper()
@@ -1459,44 +1459,44 @@ namespace android.hardware
 			protected Size(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _equals6393;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override bool equals(java.lang.Object arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Size.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.hardware.Camera.Size._equals6393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.hardware.Camera.Size.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.hardware.Camera.Size._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _hashCode6394;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public override int hashCode()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Size.staticClass, "hashCode", "()I", ref global::android.hardware.Camera.Size._hashCode6394);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.hardware.Camera.Size.staticClass, "hashCode", "()I", ref global::android.hardware.Camera.Size._m1);
 			}
-			internal static global::MonoJavaBridge.MethodId _Size6395;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public Size(android.hardware.Camera arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.hardware.Camera.Size._Size6395.native == global::System.IntPtr.Zero)
-					global::android.hardware.Camera.Size._Size6395 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.Size.staticClass, "<init>", "(Landroid/hardware/Camera;II)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.Size.staticClass, global::android.hardware.Camera.Size._Size6395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				if (global::android.hardware.Camera.Size._m2.native == global::System.IntPtr.Zero)
+					global::android.hardware.Camera.Size._m2 = @__env.GetMethodIDNoThrow(global::android.hardware.Camera.Size.staticClass, "<init>", "(Landroid/hardware/Camera;II)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.Camera.Size.staticClass, global::android.hardware.Camera.Size._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _width6396;
+			internal static global::MonoJavaBridge.FieldId _width2484;
 			public int width
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _width6396);
+					return @__env.GetIntField(this.JvmHandle, _width2484);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _height6397;
+			internal static global::MonoJavaBridge.FieldId _height2485;
 			public int height
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _height6397);
+					return @__env.GetIntField(this.JvmHandle, _height2485);
 				}
 				set
 				{
@@ -1506,50 +1506,50 @@ namespace android.hardware
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.hardware.Camera.Size.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Camera$Size"));
-				global::android.hardware.Camera.Size._width6396 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "width", "I");
-				global::android.hardware.Camera.Size._height6397 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "height", "I");
+				global::android.hardware.Camera.Size._width2484 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "width", "I");
+				global::android.hardware.Camera.Size._height2485 = @__env.GetFieldIDNoThrow(global::android.hardware.Camera.Size.staticClass, "height", "I");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize6398;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "finalize", "()V", ref global::android.hardware.Camera._finalize6398);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "finalize", "()V", ref global::android.hardware.Camera._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _lock6399;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void @lock()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "@lock", "()V", ref global::android.hardware.Camera._lock6399);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "@lock", "()V", ref global::android.hardware.Camera._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _release6400;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void release()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "release", "()V", ref global::android.hardware.Camera._release6400);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "release", "()V", ref global::android.hardware.Camera._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _open6401;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static global::android.hardware.Camera open()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.hardware.Camera._open6401.native == global::System.IntPtr.Zero)
-				global::android.hardware.Camera._open6401 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.Camera.staticClass, "open", "()Landroid/hardware/Camera;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.hardware.Camera.staticClass, global::android.hardware.Camera._open6401)) as android.hardware.Camera;
+			if (global::android.hardware.Camera._m3.native == global::System.IntPtr.Zero)
+				global::android.hardware.Camera._m3 = @__env.GetStaticMethodIDNoThrow(global::android.hardware.Camera.staticClass, "open", "()Landroid/hardware/Camera;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.hardware.Camera.staticClass, global::android.hardware.Camera._m3)) as android.hardware.Camera;
 		}
-		internal static global::MonoJavaBridge.MethodId _unlock6402;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void unlock()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "unlock", "()V", ref global::android.hardware.Camera._unlock6402);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "unlock", "()V", ref global::android.hardware.Camera._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameters6403;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::android.hardware.Camera.Parameters getParameters()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.staticClass, "getParameters", "()Landroid/hardware/Camera$Parameters;", ref global::android.hardware.Camera._getParameters6403) as android.hardware.Camera.Parameters;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.hardware.Camera.staticClass, "getParameters", "()Landroid/hardware/Camera$Parameters;", ref global::android.hardware.Camera._m5) as android.hardware.Camera.Parameters;
 		}
-		internal static global::MonoJavaBridge.MethodId _reconnect6404;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void reconnect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "reconnect", "()V", ref global::android.hardware.Camera._reconnect6404);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "reconnect", "()V", ref global::android.hardware.Camera._m6);
 		}
 		public new global::android.view.SurfaceHolder PreviewDisplay
 		{
@@ -1558,25 +1558,25 @@ namespace android.hardware
 				setPreviewDisplay(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreviewDisplay6405;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setPreviewDisplay(android.view.SurfaceHolder arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewDisplay", "(Landroid/view/SurfaceHolder;)V", ref global::android.hardware.Camera._setPreviewDisplay6405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewDisplay", "(Landroid/view/SurfaceHolder;)V", ref global::android.hardware.Camera._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startPreview6406;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void startPreview()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "startPreview", "()V", ref global::android.hardware.Camera._startPreview6406);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "startPreview", "()V", ref global::android.hardware.Camera._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopPreview6407;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void stopPreview()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "stopPreview", "()V", ref global::android.hardware.Camera._stopPreview6407);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "stopPreview", "()V", ref global::android.hardware.Camera._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreviewCallback6408;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setPreviewCallback(android.hardware.Camera.PreviewCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._setPreviewCallback6408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setPreviewCallback(global::android.hardware.Camera.PreviewCallbackDelegate arg0)
 		{
@@ -1589,10 +1589,10 @@ namespace android.hardware
 				setOneShotPreviewCallback(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setOneShotPreviewCallback6409;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setOneShotPreviewCallback(android.hardware.Camera.PreviewCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setOneShotPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._setOneShotPreviewCallback6409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setOneShotPreviewCallback", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOneShotPreviewCallback(global::android.hardware.Camera.PreviewCallbackDelegate arg0)
 		{
@@ -1605,61 +1605,61 @@ namespace android.hardware
 				setPreviewCallbackWithBuffer(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreviewCallbackWithBuffer6410;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setPreviewCallbackWithBuffer(android.hardware.Camera.PreviewCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewCallbackWithBuffer", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._setPreviewCallbackWithBuffer6410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setPreviewCallbackWithBuffer", "(Landroid/hardware/Camera$PreviewCallback;)V", ref global::android.hardware.Camera._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setPreviewCallbackWithBuffer(global::android.hardware.Camera.PreviewCallbackDelegate arg0)
 		{
 			setPreviewCallbackWithBuffer((global::android.hardware.Camera.PreviewCallbackDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _addCallbackBuffer6411;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void addCallbackBuffer(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "addCallbackBuffer", "([B)V", ref global::android.hardware.Camera._addCallbackBuffer6411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "addCallbackBuffer", "([B)V", ref global::android.hardware.Camera._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _autoFocus6412;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void autoFocus(android.hardware.Camera.AutoFocusCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "autoFocus", "(Landroid/hardware/Camera$AutoFocusCallback;)V", ref global::android.hardware.Camera._autoFocus6412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "autoFocus", "(Landroid/hardware/Camera$AutoFocusCallback;)V", ref global::android.hardware.Camera._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void autoFocus(global::android.hardware.Camera.AutoFocusCallbackDelegate arg0)
 		{
 			autoFocus((global::android.hardware.Camera.AutoFocusCallbackDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelAutoFocus6413;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void cancelAutoFocus()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "cancelAutoFocus", "()V", ref global::android.hardware.Camera._cancelAutoFocus6413);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "cancelAutoFocus", "()V", ref global::android.hardware.Camera._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _takePicture6414;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void takePicture(android.hardware.Camera.ShutterCallback arg0, android.hardware.Camera.PictureCallback arg1, android.hardware.Camera.PictureCallback arg2, android.hardware.Camera.PictureCallback arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "takePicture", "(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V", ref global::android.hardware.Camera._takePicture6414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "takePicture", "(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V", ref global::android.hardware.Camera._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void takePicture(global::android.hardware.Camera.ShutterCallbackDelegate arg0, global::android.hardware.Camera.PictureCallbackDelegate arg1, global::android.hardware.Camera.PictureCallbackDelegate arg2, global::android.hardware.Camera.PictureCallbackDelegate arg3)
 		{
 			takePicture((global::android.hardware.Camera.ShutterCallbackDelegateWrapper)arg0, (global::android.hardware.Camera.PictureCallbackDelegateWrapper)arg1, (global::android.hardware.Camera.PictureCallbackDelegateWrapper)arg2, (global::android.hardware.Camera.PictureCallbackDelegateWrapper)arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _takePicture6415;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void takePicture(android.hardware.Camera.ShutterCallback arg0, android.hardware.Camera.PictureCallback arg1, android.hardware.Camera.PictureCallback arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "takePicture", "(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V", ref global::android.hardware.Camera._takePicture6415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "takePicture", "(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V", ref global::android.hardware.Camera._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public void takePicture(global::android.hardware.Camera.ShutterCallbackDelegate arg0, global::android.hardware.Camera.PictureCallbackDelegate arg1, global::android.hardware.Camera.PictureCallbackDelegate arg2)
 		{
 			takePicture((global::android.hardware.Camera.ShutterCallbackDelegateWrapper)arg0, (global::android.hardware.Camera.PictureCallbackDelegateWrapper)arg1, (global::android.hardware.Camera.PictureCallbackDelegateWrapper)arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _startSmoothZoom6416;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void startSmoothZoom(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "startSmoothZoom", "(I)V", ref global::android.hardware.Camera._startSmoothZoom6416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "startSmoothZoom", "(I)V", ref global::android.hardware.Camera._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _stopSmoothZoom6417;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void stopSmoothZoom()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "stopSmoothZoom", "()V", ref global::android.hardware.Camera._stopSmoothZoom6417);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "stopSmoothZoom", "()V", ref global::android.hardware.Camera._m19);
 		}
 		public new int DisplayOrientation
 		{
@@ -1668,10 +1668,10 @@ namespace android.hardware
 				setDisplayOrientation(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDisplayOrientation6418;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setDisplayOrientation(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setDisplayOrientation", "(I)V", ref global::android.hardware.Camera._setDisplayOrientation6418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setDisplayOrientation", "(I)V", ref global::android.hardware.Camera._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.hardware.Camera.OnZoomChangeListener ZoomChangeListener
 		{
@@ -1680,28 +1680,28 @@ namespace android.hardware
 				setZoomChangeListener(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setZoomChangeListener6419;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setZoomChangeListener(android.hardware.Camera.OnZoomChangeListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setZoomChangeListener", "(Landroid/hardware/Camera$OnZoomChangeListener;)V", ref global::android.hardware.Camera._setZoomChangeListener6419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setZoomChangeListener", "(Landroid/hardware/Camera$OnZoomChangeListener;)V", ref global::android.hardware.Camera._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setZoomChangeListener(global::android.hardware.Camera.OnZoomChangeListenerDelegate arg0)
 		{
 			setZoomChangeListener((global::android.hardware.Camera.OnZoomChangeListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setErrorCallback6420;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setErrorCallback(android.hardware.Camera.ErrorCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setErrorCallback", "(Landroid/hardware/Camera$ErrorCallback;)V", ref global::android.hardware.Camera._setErrorCallback6420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setErrorCallback", "(Landroid/hardware/Camera$ErrorCallback;)V", ref global::android.hardware.Camera._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setErrorCallback(global::android.hardware.Camera.ErrorCallbackDelegate arg0)
 		{
 			setErrorCallback((global::android.hardware.Camera.ErrorCallbackDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setParameters6421;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void setParameters(android.hardware.Camera.Parameters arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setParameters", "(Landroid/hardware/Camera$Parameters;)V", ref global::android.hardware.Camera._setParameters6421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.Camera.staticClass, "setParameters", "(Landroid/hardware/Camera$Parameters;)V", ref global::android.hardware.Camera._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int CAMERA_ERROR_UNKNOWN
 		{

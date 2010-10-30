@@ -7,40 +7,40 @@ namespace javax.xml.datatype
 		protected DatatypeConfigurationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30635;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public DatatypeConfigurationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30635.native == global::System.IntPtr.Zero)
-				global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30635 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30635);
+			if (global::javax.xml.datatype.DatatypeConfigurationException._m0.native == global::System.IntPtr.Zero)
+				global::javax.xml.datatype.DatatypeConfigurationException._m0 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30636;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public DatatypeConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30636.native == global::System.IntPtr.Zero)
-				global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30636 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.datatype.DatatypeConfigurationException._m1.native == global::System.IntPtr.Zero)
+				global::javax.xml.datatype.DatatypeConfigurationException._m1 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30637;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public DatatypeConfigurationException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30637.native == global::System.IntPtr.Zero)
-				global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30637 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.xml.datatype.DatatypeConfigurationException._m2.native == global::System.IntPtr.Zero)
+				global::javax.xml.datatype.DatatypeConfigurationException._m2 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30638;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public DatatypeConfigurationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30638.native == global::System.IntPtr.Zero)
-				global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30638 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.datatype.DatatypeConfigurationException._m3.native == global::System.IntPtr.Zero)
+				global::javax.xml.datatype.DatatypeConfigurationException._m3 = @__env.GetMethodIDNoThrow(global::javax.xml.datatype.DatatypeConfigurationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static DatatypeConfigurationException()

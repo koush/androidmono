@@ -14,27 +14,27 @@ namespace android.text
 			protected Metrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _toString12694;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.BoringLayout.Metrics.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.BoringLayout.Metrics._toString12694) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.BoringLayout.Metrics.staticClass, "toString", "()Ljava/lang/String;", ref global::android.text.BoringLayout.Metrics._m0) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _Metrics12695;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public Metrics() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.BoringLayout.Metrics._Metrics12695.native == global::System.IntPtr.Zero)
-					global::android.text.BoringLayout.Metrics._Metrics12695 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.Metrics.staticClass, global::android.text.BoringLayout.Metrics._Metrics12695);
+				if (global::android.text.BoringLayout.Metrics._m1.native == global::System.IntPtr.Zero)
+					global::android.text.BoringLayout.Metrics._m1 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.Metrics.staticClass, global::android.text.BoringLayout.Metrics._m1);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _width12696;
+			internal static global::MonoJavaBridge.FieldId _width5188;
 			public int width
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _width12696);
+					return @__env.GetIntField(this.JvmHandle, _width5188);
 				}
 				set
 				{
@@ -44,40 +44,40 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.BoringLayout.Metrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/BoringLayout$Metrics"));
-				global::android.text.BoringLayout.Metrics._width12696 = @__env.GetFieldIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "width", "I");
+				global::android.text.BoringLayout.Metrics._width5188 = @__env.GetFieldIDNoThrow(global::android.text.BoringLayout.Metrics.staticClass, "width", "I");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _make12697;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.text.BoringLayout make(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._make12697.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._make12697 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._make12697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9))) as android.text.BoringLayout;
+			if (global::android.text.BoringLayout._m0.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9))) as android.text.BoringLayout;
 		}
 		public static android.text.BoringLayout make(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
 		{
 			return make((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 		}
-		internal static global::MonoJavaBridge.MethodId _make12698;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static global::android.text.BoringLayout make(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._make12698.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._make12698 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._make12698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7))) as android.text.BoringLayout;
+			if (global::android.text.BoringLayout._m1.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m1 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7))) as android.text.BoringLayout;
 		}
 		public static android.text.BoringLayout make(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
 		{
 			return make((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 		}
-		internal static global::MonoJavaBridge.MethodId _draw12699;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Path arg1, android.graphics.Paint arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.BoringLayout.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V", ref global::android.text.BoringLayout._draw12699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.BoringLayout.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V", ref global::android.text.BoringLayout._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new int Height
 		{
@@ -86,10 +86,10 @@ namespace android.text
 				return getHeight();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeight12700;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int getHeight()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getHeight", "()I", ref global::android.text.BoringLayout._getHeight12700);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getHeight", "()I", ref global::android.text.BoringLayout._m3);
 		}
 		public new int LineCount
 		{
@@ -98,10 +98,10 @@ namespace android.text
 				return getLineCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineCount12701;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int getLineCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineCount", "()I", ref global::android.text.BoringLayout._getLineCount12701);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineCount", "()I", ref global::android.text.BoringLayout._m4);
 		}
 		public new int EllipsizedWidth
 		{
@@ -110,40 +110,40 @@ namespace android.text
 				return getEllipsizedWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsizedWidth12702;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override int getEllipsizedWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsizedWidth", "()I", ref global::android.text.BoringLayout._getEllipsizedWidth12702);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsizedWidth", "()I", ref global::android.text.BoringLayout._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineTop12703;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override int getLineTop(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineTop", "(I)I", ref global::android.text.BoringLayout._getLineTop12703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineTop", "(I)I", ref global::android.text.BoringLayout._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDescent12704;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override int getLineDescent(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineDescent", "(I)I", ref global::android.text.BoringLayout._getLineDescent12704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineDescent", "(I)I", ref global::android.text.BoringLayout._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineStart12705;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override int getLineStart(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineStart", "(I)I", ref global::android.text.BoringLayout._getLineStart12705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getLineStart", "(I)I", ref global::android.text.BoringLayout._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphDirection12706;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override int getParagraphDirection(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getParagraphDirection", "(I)I", ref global::android.text.BoringLayout._getParagraphDirection12706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getParagraphDirection", "(I)I", ref global::android.text.BoringLayout._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineContainsTab12707;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override bool getLineContainsTab(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.BoringLayout.staticClass, "getLineContainsTab", "(I)Z", ref global::android.text.BoringLayout._getLineContainsTab12707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.BoringLayout.staticClass, "getLineContainsTab", "(I)Z", ref global::android.text.BoringLayout._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDirections12708;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public sealed override global::android.text.Layout.Directions getLineDirections(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;", ref global::android.text.BoringLayout._getLineDirections12708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Layout.Directions;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;", ref global::android.text.BoringLayout._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Layout.Directions;
 		}
 		public new int TopPadding
 		{
@@ -152,10 +152,10 @@ namespace android.text
 				return getTopPadding();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTopPadding12709;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override int getTopPadding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getTopPadding", "()I", ref global::android.text.BoringLayout._getTopPadding12709);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getTopPadding", "()I", ref global::android.text.BoringLayout._m12);
 		}
 		public new int BottomPadding
 		{
@@ -164,89 +164,89 @@ namespace android.text
 				return getBottomPadding();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBottomPadding12710;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public override int getBottomPadding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getBottomPadding", "()I", ref global::android.text.BoringLayout._getBottomPadding12710);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getBottomPadding", "()I", ref global::android.text.BoringLayout._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineMax12711;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public override float getLineMax(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.text.BoringLayout.staticClass, "getLineMax", "(I)F", ref global::android.text.BoringLayout._getLineMax12711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.text.BoringLayout.staticClass, "getLineMax", "(I)F", ref global::android.text.BoringLayout._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisStart12712;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public override int getEllipsisStart(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsisStart", "(I)I", ref global::android.text.BoringLayout._getEllipsisStart12712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsisStart", "(I)I", ref global::android.text.BoringLayout._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisCount12713;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override int getEllipsisCount(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsisCount", "(I)I", ref global::android.text.BoringLayout._getEllipsisCount12713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.BoringLayout.staticClass, "getEllipsisCount", "(I)I", ref global::android.text.BoringLayout._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceOrMake12714;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual global::android.text.BoringLayout replaceOrMake(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;", ref global::android.text.BoringLayout._replaceOrMake12714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7)) as android.text.BoringLayout;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;", ref global::android.text.BoringLayout._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7)) as android.text.BoringLayout;
 		}
 		public android.text.BoringLayout replaceOrMake(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
 		{
 			return replaceOrMake((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceOrMake12715;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual global::android.text.BoringLayout replaceOrMake(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;", ref global::android.text.BoringLayout._replaceOrMake12715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9)) as android.text.BoringLayout;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.BoringLayout.staticClass, "replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;", ref global::android.text.BoringLayout._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9)) as android.text.BoringLayout;
 		}
 		public android.text.BoringLayout replaceOrMake(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
 		{
 			return replaceOrMake((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 		}
-		internal static global::MonoJavaBridge.MethodId _isBoring12716;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static global::android.text.BoringLayout.Metrics isBoring(java.lang.CharSequence arg0, android.text.TextPaint arg1, android.text.BoringLayout.Metrics arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._isBoring12716.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._isBoring12716 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._isBoring12716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.text.BoringLayout.Metrics;
+			if (global::android.text.BoringLayout._m19.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m19 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.text.BoringLayout.Metrics;
 		}
 		public static android.text.BoringLayout.Metrics isBoring(string arg0, android.text.TextPaint arg1, android.text.BoringLayout.Metrics arg2)
 		{
 			return isBoring((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _isBoring12717;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::android.text.BoringLayout.Metrics isBoring(java.lang.CharSequence arg0, android.text.TextPaint arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._isBoring12717.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._isBoring12717 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)Landroid/text/BoringLayout$Metrics;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._isBoring12717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.text.BoringLayout.Metrics;
+			if (global::android.text.BoringLayout._m20.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m20 = @__env.GetStaticMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)Landroid/text/BoringLayout$Metrics;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.text.BoringLayout.Metrics;
 		}
 		public static android.text.BoringLayout.Metrics isBoring(string arg0, android.text.TextPaint arg1)
 		{
 			return isBoring((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _ellipsized12718;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void ellipsized(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.BoringLayout.staticClass, "ellipsized", "(II)V", ref global::android.text.BoringLayout._ellipsized12718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.BoringLayout.staticClass, "ellipsized", "(II)V", ref global::android.text.BoringLayout._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _BoringLayout12719;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public BoringLayout(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._BoringLayout12719.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._BoringLayout12719 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._BoringLayout12719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9));
+			if (global::android.text.BoringLayout._m22.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m22 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BoringLayout12720;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public BoringLayout(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.BoringLayout._BoringLayout12720.native == global::System.IntPtr.Zero)
-				global::android.text.BoringLayout._BoringLayout12720 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._BoringLayout12720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.text.BoringLayout._m23.native == global::System.IntPtr.Zero)
+				global::android.text.BoringLayout._m23 = @__env.GetMethodIDNoThrow(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.BoringLayout.staticClass, global::android.text.BoringLayout._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			Init(@__env, handle);
 		}
 		static BoringLayout()

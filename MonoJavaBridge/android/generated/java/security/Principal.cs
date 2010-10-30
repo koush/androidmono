@@ -16,25 +16,25 @@ namespace java.security
 		internal Principal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals23239;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.security.Principal.equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Principal_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.Principal_._equals23239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Principal_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.Principal_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString23240;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.security.Principal.toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Principal_._toString23240) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Principal_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode23241;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.security.Principal.hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.Principal_.staticClass, "hashCode", "()I", ref global::java.security.Principal_._hashCode23241);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.Principal_.staticClass, "hashCode", "()I", ref global::java.security.Principal_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getName23242;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String java.security.Principal.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.Principal_._getName23242) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.Principal_._m3) as java.lang.String;
 		}
 		static Principal_()
 		{

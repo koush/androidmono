@@ -18,35 +18,35 @@ namespace javax.net.ssl
 		internal X509KeyManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getCertificateChain30154;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.security.cert.X509Certificate[] javax.net.ssl.X509KeyManager.getCertificateChain(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.X509Certificate>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", ref global::javax.net.ssl.X509KeyManager_._getCertificateChain30154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.cert.X509Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.X509Certificate>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", ref global::javax.net.ssl.X509KeyManager_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.cert.X509Certificate[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrivateKey30155;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.security.PrivateKey javax.net.ssl.X509KeyManager.getPrivateKey(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getPrivateKey", "(Ljava/lang/String;)Ljava/security/PrivateKey;", ref global::javax.net.ssl.X509KeyManager_._getPrivateKey30155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PrivateKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getPrivateKey", "(Ljava/lang/String;)Ljava/security/PrivateKey;", ref global::javax.net.ssl.X509KeyManager_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.PrivateKey;
 		}
-		internal static global::MonoJavaBridge.MethodId _getClientAliases30156;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String[] javax.net.ssl.X509KeyManager.getClientAliases(java.lang.String arg0, java.security.Principal[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getClientAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._getClientAliases30156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getClientAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _chooseClientAlias30157;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String javax.net.ssl.X509KeyManager.chooseClientAlias(java.lang.String[] arg0, java.security.Principal[] arg1, java.net.Socket arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "chooseClientAlias", "([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._chooseClientAlias30157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "chooseClientAlias", "([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getServerAliases30158;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.String[] javax.net.ssl.X509KeyManager.getServerAliases(java.lang.String arg0, java.security.Principal[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getServerAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._getServerAliases30158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "getServerAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _chooseServerAlias30159;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::java.lang.String javax.net.ssl.X509KeyManager.chooseServerAlias(java.lang.String arg0, java.security.Principal[] arg1, java.net.Socket arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "chooseServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._chooseServerAlias30159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.X509KeyManager_.staticClass, "chooseServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", ref global::javax.net.ssl.X509KeyManager_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.String;
 		}
 		static X509KeyManager_()
 		{

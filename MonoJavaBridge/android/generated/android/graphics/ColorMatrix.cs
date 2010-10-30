@@ -14,50 +14,50 @@ namespace android.graphics
 				return getArray();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getArray5241;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual float[] getArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<float>(this, global::android.graphics.ColorMatrix.staticClass, "getArray", "()[F", ref global::android.graphics.ColorMatrix._getArray5241) as float[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<float>(this, global::android.graphics.ColorMatrix.staticClass, "getArray", "()[F", ref global::android.graphics.ColorMatrix._m0) as float[];
 		}
-		internal static global::MonoJavaBridge.MethodId _set5242;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void set(android.graphics.ColorMatrix arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "set", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._set5242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "set", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _set5243;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void set(float[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "set", "([F)V", ref global::android.graphics.ColorMatrix._set5243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "set", "([F)V", ref global::android.graphics.ColorMatrix._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset5244;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "reset", "()V", ref global::android.graphics.ColorMatrix._reset5244);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "reset", "()V", ref global::android.graphics.ColorMatrix._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _setScale5245;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setScale(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setScale", "(FFFF)V", ref global::android.graphics.ColorMatrix._setScale5245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setScale", "(FFFF)V", ref global::android.graphics.ColorMatrix._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRotate5246;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setRotate(int arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setRotate", "(IF)V", ref global::android.graphics.ColorMatrix._setRotate5246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setRotate", "(IF)V", ref global::android.graphics.ColorMatrix._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setConcat5247;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setConcat(android.graphics.ColorMatrix arg0, android.graphics.ColorMatrix arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setConcat", "(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._setConcat5247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setConcat", "(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _preConcat5248;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void preConcat(android.graphics.ColorMatrix arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "preConcat", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._preConcat5248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "preConcat", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _postConcat5249;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void postConcat(android.graphics.ColorMatrix arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "postConcat", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._postConcat5249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "postConcat", "(Landroid/graphics/ColorMatrix;)V", ref global::android.graphics.ColorMatrix._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float Saturation
 		{
@@ -66,46 +66,46 @@ namespace android.graphics
 				setSaturation(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSaturation5250;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setSaturation(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setSaturation", "(F)V", ref global::android.graphics.ColorMatrix._setSaturation5250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setSaturation", "(F)V", ref global::android.graphics.ColorMatrix._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRGB2YUV5251;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setRGB2YUV()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setRGB2YUV", "()V", ref global::android.graphics.ColorMatrix._setRGB2YUV5251);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setRGB2YUV", "()V", ref global::android.graphics.ColorMatrix._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _setYUV2RGB5252;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setYUV2RGB()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setYUV2RGB", "()V", ref global::android.graphics.ColorMatrix._setYUV2RGB5252);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, "setYUV2RGB", "()V", ref global::android.graphics.ColorMatrix._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _ColorMatrix5253;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public ColorMatrix() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorMatrix._ColorMatrix5253.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorMatrix._ColorMatrix5253 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._ColorMatrix5253);
+			if (global::android.graphics.ColorMatrix._m12.native == global::System.IntPtr.Zero)
+				global::android.graphics.ColorMatrix._m12 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._m12);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ColorMatrix5254;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public ColorMatrix(float[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorMatrix._ColorMatrix5254.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorMatrix._ColorMatrix5254 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "([F)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._ColorMatrix5254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.ColorMatrix._m13.native == global::System.IntPtr.Zero)
+				global::android.graphics.ColorMatrix._m13 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "([F)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ColorMatrix5255;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public ColorMatrix(android.graphics.ColorMatrix arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorMatrix._ColorMatrix5255.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorMatrix._ColorMatrix5255 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._ColorMatrix5255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.ColorMatrix._m14.native == global::System.IntPtr.Zero)
+				global::android.graphics.ColorMatrix._m14 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrix.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ColorMatrix()

@@ -14,15 +14,15 @@ namespace android.app
 			protected KeyguardLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _disableKeyguard1919;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual void disableKeyguard()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, "disableKeyguard", "()V", ref global::android.app.KeyguardManager.KeyguardLock._disableKeyguard1919);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, "disableKeyguard", "()V", ref global::android.app.KeyguardManager.KeyguardLock._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _reenableKeyguard1920;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual void reenableKeyguard()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, "reenableKeyguard", "()V", ref global::android.app.KeyguardManager.KeyguardLock._reenableKeyguard1920);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, "reenableKeyguard", "()V", ref global::android.app.KeyguardManager.KeyguardLock._m1);
 			}
 			static KeyguardLock()
 			{
@@ -46,10 +46,10 @@ namespace android.app
 			internal OnKeyguardExitResult_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onKeyguardExitResult1921;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.app.KeyguardManager.OnKeyguardExitResult.onKeyguardExitResult(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.OnKeyguardExitResult_.staticClass, "onKeyguardExitResult", "(Z)V", ref global::android.app.KeyguardManager.OnKeyguardExitResult_._onKeyguardExitResult1921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.OnKeyguardExitResult_.staticClass, "onKeyguardExitResult", "(Z)V", ref global::android.app.KeyguardManager.OnKeyguardExitResult_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnKeyguardExitResult_()
 			{
@@ -69,13 +69,13 @@ namespace android.app
 			protected OnKeyguardExitResultDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnKeyguardExitResultDelegateWrapper1922;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnKeyguardExitResultDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._OnKeyguardExitResultDelegateWrapper1922.native == global::System.IntPtr.Zero)
-					global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._OnKeyguardExitResultDelegateWrapper1922 = @__env.GetMethodIDNoThrow(global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass, global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._OnKeyguardExitResultDelegateWrapper1922);
+				if (global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass, global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnKeyguardExitResultDelegateWrapper()
@@ -102,20 +102,20 @@ namespace android.app
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _newKeyguardLock1923;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.app.KeyguardManager.KeyguardLock newKeyguardLock(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.KeyguardManager.staticClass, "newKeyguardLock", "(Ljava/lang/String;)Landroid/app/KeyguardManager$KeyguardLock;", ref global::android.app.KeyguardManager._newKeyguardLock1923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.KeyguardManager.KeyguardLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.app.KeyguardManager.staticClass, "newKeyguardLock", "(Ljava/lang/String;)Landroid/app/KeyguardManager$KeyguardLock;", ref global::android.app.KeyguardManager._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.app.KeyguardManager.KeyguardLock;
 		}
-		internal static global::MonoJavaBridge.MethodId _inKeyguardRestrictedInputMode1924;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool inKeyguardRestrictedInputMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.KeyguardManager.staticClass, "inKeyguardRestrictedInputMode", "()Z", ref global::android.app.KeyguardManager._inKeyguardRestrictedInputMode1924);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.KeyguardManager.staticClass, "inKeyguardRestrictedInputMode", "()Z", ref global::android.app.KeyguardManager._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _exitKeyguardSecurely1925;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.staticClass, "exitKeyguardSecurely", "(Landroid/app/KeyguardManager$OnKeyguardExitResult;)V", ref global::android.app.KeyguardManager._exitKeyguardSecurely1925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.KeyguardManager.staticClass, "exitKeyguardSecurely", "(Landroid/app/KeyguardManager$OnKeyguardExitResult;)V", ref global::android.app.KeyguardManager._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void exitKeyguardSecurely(global::android.app.KeyguardManager.OnKeyguardExitResultDelegate arg0)
 		{

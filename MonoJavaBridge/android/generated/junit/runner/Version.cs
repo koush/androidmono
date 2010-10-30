@@ -7,13 +7,13 @@ namespace junit.runner
 		protected Version(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _id31471;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::java.lang.String id()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.Version._id31471.native == global::System.IntPtr.Zero)
-				global::junit.runner.Version._id31471 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.Version.staticClass, "id", "()Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.Version.staticClass, global::junit.runner.Version._id31471)) as java.lang.String;
+			if (global::junit.runner.Version._m0.native == global::System.IntPtr.Zero)
+				global::junit.runner.Version._m0 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.Version.staticClass, "id", "()Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.Version.staticClass, global::junit.runner.Version._m0)) as java.lang.String;
 		}
 		static Version()
 		{

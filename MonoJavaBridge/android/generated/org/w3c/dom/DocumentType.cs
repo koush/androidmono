@@ -18,220 +18,220 @@ namespace org.w3c.dom
 		internal DocumentType_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getName34491;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.w3c.dom.DocumentType.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getName34491) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicId34492;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.w3c.dom.DocumentType.getPublicId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getPublicId34492) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId34493;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.w3c.dom.DocumentType.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getSystemId34493) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInternalSubset34494;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String org.w3c.dom.DocumentType.getInternalSubset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getInternalSubset", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getInternalSubset34494) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getInternalSubset", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getEntities34495;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::org.w3c.dom.NamedNodeMap org.w3c.dom.DocumentType.getEntities()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getEntities", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._getEntities34495) as org.w3c.dom.NamedNodeMap;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getEntities", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._m4) as org.w3c.dom.NamedNodeMap;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNotations34496;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::org.w3c.dom.NamedNodeMap org.w3c.dom.DocumentType.getNotations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNotations", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._getNotations34496) as org.w3c.dom.NamedNodeMap;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNotations", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._m5) as org.w3c.dom.NamedNodeMap;
 		}
-		internal static global::MonoJavaBridge.MethodId _normalize34497;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.w3c.dom.Node.normalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "normalize", "()V", ref global::org.w3c.dom.DocumentType_._normalize34497);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "normalize", "()V", ref global::org.w3c.dom.DocumentType_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _isSupported34498;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool org.w3c.dom.Node.isSupported(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isSupported", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::org.w3c.dom.DocumentType_._isSupported34498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isSupported", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::org.w3c.dom.DocumentType_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAttributes34499;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::org.w3c.dom.NamedNodeMap org.w3c.dom.Node.getAttributes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getAttributes", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._getAttributes34499) as org.w3c.dom.NamedNodeMap;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NamedNodeMap>(this, global::org.w3c.dom.DocumentType_.staticClass, "getAttributes", "()Lorg/w3c/dom/NamedNodeMap;", ref global::org.w3c.dom.DocumentType_._m8) as org.w3c.dom.NamedNodeMap;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrefix34500;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::java.lang.String org.w3c.dom.Node.getPrefix()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPrefix", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getPrefix34500) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPrefix", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m9) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFirstChild34501;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::org.w3c.dom.Node org.w3c.dom.Node.getFirstChild()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getFirstChild", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._getFirstChild34501) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getFirstChild", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m10) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNodeType34502;
+		private static global::MonoJavaBridge.MethodId _m11;
 		short org.w3c.dom.Node.getNodeType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeType", "()S", ref global::org.w3c.dom.DocumentType_._getNodeType34502);
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeType", "()S", ref global::org.w3c.dom.DocumentType_._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _getNodeName34503;
+		private static global::MonoJavaBridge.MethodId _m12;
 		global::java.lang.String org.w3c.dom.Node.getNodeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getNodeName34503) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m12) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNodeValue34504;
+		private static global::MonoJavaBridge.MethodId _m13;
 		global::java.lang.String org.w3c.dom.Node.getNodeValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeValue", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getNodeValue34504) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNodeValue", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m13) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNextSibling34505;
+		private static global::MonoJavaBridge.MethodId _m14;
 		global::org.w3c.dom.Node org.w3c.dom.Node.getNextSibling()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNextSibling", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._getNextSibling34505) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNextSibling", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m14) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalName34506;
+		private static global::MonoJavaBridge.MethodId _m15;
 		global::java.lang.String org.w3c.dom.Node.getLocalName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getLocalName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getLocalName34506) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getLocalName", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m15) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasAttributes34507;
+		private static global::MonoJavaBridge.MethodId _m16;
 		bool org.w3c.dom.Node.hasAttributes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "hasAttributes", "()Z", ref global::org.w3c.dom.DocumentType_._hasAttributes34507);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "hasAttributes", "()Z", ref global::org.w3c.dom.DocumentType_._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _getNamespaceURI34508;
+		private static global::MonoJavaBridge.MethodId _m17;
 		global::java.lang.String org.w3c.dom.Node.getNamespaceURI()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNamespaceURI", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getNamespaceURI34508) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getNamespaceURI", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m17) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasChildNodes34509;
+		private static global::MonoJavaBridge.MethodId _m18;
 		bool org.w3c.dom.Node.hasChildNodes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "hasChildNodes", "()Z", ref global::org.w3c.dom.DocumentType_._hasChildNodes34509);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "hasChildNodes", "()Z", ref global::org.w3c.dom.DocumentType_._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _getUserData34510;
+		private static global::MonoJavaBridge.MethodId _m19;
 		global::java.lang.Object org.w3c.dom.Node.getUserData(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getUserData", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._getUserData34510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getUserData", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setUserData34511;
+		private static global::MonoJavaBridge.MethodId _m20;
 		global::java.lang.Object org.w3c.dom.Node.setUserData(java.lang.String arg0, java.lang.Object arg1, org.w3c.dom.UserDataHandler arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setUserData", "(Ljava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/UserDataHandler;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._setUserData34511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setUserData", "(Ljava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/UserDataHandler;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFeature34512;
+		private static global::MonoJavaBridge.MethodId _m21;
 		global::java.lang.Object org.w3c.dom.Node.getFeature(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._getFeature34512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", ref global::org.w3c.dom.DocumentType_._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setPrefix34513;
+		private static global::MonoJavaBridge.MethodId _m22;
 		void org.w3c.dom.Node.setPrefix(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setPrefix", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._setPrefix34513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setPrefix", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setNodeValue34514;
+		private static global::MonoJavaBridge.MethodId _m23;
 		void org.w3c.dom.Node.setNodeValue(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setNodeValue", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._setNodeValue34514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setNodeValue", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParentNode34515;
+		private static global::MonoJavaBridge.MethodId _m24;
 		global::org.w3c.dom.Node org.w3c.dom.Node.getParentNode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getParentNode", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._getParentNode34515) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getParentNode", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m24) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getChildNodes34516;
+		private static global::MonoJavaBridge.MethodId _m25;
 		global::org.w3c.dom.NodeList org.w3c.dom.Node.getChildNodes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NodeList>(this, global::org.w3c.dom.DocumentType_.staticClass, "getChildNodes", "()Lorg/w3c/dom/NodeList;", ref global::org.w3c.dom.DocumentType_._getChildNodes34516) as org.w3c.dom.NodeList;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.NodeList>(this, global::org.w3c.dom.DocumentType_.staticClass, "getChildNodes", "()Lorg/w3c/dom/NodeList;", ref global::org.w3c.dom.DocumentType_._m25) as org.w3c.dom.NodeList;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLastChild34517;
+		private static global::MonoJavaBridge.MethodId _m26;
 		global::org.w3c.dom.Node org.w3c.dom.Node.getLastChild()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getLastChild", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._getLastChild34517) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getLastChild", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m26) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreviousSibling34518;
+		private static global::MonoJavaBridge.MethodId _m27;
 		global::org.w3c.dom.Node org.w3c.dom.Node.getPreviousSibling()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPreviousSibling", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._getPreviousSibling34518) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "getPreviousSibling", "()Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m27) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getOwnerDocument34519;
+		private static global::MonoJavaBridge.MethodId _m28;
 		global::org.w3c.dom.Document org.w3c.dom.Node.getOwnerDocument()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.DocumentType_.staticClass, "getOwnerDocument", "()Lorg/w3c/dom/Document;", ref global::org.w3c.dom.DocumentType_._getOwnerDocument34519) as org.w3c.dom.Document;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.DocumentType_.staticClass, "getOwnerDocument", "()Lorg/w3c/dom/Document;", ref global::org.w3c.dom.DocumentType_._m28) as org.w3c.dom.Document;
 		}
-		internal static global::MonoJavaBridge.MethodId _insertBefore34520;
+		private static global::MonoJavaBridge.MethodId _m29;
 		global::org.w3c.dom.Node org.w3c.dom.Node.insertBefore(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "insertBefore", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._insertBefore34520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "insertBefore", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceChild34521;
+		private static global::MonoJavaBridge.MethodId _m30;
 		global::org.w3c.dom.Node org.w3c.dom.Node.replaceChild(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "replaceChild", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._replaceChild34521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "replaceChild", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _removeChild34522;
+		private static global::MonoJavaBridge.MethodId _m31;
 		global::org.w3c.dom.Node org.w3c.dom.Node.removeChild(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "removeChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._removeChild34522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "removeChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _appendChild34523;
+		private static global::MonoJavaBridge.MethodId _m32;
 		global::org.w3c.dom.Node org.w3c.dom.Node.appendChild(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._appendChild34523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _cloneNode34524;
+		private static global::MonoJavaBridge.MethodId _m33;
 		global::org.w3c.dom.Node org.w3c.dom.Node.cloneNode(bool arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "cloneNode", "(Z)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._cloneNode34524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.DocumentType_.staticClass, "cloneNode", "(Z)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.DocumentType_._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getBaseURI34525;
+		private static global::MonoJavaBridge.MethodId _m34;
 		global::java.lang.String org.w3c.dom.Node.getBaseURI()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getBaseURI", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getBaseURI34525) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getBaseURI", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m34) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _compareDocumentPosition34526;
+		private static global::MonoJavaBridge.MethodId _m35;
 		short org.w3c.dom.Node.compareDocumentPosition(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "compareDocumentPosition", "(Lorg/w3c/dom/Node;)S", ref global::org.w3c.dom.DocumentType_._compareDocumentPosition34526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "compareDocumentPosition", "(Lorg/w3c/dom/Node;)S", ref global::org.w3c.dom.DocumentType_._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextContent34527;
+		private static global::MonoJavaBridge.MethodId _m36;
 		global::java.lang.String org.w3c.dom.Node.getTextContent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getTextContent", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._getTextContent34527) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "getTextContent", "()Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m36) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setTextContent34528;
+		private static global::MonoJavaBridge.MethodId _m37;
 		void org.w3c.dom.Node.setTextContent(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setTextContent", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._setTextContent34528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "setTextContent", "(Ljava/lang/String;)V", ref global::org.w3c.dom.DocumentType_._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSameNode34529;
+		private static global::MonoJavaBridge.MethodId _m38;
 		bool org.w3c.dom.Node.isSameNode(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isSameNode", "(Lorg/w3c/dom/Node;)Z", ref global::org.w3c.dom.DocumentType_._isSameNode34529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isSameNode", "(Lorg/w3c/dom/Node;)Z", ref global::org.w3c.dom.DocumentType_._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _lookupPrefix34530;
+		private static global::MonoJavaBridge.MethodId _m39;
 		global::java.lang.String org.w3c.dom.Node.lookupPrefix(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "lookupPrefix", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._lookupPrefix34530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "lookupPrefix", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDefaultNamespace34531;
+		private static global::MonoJavaBridge.MethodId _m40;
 		bool org.w3c.dom.Node.isDefaultNamespace(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isDefaultNamespace", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.DocumentType_._isDefaultNamespace34531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isDefaultNamespace", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.DocumentType_._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _lookupNamespaceURI34532;
+		private static global::MonoJavaBridge.MethodId _m41;
 		global::java.lang.String org.w3c.dom.Node.lookupNamespaceURI(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._lookupNamespaceURI34532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DocumentType_.staticClass, "lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.w3c.dom.DocumentType_._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isEqualNode34533;
+		private static global::MonoJavaBridge.MethodId _m42;
 		bool org.w3c.dom.Node.isEqualNode(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isEqualNode", "(Lorg/w3c/dom/Node;)Z", ref global::org.w3c.dom.DocumentType_._isEqualNode34533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DocumentType_.staticClass, "isEqualNode", "(Lorg/w3c/dom/Node;)Z", ref global::org.w3c.dom.DocumentType_._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DocumentType_()
 		{

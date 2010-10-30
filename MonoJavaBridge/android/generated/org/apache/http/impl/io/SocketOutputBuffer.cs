@@ -7,13 +7,13 @@ namespace org.apache.http.impl.io
 		protected SocketOutputBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SocketOutputBuffer33466;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SocketOutputBuffer(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.SocketOutputBuffer._SocketOutputBuffer33466.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.SocketOutputBuffer._SocketOutputBuffer33466 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.SocketOutputBuffer.staticClass, "<init>", "(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.SocketOutputBuffer.staticClass, global::org.apache.http.impl.io.SocketOutputBuffer._SocketOutputBuffer33466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.apache.http.impl.io.SocketOutputBuffer._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.io.SocketOutputBuffer._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.SocketOutputBuffer.staticClass, "<init>", "(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.SocketOutputBuffer.staticClass, global::org.apache.http.impl.io.SocketOutputBuffer._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static SocketOutputBuffer()

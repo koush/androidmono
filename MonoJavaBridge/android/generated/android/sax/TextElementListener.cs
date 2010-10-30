@@ -12,15 +12,15 @@ namespace android.sax
 		internal TextElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _start11619;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.TextElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.TextElementListener_._start11619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.TextElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.TextElementListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _end11620;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.sax.EndTextElementListener.end(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.TextElementListener_.staticClass, "end", "(Ljava/lang/String;)V", ref global::android.sax.TextElementListener_._end11620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.TextElementListener_.staticClass, "end", "(Ljava/lang/String;)V", ref global::android.sax.TextElementListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static TextElementListener_()
 		{

@@ -19,40 +19,40 @@ namespace java.util.regex
 		internal MatchResult_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _group28266;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String java.util.regex.MatchResult.group()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.MatchResult_.staticClass, "group", "()Ljava/lang/String;", ref global::java.util.regex.MatchResult_._group28266) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.MatchResult_.staticClass, "group", "()Ljava/lang/String;", ref global::java.util.regex.MatchResult_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _group28267;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.util.regex.MatchResult.group(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.MatchResult_.staticClass, "group", "(I)Ljava/lang/String;", ref global::java.util.regex.MatchResult_._group28267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.MatchResult_.staticClass, "group", "(I)Ljava/lang/String;", ref global::java.util.regex.MatchResult_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _start28268;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.util.regex.MatchResult.start()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "start", "()I", ref global::java.util.regex.MatchResult_._start28268);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "start", "()I", ref global::java.util.regex.MatchResult_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _start28269;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int java.util.regex.MatchResult.start(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "start", "(I)I", ref global::java.util.regex.MatchResult_._start28269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "start", "(I)I", ref global::java.util.regex.MatchResult_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _end28270;
+		private static global::MonoJavaBridge.MethodId _m4;
 		int java.util.regex.MatchResult.end()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "end", "()I", ref global::java.util.regex.MatchResult_._end28270);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "end", "()I", ref global::java.util.regex.MatchResult_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _end28271;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int java.util.regex.MatchResult.end(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "end", "(I)I", ref global::java.util.regex.MatchResult_._end28271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "end", "(I)I", ref global::java.util.regex.MatchResult_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _groupCount28272;
+		private static global::MonoJavaBridge.MethodId _m6;
 		int java.util.regex.MatchResult.groupCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "groupCount", "()I", ref global::java.util.regex.MatchResult_._groupCount28272);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.MatchResult_.staticClass, "groupCount", "()I", ref global::java.util.regex.MatchResult_._m6);
 		}
 		static MatchResult_()
 		{

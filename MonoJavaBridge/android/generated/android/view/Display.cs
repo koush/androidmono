@@ -14,10 +14,10 @@ namespace android.view
 				return getWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWidth14014;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int getWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getWidth", "()I", ref global::android.view.Display._getWidth14014);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getWidth", "()I", ref global::android.view.Display._m0);
 		}
 		public new int Height
 		{
@@ -26,10 +26,10 @@ namespace android.view
 				return getHeight();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeight14015;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getHeight()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getHeight", "()I", ref global::android.view.Display._getHeight14015);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getHeight", "()I", ref global::android.view.Display._m1);
 		}
 		public new int Orientation
 		{
@@ -38,10 +38,10 @@ namespace android.view
 				return getOrientation();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrientation14016;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getOrientation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getOrientation", "()I", ref global::android.view.Display._getOrientation14016);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getOrientation", "()I", ref global::android.view.Display._m2);
 		}
 		public new int DisplayId
 		{
@@ -50,10 +50,10 @@ namespace android.view
 				return getDisplayId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDisplayId14017;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getDisplayId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getDisplayId", "()I", ref global::android.view.Display._getDisplayId14017);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getDisplayId", "()I", ref global::android.view.Display._m3);
 		}
 		public new int Rotation
 		{
@@ -62,10 +62,10 @@ namespace android.view
 				return getRotation();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRotation14018;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getRotation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getRotation", "()I", ref global::android.view.Display._getRotation14018);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getRotation", "()I", ref global::android.view.Display._m4);
 		}
 		public new int PixelFormat
 		{
@@ -74,10 +74,10 @@ namespace android.view
 				return getPixelFormat();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPixelFormat14019;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getPixelFormat()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getPixelFormat", "()I", ref global::android.view.Display._getPixelFormat14019);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Display.staticClass, "getPixelFormat", "()I", ref global::android.view.Display._m5);
 		}
 		public new float RefreshRate
 		{
@@ -86,15 +86,15 @@ namespace android.view
 				return getRefreshRate();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRefreshRate14020;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual float getRefreshRate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.Display.staticClass, "getRefreshRate", "()F", ref global::android.view.Display._getRefreshRate14020);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.Display.staticClass, "getRefreshRate", "()F", ref global::android.view.Display._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetrics14021;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void getMetrics(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Display.staticClass, "getMetrics", "(Landroid/util/DisplayMetrics;)V", ref global::android.view.Display._getMetrics14021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Display.staticClass, "getMetrics", "(Landroid/util/DisplayMetrics;)V", ref global::android.view.Display._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int DEFAULT_DISPLAY
 		{

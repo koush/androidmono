@@ -7,40 +7,40 @@ namespace java.lang
 		protected RuntimeException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _RuntimeException20454;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public RuntimeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.RuntimeException._RuntimeException20454.native == global::System.IntPtr.Zero)
-				global::java.lang.RuntimeException._RuntimeException20454 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._RuntimeException20454);
+			if (global::java.lang.RuntimeException._m0.native == global::System.IntPtr.Zero)
+				global::java.lang.RuntimeException._m0 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RuntimeException20455;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public RuntimeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.RuntimeException._RuntimeException20455.native == global::System.IntPtr.Zero)
-				global::java.lang.RuntimeException._RuntimeException20455 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._RuntimeException20455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.lang.RuntimeException._m1.native == global::System.IntPtr.Zero)
+				global::java.lang.RuntimeException._m1 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RuntimeException20456;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public RuntimeException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.RuntimeException._RuntimeException20456.native == global::System.IntPtr.Zero)
-				global::java.lang.RuntimeException._RuntimeException20456 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._RuntimeException20456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.lang.RuntimeException._m2.native == global::System.IntPtr.Zero)
+				global::java.lang.RuntimeException._m2 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RuntimeException20457;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public RuntimeException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.RuntimeException._RuntimeException20457.native == global::System.IntPtr.Zero)
-				global::java.lang.RuntimeException._RuntimeException20457 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._RuntimeException20457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.lang.RuntimeException._m3.native == global::System.IntPtr.Zero)
+				global::java.lang.RuntimeException._m3 = @__env.GetMethodIDNoThrow(global::java.lang.RuntimeException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RuntimeException.staticClass, global::java.lang.RuntimeException._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static RuntimeException()

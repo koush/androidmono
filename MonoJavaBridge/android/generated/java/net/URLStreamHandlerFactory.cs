@@ -13,10 +13,10 @@ namespace java.net
 		internal URLStreamHandlerFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createURLStreamHandler21990;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.URLStreamHandlerFactory_.staticClass, "createURLStreamHandler", "(Ljava/lang/String;)Ljava/net/URLStreamHandler;", ref global::java.net.URLStreamHandlerFactory_._createURLStreamHandler21990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URLStreamHandler;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.URLStreamHandlerFactory_.staticClass, "createURLStreamHandler", "(Ljava/lang/String;)Ljava/net/URLStreamHandler;", ref global::java.net.URLStreamHandlerFactory_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.URLStreamHandler;
 		}
 		static URLStreamHandlerFactory_()
 		{

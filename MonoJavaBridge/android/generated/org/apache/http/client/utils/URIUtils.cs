@@ -7,45 +7,45 @@ namespace org.apache.http.client.utils
 		protected URIUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolve32049;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::java.net.URI resolve(java.net.URI arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.utils.URIUtils._resolve32049.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.utils.URIUtils._resolve32049 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "resolve", "(Ljava/net/URI;Ljava/lang/String;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._resolve32049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
+			if (global::org.apache.http.client.utils.URIUtils._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.utils.URIUtils._m0 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "resolve", "(Ljava/net/URI;Ljava/lang/String;)Ljava/net/URI;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolve32050;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static global::java.net.URI resolve(java.net.URI arg0, java.net.URI arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.utils.URIUtils._resolve32050.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.utils.URIUtils._resolve32050 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "resolve", "(Ljava/net/URI;Ljava/net/URI;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._resolve32050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
+			if (global::org.apache.http.client.utils.URIUtils._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.utils.URIUtils._m1 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "resolve", "(Ljava/net/URI;Ljava/net/URI;)Ljava/net/URI;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
 		}
-		internal static global::MonoJavaBridge.MethodId _createURI32051;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static global::java.net.URI createURI(java.lang.String arg0, java.lang.String arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.utils.URIUtils._createURI32051.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.utils.URIUtils._createURI32051 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "createURI", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._createURI32051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.net.URI;
+			if (global::org.apache.http.client.utils.URIUtils._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.utils.URIUtils._m2 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "createURI", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/URI;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.net.URI;
 		}
-		internal static global::MonoJavaBridge.MethodId _rewriteURI32052;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static global::java.net.URI rewriteURI(java.net.URI arg0, org.apache.http.HttpHost arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.utils.URIUtils._rewriteURI32052.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.utils.URIUtils._rewriteURI32052 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "rewriteURI", "(Ljava/net/URI;Lorg/apache/http/HttpHost;Z)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._rewriteURI32052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.net.URI;
+			if (global::org.apache.http.client.utils.URIUtils._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.utils.URIUtils._m3 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "rewriteURI", "(Ljava/net/URI;Lorg/apache/http/HttpHost;Z)Ljava/net/URI;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.net.URI;
 		}
-		internal static global::MonoJavaBridge.MethodId _rewriteURI32053;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static global::java.net.URI rewriteURI(java.net.URI arg0, org.apache.http.HttpHost arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.utils.URIUtils._rewriteURI32053.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.utils.URIUtils._rewriteURI32053 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "rewriteURI", "(Ljava/net/URI;Lorg/apache/http/HttpHost;)Ljava/net/URI;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._rewriteURI32053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
+			if (global::org.apache.http.client.utils.URIUtils._m4.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.utils.URIUtils._m4 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.client.utils.URIUtils.staticClass, "rewriteURI", "(Ljava/net/URI;Lorg/apache/http/HttpHost;)Ljava/net/URI;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URIUtils.staticClass, global::org.apache.http.client.utils.URIUtils._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URI;
 		}
 		static URIUtils()
 		{

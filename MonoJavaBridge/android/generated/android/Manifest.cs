@@ -14,13 +14,13 @@ namespace android
 			internal permission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _permission0;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public permission() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.Manifest.permission._permission0.native == global::System.IntPtr.Zero)
-					global::android.Manifest.permission._permission0 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission.staticClass, global::android.Manifest.permission._permission0);
+				if (global::android.Manifest.permission._m0.native == global::System.IntPtr.Zero)
+					global::android.Manifest.permission._m0 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission.staticClass, global::android.Manifest.permission._m0);
 				Init(@__env, handle);
 			}
 			public static global::java.lang.String ACCESS_CHECKIN_PROPERTIES
@@ -837,13 +837,13 @@ namespace android
 			internal permission_group(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _permission_group115;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public permission_group() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.Manifest.permission_group._permission_group115.native == global::System.IntPtr.Zero)
-					global::android.Manifest.permission_group._permission_group115 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission_group.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission_group.staticClass, global::android.Manifest.permission_group._permission_group115);
+				if (global::android.Manifest.permission_group._m0.native == global::System.IntPtr.Zero)
+					global::android.Manifest.permission_group._m0 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission_group.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission_group.staticClass, global::android.Manifest.permission_group._m0);
 				Init(@__env, handle);
 			}
 			public static global::java.lang.String ACCOUNTS
@@ -932,13 +932,13 @@ namespace android
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _Manifest127;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public Manifest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.Manifest._Manifest127.native == global::System.IntPtr.Zero)
-				global::android.Manifest._Manifest127 = @__env.GetMethodIDNoThrow(global::android.Manifest.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.staticClass, global::android.Manifest._Manifest127);
+			if (global::android.Manifest._m0.native == global::System.IntPtr.Zero)
+				global::android.Manifest._m0 = @__env.GetMethodIDNoThrow(global::android.Manifest.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.staticClass, global::android.Manifest._m0);
 			Init(@__env, handle);
 		}
 		static Manifest()

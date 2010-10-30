@@ -14,15 +14,15 @@ namespace junit.framework
 		internal Test_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run31375;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void junit.framework.Test.run(junit.framework.TestResult arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.Test_.staticClass, "run", "(Ljunit/framework/TestResult;)V", ref global::junit.framework.Test_._run31375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.Test_.staticClass, "run", "(Ljunit/framework/TestResult;)V", ref global::junit.framework.Test_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _countTestCases31376;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int junit.framework.Test.countTestCases()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.Test_.staticClass, "countTestCases", "()I", ref global::junit.framework.Test_._countTestCases31376);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.Test_.staticClass, "countTestCases", "()I", ref global::junit.framework.Test_._m1);
 		}
 		static Test_()
 		{

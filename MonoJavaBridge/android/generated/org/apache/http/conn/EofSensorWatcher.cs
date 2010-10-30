@@ -15,20 +15,20 @@ namespace org.apache.http.conn
 		internal EofSensorWatcher_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _eofDetected32107;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool org.apache.http.conn.EofSensorWatcher.eofDetected(java.io.InputStream arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "eofDetected", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._eofDetected32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "eofDetected", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _streamClosed32108;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool org.apache.http.conn.EofSensorWatcher.streamClosed(java.io.InputStream arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamClosed", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._streamClosed32108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamClosed", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _streamAbort32109;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool org.apache.http.conn.EofSensorWatcher.streamAbort(java.io.InputStream arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._streamAbort32109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.EofSensorWatcher_.staticClass, "streamAbort", "(Ljava/io/InputStream;)Z", ref global::org.apache.http.conn.EofSensorWatcher_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static EofSensorWatcher_()
 		{

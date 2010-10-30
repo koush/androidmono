@@ -13,10 +13,10 @@ namespace android.text.style
 		internal AlignmentSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlignment13441;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.text.Layout.Alignment>(this, global::android.text.style.AlignmentSpan_.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;", ref global::android.text.style.AlignmentSpan_._getAlignment13441) as android.text.Layout.Alignment;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.text.Layout.Alignment>(this, global::android.text.style.AlignmentSpan_.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;", ref global::android.text.style.AlignmentSpan_._m0) as android.text.Layout.Alignment;
 		}
 		static AlignmentSpan_()
 		{

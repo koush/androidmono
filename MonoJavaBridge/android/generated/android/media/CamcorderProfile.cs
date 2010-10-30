@@ -7,13 +7,13 @@ namespace android.media
 		protected CamcorderProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get7226;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.media.CamcorderProfile get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.CamcorderProfile._get7226.native == global::System.IntPtr.Zero)
-				global::android.media.CamcorderProfile._get7226 = @__env.GetStaticMethodIDNoThrow(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._get7226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.CamcorderProfile;
+			if (global::android.media.CamcorderProfile._m0.native == global::System.IntPtr.Zero)
+				global::android.media.CamcorderProfile._m0 = @__env.GetStaticMethodIDNoThrow(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.CamcorderProfile;
 		}
 		public static int QUALITY_LOW
 		{
@@ -29,145 +29,145 @@ namespace android.media
 				return 1;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _duration7229;
+		internal static global::MonoJavaBridge.FieldId _duration2752;
 		public int duration
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _duration7229);
+				return @__env.GetIntField(this.JvmHandle, _duration2752);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _quality7230;
+		internal static global::MonoJavaBridge.FieldId _quality2753;
 		public int quality
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _quality7230);
+				return @__env.GetIntField(this.JvmHandle, _quality2753);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _fileFormat7231;
+		internal static global::MonoJavaBridge.FieldId _fileFormat2754;
 		public int fileFormat
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _fileFormat7231);
+				return @__env.GetIntField(this.JvmHandle, _fileFormat2754);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _videoCodec7232;
+		internal static global::MonoJavaBridge.FieldId _videoCodec2755;
 		public int videoCodec
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _videoCodec7232);
+				return @__env.GetIntField(this.JvmHandle, _videoCodec2755);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _videoBitRate7233;
+		internal static global::MonoJavaBridge.FieldId _videoBitRate2756;
 		public int videoBitRate
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _videoBitRate7233);
+				return @__env.GetIntField(this.JvmHandle, _videoBitRate2756);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _videoFrameRate7234;
+		internal static global::MonoJavaBridge.FieldId _videoFrameRate2757;
 		public int videoFrameRate
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _videoFrameRate7234);
+				return @__env.GetIntField(this.JvmHandle, _videoFrameRate2757);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _videoFrameWidth7235;
+		internal static global::MonoJavaBridge.FieldId _videoFrameWidth2758;
 		public int videoFrameWidth
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _videoFrameWidth7235);
+				return @__env.GetIntField(this.JvmHandle, _videoFrameWidth2758);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _videoFrameHeight7236;
+		internal static global::MonoJavaBridge.FieldId _videoFrameHeight2759;
 		public int videoFrameHeight
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _videoFrameHeight7236);
+				return @__env.GetIntField(this.JvmHandle, _videoFrameHeight2759);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _audioCodec7237;
+		internal static global::MonoJavaBridge.FieldId _audioCodec2760;
 		public int audioCodec
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _audioCodec7237);
+				return @__env.GetIntField(this.JvmHandle, _audioCodec2760);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _audioBitRate7238;
+		internal static global::MonoJavaBridge.FieldId _audioBitRate2761;
 		public int audioBitRate
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _audioBitRate7238);
+				return @__env.GetIntField(this.JvmHandle, _audioBitRate2761);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _audioSampleRate7239;
+		internal static global::MonoJavaBridge.FieldId _audioSampleRate2762;
 		public int audioSampleRate
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _audioSampleRate7239);
+				return @__env.GetIntField(this.JvmHandle, _audioSampleRate2762);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _audioChannels7240;
+		internal static global::MonoJavaBridge.FieldId _audioChannels2763;
 		public int audioChannels
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _audioChannels7240);
+				return @__env.GetIntField(this.JvmHandle, _audioChannels2763);
 			}
 			set
 			{
@@ -177,18 +177,18 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.CamcorderProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CamcorderProfile"));
-			global::android.media.CamcorderProfile._duration7229 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "duration", "I");
-			global::android.media.CamcorderProfile._quality7230 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "quality", "I");
-			global::android.media.CamcorderProfile._fileFormat7231 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "fileFormat", "I");
-			global::android.media.CamcorderProfile._videoCodec7232 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoCodec", "I");
-			global::android.media.CamcorderProfile._videoBitRate7233 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoBitRate", "I");
-			global::android.media.CamcorderProfile._videoFrameRate7234 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameRate", "I");
-			global::android.media.CamcorderProfile._videoFrameWidth7235 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameWidth", "I");
-			global::android.media.CamcorderProfile._videoFrameHeight7236 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameHeight", "I");
-			global::android.media.CamcorderProfile._audioCodec7237 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioCodec", "I");
-			global::android.media.CamcorderProfile._audioBitRate7238 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioBitRate", "I");
-			global::android.media.CamcorderProfile._audioSampleRate7239 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioSampleRate", "I");
-			global::android.media.CamcorderProfile._audioChannels7240 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioChannels", "I");
+			global::android.media.CamcorderProfile._duration2752 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "duration", "I");
+			global::android.media.CamcorderProfile._quality2753 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "quality", "I");
+			global::android.media.CamcorderProfile._fileFormat2754 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "fileFormat", "I");
+			global::android.media.CamcorderProfile._videoCodec2755 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoCodec", "I");
+			global::android.media.CamcorderProfile._videoBitRate2756 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoBitRate", "I");
+			global::android.media.CamcorderProfile._videoFrameRate2757 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameRate", "I");
+			global::android.media.CamcorderProfile._videoFrameWidth2758 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameWidth", "I");
+			global::android.media.CamcorderProfile._videoFrameHeight2759 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "videoFrameHeight", "I");
+			global::android.media.CamcorderProfile._audioCodec2760 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioCodec", "I");
+			global::android.media.CamcorderProfile._audioBitRate2761 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioBitRate", "I");
+			global::android.media.CamcorderProfile._audioSampleRate2762 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioSampleRate", "I");
+			global::android.media.CamcorderProfile._audioChannels2763 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioChannels", "I");
 		}
 		internal static void InitJNI()
 		{

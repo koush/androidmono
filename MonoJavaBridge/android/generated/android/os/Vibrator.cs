@@ -7,20 +7,20 @@ namespace android.os
 		protected Vibrator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel10224;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "cancel", "()V", ref global::android.os.Vibrator._cancel10224);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "cancel", "()V", ref global::android.os.Vibrator._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _vibrate10225;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void vibrate(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "vibrate", "(J)V", ref global::android.os.Vibrator._vibrate10225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "vibrate", "(J)V", ref global::android.os.Vibrator._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _vibrate10226;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void vibrate(long[] arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "vibrate", "([JI)V", ref global::android.os.Vibrator._vibrate10226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Vibrator.staticClass, "vibrate", "([JI)V", ref global::android.os.Vibrator._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Vibrator()
 		{

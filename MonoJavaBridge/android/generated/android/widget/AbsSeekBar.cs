@@ -7,96 +7,96 @@ namespace android.widget
 		protected AbsSeekBar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyDown16569;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.AbsSeekBar._onKeyDown16569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.widget.AbsSeekBar._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent16570;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.AbsSeekBar._onTouchEvent16570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.AbsSeekBar._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSizeChanged16571;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onSizeChanged", "(IIII)V", ref global::android.widget.AbsSeekBar._onSizeChanged16571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onSizeChanged", "(IIII)V", ref global::android.widget.AbsSeekBar._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDraw16572;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.AbsSeekBar._onDraw16572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.AbsSeekBar._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _verifyDrawable16573;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.AbsSeekBar._verifyDrawable16573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.AbsSeekBar._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16574;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "drawableStateChanged", "()V", ref global::android.widget.AbsSeekBar._drawableStateChanged16574);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "drawableStateChanged", "()V", ref global::android.widget.AbsSeekBar._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure16575;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onMeasure", "(II)V", ref global::android.widget.AbsSeekBar._onMeasure16575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "onMeasure", "(II)V", ref global::android.widget.AbsSeekBar._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMax16576;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override void setMax(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setMax", "(I)V", ref global::android.widget.AbsSeekBar._setMax16576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setMax", "(I)V", ref global::android.widget.AbsSeekBar._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setThumb16577;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setThumb(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setThumb", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.AbsSeekBar._setThumb16577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setThumb", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.AbsSeekBar._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getThumbOffset16578;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int getThumbOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSeekBar.staticClass, "getThumbOffset", "()I", ref global::android.widget.AbsSeekBar._getThumbOffset16578);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSeekBar.staticClass, "getThumbOffset", "()I", ref global::android.widget.AbsSeekBar._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _setThumbOffset16579;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setThumbOffset(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setThumbOffset", "(I)V", ref global::android.widget.AbsSeekBar._setThumbOffset16579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setThumbOffset", "(I)V", ref global::android.widget.AbsSeekBar._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setKeyProgressIncrement16580;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setKeyProgressIncrement(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setKeyProgressIncrement", "(I)V", ref global::android.widget.AbsSeekBar._setKeyProgressIncrement16580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, "setKeyProgressIncrement", "(I)V", ref global::android.widget.AbsSeekBar._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyProgressIncrement16581;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int getKeyProgressIncrement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSeekBar.staticClass, "getKeyProgressIncrement", "()I", ref global::android.widget.AbsSeekBar._getKeyProgressIncrement16581);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSeekBar.staticClass, "getKeyProgressIncrement", "()I", ref global::android.widget.AbsSeekBar._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSeekBar16582;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public AbsSeekBar(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSeekBar._AbsSeekBar16582.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSeekBar._AbsSeekBar16582 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._AbsSeekBar16582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.AbsSeekBar._m13.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSeekBar._m13 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSeekBar16583;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public AbsSeekBar(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSeekBar._AbsSeekBar16583.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSeekBar._AbsSeekBar16583 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._AbsSeekBar16583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.AbsSeekBar._m14.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSeekBar._m14 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSeekBar16584;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public AbsSeekBar(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSeekBar._AbsSeekBar16584.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSeekBar._AbsSeekBar16584 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._AbsSeekBar16584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.AbsSeekBar._m15.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSeekBar._m15 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSeekBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static AbsSeekBar()

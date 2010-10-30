@@ -30,95 +30,95 @@ namespace org.apache.commons.logging
 		internal Log_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _debug31472;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.commons.logging.Log.debug(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "debug", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._debug31472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "debug", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _debug31473;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.commons.logging.Log.debug(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "debug", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._debug31473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "debug", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _error31474;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void org.apache.commons.logging.Log.error(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "error", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._error31474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "error", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _error31475;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void org.apache.commons.logging.Log.error(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._error31475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _info31476;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.apache.commons.logging.Log.info(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "info", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._info31476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "info", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _info31477;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.apache.commons.logging.Log.info(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "info", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._info31477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "info", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _trace31478;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.apache.commons.logging.Log.trace(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "trace", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._trace31478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "trace", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _trace31479;
+		private static global::MonoJavaBridge.MethodId _m7;
 		void org.apache.commons.logging.Log.trace(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "trace", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._trace31479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "trace", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDebugEnabled31480;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool org.apache.commons.logging.Log.isDebugEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isDebugEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isDebugEnabled31480);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isDebugEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _isErrorEnabled31481;
+		private static global::MonoJavaBridge.MethodId _m9;
 		bool org.apache.commons.logging.Log.isErrorEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isErrorEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isErrorEnabled31481);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isErrorEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _isFatalEnabled31482;
+		private static global::MonoJavaBridge.MethodId _m10;
 		bool org.apache.commons.logging.Log.isFatalEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isFatalEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isFatalEnabled31482);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isFatalEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _isInfoEnabled31483;
+		private static global::MonoJavaBridge.MethodId _m11;
 		bool org.apache.commons.logging.Log.isInfoEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isInfoEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isInfoEnabled31483);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isInfoEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _isTraceEnabled31484;
+		private static global::MonoJavaBridge.MethodId _m12;
 		bool org.apache.commons.logging.Log.isTraceEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isTraceEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isTraceEnabled31484);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isTraceEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _isWarnEnabled31485;
+		private static global::MonoJavaBridge.MethodId _m13;
 		bool org.apache.commons.logging.Log.isWarnEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isWarnEnabled", "()Z", ref global::org.apache.commons.logging.Log_._isWarnEnabled31485);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.commons.logging.Log_.staticClass, "isWarnEnabled", "()Z", ref global::org.apache.commons.logging.Log_._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _warn31486;
+		private static global::MonoJavaBridge.MethodId _m14;
 		void org.apache.commons.logging.Log.warn(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "warn", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._warn31486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "warn", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _warn31487;
+		private static global::MonoJavaBridge.MethodId _m15;
 		void org.apache.commons.logging.Log.warn(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "warn", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._warn31487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "warn", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _fatal31488;
+		private static global::MonoJavaBridge.MethodId _m16;
 		void org.apache.commons.logging.Log.fatal(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._fatal31488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;)V", ref global::org.apache.commons.logging.Log_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _fatal31489;
+		private static global::MonoJavaBridge.MethodId _m17;
 		void org.apache.commons.logging.Log.fatal(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._fatal31489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.commons.logging.Log_.staticClass, "fatal", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", ref global::org.apache.commons.logging.Log_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Log_()
 		{

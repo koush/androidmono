@@ -14,15 +14,15 @@ namespace javax.sql
 		internal ConnectionEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _connectionClosed30280;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void javax.sql.ConnectionEventListener.connectionClosed(javax.sql.ConnectionEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.ConnectionEventListener_.staticClass, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V", ref global::javax.sql.ConnectionEventListener_._connectionClosed30280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.ConnectionEventListener_.staticClass, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V", ref global::javax.sql.ConnectionEventListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _connectionErrorOccurred30281;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void javax.sql.ConnectionEventListener.connectionErrorOccurred(javax.sql.ConnectionEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.ConnectionEventListener_.staticClass, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V", ref global::javax.sql.ConnectionEventListener_._connectionErrorOccurred30281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.ConnectionEventListener_.staticClass, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V", ref global::javax.sql.ConnectionEventListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ConnectionEventListener_()
 		{

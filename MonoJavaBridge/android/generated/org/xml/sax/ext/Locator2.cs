@@ -14,35 +14,35 @@ namespace org.xml.sax.ext
 		internal Locator2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoding35137;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.xml.sax.ext.Locator2.getEncoding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._getEncoding35137) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getXMLVersion35138;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.xml.sax.ext.Locator2.getXMLVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getXMLVersion", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._getXMLVersion35138) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getXMLVersion", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineNumber35139;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int org.xml.sax.Locator.getLineNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.ext.Locator2_.staticClass, "getLineNumber", "()I", ref global::org.xml.sax.ext.Locator2_._getLineNumber35139);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.ext.Locator2_.staticClass, "getLineNumber", "()I", ref global::org.xml.sax.ext.Locator2_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicId35140;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String org.xml.sax.Locator.getPublicId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._getPublicId35140) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId35141;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.String org.xml.sax.Locator.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._getSystemId35141) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.ext.Locator2_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.ext.Locator2_._m4) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnNumber35142;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int org.xml.sax.Locator.getColumnNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.ext.Locator2_.staticClass, "getColumnNumber", "()I", ref global::org.xml.sax.ext.Locator2_._getColumnNumber35142);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.ext.Locator2_.staticClass, "getColumnNumber", "()I", ref global::org.xml.sax.ext.Locator2_._m5);
 		}
 		static Locator2_()
 		{

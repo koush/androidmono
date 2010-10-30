@@ -7,997 +7,997 @@ namespace android.opengl
 		protected GLES10(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _glActiveTexture8150;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static void glActiveTexture(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glActiveTexture8150.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glActiveTexture8150 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glActiveTexture", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glActiveTexture8150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m0.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m0 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glActiveTexture", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glAlphaFunc8151;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void glAlphaFunc(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glAlphaFunc8151.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glAlphaFunc8151 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glAlphaFunc", "(IF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glAlphaFunc8151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m1.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m1 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glAlphaFunc", "(IF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glAlphaFuncx8152;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void glAlphaFuncx(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glAlphaFuncx8152.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glAlphaFuncx8152 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glAlphaFuncx", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glAlphaFuncx8152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m2.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m2 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glAlphaFuncx", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glBindTexture8153;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static void glBindTexture(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glBindTexture8153.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glBindTexture8153 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glBindTexture", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glBindTexture8153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m3.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m3 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glBindTexture", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glBlendFunc8154;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static void glBlendFunc(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glBlendFunc8154.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glBlendFunc8154 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glBlendFunc", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glBlendFunc8154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m4.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m4 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glBlendFunc", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClear8155;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static void glClear(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClear8155.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClear8155 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClear", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClear8155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m5.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m5 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClear", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClearColor8156;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void glClearColor(float arg0, float arg1, float arg2, float arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClearColor8156.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClearColor8156 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearColor", "(FFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClearColor8156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m6.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m6 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearColor", "(FFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClearColorx8157;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static void glClearColorx(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClearColorx8157.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClearColorx8157 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearColorx", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClearColorx8157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m7.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m7 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearColorx", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClearDepthf8158;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static void glClearDepthf(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClearDepthf8158.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClearDepthf8158 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearDepthf", "(F)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClearDepthf8158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m8.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m8 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearDepthf", "(F)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClearDepthx8159;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static void glClearDepthx(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClearDepthx8159.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClearDepthx8159 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearDepthx", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClearDepthx8159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m9.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m9 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearDepthx", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClearStencil8160;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static void glClearStencil(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClearStencil8160.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClearStencil8160 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearStencil", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClearStencil8160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m10.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m10 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClearStencil", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClientActiveTexture8161;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static void glClientActiveTexture(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glClientActiveTexture8161.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glClientActiveTexture8161 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClientActiveTexture", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glClientActiveTexture8161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m11.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m11 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glClientActiveTexture", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glColor4f8162;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static void glColor4f(float arg0, float arg1, float arg2, float arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glColor4f8162.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glColor4f8162 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColor4f", "(FFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glColor4f8162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m12.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m12 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColor4f", "(FFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glColor4x8163;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static void glColor4x(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glColor4x8163.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glColor4x8163 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColor4x", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glColor4x8163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m13.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m13 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColor4x", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glColorMask8164;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static void glColorMask(bool arg0, bool arg1, bool arg2, bool arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glColorMask8164.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glColorMask8164 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColorMask", "(ZZZZ)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glColorMask8164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m14.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m14 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColorMask", "(ZZZZ)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glColorPointer8165;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static void glColorPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glColorPointer8165.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glColorPointer8165 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColorPointer", "(IIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glColorPointer8165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m15.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m15 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glColorPointer", "(IIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glCompressedTexImage2D8166;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static void glCompressedTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.nio.Buffer arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glCompressedTexImage2D8166.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glCompressedTexImage2D8166 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCompressedTexImage2D", "(IIIIIIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glCompressedTexImage2D8166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.opengl.GLES10._m16.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m16 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCompressedTexImage2D", "(IIIIIIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
-		internal static global::MonoJavaBridge.MethodId _glCompressedTexSubImage2D8167;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static void glCompressedTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glCompressedTexSubImage2D8167.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glCompressedTexSubImage2D8167 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCompressedTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glCompressedTexSubImage2D8167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
+			if (global::android.opengl.GLES10._m17.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m17 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCompressedTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 		}
-		internal static global::MonoJavaBridge.MethodId _glCopyTexImage2D8168;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static void glCopyTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glCopyTexImage2D8168.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glCopyTexImage2D8168 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCopyTexImage2D", "(IIIIIIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glCopyTexImage2D8168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.opengl.GLES10._m18.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m18 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCopyTexImage2D", "(IIIIIIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
-		internal static global::MonoJavaBridge.MethodId _glCopyTexSubImage2D8169;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static void glCopyTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glCopyTexSubImage2D8169.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glCopyTexSubImage2D8169 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCopyTexSubImage2D", "(IIIIIIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glCopyTexSubImage2D8169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.opengl.GLES10._m19.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m19 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCopyTexSubImage2D", "(IIIIIIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
-		internal static global::MonoJavaBridge.MethodId _glCullFace8170;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static void glCullFace(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glCullFace8170.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glCullFace8170 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCullFace", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glCullFace8170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m20.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m20 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glCullFace", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDeleteTextures8171;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public static void glDeleteTextures(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDeleteTextures8171.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDeleteTextures8171 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDeleteTextures", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDeleteTextures8171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m21.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m21 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDeleteTextures", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDeleteTextures8172;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public static void glDeleteTextures(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDeleteTextures8172.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDeleteTextures8172 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDeleteTextures", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDeleteTextures8172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m22.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m22 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDeleteTextures", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDepthFunc8173;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public static void glDepthFunc(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDepthFunc8173.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDepthFunc8173 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthFunc", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDepthFunc8173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m23.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m23 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthFunc", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDepthMask8174;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static void glDepthMask(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDepthMask8174.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDepthMask8174 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthMask", "(Z)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDepthMask8174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m24.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m24 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthMask", "(Z)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDepthRangef8175;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public static void glDepthRangef(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDepthRangef8175.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDepthRangef8175 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthRangef", "(FF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDepthRangef8175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m25.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m25 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthRangef", "(FF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDepthRangex8176;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public static void glDepthRangex(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDepthRangex8176.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDepthRangex8176 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthRangex", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDepthRangex8176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m26.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m26 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDepthRangex", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDisable8177;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public static void glDisable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDisable8177.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDisable8177 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDisable", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDisable8177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m27.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m27 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDisable", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDisableClientState8178;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public static void glDisableClientState(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDisableClientState8178.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDisableClientState8178 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDisableClientState", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDisableClientState8178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m28.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m28 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDisableClientState", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDrawArrays8179;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public static void glDrawArrays(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDrawArrays8179.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDrawArrays8179 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDrawArrays", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDrawArrays8179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m29.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m29 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDrawArrays", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDrawElements8180;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public static void glDrawElements(int arg0, int arg1, int arg2, java.nio.Buffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glDrawElements8180.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glDrawElements8180 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDrawElements", "(IIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glDrawElements8180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m30.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m30 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glDrawElements", "(IIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glEnable8181;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public static void glEnable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glEnable8181.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glEnable8181 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glEnable", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glEnable8181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m31.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m31 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glEnable", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glEnableClientState8182;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public static void glEnableClientState(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glEnableClientState8182.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glEnableClientState8182 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glEnableClientState", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glEnableClientState8182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m32.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m32 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glEnableClientState", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFinish8183;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public static void glFinish()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFinish8183.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFinish8183 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFinish", "()V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFinish8183);
+			if (global::android.opengl.GLES10._m33.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m33 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFinish", "()V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _glFlush8184;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public static void glFlush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFlush8184.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFlush8184 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFlush", "()V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFlush8184);
+			if (global::android.opengl.GLES10._m34.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m34 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFlush", "()V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m34);
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogf8185;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public static void glFogf(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogf8185.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogf8185 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogf", "(IF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogf8185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m35.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m35 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogf", "(IF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogfv8186;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public static void glFogfv(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogfv8186.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogfv8186 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogfv", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogfv8186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m36.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m36 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogfv", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogfv8187;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public static void glFogfv(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogfv8187.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogfv8187 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogfv", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogfv8187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m37.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m37 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogfv", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogx8188;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public static void glFogx(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogx8188.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogx8188 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogx", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogx8188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m38.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m38 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogx", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogxv8189;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public static void glFogxv(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogxv8189.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogxv8189 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogxv", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogxv8189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m39.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m39 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogxv", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFogxv8190;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public static void glFogxv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFogxv8190.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFogxv8190 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogxv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFogxv8190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m40.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m40 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFogxv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFrontFace8191;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public static void glFrontFace(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFrontFace8191.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFrontFace8191 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrontFace", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFrontFace8191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m41.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m41 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrontFace", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFrustumf8192;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public static void glFrustumf(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFrustumf8192.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFrustumf8192 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrustumf", "(FFFFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFrustumf8192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.opengl.GLES10._m42.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m42 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrustumf", "(FFFFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _glFrustumx8193;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public static void glFrustumx(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glFrustumx8193.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glFrustumx8193 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrustumx", "(IIIIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glFrustumx8193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.opengl.GLES10._m43.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m43 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glFrustumx", "(IIIIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGenTextures8194;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public static void glGenTextures(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGenTextures8194.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGenTextures8194 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGenTextures", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGenTextures8194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m44.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m44 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGenTextures", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGenTextures8195;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public static void glGenTextures(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGenTextures8195.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGenTextures8195 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGenTextures", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGenTextures8195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m45.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m45 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGenTextures", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetError8196;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public static int glGetError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGetError8196.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGetError8196 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetError", "()I");
-			return @__env.CallStaticIntMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGetError8196);
+			if (global::android.opengl.GLES10._m46.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m46 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetError", "()I");
+			return @__env.CallStaticIntMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m46);
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetIntegerv8197;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public static void glGetIntegerv(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGetIntegerv8197.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGetIntegerv8197 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetIntegerv", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGetIntegerv8197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m47.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m47 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetIntegerv", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetIntegerv8198;
+		private static global::MonoJavaBridge.MethodId _m48;
 		public static void glGetIntegerv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGetIntegerv8198.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGetIntegerv8198 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetIntegerv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGetIntegerv8198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m48.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m48 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetIntegerv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m48, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetString8199;
+		private static global::MonoJavaBridge.MethodId _m49;
 		public static global::java.lang.String glGetString(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glGetString8199.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glGetString8199 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetString", "(I)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glGetString8199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.opengl.GLES10._m49.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m49 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glGetString", "(I)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m49, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _glHint8200;
+		private static global::MonoJavaBridge.MethodId _m50;
 		public static void glHint(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glHint8200.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glHint8200 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glHint", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glHint8200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m50.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m50 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glHint", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m50, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelf8201;
+		private static global::MonoJavaBridge.MethodId _m51;
 		public static void glLightModelf(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelf8201.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelf8201 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelf", "(IF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelf8201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m51.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m51 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelf", "(IF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m51, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelfv8202;
+		private static global::MonoJavaBridge.MethodId _m52;
 		public static void glLightModelfv(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelfv8202.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelfv8202 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelfv", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelfv8202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m52.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m52 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelfv", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m52, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelfv8203;
+		private static global::MonoJavaBridge.MethodId _m53;
 		public static void glLightModelfv(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelfv8203.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelfv8203 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelfv", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelfv8203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m53.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m53 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelfv", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m53, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelx8204;
+		private static global::MonoJavaBridge.MethodId _m54;
 		public static void glLightModelx(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelx8204.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelx8204 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelx", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelx8204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m54.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m54 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelx", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m54, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelxv8205;
+		private static global::MonoJavaBridge.MethodId _m55;
 		public static void glLightModelxv(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelxv8205.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelxv8205 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelxv", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelxv8205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m55.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m55 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelxv", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m55, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightModelxv8206;
+		private static global::MonoJavaBridge.MethodId _m56;
 		public static void glLightModelxv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightModelxv8206.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightModelxv8206 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelxv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightModelxv8206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m56.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m56 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightModelxv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m56, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightf8207;
+		private static global::MonoJavaBridge.MethodId _m57;
 		public static void glLightf(int arg0, int arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightf8207.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightf8207 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightf", "(IIF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightf8207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m57.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m57 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightf", "(IIF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m57, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightfv8208;
+		private static global::MonoJavaBridge.MethodId _m58;
 		public static void glLightfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightfv8208.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightfv8208 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightfv8208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m58.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m58 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m58, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightfv8209;
+		private static global::MonoJavaBridge.MethodId _m59;
 		public static void glLightfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightfv8209.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightfv8209 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightfv8209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m59.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m59 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m59, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightx8210;
+		private static global::MonoJavaBridge.MethodId _m60;
 		public static void glLightx(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightx8210.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightx8210 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightx", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightx8210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m60.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m60 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightx", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m60, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightxv8211;
+		private static global::MonoJavaBridge.MethodId _m61;
 		public static void glLightxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightxv8211.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightxv8211 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightxv8211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m61.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m61 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m61, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLightxv8212;
+		private static global::MonoJavaBridge.MethodId _m62;
 		public static void glLightxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLightxv8212.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLightxv8212 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLightxv8212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m62.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m62 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLightxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m62, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLineWidth8213;
+		private static global::MonoJavaBridge.MethodId _m63;
 		public static void glLineWidth(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLineWidth8213.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLineWidth8213 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLineWidth", "(F)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLineWidth8213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m63.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m63 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLineWidth", "(F)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m63, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLineWidthx8214;
+		private static global::MonoJavaBridge.MethodId _m64;
 		public static void glLineWidthx(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLineWidthx8214.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLineWidthx8214 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLineWidthx", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLineWidthx8214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m64.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m64 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLineWidthx", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m64, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLoadIdentity8215;
+		private static global::MonoJavaBridge.MethodId _m65;
 		public static void glLoadIdentity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLoadIdentity8215.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLoadIdentity8215 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadIdentity", "()V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLoadIdentity8215);
+			if (global::android.opengl.GLES10._m65.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m65 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadIdentity", "()V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m65);
 		}
-		internal static global::MonoJavaBridge.MethodId _glLoadMatrixf8216;
+		private static global::MonoJavaBridge.MethodId _m66;
 		public static void glLoadMatrixf(float[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLoadMatrixf8216.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLoadMatrixf8216 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixf", "([FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLoadMatrixf8216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m66.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m66 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixf", "([FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m66, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLoadMatrixf8217;
+		private static global::MonoJavaBridge.MethodId _m67;
 		public static void glLoadMatrixf(java.nio.FloatBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLoadMatrixf8217.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLoadMatrixf8217 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixf", "(Ljava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLoadMatrixf8217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m67.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m67 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixf", "(Ljava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m67, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLoadMatrixx8218;
+		private static global::MonoJavaBridge.MethodId _m68;
 		public static void glLoadMatrixx(int[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLoadMatrixx8218.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLoadMatrixx8218 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixx", "([II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLoadMatrixx8218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m68.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m68 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixx", "([II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m68, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLoadMatrixx8219;
+		private static global::MonoJavaBridge.MethodId _m69;
 		public static void glLoadMatrixx(java.nio.IntBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLoadMatrixx8219.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLoadMatrixx8219 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixx", "(Ljava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLoadMatrixx8219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m69.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m69 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLoadMatrixx", "(Ljava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m69, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glLogicOp8220;
+		private static global::MonoJavaBridge.MethodId _m70;
 		public static void glLogicOp(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glLogicOp8220.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glLogicOp8220 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLogicOp", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glLogicOp8220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m70.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m70 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glLogicOp", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m70, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialf8221;
+		private static global::MonoJavaBridge.MethodId _m71;
 		public static void glMaterialf(int arg0, int arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialf8221.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialf8221 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialf", "(IIF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialf8221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m71.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m71 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialf", "(IIF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m71, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialfv8222;
+		private static global::MonoJavaBridge.MethodId _m72;
 		public static void glMaterialfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialfv8222.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialfv8222 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialfv8222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m72.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m72 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m72, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialfv8223;
+		private static global::MonoJavaBridge.MethodId _m73;
 		public static void glMaterialfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialfv8223.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialfv8223 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialfv8223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m73.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m73 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m73, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialx8224;
+		private static global::MonoJavaBridge.MethodId _m74;
 		public static void glMaterialx(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialx8224.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialx8224 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialx", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialx8224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m74.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m74 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialx", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m74, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialxv8225;
+		private static global::MonoJavaBridge.MethodId _m75;
 		public static void glMaterialxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialxv8225.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialxv8225 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialxv8225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m75.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m75 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m75, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMaterialxv8226;
+		private static global::MonoJavaBridge.MethodId _m76;
 		public static void glMaterialxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMaterialxv8226.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMaterialxv8226 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMaterialxv8226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m76.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m76 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMaterialxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m76, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMatrixMode8227;
+		private static global::MonoJavaBridge.MethodId _m77;
 		public static void glMatrixMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMatrixMode8227.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMatrixMode8227 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMatrixMode", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMatrixMode8227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m77.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m77 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMatrixMode", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m77, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultMatrixf8228;
+		private static global::MonoJavaBridge.MethodId _m78;
 		public static void glMultMatrixf(float[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultMatrixf8228.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultMatrixf8228 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixf", "([FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultMatrixf8228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m78.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m78 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixf", "([FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m78, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultMatrixf8229;
+		private static global::MonoJavaBridge.MethodId _m79;
 		public static void glMultMatrixf(java.nio.FloatBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultMatrixf8229.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultMatrixf8229 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixf", "(Ljava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultMatrixf8229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m79.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m79 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixf", "(Ljava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m79, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultMatrixx8230;
+		private static global::MonoJavaBridge.MethodId _m80;
 		public static void glMultMatrixx(int[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultMatrixx8230.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultMatrixx8230 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixx", "([II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultMatrixx8230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m80.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m80 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixx", "([II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m80, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultMatrixx8231;
+		private static global::MonoJavaBridge.MethodId _m81;
 		public static void glMultMatrixx(java.nio.IntBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultMatrixx8231.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultMatrixx8231 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixx", "(Ljava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultMatrixx8231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m81.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m81 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultMatrixx", "(Ljava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m81, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultiTexCoord4f8232;
+		private static global::MonoJavaBridge.MethodId _m82;
 		public static void glMultiTexCoord4f(int arg0, float arg1, float arg2, float arg3, float arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultiTexCoord4f8232.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultiTexCoord4f8232 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultiTexCoord4f", "(IFFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultiTexCoord4f8232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.opengl.GLES10._m82.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m82 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultiTexCoord4f", "(IFFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m82, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _glMultiTexCoord4x8233;
+		private static global::MonoJavaBridge.MethodId _m83;
 		public static void glMultiTexCoord4x(int arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glMultiTexCoord4x8233.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glMultiTexCoord4x8233 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultiTexCoord4x", "(IIIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glMultiTexCoord4x8233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.opengl.GLES10._m83.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m83 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glMultiTexCoord4x", "(IIIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m83, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _glNormal3f8234;
+		private static global::MonoJavaBridge.MethodId _m84;
 		public static void glNormal3f(float arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glNormal3f8234.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glNormal3f8234 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormal3f", "(FFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glNormal3f8234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m84.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m84 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormal3f", "(FFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m84, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glNormal3x8235;
+		private static global::MonoJavaBridge.MethodId _m85;
 		public static void glNormal3x(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glNormal3x8235.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glNormal3x8235 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormal3x", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glNormal3x8235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m85.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m85 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormal3x", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m85, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glNormalPointer8236;
+		private static global::MonoJavaBridge.MethodId _m86;
 		public static void glNormalPointer(int arg0, int arg1, java.nio.Buffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glNormalPointer8236.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glNormalPointer8236 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormalPointer", "(IILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glNormalPointer8236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m86.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m86 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glNormalPointer", "(IILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m86, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glOrthof8237;
+		private static global::MonoJavaBridge.MethodId _m87;
 		public static void glOrthof(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glOrthof8237.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glOrthof8237 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glOrthof", "(FFFFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glOrthof8237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.opengl.GLES10._m87.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m87 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glOrthof", "(FFFFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m87, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _glOrthox8238;
+		private static global::MonoJavaBridge.MethodId _m88;
 		public static void glOrthox(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glOrthox8238.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glOrthox8238 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glOrthox", "(IIIIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glOrthox8238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.opengl.GLES10._m88.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m88 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glOrthox", "(IIIIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m88, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPixelStorei8239;
+		private static global::MonoJavaBridge.MethodId _m89;
 		public static void glPixelStorei(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPixelStorei8239.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPixelStorei8239 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPixelStorei", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPixelStorei8239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m89.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m89 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPixelStorei", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m89, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointSize8240;
+		private static global::MonoJavaBridge.MethodId _m90;
 		public static void glPointSize(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPointSize8240.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPointSize8240 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPointSize", "(F)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPointSize8240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m90.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m90 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPointSize", "(F)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m90, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointSizex8241;
+		private static global::MonoJavaBridge.MethodId _m91;
 		public static void glPointSizex(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPointSizex8241.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPointSizex8241 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPointSizex", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPointSizex8241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m91.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m91 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPointSizex", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m91, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPolygonOffset8242;
+		private static global::MonoJavaBridge.MethodId _m92;
 		public static void glPolygonOffset(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPolygonOffset8242.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPolygonOffset8242 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPolygonOffset", "(FF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPolygonOffset8242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m92.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m92 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPolygonOffset", "(FF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m92, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPolygonOffsetx8243;
+		private static global::MonoJavaBridge.MethodId _m93;
 		public static void glPolygonOffsetx(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPolygonOffsetx8243.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPolygonOffsetx8243 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPolygonOffsetx", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPolygonOffsetx8243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m93.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m93 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPolygonOffsetx", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m93, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPopMatrix8244;
+		private static global::MonoJavaBridge.MethodId _m94;
 		public static void glPopMatrix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPopMatrix8244.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPopMatrix8244 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPopMatrix", "()V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPopMatrix8244);
+			if (global::android.opengl.GLES10._m94.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m94 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPopMatrix", "()V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m94);
 		}
-		internal static global::MonoJavaBridge.MethodId _glPushMatrix8245;
+		private static global::MonoJavaBridge.MethodId _m95;
 		public static void glPushMatrix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glPushMatrix8245.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glPushMatrix8245 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPushMatrix", "()V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glPushMatrix8245);
+			if (global::android.opengl.GLES10._m95.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m95 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glPushMatrix", "()V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m95);
 		}
-		internal static global::MonoJavaBridge.MethodId _glReadPixels8246;
+		private static global::MonoJavaBridge.MethodId _m96;
 		public static void glReadPixels(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, java.nio.Buffer arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glReadPixels8246.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glReadPixels8246 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glReadPixels", "(IIIIIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glReadPixels8246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			if (global::android.opengl.GLES10._m96.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m96 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glReadPixels", "(IIIIIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m96, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 		}
-		internal static global::MonoJavaBridge.MethodId _glRotatef8247;
+		private static global::MonoJavaBridge.MethodId _m97;
 		public static void glRotatef(float arg0, float arg1, float arg2, float arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glRotatef8247.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glRotatef8247 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glRotatef", "(FFFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glRotatef8247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m97.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m97 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glRotatef", "(FFFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m97, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glRotatex8248;
+		private static global::MonoJavaBridge.MethodId _m98;
 		public static void glRotatex(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glRotatex8248.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glRotatex8248 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glRotatex", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glRotatex8248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m98.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m98 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glRotatex", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m98, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glSampleCoverage8249;
+		private static global::MonoJavaBridge.MethodId _m99;
 		public static void glSampleCoverage(float arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glSampleCoverage8249.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glSampleCoverage8249 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glSampleCoverage", "(FZ)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glSampleCoverage8249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m99.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m99 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glSampleCoverage", "(FZ)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m99, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glSampleCoveragex8250;
+		private static global::MonoJavaBridge.MethodId _m100;
 		public static void glSampleCoveragex(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glSampleCoveragex8250.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glSampleCoveragex8250 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glSampleCoveragex", "(IZ)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glSampleCoveragex8250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES10._m100.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m100 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glSampleCoveragex", "(IZ)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glScalef8251;
+		private static global::MonoJavaBridge.MethodId _m101;
 		public static void glScalef(float arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glScalef8251.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glScalef8251 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScalef", "(FFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glScalef8251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m101.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m101 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScalef", "(FFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glScalex8252;
+		private static global::MonoJavaBridge.MethodId _m102;
 		public static void glScalex(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glScalex8252.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glScalex8252 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScalex", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glScalex8252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m102.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m102 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScalex", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glScissor8253;
+		private static global::MonoJavaBridge.MethodId _m103;
 		public static void glScissor(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glScissor8253.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glScissor8253 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScissor", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glScissor8253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m103.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m103 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glScissor", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glShadeModel8254;
+		private static global::MonoJavaBridge.MethodId _m104;
 		public static void glShadeModel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glShadeModel8254.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glShadeModel8254 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glShadeModel", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glShadeModel8254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m104.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m104 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glShadeModel", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glStencilFunc8255;
+		private static global::MonoJavaBridge.MethodId _m105;
 		public static void glStencilFunc(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glStencilFunc8255.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glStencilFunc8255 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilFunc", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glStencilFunc8255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m105.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m105 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilFunc", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glStencilMask8256;
+		private static global::MonoJavaBridge.MethodId _m106;
 		public static void glStencilMask(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glStencilMask8256.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glStencilMask8256 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilMask", "(I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glStencilMask8256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES10._m106.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m106 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilMask", "(I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glStencilOp8257;
+		private static global::MonoJavaBridge.MethodId _m107;
 		public static void glStencilOp(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glStencilOp8257.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glStencilOp8257 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilOp", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glStencilOp8257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m107.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m107 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glStencilOp", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexCoordPointer8258;
+		private static global::MonoJavaBridge.MethodId _m108;
 		public static void glTexCoordPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexCoordPointer8258.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexCoordPointer8258 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexCoordPointer", "(IIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexCoordPointer8258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m108.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m108 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexCoordPointer", "(IIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvf8259;
+		private static global::MonoJavaBridge.MethodId _m109;
 		public static void glTexEnvf(int arg0, int arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvf8259.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvf8259 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvf", "(IIF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvf8259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m109.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m109 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvf", "(IIF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvfv8260;
+		private static global::MonoJavaBridge.MethodId _m110;
 		public static void glTexEnvfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvfv8260.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvfv8260 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvfv8260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m110.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m110 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvfv8261;
+		private static global::MonoJavaBridge.MethodId _m111;
 		public static void glTexEnvfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvfv8261.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvfv8261 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvfv8261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m111.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m111 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvx8262;
+		private static global::MonoJavaBridge.MethodId _m112;
 		public static void glTexEnvx(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvx8262.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvx8262 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvx", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvx8262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m112.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m112 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvx", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvxv8263;
+		private static global::MonoJavaBridge.MethodId _m113;
 		public static void glTexEnvxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvxv8263.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvxv8263 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvxv8263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m113.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m113 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvxv8264;
+		private static global::MonoJavaBridge.MethodId _m114;
 		public static void glTexEnvxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexEnvxv8264.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexEnvxv8264 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexEnvxv8264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m114.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m114 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexEnvxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexImage2D8265;
+		private static global::MonoJavaBridge.MethodId _m115;
 		public static void glTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexImage2D8265.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexImage2D8265 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexImage2D8265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
+			if (global::android.opengl.GLES10._m115.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m115 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterf8266;
+		private static global::MonoJavaBridge.MethodId _m116;
 		public static void glTexParameterf(int arg0, int arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexParameterf8266.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexParameterf8266 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexParameterf", "(IIF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexParameterf8266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m116.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m116 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexParameterf", "(IIF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterx8267;
+		private static global::MonoJavaBridge.MethodId _m117;
 		public static void glTexParameterx(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexParameterx8267.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexParameterx8267 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexParameterx", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexParameterx8267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m117.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m117 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexParameterx", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexSubImage2D8268;
+		private static global::MonoJavaBridge.MethodId _m118;
 		public static void glTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTexSubImage2D8268.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTexSubImage2D8268 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTexSubImage2D8268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
+			if (global::android.opengl.GLES10._m118.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m118 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTranslatef8269;
+		private static global::MonoJavaBridge.MethodId _m119;
 		public static void glTranslatef(float arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTranslatef8269.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTranslatef8269 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTranslatef", "(FFF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTranslatef8269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m119.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m119 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTranslatef", "(FFF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTranslatex8270;
+		private static global::MonoJavaBridge.MethodId _m120;
 		public static void glTranslatex(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glTranslatex8270.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glTranslatex8270 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTranslatex", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glTranslatex8270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES10._m120.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m120 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glTranslatex", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glVertexPointer8271;
+		private static global::MonoJavaBridge.MethodId _m121;
 		public static void glVertexPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glVertexPointer8271.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glVertexPointer8271 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glVertexPointer", "(IIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glVertexPointer8271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m121.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m121 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glVertexPointer", "(IIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glViewport8272;
+		private static global::MonoJavaBridge.MethodId _m122;
 		public static void glViewport(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._glViewport8272.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._glViewport8272 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glViewport", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._glViewport8272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES10._m122.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m122 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "glViewport", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _GLES108273;
+		private static global::MonoJavaBridge.MethodId _m123;
 		public GLES10() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES10._GLES108273.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES10._GLES108273 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._GLES108273);
+			if (global::android.opengl.GLES10._m123.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES10._m123 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES10.staticClass, global::android.opengl.GLES10._m123);
 			Init(@__env, handle);
 		}
 		public static int GL_ADD

@@ -7,22 +7,22 @@ namespace dalvik.system
 		protected StaleDexCacheError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _StaleDexCacheError18607;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public StaleDexCacheError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.StaleDexCacheError._StaleDexCacheError18607.native == global::System.IntPtr.Zero)
-				global::dalvik.system.StaleDexCacheError._StaleDexCacheError18607 = @__env.GetMethodIDNoThrow(global::dalvik.system.StaleDexCacheError.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._StaleDexCacheError18607);
+			if (global::dalvik.system.StaleDexCacheError._m0.native == global::System.IntPtr.Zero)
+				global::dalvik.system.StaleDexCacheError._m0 = @__env.GetMethodIDNoThrow(global::dalvik.system.StaleDexCacheError.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StaleDexCacheError18608;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public StaleDexCacheError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.StaleDexCacheError._StaleDexCacheError18608.native == global::System.IntPtr.Zero)
-				global::dalvik.system.StaleDexCacheError._StaleDexCacheError18608 = @__env.GetMethodIDNoThrow(global::dalvik.system.StaleDexCacheError.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._StaleDexCacheError18608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.StaleDexCacheError._m1.native == global::System.IntPtr.Zero)
+				global::dalvik.system.StaleDexCacheError._m1 = @__env.GetMethodIDNoThrow(global::dalvik.system.StaleDexCacheError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static StaleDexCacheError()

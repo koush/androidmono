@@ -7,13 +7,13 @@ namespace android.view
 		protected ViewConfiguration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get14947;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.view.ViewConfiguration get(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._get14947.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._get14947 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "get", "(Landroid/content/Context;)Landroid/view/ViewConfiguration;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._get14947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewConfiguration;
+			if (global::android.view.ViewConfiguration._m0.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m0 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "get", "(Landroid/content/Context;)Landroid/view/ViewConfiguration;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewConfiguration;
 		}
 		public static int ScrollBarSize
 		{
@@ -22,13 +22,13 @@ namespace android.view
 				return getScrollBarSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollBarSize14948;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int getScrollBarSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getScrollBarSize14948.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getScrollBarSize14948 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarSize", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarSize14948);
+			if (global::android.view.ViewConfiguration._m1.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m1 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarSize", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m1);
 		}
 		public new int ScaledScrollBarSize
 		{
@@ -37,10 +37,10 @@ namespace android.view
 				return getScaledScrollBarSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledScrollBarSize14949;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getScaledScrollBarSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledScrollBarSize", "()I", ref global::android.view.ViewConfiguration._getScaledScrollBarSize14949);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledScrollBarSize", "()I", ref global::android.view.ViewConfiguration._m2);
 		}
 		public static int ScrollBarFadeDuration
 		{
@@ -49,13 +49,13 @@ namespace android.view
 				return getScrollBarFadeDuration();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollBarFadeDuration14950;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int getScrollBarFadeDuration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getScrollBarFadeDuration14950.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getScrollBarFadeDuration14950 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarFadeDuration", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarFadeDuration14950);
+			if (global::android.view.ViewConfiguration._m3.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m3 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarFadeDuration", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m3);
 		}
 		public static int ScrollDefaultDelay
 		{
@@ -64,13 +64,13 @@ namespace android.view
 				return getScrollDefaultDelay();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollDefaultDelay14951;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int getScrollDefaultDelay()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getScrollDefaultDelay14951.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getScrollDefaultDelay14951 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollDefaultDelay", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollDefaultDelay14951);
+			if (global::android.view.ViewConfiguration._m4.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m4 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollDefaultDelay", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m4);
 		}
 		public static int FadingEdgeLength
 		{
@@ -79,13 +79,13 @@ namespace android.view
 				return getFadingEdgeLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFadingEdgeLength14952;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static int getFadingEdgeLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getFadingEdgeLength14952.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getFadingEdgeLength14952 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getFadingEdgeLength", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getFadingEdgeLength14952);
+			if (global::android.view.ViewConfiguration._m5.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m5 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getFadingEdgeLength", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m5);
 		}
 		public new int ScaledFadingEdgeLength
 		{
@@ -94,10 +94,10 @@ namespace android.view
 				return getScaledFadingEdgeLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledFadingEdgeLength14953;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getScaledFadingEdgeLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledFadingEdgeLength", "()I", ref global::android.view.ViewConfiguration._getScaledFadingEdgeLength14953);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledFadingEdgeLength", "()I", ref global::android.view.ViewConfiguration._m6);
 		}
 		public static int PressedStateDuration
 		{
@@ -106,13 +106,13 @@ namespace android.view
 				return getPressedStateDuration();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPressedStateDuration14954;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static int getPressedStateDuration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getPressedStateDuration14954.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getPressedStateDuration14954 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getPressedStateDuration", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getPressedStateDuration14954);
+			if (global::android.view.ViewConfiguration._m7.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m7 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getPressedStateDuration", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m7);
 		}
 		public static int LongPressTimeout
 		{
@@ -121,13 +121,13 @@ namespace android.view
 				return getLongPressTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLongPressTimeout14955;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static int getLongPressTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getLongPressTimeout14955.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getLongPressTimeout14955 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getLongPressTimeout", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getLongPressTimeout14955);
+			if (global::android.view.ViewConfiguration._m8.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m8 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getLongPressTimeout", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m8);
 		}
 		public static int TapTimeout
 		{
@@ -136,13 +136,13 @@ namespace android.view
 				return getTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTapTimeout14956;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static int getTapTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getTapTimeout14956.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getTapTimeout14956 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTapTimeout", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTapTimeout14956);
+			if (global::android.view.ViewConfiguration._m9.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m9 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTapTimeout", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m9);
 		}
 		public static int JumpTapTimeout
 		{
@@ -151,13 +151,13 @@ namespace android.view
 				return getJumpTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getJumpTapTimeout14957;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static int getJumpTapTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getJumpTapTimeout14957.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getJumpTapTimeout14957 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getJumpTapTimeout", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getJumpTapTimeout14957);
+			if (global::android.view.ViewConfiguration._m10.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m10 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getJumpTapTimeout", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m10);
 		}
 		public static int DoubleTapTimeout
 		{
@@ -166,13 +166,13 @@ namespace android.view
 				return getDoubleTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDoubleTapTimeout14958;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static int getDoubleTapTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getDoubleTapTimeout14958.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getDoubleTapTimeout14958 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getDoubleTapTimeout", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getDoubleTapTimeout14958);
+			if (global::android.view.ViewConfiguration._m11.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m11 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getDoubleTapTimeout", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m11);
 		}
 		public static int EdgeSlop
 		{
@@ -181,13 +181,13 @@ namespace android.view
 				return getEdgeSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEdgeSlop14959;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static int getEdgeSlop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getEdgeSlop14959.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getEdgeSlop14959 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getEdgeSlop", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getEdgeSlop14959);
+			if (global::android.view.ViewConfiguration._m12.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m12 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getEdgeSlop", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m12);
 		}
 		public new int ScaledEdgeSlop
 		{
@@ -196,10 +196,10 @@ namespace android.view
 				return getScaledEdgeSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledEdgeSlop14960;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int getScaledEdgeSlop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledEdgeSlop", "()I", ref global::android.view.ViewConfiguration._getScaledEdgeSlop14960);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledEdgeSlop", "()I", ref global::android.view.ViewConfiguration._m13);
 		}
 		public static int TouchSlop
 		{
@@ -208,13 +208,13 @@ namespace android.view
 				return getTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTouchSlop14961;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static int getTouchSlop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getTouchSlop14961.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getTouchSlop14961 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTouchSlop", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTouchSlop14961);
+			if (global::android.view.ViewConfiguration._m14.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m14 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTouchSlop", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m14);
 		}
 		public new int ScaledTouchSlop
 		{
@@ -223,10 +223,10 @@ namespace android.view
 				return getScaledTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledTouchSlop14962;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual int getScaledTouchSlop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledTouchSlop", "()I", ref global::android.view.ViewConfiguration._getScaledTouchSlop14962);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledTouchSlop", "()I", ref global::android.view.ViewConfiguration._m15);
 		}
 		public new int ScaledPagingTouchSlop
 		{
@@ -235,10 +235,10 @@ namespace android.view
 				return getScaledPagingTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledPagingTouchSlop14963;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual int getScaledPagingTouchSlop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledPagingTouchSlop", "()I", ref global::android.view.ViewConfiguration._getScaledPagingTouchSlop14963);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledPagingTouchSlop", "()I", ref global::android.view.ViewConfiguration._m16);
 		}
 		public new int ScaledDoubleTapSlop
 		{
@@ -247,10 +247,10 @@ namespace android.view
 				return getScaledDoubleTapSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledDoubleTapSlop14964;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual int getScaledDoubleTapSlop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledDoubleTapSlop", "()I", ref global::android.view.ViewConfiguration._getScaledDoubleTapSlop14964);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledDoubleTapSlop", "()I", ref global::android.view.ViewConfiguration._m17);
 		}
 		public static int WindowTouchSlop
 		{
@@ -259,13 +259,13 @@ namespace android.view
 				return getWindowTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWindowTouchSlop14965;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static int getWindowTouchSlop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getWindowTouchSlop14965.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getWindowTouchSlop14965 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getWindowTouchSlop", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getWindowTouchSlop14965);
+			if (global::android.view.ViewConfiguration._m18.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m18 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getWindowTouchSlop", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m18);
 		}
 		public new int ScaledWindowTouchSlop
 		{
@@ -274,10 +274,10 @@ namespace android.view
 				return getScaledWindowTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledWindowTouchSlop14966;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual int getScaledWindowTouchSlop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledWindowTouchSlop", "()I", ref global::android.view.ViewConfiguration._getScaledWindowTouchSlop14966);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledWindowTouchSlop", "()I", ref global::android.view.ViewConfiguration._m19);
 		}
 		public static int MinimumFlingVelocity
 		{
@@ -286,13 +286,13 @@ namespace android.view
 				return getMinimumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumFlingVelocity14967;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static int getMinimumFlingVelocity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getMinimumFlingVelocity14967.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getMinimumFlingVelocity14967 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMinimumFlingVelocity", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMinimumFlingVelocity14967);
+			if (global::android.view.ViewConfiguration._m20.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m20 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMinimumFlingVelocity", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m20);
 		}
 		public new int ScaledMinimumFlingVelocity
 		{
@@ -301,10 +301,10 @@ namespace android.view
 				return getScaledMinimumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMinimumFlingVelocity14968;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual int getScaledMinimumFlingVelocity()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMinimumFlingVelocity", "()I", ref global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14968);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMinimumFlingVelocity", "()I", ref global::android.view.ViewConfiguration._m21);
 		}
 		public static int MaximumFlingVelocity
 		{
@@ -313,13 +313,13 @@ namespace android.view
 				return getMaximumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumFlingVelocity14969;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public static int getMaximumFlingVelocity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getMaximumFlingVelocity14969.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getMaximumFlingVelocity14969 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumFlingVelocity", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumFlingVelocity14969);
+			if (global::android.view.ViewConfiguration._m22.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m22 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumFlingVelocity", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m22);
 		}
 		public new int ScaledMaximumFlingVelocity
 		{
@@ -328,10 +328,10 @@ namespace android.view
 				return getScaledMaximumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMaximumFlingVelocity14970;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual int getScaledMaximumFlingVelocity()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMaximumFlingVelocity", "()I", ref global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14970);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMaximumFlingVelocity", "()I", ref global::android.view.ViewConfiguration._m23);
 		}
 		public static int MaximumDrawingCacheSize
 		{
@@ -340,13 +340,13 @@ namespace android.view
 				return getMaximumDrawingCacheSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumDrawingCacheSize14971;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static int getMaximumDrawingCacheSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14971.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14971 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumDrawingCacheSize", "()I");
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14971);
+			if (global::android.view.ViewConfiguration._m24.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m24 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumDrawingCacheSize", "()I");
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m24);
 		}
 		public new int ScaledMaximumDrawingCacheSize
 		{
@@ -355,10 +355,10 @@ namespace android.view
 				return getScaledMaximumDrawingCacheSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMaximumDrawingCacheSize14972;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual int getScaledMaximumDrawingCacheSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMaximumDrawingCacheSize", "()I", ref global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14972);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.ViewConfiguration.staticClass, "getScaledMaximumDrawingCacheSize", "()I", ref global::android.view.ViewConfiguration._m25);
 		}
 		public static long ZoomControlsTimeout
 		{
@@ -367,13 +367,13 @@ namespace android.view
 				return getZoomControlsTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getZoomControlsTimeout14973;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public static long getZoomControlsTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getZoomControlsTimeout14973.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getZoomControlsTimeout14973 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getZoomControlsTimeout", "()J");
-			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getZoomControlsTimeout14973);
+			if (global::android.view.ViewConfiguration._m26.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m26 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getZoomControlsTimeout", "()J");
+			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m26);
 		}
 		public static long GlobalActionKeyTimeout
 		{
@@ -382,13 +382,13 @@ namespace android.view
 				return getGlobalActionKeyTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGlobalActionKeyTimeout14974;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public static long getGlobalActionKeyTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getGlobalActionKeyTimeout", "()J");
-			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974);
+			if (global::android.view.ViewConfiguration._m27.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m27 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getGlobalActionKeyTimeout", "()J");
+			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m27);
 		}
 		public static float ScrollFriction
 		{
@@ -397,21 +397,21 @@ namespace android.view
 				return getScrollFriction();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollFriction14975;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public static float getScrollFriction()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._getScrollFriction14975.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._getScrollFriction14975 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollFriction", "()F");
-			return @__env.CallStaticFloatMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollFriction14975);
+			if (global::android.view.ViewConfiguration._m28.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m28 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollFriction", "()F");
+			return @__env.CallStaticFloatMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m28);
 		}
-		internal static global::MonoJavaBridge.MethodId _ViewConfiguration14976;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public ViewConfiguration() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ViewConfiguration._ViewConfiguration14976.native == global::System.IntPtr.Zero)
-				global::android.view.ViewConfiguration._ViewConfiguration14976 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._ViewConfiguration14976);
+			if (global::android.view.ViewConfiguration._m29.native == global::System.IntPtr.Zero)
+				global::android.view.ViewConfiguration._m29 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._m29);
 			Init(@__env, handle);
 		}
 		static ViewConfiguration()

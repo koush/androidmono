@@ -7,22 +7,22 @@ namespace android.database.sqlite
 		protected SQLiteAbortException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SQLiteAbortException4704;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SQLiteAbortException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4704.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4704 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteAbortException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteAbortException.staticClass, global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4704);
+			if (global::android.database.sqlite.SQLiteAbortException._m0.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteAbortException._m0 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteAbortException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteAbortException.staticClass, global::android.database.sqlite.SQLiteAbortException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SQLiteAbortException4705;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public SQLiteAbortException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4705.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4705 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteAbortException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteAbortException.staticClass, global::android.database.sqlite.SQLiteAbortException._SQLiteAbortException4705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.database.sqlite.SQLiteAbortException._m1.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteAbortException._m1 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteAbortException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteAbortException.staticClass, global::android.database.sqlite.SQLiteAbortException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static SQLiteAbortException()

@@ -20,45 +20,45 @@ namespace org.w3c.dom.ls
 		internal LSOutput_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoding34908;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.w3c.dom.ls.LSOutput.getEncoding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.w3c.dom.ls.LSOutput_._getEncoding34908) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getEncoding", "()Ljava/lang/String;", ref global::org.w3c.dom.ls.LSOutput_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setEncoding34909;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.w3c.dom.ls.LSOutput.setEncoding(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setEncoding", "(Ljava/lang/String;)V", ref global::org.w3c.dom.ls.LSOutput_._setEncoding34909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setEncoding", "(Ljava/lang/String;)V", ref global::org.w3c.dom.ls.LSOutput_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId34910;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.w3c.dom.ls.LSOutput.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.w3c.dom.ls.LSOutput_._getSystemId34910) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.w3c.dom.ls.LSOutput_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCharacterStream34911;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.io.Writer org.w3c.dom.ls.LSOutput.getCharacterStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getCharacterStream", "()Ljava/io/Writer;", ref global::org.w3c.dom.ls.LSOutput_._getCharacterStream34911) as java.io.Writer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getCharacterStream", "()Ljava/io/Writer;", ref global::org.w3c.dom.ls.LSOutput_._m3) as java.io.Writer;
 		}
-		internal static global::MonoJavaBridge.MethodId _setCharacterStream34912;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.w3c.dom.ls.LSOutput.setCharacterStream(java.io.Writer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setCharacterStream", "(Ljava/io/Writer;)V", ref global::org.w3c.dom.ls.LSOutput_._setCharacterStream34912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setCharacterStream", "(Ljava/io/Writer;)V", ref global::org.w3c.dom.ls.LSOutput_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId34913;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.w3c.dom.ls.LSOutput.setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::org.w3c.dom.ls.LSOutput_._setSystemId34913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::org.w3c.dom.ls.LSOutput_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setByteStream34914;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.w3c.dom.ls.LSOutput.setByteStream(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setByteStream", "(Ljava/io/OutputStream;)V", ref global::org.w3c.dom.ls.LSOutput_._setByteStream34914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "setByteStream", "(Ljava/io/OutputStream;)V", ref global::org.w3c.dom.ls.LSOutput_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getByteStream34915;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::java.io.OutputStream org.w3c.dom.ls.LSOutput.getByteStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getByteStream", "()Ljava/io/OutputStream;", ref global::org.w3c.dom.ls.LSOutput_._getByteStream34915) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.ls.LSOutput_.staticClass, "getByteStream", "()Ljava/io/OutputStream;", ref global::org.w3c.dom.ls.LSOutput_._m7) as java.io.OutputStream;
 		}
 		static LSOutput_()
 		{

@@ -13,10 +13,10 @@ namespace java.security
 		internal Guard_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _checkGuard22957;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.security.Guard.checkGuard(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V", ref global::java.security.Guard_._checkGuard22957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V", ref global::java.security.Guard_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Guard_()
 		{

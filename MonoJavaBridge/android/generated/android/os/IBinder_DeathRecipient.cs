@@ -13,10 +13,10 @@ namespace android.os
 		internal IBinder_DeathRecipient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _binderDied9895;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.os.IBinder_DeathRecipient.binderDied()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V", ref global::android.os.IBinder_DeathRecipient_._binderDied9895);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V", ref global::android.os.IBinder_DeathRecipient_._m0);
 		}
 		static IBinder_DeathRecipient_()
 		{
@@ -36,13 +36,13 @@ namespace android.os
 		protected IBinder_DeathRecipientDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _IBinder_DeathRecipientDelegateWrapper9896;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public IBinder_DeathRecipientDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896.native == global::System.IntPtr.Zero)
-				global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896);
+			if (global::android.os.IBinder_DeathRecipientDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.os.IBinder_DeathRecipientDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, global::android.os.IBinder_DeathRecipientDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static IBinder_DeathRecipientDelegateWrapper()

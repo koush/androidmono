@@ -13,25 +13,25 @@ namespace java.nio.channels
 		internal InterruptibleChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close22510;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.nio.channels.InterruptibleChannel.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._close22510);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _close22511;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._close22511);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen22512;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.InterruptibleChannel_._isOpen22512);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.InterruptibleChannel_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _close22513;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._close22513);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.InterruptibleChannel_.staticClass, "close", "()V", ref global::java.nio.channels.InterruptibleChannel_._m3);
 		}
 		static InterruptibleChannel_()
 		{

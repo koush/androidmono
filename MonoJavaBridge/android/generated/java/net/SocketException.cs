@@ -7,22 +7,22 @@ namespace java.net
 		protected SocketException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SocketException21774;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SocketException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.SocketException._SocketException21774.native == global::System.IntPtr.Zero)
-				global::java.net.SocketException._SocketException21774 = @__env.GetMethodIDNoThrow(global::java.net.SocketException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketException.staticClass, global::java.net.SocketException._SocketException21774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.net.SocketException._m0.native == global::System.IntPtr.Zero)
+				global::java.net.SocketException._m0 = @__env.GetMethodIDNoThrow(global::java.net.SocketException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketException.staticClass, global::java.net.SocketException._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SocketException21775;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public SocketException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.SocketException._SocketException21775.native == global::System.IntPtr.Zero)
-				global::java.net.SocketException._SocketException21775 = @__env.GetMethodIDNoThrow(global::java.net.SocketException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketException.staticClass, global::java.net.SocketException._SocketException21775);
+			if (global::java.net.SocketException._m1.native == global::System.IntPtr.Zero)
+				global::java.net.SocketException._m1 = @__env.GetMethodIDNoThrow(global::java.net.SocketException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketException.staticClass, global::java.net.SocketException._m1);
 			Init(@__env, handle);
 		}
 		static SocketException()

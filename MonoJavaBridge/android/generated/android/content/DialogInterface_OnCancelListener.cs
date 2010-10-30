@@ -13,10 +13,10 @@ namespace android.content
 		internal DialogInterface_OnCancelListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onCancel3067;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_OnCancelListener_.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V", ref global::android.content.DialogInterface_OnCancelListener_._onCancel3067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_OnCancelListener_.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V", ref global::android.content.DialogInterface_OnCancelListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DialogInterface_OnCancelListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.content
 		protected DialogInterface_OnCancelListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnCancelListenerDelegateWrapper3068;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public DialogInterface_OnCancelListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._DialogInterface_OnCancelListenerDelegateWrapper3068.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._DialogInterface_OnCancelListenerDelegateWrapper3068 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._DialogInterface_OnCancelListenerDelegateWrapper3068);
+			if (global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static DialogInterface_OnCancelListenerDelegateWrapper()

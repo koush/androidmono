@@ -7,35 +7,35 @@ namespace android.content
 		internal ComponentName(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals2611;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ComponentName.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.content.ComponentName._equals2611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ComponentName.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.content.ComponentName._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString2612;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.ComponentName._toString2612) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.ComponentName._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode2613;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public sealed override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "hashCode", "()I", ref global::android.content.ComponentName._hashCode2613);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "hashCode", "()I", ref global::android.content.ComponentName._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _clone2614;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public global::android.content.ComponentName clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.ComponentName.staticClass, "clone", "()Landroid/content/ComponentName;", ref global::android.content.ComponentName._clone2614) as android.content.ComponentName;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ComponentName>(this, global::android.content.ComponentName.staticClass, "clone", "()Landroid/content/ComponentName;", ref global::android.content.ComponentName._m3) as android.content.ComponentName;
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo2615;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public int compareTo(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::android.content.ComponentName._compareTo2615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::android.content.ComponentName._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo2616;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public int compareTo(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "compareTo", "(Landroid/content/ComponentName;)I", ref global::android.content.ComponentName._compareTo2616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "compareTo", "(Landroid/content/ComponentName;)I", ref global::android.content.ComponentName._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String ClassName
 		{
@@ -44,10 +44,10 @@ namespace android.content
 				return getClassName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getClassName2617;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public global::java.lang.String getClassName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getClassName", "()Ljava/lang/String;", ref global::android.content.ComponentName._getClassName2617) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getClassName", "()Ljava/lang/String;", ref global::android.content.ComponentName._m6) as java.lang.String;
 		}
 		public new global::java.lang.String PackageName
 		{
@@ -56,36 +56,36 @@ namespace android.content
 				return getPackageName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPackageName2618;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public global::java.lang.String getPackageName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getPackageName", "()Ljava/lang/String;", ref global::android.content.ComponentName._getPackageName2618) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getPackageName", "()Ljava/lang/String;", ref global::android.content.ComponentName._m7) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel2619;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentName.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.ComponentName._writeToParcel2619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentName.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.ComponentName._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel2620;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static void writeToParcel(android.content.ComponentName arg0, android.os.Parcel arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._writeToParcel2620.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._writeToParcel2620 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "writeToParcel", "(Landroid/content/ComponentName;Landroid/os/Parcel;)V");
-			@__env.CallStaticVoidMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._writeToParcel2620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.ComponentName._m9.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m9 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "writeToParcel", "(Landroid/content/ComponentName;Landroid/os/Parcel;)V");
+			@__env.CallStaticVoidMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents2621;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "describeContents", "()I", ref global::android.content.ComponentName._describeContents2621);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ComponentName.staticClass, "describeContents", "()I", ref global::android.content.ComponentName._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _readFromParcel2622;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static global::android.content.ComponentName readFromParcel(android.os.Parcel arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._readFromParcel2622.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._readFromParcel2622 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "readFromParcel", "(Landroid/os/Parcel;)Landroid/content/ComponentName;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallStaticObjectMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._readFromParcel2622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ComponentName;
+			if (global::android.content.ComponentName._m11.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m11 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "readFromParcel", "(Landroid/os/Parcel;)Landroid/content/ComponentName;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallStaticObjectMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ComponentName;
 		}
 		public new global::java.lang.String ShortClassName
 		{
@@ -94,84 +94,84 @@ namespace android.content
 				return getShortClassName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getShortClassName2623;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public global::java.lang.String getShortClassName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getShortClassName", "()Ljava/lang/String;", ref global::android.content.ComponentName._getShortClassName2623) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "getShortClassName", "()Ljava/lang/String;", ref global::android.content.ComponentName._m12) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _flattenToString2624;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public global::java.lang.String flattenToString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "flattenToString", "()Ljava/lang/String;", ref global::android.content.ComponentName._flattenToString2624) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "flattenToString", "()Ljava/lang/String;", ref global::android.content.ComponentName._m13) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _flattenToShortString2625;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public global::java.lang.String flattenToShortString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "flattenToShortString", "()Ljava/lang/String;", ref global::android.content.ComponentName._flattenToShortString2625) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "flattenToShortString", "()Ljava/lang/String;", ref global::android.content.ComponentName._m14) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _unflattenFromString2626;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static global::android.content.ComponentName unflattenFromString(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._unflattenFromString2626.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._unflattenFromString2626 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "unflattenFromString", "(Ljava/lang/String;)Landroid/content/ComponentName;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallStaticObjectMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._unflattenFromString2626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ComponentName;
+			if (global::android.content.ComponentName._m15.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m15 = @__env.GetStaticMethodIDNoThrow(global::android.content.ComponentName.staticClass, "unflattenFromString", "(Ljava/lang/String;)Landroid/content/ComponentName;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallStaticObjectMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ComponentName;
 		}
-		internal static global::MonoJavaBridge.MethodId _toShortString2627;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public global::java.lang.String toShortString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "toShortString", "()Ljava/lang/String;", ref global::android.content.ComponentName._toShortString2627) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ComponentName.staticClass, "toShortString", "()Ljava/lang/String;", ref global::android.content.ComponentName._m16) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _ComponentName2628;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public ComponentName(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._ComponentName2628.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._ComponentName2628 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._ComponentName2628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.ComponentName._m17.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m17 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ComponentName2629;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public ComponentName(android.content.Context arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._ComponentName2629.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._ComponentName2629 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._ComponentName2629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.ComponentName._m18.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m18 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ComponentName2630;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public ComponentName(android.content.Context arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._ComponentName2630.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._ComponentName2630 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/Class;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._ComponentName2630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.ComponentName._m19.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m19 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/Class;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ComponentName2631;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public ComponentName(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ComponentName._ComponentName2631.native == global::System.IntPtr.Zero)
-				global::android.content.ComponentName._ComponentName2631 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._ComponentName2631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.ComponentName._m20.native == global::System.IntPtr.Zero)
+				global::android.content.ComponentName._m20 = @__env.GetMethodIDNoThrow(global::android.content.ComponentName.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ComponentName.staticClass, global::android.content.ComponentName._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR2632;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1616;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.ComponentName.staticClass, _CREATOR2632)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.ComponentName.staticClass, _CREATOR1616)) as android.os.Parcelable_Creator;
 			}
 		}
 		static ComponentName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ComponentName.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ComponentName"));
-			global::android.content.ComponentName._CREATOR2632 = @__env.GetStaticFieldIDNoThrow(global::android.content.ComponentName.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.ComponentName._CREATOR1616 = @__env.GetStaticFieldIDNoThrow(global::android.content.ComponentName.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

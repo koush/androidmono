@@ -16,60 +16,60 @@ namespace org.apache.http
 		internal HttpInetConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalAddress31589;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.InetAddress org.apache.http.HttpInetConnection.getLocalAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getLocalAddress", "()Ljava/net/InetAddress;", ref global::org.apache.http.HttpInetConnection_._getLocalAddress31589) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getLocalAddress", "()Ljava/net/InetAddress;", ref global::org.apache.http.HttpInetConnection_._m0) as java.net.InetAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalPort31590;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int org.apache.http.HttpInetConnection.getLocalPort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getLocalPort", "()I", ref global::org.apache.http.HttpInetConnection_._getLocalPort31590);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getLocalPort", "()I", ref global::org.apache.http.HttpInetConnection_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getRemoteAddress31591;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.net.InetAddress org.apache.http.HttpInetConnection.getRemoteAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getRemoteAddress", "()Ljava/net/InetAddress;", ref global::org.apache.http.HttpInetConnection_._getRemoteAddress31591) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getRemoteAddress", "()Ljava/net/InetAddress;", ref global::org.apache.http.HttpInetConnection_._m2) as java.net.InetAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _getRemotePort31592;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int org.apache.http.HttpInetConnection.getRemotePort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getRemotePort", "()I", ref global::org.apache.http.HttpInetConnection_._getRemotePort31592);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getRemotePort", "()I", ref global::org.apache.http.HttpInetConnection_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _shutdown31593;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.apache.http.HttpConnection.shutdown()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "shutdown", "()V", ref global::org.apache.http.HttpInetConnection_._shutdown31593);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "shutdown", "()V", ref global::org.apache.http.HttpInetConnection_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _close31594;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.apache.http.HttpConnection.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "close", "()V", ref global::org.apache.http.HttpInetConnection_._close31594);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "close", "()V", ref global::org.apache.http.HttpInetConnection_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen31595;
+		private static global::MonoJavaBridge.MethodId _m6;
 		bool org.apache.http.HttpConnection.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "isOpen", "()Z", ref global::org.apache.http.HttpInetConnection_._isOpen31595);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "isOpen", "()Z", ref global::org.apache.http.HttpInetConnection_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetrics31596;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::org.apache.http.HttpConnectionMetrics org.apache.http.HttpConnection.getMetrics()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpConnectionMetrics>(this, global::org.apache.http.HttpInetConnection_.staticClass, "getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;", ref global::org.apache.http.HttpInetConnection_._getMetrics31596) as org.apache.http.HttpConnectionMetrics;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpConnectionMetrics>(this, global::org.apache.http.HttpInetConnection_.staticClass, "getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;", ref global::org.apache.http.HttpInetConnection_._m7) as org.apache.http.HttpConnectionMetrics;
 		}
-		internal static global::MonoJavaBridge.MethodId _isStale31597;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool org.apache.http.HttpConnection.isStale()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "isStale", "()Z", ref global::org.apache.http.HttpInetConnection_._isStale31597);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "isStale", "()Z", ref global::org.apache.http.HttpInetConnection_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _setSocketTimeout31598;
+		private static global::MonoJavaBridge.MethodId _m9;
 		void org.apache.http.HttpConnection.setSocketTimeout(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "setSocketTimeout", "(I)V", ref global::org.apache.http.HttpInetConnection_._setSocketTimeout31598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "setSocketTimeout", "(I)V", ref global::org.apache.http.HttpInetConnection_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSocketTimeout31599;
+		private static global::MonoJavaBridge.MethodId _m10;
 		int org.apache.http.HttpConnection.getSocketTimeout()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getSocketTimeout", "()I", ref global::org.apache.http.HttpInetConnection_._getSocketTimeout31599);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpInetConnection_.staticClass, "getSocketTimeout", "()I", ref global::org.apache.http.HttpInetConnection_._m10);
 		}
 		static HttpInetConnection_()
 		{

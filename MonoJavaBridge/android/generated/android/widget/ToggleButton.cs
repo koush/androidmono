@@ -14,10 +14,10 @@ namespace android.widget
 				setChecked(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setChecked18203;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void setChecked(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setChecked", "(Z)V", ref global::android.widget.ToggleButton._setChecked18203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setChecked", "(Z)V", ref global::android.widget.ToggleButton._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable BackgroundDrawable
 		{
@@ -26,20 +26,20 @@ namespace android.widget
 				setBackgroundDrawable(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setBackgroundDrawable18204;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void setBackgroundDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ToggleButton._setBackgroundDrawable18204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ToggleButton._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFinishInflate18205;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void onFinishInflate()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "onFinishInflate", "()V", ref global::android.widget.ToggleButton._onFinishInflate18205);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "onFinishInflate", "()V", ref global::android.widget.ToggleButton._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged18206;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "drawableStateChanged", "()V", ref global::android.widget.ToggleButton._drawableStateChanged18206);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "drawableStateChanged", "()V", ref global::android.widget.ToggleButton._m3);
 		}
 		public new string TextOn
 		{
@@ -52,15 +52,15 @@ namespace android.widget
 				setTextOn((global::java.lang.CharSequence)(global::java.lang.String)value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextOn18207;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.CharSequence getTextOn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.ToggleButton.staticClass, "getTextOn", "()Ljava/lang/CharSequence;", ref global::android.widget.ToggleButton._getTextOn18207) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.ToggleButton.staticClass, "getTextOn", "()Ljava/lang/CharSequence;", ref global::android.widget.ToggleButton._m4) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _setTextOn18208;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setTextOn(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setTextOn", "(Ljava/lang/CharSequence;)V", ref global::android.widget.ToggleButton._setTextOn18208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setTextOn", "(Ljava/lang/CharSequence;)V", ref global::android.widget.ToggleButton._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTextOn(string arg0)
 		{
@@ -77,45 +77,45 @@ namespace android.widget
 				setTextOff((global::java.lang.CharSequence)(global::java.lang.String)value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextOff18209;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.lang.CharSequence getTextOff()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.ToggleButton.staticClass, "getTextOff", "()Ljava/lang/CharSequence;", ref global::android.widget.ToggleButton._getTextOff18209) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.ToggleButton.staticClass, "getTextOff", "()Ljava/lang/CharSequence;", ref global::android.widget.ToggleButton._m6) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _setTextOff18210;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setTextOff(java.lang.CharSequence arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setTextOff", "(Ljava/lang/CharSequence;)V", ref global::android.widget.ToggleButton._setTextOff18210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ToggleButton.staticClass, "setTextOff", "(Ljava/lang/CharSequence;)V", ref global::android.widget.ToggleButton._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTextOff(string arg0)
 		{
 			setTextOff((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _ToggleButton18211;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public ToggleButton(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ToggleButton._ToggleButton18211.native == global::System.IntPtr.Zero)
-				global::android.widget.ToggleButton._ToggleButton18211 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._ToggleButton18211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.ToggleButton._m8.native == global::System.IntPtr.Zero)
+				global::android.widget.ToggleButton._m8 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ToggleButton18212;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public ToggleButton(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ToggleButton._ToggleButton18212.native == global::System.IntPtr.Zero)
-				global::android.widget.ToggleButton._ToggleButton18212 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._ToggleButton18212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.ToggleButton._m9.native == global::System.IntPtr.Zero)
+				global::android.widget.ToggleButton._m9 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ToggleButton18213;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public ToggleButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ToggleButton._ToggleButton18213.native == global::System.IntPtr.Zero)
-				global::android.widget.ToggleButton._ToggleButton18213 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._ToggleButton18213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.ToggleButton._m10.native == global::System.IntPtr.Zero)
+				global::android.widget.ToggleButton._m10 = @__env.GetMethodIDNoThrow(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static ToggleButton()

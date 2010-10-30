@@ -14,15 +14,15 @@ namespace javax.sql
 		internal ConnectionPoolDataSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getPooledConnection30282;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::javax.sql.PooledConnection javax.sql.ConnectionPoolDataSource.getPooledConnection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.sql.PooledConnection>(this, global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "()Ljavax/sql/PooledConnection;", ref global::javax.sql.ConnectionPoolDataSource_._getPooledConnection30282) as javax.sql.PooledConnection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.sql.PooledConnection>(this, global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "()Ljavax/sql/PooledConnection;", ref global::javax.sql.ConnectionPoolDataSource_._m0) as javax.sql.PooledConnection;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPooledConnection30283;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::javax.sql.PooledConnection javax.sql.ConnectionPoolDataSource.getPooledConnection(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.sql.PooledConnection>(this, global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/sql/PooledConnection;", ref global::javax.sql.ConnectionPoolDataSource_._getPooledConnection30283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.sql.PooledConnection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.sql.PooledConnection>(this, global::javax.sql.ConnectionPoolDataSource_.staticClass, "getPooledConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/sql/PooledConnection;", ref global::javax.sql.ConnectionPoolDataSource_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.sql.PooledConnection;
 		}
 		static ConnectionPoolDataSource_()
 		{

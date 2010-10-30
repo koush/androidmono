@@ -14,10 +14,10 @@ namespace javax.crypto.spec
 				return getExponentSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getExponentSize28767;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int getExponentSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.DHGenParameterSpec.staticClass, "getExponentSize", "()I", ref global::javax.crypto.spec.DHGenParameterSpec._getExponentSize28767);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.DHGenParameterSpec.staticClass, "getExponentSize", "()I", ref global::javax.crypto.spec.DHGenParameterSpec._m0);
 		}
 		public new int PrimeSize
 		{
@@ -26,18 +26,18 @@ namespace javax.crypto.spec
 				return getPrimeSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrimeSize28768;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getPrimeSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.DHGenParameterSpec.staticClass, "getPrimeSize", "()I", ref global::javax.crypto.spec.DHGenParameterSpec._getPrimeSize28768);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.DHGenParameterSpec.staticClass, "getPrimeSize", "()I", ref global::javax.crypto.spec.DHGenParameterSpec._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _DHGenParameterSpec28769;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public DHGenParameterSpec(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DHGenParameterSpec._DHGenParameterSpec28769.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DHGenParameterSpec._DHGenParameterSpec28769 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHGenParameterSpec.staticClass, "<init>", "(II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHGenParameterSpec.staticClass, global::javax.crypto.spec.DHGenParameterSpec._DHGenParameterSpec28769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.spec.DHGenParameterSpec._m2.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.DHGenParameterSpec._m2 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DHGenParameterSpec.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHGenParameterSpec.staticClass, global::javax.crypto.spec.DHGenParameterSpec._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static DHGenParameterSpec()

@@ -7,37 +7,37 @@ namespace org.apache.http.conn.util
 		protected InetAddressUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isIPv4Address32364;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static bool isIPv4Address(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.util.InetAddressUtils._isIPv4Address32364.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.util.InetAddressUtils._isIPv4Address32364 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv4Address", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv4Address32364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.conn.util.InetAddressUtils._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.util.InetAddressUtils._m0 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv4Address", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isIPv6StdAddress32365;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static bool isIPv6StdAddress(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.util.InetAddressUtils._isIPv6StdAddress32365.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.util.InetAddressUtils._isIPv6StdAddress32365 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6StdAddress", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6StdAddress32365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.conn.util.InetAddressUtils._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.util.InetAddressUtils._m1 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6StdAddress", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isIPv6HexCompressedAddress32366;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static bool isIPv6HexCompressedAddress(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.util.InetAddressUtils._isIPv6HexCompressedAddress32366.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.util.InetAddressUtils._isIPv6HexCompressedAddress32366 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6HexCompressedAddress", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6HexCompressedAddress32366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.conn.util.InetAddressUtils._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.util.InetAddressUtils._m2 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6HexCompressedAddress", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isIPv6Address32367;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static bool isIPv6Address(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.util.InetAddressUtils._isIPv6Address32367.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.util.InetAddressUtils._isIPv6Address32367 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6Address", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6Address32367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.conn.util.InetAddressUtils._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.util.InetAddressUtils._m3 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.util.InetAddressUtils.staticClass, "isIPv6Address", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static InetAddressUtils()
 		{

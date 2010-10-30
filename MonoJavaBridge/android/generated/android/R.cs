@@ -14,13 +14,13 @@ namespace android
 			internal anim(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _anim128;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public anim() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.anim._anim128.native == global::System.IntPtr.Zero)
-					global::android.R.anim._anim128 = @__env.GetMethodIDNoThrow(global::android.R.anim.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.anim.staticClass, global::android.R.anim._anim128);
+				if (global::android.R.anim._m0.native == global::System.IntPtr.Zero)
+					global::android.R.anim._m0 = @__env.GetMethodIDNoThrow(global::android.R.anim.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.anim.staticClass, global::android.R.anim._m0);
 				Init(@__env, handle);
 			}
 			public static int accelerate_decelerate_interpolator
@@ -130,13 +130,13 @@ namespace android
 			internal array(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _array142;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public array() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.array._array142.native == global::System.IntPtr.Zero)
-					global::android.R.array._array142 = @__env.GetMethodIDNoThrow(global::android.R.array.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.array.staticClass, global::android.R.array._array142);
+				if (global::android.R.array._m0.native == global::System.IntPtr.Zero)
+					global::android.R.array._m0 = @__env.GetMethodIDNoThrow(global::android.R.array.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.array.staticClass, global::android.R.array._m0);
 				Init(@__env, handle);
 			}
 			public static int emailAddressTypes
@@ -190,13 +190,13 @@ namespace android
 			internal attr(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _attr148;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public attr() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.attr._attr148.native == global::System.IntPtr.Zero)
-					global::android.R.attr._attr148 = @__env.GetMethodIDNoThrow(global::android.R.attr.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.attr.staticClass, global::android.R.attr._attr148);
+				if (global::android.R.attr._m0.native == global::System.IntPtr.Zero)
+					global::android.R.attr._m0 = @__env.GetMethodIDNoThrow(global::android.R.attr.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.attr.staticClass, global::android.R.attr._m0);
 				Init(@__env, handle);
 			}
 			public static int absListViewStyle
@@ -5122,13 +5122,13 @@ namespace android
 			internal @bool(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _bool850;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public @bool() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.@bool._bool850.native == global::System.IntPtr.Zero)
-					global::android.R.@bool._bool850 = @__env.GetMethodIDNoThrow(global::android.R.@bool.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@bool.staticClass, global::android.R.@bool._bool850);
+				if (global::android.R.@bool._m0.native == global::System.IntPtr.Zero)
+					global::android.R.@bool._m0 = @__env.GetMethodIDNoThrow(global::android.R.@bool.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@bool.staticClass, global::android.R.@bool._m0);
 				Init(@__env, handle);
 			}
 			static @bool()
@@ -5147,13 +5147,13 @@ namespace android
 			internal color(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _color851;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public color() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.color._color851.native == global::System.IntPtr.Zero)
-					global::android.R.color._color851 = @__env.GetMethodIDNoThrow(global::android.R.color.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.color.staticClass, global::android.R.color._color851);
+				if (global::android.R.color._m0.native == global::System.IntPtr.Zero)
+					global::android.R.color._m0 = @__env.GetMethodIDNoThrow(global::android.R.color.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.color.staticClass, global::android.R.color._m0);
 				Init(@__env, handle);
 			}
 			public static int background_dark
@@ -5298,13 +5298,13 @@ namespace android
 			internal dimen(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _dimen870;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public dimen() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.dimen._dimen870.native == global::System.IntPtr.Zero)
-					global::android.R.dimen._dimen870 = @__env.GetMethodIDNoThrow(global::android.R.dimen.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.dimen.staticClass, global::android.R.dimen._dimen870);
+				if (global::android.R.dimen._m0.native == global::System.IntPtr.Zero)
+					global::android.R.dimen._m0 = @__env.GetMethodIDNoThrow(global::android.R.dimen.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.dimen.staticClass, global::android.R.dimen._m0);
 				Init(@__env, handle);
 			}
 			public static int app_icon_size
@@ -5344,13 +5344,13 @@ namespace android
 			internal drawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _drawable874;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public drawable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.drawable._drawable874.native == global::System.IntPtr.Zero)
-					global::android.R.drawable._drawable874 = @__env.GetMethodIDNoThrow(global::android.R.drawable.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.drawable.staticClass, global::android.R.drawable._drawable874);
+				if (global::android.R.drawable._m0.native == global::System.IntPtr.Zero)
+					global::android.R.drawable._m0 = @__env.GetMethodIDNoThrow(global::android.R.drawable.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.drawable.staticClass, global::android.R.drawable._m0);
 				Init(@__env, handle);
 			}
 			public static int alert_dark_frame
@@ -6531,13 +6531,13 @@ namespace android
 			internal id(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _id1041;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public id() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.id._id1041.native == global::System.IntPtr.Zero)
-					global::android.R.id._id1041 = @__env.GetMethodIDNoThrow(global::android.R.id.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.id.staticClass, global::android.R.id._id1041);
+				if (global::android.R.id._m0.native == global::System.IntPtr.Zero)
+					global::android.R.id._m0 = @__env.GetMethodIDNoThrow(global::android.R.id.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.id.staticClass, global::android.R.id._m0);
 				Init(@__env, handle);
 			}
 			public static int addToDictionary
@@ -6864,13 +6864,13 @@ namespace android
 			internal integer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _integer1086;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public integer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.integer._integer1086.native == global::System.IntPtr.Zero)
-					global::android.R.integer._integer1086 = @__env.GetMethodIDNoThrow(global::android.R.integer.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.integer.staticClass, global::android.R.integer._integer1086);
+				if (global::android.R.integer._m0.native == global::System.IntPtr.Zero)
+					global::android.R.integer._m0 = @__env.GetMethodIDNoThrow(global::android.R.integer.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.integer.staticClass, global::android.R.integer._m0);
 				Init(@__env, handle);
 			}
 			public static int config_longAnimTime
@@ -6910,13 +6910,13 @@ namespace android
 			internal layout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _layout1090;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public layout() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.layout._layout1090.native == global::System.IntPtr.Zero)
-					global::android.R.layout._layout1090 = @__env.GetMethodIDNoThrow(global::android.R.layout.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.layout.staticClass, global::android.R.layout._layout1090);
+				if (global::android.R.layout._m0.native == global::System.IntPtr.Zero)
+					global::android.R.layout._m0 = @__env.GetMethodIDNoThrow(global::android.R.layout.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.layout.staticClass, global::android.R.layout._m0);
 				Init(@__env, handle);
 			}
 			public static int activity_list_item
@@ -7075,13 +7075,13 @@ namespace android
 			internal plurals(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _plurals1111;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public plurals() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.plurals._plurals1111.native == global::System.IntPtr.Zero)
-					global::android.R.plurals._plurals1111 = @__env.GetMethodIDNoThrow(global::android.R.plurals.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.plurals.staticClass, global::android.R.plurals._plurals1111);
+				if (global::android.R.plurals._m0.native == global::System.IntPtr.Zero)
+					global::android.R.plurals._m0 = @__env.GetMethodIDNoThrow(global::android.R.plurals.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.plurals.staticClass, global::android.R.plurals._m0);
 				Init(@__env, handle);
 			}
 			static plurals()
@@ -7100,13 +7100,13 @@ namespace android
 			internal raw(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _raw1112;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public raw() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.raw._raw1112.native == global::System.IntPtr.Zero)
-					global::android.R.raw._raw1112 = @__env.GetMethodIDNoThrow(global::android.R.raw.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.raw.staticClass, global::android.R.raw._raw1112);
+				if (global::android.R.raw._m0.native == global::System.IntPtr.Zero)
+					global::android.R.raw._m0 = @__env.GetMethodIDNoThrow(global::android.R.raw.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.raw.staticClass, global::android.R.raw._m0);
 				Init(@__env, handle);
 			}
 			static raw()
@@ -7125,13 +7125,13 @@ namespace android
 			internal @string(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _string1113;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public @string() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.@string._string1113.native == global::System.IntPtr.Zero)
-					global::android.R.@string._string1113 = @__env.GetMethodIDNoThrow(global::android.R.@string.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@string.staticClass, global::android.R.@string._string1113);
+				if (global::android.R.@string._m0.native == global::System.IntPtr.Zero)
+					global::android.R.@string._m0 = @__env.GetMethodIDNoThrow(global::android.R.@string.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@string.staticClass, global::android.R.@string._m0);
 				Init(@__env, handle);
 			}
 			public static int VideoView_error_button
@@ -7304,13 +7304,13 @@ namespace android
 			internal style(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _style1136;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public style() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.style._style1136.native == global::System.IntPtr.Zero)
-					global::android.R.style._style1136 = @__env.GetMethodIDNoThrow(global::android.R.style.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.style.staticClass, global::android.R.style._style1136);
+				if (global::android.R.style._m0.native == global::System.IntPtr.Zero)
+					global::android.R.style._m0 = @__env.GetMethodIDNoThrow(global::android.R.style.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.style.staticClass, global::android.R.style._m0);
 				Init(@__env, handle);
 			}
 			public static int Animation
@@ -8015,13 +8015,13 @@ namespace android
 			internal xml(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _xml1235;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public xml() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.R.xml._xml1235.native == global::System.IntPtr.Zero)
-					global::android.R.xml._xml1235 = @__env.GetMethodIDNoThrow(global::android.R.xml.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.xml.staticClass, global::android.R.xml._xml1235);
+				if (global::android.R.xml._m0.native == global::System.IntPtr.Zero)
+					global::android.R.xml._m0 = @__env.GetMethodIDNoThrow(global::android.R.xml.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.xml.staticClass, global::android.R.xml._m0);
 				Init(@__env, handle);
 			}
 			static xml()
@@ -8033,13 +8033,13 @@ namespace android
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _R1236;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public R() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.R._R1236.native == global::System.IntPtr.Zero)
-				global::android.R._R1236 = @__env.GetMethodIDNoThrow(global::android.R.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.staticClass, global::android.R._R1236);
+			if (global::android.R._m0.native == global::System.IntPtr.Zero)
+				global::android.R._m0 = @__env.GetMethodIDNoThrow(global::android.R.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.staticClass, global::android.R._m0);
 			Init(@__env, handle);
 		}
 		static R()

@@ -14,15 +14,15 @@ namespace android.view.accessibility
 		internal AccessibilityEventSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEvent15557;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEvent", "(I)V", ref global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEvent", "(I)V", ref global::android.view.accessibility.AccessibilityEventSource_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEventUnchecked15558;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V", ref global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V", ref global::android.view.accessibility.AccessibilityEventSource_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AccessibilityEventSource_()
 		{

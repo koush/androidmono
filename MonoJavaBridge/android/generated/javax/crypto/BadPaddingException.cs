@@ -7,22 +7,22 @@ namespace javax.crypto
 		protected BadPaddingException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _BadPaddingException28489;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public BadPaddingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.BadPaddingException._BadPaddingException28489.native == global::System.IntPtr.Zero)
-				global::javax.crypto.BadPaddingException._BadPaddingException28489 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28489);
+			if (global::javax.crypto.BadPaddingException._m0.native == global::System.IntPtr.Zero)
+				global::javax.crypto.BadPaddingException._m0 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BadPaddingException28490;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public BadPaddingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.BadPaddingException._BadPaddingException28490.native == global::System.IntPtr.Zero)
-				global::javax.crypto.BadPaddingException._BadPaddingException28490 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.crypto.BadPaddingException._m1.native == global::System.IntPtr.Zero)
+				global::javax.crypto.BadPaddingException._m1 = @__env.GetMethodIDNoThrow(global::javax.crypto.BadPaddingException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BadPaddingException()

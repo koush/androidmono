@@ -7,40 +7,40 @@ namespace org.apache.http.client
 		protected ClientProtocolException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ClientProtocolException31870;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ClientProtocolException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.ClientProtocolException._ClientProtocolException31870.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.ClientProtocolException._ClientProtocolException31870 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._ClientProtocolException31870);
+			if (global::org.apache.http.client.ClientProtocolException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.ClientProtocolException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ClientProtocolException31871;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ClientProtocolException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.ClientProtocolException._ClientProtocolException31871.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.ClientProtocolException._ClientProtocolException31871 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._ClientProtocolException31871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.ClientProtocolException._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.ClientProtocolException._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ClientProtocolException31872;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public ClientProtocolException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.ClientProtocolException._ClientProtocolException31872.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.ClientProtocolException._ClientProtocolException31872 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._ClientProtocolException31872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.ClientProtocolException._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.ClientProtocolException._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ClientProtocolException31873;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public ClientProtocolException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.ClientProtocolException._ClientProtocolException31873.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.ClientProtocolException._ClientProtocolException31873 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._ClientProtocolException31873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.client.ClientProtocolException._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.ClientProtocolException._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.ClientProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.ClientProtocolException.staticClass, global::org.apache.http.client.ClientProtocolException._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static ClientProtocolException()

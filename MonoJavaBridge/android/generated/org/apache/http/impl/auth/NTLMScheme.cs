@@ -7,10 +7,10 @@ namespace org.apache.http.impl.auth
 		protected NTLMScheme(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameter32742;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String getParameter(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._getParameter32742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		public new global::java.lang.String SchemeName
 		{
@@ -19,10 +19,10 @@ namespace org.apache.http.impl.auth
 				return getSchemeName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSchemeName32743;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String getSchemeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getSchemeName", "()Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._getSchemeName32743) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getSchemeName", "()Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._m1) as java.lang.String;
 		}
 		public new global::java.lang.String Realm
 		{
@@ -31,38 +31,38 @@ namespace org.apache.http.impl.auth
 				return getRealm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRealm32744;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.String getRealm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getRealm", "()Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._getRealm32744) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "getRealm", "()Ljava/lang/String;", ref global::org.apache.http.impl.auth.NTLMScheme._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnectionBased32745;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool isConnectionBased()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "isConnectionBased", "()Z", ref global::org.apache.http.impl.auth.NTLMScheme._isConnectionBased32745);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "isConnectionBased", "()Z", ref global::org.apache.http.impl.auth.NTLMScheme._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isComplete32746;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isComplete()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "isComplete", "()Z", ref global::org.apache.http.impl.auth.NTLMScheme._isComplete32746);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "isComplete", "()Z", ref global::org.apache.http.impl.auth.NTLMScheme._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _authenticate32747;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::org.apache.http.Header authenticate(org.apache.http.auth.Credentials arg0, org.apache.http.HttpRequest arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "authenticate", "(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;", ref global::org.apache.http.impl.auth.NTLMScheme._authenticate32747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "authenticate", "(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;", ref global::org.apache.http.impl.auth.NTLMScheme._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.Header;
 		}
-		internal static global::MonoJavaBridge.MethodId _parseChallenge32748;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void parseChallenge(org.apache.http.util.CharArrayBuffer arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "parseChallenge", "(Lorg/apache/http/util/CharArrayBuffer;II)V", ref global::org.apache.http.impl.auth.NTLMScheme._parseChallenge32748, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.auth.NTLMScheme.staticClass, "parseChallenge", "(Lorg/apache/http/util/CharArrayBuffer;II)V", ref global::org.apache.http.impl.auth.NTLMScheme._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _NTLMScheme32749;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public NTLMScheme(org.apache.http.impl.auth.NTLMEngine arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.auth.NTLMScheme._NTLMScheme32749.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.auth.NTLMScheme._NTLMScheme32749 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMScheme.staticClass, "<init>", "(Lorg/apache/http/impl/auth/NTLMEngine;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMScheme.staticClass, global::org.apache.http.impl.auth.NTLMScheme._NTLMScheme32749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.impl.auth.NTLMScheme._m7.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.auth.NTLMScheme._m7 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMScheme.staticClass, "<init>", "(Lorg/apache/http/impl/auth/NTLMEngine;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMScheme.staticClass, global::org.apache.http.impl.auth.NTLMScheme._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static NTLMScheme()

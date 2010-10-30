@@ -7,10 +7,10 @@ namespace android.app
 		protected AlarmManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _set1658;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void set(int arg0, long arg1, android.app.PendingIntent arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "set", "(IJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._set1658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "set", "(IJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new long Time
 		{
@@ -19,10 +19,10 @@ namespace android.app
 				setTime(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setTime1659;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setTime(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setTime", "(J)V", ref global::android.app.AlarmManager._setTime1659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setTime", "(J)V", ref global::android.app.AlarmManager._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String TimeZone
 		{
@@ -31,25 +31,25 @@ namespace android.app
 				setTimeZone(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setTimeZone1660;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setTimeZone(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setTimeZone", "(Ljava/lang/String;)V", ref global::android.app.AlarmManager._setTimeZone1660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setTimeZone", "(Ljava/lang/String;)V", ref global::android.app.AlarmManager._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel1661;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void cancel(android.app.PendingIntent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "cancel", "(Landroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._cancel1661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "cancel", "(Landroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRepeating1662;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setRepeating(int arg0, long arg1, long arg2, android.app.PendingIntent arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setRepeating", "(IJJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._setRepeating1662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setRepeating", "(IJJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _setInexactRepeating1663;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setInexactRepeating(int arg0, long arg1, long arg2, android.app.PendingIntent arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._setInexactRepeating1663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.AlarmManager.staticClass, "setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V", ref global::android.app.AlarmManager._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static int RTC_WAKEUP
 		{

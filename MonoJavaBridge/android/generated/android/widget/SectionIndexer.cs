@@ -15,20 +15,20 @@ namespace android.widget
 		internal SectionIndexer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSections17733;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object[] android.widget.SectionIndexer.getSections()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.widget.SectionIndexer_.staticClass, "getSections", "()[Ljava/lang/Object;", ref global::android.widget.SectionIndexer_._getSections17733) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.widget.SectionIndexer_.staticClass, "getSections", "()[Ljava/lang/Object;", ref global::android.widget.SectionIndexer_._m0) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPositionForSection17734;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int android.widget.SectionIndexer.getPositionForSection(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.SectionIndexer_.staticClass, "getPositionForSection", "(I)I", ref global::android.widget.SectionIndexer_._getPositionForSection17734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.SectionIndexer_.staticClass, "getPositionForSection", "(I)I", ref global::android.widget.SectionIndexer_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSectionForPosition17735;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int android.widget.SectionIndexer.getSectionForPosition(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.SectionIndexer_.staticClass, "getSectionForPosition", "(I)I", ref global::android.widget.SectionIndexer_._getSectionForPosition17735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.SectionIndexer_.staticClass, "getSectionForPosition", "(I)I", ref global::android.widget.SectionIndexer_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SectionIndexer_()
 		{

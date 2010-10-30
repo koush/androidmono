@@ -7,15 +7,15 @@ namespace android.text.style
 		protected BackgroundColorSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13442;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.BackgroundColorSpan._writeToParcel13442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.BackgroundColorSpan._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13443;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "describeContents", "()I", ref global::android.text.style.BackgroundColorSpan._describeContents13443);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "describeContents", "()I", ref global::android.text.style.BackgroundColorSpan._m1);
 		}
 		public new int SpanTypeId
 		{
@@ -24,15 +24,15 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13444;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.BackgroundColorSpan._getSpanTypeId13444);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.BackgroundColorSpan._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13445;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.BackgroundColorSpan._updateDrawState13445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.BackgroundColorSpan._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int BackgroundColor
 		{
@@ -41,27 +41,27 @@ namespace android.text.style
 				return getBackgroundColor();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBackgroundColor13446;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getBackgroundColor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "getBackgroundColor", "()I", ref global::android.text.style.BackgroundColorSpan._getBackgroundColor13446);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.BackgroundColorSpan.staticClass, "getBackgroundColor", "()I", ref global::android.text.style.BackgroundColorSpan._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _BackgroundColorSpan13447;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public BackgroundColorSpan(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13447.native == global::System.IntPtr.Zero)
-				global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13447 = @__env.GetMethodIDNoThrow(global::android.text.style.BackgroundColorSpan.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.BackgroundColorSpan.staticClass, global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.BackgroundColorSpan._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.BackgroundColorSpan._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.BackgroundColorSpan.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.BackgroundColorSpan.staticClass, global::android.text.style.BackgroundColorSpan._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BackgroundColorSpan13448;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public BackgroundColorSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13448.native == global::System.IntPtr.Zero)
-				global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13448 = @__env.GetMethodIDNoThrow(global::android.text.style.BackgroundColorSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.BackgroundColorSpan.staticClass, global::android.text.style.BackgroundColorSpan._BackgroundColorSpan13448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.BackgroundColorSpan._m6.native == global::System.IntPtr.Zero)
+				global::android.text.style.BackgroundColorSpan._m6 = @__env.GetMethodIDNoThrow(global::android.text.style.BackgroundColorSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.BackgroundColorSpan.staticClass, global::android.text.style.BackgroundColorSpan._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BackgroundColorSpan()

@@ -7,15 +7,15 @@ namespace android.text.style
 		protected UnderlineSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13628;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.UnderlineSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.UnderlineSpan._writeToParcel13628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.UnderlineSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.UnderlineSpan._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13629;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.UnderlineSpan.staticClass, "describeContents", "()I", ref global::android.text.style.UnderlineSpan._describeContents13629);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.UnderlineSpan.staticClass, "describeContents", "()I", ref global::android.text.style.UnderlineSpan._m1);
 		}
 		public new int SpanTypeId
 		{
@@ -24,32 +24,32 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13630;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.UnderlineSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.UnderlineSpan._getSpanTypeId13630);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.UnderlineSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.UnderlineSpan._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13631;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.UnderlineSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.UnderlineSpan._updateDrawState13631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.UnderlineSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.UnderlineSpan._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _UnderlineSpan13632;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public UnderlineSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.UnderlineSpan._UnderlineSpan13632.native == global::System.IntPtr.Zero)
-				global::android.text.style.UnderlineSpan._UnderlineSpan13632 = @__env.GetMethodIDNoThrow(global::android.text.style.UnderlineSpan.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.UnderlineSpan.staticClass, global::android.text.style.UnderlineSpan._UnderlineSpan13632);
+			if (global::android.text.style.UnderlineSpan._m4.native == global::System.IntPtr.Zero)
+				global::android.text.style.UnderlineSpan._m4 = @__env.GetMethodIDNoThrow(global::android.text.style.UnderlineSpan.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.UnderlineSpan.staticClass, global::android.text.style.UnderlineSpan._m4);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _UnderlineSpan13633;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public UnderlineSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.UnderlineSpan._UnderlineSpan13633.native == global::System.IntPtr.Zero)
-				global::android.text.style.UnderlineSpan._UnderlineSpan13633 = @__env.GetMethodIDNoThrow(global::android.text.style.UnderlineSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.UnderlineSpan.staticClass, global::android.text.style.UnderlineSpan._UnderlineSpan13633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.UnderlineSpan._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.UnderlineSpan._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.UnderlineSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.UnderlineSpan.staticClass, global::android.text.style.UnderlineSpan._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static UnderlineSpan()

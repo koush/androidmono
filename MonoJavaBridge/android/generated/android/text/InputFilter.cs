@@ -13,10 +13,10 @@ namespace android.text
 		internal InputFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _filter12785;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.CharSequence android.text.InputFilter.filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.InputFilter_.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;", ref global::android.text.InputFilter_._filter12785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.text.InputFilter_.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;", ref global::android.text.InputFilter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.lang.CharSequence;
 		}
 		static InputFilter_()
 		{
@@ -36,13 +36,13 @@ namespace android.text
 		protected InputFilterDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _InputFilterDelegateWrapper12786;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public InputFilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.InputFilterDelegateWrapper._InputFilterDelegateWrapper12786.native == global::System.IntPtr.Zero)
-				global::android.text.InputFilterDelegateWrapper._InputFilterDelegateWrapper12786 = @__env.GetMethodIDNoThrow(global::android.text.InputFilterDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.InputFilterDelegateWrapper.staticClass, global::android.text.InputFilterDelegateWrapper._InputFilterDelegateWrapper12786);
+			if (global::android.text.InputFilterDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.text.InputFilterDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.text.InputFilterDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.InputFilterDelegateWrapper.staticClass, global::android.text.InputFilterDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static InputFilterDelegateWrapper()

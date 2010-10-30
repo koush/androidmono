@@ -14,15 +14,15 @@ namespace android.hardware
 		internal SensorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onSensorChanged6454;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.hardware.SensorListener.onSensorChanged(int arg0, float[] arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorListener_.staticClass, "onSensorChanged", "(I[F)V", ref global::android.hardware.SensorListener_._onSensorChanged6454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorListener_.staticClass, "onSensorChanged", "(I[F)V", ref global::android.hardware.SensorListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onAccuracyChanged6455;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.hardware.SensorListener.onAccuracyChanged(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorListener_.staticClass, "onAccuracyChanged", "(II)V", ref global::android.hardware.SensorListener_._onAccuracyChanged6455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.hardware.SensorListener_.staticClass, "onAccuracyChanged", "(II)V", ref global::android.hardware.SensorListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static SensorListener_()
 		{

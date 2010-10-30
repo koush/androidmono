@@ -23,25 +23,25 @@ namespace android.gesture
 			internal OnGestureListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureStarted4901;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.gesture.GestureOverlayView.OnGestureListener.onGestureStarted(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureStarted", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureStarted", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesture4902;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.gesture.GestureOverlayView.OnGestureListener.onGesture(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureEnded4903;
+			private static global::MonoJavaBridge.MethodId _m2;
 			void android.gesture.GestureOverlayView.OnGestureListener.onGestureEnded(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureCancelled4904;
+			private static global::MonoJavaBridge.MethodId _m3;
 			void android.gesture.GestureOverlayView.OnGestureListener.onGestureCancelled(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", ref global::android.gesture.GestureOverlayView.OnGestureListener_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnGestureListener_()
 			{
@@ -65,10 +65,10 @@ namespace android.gesture
 			internal OnGesturePerformedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturePerformed4905;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.gesture.GestureOverlayView.OnGesturePerformedListener.onGesturePerformed(android.gesture.GestureOverlayView arg0, android.gesture.Gesture arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, "onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, "onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnGesturePerformedListener_()
 			{
@@ -88,13 +88,13 @@ namespace android.gesture
 			protected OnGesturePerformedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnGesturePerformedListenerDelegateWrapper4906;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnGesturePerformedListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906.native == global::System.IntPtr.Zero)
-					global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906);
+				if (global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnGesturePerformedListenerDelegateWrapper()
@@ -135,15 +135,15 @@ namespace android.gesture
 			internal OnGesturingListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturingStarted4907;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.gesture.GestureOverlayView.OnGesturingListener.onGesturingStarted(android.gesture.GestureOverlayView arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V", ref global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V", ref global::android.gesture.GestureOverlayView.OnGesturingListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturingEnded4908;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.gesture.GestureOverlayView.OnGesturingListener.onGesturingEnded(android.gesture.GestureOverlayView arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingEnded", "(Landroid/gesture/GestureOverlayView;)V", ref global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingEnded", "(Landroid/gesture/GestureOverlayView;)V", ref global::android.gesture.GestureOverlayView.OnGesturingListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnGesturingListener_()
 			{
@@ -154,30 +154,30 @@ namespace android.gesture
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _clear4909;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void clear(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "clear", "(Z)V", ref global::android.gesture.GestureOverlayView._clear4909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "clear", "(Z)V", ref global::android.gesture.GestureOverlayView._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _draw4910;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void draw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.gesture.GestureOverlayView._draw4910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.gesture.GestureOverlayView._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow4911;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "onDetachedFromWindow", "()V", ref global::android.gesture.GestureOverlayView._onDetachedFromWindow4911);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "onDetachedFromWindow", "()V", ref global::android.gesture.GestureOverlayView._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchTouchEvent4912;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool dispatchTouchEvent(android.view.MotionEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "dispatchTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.gesture.GestureOverlayView._dispatchTouchEvent4912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "dispatchTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.gesture.GestureOverlayView._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOrientation4913;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setOrientation(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setOrientation", "(I)V", ref global::android.gesture.GestureOverlayView._setOrientation4913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setOrientation", "(I)V", ref global::android.gesture.GestureOverlayView._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Orientation
 		{
@@ -190,10 +190,10 @@ namespace android.gesture
 				setOrientation(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrientation4914;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getOrientation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getOrientation", "()I", ref global::android.gesture.GestureOverlayView._getOrientation4914);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getOrientation", "()I", ref global::android.gesture.GestureOverlayView._m5);
 		}
 		public new global::java.util.ArrayList CurrentStroke
 		{
@@ -202,20 +202,20 @@ namespace android.gesture
 				return getCurrentStroke();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentStroke4915;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.util.ArrayList getCurrentStroke()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getCurrentStroke", "()Ljava/util/ArrayList;", ref global::android.gesture.GestureOverlayView._getCurrentStroke4915) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getCurrentStroke", "()Ljava/util/ArrayList;", ref global::android.gesture.GestureOverlayView._m6) as java.util.ArrayList;
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureColor4916;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setGestureColor(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureColor", "(I)V", ref global::android.gesture.GestureOverlayView._setGestureColor4916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureColor", "(I)V", ref global::android.gesture.GestureOverlayView._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setUncertainGestureColor4917;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setUncertainGestureColor(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setUncertainGestureColor", "(I)V", ref global::android.gesture.GestureOverlayView._setUncertainGestureColor4917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setUncertainGestureColor", "(I)V", ref global::android.gesture.GestureOverlayView._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int UncertainGestureColor
 		{
@@ -228,10 +228,10 @@ namespace android.gesture
 				setUncertainGestureColor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUncertainGestureColor4918;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int getUncertainGestureColor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getUncertainGestureColor", "()I", ref global::android.gesture.GestureOverlayView._getUncertainGestureColor4918);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getUncertainGestureColor", "()I", ref global::android.gesture.GestureOverlayView._m9);
 		}
 		public new int GestureColor
 		{
@@ -244,10 +244,10 @@ namespace android.gesture
 				setGestureColor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureColor4919;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int getGestureColor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureColor", "()I", ref global::android.gesture.GestureOverlayView._getGestureColor4919);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureColor", "()I", ref global::android.gesture.GestureOverlayView._m10);
 		}
 		public new float GestureStrokeWidth
 		{
@@ -260,15 +260,15 @@ namespace android.gesture
 				setGestureStrokeWidth(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeWidth4920;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual float getGestureStrokeWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeWidth", "()F", ref global::android.gesture.GestureOverlayView._getGestureStrokeWidth4920);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeWidth", "()F", ref global::android.gesture.GestureOverlayView._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeWidth4921;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setGestureStrokeWidth(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeWidth", "(F)V", ref global::android.gesture.GestureOverlayView._setGestureStrokeWidth4921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeWidth", "(F)V", ref global::android.gesture.GestureOverlayView._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int GestureStrokeType
 		{
@@ -281,15 +281,15 @@ namespace android.gesture
 				setGestureStrokeType(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeType4922;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int getGestureStrokeType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeType", "()I", ref global::android.gesture.GestureOverlayView._getGestureStrokeType4922);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeType", "()I", ref global::android.gesture.GestureOverlayView._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeType4923;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setGestureStrokeType(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeType", "(I)V", ref global::android.gesture.GestureOverlayView._setGestureStrokeType4923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeType", "(I)V", ref global::android.gesture.GestureOverlayView._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeLengthThreshold
 		{
@@ -302,15 +302,15 @@ namespace android.gesture
 				setGestureStrokeLengthThreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeLengthThreshold4924;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual float getGestureStrokeLengthThreshold()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeLengthThreshold", "()F", ref global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4924);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeLengthThreshold", "()F", ref global::android.gesture.GestureOverlayView._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeLengthThreshold4925;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setGestureStrokeLengthThreshold(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeLengthThreshold", "(F)V", ref global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeLengthThreshold", "(F)V", ref global::android.gesture.GestureOverlayView._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeSquarenessTreshold
 		{
@@ -323,15 +323,15 @@ namespace android.gesture
 				setGestureStrokeSquarenessTreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeSquarenessTreshold4926;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual float getGestureStrokeSquarenessTreshold()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeSquarenessTreshold", "()F", ref global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4926);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeSquarenessTreshold", "()F", ref global::android.gesture.GestureOverlayView._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeSquarenessTreshold4927;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setGestureStrokeSquarenessTreshold(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeSquarenessTreshold", "(F)V", ref global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeSquarenessTreshold", "(F)V", ref global::android.gesture.GestureOverlayView._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeAngleThreshold
 		{
@@ -344,20 +344,20 @@ namespace android.gesture
 				setGestureStrokeAngleThreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeAngleThreshold4928;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual float getGestureStrokeAngleThreshold()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeAngleThreshold", "()F", ref global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4928);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeAngleThreshold", "()F", ref global::android.gesture.GestureOverlayView._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeAngleThreshold4929;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setGestureStrokeAngleThreshold(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeAngleThreshold", "(F)V", ref global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeAngleThreshold", "(F)V", ref global::android.gesture.GestureOverlayView._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isEventsInterceptionEnabled4930;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual bool isEventsInterceptionEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isEventsInterceptionEnabled", "()Z", ref global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4930);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isEventsInterceptionEnabled", "()Z", ref global::android.gesture.GestureOverlayView._m21);
 		}
 		public new bool EventsInterceptionEnabled
 		{
@@ -366,15 +366,15 @@ namespace android.gesture
 				setEventsInterceptionEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setEventsInterceptionEnabled4931;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setEventsInterceptionEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setEventsInterceptionEnabled", "(Z)V", ref global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setEventsInterceptionEnabled", "(Z)V", ref global::android.gesture.GestureOverlayView._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isFadeEnabled4932;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual bool isFadeEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isFadeEnabled", "()Z", ref global::android.gesture.GestureOverlayView._isFadeEnabled4932);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isFadeEnabled", "()Z", ref global::android.gesture.GestureOverlayView._m23);
 		}
 		public new bool FadeEnabled
 		{
@@ -383,10 +383,10 @@ namespace android.gesture
 				setFadeEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFadeEnabled4933;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setFadeEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setFadeEnabled", "(Z)V", ref global::android.gesture.GestureOverlayView._setFadeEnabled4933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setFadeEnabled", "(Z)V", ref global::android.gesture.GestureOverlayView._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.gesture.Gesture Gesture
 		{
@@ -399,15 +399,15 @@ namespace android.gesture
 				setGesture(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesture4934;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual global::android.gesture.Gesture getGesture()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesture", "()Landroid/gesture/Gesture;", ref global::android.gesture.GestureOverlayView._getGesture4934) as android.gesture.Gesture;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesture", "()Landroid/gesture/Gesture;", ref global::android.gesture.GestureOverlayView._m25) as android.gesture.Gesture;
 		}
-		internal static global::MonoJavaBridge.MethodId _setGesture4935;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void setGesture(android.gesture.Gesture arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGesture", "(Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureOverlayView._setGesture4935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGesture", "(Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureOverlayView._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Path GesturePath
 		{
@@ -416,20 +416,20 @@ namespace android.gesture
 				return getGesturePath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesturePath4936;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual global::android.graphics.Path getGesturePath()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "()Landroid/graphics/Path;", ref global::android.gesture.GestureOverlayView._getGesturePath4936) as android.graphics.Path;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "()Landroid/graphics/Path;", ref global::android.gesture.GestureOverlayView._m27) as android.graphics.Path;
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesturePath4937;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual global::android.graphics.Path getGesturePath(android.graphics.Path arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "(Landroid/graphics/Path;)Landroid/graphics/Path;", ref global::android.gesture.GestureOverlayView._getGesturePath4937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Path;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "(Landroid/graphics/Path;)Landroid/graphics/Path;", ref global::android.gesture.GestureOverlayView._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Path;
 		}
-		internal static global::MonoJavaBridge.MethodId _isGestureVisible4938;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool isGestureVisible()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isGestureVisible", "()Z", ref global::android.gesture.GestureOverlayView._isGestureVisible4938);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isGestureVisible", "()Z", ref global::android.gesture.GestureOverlayView._m29);
 		}
 		public new bool GestureVisible
 		{
@@ -438,10 +438,10 @@ namespace android.gesture
 				setGestureVisible(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureVisible4939;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual void setGestureVisible(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureVisible", "(Z)V", ref global::android.gesture.GestureOverlayView._setGestureVisible4939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setGestureVisible", "(Z)V", ref global::android.gesture.GestureOverlayView._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long FadeOffset
 		{
@@ -454,109 +454,109 @@ namespace android.gesture
 				setFadeOffset(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFadeOffset4940;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual long getFadeOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getFadeOffset", "()J", ref global::android.gesture.GestureOverlayView._getFadeOffset4940);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.gesture.GestureOverlayView.staticClass, "getFadeOffset", "()J", ref global::android.gesture.GestureOverlayView._m31);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFadeOffset4941;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual void setFadeOffset(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setFadeOffset", "(J)V", ref global::android.gesture.GestureOverlayView._setFadeOffset4941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "setFadeOffset", "(J)V", ref global::android.gesture.GestureOverlayView._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGestureListener4942;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual void addOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V", ref global::android.gesture.GestureOverlayView._addOnGestureListener4942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V", ref global::android.gesture.GestureOverlayView._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGestureListener4943;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual void removeOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V", ref global::android.gesture.GestureOverlayView._removeOnGestureListener4943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V", ref global::android.gesture.GestureOverlayView._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGestureListeners4944;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual void removeAllOnGestureListeners()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGestureListeners", "()V", ref global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4944);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGestureListeners", "()V", ref global::android.gesture.GestureOverlayView._m35);
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGesturePerformedListener4945;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual void addOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V", ref global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V", ref global::android.gesture.GestureOverlayView._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void addOnGesturePerformedListener(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegate arg0)
 		{
 			addOnGesturePerformedListener((global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGesturePerformedListener4946;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual void removeOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V", ref global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V", ref global::android.gesture.GestureOverlayView._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void removeOnGesturePerformedListener(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegate arg0)
 		{
 			removeOnGesturePerformedListener((global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturePerformedListeners4947;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public virtual void removeAllOnGesturePerformedListeners()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturePerformedListeners", "()V", ref global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4947);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturePerformedListeners", "()V", ref global::android.gesture.GestureOverlayView._m38);
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGesturingListener4948;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public virtual void addOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V", ref global::android.gesture.GestureOverlayView._addOnGesturingListener4948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "addOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V", ref global::android.gesture.GestureOverlayView._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGesturingListener4949;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public virtual void removeOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V", ref global::android.gesture.GestureOverlayView._removeOnGesturingListener4949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V", ref global::android.gesture.GestureOverlayView._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturingListeners4950;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public virtual void removeAllOnGesturingListeners()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturingListeners", "()V", ref global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4950);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturingListeners", "()V", ref global::android.gesture.GestureOverlayView._m41);
 		}
-		internal static global::MonoJavaBridge.MethodId _isGesturing4951;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public virtual bool isGesturing()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isGesturing", "()Z", ref global::android.gesture.GestureOverlayView._isGesturing4951);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureOverlayView.staticClass, "isGesturing", "()Z", ref global::android.gesture.GestureOverlayView._m42);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelClearAnimation4952;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public virtual void cancelClearAnimation()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "cancelClearAnimation", "()V", ref global::android.gesture.GestureOverlayView._cancelClearAnimation4952);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "cancelClearAnimation", "()V", ref global::android.gesture.GestureOverlayView._m43);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelGesture4953;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public virtual void cancelGesture()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "cancelGesture", "()V", ref global::android.gesture.GestureOverlayView._cancelGesture4953);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureOverlayView.staticClass, "cancelGesture", "()V", ref global::android.gesture.GestureOverlayView._m44);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4954;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public GestureOverlayView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.GestureOverlayView._GestureOverlayView4954.native == global::System.IntPtr.Zero)
-				global::android.gesture.GestureOverlayView._GestureOverlayView4954 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.gesture.GestureOverlayView._m45.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureOverlayView._m45 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4955;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public GestureOverlayView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.GestureOverlayView._GestureOverlayView4955.native == global::System.IntPtr.Zero)
-				global::android.gesture.GestureOverlayView._GestureOverlayView4955 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.gesture.GestureOverlayView._m46.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureOverlayView._m46 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4956;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public GestureOverlayView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.GestureOverlayView._GestureOverlayView4956.native == global::System.IntPtr.Zero)
-				global::android.gesture.GestureOverlayView._GestureOverlayView4956 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.gesture.GestureOverlayView._m47.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureOverlayView._m47 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		public static int GESTURE_STROKE_TYPE_SINGLE

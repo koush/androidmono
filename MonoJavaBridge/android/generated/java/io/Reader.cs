@@ -7,66 +7,66 @@ namespace java.io
 		protected Reader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close19553;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract void close();
-		internal static global::MonoJavaBridge.MethodId _mark19554;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void mark(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader.staticClass, "mark", "(I)V", ref global::java.io.Reader._mark19554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader.staticClass, "mark", "(I)V", ref global::java.io.Reader._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset19555;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader.staticClass, "reset", "()V", ref global::java.io.Reader._reset19555);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader.staticClass, "reset", "()V", ref global::java.io.Reader._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19556;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract int read(char[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _read19557;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "()I", ref global::java.io.Reader._read19557);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "()I", ref global::java.io.Reader._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19558;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int read(char[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "([C)I", ref global::java.io.Reader._read19558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "([C)I", ref global::java.io.Reader._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read19559;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int read(java.nio.CharBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "(Ljava/nio/CharBuffer;)I", ref global::java.io.Reader._read19559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader.staticClass, "read", "(Ljava/nio/CharBuffer;)I", ref global::java.io.Reader._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _skip19560;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual long skip(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.Reader.staticClass, "skip", "(J)J", ref global::java.io.Reader._skip19560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.Reader.staticClass, "skip", "(J)J", ref global::java.io.Reader._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _markSupported19561;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool markSupported()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.Reader.staticClass, "markSupported", "()Z", ref global::java.io.Reader._markSupported19561);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.Reader.staticClass, "markSupported", "()Z", ref global::java.io.Reader._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _ready19562;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool ready()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.Reader.staticClass, "ready", "()Z", ref global::java.io.Reader._ready19562);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.Reader.staticClass, "ready", "()Z", ref global::java.io.Reader._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _Reader19563;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected Reader() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.Reader._Reader19563.native == global::System.IntPtr.Zero)
-				global::java.io.Reader._Reader19563 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19563);
+			if (global::java.io.Reader._m10.native == global::System.IntPtr.Zero)
+				global::java.io.Reader._m10 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._m10);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Reader19564;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected Reader(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.Reader._Reader19564.native == global::System.IntPtr.Zero)
-				global::java.io.Reader._Reader19564 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "(Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.io.Reader._m11.native == global::System.IntPtr.Zero)
+				global::java.io.Reader._m11 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "(Ljava/lang/Object;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static Reader()
@@ -86,15 +86,15 @@ namespace java.io
 		internal Reader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close19565;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader_.staticClass, "close", "()V", ref global::java.io.Reader_._close19565);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Reader_.staticClass, "close", "()V", ref global::java.io.Reader_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19566;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int read(char[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader_.staticClass, "read", "([CII)I", ref global::java.io.Reader_._read19566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.Reader_.staticClass, "read", "([CII)I", ref global::java.io.Reader_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static Reader_()
 		{

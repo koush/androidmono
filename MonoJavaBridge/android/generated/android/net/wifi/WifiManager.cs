@@ -14,25 +14,25 @@ namespace android.net.wifi
 			protected MulticastLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _finalize8059;
+			private static global::MonoJavaBridge.MethodId _m0;
 			protected override void finalize()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "finalize", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._finalize8059);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "finalize", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _toString8060;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiManager.MulticastLock._toString8060) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiManager.MulticastLock._m1) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _acquire8061;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual void acquire()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "acquire", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._acquire8061);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "acquire", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._m2);
 			}
-			internal static global::MonoJavaBridge.MethodId _release8062;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual void release()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "release", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._release8062);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "release", "()V", ref global::android.net.wifi.WifiManager.MulticastLock._m3);
 			}
 			public new bool ReferenceCounted
 			{
@@ -41,15 +41,15 @@ namespace android.net.wifi
 					setReferenceCounted(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setReferenceCounted8063;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual void setReferenceCounted(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "setReferenceCounted", "(Z)V", ref global::android.net.wifi.WifiManager.MulticastLock._setReferenceCounted8063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "setReferenceCounted", "(Z)V", ref global::android.net.wifi.WifiManager.MulticastLock._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isHeld8064;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual bool isHeld()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "isHeld", "()Z", ref global::android.net.wifi.WifiManager.MulticastLock._isHeld8064);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, "isHeld", "()Z", ref global::android.net.wifi.WifiManager.MulticastLock._m5);
 			}
 			static MulticastLock()
 			{
@@ -67,25 +67,25 @@ namespace android.net.wifi
 			protected WifiLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _finalize8065;
+			private static global::MonoJavaBridge.MethodId _m0;
 			protected override void finalize()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "finalize", "()V", ref global::android.net.wifi.WifiManager.WifiLock._finalize8065);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "finalize", "()V", ref global::android.net.wifi.WifiManager.WifiLock._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _toString8066;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiManager.WifiLock._toString8066) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiManager.WifiLock._m1) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _acquire8067;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual void acquire()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "acquire", "()V", ref global::android.net.wifi.WifiManager.WifiLock._acquire8067);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "acquire", "()V", ref global::android.net.wifi.WifiManager.WifiLock._m2);
 			}
-			internal static global::MonoJavaBridge.MethodId _release8068;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual void release()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "release", "()V", ref global::android.net.wifi.WifiManager.WifiLock._release8068);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "release", "()V", ref global::android.net.wifi.WifiManager.WifiLock._m3);
 			}
 			public new bool ReferenceCounted
 			{
@@ -94,15 +94,15 @@ namespace android.net.wifi
 					setReferenceCounted(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setReferenceCounted8069;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual void setReferenceCounted(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "setReferenceCounted", "(Z)V", ref global::android.net.wifi.WifiManager.WifiLock._setReferenceCounted8069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "setReferenceCounted", "(Z)V", ref global::android.net.wifi.WifiManager.WifiLock._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isHeld8070;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual bool isHeld()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "isHeld", "()Z", ref global::android.net.wifi.WifiManager.WifiLock._isHeld8070);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, "isHeld", "()Z", ref global::android.net.wifi.WifiManager.WifiLock._m5);
 			}
 			static WifiLock()
 			{
@@ -113,15 +113,15 @@ namespace android.net.wifi
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _reconnect8071;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual bool reconnect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "reconnect", "()Z", ref global::android.net.wifi.WifiManager._reconnect8071);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "reconnect", "()Z", ref global::android.net.wifi.WifiManager._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _disconnect8072;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool disconnect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "disconnect", "()Z", ref global::android.net.wifi.WifiManager._disconnect8072);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "disconnect", "()Z", ref global::android.net.wifi.WifiManager._m1);
 		}
 		public new global::java.util.List ConfiguredNetworks
 		{
@@ -130,50 +130,50 @@ namespace android.net.wifi
 				return getConfiguredNetworks();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getConfiguredNetworks8073;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.util.List getConfiguredNetworks()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.wifi.WifiManager.staticClass, "getConfiguredNetworks", "()Ljava/util/List;", ref global::android.net.wifi.WifiManager._getConfiguredNetworks8073) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.wifi.WifiManager.staticClass, "getConfiguredNetworks", "()Ljava/util/List;", ref global::android.net.wifi.WifiManager._m2) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _addNetwork8074;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int addNetwork(android.net.wifi.WifiConfiguration arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "addNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", ref global::android.net.wifi.WifiManager._addNetwork8074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "addNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", ref global::android.net.wifi.WifiManager._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateNetwork8075;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int updateNetwork(android.net.wifi.WifiConfiguration arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "updateNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", ref global::android.net.wifi.WifiManager._updateNetwork8075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "updateNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", ref global::android.net.wifi.WifiManager._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeNetwork8076;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool removeNetwork(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "removeNetwork", "(I)Z", ref global::android.net.wifi.WifiManager._removeNetwork8076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "removeNetwork", "(I)Z", ref global::android.net.wifi.WifiManager._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _enableNetwork8077;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool enableNetwork(int arg0, bool arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "enableNetwork", "(IZ)Z", ref global::android.net.wifi.WifiManager._enableNetwork8077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "enableNetwork", "(IZ)Z", ref global::android.net.wifi.WifiManager._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _disableNetwork8078;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool disableNetwork(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "disableNetwork", "(I)Z", ref global::android.net.wifi.WifiManager._disableNetwork8078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "disableNetwork", "(I)Z", ref global::android.net.wifi.WifiManager._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reassociate8079;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool reassociate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "reassociate", "()Z", ref global::android.net.wifi.WifiManager._reassociate8079);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "reassociate", "()Z", ref global::android.net.wifi.WifiManager._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _pingSupplicant8080;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool pingSupplicant()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "pingSupplicant", "()Z", ref global::android.net.wifi.WifiManager._pingSupplicant8080);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "pingSupplicant", "()Z", ref global::android.net.wifi.WifiManager._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _startScan8081;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool startScan()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "startScan", "()Z", ref global::android.net.wifi.WifiManager._startScan8081);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "startScan", "()Z", ref global::android.net.wifi.WifiManager._m10);
 		}
 		public new global::android.net.wifi.WifiInfo ConnectionInfo
 		{
@@ -182,10 +182,10 @@ namespace android.net.wifi
 				return getConnectionInfo();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnectionInfo8082;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual global::android.net.wifi.WifiInfo getConnectionInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "getConnectionInfo", "()Landroid/net/wifi/WifiInfo;", ref global::android.net.wifi.WifiManager._getConnectionInfo8082) as android.net.wifi.WifiInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "getConnectionInfo", "()Landroid/net/wifi/WifiInfo;", ref global::android.net.wifi.WifiManager._m11) as android.net.wifi.WifiInfo;
 		}
 		public new global::java.util.List ScanResults
 		{
@@ -194,15 +194,15 @@ namespace android.net.wifi
 				return getScanResults();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScanResults8083;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual global::java.util.List getScanResults()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.wifi.WifiManager.staticClass, "getScanResults", "()Ljava/util/List;", ref global::android.net.wifi.WifiManager._getScanResults8083) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.net.wifi.WifiManager.staticClass, "getScanResults", "()Ljava/util/List;", ref global::android.net.wifi.WifiManager._m12) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _saveConfiguration8084;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual bool saveConfiguration()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "saveConfiguration", "()Z", ref global::android.net.wifi.WifiManager._saveConfiguration8084);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "saveConfiguration", "()Z", ref global::android.net.wifi.WifiManager._m13);
 		}
 		public new global::android.net.DhcpInfo DhcpInfo
 		{
@@ -211,10 +211,10 @@ namespace android.net.wifi
 				return getDhcpInfo();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDhcpInfo8085;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::android.net.DhcpInfo getDhcpInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "getDhcpInfo", "()Landroid/net/DhcpInfo;", ref global::android.net.wifi.WifiManager._getDhcpInfo8085) as android.net.DhcpInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "getDhcpInfo", "()Landroid/net/DhcpInfo;", ref global::android.net.wifi.WifiManager._m14) as android.net.DhcpInfo;
 		}
 		public new bool WifiEnabled
 		{
@@ -223,10 +223,10 @@ namespace android.net.wifi
 				setWifiEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setWifiEnabled8086;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool setWifiEnabled(bool arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "setWifiEnabled", "(Z)Z", ref global::android.net.wifi.WifiManager._setWifiEnabled8086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "setWifiEnabled", "(Z)Z", ref global::android.net.wifi.WifiManager._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int WifiState
 		{
@@ -235,46 +235,46 @@ namespace android.net.wifi
 				return getWifiState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWifiState8087;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual int getWifiState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "getWifiState", "()I", ref global::android.net.wifi.WifiManager._getWifiState8087);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiManager.staticClass, "getWifiState", "()I", ref global::android.net.wifi.WifiManager._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _isWifiEnabled8088;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual bool isWifiEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "isWifiEnabled", "()Z", ref global::android.net.wifi.WifiManager._isWifiEnabled8088);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, "isWifiEnabled", "()Z", ref global::android.net.wifi.WifiManager._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _calculateSignalLevel8089;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static int calculateSignalLevel(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiManager._calculateSignalLevel8089.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiManager._calculateSignalLevel8089 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "calculateSignalLevel", "(II)I");
-			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._calculateSignalLevel8089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.net.wifi.WifiManager._m18.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.WifiManager._m18 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "calculateSignalLevel", "(II)I");
+			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareSignalLevel8090;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static int compareSignalLevel(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiManager._compareSignalLevel8090.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiManager._compareSignalLevel8090 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "compareSignalLevel", "(II)I");
-			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._compareSignalLevel8090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.net.wifi.WifiManager._m19.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.WifiManager._m19 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiManager.staticClass, "compareSignalLevel", "(II)I");
+			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _createWifiLock8091;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(int arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;", ref global::android.net.wifi.WifiManager._createWifiLock8091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.wifi.WifiManager.WifiLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;", ref global::android.net.wifi.WifiManager._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.wifi.WifiManager.WifiLock;
 		}
-		internal static global::MonoJavaBridge.MethodId _createWifiLock8092;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;", ref global::android.net.wifi.WifiManager._createWifiLock8092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.wifi.WifiManager.WifiLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createWifiLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;", ref global::android.net.wifi.WifiManager._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.wifi.WifiManager.WifiLock;
 		}
-		internal static global::MonoJavaBridge.MethodId _createMulticastLock8093;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual global::android.net.wifi.WifiManager.MulticastLock createMulticastLock(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createMulticastLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$MulticastLock;", ref global::android.net.wifi.WifiManager._createMulticastLock8093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.wifi.WifiManager.MulticastLock;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.net.wifi.WifiManager.staticClass, "createMulticastLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$MulticastLock;", ref global::android.net.wifi.WifiManager._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.net.wifi.WifiManager.MulticastLock;
 		}
 		public static int ERROR_AUTHENTICATING
 		{

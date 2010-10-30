@@ -7,20 +7,20 @@ namespace android.location
 		protected Criteria(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel6840;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.location.Criteria._writeToParcel6840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.location.Criteria._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents6841;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "describeContents", "()I", ref global::android.location.Criteria._describeContents6841);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "describeContents", "()I", ref global::android.location.Criteria._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _setAccuracy6842;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setAccuracy(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setAccuracy", "(I)V", ref global::android.location.Criteria._setAccuracy6842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setAccuracy", "(I)V", ref global::android.location.Criteria._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Accuracy
 		{
@@ -33,15 +33,15 @@ namespace android.location
 				setAccuracy(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAccuracy6843;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getAccuracy()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "getAccuracy", "()I", ref global::android.location.Criteria._getAccuracy6843);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "getAccuracy", "()I", ref global::android.location.Criteria._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPowerRequirement6844;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setPowerRequirement(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setPowerRequirement", "(I)V", ref global::android.location.Criteria._setPowerRequirement6844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setPowerRequirement", "(I)V", ref global::android.location.Criteria._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int PowerRequirement
 		{
@@ -54,10 +54,10 @@ namespace android.location
 				setPowerRequirement(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPowerRequirement6845;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getPowerRequirement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "getPowerRequirement", "()I", ref global::android.location.Criteria._getPowerRequirement6845);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.Criteria.staticClass, "getPowerRequirement", "()I", ref global::android.location.Criteria._m5);
 		}
 		public new bool CostAllowed
 		{
@@ -66,15 +66,15 @@ namespace android.location
 				setCostAllowed(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setCostAllowed6846;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setCostAllowed(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setCostAllowed", "(Z)V", ref global::android.location.Criteria._setCostAllowed6846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setCostAllowed", "(Z)V", ref global::android.location.Criteria._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isCostAllowed6847;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool isCostAllowed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isCostAllowed", "()Z", ref global::android.location.Criteria._isCostAllowed6847);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isCostAllowed", "()Z", ref global::android.location.Criteria._m7);
 		}
 		public new bool AltitudeRequired
 		{
@@ -83,15 +83,15 @@ namespace android.location
 				setAltitudeRequired(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAltitudeRequired6848;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setAltitudeRequired(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setAltitudeRequired", "(Z)V", ref global::android.location.Criteria._setAltitudeRequired6848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setAltitudeRequired", "(Z)V", ref global::android.location.Criteria._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAltitudeRequired6849;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool isAltitudeRequired()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isAltitudeRequired", "()Z", ref global::android.location.Criteria._isAltitudeRequired6849);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isAltitudeRequired", "()Z", ref global::android.location.Criteria._m9);
 		}
 		public new bool SpeedRequired
 		{
@@ -100,15 +100,15 @@ namespace android.location
 				setSpeedRequired(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSpeedRequired6850;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setSpeedRequired(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setSpeedRequired", "(Z)V", ref global::android.location.Criteria._setSpeedRequired6850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setSpeedRequired", "(Z)V", ref global::android.location.Criteria._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSpeedRequired6851;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual bool isSpeedRequired()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isSpeedRequired", "()Z", ref global::android.location.Criteria._isSpeedRequired6851);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isSpeedRequired", "()Z", ref global::android.location.Criteria._m11);
 		}
 		public new bool BearingRequired
 		{
@@ -117,32 +117,32 @@ namespace android.location
 				setBearingRequired(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setBearingRequired6852;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setBearingRequired(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setBearingRequired", "(Z)V", ref global::android.location.Criteria._setBearingRequired6852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.Criteria.staticClass, "setBearingRequired", "(Z)V", ref global::android.location.Criteria._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isBearingRequired6853;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual bool isBearingRequired()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isBearingRequired", "()Z", ref global::android.location.Criteria._isBearingRequired6853);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.Criteria.staticClass, "isBearingRequired", "()Z", ref global::android.location.Criteria._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _Criteria6854;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public Criteria() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.Criteria._Criteria6854.native == global::System.IntPtr.Zero)
-				global::android.location.Criteria._Criteria6854 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria6854);
+			if (global::android.location.Criteria._m14.native == global::System.IntPtr.Zero)
+				global::android.location.Criteria._m14 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._m14);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Criteria6855;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public Criteria(android.location.Criteria arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.location.Criteria._Criteria6855.native == global::System.IntPtr.Zero)
-				global::android.location.Criteria._Criteria6855 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "(Landroid/location/Criteria;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria6855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.location.Criteria._m15.native == global::System.IntPtr.Zero)
+				global::android.location.Criteria._m15 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "(Landroid/location/Criteria;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static int NO_REQUIREMENT
@@ -187,20 +187,20 @@ namespace android.location
 				return 2;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR6862;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2604;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.location.Criteria.staticClass, _CREATOR6862)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.location.Criteria.staticClass, _CREATOR2604)) as android.os.Parcelable_Creator;
 			}
 		}
 		static Criteria()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.Criteria.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Criteria"));
-			global::android.location.Criteria._CREATOR6862 = @__env.GetStaticFieldIDNoThrow(global::android.location.Criteria.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.location.Criteria._CREATOR2604 = @__env.GetStaticFieldIDNoThrow(global::android.location.Criteria.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

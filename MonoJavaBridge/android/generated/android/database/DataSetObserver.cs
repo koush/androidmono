@@ -7,23 +7,23 @@ namespace android.database
 		protected DataSetObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onChanged4601;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onChanged", "()V", ref global::android.database.DataSetObserver._onChanged4601);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onChanged", "()V", ref global::android.database.DataSetObserver._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onInvalidated4602;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void onInvalidated()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V", ref global::android.database.DataSetObserver._onInvalidated4602);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.DataSetObserver.staticClass, "onInvalidated", "()V", ref global::android.database.DataSetObserver._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _DataSetObserver4603;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public DataSetObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.DataSetObserver._DataSetObserver4603.native == global::System.IntPtr.Zero)
-				global::android.database.DataSetObserver._DataSetObserver4603 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._DataSetObserver4603);
+			if (global::android.database.DataSetObserver._m2.native == global::System.IntPtr.Zero)
+				global::android.database.DataSetObserver._m2 = @__env.GetMethodIDNoThrow(global::android.database.DataSetObserver.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._m2);
 			Init(@__env, handle);
 		}
 		static DataSetObserver()

@@ -14,20 +14,20 @@ namespace android.text.style
 				return getSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSize13425;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int getSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getSize", "()I", ref global::android.text.style.AbsoluteSizeSpan._getSize13425);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getSize", "()I", ref global::android.text.style.AbsoluteSizeSpan._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13426;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.AbsoluteSizeSpan._writeToParcel13426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.AbsoluteSizeSpan._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13427;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "describeContents", "()I", ref global::android.text.style.AbsoluteSizeSpan._describeContents13427);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "describeContents", "()I", ref global::android.text.style.AbsoluteSizeSpan._m2);
 		}
 		public new int SpanTypeId
 		{
@@ -36,15 +36,15 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13428;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.AbsoluteSizeSpan._getSpanTypeId13428);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.AbsoluteSizeSpan._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13429;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.AbsoluteSizeSpan._updateDrawState13429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.AbsoluteSizeSpan._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool Dip
 		{
@@ -53,41 +53,41 @@ namespace android.text.style
 				return getDip();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDip13430;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool getDip()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getDip", "()Z", ref global::android.text.style.AbsoluteSizeSpan._getDip13430);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "getDip", "()Z", ref global::android.text.style.AbsoluteSizeSpan._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateMeasureState13431;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.AbsoluteSizeSpan._updateMeasureState13431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AbsoluteSizeSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.AbsoluteSizeSpan._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsoluteSizeSpan13432;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public AbsoluteSizeSpan(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13432.native == global::System.IntPtr.Zero)
-				global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13432 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.AbsoluteSizeSpan._m7.native == global::System.IntPtr.Zero)
+				global::android.text.style.AbsoluteSizeSpan._m7 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsoluteSizeSpan13433;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public AbsoluteSizeSpan(int arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13433.native == global::System.IntPtr.Zero)
-				global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13433 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(IZ)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.style.AbsoluteSizeSpan._m8.native == global::System.IntPtr.Zero)
+				global::android.text.style.AbsoluteSizeSpan._m8 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(IZ)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsoluteSizeSpan13434;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public AbsoluteSizeSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13434.native == global::System.IntPtr.Zero)
-				global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13434 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._AbsoluteSizeSpan13434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.AbsoluteSizeSpan._m9.native == global::System.IntPtr.Zero)
+				global::android.text.style.AbsoluteSizeSpan._m9 = @__env.GetMethodIDNoThrow(global::android.text.style.AbsoluteSizeSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AbsoluteSizeSpan.staticClass, global::android.text.style.AbsoluteSizeSpan._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static AbsoluteSizeSpan()

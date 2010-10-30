@@ -21,15 +21,15 @@ namespace android.widget
 			internal OnZoomListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onVisibilityChanged18310;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.widget.ZoomButtonsController.OnZoomListener.onVisibilityChanged(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.OnZoomListener_.staticClass, "onVisibilityChanged", "(Z)V", ref global::android.widget.ZoomButtonsController.OnZoomListener_._onVisibilityChanged18310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.OnZoomListener_.staticClass, "onVisibilityChanged", "(Z)V", ref global::android.widget.ZoomButtonsController.OnZoomListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onZoom18311;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.widget.ZoomButtonsController.OnZoomListener.onZoom(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.OnZoomListener_.staticClass, "onZoom", "(Z)V", ref global::android.widget.ZoomButtonsController.OnZoomListener_._onZoom18311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.OnZoomListener_.staticClass, "onZoom", "(Z)V", ref global::android.widget.ZoomButtonsController.OnZoomListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnZoomListener_()
 			{
@@ -47,15 +47,15 @@ namespace android.widget
 				setVisible(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setVisible18312;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setVisible(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setVisible", "(Z)V", ref global::android.widget.ZoomButtonsController._setVisible18312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setVisible", "(Z)V", ref global::android.widget.ZoomButtonsController._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isVisible18313;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool isVisible()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "isVisible", "()Z", ref global::android.widget.ZoomButtonsController._isVisible18313);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "isVisible", "()Z", ref global::android.widget.ZoomButtonsController._m1);
 		}
 		public new global::android.view.ViewGroup Container
 		{
@@ -64,10 +64,10 @@ namespace android.widget
 				return getContainer();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContainer18314;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::android.view.ViewGroup getContainer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ZoomButtonsController.staticClass, "getContainer", "()Landroid/view/ViewGroup;", ref global::android.widget.ZoomButtonsController._getContainer18314) as android.view.ViewGroup;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ZoomButtonsController.staticClass, "getContainer", "()Landroid/view/ViewGroup;", ref global::android.widget.ZoomButtonsController._m2) as android.view.ViewGroup;
 		}
 		public new bool Focusable
 		{
@@ -76,15 +76,15 @@ namespace android.widget
 				setFocusable(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFocusable18315;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setFocusable(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setFocusable", "(Z)V", ref global::android.widget.ZoomButtonsController._setFocusable18315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setFocusable", "(Z)V", ref global::android.widget.ZoomButtonsController._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouch18316;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool onTouch(android.view.View arg0, android.view.MotionEvent arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", ref global::android.widget.ZoomButtonsController._onTouch18316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", ref global::android.widget.ZoomButtonsController._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.view.View ZoomControls
 		{
@@ -93,10 +93,10 @@ namespace android.widget
 				return getZoomControls();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getZoomControls18317;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::android.view.View getZoomControls()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ZoomButtonsController.staticClass, "getZoomControls", "()Landroid/view/View;", ref global::android.widget.ZoomButtonsController._getZoomControls18317) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ZoomButtonsController.staticClass, "getZoomControls", "()Landroid/view/View;", ref global::android.widget.ZoomButtonsController._m5) as android.view.View;
 		}
 		public new long ZoomSpeed
 		{
@@ -105,10 +105,10 @@ namespace android.widget
 				setZoomSpeed(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setZoomSpeed18318;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setZoomSpeed(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomSpeed", "(J)V", ref global::android.widget.ZoomButtonsController._setZoomSpeed18318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomSpeed", "(J)V", ref global::android.widget.ZoomButtonsController._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool ZoomInEnabled
 		{
@@ -117,10 +117,10 @@ namespace android.widget
 				setZoomInEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setZoomInEnabled18319;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setZoomInEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomInEnabled", "(Z)V", ref global::android.widget.ZoomButtonsController._setZoomInEnabled18319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomInEnabled", "(Z)V", ref global::android.widget.ZoomButtonsController._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool ZoomOutEnabled
 		{
@@ -129,20 +129,20 @@ namespace android.widget
 				setZoomOutEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setZoomOutEnabled18320;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setZoomOutEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomOutEnabled", "(Z)V", ref global::android.widget.ZoomButtonsController._setZoomOutEnabled18320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setZoomOutEnabled", "(Z)V", ref global::android.widget.ZoomButtonsController._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnZoomListener18321;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setOnZoomListener(android.widget.ZoomButtonsController.OnZoomListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setOnZoomListener", "(Landroid/widget/ZoomButtonsController$OnZoomListener;)V", ref global::android.widget.ZoomButtonsController._setOnZoomListener18321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setOnZoomListener", "(Landroid/widget/ZoomButtonsController$OnZoomListener;)V", ref global::android.widget.ZoomButtonsController._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAutoDismissed18322;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool isAutoDismissed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "isAutoDismissed", "()Z", ref global::android.widget.ZoomButtonsController._isAutoDismissed18322);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, "isAutoDismissed", "()Z", ref global::android.widget.ZoomButtonsController._m10);
 		}
 		public new bool AutoDismissed
 		{
@@ -151,18 +151,18 @@ namespace android.widget
 				setAutoDismissed(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAutoDismissed18323;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setAutoDismissed(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setAutoDismissed", "(Z)V", ref global::android.widget.ZoomButtonsController._setAutoDismissed18323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, "setAutoDismissed", "(Z)V", ref global::android.widget.ZoomButtonsController._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ZoomButtonsController18324;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public ZoomButtonsController(android.view.View arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ZoomButtonsController._ZoomButtonsController18324.native == global::System.IntPtr.Zero)
-				global::android.widget.ZoomButtonsController._ZoomButtonsController18324 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomButtonsController.staticClass, "<init>", "(Landroid/view/View;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._ZoomButtonsController18324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.ZoomButtonsController._m12.native == global::System.IntPtr.Zero)
+				global::android.widget.ZoomButtonsController._m12 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomButtonsController.staticClass, "<init>", "(Landroid/view/View;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ZoomButtonsController()

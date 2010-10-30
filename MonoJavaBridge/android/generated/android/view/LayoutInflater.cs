@@ -20,10 +20,10 @@ namespace android.view
 			internal Factory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onCreateView14291;
+			private static global::MonoJavaBridge.MethodId _m0;
 			global::android.view.View android.view.LayoutInflater.Factory.onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.Factory_.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater.Factory_._onCreateView14291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.Factory_.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater.Factory_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 			}
 			static Factory_()
 			{
@@ -43,13 +43,13 @@ namespace android.view
 			protected FactoryDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _FactoryDelegateWrapper14292;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public FactoryDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292.native == global::System.IntPtr.Zero)
-					global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292);
+				if (global::android.view.LayoutInflater.FactoryDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.view.LayoutInflater.FactoryDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, global::android.view.LayoutInflater.FactoryDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static FactoryDelegateWrapper()
@@ -89,10 +89,10 @@ namespace android.view
 			internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onLoadClass14293;
+			private static global::MonoJavaBridge.MethodId _m0;
 			bool android.view.LayoutInflater.Filter.onLoadClass(java.lang.Class arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.LayoutInflater.Filter_.staticClass, "onLoadClass", "(Ljava/lang/Class;)Z", ref global::android.view.LayoutInflater.Filter_._onLoadClass14293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.LayoutInflater.Filter_.staticClass, "onLoadClass", "(Ljava/lang/Class;)Z", ref global::android.view.LayoutInflater.Filter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static Filter_()
 			{
@@ -112,13 +112,13 @@ namespace android.view
 			protected FilterDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _FilterDelegateWrapper14294;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public FilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294.native == global::System.IntPtr.Zero)
-					global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FilterDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FilterDelegateWrapper.staticClass, global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294);
+				if (global::android.view.LayoutInflater.FilterDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.view.LayoutInflater.FilterDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.FilterDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FilterDelegateWrapper.staticClass, global::android.view.LayoutInflater.FilterDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static FilterDelegateWrapper()
@@ -145,95 +145,95 @@ namespace android.view
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _from14295;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.view.LayoutInflater from(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.LayoutInflater._from14295.native == global::System.IntPtr.Zero)
-				global::android.view.LayoutInflater._from14295 = @__env.GetStaticMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "from", "(Landroid/content/Context;)Landroid/view/LayoutInflater;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._from14295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.LayoutInflater;
+			if (global::android.view.LayoutInflater._m0.native == global::System.IntPtr.Zero)
+				global::android.view.LayoutInflater._m0 = @__env.GetStaticMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "from", "(Landroid/content/Context;)Landroid/view/LayoutInflater;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.LayoutInflater;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFactory14296;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::android.view.LayoutInflater.Factory getFactory()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.LayoutInflater.Factory>(this, global::android.view.LayoutInflater.staticClass, "getFactory", "()Landroid/view/LayoutInflater$Factory;", ref global::android.view.LayoutInflater._getFactory14296) as android.view.LayoutInflater.Factory;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.LayoutInflater.Factory>(this, global::android.view.LayoutInflater.staticClass, "getFactory", "()Landroid/view/LayoutInflater$Factory;", ref global::android.view.LayoutInflater._m1) as android.view.LayoutInflater.Factory;
 		}
-		internal static global::MonoJavaBridge.MethodId _getContext14297;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::android.content.Context getContext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "getContext", "()Landroid/content/Context;", ref global::android.view.LayoutInflater._getContext14297) as android.content.Context;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "getContext", "()Landroid/content/Context;", ref global::android.view.LayoutInflater._m2) as android.content.Context;
 		}
-		internal static global::MonoJavaBridge.MethodId _inflate14298;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.view.LayoutInflater._inflate14298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.view.LayoutInflater._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _inflate14299;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1, bool arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;Z)Landroid/view/View;", ref global::android.view.LayoutInflater._inflate14299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;Z)Landroid/view/View;", ref global::android.view.LayoutInflater._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _inflate14300;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1, bool arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(ILandroid/view/ViewGroup;Z)Landroid/view/View;", ref global::android.view.LayoutInflater._inflate14300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(ILandroid/view/ViewGroup;Z)Landroid/view/View;", ref global::android.view.LayoutInflater._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _inflate14301;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(ILandroid/view/ViewGroup;)Landroid/view/View;", ref global::android.view.LayoutInflater._inflate14301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "inflate", "(ILandroid/view/ViewGroup;)Landroid/view/View;", ref global::android.view.LayoutInflater._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateView14302;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected virtual global::android.view.View onCreateView(java.lang.String arg0, android.util.AttributeSet arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater._onCreateView14302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _cloneInContext14303;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract global::android.view.LayoutInflater cloneInContext(android.content.Context arg0);
-		internal static global::MonoJavaBridge.MethodId _setFactory14304;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setFactory(android.view.LayoutInflater.Factory arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.LayoutInflater.staticClass, "setFactory", "(Landroid/view/LayoutInflater$Factory;)V", ref global::android.view.LayoutInflater._setFactory14304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.LayoutInflater.staticClass, "setFactory", "(Landroid/view/LayoutInflater$Factory;)V", ref global::android.view.LayoutInflater._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setFactory(global::android.view.LayoutInflater.FactoryDelegate arg0)
 		{
 			setFactory((global::android.view.LayoutInflater.FactoryDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter14305;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::android.view.LayoutInflater.Filter getFilter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.LayoutInflater.Filter>(this, global::android.view.LayoutInflater.staticClass, "getFilter", "()Landroid/view/LayoutInflater$Filter;", ref global::android.view.LayoutInflater._getFilter14305) as android.view.LayoutInflater.Filter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.LayoutInflater.Filter>(this, global::android.view.LayoutInflater.staticClass, "getFilter", "()Landroid/view/LayoutInflater$Filter;", ref global::android.view.LayoutInflater._m10) as android.view.LayoutInflater.Filter;
 		}
-		internal static global::MonoJavaBridge.MethodId _setFilter14306;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setFilter(android.view.LayoutInflater.Filter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.LayoutInflater.staticClass, "setFilter", "(Landroid/view/LayoutInflater$Filter;)V", ref global::android.view.LayoutInflater._setFilter14306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.LayoutInflater.staticClass, "setFilter", "(Landroid/view/LayoutInflater$Filter;)V", ref global::android.view.LayoutInflater._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setFilter(global::android.view.LayoutInflater.FilterDelegate arg0)
 		{
 			setFilter((global::android.view.LayoutInflater.FilterDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _createView14307;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual global::android.view.View createView(java.lang.String arg0, java.lang.String arg1, android.util.AttributeSet arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "createView", "(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater._createView14307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater.staticClass, "createView", "(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", ref global::android.view.LayoutInflater._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _LayoutInflater14308;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected LayoutInflater(android.view.LayoutInflater arg0, android.content.Context arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.LayoutInflater._LayoutInflater14308.native == global::System.IntPtr.Zero)
-				global::android.view.LayoutInflater._LayoutInflater14308 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/view/LayoutInflater;Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._LayoutInflater14308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.LayoutInflater._m13.native == global::System.IntPtr.Zero)
+				global::android.view.LayoutInflater._m13 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/view/LayoutInflater;Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _LayoutInflater14309;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected LayoutInflater(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.LayoutInflater._LayoutInflater14309.native == global::System.IntPtr.Zero)
-				global::android.view.LayoutInflater._LayoutInflater14309 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._LayoutInflater14309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.LayoutInflater._m14.native == global::System.IntPtr.Zero)
+				global::android.view.LayoutInflater._m14 = @__env.GetMethodIDNoThrow(global::android.view.LayoutInflater.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static LayoutInflater()
@@ -253,10 +253,10 @@ namespace android.view
 		internal LayoutInflater_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _cloneInContext14310;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::android.view.LayoutInflater cloneInContext(android.content.Context arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater_.staticClass, "cloneInContext", "(Landroid/content/Context;)Landroid/view/LayoutInflater;", ref global::android.view.LayoutInflater_._cloneInContext14310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.view.LayoutInflater;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.LayoutInflater_.staticClass, "cloneInContext", "(Landroid/content/Context;)Landroid/view/LayoutInflater;", ref global::android.view.LayoutInflater_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.view.LayoutInflater;
 		}
 		static LayoutInflater_()
 		{

@@ -7,10 +7,10 @@ namespace android.util
 		protected DisplayMetrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString13734;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;", ref global::android.util.DisplayMetrics._toString13734) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;", ref global::android.util.DisplayMetrics._m0) as java.lang.String;
 		}
 		public new global::android.util.DisplayMetrics To
 		{
@@ -19,23 +19,23 @@ namespace android.util
 				setTo(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setTo13735;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setTo(android.util.DisplayMetrics arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V", ref global::android.util.DisplayMetrics._setTo13735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V", ref global::android.util.DisplayMetrics._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setToDefaults13736;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setToDefaults()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V", ref global::android.util.DisplayMetrics._setToDefaults13736);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V", ref global::android.util.DisplayMetrics._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _DisplayMetrics13737;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public DisplayMetrics() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.DisplayMetrics._DisplayMetrics13737.native == global::System.IntPtr.Zero)
-				global::android.util.DisplayMetrics._DisplayMetrics13737 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics13737);
+			if (global::android.util.DisplayMetrics._m3.native == global::System.IntPtr.Zero)
+				global::android.util.DisplayMetrics._m3 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._m3);
 			Init(@__env, handle);
 		}
 		public static int DENSITY_LOW
@@ -66,85 +66,85 @@ namespace android.util
 				return 160;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _widthPixels13742;
+		internal static global::MonoJavaBridge.FieldId _widthPixels5385;
 		public int widthPixels
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _widthPixels13742);
+				return @__env.GetIntField(this.JvmHandle, _widthPixels5385);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _heightPixels13743;
+		internal static global::MonoJavaBridge.FieldId _heightPixels5386;
 		public int heightPixels
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _heightPixels13743);
+				return @__env.GetIntField(this.JvmHandle, _heightPixels5386);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _density13744;
+		internal static global::MonoJavaBridge.FieldId _density5387;
 		public float density
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _density13744);
+				return @__env.GetFloatField(this.JvmHandle, _density5387);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _densityDpi13745;
+		internal static global::MonoJavaBridge.FieldId _densityDpi5388;
 		public int densityDpi
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _densityDpi13745);
+				return @__env.GetIntField(this.JvmHandle, _densityDpi5388);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _scaledDensity13746;
+		internal static global::MonoJavaBridge.FieldId _scaledDensity5389;
 		public float scaledDensity
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _scaledDensity13746);
+				return @__env.GetFloatField(this.JvmHandle, _scaledDensity5389);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _xdpi13747;
+		internal static global::MonoJavaBridge.FieldId _xdpi5390;
 		public float xdpi
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _xdpi13747);
+				return @__env.GetFloatField(this.JvmHandle, _xdpi5390);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ydpi13748;
+		internal static global::MonoJavaBridge.FieldId _ydpi5391;
 		public float ydpi
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _ydpi13748);
+				return @__env.GetFloatField(this.JvmHandle, _ydpi5391);
 			}
 			set
 			{
@@ -154,13 +154,13 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.DisplayMetrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/DisplayMetrics"));
-			global::android.util.DisplayMetrics._widthPixels13742 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "widthPixels", "I");
-			global::android.util.DisplayMetrics._heightPixels13743 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "heightPixels", "I");
-			global::android.util.DisplayMetrics._density13744 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "density", "F");
-			global::android.util.DisplayMetrics._densityDpi13745 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "densityDpi", "I");
-			global::android.util.DisplayMetrics._scaledDensity13746 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "scaledDensity", "F");
-			global::android.util.DisplayMetrics._xdpi13747 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "xdpi", "F");
-			global::android.util.DisplayMetrics._ydpi13748 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "ydpi", "F");
+			global::android.util.DisplayMetrics._widthPixels5385 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "widthPixels", "I");
+			global::android.util.DisplayMetrics._heightPixels5386 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "heightPixels", "I");
+			global::android.util.DisplayMetrics._density5387 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "density", "F");
+			global::android.util.DisplayMetrics._densityDpi5388 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "densityDpi", "I");
+			global::android.util.DisplayMetrics._scaledDensity5389 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "scaledDensity", "F");
+			global::android.util.DisplayMetrics._xdpi5390 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "xdpi", "F");
+			global::android.util.DisplayMetrics._ydpi5391 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "ydpi", "F");
 		}
 		internal static void InitJNI()
 		{

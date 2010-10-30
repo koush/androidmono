@@ -7,20 +7,20 @@ namespace java.security
 		protected CodeSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals22925;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.CodeSource._equals22925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.security.CodeSource._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString22926;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.CodeSource.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.CodeSource._toString22926) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.CodeSource.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.CodeSource._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode22927;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.CodeSource.staticClass, "hashCode", "()I", ref global::java.security.CodeSource._hashCode22927);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.security.CodeSource.staticClass, "hashCode", "()I", ref global::java.security.CodeSource._m2);
 		}
 		public new global::java.net.URL Location
 		{
@@ -29,10 +29,10 @@ namespace java.security
 				return getLocation();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocation22928;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.net.URL getLocation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::java.security.CodeSource.staticClass, "getLocation", "()Ljava/net/URL;", ref global::java.security.CodeSource._getLocation22928) as java.net.URL;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.net.URL>(this, global::java.security.CodeSource.staticClass, "getLocation", "()Ljava/net/URL;", ref global::java.security.CodeSource._m3) as java.net.URL;
 		}
 		public new global::java.security.cert.Certificate[] Certificates
 		{
@@ -41,15 +41,15 @@ namespace java.security
 				return getCertificates();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCertificates22929;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.security.CodeSource.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;", ref global::java.security.CodeSource._getCertificates22929) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.security.CodeSource.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;", ref global::java.security.CodeSource._m4) as java.security.cert.Certificate[];
 		}
-		internal static global::MonoJavaBridge.MethodId _implies22930;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool implies(java.security.CodeSource arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, "implies", "(Ljava/security/CodeSource;)Z", ref global::java.security.CodeSource._implies22930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.CodeSource.staticClass, "implies", "(Ljava/security/CodeSource;)Z", ref global::java.security.CodeSource._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.security.CodeSigner[] CodeSigners
 		{
@@ -58,27 +58,27 @@ namespace java.security
 				return getCodeSigners();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCodeSigners22931;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.security.CodeSigner[] getCodeSigners()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.CodeSigner>(this, global::java.security.CodeSource.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;", ref global::java.security.CodeSource._getCodeSigners22931) as java.security.CodeSigner[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.CodeSigner>(this, global::java.security.CodeSource.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;", ref global::java.security.CodeSource._m6) as java.security.CodeSigner[];
 		}
-		internal static global::MonoJavaBridge.MethodId _CodeSource22932;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public CodeSource(java.net.URL arg0, java.security.CodeSigner[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.CodeSource._CodeSource22932.native == global::System.IntPtr.Zero)
-				global::java.security.CodeSource._CodeSource22932 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/CodeSigner;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource22932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.security.CodeSource._m7.native == global::System.IntPtr.Zero)
+				global::java.security.CodeSource._m7 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/CodeSigner;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CodeSource22933;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public CodeSource(java.net.URL arg0, java.security.cert.Certificate[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.CodeSource._CodeSource22933.native == global::System.IntPtr.Zero)
-				global::java.security.CodeSource._CodeSource22933 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/cert/Certificate;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource22933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.security.CodeSource._m8.native == global::System.IntPtr.Zero)
+				global::java.security.CodeSource._m8 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/cert/Certificate;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static CodeSource()

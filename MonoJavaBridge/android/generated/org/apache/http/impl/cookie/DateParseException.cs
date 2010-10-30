@@ -7,22 +7,22 @@ namespace org.apache.http.impl.cookie
 		protected DateParseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DateParseException33296;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public DateParseException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.DateParseException._DateParseException33296.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.DateParseException._DateParseException33296 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.DateParseException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._DateParseException33296);
+			if (global::org.apache.http.impl.cookie.DateParseException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.cookie.DateParseException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.DateParseException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DateParseException33297;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public DateParseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.DateParseException._DateParseException33297.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.DateParseException._DateParseException33297 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.DateParseException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._DateParseException33297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.impl.cookie.DateParseException._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.cookie.DateParseException._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.DateParseException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static DateParseException()

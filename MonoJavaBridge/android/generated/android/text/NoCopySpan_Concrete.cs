@@ -7,13 +7,13 @@ namespace android.text
 		protected NoCopySpan_Concrete(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NoCopySpan_Concrete12902;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public NoCopySpan_Concrete() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902.native == global::System.IntPtr.Zero)
-				global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902 = @__env.GetMethodIDNoThrow(global::android.text.NoCopySpan_Concrete.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.NoCopySpan_Concrete.staticClass, global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902);
+			if (global::android.text.NoCopySpan_Concrete._m0.native == global::System.IntPtr.Zero)
+				global::android.text.NoCopySpan_Concrete._m0 = @__env.GetMethodIDNoThrow(global::android.text.NoCopySpan_Concrete.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.NoCopySpan_Concrete.staticClass, global::android.text.NoCopySpan_Concrete._m0);
 			Init(@__env, handle);
 		}
 		static NoCopySpan_Concrete()

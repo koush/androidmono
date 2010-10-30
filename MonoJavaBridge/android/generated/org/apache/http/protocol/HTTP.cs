@@ -7,13 +7,13 @@ namespace org.apache.http.protocol
 		internal HTTP(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isWhitespace33854;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static bool isWhitespace(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.protocol.HTTP._isWhitespace33854.native == global::System.IntPtr.Zero)
-				global::org.apache.http.protocol.HTTP._isWhitespace33854 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.protocol.HTTP.staticClass, "isWhitespace", "(C)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.protocol.HTTP.staticClass, global::org.apache.http.protocol.HTTP._isWhitespace33854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.protocol.HTTP._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.protocol.HTTP._m0 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.protocol.HTTP.staticClass, "isWhitespace", "(C)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.protocol.HTTP.staticClass, global::org.apache.http.protocol.HTTP._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int CR
 		{

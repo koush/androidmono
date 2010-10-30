@@ -14,15 +14,15 @@ namespace org.apache.http.conn
 		internal ClientConnectionRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection32086;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.apache.http.conn.ManagedClientConnection org.apache.http.conn.ClientConnectionRequest.getConnection(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ManagedClientConnection>(this, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "getConnection", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;", ref global::org.apache.http.conn.ClientConnectionRequest_._getConnection32086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.conn.ManagedClientConnection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.ManagedClientConnection>(this, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "getConnection", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;", ref global::org.apache.http.conn.ClientConnectionRequest_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.conn.ManagedClientConnection;
 		}
-		internal static global::MonoJavaBridge.MethodId _abortRequest32087;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.http.conn.ClientConnectionRequest.abortRequest()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "abortRequest", "()V", ref global::org.apache.http.conn.ClientConnectionRequest_._abortRequest32087);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "abortRequest", "()V", ref global::org.apache.http.conn.ClientConnectionRequest_._m1);
 		}
 		static ClientConnectionRequest_()
 		{

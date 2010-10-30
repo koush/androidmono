@@ -14,15 +14,15 @@ namespace android.webkit
 		internal PluginStub_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEmbeddedView16090;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.view.View android.webkit.PluginStub.getEmbeddedView(int arg0, android.content.Context arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginStub_.staticClass, "getEmbeddedView", "(ILandroid/content/Context;)Landroid/view/View;", ref global::android.webkit.PluginStub_._getEmbeddedView16090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginStub_.staticClass, "getEmbeddedView", "(ILandroid/content/Context;)Landroid/view/View;", ref global::android.webkit.PluginStub_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFullScreenView16091;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::android.view.View android.webkit.PluginStub.getFullScreenView(int arg0, android.content.Context arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginStub_.staticClass, "getFullScreenView", "(ILandroid/content/Context;)Landroid/view/View;", ref global::android.webkit.PluginStub_._getFullScreenView16091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginStub_.staticClass, "getFullScreenView", "(ILandroid/content/Context;)Landroid/view/View;", ref global::android.webkit.PluginStub_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
 		static PluginStub_()
 		{

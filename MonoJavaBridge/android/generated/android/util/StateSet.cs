@@ -7,69 +7,69 @@ namespace android.util
 		protected StateSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _dump13878;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::java.lang.String dump(int[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._dump13878.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._dump13878 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "dump", "([I)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.StateSet.staticClass, global::android.util.StateSet._dump13878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.util.StateSet._m0.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m0 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "dump", "([I)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.StateSet.staticClass, global::android.util.StateSet._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isWildCard13879;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static bool isWildCard(int[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._isWildCard13879.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._isWildCard13879 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "isWildCard", "([I)Z");
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._isWildCard13879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.StateSet._m1.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m1 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "isWildCard", "([I)Z");
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _stateSetMatches13880;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static bool stateSetMatches(int[] arg0, int[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._stateSetMatches13880.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._stateSetMatches13880 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "stateSetMatches", "([I[I)Z");
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._stateSetMatches13880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.util.StateSet._m2.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m2 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "stateSetMatches", "([I[I)Z");
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _stateSetMatches13881;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static bool stateSetMatches(int[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._stateSetMatches13881.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._stateSetMatches13881 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "stateSetMatches", "([II)Z");
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._stateSetMatches13881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.util.StateSet._m3.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m3 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "stateSetMatches", "([II)Z");
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, global::android.util.StateSet._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _trimStateSet13882;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int[] trimStateSet(int[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._trimStateSet13882.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._trimStateSet13882 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "trimStateSet", "([II)[I");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallStaticObjectMethod(android.util.StateSet.staticClass, global::android.util.StateSet._trimStateSet13882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
+			if (global::android.util.StateSet._m4.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m4 = @__env.GetStaticMethodIDNoThrow(global::android.util.StateSet.staticClass, "trimStateSet", "([II)[I");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallStaticObjectMethod(android.util.StateSet.staticClass, global::android.util.StateSet._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _StateSet13883;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public StateSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.StateSet._StateSet13883.native == global::System.IntPtr.Zero)
-				global::android.util.StateSet._StateSet13883 = @__env.GetMethodIDNoThrow(global::android.util.StateSet.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.StateSet.staticClass, global::android.util.StateSet._StateSet13883);
+			if (global::android.util.StateSet._m5.native == global::System.IntPtr.Zero)
+				global::android.util.StateSet._m5 = @__env.GetMethodIDNoThrow(global::android.util.StateSet.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.StateSet.staticClass, global::android.util.StateSet._m5);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _WILD_CARD13884;
+		internal static global::MonoJavaBridge.FieldId _WILD_CARD5411;
 		public static int[] WILD_CARD
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.GetStaticObjectField(global::android.util.StateSet.staticClass, _WILD_CARD13884)) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.GetStaticObjectField(global::android.util.StateSet.staticClass, _WILD_CARD5411)) as int[];
 			}
 		}
 		static StateSet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.StateSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/StateSet"));
-			global::android.util.StateSet._WILD_CARD13884 = @__env.GetStaticFieldIDNoThrow(global::android.util.StateSet.staticClass, "WILD_CARD", "[I");
+			global::android.util.StateSet._WILD_CARD5411 = @__env.GetStaticFieldIDNoThrow(global::android.util.StateSet.staticClass, "WILD_CARD", "[I");
 		}
 		internal static void InitJNI()
 		{

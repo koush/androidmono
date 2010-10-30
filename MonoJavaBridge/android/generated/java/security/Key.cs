@@ -15,20 +15,20 @@ namespace java.security
 		internal Key_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded23006;
+		private static global::MonoJavaBridge.MethodId _m0;
 		byte[] java.security.Key.getEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.Key_.staticClass, "getEncoded", "()[B", ref global::java.security.Key_._getEncoded23006) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.Key_.staticClass, "getEncoded", "()[B", ref global::java.security.Key_._m0) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm23007;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.Key_._getAlgorithm23007) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.Key_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat23008;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.Key_._getFormat23008) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.Key_._m2) as java.lang.String;
 		}
 		static Key_()
 		{

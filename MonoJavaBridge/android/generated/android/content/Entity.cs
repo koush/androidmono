@@ -14,48 +14,48 @@ namespace android.content
 			protected NamedContentValues(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _NamedContentValues3087;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public NamedContentValues(android.net.Uri arg0, android.content.ContentValues arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.Entity.NamedContentValues._NamedContentValues3087.native == global::System.IntPtr.Zero)
-					global::android.content.Entity.NamedContentValues._NamedContentValues3087 = @__env.GetMethodIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "<init>", "(Landroid/net/Uri;Landroid/content/ContentValues;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Entity.NamedContentValues.staticClass, global::android.content.Entity.NamedContentValues._NamedContentValues3087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				if (global::android.content.Entity.NamedContentValues._m0.native == global::System.IntPtr.Zero)
+					global::android.content.Entity.NamedContentValues._m0 = @__env.GetMethodIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "<init>", "(Landroid/net/Uri;Landroid/content/ContentValues;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Entity.NamedContentValues.staticClass, global::android.content.Entity.NamedContentValues._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _uri3088;
+			internal static global::MonoJavaBridge.FieldId _uri1681;
 			public global::android.net.Uri uri
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _uri3088)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _uri1681)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _values3089;
+			internal static global::MonoJavaBridge.FieldId _values1682;
 			public global::android.content.ContentValues values
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ContentValues>(@__env.GetObjectField(this.JvmHandle, _values3089)) as android.content.ContentValues;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ContentValues>(@__env.GetObjectField(this.JvmHandle, _values1682)) as android.content.ContentValues;
 				}
 			}
 			static NamedContentValues()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.Entity.NamedContentValues.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Entity$NamedContentValues"));
-				global::android.content.Entity.NamedContentValues._uri3088 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "uri", "Landroid/net/Uri;");
-				global::android.content.Entity.NamedContentValues._values3089 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "values", "Landroid/content/ContentValues;");
+				global::android.content.Entity.NamedContentValues._uri1681 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "uri", "Landroid/net/Uri;");
+				global::android.content.Entity.NamedContentValues._values1682 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "values", "Landroid/content/ContentValues;");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _toString3090;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Entity.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.Entity._toString3090) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.Entity.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.Entity._m0) as java.lang.String;
 		}
 		public new global::android.content.ContentValues EntityValues
 		{
@@ -64,10 +64,10 @@ namespace android.content
 				return getEntityValues();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEntityValues3091;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public global::android.content.ContentValues getEntityValues()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ContentValues>(this, global::android.content.Entity.staticClass, "getEntityValues", "()Landroid/content/ContentValues;", ref global::android.content.Entity._getEntityValues3091) as android.content.ContentValues;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.ContentValues>(this, global::android.content.Entity.staticClass, "getEntityValues", "()Landroid/content/ContentValues;", ref global::android.content.Entity._m1) as android.content.ContentValues;
 		}
 		public new global::java.util.ArrayList SubValues
 		{
@@ -76,23 +76,23 @@ namespace android.content
 				return getSubValues();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSubValues3092;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public global::java.util.ArrayList getSubValues()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Entity.staticClass, "getSubValues", "()Ljava/util/ArrayList;", ref global::android.content.Entity._getSubValues3092) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.Entity.staticClass, "getSubValues", "()Ljava/util/ArrayList;", ref global::android.content.Entity._m2) as java.util.ArrayList;
 		}
-		internal static global::MonoJavaBridge.MethodId _addSubValue3093;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public void addSubValue(android.net.Uri arg0, android.content.ContentValues arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Entity.staticClass, "addSubValue", "(Landroid/net/Uri;Landroid/content/ContentValues;)V", ref global::android.content.Entity._addSubValue3093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.Entity.staticClass, "addSubValue", "(Landroid/net/Uri;Landroid/content/ContentValues;)V", ref global::android.content.Entity._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _Entity3094;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public Entity(android.content.ContentValues arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.Entity._Entity3094.native == global::System.IntPtr.Zero)
-				global::android.content.Entity._Entity3094 = @__env.GetMethodIDNoThrow(global::android.content.Entity.staticClass, "<init>", "(Landroid/content/ContentValues;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Entity.staticClass, global::android.content.Entity._Entity3094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.Entity._m4.native == global::System.IntPtr.Zero)
+				global::android.content.Entity._m4 = @__env.GetMethodIDNoThrow(global::android.content.Entity.staticClass, "<init>", "(Landroid/content/ContentValues;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.Entity.staticClass, global::android.content.Entity._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static Entity()

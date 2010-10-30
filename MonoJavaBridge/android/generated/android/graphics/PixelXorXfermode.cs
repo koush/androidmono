@@ -7,13 +7,13 @@ namespace android.graphics
 		protected PixelXorXfermode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _PixelXorXfermode5618;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public PixelXorXfermode(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.PixelXorXfermode._PixelXorXfermode5618.native == global::System.IntPtr.Zero)
-				global::android.graphics.PixelXorXfermode._PixelXorXfermode5618 = @__env.GetMethodIDNoThrow(global::android.graphics.PixelXorXfermode.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PixelXorXfermode.staticClass, global::android.graphics.PixelXorXfermode._PixelXorXfermode5618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.PixelXorXfermode._m0.native == global::System.IntPtr.Zero)
+				global::android.graphics.PixelXorXfermode._m0 = @__env.GetMethodIDNoThrow(global::android.graphics.PixelXorXfermode.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PixelXorXfermode.staticClass, global::android.graphics.PixelXorXfermode._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static PixelXorXfermode()

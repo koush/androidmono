@@ -7,222 +7,170 @@ namespace java.util
 		internal Formatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::MonoJavaBridge.JavaClass()]
-		public sealed partial class BigDecimalLayoutForm : java.lang.Enum
-		{
-			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			internal BigDecimalLayoutForm(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
-			{
-			}
-			internal static global::MonoJavaBridge.MethodId _values26186;
-			public static global::java.util.Formatter.BigDecimalLayoutForm[] values()
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.util.Formatter.BigDecimalLayoutForm._values26186.native == global::System.IntPtr.Zero)
-					global::java.util.Formatter.BigDecimalLayoutForm._values26186 = @__env.GetStaticMethodIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "values", "()[Ljava/util/Formatter/BigDecimalLayoutForm;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Formatter.BigDecimalLayoutForm>(@__env.CallStaticObjectMethod(java.util.Formatter.BigDecimalLayoutForm.staticClass, global::java.util.Formatter.BigDecimalLayoutForm._values26186)) as java.util.Formatter.BigDecimalLayoutForm[];
-			}
-			internal static global::MonoJavaBridge.MethodId _valueOf26187;
-			public static global::java.util.Formatter.BigDecimalLayoutForm valueOf(java.lang.String arg0)
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.util.Formatter.BigDecimalLayoutForm._valueOf26187.native == global::System.IntPtr.Zero)
-					global::java.util.Formatter.BigDecimalLayoutForm._valueOf26187 = @__env.GetStaticMethodIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/Formatter$BigDecimalLayoutForm;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.CallStaticObjectMethod(java.util.Formatter.BigDecimalLayoutForm.staticClass, global::java.util.Formatter.BigDecimalLayoutForm._valueOf26187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Formatter.BigDecimalLayoutForm;
-			}
-			internal static global::MonoJavaBridge.FieldId _SCIENTIFIC26188;
-			public static global::java.util.Formatter.BigDecimalLayoutForm SCIENTIFIC
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.GetStaticObjectField(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, _SCIENTIFIC26188)) as java.util.Formatter.BigDecimalLayoutForm;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _DECIMAL_FLOAT26189;
-			public static global::java.util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.GetStaticObjectField(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, _DECIMAL_FLOAT26189)) as java.util.Formatter.BigDecimalLayoutForm;
-				}
-			}
-			static BigDecimalLayoutForm()
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::java.util.Formatter.BigDecimalLayoutForm.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Formatter$BigDecimalLayoutForm"));
-				global::java.util.Formatter.BigDecimalLayoutForm._SCIENTIFIC26188 = @__env.GetStaticFieldIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "SCIENTIFIC", "Ljava/util/Formatter$BigDecimalLayoutForm;");
-				global::java.util.Formatter.BigDecimalLayoutForm._DECIMAL_FLOAT26189 = @__env.GetStaticFieldIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "DECIMAL_FLOAT", "Ljava/util/Formatter$BigDecimalLayoutForm;");
-			}
-			internal static void InitJNI()
-			{
-			}
-		}
-		internal static global::MonoJavaBridge.MethodId _toString26190;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Formatter.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.Formatter._toString26190) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.Formatter.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.Formatter._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _format26191;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public global::java.util.Formatter format(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Formatter>(this, global::java.util.Formatter.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", ref global::java.util.Formatter._format26191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.Formatter;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Formatter>(this, global::java.util.Formatter.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", ref global::java.util.Formatter._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.Formatter;
 		}
-		internal static global::MonoJavaBridge.MethodId _format26192;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public global::java.util.Formatter format(java.lang.String arg0, java.lang.Object[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Formatter>(this, global::java.util.Formatter.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", ref global::java.util.Formatter._format26192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.Formatter;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Formatter>(this, global::java.util.Formatter.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", ref global::java.util.Formatter._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.Formatter;
 		}
-		internal static global::MonoJavaBridge.MethodId _out26193;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public global::java.lang.Appendable @out()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.util.Formatter.staticClass, "@out", "()Ljava/lang/Appendable;", ref global::java.util.Formatter._out26193) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.util.Formatter.staticClass, "@out", "()Ljava/lang/Appendable;", ref global::java.util.Formatter._m3) as java.lang.Appendable;
 		}
-		internal static global::MonoJavaBridge.MethodId _flush26194;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public void flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Formatter.staticClass, "flush", "()V", ref global::java.util.Formatter._flush26194);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Formatter.staticClass, "flush", "()V", ref global::java.util.Formatter._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _close26195;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Formatter.staticClass, "close", "()V", ref global::java.util.Formatter._close26195);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Formatter.staticClass, "close", "()V", ref global::java.util.Formatter._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _locale26196;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public global::java.util.Locale locale()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::java.util.Formatter.staticClass, "locale", "()Ljava/util/Locale;", ref global::java.util.Formatter._locale26196) as java.util.Locale;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Locale>(this, global::java.util.Formatter.staticClass, "locale", "()Ljava/util/Locale;", ref global::java.util.Formatter._m6) as java.util.Locale;
 		}
-		internal static global::MonoJavaBridge.MethodId _ioException26197;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public global::java.io.IOException ioException()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Formatter.staticClass, "ioException", "()Ljava/io/IOException;", ref global::java.util.Formatter._ioException26197) as java.io.IOException;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Formatter.staticClass, "ioException", "()Ljava/io/IOException;", ref global::java.util.Formatter._m7) as java.io.IOException;
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26198;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public Formatter(java.io.OutputStream arg0, java.lang.String arg1, java.util.Locale arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26198.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26198 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.util.Formatter._m8.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m8 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/util/Locale;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26199;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public Formatter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26199.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26199 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26199);
+			if (global::java.util.Formatter._m9.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m9 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m9);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26200;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public Formatter(java.lang.Appendable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26200.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26200 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/Appendable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m10.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m10 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/Appendable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26201;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public Formatter(java.util.Locale arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26201.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26201 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m11.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m11 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/util/Locale;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26202;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public Formatter(java.lang.Appendable arg0, java.util.Locale arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26202.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26202 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/Appendable;Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.util.Formatter._m12.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m12 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/Appendable;Ljava/util/Locale;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26203;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public Formatter(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26203.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26203 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m13.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m13 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26204;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public Formatter(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26204.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26204 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.util.Formatter._m14.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m14 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26205;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public Formatter(java.lang.String arg0, java.lang.String arg1, java.util.Locale arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26205.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26205 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.util.Formatter._m15.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m15 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26206;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public Formatter(java.io.File arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26206.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26206 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m16.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m16 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26207;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public Formatter(java.io.File arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26207.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26207 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.util.Formatter._m17.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m17 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26208;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public Formatter(java.io.File arg0, java.lang.String arg1, java.util.Locale arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26208.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26208 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;Ljava/util/Locale;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.util.Formatter._m18.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m18 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;Ljava/util/Locale;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26209;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public Formatter(java.io.PrintStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26209.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26209 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/PrintStream;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m19.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m19 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/PrintStream;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26210;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public Formatter(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26210.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26210 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.Formatter._m20.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m20 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Formatter26211;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public Formatter(java.io.OutputStream arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.Formatter._Formatter26211.native == global::System.IntPtr.Zero)
-				global::java.util.Formatter._Formatter26211 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._Formatter26211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.util.Formatter._m21.native == global::System.IntPtr.Zero)
+				global::java.util.Formatter._m21 = @__env.GetMethodIDNoThrow(global::java.util.Formatter.staticClass, "<init>", "(Ljava/io/OutputStream;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Formatter.staticClass, global::java.util.Formatter._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static Formatter()

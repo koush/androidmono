@@ -15,20 +15,20 @@ namespace org.apache.http
 		internal Header_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getName31497;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.apache.http.Header.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.Header_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.Header_._getName31497) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.Header_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.Header_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue31498;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.apache.http.Header.getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.Header_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.Header_._getValue31498) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.Header_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.Header_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getElements31499;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::org.apache.http.HeaderElement[] org.apache.http.Header.getElements()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.Header_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.Header_._getElements31499) as org.apache.http.HeaderElement[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.Header_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.Header_._m2) as org.apache.http.HeaderElement[];
 		}
 		static Header_()
 		{

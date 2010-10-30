@@ -41,10 +41,12 @@ namespace MonoDroid
 				{
 					GenerateType(subType);
 				}
+                int index = 0;
 				foreach(var method in type.Methods)
 				{
 					if (type.Signatures.Contains(method.ToSignatureString()))
 					    continue;
+                    method.Index = index++;
 					type.Signatures.Add(method.ToSignatureString());
 					myIndent++;
 					EmitMethod(method);

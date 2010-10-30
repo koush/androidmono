@@ -7,27 +7,27 @@ namespace android.app.backup
 		protected BackupAgent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate2298;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onCreate()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent.staticClass, "onCreate", "()V", ref global::android.app.backup.BackupAgent._onCreate2298);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent.staticClass, "onCreate", "()V", ref global::android.app.backup.BackupAgent._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDestroy2299;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void onDestroy()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent.staticClass, "onDestroy", "()V", ref global::android.app.backup.BackupAgent._onDestroy2299);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent.staticClass, "onDestroy", "()V", ref global::android.app.backup.BackupAgent._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _onBackup2300;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract void onBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2);
-		internal static global::MonoJavaBridge.MethodId _onRestore2301;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract void onRestore(android.app.backup.BackupDataInput arg0, int arg1, android.os.ParcelFileDescriptor arg2);
-		internal static global::MonoJavaBridge.MethodId _BackupAgent2302;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public BackupAgent() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.backup.BackupAgent._BackupAgent2302.native == global::System.IntPtr.Zero)
-				global::android.app.backup.BackupAgent._BackupAgent2302 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupAgent.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupAgent.staticClass, global::android.app.backup.BackupAgent._BackupAgent2302);
+			if (global::android.app.backup.BackupAgent._m4.native == global::System.IntPtr.Zero)
+				global::android.app.backup.BackupAgent._m4 = @__env.GetMethodIDNoThrow(global::android.app.backup.BackupAgent.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupAgent.staticClass, global::android.app.backup.BackupAgent._m4);
 			Init(@__env, handle);
 		}
 		static BackupAgent()
@@ -47,15 +47,15 @@ namespace android.app.backup
 		internal BackupAgent_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onBackup2303;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void onBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent_.staticClass, "onBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupAgent_._onBackup2303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent_.staticClass, "onBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupAgent_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestore2304;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void onRestore(android.app.backup.BackupDataInput arg0, int arg1, android.os.ParcelFileDescriptor arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent_.staticClass, "onRestore", "(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupAgent_._onRestore2304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupAgent_.staticClass, "onRestore", "(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupAgent_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static BackupAgent_()
 		{

@@ -20,10 +20,10 @@ namespace android.text
 			internal EllipsizeCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _ellipsized13042;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.text.TextUtils.EllipsizeCallback.ellipsized(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.EllipsizeCallback_.staticClass, "ellipsized", "(II)V", ref global::android.text.TextUtils.EllipsizeCallback_._ellipsized13042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.EllipsizeCallback_.staticClass, "ellipsized", "(II)V", ref global::android.text.TextUtils.EllipsizeCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static EllipsizeCallback_()
 			{
@@ -43,13 +43,13 @@ namespace android.text
 			protected EllipsizeCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _EllipsizeCallbackDelegateWrapper13043;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public EllipsizeCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043);
+				if (global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static EllipsizeCallbackDelegateWrapper()
@@ -87,25 +87,25 @@ namespace android.text
 			{
 				return global::java.lang.IterableHelper.WrapIterator(iterator());
 			}
-			internal static global::MonoJavaBridge.MethodId _iterator13044;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual global::java.util.Iterator iterator()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.SimpleStringSplitter._iterator13044) as java.util.Iterator;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.SimpleStringSplitter._m0) as java.util.Iterator;
 			}
-			internal static global::MonoJavaBridge.MethodId _hasNext13045;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual bool hasNext()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "hasNext", "()Z", ref global::android.text.TextUtils.SimpleStringSplitter._hasNext13045);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "hasNext", "()Z", ref global::android.text.TextUtils.SimpleStringSplitter._m1);
 			}
-			internal static global::MonoJavaBridge.MethodId _next13046;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual global::java.lang.Object next()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "next", "()Ljava/lang/Object;", ref global::android.text.TextUtils.SimpleStringSplitter._next13046) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "next", "()Ljava/lang/Object;", ref global::android.text.TextUtils.SimpleStringSplitter._m2) as java.lang.Object;
 			}
-			internal static global::MonoJavaBridge.MethodId _remove13047;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual void remove()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "remove", "()V", ref global::android.text.TextUtils.SimpleStringSplitter._remove13047);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "remove", "()V", ref global::android.text.TextUtils.SimpleStringSplitter._m3);
 			}
 			public new global::java.lang.String String
 			{
@@ -114,18 +114,18 @@ namespace android.text
 					setString(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _setString13048;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual void setString(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.SimpleStringSplitter._setString13048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.SimpleStringSplitter._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _SimpleStringSplitter13049;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public SimpleStringSplitter(char arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "<init>", "(C)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.text.TextUtils.SimpleStringSplitter._m5.native == global::System.IntPtr.Zero)
+					global::android.text.TextUtils.SimpleStringSplitter._m5 = @__env.GetMethodIDNoThrow(global::android.text.TextUtils.SimpleStringSplitter.staticClass, "<init>", "(C)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static SimpleStringSplitter()
@@ -150,19 +150,19 @@ namespace android.text
 			internal StringSplitter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _setString13050;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.text.TextUtils.StringSplitter.setString(java.lang.String arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.StringSplitter_.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.StringSplitter_._setString13050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.TextUtils.StringSplitter_.staticClass, "setString", "(Ljava/lang/String;)V", ref global::android.text.TextUtils.StringSplitter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public global::System.Collections.IEnumerator GetEnumerator()
 			{
 				return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 			}
-			internal static global::MonoJavaBridge.MethodId _iterator13051;
+			private static global::MonoJavaBridge.MethodId _m1;
 			global::java.util.Iterator java.lang.Iterable.iterator()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.StringSplitter_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.StringSplitter_._iterator13051) as java.util.Iterator;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.text.TextUtils.StringSplitter_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::android.text.TextUtils.StringSplitter_._m1) as java.util.Iterator;
 			}
 			static StringSplitter_()
 			{
@@ -180,498 +180,498 @@ namespace android.text
 			internal TruncateAt(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _values13052;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::android.text.TextUtils.TruncateAt[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.TruncateAt._values13052.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.TruncateAt._values13052 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "values", "()[Landroid/text/TextUtils/TruncateAt;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._values13052)) as android.text.TextUtils.TruncateAt[];
+				if (global::android.text.TextUtils.TruncateAt._m0.native == global::System.IntPtr.Zero)
+					global::android.text.TextUtils.TruncateAt._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "values", "()[Landroid/text/TextUtils/TruncateAt;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._m0)) as android.text.TextUtils.TruncateAt[];
 			}
-			internal static global::MonoJavaBridge.MethodId _valueOf13053;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::android.text.TextUtils.TruncateAt valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.text.TextUtils.TruncateAt._valueOf13053.native == global::System.IntPtr.Zero)
-					global::android.text.TextUtils.TruncateAt._valueOf13053 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/TextUtils$TruncateAt;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._valueOf13053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.TextUtils.TruncateAt;
+				if (global::android.text.TextUtils.TruncateAt._m1.native == global::System.IntPtr.Zero)
+					global::android.text.TextUtils.TruncateAt._m1 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/TextUtils$TruncateAt;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.TextUtils.TruncateAt;
 			}
-			internal static global::MonoJavaBridge.FieldId _END13054;
+			internal static global::MonoJavaBridge.FieldId _END5251;
 			public static global::android.text.TextUtils.TruncateAt END
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _END13054)) as android.text.TextUtils.TruncateAt;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _END5251)) as android.text.TextUtils.TruncateAt;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _MARQUEE13055;
+			internal static global::MonoJavaBridge.FieldId _MARQUEE5252;
 			public static global::android.text.TextUtils.TruncateAt MARQUEE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _MARQUEE13055)) as android.text.TextUtils.TruncateAt;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _MARQUEE5252)) as android.text.TextUtils.TruncateAt;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _MIDDLE13056;
+			internal static global::MonoJavaBridge.FieldId _MIDDLE5253;
 			public static global::android.text.TextUtils.TruncateAt MIDDLE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _MIDDLE13056)) as android.text.TextUtils.TruncateAt;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _MIDDLE5253)) as android.text.TextUtils.TruncateAt;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _START13057;
+			internal static global::MonoJavaBridge.FieldId _START5254;
 			public static global::android.text.TextUtils.TruncateAt START
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _START13057)) as android.text.TextUtils.TruncateAt;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.GetStaticObjectField(global::android.text.TextUtils.TruncateAt.staticClass, _START5254)) as android.text.TextUtils.TruncateAt;
 				}
 			}
 			static TruncateAt()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.TruncateAt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$TruncateAt"));
-				global::android.text.TextUtils.TruncateAt._END13054 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "END", "Landroid/text/TextUtils$TruncateAt;");
-				global::android.text.TextUtils.TruncateAt._MARQUEE13055 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MARQUEE", "Landroid/text/TextUtils$TruncateAt;");
-				global::android.text.TextUtils.TruncateAt._MIDDLE13056 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MIDDLE", "Landroid/text/TextUtils$TruncateAt;");
-				global::android.text.TextUtils.TruncateAt._START13057 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "START", "Landroid/text/TextUtils$TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._END5251 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "END", "Landroid/text/TextUtils$TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._MARQUEE5252 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MARQUEE", "Landroid/text/TextUtils$TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._MIDDLE5253 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MIDDLE", "Landroid/text/TextUtils$TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._START5254 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "START", "Landroid/text/TextUtils$TruncateAt;");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _equals13058;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static bool equals(java.lang.CharSequence arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._equals13058.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._equals13058 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "equals", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._equals13058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m0.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "equals", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static bool equals(string arg0, string arg1)
 		{
 			return equals((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13059;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13059.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13059 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;CI)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m1.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m1 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;CI)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int indexOf(string arg0, char arg1, int arg2)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13060;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13060.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13060 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;CII)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.text.TextUtils._m2.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m2 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;CII)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static int indexOf(string arg0, char arg1, int arg2, int arg3)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13061;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int indexOf(java.lang.CharSequence arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13061.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13061 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;C)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m3.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m3 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;C)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int indexOf(string arg0, char arg1)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13062;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13062.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13062 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m4.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m4 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int indexOf(string arg0, string arg1)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13063;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13063.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13063 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m5.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m5 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int indexOf(string arg0, string arg1, int arg2)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf13064;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._indexOf13064.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._indexOf13064 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;II)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.text.TextUtils._m6.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m6 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;II)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static int indexOf(string arg0, string arg1, int arg2, int arg3)
 		{
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty13065;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static bool isEmpty(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._isEmpty13065.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._isEmpty13065 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isEmpty", "(Ljava/lang/CharSequence;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isEmpty13065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.TextUtils._m7.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m7 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isEmpty", "(Ljava/lang/CharSequence;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static bool isEmpty(string arg0)
 		{
 			return isEmpty((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getChars13066;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static void getChars(java.lang.CharSequence arg0, int arg1, int arg2, char[] arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getChars13066.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getChars13066 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getChars", "(Ljava/lang/CharSequence;II[CI)V");
-			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getChars13066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.text.TextUtils._m8.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m8 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getChars", "(Ljava/lang/CharSequence;II[CI)V");
+			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public static void getChars(string arg0, int arg1, int arg2, char[] arg3, int arg4)
 		{
 			getChars((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4);
 		}
-		internal static global::MonoJavaBridge.MethodId _regionMatches13067;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static bool regionMatches(java.lang.CharSequence arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._regionMatches13067.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._regionMatches13067 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "regionMatches", "(Ljava/lang/CharSequence;ILjava/lang/CharSequence;II)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._regionMatches13067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.text.TextUtils._m9.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m9 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "regionMatches", "(Ljava/lang/CharSequence;ILjava/lang/CharSequence;II)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public static bool regionMatches(string arg0, int arg1, string arg2, int arg3, int arg4)
 		{
 			return regionMatches((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3, arg4);
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf13068;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._lastIndexOf13068.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._lastIndexOf13068 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;CI)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m10.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m10 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;CI)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int lastIndexOf(string arg0, char arg1, int arg2)
 		{
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf13069;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._lastIndexOf13069.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._lastIndexOf13069 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;CII)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.text.TextUtils._m11.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m11 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;CII)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static int lastIndexOf(string arg0, char arg1, int arg2, int arg3)
 		{
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf13070;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._lastIndexOf13070.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._lastIndexOf13070 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;C)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m12.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m12 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "lastIndexOf", "(Ljava/lang/CharSequence;C)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int lastIndexOf(string arg0, char arg1)
 		{
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _substring13071;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static global::java.lang.String substring(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._substring13071.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._substring13071 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "substring", "(Ljava/lang/CharSequence;II)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._substring13071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
+			if (global::android.text.TextUtils._m13.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m13 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "substring", "(Ljava/lang/CharSequence;II)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
 		public static java.lang.String substring(string arg0, int arg1, int arg2)
 		{
 			return substring((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _concat13072;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static global::java.lang.CharSequence concat(java.lang.CharSequence[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._concat13072.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._concat13072 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "concat", "([Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._concat13072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m14.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m14 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "concat", "([Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _replace13073;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static global::java.lang.CharSequence replace(java.lang.CharSequence arg0, java.lang.String[] arg1, java.lang.CharSequence[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._replace13073.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._replace13073 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "replace", "(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._replace13073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m15.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m15 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "replace", "(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence replace(string arg0, java.lang.String[] arg1, java.lang.CharSequence[] arg2)
 		{
 			return replace((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _split13074;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static global::java.lang.String[] split(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._split13074.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._split13074 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "split", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._split13074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
+			if (global::android.text.TextUtils._m16.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m16 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "split", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _split13075;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static global::java.lang.String[] split(java.lang.String arg0, java.util.regex.Pattern arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._split13075.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._split13075 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "split", "(Ljava/lang/String;Ljava/util/regex/Pattern;)[Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._split13075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
+			if (global::android.text.TextUtils._m17.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m17 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "split", "(Ljava/lang/String;Ljava/util/regex/Pattern;)[Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _join13076;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Object[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._join13076.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._join13076 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "join", "(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._join13076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			if (global::android.text.TextUtils._m18.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m18 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "join", "(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		public static java.lang.String join(string arg0, java.lang.Object[] arg1)
 		{
 			return join((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _join13077;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Iterable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._join13077.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._join13077 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "join", "(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._join13077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			if (global::android.text.TextUtils._m19.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m19 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "join", "(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		public static java.lang.String join(string arg0, java.lang.Iterable arg1)
 		{
 			return join((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _ellipsize13078;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._ellipsize13078.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._ellipsize13078 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._ellipsize13078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m20.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m20 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence ellipsize(string arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3)
 		{
 			return ellipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _ellipsize13079;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3, bool arg4, android.text.TextUtils.EllipsizeCallback arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._ellipsize13079.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._ellipsize13079 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;ZLandroid/text/TextUtils$EllipsizeCallback;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._ellipsize13079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m21.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m21 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;ZLandroid/text/TextUtils$EllipsizeCallback;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence ellipsize(string arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3, bool arg4, global::android.text.TextUtils.EllipsizeCallbackDelegate arg5)
 		{
 			return ellipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, (global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper)arg5);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13080;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public static void writeToParcel(java.lang.CharSequence arg0, android.os.Parcel arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._writeToParcel13080.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._writeToParcel13080 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "writeToParcel", "(Ljava/lang/CharSequence;Landroid/os/Parcel;I)V");
-			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._writeToParcel13080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m22.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m22 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "writeToParcel", "(Ljava/lang/CharSequence;Landroid/os/Parcel;I)V");
+			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static void writeToParcel(string arg0, android.os.Parcel arg1, int arg2)
 		{
 			writeToParcel((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _stringOrSpannedString13081;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public static global::java.lang.CharSequence stringOrSpannedString(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._stringOrSpannedString13081.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._stringOrSpannedString13081 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "stringOrSpannedString", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._stringOrSpannedString13081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m23.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m23 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "stringOrSpannedString", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence stringOrSpannedString(string arg0)
 		{
 			return stringOrSpannedString((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getTrimmedLength13082;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static int getTrimmedLength(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getTrimmedLength13082.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getTrimmedLength13082 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getTrimmedLength", "(Ljava/lang/CharSequence;)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getTrimmedLength13082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.TextUtils._m24.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m24 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getTrimmedLength", "(Ljava/lang/CharSequence;)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int getTrimmedLength(string arg0)
 		{
 			return getTrimmedLength((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getReverse13083;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public static global::java.lang.CharSequence getReverse(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getReverse13083.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getReverse13083 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getReverse", "(Ljava/lang/CharSequence;II)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getReverse13083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m25.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m25 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getReverse", "(Ljava/lang/CharSequence;II)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence getReverse(string arg0, int arg1, int arg2)
 		{
 			return getReverse((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _dumpSpans13084;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public static void dumpSpans(java.lang.CharSequence arg0, android.util.Printer arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._dumpSpans13084.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._dumpSpans13084 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "dumpSpans", "(Ljava/lang/CharSequence;Landroid/util/Printer;Ljava/lang/String;)V");
-			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._dumpSpans13084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m26.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m26 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "dumpSpans", "(Ljava/lang/CharSequence;Landroid/util/Printer;Ljava/lang/String;)V");
+			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static void dumpSpans(string arg0, global::android.util.PrinterDelegate arg1, java.lang.String arg2)
 		{
 			dumpSpans((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.util.PrinterDelegateWrapper)arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _expandTemplate13085;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public static global::java.lang.CharSequence expandTemplate(java.lang.CharSequence arg0, java.lang.CharSequence[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._expandTemplate13085.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._expandTemplate13085 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "expandTemplate", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._expandTemplate13085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m27.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m27 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "expandTemplate", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence expandTemplate(string arg0, java.lang.CharSequence[] arg1)
 		{
 			return expandTemplate((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffsetBefore13086;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public static int getOffsetBefore(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getOffsetBefore13086.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getOffsetBefore13086 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getOffsetBefore", "(Ljava/lang/CharSequence;I)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getOffsetBefore13086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m28.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m28 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getOffsetBefore", "(Ljava/lang/CharSequence;I)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int getOffsetBefore(string arg0, int arg1)
 		{
 			return getOffsetBefore((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffsetAfter13087;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public static int getOffsetAfter(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getOffsetAfter13087.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getOffsetAfter13087 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getOffsetAfter", "(Ljava/lang/CharSequence;I)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getOffsetAfter13087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.TextUtils._m29.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m29 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getOffsetAfter", "(Ljava/lang/CharSequence;I)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int getOffsetAfter(string arg0, int arg1)
 		{
 			return getOffsetAfter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _copySpansFrom13088;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public static void copySpansFrom(android.text.Spanned arg0, int arg1, int arg2, java.lang.Class arg3, android.text.Spannable arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._copySpansFrom13088.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._copySpansFrom13088 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "copySpansFrom", "(Landroid/text/Spanned;IILjava/lang/Class;Landroid/text/Spannable;I)V");
-			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._copySpansFrom13088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.text.TextUtils._m30.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m30 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "copySpansFrom", "(Landroid/text/Spanned;IILjava/lang/Class;Landroid/text/Spannable;I)V");
+			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _commaEllipsize13089;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public static global::java.lang.CharSequence commaEllipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._commaEllipsize13089.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._commaEllipsize13089 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "commaEllipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLjava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;");
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._commaEllipsize13089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as java.lang.CharSequence;
+			if (global::android.text.TextUtils._m31.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m31 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "commaEllipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLjava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;");
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as java.lang.CharSequence;
 		}
 		public static java.lang.CharSequence commaEllipsize(string arg0, android.text.TextPaint arg1, float arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			return commaEllipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4);
 		}
-		internal static global::MonoJavaBridge.MethodId _htmlEncode13090;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public static global::java.lang.String htmlEncode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._htmlEncode13090.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._htmlEncode13090 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "htmlEncode", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._htmlEncode13090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.text.TextUtils._m32.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m32 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "htmlEncode", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isGraphic13091;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public static bool isGraphic(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._isGraphic13091.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._isGraphic13091 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isGraphic", "(Ljava/lang/CharSequence;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isGraphic13091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.TextUtils._m33.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m33 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isGraphic", "(Ljava/lang/CharSequence;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static bool isGraphic(string arg0)
 		{
 			return isGraphic((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isGraphic13092;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public static bool isGraphic(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._isGraphic13092.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._isGraphic13092 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isGraphic", "(C)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isGraphic13092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.TextUtils._m34.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m34 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isGraphic", "(C)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDigitsOnly13093;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public static bool isDigitsOnly(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._isDigitsOnly13093.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._isDigitsOnly13093 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isDigitsOnly", "(Ljava/lang/CharSequence;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isDigitsOnly13093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.TextUtils._m35.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m35 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "isDigitsOnly", "(Ljava/lang/CharSequence;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static bool isDigitsOnly(string arg0)
 		{
 			return isDigitsOnly((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCapsMode13094;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public static int getCapsMode(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.TextUtils._getCapsMode13094.native == global::System.IntPtr.Zero)
-				global::android.text.TextUtils._getCapsMode13094 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getCapsMode", "(Ljava/lang/CharSequence;II)I");
-			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getCapsMode13094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.TextUtils._m36.native == global::System.IntPtr.Zero)
+				global::android.text.TextUtils._m36 = @__env.GetStaticMethodIDNoThrow(global::android.text.TextUtils.staticClass, "getCapsMode", "(Ljava/lang/CharSequence;II)I");
+			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static int getCapsMode(string arg0, int arg1, int arg2)
 		{
 			return getCapsMode((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.FieldId _CHAR_SEQUENCE_CREATOR13095;
+		internal static global::MonoJavaBridge.FieldId _CHAR_SEQUENCE_CREATOR5255;
 		public static global::android.os.Parcelable_Creator CHAR_SEQUENCE_CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.text.TextUtils.staticClass, _CHAR_SEQUENCE_CREATOR13095)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.text.TextUtils.staticClass, _CHAR_SEQUENCE_CREATOR5255)) as android.os.Parcelable_Creator;
 			}
 		}
 		public static int CAP_MODE_CHARACTERS
@@ -699,7 +699,7 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.TextUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils"));
-			global::android.text.TextUtils._CHAR_SEQUENCE_CREATOR13095 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.staticClass, "CHAR_SEQUENCE_CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.text.TextUtils._CHAR_SEQUENCE_CREATOR5255 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.staticClass, "CHAR_SEQUENCE_CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

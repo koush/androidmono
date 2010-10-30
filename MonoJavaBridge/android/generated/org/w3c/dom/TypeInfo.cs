@@ -15,20 +15,20 @@ namespace org.w3c.dom
 		internal TypeInfo_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getTypeName34869;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.w3c.dom.TypeInfo.getTypeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.TypeInfo_.staticClass, "getTypeName", "()Ljava/lang/String;", ref global::org.w3c.dom.TypeInfo_._getTypeName34869) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.TypeInfo_.staticClass, "getTypeName", "()Ljava/lang/String;", ref global::org.w3c.dom.TypeInfo_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getTypeNamespace34870;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.w3c.dom.TypeInfo.getTypeNamespace()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.TypeInfo_.staticClass, "getTypeNamespace", "()Ljava/lang/String;", ref global::org.w3c.dom.TypeInfo_._getTypeNamespace34870) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.TypeInfo_.staticClass, "getTypeNamespace", "()Ljava/lang/String;", ref global::org.w3c.dom.TypeInfo_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDerivedFrom34871;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool org.w3c.dom.TypeInfo.isDerivedFrom(java.lang.String arg0, java.lang.String arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.TypeInfo_.staticClass, "isDerivedFrom", "(Ljava/lang/String;Ljava/lang/String;I)Z", ref global::org.w3c.dom.TypeInfo_._isDerivedFrom34871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.TypeInfo_.staticClass, "isDerivedFrom", "(Ljava/lang/String;Ljava/lang/String;I)Z", ref global::org.w3c.dom.TypeInfo_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static TypeInfo_()
 		{

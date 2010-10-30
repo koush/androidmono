@@ -14,10 +14,10 @@ namespace org.apache.http.conn.@params
 				setDefaultProxy(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDefaultProxy32203;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setDefaultProxy(org.apache.http.HttpHost arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setDefaultProxy", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._setDefaultProxy32203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setDefaultProxy", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.net.InetAddress LocalAddress
 		{
@@ -26,10 +26,10 @@ namespace org.apache.http.conn.@params
 				setLocalAddress(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setLocalAddress32204;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setLocalAddress(java.net.InetAddress arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setLocalAddress", "(Ljava/net/InetAddress;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._setLocalAddress32204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setLocalAddress", "(Ljava/net/InetAddress;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.conn.routing.HttpRoute ForcedRoute
 		{
@@ -38,18 +38,18 @@ namespace org.apache.http.conn.@params
 				setForcedRoute(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setForcedRoute32205;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setForcedRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setForcedRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._setForcedRoute32205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "setForcedRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)V", ref global::org.apache.http.conn.@params.ConnRouteParamBean._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ConnRouteParamBean32206;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public ConnRouteParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.conn.@params.ConnRouteParamBean._ConnRouteParamBean32206.native == global::System.IntPtr.Zero)
-				global::org.apache.http.conn.@params.ConnRouteParamBean._ConnRouteParamBean32206 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._ConnRouteParamBean32206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.conn.@params.ConnRouteParamBean._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.conn.@params.ConnRouteParamBean._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ConnRouteParamBean()

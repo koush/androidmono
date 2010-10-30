@@ -15,20 +15,20 @@ namespace javax.xml.transform
 		internal ErrorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _fatalError30934;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void javax.xml.transform.ErrorListener.fatalError(javax.xml.transform.TransformerException arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "fatalError", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._fatalError30934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "fatalError", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _error30935;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void javax.xml.transform.ErrorListener.error(javax.xml.transform.TransformerException arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "error", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._error30935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "error", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _warning30936;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void javax.xml.transform.ErrorListener.warning(javax.xml.transform.TransformerException arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "warning", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._warning30936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.ErrorListener_.staticClass, "warning", "(Ljavax/xml/transform/TransformerException;)V", ref global::javax.xml.transform.ErrorListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ErrorListener_()
 		{

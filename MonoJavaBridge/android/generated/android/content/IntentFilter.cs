@@ -21,10 +21,10 @@ namespace android.content
 					return getPort();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getPort3397;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public int getPort()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "getPort", "()I", ref global::android.content.IntentFilter.AuthorityEntry._getPort3397);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "getPort", "()I", ref global::android.content.IntentFilter.AuthorityEntry._m0);
 			}
 			public new global::java.lang.String Host
 			{
@@ -33,23 +33,23 @@ namespace android.content
 					return getHost();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getHost3398;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public global::java.lang.String getHost()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "getHost", "()Ljava/lang/String;", ref global::android.content.IntentFilter.AuthorityEntry._getHost3398) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "getHost", "()Ljava/lang/String;", ref global::android.content.IntentFilter.AuthorityEntry._m1) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _match3399;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public int match(android.net.Uri arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "match", "(Landroid/net/Uri;)I", ref global::android.content.IntentFilter.AuthorityEntry._match3399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, "match", "(Landroid/net/Uri;)I", ref global::android.content.IntentFilter.AuthorityEntry._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _AuthorityEntry3400;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public AuthorityEntry(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.IntentFilter.AuthorityEntry._AuthorityEntry3400.native == global::System.IntPtr.Zero)
-					global::android.content.IntentFilter.AuthorityEntry._AuthorityEntry3400 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.AuthorityEntry.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._AuthorityEntry3400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				if (global::android.content.IntentFilter.AuthorityEntry._m3.native == global::System.IntPtr.Zero)
+					global::android.content.IntentFilter.AuthorityEntry._m3 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.AuthorityEntry.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
 			static AuthorityEntry()
@@ -68,22 +68,22 @@ namespace android.content
 			protected MalformedMimeTypeException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _MalformedMimeTypeException3401;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public MalformedMimeTypeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3401.native == global::System.IntPtr.Zero)
-					global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3401 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.MalformedMimeTypeException.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.MalformedMimeTypeException.staticClass, global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3401);
+				if (global::android.content.IntentFilter.MalformedMimeTypeException._m0.native == global::System.IntPtr.Zero)
+					global::android.content.IntentFilter.MalformedMimeTypeException._m0 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.MalformedMimeTypeException.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.MalformedMimeTypeException.staticClass, global::android.content.IntentFilter.MalformedMimeTypeException._m0);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _MalformedMimeTypeException3402;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public MalformedMimeTypeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3402.native == global::System.IntPtr.Zero)
-					global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3402 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.MalformedMimeTypeException.staticClass, "<init>", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.MalformedMimeTypeException.staticClass, global::android.content.IntentFilter.MalformedMimeTypeException._MalformedMimeTypeException3402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.content.IntentFilter.MalformedMimeTypeException._m1.native == global::System.IntPtr.Zero)
+					global::android.content.IntentFilter.MalformedMimeTypeException._m1 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.MalformedMimeTypeException.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.MalformedMimeTypeException.staticClass, global::android.content.IntentFilter.MalformedMimeTypeException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static MalformedMimeTypeException()
@@ -95,10 +95,10 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPriority3403;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setPriority(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "setPriority", "(I)V", ref global::android.content.IntentFilter._setPriority3403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "setPriority", "(I)V", ref global::android.content.IntentFilter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Priority
 		{
@@ -111,262 +111,262 @@ namespace android.content
 				setPriority(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPriority3404;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getPriority()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "getPriority", "()I", ref global::android.content.IntentFilter._getPriority3404);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "getPriority", "()I", ref global::android.content.IntentFilter._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _create3405;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static global::android.content.IntentFilter create(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.IntentFilter._create3405.native == global::System.IntPtr.Zero)
-				global::android.content.IntentFilter._create3405 = @__env.GetStaticMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "create", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/IntentFilter;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._create3405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.IntentFilter;
+			if (global::android.content.IntentFilter._m2.native == global::System.IntPtr.Zero)
+				global::android.content.IntentFilter._m2 = @__env.GetStaticMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "create", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/IntentFilter;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.IntentFilter;
 		}
-		internal static global::MonoJavaBridge.MethodId _match3406;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int match(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, android.net.Uri arg3, java.util.Set arg4, java.lang.String arg5)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "match", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I", ref global::android.content.IntentFilter._match3406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "match", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I", ref global::android.content.IntentFilter._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _match3407;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int match(android.content.ContentResolver arg0, android.content.Intent arg1, bool arg2, java.lang.String arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "match", "(Landroid/content/ContentResolver;Landroid/content/Intent;ZLjava/lang/String;)I", ref global::android.content.IntentFilter._match3407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "match", "(Landroid/content/ContentResolver;Landroid/content/Intent;ZLjava/lang/String;)I", ref global::android.content.IntentFilter._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _dump3408;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.IntentFilter._dump3408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.IntentFilter._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel3409;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.IntentFilter._writeToParcel3409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.IntentFilter._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents3410;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "describeContents", "()I", ref global::android.content.IntentFilter._describeContents3410);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "describeContents", "()I", ref global::android.content.IntentFilter._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _getAction3411;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::java.lang.String getAction(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getAction", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._getAction3411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getAction", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasCategory3412;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool hasCategory(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasCategory", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._hasCategory3412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasCategory", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addCategory3413;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void addCategory(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addCategory", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._addCategory3413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addCategory", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addAction3414;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void addAction(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addAction", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._addAction3414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addAction", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _countActions3415;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int countActions()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countActions", "()I", ref global::android.content.IntentFilter._countActions3415);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countActions", "()I", ref global::android.content.IntentFilter._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasAction3416;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual bool hasAction(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasAction", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._hasAction3416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasAction", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _matchAction3417;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual bool matchAction(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "matchAction", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._matchAction3417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "matchAction", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _actionsIterator3418;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual global::java.util.Iterator actionsIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "actionsIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._actionsIterator3418) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "actionsIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m15) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _addDataType3419;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void addDataType(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataType", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._addDataType3419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataType", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hasDataType3420;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual bool hasDataType(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataType", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._hasDataType3420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataType", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _countDataTypes3421;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual int countDataTypes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataTypes", "()I", ref global::android.content.IntentFilter._countDataTypes3421);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataTypes", "()I", ref global::android.content.IntentFilter._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDataType3422;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual global::java.lang.String getDataType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getDataType", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._getDataType3422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getDataType", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _typesIterator3423;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual global::java.util.Iterator typesIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "typesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._typesIterator3423) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "typesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m20) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _addDataScheme3424;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void addDataScheme(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataScheme", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._addDataScheme3424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataScheme", "(Ljava/lang/String;)V", ref global::android.content.IntentFilter._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _countDataSchemes3425;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual int countDataSchemes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataSchemes", "()I", ref global::android.content.IntentFilter._countDataSchemes3425);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataSchemes", "()I", ref global::android.content.IntentFilter._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDataScheme3426;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual global::java.lang.String getDataScheme(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getDataScheme", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._getDataScheme3426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getDataScheme", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasDataScheme3427;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual bool hasDataScheme(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataScheme", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._hasDataScheme3427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataScheme", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _schemesIterator3428;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual global::java.util.Iterator schemesIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "schemesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._schemesIterator3428) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "schemesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m25) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _addDataAuthority3429;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void addDataAuthority(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataAuthority", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.content.IntentFilter._addDataAuthority3429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataAuthority", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.content.IntentFilter._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _countDataAuthorities3430;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual int countDataAuthorities()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataAuthorities", "()I", ref global::android.content.IntentFilter._countDataAuthorities3430);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataAuthorities", "()I", ref global::android.content.IntentFilter._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDataAuthority3431;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual global::android.content.IntentFilter.AuthorityEntry getDataAuthority(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.IntentFilter.AuthorityEntry>(this, global::android.content.IntentFilter.staticClass, "getDataAuthority", "(I)Landroid/content/IntentFilter$AuthorityEntry;", ref global::android.content.IntentFilter._getDataAuthority3431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.IntentFilter.AuthorityEntry;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.IntentFilter.AuthorityEntry>(this, global::android.content.IntentFilter.staticClass, "getDataAuthority", "(I)Landroid/content/IntentFilter$AuthorityEntry;", ref global::android.content.IntentFilter._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.IntentFilter.AuthorityEntry;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasDataAuthority3432;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool hasDataAuthority(android.net.Uri arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataAuthority", "(Landroid/net/Uri;)Z", ref global::android.content.IntentFilter._hasDataAuthority3432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataAuthority", "(Landroid/net/Uri;)Z", ref global::android.content.IntentFilter._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _authoritiesIterator3433;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual global::java.util.Iterator authoritiesIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "authoritiesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._authoritiesIterator3433) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "authoritiesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m30) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _addDataPath3434;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual void addDataPath(java.lang.String arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataPath", "(Ljava/lang/String;I)V", ref global::android.content.IntentFilter._addDataPath3434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "addDataPath", "(Ljava/lang/String;I)V", ref global::android.content.IntentFilter._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _countDataPaths3435;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual int countDataPaths()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataPaths", "()I", ref global::android.content.IntentFilter._countDataPaths3435);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countDataPaths", "()I", ref global::android.content.IntentFilter._m32);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDataPath3436;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual global::android.os.PatternMatcher getDataPath(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.IntentFilter.staticClass, "getDataPath", "(I)Landroid/os/PatternMatcher;", ref global::android.content.IntentFilter._getDataPath3436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.PatternMatcher;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.IntentFilter.staticClass, "getDataPath", "(I)Landroid/os/PatternMatcher;", ref global::android.content.IntentFilter._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.PatternMatcher;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasDataPath3437;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual bool hasDataPath(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataPath", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._hasDataPath3437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.IntentFilter.staticClass, "hasDataPath", "(Ljava/lang/String;)Z", ref global::android.content.IntentFilter._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _pathsIterator3438;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual global::java.util.Iterator pathsIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "pathsIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._pathsIterator3438) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "pathsIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m35) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _matchDataAuthority3439;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual int matchDataAuthority(android.net.Uri arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "matchDataAuthority", "(Landroid/net/Uri;)I", ref global::android.content.IntentFilter._matchDataAuthority3439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "matchDataAuthority", "(Landroid/net/Uri;)I", ref global::android.content.IntentFilter._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _matchData3440;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual int matchData(java.lang.String arg0, java.lang.String arg1, android.net.Uri arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "matchData", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)I", ref global::android.content.IntentFilter._matchData3440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "matchData", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)I", ref global::android.content.IntentFilter._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _countCategories3441;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public virtual int countCategories()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countCategories", "()I", ref global::android.content.IntentFilter._countCategories3441);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.IntentFilter.staticClass, "countCategories", "()I", ref global::android.content.IntentFilter._m38);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCategory3442;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public virtual global::java.lang.String getCategory(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getCategory", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._getCategory3442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "getCategory", "(I)Ljava/lang/String;", ref global::android.content.IntentFilter._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _categoriesIterator3443;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public virtual global::java.util.Iterator categoriesIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "categoriesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._categoriesIterator3443) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::android.content.IntentFilter.staticClass, "categoriesIterator", "()Ljava/util/Iterator;", ref global::android.content.IntentFilter._m40) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _matchCategories3444;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public virtual global::java.lang.String matchCategories(java.util.Set arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "matchCategories", "(Ljava/util/Set;)Ljava/lang/String;", ref global::android.content.IntentFilter._matchCategories3444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.IntentFilter.staticClass, "matchCategories", "(Ljava/util/Set;)Ljava/lang/String;", ref global::android.content.IntentFilter._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToXml3445;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public virtual void writeToXml(org.xmlpull.v1.XmlSerializer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "writeToXml", "(Lorg/xmlpull/v1/XmlSerializer;)V", ref global::android.content.IntentFilter._writeToXml3445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "writeToXml", "(Lorg/xmlpull/v1/XmlSerializer;)V", ref global::android.content.IntentFilter._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readFromXml3446;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public virtual void readFromXml(org.xmlpull.v1.XmlPullParser arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "readFromXml", "(Lorg/xmlpull/v1/XmlPullParser;)V", ref global::android.content.IntentFilter._readFromXml3446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.IntentFilter.staticClass, "readFromXml", "(Lorg/xmlpull/v1/XmlPullParser;)V", ref global::android.content.IntentFilter._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _IntentFilter3447;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public IntentFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.IntentFilter._IntentFilter3447.native == global::System.IntPtr.Zero)
-				global::android.content.IntentFilter._IntentFilter3447 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._IntentFilter3447);
+			if (global::android.content.IntentFilter._m44.native == global::System.IntPtr.Zero)
+				global::android.content.IntentFilter._m44 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._m44);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _IntentFilter3448;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public IntentFilter(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.IntentFilter._IntentFilter3448.native == global::System.IntPtr.Zero)
-				global::android.content.IntentFilter._IntentFilter3448 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._IntentFilter3448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.IntentFilter._m45.native == global::System.IntPtr.Zero)
+				global::android.content.IntentFilter._m45 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _IntentFilter3449;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public IntentFilter(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.IntentFilter._IntentFilter3449.native == global::System.IntPtr.Zero)
-				global::android.content.IntentFilter._IntentFilter3449 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._IntentFilter3449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.IntentFilter._m46.native == global::System.IntPtr.Zero)
+				global::android.content.IntentFilter._m46 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _IntentFilter3450;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public IntentFilter(android.content.IntentFilter arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.IntentFilter._IntentFilter3450.native == global::System.IntPtr.Zero)
-				global::android.content.IntentFilter._IntentFilter3450 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Landroid/content/IntentFilter;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._IntentFilter3450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.IntentFilter._m47.native == global::System.IntPtr.Zero)
+				global::android.content.IntentFilter._m47 = @__env.GetMethodIDNoThrow(global::android.content.IntentFilter.staticClass, "<init>", "(Landroid/content/IntentFilter;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.IntentFilter.staticClass, global::android.content.IntentFilter._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static int SYSTEM_HIGH_PRIORITY
@@ -474,20 +474,20 @@ namespace android.content
 				return -4;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR3466;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1869;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.IntentFilter.staticClass, _CREATOR3466)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.IntentFilter.staticClass, _CREATOR1869)) as android.os.Parcelable_Creator;
 			}
 		}
 		static IntentFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.IntentFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentFilter"));
-			global::android.content.IntentFilter._CREATOR3466 = @__env.GetStaticFieldIDNoThrow(global::android.content.IntentFilter.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.IntentFilter._CREATOR1869 = @__env.GetStaticFieldIDNoThrow(global::android.content.IntentFilter.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

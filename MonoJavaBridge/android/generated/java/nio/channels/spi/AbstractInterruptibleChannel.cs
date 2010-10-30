@@ -7,35 +7,35 @@ namespace java.nio.channels.spi
 		protected AbstractInterruptibleChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close22661;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "close", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._close22661);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "close", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen22662;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "isOpen", "()Z", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._isOpen22662);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "isOpen", "()Z", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _end22663;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected virtual void end(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "end", "(Z)V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._end22663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "end", "(Z)V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _implCloseChannel22664;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected abstract void implCloseChannel();
-		internal static global::MonoJavaBridge.MethodId _begin22665;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected virtual void begin()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "begin", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._begin22665);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "begin", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbstractInterruptibleChannel22666;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected AbstractInterruptibleChannel() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.spi.AbstractInterruptibleChannel._AbstractInterruptibleChannel22666.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.spi.AbstractInterruptibleChannel._AbstractInterruptibleChannel22666 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._AbstractInterruptibleChannel22666);
+			if (global::java.nio.channels.spi.AbstractInterruptibleChannel._m5.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.spi.AbstractInterruptibleChannel._m5 = @__env.GetMethodIDNoThrow(global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._m5);
 			Init(@__env, handle);
 		}
 		static AbstractInterruptibleChannel()
@@ -55,10 +55,10 @@ namespace java.nio.channels.spi
 		internal AbstractInterruptibleChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _implCloseChannel22667;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void implCloseChannel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel_.staticClass, "implCloseChannel", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel_._implCloseChannel22667);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel_.staticClass, "implCloseChannel", "()V", ref global::java.nio.channels.spi.AbstractInterruptibleChannel_._m0);
 		}
 		static AbstractInterruptibleChannel_()
 		{

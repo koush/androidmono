@@ -14,18 +14,18 @@ namespace android.os
 			protected AutoCloseInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _close10077;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override void close()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close10077);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor.AutoCloseInputStream._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _AutoCloseInputStream10078;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public AutoCloseInputStream(android.os.ParcelFileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream10078.native == global::System.IntPtr.Zero)
-					global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream10078 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream10078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.os.ParcelFileDescriptor.AutoCloseInputStream._m1.native == global::System.IntPtr.Zero)
+					global::android.os.ParcelFileDescriptor.AutoCloseInputStream._m1 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static AutoCloseInputStream()
@@ -44,18 +44,18 @@ namespace android.os
 			protected AutoCloseOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _close10079;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override void close()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close10079);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _AutoCloseOutputStream10080;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public AutoCloseOutputStream(android.os.ParcelFileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream10080.native == global::System.IntPtr.Zero)
-					global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream10080 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream10080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._m1.native == global::System.IntPtr.Zero)
+					global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._m1 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static AutoCloseOutputStream()
@@ -67,46 +67,46 @@ namespace android.os
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize10081;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "finalize", "()V", ref global::android.os.ParcelFileDescriptor._finalize10081);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "finalize", "()V", ref global::android.os.ParcelFileDescriptor._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _toString10082;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.os.ParcelFileDescriptor.staticClass, "toString", "()Ljava/lang/String;", ref global::android.os.ParcelFileDescriptor._toString10082) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.os.ParcelFileDescriptor.staticClass, "toString", "()Ljava/lang/String;", ref global::android.os.ParcelFileDescriptor._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _close10083;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor._close10083);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "close", "()V", ref global::android.os.ParcelFileDescriptor._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _open10084;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static global::android.os.ParcelFileDescriptor open(java.io.File arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ParcelFileDescriptor._open10084.native == global::System.IntPtr.Zero)
-				global::android.os.ParcelFileDescriptor._open10084 = @__env.GetStaticMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "open", "(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._open10084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.ParcelFileDescriptor;
+			if (global::android.os.ParcelFileDescriptor._m3.native == global::System.IntPtr.Zero)
+				global::android.os.ParcelFileDescriptor._m3 = @__env.GetStaticMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "open", "(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.ParcelFileDescriptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel10085;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.ParcelFileDescriptor._writeToParcel10085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.ParcelFileDescriptor._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents10086;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "describeContents", "()I", ref global::android.os.ParcelFileDescriptor._describeContents10086);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "describeContents", "()I", ref global::android.os.ParcelFileDescriptor._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _fromSocket10087;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static global::android.os.ParcelFileDescriptor fromSocket(java.net.Socket arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ParcelFileDescriptor._fromSocket10087.native == global::System.IntPtr.Zero)
-				global::android.os.ParcelFileDescriptor._fromSocket10087 = @__env.GetStaticMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "fromSocket", "(Ljava/net/Socket;)Landroid/os/ParcelFileDescriptor;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._fromSocket10087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.ParcelFileDescriptor;
+			if (global::android.os.ParcelFileDescriptor._m6.native == global::System.IntPtr.Zero)
+				global::android.os.ParcelFileDescriptor._m6 = @__env.GetStaticMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "fromSocket", "(Ljava/net/Socket;)Landroid/os/ParcelFileDescriptor;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.ParcelFileDescriptor;
 		}
 		public new global::java.io.FileDescriptor FileDescriptor
 		{
@@ -115,10 +115,10 @@ namespace android.os
 				return getFileDescriptor();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFileDescriptor10088;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.io.FileDescriptor getFileDescriptor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.os.ParcelFileDescriptor.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::android.os.ParcelFileDescriptor._getFileDescriptor10088) as java.io.FileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::android.os.ParcelFileDescriptor.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::android.os.ParcelFileDescriptor._m7) as java.io.FileDescriptor;
 		}
 		public new long StatSize
 		{
@@ -127,18 +127,18 @@ namespace android.os
 				return getStatSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getStatSize10089;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual long getStatSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "getStatSize", "()J", ref global::android.os.ParcelFileDescriptor._getStatSize10089);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.os.ParcelFileDescriptor.staticClass, "getStatSize", "()J", ref global::android.os.ParcelFileDescriptor._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _ParcelFileDescriptor10090;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public ParcelFileDescriptor(android.os.ParcelFileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ParcelFileDescriptor._ParcelFileDescriptor10090.native == global::System.IntPtr.Zero)
-				global::android.os.ParcelFileDescriptor._ParcelFileDescriptor10090 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._ParcelFileDescriptor10090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.os.ParcelFileDescriptor._m9.native == global::System.IntPtr.Zero)
+				global::android.os.ParcelFileDescriptor._m9 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "<init>", "(Landroid/os/ParcelFileDescriptor;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static int MODE_WORLD_READABLE
@@ -197,20 +197,20 @@ namespace android.os
 				return 33554432;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR10099;
+		internal static global::MonoJavaBridge.FieldId _CREATOR4019;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ParcelFileDescriptor.staticClass, _CREATOR10099)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ParcelFileDescriptor.staticClass, _CREATOR4019)) as android.os.Parcelable_Creator;
 			}
 		}
 		static ParcelFileDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.ParcelFileDescriptor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelFileDescriptor"));
-			global::android.os.ParcelFileDescriptor._CREATOR10099 = @__env.GetStaticFieldIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.os.ParcelFileDescriptor._CREATOR4019 = @__env.GetStaticFieldIDNoThrow(global::android.os.ParcelFileDescriptor.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

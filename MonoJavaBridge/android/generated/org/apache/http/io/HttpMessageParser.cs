@@ -13,10 +13,10 @@ namespace org.apache.http.io
 		internal HttpMessageParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _parse33467;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.apache.http.HttpMessage org.apache.http.io.HttpMessageParser.parse()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.io.HttpMessageParser_.staticClass, "parse", "()Lorg/apache/http/HttpMessage;", ref global::org.apache.http.io.HttpMessageParser_._parse33467) as org.apache.http.HttpMessage;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpMessage>(this, global::org.apache.http.io.HttpMessageParser_.staticClass, "parse", "()Lorg/apache/http/HttpMessage;", ref global::org.apache.http.io.HttpMessageParser_._m0) as org.apache.http.HttpMessage;
 		}
 		static HttpMessageParser_()
 		{

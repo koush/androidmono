@@ -14,15 +14,15 @@ namespace java.security
 			protected Service(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _toString23261;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override global::java.lang.String toString()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Provider.Service._toString23261) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Provider.Service._m0) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _newInstance23262;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual global::java.lang.Object newInstance(java.lang.Object arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.Service.staticClass, "newInstance", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider.Service._newInstance23262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.Service.staticClass, "newInstance", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider.Service._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 			}
 			public new global::java.lang.String Type
 			{
@@ -31,10 +31,10 @@ namespace java.security
 					return getType();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getType23263;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual global::java.lang.String getType()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getType", "()Ljava/lang/String;", ref global::java.security.Provider.Service._getType23263) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getType", "()Ljava/lang/String;", ref global::java.security.Provider.Service._m2) as java.lang.String;
 			}
 			public new global::java.lang.String ClassName
 			{
@@ -43,10 +43,10 @@ namespace java.security
 					return getClassName();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getClassName23264;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual global::java.lang.String getClassName()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getClassName", "()Ljava/lang/String;", ref global::java.security.Provider.Service._getClassName23264) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getClassName", "()Ljava/lang/String;", ref global::java.security.Provider.Service._m3) as java.lang.String;
 			}
 			public new global::java.lang.String Algorithm
 			{
@@ -55,15 +55,15 @@ namespace java.security
 					return getAlgorithm();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getAlgorithm23265;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual global::java.lang.String getAlgorithm()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.Provider.Service._getAlgorithm23265) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.Provider.Service._m4) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _getAttribute23266;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual global::java.lang.String getAttribute(java.lang.String arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.security.Provider.Service._getAttribute23266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.Service.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.security.Provider.Service._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 			}
 			public new global::java.security.Provider Provider
 			{
@@ -72,23 +72,23 @@ namespace java.security
 					return getProvider();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getProvider23267;
+			private static global::MonoJavaBridge.MethodId _m6;
 			public virtual global::java.security.Provider getProvider()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.Service.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::java.security.Provider.Service._getProvider23267) as java.security.Provider;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.Service.staticClass, "getProvider", "()Ljava/security/Provider;", ref global::java.security.Provider.Service._m6) as java.security.Provider;
 			}
-			internal static global::MonoJavaBridge.MethodId _supportsParameter23268;
+			private static global::MonoJavaBridge.MethodId _m7;
 			public virtual bool supportsParameter(java.lang.Object arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Provider.Service.staticClass, "supportsParameter", "(Ljava/lang/Object;)Z", ref global::java.security.Provider.Service._supportsParameter23268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.Provider.Service.staticClass, "supportsParameter", "(Ljava/lang/Object;)Z", ref global::java.security.Provider.Service._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _Service23269;
+			private static global::MonoJavaBridge.MethodId _m8;
 			public Service(java.security.Provider arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.util.List arg4, java.util.Map arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.security.Provider.Service._Service23269.native == global::System.IntPtr.Zero)
-					global::java.security.Provider.Service._Service23269 = @__env.GetMethodIDNoThrow(global::java.security.Provider.Service.staticClass, "<init>", "(Ljava/security/Provider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Provider.Service.staticClass, global::java.security.Provider.Service._Service23269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+				if (global::java.security.Provider.Service._m8.native == global::System.IntPtr.Zero)
+					global::java.security.Provider.Service._m8 = @__env.GetMethodIDNoThrow(global::java.security.Provider.Service.staticClass, "<init>", "(Ljava/security/Provider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Provider.Service.staticClass, global::java.security.Provider.Service._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 				Init(@__env, handle);
 			}
 			static Service()
@@ -100,113 +100,113 @@ namespace java.security
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _get23270;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._get23270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _put23271;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._put23271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getProperty23272;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.String getProperty(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.security.Provider._getProperty23272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", ref global::java.security.Provider._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _toString23273;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Provider._toString23273) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.Provider._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _values23274;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::java.util.Collection values()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.security.Provider.staticClass, "values", "()Ljava/util/Collection;", ref global::java.security.Provider._values23274) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::java.security.Provider.staticClass, "values", "()Ljava/util/Collection;", ref global::java.security.Provider._m4) as java.util.Collection;
 		}
-		internal static global::MonoJavaBridge.MethodId _clear23275;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override void clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "clear", "()V", ref global::java.security.Provider._clear23275);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "clear", "()V", ref global::java.security.Provider._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _getName23276;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.Provider._getName23276) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getName", "()Ljava/lang/String;", ref global::java.security.Provider._m6) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _entrySet23277;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::java.util.Set entrySet()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "entrySet", "()Ljava/util/Set;", ref global::java.security.Provider._entrySet23277) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "entrySet", "()Ljava/util/Set;", ref global::java.security.Provider._m7) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _putAll23278;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override void putAll(java.util.Map arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "putAll", "(Ljava/util/Map;)V", ref global::java.security.Provider._putAll23278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "putAll", "(Ljava/util/Map;)V", ref global::java.security.Provider._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _load23279;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override void load(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::java.security.Provider._load23279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::java.security.Provider._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _remove23280;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override global::java.lang.Object remove(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._remove23280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.security.Provider._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _elements23281;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override global::java.util.Enumeration elements()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.security.Provider.staticClass, "elements", "()Ljava/util/Enumeration;", ref global::java.security.Provider._elements23281) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.security.Provider.staticClass, "elements", "()Ljava/util/Enumeration;", ref global::java.security.Provider._m11) as java.util.Enumeration;
 		}
-		internal static global::MonoJavaBridge.MethodId _keys23282;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override global::java.util.Enumeration keys()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.security.Provider.staticClass, "keys", "()Ljava/util/Enumeration;", ref global::java.security.Provider._keys23282) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::java.security.Provider.staticClass, "keys", "()Ljava/util/Enumeration;", ref global::java.security.Provider._m12) as java.util.Enumeration;
 		}
-		internal static global::MonoJavaBridge.MethodId _keySet23283;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public override global::java.util.Set keySet()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "keySet", "()Ljava/util/Set;", ref global::java.security.Provider._keySet23283) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "keySet", "()Ljava/util/Set;", ref global::java.security.Provider._m13) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _getService23284;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.security.Provider.Service getService(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "getService", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Provider$Service;", ref global::java.security.Provider._getService23284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.Provider.Service;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.Provider.staticClass, "getService", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Provider$Service;", ref global::java.security.Provider._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.Provider.Service;
 		}
-		internal static global::MonoJavaBridge.MethodId _getServices23285;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual global::java.util.Set getServices()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "getServices", "()Ljava/util/Set;", ref global::java.security.Provider._getServices23285) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.Provider.staticClass, "getServices", "()Ljava/util/Set;", ref global::java.security.Provider._m15) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion23286;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual double getVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.security.Provider.staticClass, "getVersion", "()D", ref global::java.security.Provider._getVersion23286);
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.security.Provider.staticClass, "getVersion", "()D", ref global::java.security.Provider._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _getInfo23287;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual global::java.lang.String getInfo()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getInfo", "()Ljava/lang/String;", ref global::java.security.Provider._getInfo23287) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.Provider.staticClass, "getInfo", "()Ljava/lang/String;", ref global::java.security.Provider._m17) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _putService23288;
+		private static global::MonoJavaBridge.MethodId _m18;
 		protected virtual void putService(java.security.Provider.Service arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "putService", "(Ljava/security/Provider$Service;)V", ref global::java.security.Provider._putService23288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "putService", "(Ljava/security/Provider$Service;)V", ref global::java.security.Provider._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeService23289;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected virtual void removeService(java.security.Provider.Service arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "removeService", "(Ljava/security/Provider$Service;)V", ref global::java.security.Provider._removeService23289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.Provider.staticClass, "removeService", "(Ljava/security/Provider$Service;)V", ref global::java.security.Provider._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _Provider23290;
+		private static global::MonoJavaBridge.MethodId _m20;
 		protected Provider(java.lang.String arg0, double arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.Provider._Provider23290.native == global::System.IntPtr.Zero)
-				global::java.security.Provider._Provider23290 = @__env.GetMethodIDNoThrow(global::java.security.Provider.staticClass, "<init>", "(Ljava/lang/String;DLjava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Provider.staticClass, global::java.security.Provider._Provider23290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.security.Provider._m20.native == global::System.IntPtr.Zero)
+				global::java.security.Provider._m20 = @__env.GetMethodIDNoThrow(global::java.security.Provider.staticClass, "<init>", "(Ljava/lang/String;DLjava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Provider.staticClass, global::java.security.Provider._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static Provider()

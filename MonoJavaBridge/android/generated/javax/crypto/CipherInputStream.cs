@@ -7,57 +7,57 @@ namespace javax.crypto
 		protected CipherInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close28533;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherInputStream.staticClass, "close", "()V", ref global::javax.crypto.CipherInputStream._close28533);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.crypto.CipherInputStream.staticClass, "close", "()V", ref global::javax.crypto.CipherInputStream._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _read28534;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "()I", ref global::javax.crypto.CipherInputStream._read28534);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "()I", ref global::javax.crypto.CipherInputStream._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _read28535;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int read(byte[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "([B)I", ref global::javax.crypto.CipherInputStream._read28535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "([B)I", ref global::javax.crypto.CipherInputStream._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read28536;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "([BII)I", ref global::javax.crypto.CipherInputStream._read28536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "read", "([BII)I", ref global::javax.crypto.CipherInputStream._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _skip28537;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override long skip(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.crypto.CipherInputStream.staticClass, "skip", "(J)J", ref global::javax.crypto.CipherInputStream._skip28537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.crypto.CipherInputStream.staticClass, "skip", "(J)J", ref global::javax.crypto.CipherInputStream._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _available28538;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override int available()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "available", "()I", ref global::javax.crypto.CipherInputStream._available28538);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.CipherInputStream.staticClass, "available", "()I", ref global::javax.crypto.CipherInputStream._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _markSupported28539;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool markSupported()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.CipherInputStream.staticClass, "markSupported", "()Z", ref global::javax.crypto.CipherInputStream._markSupported28539);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.CipherInputStream.staticClass, "markSupported", "()Z", ref global::javax.crypto.CipherInputStream._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _CipherInputStream28540;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public CipherInputStream(java.io.InputStream arg0, javax.crypto.Cipher arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherInputStream._CipherInputStream28540.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherInputStream._CipherInputStream28540 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherInputStream.staticClass, "<init>", "(Ljava/io/InputStream;Ljavax/crypto/Cipher;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherInputStream.staticClass, global::javax.crypto.CipherInputStream._CipherInputStream28540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.CipherInputStream._m7.native == global::System.IntPtr.Zero)
+				global::javax.crypto.CipherInputStream._m7 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherInputStream.staticClass, "<init>", "(Ljava/io/InputStream;Ljavax/crypto/Cipher;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherInputStream.staticClass, global::javax.crypto.CipherInputStream._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CipherInputStream28541;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected CipherInputStream(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.CipherInputStream._CipherInputStream28541.native == global::System.IntPtr.Zero)
-				global::javax.crypto.CipherInputStream._CipherInputStream28541 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherInputStream.staticClass, global::javax.crypto.CipherInputStream._CipherInputStream28541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.crypto.CipherInputStream._m8.native == global::System.IntPtr.Zero)
+				global::javax.crypto.CipherInputStream._m8 = @__env.GetMethodIDNoThrow(global::javax.crypto.CipherInputStream.staticClass, "<init>", "(Ljava/io/InputStream;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherInputStream.staticClass, global::javax.crypto.CipherInputStream._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static CipherInputStream()

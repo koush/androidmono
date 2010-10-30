@@ -7,53 +7,53 @@ namespace android.util
 		protected Base64InputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close13713;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "close", "()V", ref global::android.util.Base64InputStream._close13713);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "close", "()V", ref global::android.util.Base64InputStream._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _mark13714;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void mark(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "mark", "(I)V", ref global::android.util.Base64InputStream._mark13714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "mark", "(I)V", ref global::android.util.Base64InputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset13715;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "reset", "()V", ref global::android.util.Base64InputStream._reset13715);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.Base64InputStream.staticClass, "reset", "()V", ref global::android.util.Base64InputStream._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _read13716;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "read", "()I", ref global::android.util.Base64InputStream._read13716);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "read", "()I", ref global::android.util.Base64InputStream._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _read13717;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "read", "([BII)I", ref global::android.util.Base64InputStream._read13717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "read", "([BII)I", ref global::android.util.Base64InputStream._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _skip13718;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override long skip(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.util.Base64InputStream.staticClass, "skip", "(J)J", ref global::android.util.Base64InputStream._skip13718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.util.Base64InputStream.staticClass, "skip", "(J)J", ref global::android.util.Base64InputStream._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _available13719;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override int available()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "available", "()I", ref global::android.util.Base64InputStream._available13719);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.util.Base64InputStream.staticClass, "available", "()I", ref global::android.util.Base64InputStream._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _markSupported13720;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override bool markSupported()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.util.Base64InputStream.staticClass, "markSupported", "()Z", ref global::android.util.Base64InputStream._markSupported13720);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.util.Base64InputStream.staticClass, "markSupported", "()Z", ref global::android.util.Base64InputStream._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _Base64InputStream13721;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public Base64InputStream(java.io.InputStream arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.Base64InputStream._Base64InputStream13721.native == global::System.IntPtr.Zero)
-				global::android.util.Base64InputStream._Base64InputStream13721 = @__env.GetMethodIDNoThrow(global::android.util.Base64InputStream.staticClass, "<init>", "(Ljava/io/InputStream;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Base64InputStream.staticClass, global::android.util.Base64InputStream._Base64InputStream13721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.util.Base64InputStream._m8.native == global::System.IntPtr.Zero)
+				global::android.util.Base64InputStream._m8 = @__env.GetMethodIDNoThrow(global::android.util.Base64InputStream.staticClass, "<init>", "(Ljava/io/InputStream;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Base64InputStream.staticClass, global::android.util.Base64InputStream._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static Base64InputStream()

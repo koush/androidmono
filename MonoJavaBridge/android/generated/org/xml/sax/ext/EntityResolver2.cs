@@ -14,20 +14,20 @@ namespace org.xml.sax.ext
 		internal EntityResolver2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveEntity35127;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.xml.sax.InputSource org.xml.sax.ext.EntityResolver2.resolveEntity(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._resolveEntity35127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as org.xml.sax.InputSource;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _getExternalSubset35128;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.xml.sax.InputSource org.xml.sax.ext.EntityResolver2.getExternalSubset(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._getExternalSubset35128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.xml.sax.InputSource;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveEntity35129;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._resolveEntity35129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.xml.sax.InputSource;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.ext.EntityResolver2_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", ref global::org.xml.sax.ext.EntityResolver2_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.xml.sax.InputSource;
 		}
 		static EntityResolver2_()
 		{

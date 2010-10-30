@@ -7,33 +7,33 @@ namespace android.util
 		protected TimingLogger(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _reset13890;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void reset(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "reset", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.util.TimingLogger._reset13890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "reset", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.util.TimingLogger._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset13891;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "reset", "()V", ref global::android.util.TimingLogger._reset13891);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "reset", "()V", ref global::android.util.TimingLogger._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _addSplit13892;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void addSplit(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "addSplit", "(Ljava/lang/String;)V", ref global::android.util.TimingLogger._addSplit13892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "addSplit", "(Ljava/lang/String;)V", ref global::android.util.TimingLogger._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _dumpToLog13893;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void dumpToLog()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "dumpToLog", "()V", ref global::android.util.TimingLogger._dumpToLog13893);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.util.TimingLogger.staticClass, "dumpToLog", "()V", ref global::android.util.TimingLogger._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _TimingLogger13894;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public TimingLogger(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.TimingLogger._TimingLogger13894.native == global::System.IntPtr.Zero)
-				global::android.util.TimingLogger._TimingLogger13894 = @__env.GetMethodIDNoThrow(global::android.util.TimingLogger.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TimingLogger.staticClass, global::android.util.TimingLogger._TimingLogger13894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.util.TimingLogger._m4.native == global::System.IntPtr.Zero)
+				global::android.util.TimingLogger._m4 = @__env.GetMethodIDNoThrow(global::android.util.TimingLogger.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TimingLogger.staticClass, global::android.util.TimingLogger._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static TimingLogger()

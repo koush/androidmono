@@ -14,30 +14,30 @@ namespace org.apache.http
 		internal HeaderIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _hasNext31511;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool org.apache.http.HeaderIterator.hasNext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.HeaderIterator_._hasNext31511);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.HeaderIterator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _nextHeader31512;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.apache.http.Header org.apache.http.HeaderIterator.nextHeader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HeaderIterator_.staticClass, "nextHeader", "()Lorg/apache/http/Header;", ref global::org.apache.http.HeaderIterator_._nextHeader31512) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HeaderIterator_.staticClass, "nextHeader", "()Lorg/apache/http/Header;", ref global::org.apache.http.HeaderIterator_._m1) as org.apache.http.Header;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasNext31513;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.util.Iterator.hasNext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.HeaderIterator_._hasNext31513);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "hasNext", "()Z", ref global::org.apache.http.HeaderIterator_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _next31514;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.Object java.util.Iterator.next()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::org.apache.http.HeaderIterator_._next31514) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::org.apache.http.HeaderIterator_._m3) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _remove31515;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void java.util.Iterator.remove()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "remove", "()V", ref global::org.apache.http.HeaderIterator_._remove31515);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HeaderIterator_.staticClass, "remove", "()V", ref global::org.apache.http.HeaderIterator_._m4);
 		}
 		static HeaderIterator_()
 		{

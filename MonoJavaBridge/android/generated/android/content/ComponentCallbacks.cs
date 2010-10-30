@@ -14,15 +14,15 @@ namespace android.content
 		internal ComponentCallbacks_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged2609;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", ref global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", ref global::android.content.ComponentCallbacks_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLowMemory2610;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.content.ComponentCallbacks.onLowMemory()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V", ref global::android.content.ComponentCallbacks_._onLowMemory2610);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V", ref global::android.content.ComponentCallbacks_._m1);
 		}
 		static ComponentCallbacks_()
 		{

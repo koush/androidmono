@@ -16,25 +16,25 @@ namespace org.xml.sax
 		internal Locator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineNumber35016;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.xml.sax.Locator.getLineNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Locator_.staticClass, "getLineNumber", "()I", ref global::org.xml.sax.Locator_._getLineNumber35016);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Locator_.staticClass, "getLineNumber", "()I", ref global::org.xml.sax.Locator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicId35017;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.xml.sax.Locator.getPublicId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Locator_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.Locator_._getPublicId35017) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Locator_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::org.xml.sax.Locator_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId35018;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.xml.sax.Locator.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Locator_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.Locator_._getSystemId35018) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Locator_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::org.xml.sax.Locator_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnNumber35019;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int org.xml.sax.Locator.getColumnNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Locator_.staticClass, "getColumnNumber", "()I", ref global::org.xml.sax.Locator_._getColumnNumber35019);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Locator_.staticClass, "getColumnNumber", "()I", ref global::org.xml.sax.Locator_._m3);
 		}
 		static Locator_()
 		{

@@ -14,46 +14,46 @@ namespace android.provider
 			internal ContactMethods(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _getDisplayLabel10540;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, int arg2, java.lang.CharSequence arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.ContactMethods._getDisplayLabel10540.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.ContactMethods._getDisplayLabel10540 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "getDisplayLabel", "(Landroid/content/Context;IILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._getDisplayLabel10540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
+				if (global::android.provider.Contacts.ContactMethods._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.ContactMethods._m0 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "getDisplayLabel", "(Landroid/content/Context;IILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
 			}
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, int arg2, string arg3)
 			{
 				return getDisplayLabel(arg0, arg1, arg2, (global::java.lang.CharSequence)(global::java.lang.String)arg3);
 			}
-			internal static global::MonoJavaBridge.MethodId _encodePredefinedImProtocol10541;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::java.lang.String encodePredefinedImProtocol(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.ContactMethods._encodePredefinedImProtocol10541.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.ContactMethods._encodePredefinedImProtocol10541 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "encodePredefinedImProtocol", "(I)Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._encodePredefinedImProtocol10541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				if (global::android.provider.Contacts.ContactMethods._m1.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.ContactMethods._m1 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "encodePredefinedImProtocol", "(I)Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _encodeCustomImProtocol10542;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public static global::java.lang.String encodeCustomImProtocol(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.ContactMethods._encodeCustomImProtocol10542.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.ContactMethods._encodeCustomImProtocol10542 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "encodeCustomImProtocol", "(Ljava/lang/String;)Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._encodeCustomImProtocol10542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				if (global::android.provider.Contacts.ContactMethods._m2.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.ContactMethods._m2 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "encodeCustomImProtocol", "(Ljava/lang/String;)Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _decodeImProtocol10543;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public static global::java.lang.Object decodeImProtocol(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.ContactMethods._decodeImProtocol10543.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.ContactMethods._decodeImProtocol10543 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "decodeImProtocol", "(Ljava/lang/String;)Ljava/lang/Object;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._decodeImProtocol10543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				if (global::android.provider.Contacts.ContactMethods._m3.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.ContactMethods._m3 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "decodeImProtocol", "(Ljava/lang/String;)Ljava/lang/Object;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.ContactMethods.staticClass, global::android.provider.Contacts.ContactMethods._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			}
-			internal static global::MonoJavaBridge.MethodId _addPostalLocation10544;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public void addPostalLocation(android.content.Context arg0, long arg1, double arg2, double arg3)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V", ref global::android.provider.Contacts.ContactMethods._addPostalLocation10544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V", ref global::android.provider.Contacts.ContactMethods._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			public static global::java.lang.String POSTAL_LOCATION_LATITUDE
 			{
@@ -125,22 +125,22 @@ namespace android.provider
 					return 7;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10555;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4115;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.ContactMethods.staticClass, _CONTENT_URI10555)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.ContactMethods.staticClass, _CONTENT_URI4115)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_EMAIL_URI10556;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_EMAIL_URI4116;
 			public static global::android.net.Uri CONTENT_EMAIL_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.ContactMethods.staticClass, _CONTENT_EMAIL_URI10556)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.ContactMethods.staticClass, _CONTENT_EMAIL_URI4116)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_TYPE
@@ -203,8 +203,8 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.ContactMethods.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$ContactMethods"));
-				global::android.provider.Contacts.ContactMethods._CONTENT_URI10555 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.ContactMethods._CONTENT_EMAIL_URI10556 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "CONTENT_EMAIL_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.ContactMethods._CONTENT_URI4115 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.ContactMethods._CONTENT_EMAIL_URI4116 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.ContactMethods.staticClass, "CONTENT_EMAIL_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -312,13 +312,13 @@ namespace android.provider
 			internal Extensions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10575;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4135;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Extensions.staticClass, _CONTENT_URI10575)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Extensions.staticClass, _CONTENT_URI4135)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_TYPE
@@ -353,7 +353,7 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Extensions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Extensions"));
-				global::android.provider.Contacts.Extensions._CONTENT_URI10575 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Extensions.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Extensions._CONTENT_URI4135 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Extensions.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -405,22 +405,22 @@ namespace android.provider
 			internal GroupMembership(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10582;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4142;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.GroupMembership.staticClass, _CONTENT_URI10582)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.GroupMembership.staticClass, _CONTENT_URI4142)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _RAW_CONTENT_URI10583;
+			internal static global::MonoJavaBridge.FieldId _RAW_CONTENT_URI4143;
 			public static global::android.net.Uri RAW_CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.GroupMembership.staticClass, _RAW_CONTENT_URI10583)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.GroupMembership.staticClass, _RAW_CONTENT_URI4143)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_DIRECTORY
@@ -490,8 +490,8 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.GroupMembership.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$GroupMembership"));
-				global::android.provider.Contacts.GroupMembership._CONTENT_URI10582 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.GroupMembership.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.GroupMembership._RAW_CONTENT_URI10583 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.GroupMembership.staticClass, "RAW_CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.GroupMembership._CONTENT_URI4142 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.GroupMembership.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.GroupMembership._RAW_CONTENT_URI4143 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.GroupMembership.staticClass, "RAW_CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -504,22 +504,22 @@ namespace android.provider
 			internal Groups(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10593;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4153;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Groups.staticClass, _CONTENT_URI10593)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Groups.staticClass, _CONTENT_URI4153)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _DELETED_CONTENT_URI10594;
+			internal static global::MonoJavaBridge.FieldId _DELETED_CONTENT_URI4154;
 			public static global::android.net.Uri DELETED_CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Groups.staticClass, _DELETED_CONTENT_URI10594)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Groups.staticClass, _DELETED_CONTENT_URI4154)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_TYPE
@@ -561,8 +561,8 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Groups.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Groups"));
-				global::android.provider.Contacts.Groups._CONTENT_URI10593 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Groups.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.Groups._DELETED_CONTENT_URI10594 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Groups.staticClass, "DELETED_CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Groups._CONTENT_URI4153 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Groups.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Groups._DELETED_CONTENT_URI4154 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Groups.staticClass, "DELETED_CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -635,13 +635,13 @@ namespace android.provider
 				internal Insert(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::MonoJavaBridge.MethodId _Insert10604;
+				private static global::MonoJavaBridge.MethodId _m0;
 				public Insert() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					if (global::android.provider.Contacts.Intents.Insert._Insert10604.native == global::System.IntPtr.Zero)
-						global::android.provider.Contacts.Intents.Insert._Insert10604 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.Insert.staticClass, "<init>", "()V");
-					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.Insert.staticClass, global::android.provider.Contacts.Intents.Insert._Insert10604);
+					if (global::android.provider.Contacts.Intents.Insert._m0.native == global::System.IntPtr.Zero)
+						global::android.provider.Contacts.Intents.Insert._m0 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.Insert.staticClass, "<init>", "()V");
+					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.Insert.staticClass, global::android.provider.Contacts.Intents.Insert._m0);
 					Init(@__env, handle);
 				}
 				public static global::java.lang.String ACTION
@@ -849,13 +849,13 @@ namespace android.provider
 				internal UI(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::MonoJavaBridge.MethodId _UI10632;
+				private static global::MonoJavaBridge.MethodId _m0;
 				public UI() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					if (global::android.provider.Contacts.Intents.UI._UI10632.native == global::System.IntPtr.Zero)
-						global::android.provider.Contacts.Intents.UI._UI10632 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.UI.staticClass, "<init>", "()V");
-					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.UI.staticClass, global::android.provider.Contacts.Intents.UI._UI10632);
+					if (global::android.provider.Contacts.Intents.UI._m0.native == global::System.IntPtr.Zero)
+						global::android.provider.Contacts.Intents.UI._m0 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.UI.staticClass, "<init>", "()V");
+					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.UI.staticClass, global::android.provider.Contacts.Intents.UI._m0);
 					Init(@__env, handle);
 				}
 				public static global::java.lang.String LIST_DEFAULT
@@ -944,13 +944,13 @@ namespace android.provider
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _Intents10644;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public Intents() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Intents._Intents10644.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Intents._Intents10644 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.staticClass, global::android.provider.Contacts.Intents._Intents10644);
+				if (global::android.provider.Contacts.Intents._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Intents._m0 = @__env.GetMethodIDNoThrow(global::android.provider.Contacts.Intents.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Contacts.Intents.staticClass, global::android.provider.Contacts.Intents._m0);
 				Init(@__env, handle);
 			}
 			public static global::java.lang.String SEARCH_SUGGESTION_CLICKED
@@ -1106,25 +1106,25 @@ namespace android.provider
 			internal Organizations(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _getDisplayLabel10661;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Organizations._getDisplayLabel10661.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Organizations._getDisplayLabel10661 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Organizations.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Organizations.staticClass, global::android.provider.Contacts.Organizations._getDisplayLabel10661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+				if (global::android.provider.Contacts.Organizations._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Organizations._m0 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Organizations.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Organizations.staticClass, global::android.provider.Contacts.Organizations._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
 			}
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, string arg2)
 			{
 				return getDisplayLabel(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10662;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4218;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Organizations.staticClass, _CONTENT_URI10662)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Organizations.staticClass, _CONTENT_URI4218)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_DIRECTORY
@@ -1145,7 +1145,7 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Organizations.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Organizations"));
-				global::android.provider.Contacts.Organizations._CONTENT_URI10662 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Organizations.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Organizations._CONTENT_URI4218 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Organizations.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -1255,103 +1255,103 @@ namespace android.provider
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _markAsContacted10672;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static void markAsContacted(android.content.ContentResolver arg0, long arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._markAsContacted10672.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._markAsContacted10672 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "markAsContacted", "(Landroid/content/ContentResolver;J)V");
-				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._markAsContacted10672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				if (global::android.provider.Contacts.People._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m0 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "markAsContacted", "(Landroid/content/ContentResolver;J)V");
+				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _addToMyContactsGroup10673;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::android.net.Uri addToMyContactsGroup(android.content.ContentResolver arg0, long arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._addToMyContactsGroup10673.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._addToMyContactsGroup10673 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToMyContactsGroup", "(Landroid/content/ContentResolver;J)Landroid/net/Uri;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._addToMyContactsGroup10673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
+				if (global::android.provider.Contacts.People._m1.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m1 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToMyContactsGroup", "(Landroid/content/ContentResolver;J)Landroid/net/Uri;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 			}
-			internal static global::MonoJavaBridge.MethodId _addToGroup10674;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public static global::android.net.Uri addToGroup(android.content.ContentResolver arg0, long arg1, java.lang.String arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._addToGroup10674.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._addToGroup10674 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JLjava/lang/String;)Landroid/net/Uri;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._addToGroup10674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.net.Uri;
+				if (global::android.provider.Contacts.People._m2.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m2 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JLjava/lang/String;)Landroid/net/Uri;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.net.Uri;
 			}
-			internal static global::MonoJavaBridge.MethodId _addToGroup10675;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public static global::android.net.Uri addToGroup(android.content.ContentResolver arg0, long arg1, long arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._addToGroup10675.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._addToGroup10675 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JJ)Landroid/net/Uri;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._addToGroup10675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.net.Uri;
+				if (global::android.provider.Contacts.People._m3.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m3 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JJ)Landroid/net/Uri;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.net.Uri;
 			}
-			internal static global::MonoJavaBridge.MethodId _createPersonInMyContactsGroup10676;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public static global::android.net.Uri createPersonInMyContactsGroup(android.content.ContentResolver arg0, android.content.ContentValues arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._createPersonInMyContactsGroup10676.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._createPersonInMyContactsGroup10676 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "createPersonInMyContactsGroup", "(Landroid/content/ContentResolver;Landroid/content/ContentValues;)Landroid/net/Uri;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._createPersonInMyContactsGroup10676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
+				if (global::android.provider.Contacts.People._m4.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m4 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "createPersonInMyContactsGroup", "(Landroid/content/ContentResolver;Landroid/content/ContentValues;)Landroid/net/Uri;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 			}
-			internal static global::MonoJavaBridge.MethodId _queryGroups10677;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public static global::android.database.Cursor queryGroups(android.content.ContentResolver arg0, long arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._queryGroups10677.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._queryGroups10677 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "queryGroups", "(Landroid/content/ContentResolver;J)Landroid/database/Cursor;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._queryGroups10677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.Cursor;
+				if (global::android.provider.Contacts.People._m5.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m5 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "queryGroups", "(Landroid/content/ContentResolver;J)Landroid/database/Cursor;");
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.Cursor;
 			}
-			internal static global::MonoJavaBridge.MethodId _setPhotoData10678;
+			private static global::MonoJavaBridge.MethodId _m6;
 			public static void setPhotoData(android.content.ContentResolver arg0, android.net.Uri arg1, byte[] arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._setPhotoData10678.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._setPhotoData10678 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "setPhotoData", "(Landroid/content/ContentResolver;Landroid/net/Uri;[B)V");
-				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._setPhotoData10678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				if (global::android.provider.Contacts.People._m6.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m6 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "setPhotoData", "(Landroid/content/ContentResolver;Landroid/net/Uri;[B)V");
+				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::MonoJavaBridge.MethodId _openContactPhotoInputStream10679;
+			private static global::MonoJavaBridge.MethodId _m7;
 			public static global::java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver arg0, android.net.Uri arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._openContactPhotoInputStream10679.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._openContactPhotoInputStream10679 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "openContactPhotoInputStream", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._openContactPhotoInputStream10679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
+				if (global::android.provider.Contacts.People._m7.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m7 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "openContactPhotoInputStream", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
 			}
-			internal static global::MonoJavaBridge.MethodId _loadContactPhoto10680;
+			private static global::MonoJavaBridge.MethodId _m8;
 			public static global::android.graphics.Bitmap loadContactPhoto(android.content.Context arg0, android.net.Uri arg1, int arg2, android.graphics.BitmapFactory.Options arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.People._loadContactPhoto10680.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.People._loadContactPhoto10680 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "loadContactPhoto", "(Landroid/content/Context;Landroid/net/Uri;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._loadContactPhoto10680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Bitmap;
+				if (global::android.provider.Contacts.People._m8.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.People._m8 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.People.staticClass, "loadContactPhoto", "(Landroid/content/Context;Landroid/net/Uri;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.Contacts.People.staticClass, global::android.provider.Contacts.People._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Bitmap;
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10681;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4228;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _CONTENT_URI10681)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _CONTENT_URI4228)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_FILTER_URI10682;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_FILTER_URI4229;
 			public static global::android.net.Uri CONTENT_FILTER_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _CONTENT_FILTER_URI10682)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _CONTENT_FILTER_URI4229)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _DELETED_CONTENT_URI10683;
+			internal static global::MonoJavaBridge.FieldId _DELETED_CONTENT_URI4230;
 			public static global::android.net.Uri DELETED_CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _DELETED_CONTENT_URI10683)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.People.staticClass, _DELETED_CONTENT_URI4230)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_TYPE
@@ -1400,9 +1400,9 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.People.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$People"));
-				global::android.provider.Contacts.People._CONTENT_URI10681 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.People._CONTENT_FILTER_URI10682 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.People._DELETED_CONTENT_URI10683 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "DELETED_CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.People._CONTENT_URI4228 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.People._CONTENT_FILTER_URI4229 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.People._DELETED_CONTENT_URI4230 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.People.staticClass, "DELETED_CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -1510,46 +1510,46 @@ namespace android.provider
 			internal Phones(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _getDisplayLabel10700;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2, java.lang.CharSequence[] arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Phones._getDisplayLabel10700.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Phones._getDisplayLabel10700 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Phones.staticClass, global::android.provider.Contacts.Phones._getDisplayLabel10700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
+				if (global::android.provider.Contacts.Phones._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Phones._m0 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Phones.staticClass, global::android.provider.Contacts.Phones._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
 			}
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, string arg2, java.lang.CharSequence[] arg3)
 			{
 				return getDisplayLabel(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3);
 			}
-			internal static global::MonoJavaBridge.MethodId _getDisplayLabel10701;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Phones._getDisplayLabel10701.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Phones._getDisplayLabel10701 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Phones.staticClass, global::android.provider.Contacts.Phones._getDisplayLabel10701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+				if (global::android.provider.Contacts.Phones._m1.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Phones._m1 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;");
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.provider.Contacts.Phones.staticClass, global::android.provider.Contacts.Phones._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
 			}
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, string arg2)
 			{
 				return getDisplayLabel(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10702;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4247;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Phones.staticClass, _CONTENT_URI10702)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Phones.staticClass, _CONTENT_URI4247)) as android.net.Uri;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_FILTER_URL10703;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_FILTER_URL4248;
 			public static global::android.net.Uri CONTENT_FILTER_URL
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Phones.staticClass, _CONTENT_FILTER_URL10703)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Phones.staticClass, _CONTENT_FILTER_URL4248)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_TYPE
@@ -1584,8 +1584,8 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Phones.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Phones"));
-				global::android.provider.Contacts.Phones._CONTENT_URI10702 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-				global::android.provider.Contacts.Phones._CONTENT_FILTER_URL10703 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "CONTENT_FILTER_URL", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Phones._CONTENT_URI4247 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Phones._CONTENT_FILTER_URL4248 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Phones.staticClass, "CONTENT_FILTER_URL", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -1714,13 +1714,13 @@ namespace android.provider
 			internal Photos(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10721;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4266;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Photos.staticClass, _CONTENT_URI10721)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Photos.staticClass, _CONTENT_URI4266)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_DIRECTORY
@@ -1741,7 +1741,7 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Photos.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Photos"));
-				global::android.provider.Contacts.Photos._CONTENT_URI10721 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Photos.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Photos._CONTENT_URI4266 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Photos.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -1930,29 +1930,29 @@ namespace android.provider
 			internal Settings(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _getSetting10742;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::java.lang.String getSetting(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Settings._getSetting10742.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Settings._getSetting10742 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "getSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.Settings.staticClass, global::android.provider.Contacts.Settings._getSetting10742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
+				if (global::android.provider.Contacts.Settings._m0.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Settings._m0 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "getSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.Contacts.Settings.staticClass, global::android.provider.Contacts.Settings._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setSetting10743;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static void setSetting(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.provider.Contacts.Settings._setSetting10743.native == global::System.IntPtr.Zero)
-					global::android.provider.Contacts.Settings._setSetting10743 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "setSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-				@__env.CallStaticVoidMethod(android.provider.Contacts.Settings.staticClass, global::android.provider.Contacts.Settings._setSetting10743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				if (global::android.provider.Contacts.Settings._m1.native == global::System.IntPtr.Zero)
+					global::android.provider.Contacts.Settings._m1 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "setSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+				@__env.CallStaticVoidMethod(android.provider.Contacts.Settings.staticClass, global::android.provider.Contacts.Settings._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			internal static global::MonoJavaBridge.FieldId _CONTENT_URI10744;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI4287;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Settings.staticClass, _CONTENT_URI10744)) as android.net.Uri;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.Settings.staticClass, _CONTENT_URI4287)) as android.net.Uri;
 				}
 			}
 			public static global::java.lang.String CONTENT_DIRECTORY
@@ -1980,7 +1980,7 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Contacts.Settings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts$Settings"));
-				global::android.provider.Contacts.Settings._CONTENT_URI10744 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+				global::android.provider.Contacts.Settings._CONTENT_URI4287 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.Settings.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
 			internal static void InitJNI()
 			{
@@ -2046,13 +2046,13 @@ namespace android.provider
 				return "contacts";
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CONTENT_URI10753;
+		internal static global::MonoJavaBridge.FieldId _CONTENT_URI4296;
 		public static global::android.net.Uri CONTENT_URI
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.staticClass, _CONTENT_URI10753)) as android.net.Uri;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.provider.Contacts.staticClass, _CONTENT_URI4296)) as android.net.Uri;
 			}
 		}
 		public static int KIND_EMAIL
@@ -2094,7 +2094,7 @@ namespace android.provider
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.Contacts.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Contacts"));
-			global::android.provider.Contacts._CONTENT_URI10753 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
+			global::android.provider.Contacts._CONTENT_URI4296 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Contacts.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 		}
 		internal static void InitJNI()
 		{

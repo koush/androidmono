@@ -7,13 +7,13 @@ namespace android.graphics
 		protected PorterDuffColorFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _PorterDuffColorFilter5662;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public PorterDuffColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.PorterDuffColorFilter._PorterDuffColorFilter5662.native == global::System.IntPtr.Zero)
-				global::android.graphics.PorterDuffColorFilter._PorterDuffColorFilter5662 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuffColorFilter.staticClass, "<init>", "(ILandroid/graphics/PorterDuff$Mode;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuffColorFilter.staticClass, global::android.graphics.PorterDuffColorFilter._PorterDuffColorFilter5662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.graphics.PorterDuffColorFilter._m0.native == global::System.IntPtr.Zero)
+				global::android.graphics.PorterDuffColorFilter._m0 = @__env.GetMethodIDNoThrow(global::android.graphics.PorterDuffColorFilter.staticClass, "<init>", "(ILandroid/graphics/PorterDuff$Mode;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuffColorFilter.staticClass, global::android.graphics.PorterDuffColorFilter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static PorterDuffColorFilter()

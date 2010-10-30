@@ -27,45 +27,45 @@ namespace android.inputmethodservice
 			internal OnKeyboardActionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onKey6757;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onKey(int arg0, int[] arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onKey", "(I[I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._onKey6757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onKey", "(I[I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onPress6758;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onPress(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onPress", "(I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._onPress6758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onPress", "(I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onRelease6759;
+			private static global::MonoJavaBridge.MethodId _m2;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onRelease(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onRelease", "(I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._onRelease6759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onRelease", "(I)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onText6760;
+			private static global::MonoJavaBridge.MethodId _m3;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onText(java.lang.CharSequence arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onText", "(Ljava/lang/CharSequence;)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._onText6760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "onText", "(Ljava/lang/CharSequence;)V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _swipeLeft6761;
+			private static global::MonoJavaBridge.MethodId _m4;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeLeft()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeLeft", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeLeft6761);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeLeft", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m4);
 			}
-			internal static global::MonoJavaBridge.MethodId _swipeRight6762;
+			private static global::MonoJavaBridge.MethodId _m5;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeRight()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeRight", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeRight6762);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeRight", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m5);
 			}
-			internal static global::MonoJavaBridge.MethodId _swipeDown6763;
+			private static global::MonoJavaBridge.MethodId _m6;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeDown()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeDown", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeDown6763);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeDown", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m6);
 			}
-			internal static global::MonoJavaBridge.MethodId _swipeUp6764;
+			private static global::MonoJavaBridge.MethodId _m7;
 			void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeUp()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeUp", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._swipeUp6764);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_.staticClass, "swipeUp", "()V", ref global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_._m7);
 			}
 			static OnKeyboardActionListener_()
 			{
@@ -76,40 +76,40 @@ namespace android.inputmethodservice
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _closing6765;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void closing()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "closing", "()V", ref global::android.inputmethodservice.KeyboardView._closing6765);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "closing", "()V", ref global::android.inputmethodservice.KeyboardView._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick6766;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void onClick(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onClick", "(Landroid/view/View;)V", ref global::android.inputmethodservice.KeyboardView._onClick6766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onClick", "(Landroid/view/View;)V", ref global::android.inputmethodservice.KeyboardView._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent6767;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.inputmethodservice.KeyboardView._onTouchEvent6767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.inputmethodservice.KeyboardView._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow6768;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onDetachedFromWindow", "()V", ref global::android.inputmethodservice.KeyboardView._onDetachedFromWindow6768);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onDetachedFromWindow", "()V", ref global::android.inputmethodservice.KeyboardView._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _onSizeChanged6769;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onSizeChanged", "(IIII)V", ref global::android.inputmethodservice.KeyboardView._onSizeChanged6769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onSizeChanged", "(IIII)V", ref global::android.inputmethodservice.KeyboardView._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDraw6770;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.inputmethodservice.KeyboardView._onDraw6770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.inputmethodservice.KeyboardView._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure6771;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onMeasure", "(II)V", ref global::android.inputmethodservice.KeyboardView._onMeasure6771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onMeasure", "(II)V", ref global::android.inputmethodservice.KeyboardView._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new bool Shifted
 		{
@@ -118,50 +118,50 @@ namespace android.inputmethodservice
 				setShifted(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setShifted6772;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool setShifted(bool arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setShifted", "(Z)Z", ref global::android.inputmethodservice.KeyboardView._setShifted6772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setShifted", "(Z)Z", ref global::android.inputmethodservice.KeyboardView._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isShifted6773;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool isShifted()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isShifted", "()Z", ref global::android.inputmethodservice.KeyboardView._isShifted6773);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isShifted", "()Z", ref global::android.inputmethodservice.KeyboardView._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _swipeLeft6774;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected virtual void swipeLeft()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeLeft", "()V", ref global::android.inputmethodservice.KeyboardView._swipeLeft6774);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeLeft", "()V", ref global::android.inputmethodservice.KeyboardView._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _swipeRight6775;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected virtual void swipeRight()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeRight", "()V", ref global::android.inputmethodservice.KeyboardView._swipeRight6775);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeRight", "()V", ref global::android.inputmethodservice.KeyboardView._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _swipeDown6776;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected virtual void swipeDown()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeDown", "()V", ref global::android.inputmethodservice.KeyboardView._swipeDown6776);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeDown", "()V", ref global::android.inputmethodservice.KeyboardView._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _swipeUp6777;
+		private static global::MonoJavaBridge.MethodId _m12;
 		protected virtual void swipeUp()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeUp", "()V", ref global::android.inputmethodservice.KeyboardView._swipeUp6777);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "swipeUp", "()V", ref global::android.inputmethodservice.KeyboardView._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnKeyboardActionListener6778;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setOnKeyboardActionListener(android.inputmethodservice.KeyboardView.OnKeyboardActionListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setOnKeyboardActionListener", "(Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;)V", ref global::android.inputmethodservice.KeyboardView._setOnKeyboardActionListener6778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setOnKeyboardActionListener", "(Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;)V", ref global::android.inputmethodservice.KeyboardView._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOnKeyboardActionListener6779;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected virtual global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener getOnKeyboardActionListener()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(this, global::android.inputmethodservice.KeyboardView.staticClass, "getOnKeyboardActionListener", "()Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;", ref global::android.inputmethodservice.KeyboardView._getOnKeyboardActionListener6779) as android.inputmethodservice.KeyboardView.OnKeyboardActionListener;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(this, global::android.inputmethodservice.KeyboardView.staticClass, "getOnKeyboardActionListener", "()Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;", ref global::android.inputmethodservice.KeyboardView._m14) as android.inputmethodservice.KeyboardView.OnKeyboardActionListener;
 		}
-		internal static global::MonoJavaBridge.MethodId _setKeyboard6780;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setKeyboard(android.inputmethodservice.Keyboard arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setKeyboard", "(Landroid/inputmethodservice/Keyboard;)V", ref global::android.inputmethodservice.KeyboardView._setKeyboard6780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setKeyboard", "(Landroid/inputmethodservice/Keyboard;)V", ref global::android.inputmethodservice.KeyboardView._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.inputmethodservice.Keyboard Keyboard
 		{
@@ -174,10 +174,10 @@ namespace android.inputmethodservice
 				setKeyboard(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyboard6781;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual global::android.inputmethodservice.Keyboard getKeyboard()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "getKeyboard", "()Landroid/inputmethodservice/Keyboard;", ref global::android.inputmethodservice.KeyboardView._getKeyboard6781) as android.inputmethodservice.Keyboard;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "getKeyboard", "()Landroid/inputmethodservice/Keyboard;", ref global::android.inputmethodservice.KeyboardView._m16) as android.inputmethodservice.Keyboard;
 		}
 		public new bool PreviewEnabled
 		{
@@ -186,15 +186,15 @@ namespace android.inputmethodservice
 				setPreviewEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreviewEnabled6782;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setPreviewEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPreviewEnabled", "(Z)V", ref global::android.inputmethodservice.KeyboardView._setPreviewEnabled6782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPreviewEnabled", "(Z)V", ref global::android.inputmethodservice.KeyboardView._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isPreviewEnabled6783;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual bool isPreviewEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isPreviewEnabled", "()Z", ref global::android.inputmethodservice.KeyboardView._isPreviewEnabled6783);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isPreviewEnabled", "()Z", ref global::android.inputmethodservice.KeyboardView._m18);
 		}
 		public new int VerticalCorrection
 		{
@@ -203,10 +203,10 @@ namespace android.inputmethodservice
 				setVerticalCorrection(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setVerticalCorrection6784;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void setVerticalCorrection(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setVerticalCorrection", "(I)V", ref global::android.inputmethodservice.KeyboardView._setVerticalCorrection6784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setVerticalCorrection", "(I)V", ref global::android.inputmethodservice.KeyboardView._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.view.View PopupParent
 		{
@@ -215,15 +215,15 @@ namespace android.inputmethodservice
 				setPopupParent(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPopupParent6785;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setPopupParent(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPopupParent", "(Landroid/view/View;)V", ref global::android.inputmethodservice.KeyboardView._setPopupParent6785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPopupParent", "(Landroid/view/View;)V", ref global::android.inputmethodservice.KeyboardView._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPopupOffset6786;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setPopupOffset(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPopupOffset", "(II)V", ref global::android.inputmethodservice.KeyboardView._setPopupOffset6786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setPopupOffset", "(II)V", ref global::android.inputmethodservice.KeyboardView._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new bool ProximityCorrectionEnabled
 		{
@@ -232,52 +232,52 @@ namespace android.inputmethodservice
 				setProximityCorrectionEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setProximityCorrectionEnabled6787;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setProximityCorrectionEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setProximityCorrectionEnabled", "(Z)V", ref global::android.inputmethodservice.KeyboardView._setProximityCorrectionEnabled6787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "setProximityCorrectionEnabled", "(Z)V", ref global::android.inputmethodservice.KeyboardView._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isProximityCorrectionEnabled6788;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual bool isProximityCorrectionEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isProximityCorrectionEnabled", "()Z", ref global::android.inputmethodservice.KeyboardView._isProximityCorrectionEnabled6788);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "isProximityCorrectionEnabled", "()Z", ref global::android.inputmethodservice.KeyboardView._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateAllKeys6789;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void invalidateAllKeys()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "invalidateAllKeys", "()V", ref global::android.inputmethodservice.KeyboardView._invalidateAllKeys6789);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "invalidateAllKeys", "()V", ref global::android.inputmethodservice.KeyboardView._m24);
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateKey6790;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual void invalidateKey(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "invalidateKey", "(I)V", ref global::android.inputmethodservice.KeyboardView._invalidateKey6790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "invalidateKey", "(I)V", ref global::android.inputmethodservice.KeyboardView._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLongPress6791;
+		private static global::MonoJavaBridge.MethodId _m26;
 		protected virtual bool onLongPress(android.inputmethodservice.Keyboard.Key arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onLongPress", "(Landroid/inputmethodservice/Keyboard$Key;)Z", ref global::android.inputmethodservice.KeyboardView._onLongPress6791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "onLongPress", "(Landroid/inputmethodservice/Keyboard$Key;)Z", ref global::android.inputmethodservice.KeyboardView._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _handleBack6792;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual bool handleBack()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "handleBack", "()Z", ref global::android.inputmethodservice.KeyboardView._handleBack6792);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.inputmethodservice.KeyboardView.staticClass, "handleBack", "()Z", ref global::android.inputmethodservice.KeyboardView._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyboardView6793;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public KeyboardView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.inputmethodservice.KeyboardView._KeyboardView6793.native == global::System.IntPtr.Zero)
-				global::android.inputmethodservice.KeyboardView._KeyboardView6793 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, global::android.inputmethodservice.KeyboardView._KeyboardView6793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.inputmethodservice.KeyboardView._m28.native == global::System.IntPtr.Zero)
+				global::android.inputmethodservice.KeyboardView._m28 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, global::android.inputmethodservice.KeyboardView._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyboardView6794;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public KeyboardView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.inputmethodservice.KeyboardView._KeyboardView6794.native == global::System.IntPtr.Zero)
-				global::android.inputmethodservice.KeyboardView._KeyboardView6794 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, global::android.inputmethodservice.KeyboardView._KeyboardView6794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.inputmethodservice.KeyboardView._m29.native == global::System.IntPtr.Zero)
+				global::android.inputmethodservice.KeyboardView._m29 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, global::android.inputmethodservice.KeyboardView._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static KeyboardView()

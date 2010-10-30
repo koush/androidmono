@@ -20,10 +20,10 @@ namespace android.media
 			internal OnAudioFocusChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onAudioFocusChange7037;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.AudioManager.OnAudioFocusChangeListener.onAudioFocusChange(int arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.OnAudioFocusChangeListener_.staticClass, "onAudioFocusChange", "(I)V", ref global::android.media.AudioManager.OnAudioFocusChangeListener_._onAudioFocusChange7037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.OnAudioFocusChangeListener_.staticClass, "onAudioFocusChange", "(I)V", ref global::android.media.AudioManager.OnAudioFocusChangeListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static OnAudioFocusChangeListener_()
 			{
@@ -43,13 +43,13 @@ namespace android.media
 			protected OnAudioFocusChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnAudioFocusChangeListenerDelegateWrapper7038;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnAudioFocusChangeListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._OnAudioFocusChangeListenerDelegateWrapper7038.native == global::System.IntPtr.Zero)
-					global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._OnAudioFocusChangeListenerDelegateWrapper7038 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._OnAudioFocusChangeListenerDelegateWrapper7038);
+				if (global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper.staticClass, global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnAudioFocusChangeListenerDelegateWrapper()
@@ -76,15 +76,15 @@ namespace android.media
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameters7039;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.String getParameters(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.media.AudioManager.staticClass, "getParameters", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.media.AudioManager._getParameters7039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.media.AudioManager.staticClass, "getParameters", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.media.AudioManager._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setMode7040;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setMode(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setMode", "(I)V", ref global::android.media.AudioManager._setMode7040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setMode", "(I)V", ref global::android.media.AudioManager._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Mode
 		{
@@ -97,20 +97,20 @@ namespace android.media
 				setMode(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMode7041;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getMode", "()I", ref global::android.media.AudioManager._getMode7041);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getMode", "()I", ref global::android.media.AudioManager._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _playSoundEffect7042;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void playSoundEffect(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "playSoundEffect", "(I)V", ref global::android.media.AudioManager._playSoundEffect7042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "playSoundEffect", "(I)V", ref global::android.media.AudioManager._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _playSoundEffect7043;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void playSoundEffect(int arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "playSoundEffect", "(IF)V", ref global::android.media.AudioManager._playSoundEffect7043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "playSoundEffect", "(IF)V", ref global::android.media.AudioManager._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String Parameters
 		{
@@ -119,25 +119,25 @@ namespace android.media
 				setParameters(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setParameters7044;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setParameters(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setParameters", "(Ljava/lang/String;)V", ref global::android.media.AudioManager._setParameters7044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setParameters", "(Ljava/lang/String;)V", ref global::android.media.AudioManager._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _adjustStreamVolume7045;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void adjustStreamVolume(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustStreamVolume", "(III)V", ref global::android.media.AudioManager._adjustStreamVolume7045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustStreamVolume", "(III)V", ref global::android.media.AudioManager._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _adjustVolume7046;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void adjustVolume(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustVolume", "(II)V", ref global::android.media.AudioManager._adjustVolume7046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustVolume", "(II)V", ref global::android.media.AudioManager._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _adjustSuggestedStreamVolume7047;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void adjustSuggestedStreamVolume(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustSuggestedStreamVolume", "(III)V", ref global::android.media.AudioManager._adjustSuggestedStreamVolume7047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "adjustSuggestedStreamVolume", "(III)V", ref global::android.media.AudioManager._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public new int RingerMode
 		{
@@ -150,55 +150,55 @@ namespace android.media
 				setRingerMode(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRingerMode7048;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int getRingerMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getRingerMode", "()I", ref global::android.media.AudioManager._getRingerMode7048);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getRingerMode", "()I", ref global::android.media.AudioManager._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _getStreamMaxVolume7049;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int getStreamMaxVolume(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getStreamMaxVolume", "(I)I", ref global::android.media.AudioManager._getStreamMaxVolume7049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getStreamMaxVolume", "(I)I", ref global::android.media.AudioManager._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getStreamVolume7050;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int getStreamVolume(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getStreamVolume", "(I)I", ref global::android.media.AudioManager._getStreamVolume7050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getStreamVolume", "(I)I", ref global::android.media.AudioManager._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRingerMode7051;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setRingerMode(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setRingerMode", "(I)V", ref global::android.media.AudioManager._setRingerMode7051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setRingerMode", "(I)V", ref global::android.media.AudioManager._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setStreamVolume7052;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setStreamVolume(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamVolume", "(III)V", ref global::android.media.AudioManager._setStreamVolume7052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamVolume", "(III)V", ref global::android.media.AudioManager._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setStreamSolo7053;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setStreamSolo(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamSolo", "(IZ)V", ref global::android.media.AudioManager._setStreamSolo7053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamSolo", "(IZ)V", ref global::android.media.AudioManager._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setStreamMute7054;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setStreamMute(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamMute", "(IZ)V", ref global::android.media.AudioManager._setStreamMute7054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setStreamMute", "(IZ)V", ref global::android.media.AudioManager._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _shouldVibrate7055;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual bool shouldVibrate(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "shouldVibrate", "(I)Z", ref global::android.media.AudioManager._shouldVibrate7055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "shouldVibrate", "(I)Z", ref global::android.media.AudioManager._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getVibrateSetting7056;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual int getVibrateSetting(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getVibrateSetting", "(I)I", ref global::android.media.AudioManager._getVibrateSetting7056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getVibrateSetting", "(I)I", ref global::android.media.AudioManager._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVibrateSetting7057;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setVibrateSetting(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setVibrateSetting", "(II)V", ref global::android.media.AudioManager._setVibrateSetting7057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setVibrateSetting", "(II)V", ref global::android.media.AudioManager._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new bool SpeakerphoneOn
 		{
@@ -207,30 +207,30 @@ namespace android.media
 				setSpeakerphoneOn(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSpeakerphoneOn7058;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void setSpeakerphoneOn(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setSpeakerphoneOn", "(Z)V", ref global::android.media.AudioManager._setSpeakerphoneOn7058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setSpeakerphoneOn", "(Z)V", ref global::android.media.AudioManager._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSpeakerphoneOn7059;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool isSpeakerphoneOn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isSpeakerphoneOn", "()Z", ref global::android.media.AudioManager._isSpeakerphoneOn7059);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isSpeakerphoneOn", "()Z", ref global::android.media.AudioManager._m20);
 		}
-		internal static global::MonoJavaBridge.MethodId _isBluetoothScoAvailableOffCall7060;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual bool isBluetoothScoAvailableOffCall()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothScoAvailableOffCall", "()Z", ref global::android.media.AudioManager._isBluetoothScoAvailableOffCall7060);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothScoAvailableOffCall", "()Z", ref global::android.media.AudioManager._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _startBluetoothSco7061;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void startBluetoothSco()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "startBluetoothSco", "()V", ref global::android.media.AudioManager._startBluetoothSco7061);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "startBluetoothSco", "()V", ref global::android.media.AudioManager._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopBluetoothSco7062;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void stopBluetoothSco()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "stopBluetoothSco", "()V", ref global::android.media.AudioManager._stopBluetoothSco7062);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "stopBluetoothSco", "()V", ref global::android.media.AudioManager._m23);
 		}
 		public new bool BluetoothScoOn
 		{
@@ -239,15 +239,15 @@ namespace android.media
 				setBluetoothScoOn(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setBluetoothScoOn7063;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setBluetoothScoOn(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setBluetoothScoOn", "(Z)V", ref global::android.media.AudioManager._setBluetoothScoOn7063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setBluetoothScoOn", "(Z)V", ref global::android.media.AudioManager._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isBluetoothScoOn7064;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual bool isBluetoothScoOn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothScoOn", "()Z", ref global::android.media.AudioManager._isBluetoothScoOn7064);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothScoOn", "()Z", ref global::android.media.AudioManager._m25);
 		}
 		public new bool BluetoothA2dpOn
 		{
@@ -256,15 +256,15 @@ namespace android.media
 				setBluetoothA2dpOn(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setBluetoothA2dpOn7065;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void setBluetoothA2dpOn(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setBluetoothA2dpOn", "(Z)V", ref global::android.media.AudioManager._setBluetoothA2dpOn7065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setBluetoothA2dpOn", "(Z)V", ref global::android.media.AudioManager._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isBluetoothA2dpOn7066;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual bool isBluetoothA2dpOn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothA2dpOn", "()Z", ref global::android.media.AudioManager._isBluetoothA2dpOn7066);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isBluetoothA2dpOn", "()Z", ref global::android.media.AudioManager._m27);
 		}
 		public new bool WiredHeadsetOn
 		{
@@ -273,15 +273,15 @@ namespace android.media
 				setWiredHeadsetOn(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setWiredHeadsetOn7067;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual void setWiredHeadsetOn(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setWiredHeadsetOn", "(Z)V", ref global::android.media.AudioManager._setWiredHeadsetOn7067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setWiredHeadsetOn", "(Z)V", ref global::android.media.AudioManager._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isWiredHeadsetOn7068;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool isWiredHeadsetOn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isWiredHeadsetOn", "()Z", ref global::android.media.AudioManager._isWiredHeadsetOn7068);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isWiredHeadsetOn", "()Z", ref global::android.media.AudioManager._m29);
 		}
 		public new bool MicrophoneMute
 		{
@@ -290,68 +290,68 @@ namespace android.media
 				setMicrophoneMute(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMicrophoneMute7069;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual void setMicrophoneMute(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setMicrophoneMute", "(Z)V", ref global::android.media.AudioManager._setMicrophoneMute7069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setMicrophoneMute", "(Z)V", ref global::android.media.AudioManager._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isMicrophoneMute7070;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual bool isMicrophoneMute()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isMicrophoneMute", "()Z", ref global::android.media.AudioManager._isMicrophoneMute7070);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isMicrophoneMute", "()Z", ref global::android.media.AudioManager._m31);
 		}
-		internal static global::MonoJavaBridge.MethodId _setRouting7071;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual void setRouting(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setRouting", "(III)V", ref global::android.media.AudioManager._setRouting7071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "setRouting", "(III)V", ref global::android.media.AudioManager._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _getRouting7072;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual int getRouting(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getRouting", "(I)I", ref global::android.media.AudioManager._getRouting7072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "getRouting", "(I)I", ref global::android.media.AudioManager._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isMusicActive7073;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual bool isMusicActive()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isMusicActive", "()Z", ref global::android.media.AudioManager._isMusicActive7073);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.AudioManager.staticClass, "isMusicActive", "()Z", ref global::android.media.AudioManager._m34);
 		}
-		internal static global::MonoJavaBridge.MethodId _loadSoundEffects7074;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual void loadSoundEffects()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "loadSoundEffects", "()V", ref global::android.media.AudioManager._loadSoundEffects7074);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "loadSoundEffects", "()V", ref global::android.media.AudioManager._m35);
 		}
-		internal static global::MonoJavaBridge.MethodId _unloadSoundEffects7075;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual void unloadSoundEffects()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "unloadSoundEffects", "()V", ref global::android.media.AudioManager._unloadSoundEffects7075);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "unloadSoundEffects", "()V", ref global::android.media.AudioManager._m36);
 		}
-		internal static global::MonoJavaBridge.MethodId _requestAudioFocus7076;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual int requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "requestAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I", ref global::android.media.AudioManager._requestAudioFocus7076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "requestAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I", ref global::android.media.AudioManager._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public int requestAudioFocus(global::android.media.AudioManager.OnAudioFocusChangeListenerDelegate arg0, int arg1, int arg2)
 		{
 			return requestAudioFocus((global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _abandonAudioFocus7077;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public virtual int abandonAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "abandonAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I", ref global::android.media.AudioManager._abandonAudioFocus7077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.AudioManager.staticClass, "abandonAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I", ref global::android.media.AudioManager._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public int abandonAudioFocus(global::android.media.AudioManager.OnAudioFocusChangeListenerDelegate arg0)
 		{
 			return abandonAudioFocus((global::android.media.AudioManager.OnAudioFocusChangeListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _registerMediaButtonEventReceiver7078;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public virtual void registerMediaButtonEventReceiver(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "registerMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", ref global::android.media.AudioManager._registerMediaButtonEventReceiver7078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "registerMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", ref global::android.media.AudioManager._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unregisterMediaButtonEventReceiver7079;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public virtual void unregisterMediaButtonEventReceiver(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "unregisterMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", ref global::android.media.AudioManager._unregisterMediaButtonEventReceiver7079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.AudioManager.staticClass, "unregisterMediaButtonEventReceiver", "(Landroid/content/ComponentName;)V", ref global::android.media.AudioManager._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String ACTION_AUDIO_BECOMING_NOISY
 		{

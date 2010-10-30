@@ -7,35 +7,35 @@ namespace android.gesture
 		protected GestureStore(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _load4966;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void load(java.io.InputStream arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "load", "(Ljava/io/InputStream;Z)V", ref global::android.gesture.GestureStore._load4966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "load", "(Ljava/io/InputStream;Z)V", ref global::android.gesture.GestureStore._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _load4967;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void load(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::android.gesture.GestureStore._load4967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "load", "(Ljava/io/InputStream;)V", ref global::android.gesture.GestureStore._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _save4968;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void save(java.io.OutputStream arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "save", "(Ljava/io/OutputStream;Z)V", ref global::android.gesture.GestureStore._save4968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "save", "(Ljava/io/OutputStream;Z)V", ref global::android.gesture.GestureStore._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _save4969;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void save(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "save", "(Ljava/io/OutputStream;)V", ref global::android.gesture.GestureStore._save4969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "save", "(Ljava/io/OutputStream;)V", ref global::android.gesture.GestureStore._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hasChanged4970;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool hasChanged()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureStore.staticClass, "hasChanged", "()Z", ref global::android.gesture.GestureStore._hasChanged4970);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.gesture.GestureStore.staticClass, "hasChanged", "()Z", ref global::android.gesture.GestureStore._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOrientationStyle4971;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setOrientationStyle(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "setOrientationStyle", "(I)V", ref global::android.gesture.GestureStore._setOrientationStyle4971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "setOrientationStyle", "(I)V", ref global::android.gesture.GestureStore._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int OrientationStyle
 		{
@@ -48,15 +48,15 @@ namespace android.gesture
 				setOrientationStyle(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrientationStyle4972;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getOrientationStyle()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureStore.staticClass, "getOrientationStyle", "()I", ref global::android.gesture.GestureStore._getOrientationStyle4972);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureStore.staticClass, "getOrientationStyle", "()I", ref global::android.gesture.GestureStore._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _setSequenceType4973;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setSequenceType(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "setSequenceType", "(I)V", ref global::android.gesture.GestureStore._setSequenceType4973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "setSequenceType", "(I)V", ref global::android.gesture.GestureStore._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int SequenceType
 		{
@@ -69,10 +69,10 @@ namespace android.gesture
 				setSequenceType(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSequenceType4974;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int getSequenceType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureStore.staticClass, "getSequenceType", "()I", ref global::android.gesture.GestureStore._getSequenceType4974);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.gesture.GestureStore.staticClass, "getSequenceType", "()I", ref global::android.gesture.GestureStore._m8);
 		}
 		public new global::java.util.Set GestureEntries
 		{
@@ -81,43 +81,43 @@ namespace android.gesture
 				return getGestureEntries();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureEntries4975;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::java.util.Set getGestureEntries()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.gesture.GestureStore.staticClass, "getGestureEntries", "()Ljava/util/Set;", ref global::android.gesture.GestureStore._getGestureEntries4975) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::android.gesture.GestureStore.staticClass, "getGestureEntries", "()Ljava/util/Set;", ref global::android.gesture.GestureStore._m9) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _recognize4976;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.util.ArrayList recognize(android.gesture.Gesture arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStore.staticClass, "recognize", "(Landroid/gesture/Gesture;)Ljava/util/ArrayList;", ref global::android.gesture.GestureStore._recognize4976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStore.staticClass, "recognize", "(Landroid/gesture/Gesture;)Ljava/util/ArrayList;", ref global::android.gesture.GestureStore._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
-		internal static global::MonoJavaBridge.MethodId _addGesture4977;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void addGesture(java.lang.String arg0, android.gesture.Gesture arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "addGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureStore._addGesture4977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "addGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureStore._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeGesture4978;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void removeGesture(java.lang.String arg0, android.gesture.Gesture arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "removeGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureStore._removeGesture4978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "removeGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", ref global::android.gesture.GestureStore._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeEntry4979;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void removeEntry(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "removeEntry", "(Ljava/lang/String;)V", ref global::android.gesture.GestureStore._removeEntry4979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.gesture.GestureStore.staticClass, "removeEntry", "(Ljava/lang/String;)V", ref global::android.gesture.GestureStore._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestures4980;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.util.ArrayList getGestures(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStore.staticClass, "getGestures", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.gesture.GestureStore._getGestures4980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.gesture.GestureStore.staticClass, "getGestures", "(Ljava/lang/String;)Ljava/util/ArrayList;", ref global::android.gesture.GestureStore._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ArrayList;
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureStore4981;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public GestureStore() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.gesture.GestureStore._GestureStore4981.native == global::System.IntPtr.Zero)
-				global::android.gesture.GestureStore._GestureStore4981 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStore.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureStore.staticClass, global::android.gesture.GestureStore._GestureStore4981);
+			if (global::android.gesture.GestureStore._m15.native == global::System.IntPtr.Zero)
+				global::android.gesture.GestureStore._m15 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureStore.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureStore.staticClass, global::android.gesture.GestureStore._m15);
 			Init(@__env, handle);
 		}
 		public static int SEQUENCE_INVARIANT

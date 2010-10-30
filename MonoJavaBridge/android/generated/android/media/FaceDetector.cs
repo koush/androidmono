@@ -14,25 +14,25 @@ namespace android.media
 			protected Face(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _confidence7282;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual float confidence()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "confidence", "()F", ref global::android.media.FaceDetector.Face._confidence7282);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "confidence", "()F", ref global::android.media.FaceDetector.Face._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _getMidPoint7283;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual void getMidPoint(android.graphics.PointF arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, "getMidPoint", "(Landroid/graphics/PointF;)V", ref global::android.media.FaceDetector.Face._getMidPoint7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, "getMidPoint", "(Landroid/graphics/PointF;)V", ref global::android.media.FaceDetector.Face._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _eyesDistance7284;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual float eyesDistance()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "eyesDistance", "()F", ref global::android.media.FaceDetector.Face._eyesDistance7284);
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "eyesDistance", "()F", ref global::android.media.FaceDetector.Face._m2);
 			}
-			internal static global::MonoJavaBridge.MethodId _pose7285;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual float pose(int arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "pose", "(I)F", ref global::android.media.FaceDetector.Face._pose7285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, "pose", "(I)F", ref global::android.media.FaceDetector.Face._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public static float CONFIDENCE_THRESHOLD
 			{
@@ -71,23 +71,23 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize7290;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.staticClass, "finalize", "()V", ref global::android.media.FaceDetector._finalize7290);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.FaceDetector.staticClass, "finalize", "()V", ref global::android.media.FaceDetector._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _findFaces7291;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int findFaces(android.graphics.Bitmap arg0, android.media.FaceDetector.Face[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.FaceDetector.staticClass, "findFaces", "(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector/Face;)I", ref global::android.media.FaceDetector._findFaces7291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.FaceDetector.staticClass, "findFaces", "(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector/Face;)I", ref global::android.media.FaceDetector._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _FaceDetector7292;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public FaceDetector(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.FaceDetector._FaceDetector7292.native == global::System.IntPtr.Zero)
-				global::android.media.FaceDetector._FaceDetector7292 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.staticClass, "<init>", "(III)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._FaceDetector7292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.media.FaceDetector._m2.native == global::System.IntPtr.Zero)
+				global::android.media.FaceDetector._m2 = @__env.GetMethodIDNoThrow(global::android.media.FaceDetector.staticClass, "<init>", "(III)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static FaceDetector()

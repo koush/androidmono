@@ -14,15 +14,15 @@ namespace java.util
 		internal Comparator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals26076;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.util.Comparator.equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Comparator_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.Comparator_._equals26076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Comparator_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.Comparator_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compare26077;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int java.util.Comparator.compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Comparator_.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::java.util.Comparator_._compare26077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.Comparator_.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::java.util.Comparator_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Comparator_()
 		{

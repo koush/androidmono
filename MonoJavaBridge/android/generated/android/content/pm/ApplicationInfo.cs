@@ -14,23 +14,23 @@ namespace android.content.pm
 			protected DisplayNameComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _compare3642;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual int compare(android.content.pm.ApplicationInfo arg0, android.content.pm.ApplicationInfo arg1)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _compare3643;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare3643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::android.content.pm.ApplicationInfo.DisplayNameComparator._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _DisplayNameComparator3644;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public DisplayNameComparator(android.content.pm.PackageManager arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator3644.native == global::System.IntPtr.Zero)
-					global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator3644 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "<init>", "(Landroid/content/pm/PackageManager;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator3644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.content.pm.ApplicationInfo.DisplayNameComparator._m2.native == global::System.IntPtr.Zero)
+					global::android.content.pm.ApplicationInfo.DisplayNameComparator._m2 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "<init>", "(Landroid/content/pm/PackageManager;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static DisplayNameComparator()
@@ -42,144 +42,144 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _toString3645;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.ApplicationInfo._toString3645) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.ApplicationInfo._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _dump3646;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.pm.ApplicationInfo._dump3646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.content.pm.ApplicationInfo._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel3647;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.ApplicationInfo._writeToParcel3647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.ApplicationInfo._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents3648;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.ApplicationInfo._describeContents3648);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.ApplicationInfo._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _loadDescription3649;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", ref global::android.content.pm.ApplicationInfo._loadDescription3649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", ref global::android.content.pm.ApplicationInfo._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _ApplicationInfo3650;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public ApplicationInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._ApplicationInfo3650.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._ApplicationInfo3650 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo3650);
+			if (global::android.content.pm.ApplicationInfo._m5.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ApplicationInfo._m5 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._m5);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ApplicationInfo3651;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public ApplicationInfo(android.content.pm.ApplicationInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.ApplicationInfo._ApplicationInfo3651.native == global::System.IntPtr.Zero)
-				global::android.content.pm.ApplicationInfo._ApplicationInfo3651 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "(Landroid/content/pm/ApplicationInfo;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo3651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.pm.ApplicationInfo._m6.native == global::System.IntPtr.Zero)
+				global::android.content.pm.ApplicationInfo._m6 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "(Landroid/content/pm/ApplicationInfo;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _taskAffinity3652;
+		internal static global::MonoJavaBridge.FieldId _taskAffinity1948;
 		public global::java.lang.String taskAffinity
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _taskAffinity3652)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _taskAffinity1948)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _permission3653;
+		internal static global::MonoJavaBridge.FieldId _permission1949;
 		public global::java.lang.String permission
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _permission3653)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _permission1949)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _processName3654;
+		internal static global::MonoJavaBridge.FieldId _processName1950;
 		public global::java.lang.String processName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _processName3654)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _processName1950)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _className3655;
+		internal static global::MonoJavaBridge.FieldId _className1951;
 		public global::java.lang.String className
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _className3655)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _className1951)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _descriptionRes3656;
+		internal static global::MonoJavaBridge.FieldId _descriptionRes1952;
 		public int descriptionRes
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _descriptionRes3656);
+				return @__env.GetIntField(this.JvmHandle, _descriptionRes1952);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _theme3657;
+		internal static global::MonoJavaBridge.FieldId _theme1953;
 		public int theme
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _theme3657);
+				return @__env.GetIntField(this.JvmHandle, _theme1953);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _manageSpaceActivityName3658;
+		internal static global::MonoJavaBridge.FieldId _manageSpaceActivityName1954;
 		public global::java.lang.String manageSpaceActivityName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _manageSpaceActivityName3658)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _manageSpaceActivityName1954)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _backupAgentName3659;
+		internal static global::MonoJavaBridge.FieldId _backupAgentName1955;
 		public global::java.lang.String backupAgentName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _backupAgentName3659)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _backupAgentName1955)) as java.lang.String;
 			}
 			set
 			{
@@ -318,132 +318,132 @@ namespace android.content.pm
 				return 262144;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _flags3679;
+		internal static global::MonoJavaBridge.FieldId _flags1975;
 		public int flags
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _flags3679);
+				return @__env.GetIntField(this.JvmHandle, _flags1975);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _sourceDir3680;
+		internal static global::MonoJavaBridge.FieldId _sourceDir1976;
 		public global::java.lang.String sourceDir
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _sourceDir3680)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _sourceDir1976)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _publicSourceDir3681;
+		internal static global::MonoJavaBridge.FieldId _publicSourceDir1977;
 		public global::java.lang.String publicSourceDir
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _publicSourceDir3681)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _publicSourceDir1977)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _sharedLibraryFiles3682;
+		internal static global::MonoJavaBridge.FieldId _sharedLibraryFiles1978;
 		public global::java.lang.String[] sharedLibraryFiles
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _sharedLibraryFiles3682)) as java.lang.String[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _sharedLibraryFiles1978)) as java.lang.String[];
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _dataDir3683;
+		internal static global::MonoJavaBridge.FieldId _dataDir1979;
 		public global::java.lang.String dataDir
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _dataDir3683)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _dataDir1979)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _uid3684;
+		internal static global::MonoJavaBridge.FieldId _uid1980;
 		public int uid
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _uid3684);
+				return @__env.GetIntField(this.JvmHandle, _uid1980);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _targetSdkVersion3685;
+		internal static global::MonoJavaBridge.FieldId _targetSdkVersion1981;
 		public int targetSdkVersion
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _targetSdkVersion3685);
+				return @__env.GetIntField(this.JvmHandle, _targetSdkVersion1981);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _enabled3686;
+		internal static global::MonoJavaBridge.FieldId _enabled1982;
 		public bool enabled
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetBooleanField(this.JvmHandle, _enabled3686);
+				return @__env.GetBooleanField(this.JvmHandle, _enabled1982);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR3687;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1983;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.ApplicationInfo.staticClass, _CREATOR3687)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.ApplicationInfo.staticClass, _CREATOR1983)) as android.os.Parcelable_Creator;
 			}
 		}
 		static ApplicationInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.ApplicationInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ApplicationInfo"));
-			global::android.content.pm.ApplicationInfo._taskAffinity3652 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "taskAffinity", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._permission3653 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "permission", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._processName3654 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "processName", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._className3655 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "className", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._descriptionRes3656 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "descriptionRes", "I");
-			global::android.content.pm.ApplicationInfo._theme3657 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "theme", "I");
-			global::android.content.pm.ApplicationInfo._manageSpaceActivityName3658 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "manageSpaceActivityName", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._backupAgentName3659 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "backupAgentName", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._flags3679 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "flags", "I");
-			global::android.content.pm.ApplicationInfo._sourceDir3680 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "sourceDir", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._publicSourceDir3681 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "publicSourceDir", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._sharedLibraryFiles3682 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "sharedLibraryFiles", "[Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._dataDir3683 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "dataDir", "Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._uid3684 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "uid", "I");
-			global::android.content.pm.ApplicationInfo._targetSdkVersion3685 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "targetSdkVersion", "I");
-			global::android.content.pm.ApplicationInfo._enabled3686 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "enabled", "Z");
-			global::android.content.pm.ApplicationInfo._CREATOR3687 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.pm.ApplicationInfo._taskAffinity1948 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "taskAffinity", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._permission1949 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "permission", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._processName1950 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "processName", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._className1951 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "className", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._descriptionRes1952 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "descriptionRes", "I");
+			global::android.content.pm.ApplicationInfo._theme1953 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "theme", "I");
+			global::android.content.pm.ApplicationInfo._manageSpaceActivityName1954 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "manageSpaceActivityName", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._backupAgentName1955 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "backupAgentName", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._flags1975 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "flags", "I");
+			global::android.content.pm.ApplicationInfo._sourceDir1976 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "sourceDir", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._publicSourceDir1977 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "publicSourceDir", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._sharedLibraryFiles1978 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "sharedLibraryFiles", "[Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._dataDir1979 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "dataDir", "Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._uid1980 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "uid", "I");
+			global::android.content.pm.ApplicationInfo._targetSdkVersion1981 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "targetSdkVersion", "I");
+			global::android.content.pm.ApplicationInfo._enabled1982 = @__env.GetFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "enabled", "Z");
+			global::android.content.pm.ApplicationInfo._CREATOR1983 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

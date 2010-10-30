@@ -14,35 +14,35 @@ namespace java.nio.channels
 		internal ScatteringByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _read22550;
+		private static global::MonoJavaBridge.MethodId _m0;
 		long java.nio.channels.ScatteringByteChannel.read(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.ScatteringByteChannel_._read22550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.ScatteringByteChannel_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22551;
+		private static global::MonoJavaBridge.MethodId _m1;
 		long java.nio.channels.ScatteringByteChannel.read(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.ScatteringByteChannel_._read22551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.ScatteringByteChannel_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22552;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.nio.channels.ReadableByteChannel.read(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ScatteringByteChannel_._read22552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ScatteringByteChannel_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _close22553;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ScatteringByteChannel_._close22553);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ScatteringByteChannel_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen22554;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.ScatteringByteChannel_._isOpen22554);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.ScatteringByteChannel_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _close22555;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ScatteringByteChannel_._close22555);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ScatteringByteChannel_._m5);
 		}
 		static ScatteringByteChannel_()
 		{

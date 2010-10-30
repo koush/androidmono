@@ -14,106 +14,106 @@ namespace android.widget
 			internal ScaleType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _values17252;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::android.widget.ImageView.ScaleType[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.ImageView.ScaleType._values17252.native == global::System.IntPtr.Zero)
-					global::android.widget.ImageView.ScaleType._values17252 = @__env.GetStaticMethodIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "values", "()[Landroid/widget/ImageView/ScaleType;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.widget.ImageView.ScaleType>(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._values17252)) as android.widget.ImageView.ScaleType[];
+				if (global::android.widget.ImageView.ScaleType._m0.native == global::System.IntPtr.Zero)
+					global::android.widget.ImageView.ScaleType._m0 = @__env.GetStaticMethodIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "values", "()[Landroid/widget/ImageView/ScaleType;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.widget.ImageView.ScaleType>(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._m0)) as android.widget.ImageView.ScaleType[];
 			}
-			internal static global::MonoJavaBridge.MethodId _valueOf17253;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::android.widget.ImageView.ScaleType valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.ImageView.ScaleType._valueOf17253.native == global::System.IntPtr.Zero)
-					global::android.widget.ImageView.ScaleType._valueOf17253 = @__env.GetStaticMethodIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/ImageView$ScaleType;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._valueOf17253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.ImageView.ScaleType;
+				if (global::android.widget.ImageView.ScaleType._m1.native == global::System.IntPtr.Zero)
+					global::android.widget.ImageView.ScaleType._m1 = @__env.GetStaticMethodIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/ImageView$ScaleType;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.ImageView.ScaleType;
 			}
-			internal static global::MonoJavaBridge.FieldId _CENTER17254;
+			internal static global::MonoJavaBridge.FieldId _CENTER6063;
 			public static global::android.widget.ImageView.ScaleType CENTER
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER17254)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER6063)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CENTER_CROP17255;
+			internal static global::MonoJavaBridge.FieldId _CENTER_CROP6064;
 			public static global::android.widget.ImageView.ScaleType CENTER_CROP
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_CROP17255)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_CROP6064)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _CENTER_INSIDE17256;
+			internal static global::MonoJavaBridge.FieldId _CENTER_INSIDE6065;
 			public static global::android.widget.ImageView.ScaleType CENTER_INSIDE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_INSIDE17256)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_INSIDE6065)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _FIT_CENTER17257;
+			internal static global::MonoJavaBridge.FieldId _FIT_CENTER6066;
 			public static global::android.widget.ImageView.ScaleType FIT_CENTER
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_CENTER17257)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_CENTER6066)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _FIT_END17258;
+			internal static global::MonoJavaBridge.FieldId _FIT_END6067;
 			public static global::android.widget.ImageView.ScaleType FIT_END
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_END17258)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_END6067)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _FIT_START17259;
+			internal static global::MonoJavaBridge.FieldId _FIT_START6068;
 			public static global::android.widget.ImageView.ScaleType FIT_START
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_START17259)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_START6068)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _FIT_XY17260;
+			internal static global::MonoJavaBridge.FieldId _FIT_XY6069;
 			public static global::android.widget.ImageView.ScaleType FIT_XY
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_XY17260)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_XY6069)) as android.widget.ImageView.ScaleType;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _MATRIX17261;
+			internal static global::MonoJavaBridge.FieldId _MATRIX6070;
 			public static global::android.widget.ImageView.ScaleType MATRIX
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _MATRIX17261)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _MATRIX6070)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			static ScaleType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.ImageView.ScaleType.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ImageView$ScaleType"));
-				global::android.widget.ImageView.ScaleType._CENTER17254 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._CENTER_CROP17255 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER_CROP", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._CENTER_INSIDE17256 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER_INSIDE", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._FIT_CENTER17257 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_CENTER", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._FIT_END17258 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_END", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._FIT_START17259 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_START", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._FIT_XY17260 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_XY", "Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._MATRIX17261 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "MATRIX", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._CENTER6063 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._CENTER_CROP6064 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER_CROP", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._CENTER_INSIDE6065 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "CENTER_INSIDE", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._FIT_CENTER6066 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_CENTER", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._FIT_END6067 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_END", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._FIT_START6068 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_START", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._FIT_XY6069 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_XY", "Landroid/widget/ImageView$ScaleType;");
+				global::android.widget.ImageView.ScaleType._MATRIX6070 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "MATRIX", "Landroid/widget/ImageView$ScaleType;");
 			}
 			internal static void InitJNI()
 			{
@@ -126,10 +126,10 @@ namespace android.widget
 				return getDrawable();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDrawable17262;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.graphics.drawable.Drawable getDrawable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ImageView.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;", ref global::android.widget.ImageView._getDrawable17262) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ImageView.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;", ref global::android.widget.ImageView._m0) as android.graphics.drawable.Drawable;
 		}
 		public new int Alpha
 		{
@@ -138,55 +138,55 @@ namespace android.widget
 				setAlpha(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAlpha17263;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setAlpha(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setAlpha", "(I)V", ref global::android.widget.ImageView._setAlpha17263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setAlpha", "(I)V", ref global::android.widget.ImageView._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setColorFilter17264;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setColorFilter(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(I)V", ref global::android.widget.ImageView._setColorFilter17264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(I)V", ref global::android.widget.ImageView._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setColorFilter17265;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(ILandroid/graphics/PorterDuff$Mode;)V", ref global::android.widget.ImageView._setColorFilter17265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(ILandroid/graphics/PorterDuff$Mode;)V", ref global::android.widget.ImageView._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setColorFilter17266;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setColorFilter(android.graphics.ColorFilter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V", ref global::android.widget.ImageView._setColorFilter17266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V", ref global::android.widget.ImageView._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearColorFilter17267;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void clearColorFilter()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "clearColorFilter", "()V", ref global::android.widget.ImageView._clearColorFilter17267);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "clearColorFilter", "()V", ref global::android.widget.ImageView._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDraw17268;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.ImageView._onDraw17268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.ImageView._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateDrawable17269;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ImageView._invalidateDrawable17269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ImageView._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _verifyDrawable17270;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.ImageView._verifyDrawable17270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.ImageView._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged17271;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "drawableStateChanged", "()V", ref global::android.widget.ImageView._drawableStateChanged17271);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "drawableStateChanged", "()V", ref global::android.widget.ImageView._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState17272;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int[] onCreateDrawableState(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.ImageView.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.ImageView._onCreateDrawableState17272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.ImageView.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.ImageView._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
 		public new bool Selected
 		{
@@ -195,10 +195,10 @@ namespace android.widget
 				setSelected(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelected17273;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override void setSelected(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setSelected", "(Z)V", ref global::android.widget.ImageView._setSelected17273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setSelected", "(Z)V", ref global::android.widget.ImageView._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Baseline
 		{
@@ -207,20 +207,20 @@ namespace android.widget
 				return getBaseline();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBaseline17274;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override int getBaseline()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.ImageView.staticClass, "getBaseline", "()I", ref global::android.widget.ImageView._getBaseline17274);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.ImageView.staticClass, "getBaseline", "()I", ref global::android.widget.ImageView._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure17275;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "onMeasure", "(II)V", ref global::android.widget.ImageView._onMeasure17275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "onMeasure", "(II)V", ref global::android.widget.ImageView._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSetAlpha17276;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected override bool onSetAlpha(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "onSetAlpha", "(I)Z", ref global::android.widget.ImageView._onSetAlpha17276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "onSetAlpha", "(I)Z", ref global::android.widget.ImageView._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaxHeight
 		{
@@ -229,10 +229,10 @@ namespace android.widget
 				setMaxHeight(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxHeight17277;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setMaxHeight(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setMaxHeight", "(I)V", ref global::android.widget.ImageView._setMaxHeight17277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setMaxHeight", "(I)V", ref global::android.widget.ImageView._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaxWidth
 		{
@@ -241,15 +241,15 @@ namespace android.widget
 				setMaxWidth(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxWidth17278;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setMaxWidth(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setMaxWidth", "(I)V", ref global::android.widget.ImageView._setMaxWidth17278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setMaxWidth", "(I)V", ref global::android.widget.ImageView._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFrame17279;
+		private static global::MonoJavaBridge.MethodId _m17;
 		protected virtual bool setFrame(int arg0, int arg1, int arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "setFrame", "(IIII)Z", ref global::android.widget.ImageView._setFrame17279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.ImageView.staticClass, "setFrame", "(IIII)Z", ref global::android.widget.ImageView._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new bool AdjustViewBounds
 		{
@@ -258,10 +258,10 @@ namespace android.widget
 				setAdjustViewBounds(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAdjustViewBounds17280;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setAdjustViewBounds(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setAdjustViewBounds", "(Z)V", ref global::android.widget.ImageView._setAdjustViewBounds17280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setAdjustViewBounds", "(Z)V", ref global::android.widget.ImageView._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ImageResource
 		{
@@ -270,10 +270,10 @@ namespace android.widget
 				setImageResource(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageResource17281;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void setImageResource(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageResource", "(I)V", ref global::android.widget.ImageView._setImageResource17281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageResource", "(I)V", ref global::android.widget.ImageView._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.net.Uri ImageURI
 		{
@@ -282,10 +282,10 @@ namespace android.widget
 				setImageURI(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageURI17282;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setImageURI(android.net.Uri arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageURI", "(Landroid/net/Uri;)V", ref global::android.widget.ImageView._setImageURI17282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageURI", "(Landroid/net/Uri;)V", ref global::android.widget.ImageView._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable ImageDrawable
 		{
@@ -294,10 +294,10 @@ namespace android.widget
 				setImageDrawable(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageDrawable17283;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setImageDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ImageView._setImageDrawable17283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.ImageView._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Bitmap ImageBitmap
 		{
@@ -306,15 +306,15 @@ namespace android.widget
 				setImageBitmap(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageBitmap17284;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setImageBitmap(android.graphics.Bitmap arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageBitmap", "(Landroid/graphics/Bitmap;)V", ref global::android.widget.ImageView._setImageBitmap17284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageBitmap", "(Landroid/graphics/Bitmap;)V", ref global::android.widget.ImageView._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageState17285;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void setImageState(int[] arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageState", "([IZ)V", ref global::android.widget.ImageView._setImageState17285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageState", "([IZ)V", ref global::android.widget.ImageView._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int ImageLevel
 		{
@@ -323,20 +323,20 @@ namespace android.widget
 				setImageLevel(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageLevel17286;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setImageLevel(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageLevel", "(I)V", ref global::android.widget.ImageView._setImageLevel17286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageLevel", "(I)V", ref global::android.widget.ImageView._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setScaleType17287;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual void setScaleType(android.widget.ImageView.ScaleType arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setScaleType", "(Landroid/widget/ImageView$ScaleType;)V", ref global::android.widget.ImageView._setScaleType17287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setScaleType", "(Landroid/widget/ImageView$ScaleType;)V", ref global::android.widget.ImageView._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaleType17288;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual global::android.widget.ImageView.ScaleType getScaleType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.widget.ImageView.ScaleType>(this, global::android.widget.ImageView.staticClass, "getScaleType", "()Landroid/widget/ImageView$ScaleType;", ref global::android.widget.ImageView._getScaleType17288) as android.widget.ImageView.ScaleType;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.widget.ImageView.ScaleType>(this, global::android.widget.ImageView.staticClass, "getScaleType", "()Landroid/widget/ImageView$ScaleType;", ref global::android.widget.ImageView._m26) as android.widget.ImageView.ScaleType;
 		}
 		public new global::android.graphics.Matrix ImageMatrix
 		{
@@ -349,41 +349,41 @@ namespace android.widget
 				setImageMatrix(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getImageMatrix17289;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual global::android.graphics.Matrix getImageMatrix()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ImageView.staticClass, "getImageMatrix", "()Landroid/graphics/Matrix;", ref global::android.widget.ImageView._getImageMatrix17289) as android.graphics.Matrix;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.ImageView.staticClass, "getImageMatrix", "()Landroid/graphics/Matrix;", ref global::android.widget.ImageView._m27) as android.graphics.Matrix;
 		}
-		internal static global::MonoJavaBridge.MethodId _setImageMatrix17290;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual void setImageMatrix(android.graphics.Matrix arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageMatrix", "(Landroid/graphics/Matrix;)V", ref global::android.widget.ImageView._setImageMatrix17290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.ImageView.staticClass, "setImageMatrix", "(Landroid/graphics/Matrix;)V", ref global::android.widget.ImageView._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ImageView17291;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public ImageView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ImageView._ImageView17291.native == global::System.IntPtr.Zero)
-				global::android.widget.ImageView._ImageView17291 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._ImageView17291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.ImageView._m29.native == global::System.IntPtr.Zero)
+				global::android.widget.ImageView._m29 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ImageView17292;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public ImageView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ImageView._ImageView17292.native == global::System.IntPtr.Zero)
-				global::android.widget.ImageView._ImageView17292 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._ImageView17292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.ImageView._m30.native == global::System.IntPtr.Zero)
+				global::android.widget.ImageView._m30 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ImageView17293;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public ImageView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.ImageView._ImageView17293.native == global::System.IntPtr.Zero)
-				global::android.widget.ImageView._ImageView17293 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._ImageView17293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.ImageView._m31.native == global::System.IntPtr.Zero)
+				global::android.widget.ImageView._m31 = @__env.GetMethodIDNoThrow(global::android.widget.ImageView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageView.staticClass, global::android.widget.ImageView._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ImageView()

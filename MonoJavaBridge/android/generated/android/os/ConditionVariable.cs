@@ -7,42 +7,42 @@ namespace android.os
 		protected ConditionVariable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close9682;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "close", "()V", ref global::android.os.ConditionVariable._close9682);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "close", "()V", ref global::android.os.ConditionVariable._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _open9683;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void open()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "open", "()V", ref global::android.os.ConditionVariable._open9683);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "open", "()V", ref global::android.os.ConditionVariable._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _block9684;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void block()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "block", "()V", ref global::android.os.ConditionVariable._block9684);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.ConditionVariable.staticClass, "block", "()V", ref global::android.os.ConditionVariable._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _block9685;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual bool block(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.ConditionVariable.staticClass, "block", "(J)Z", ref global::android.os.ConditionVariable._block9685, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.ConditionVariable.staticClass, "block", "(J)Z", ref global::android.os.ConditionVariable._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ConditionVariable9686;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public ConditionVariable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ConditionVariable._ConditionVariable9686.native == global::System.IntPtr.Zero)
-				global::android.os.ConditionVariable._ConditionVariable9686 = @__env.GetMethodIDNoThrow(global::android.os.ConditionVariable.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable9686);
+			if (global::android.os.ConditionVariable._m4.native == global::System.IntPtr.Zero)
+				global::android.os.ConditionVariable._m4 = @__env.GetMethodIDNoThrow(global::android.os.ConditionVariable.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._m4);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ConditionVariable9687;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public ConditionVariable(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ConditionVariable._ConditionVariable9687.native == global::System.IntPtr.Zero)
-				global::android.os.ConditionVariable._ConditionVariable9687 = @__env.GetMethodIDNoThrow(global::android.os.ConditionVariable.staticClass, "<init>", "(Z)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable9687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.os.ConditionVariable._m5.native == global::System.IntPtr.Zero)
+				global::android.os.ConditionVariable._m5 = @__env.GetMethodIDNoThrow(global::android.os.ConditionVariable.staticClass, "<init>", "(Z)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ConditionVariable()

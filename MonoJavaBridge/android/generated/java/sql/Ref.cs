@@ -16,25 +16,25 @@ namespace java.sql
 		internal Ref_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject24754;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object java.sql.Ref.getObject(java.util.Map arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Ref_.staticClass, "getObject", "(Ljava/util/Map;)Ljava/lang/Object;", ref global::java.sql.Ref_._getObject24754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Ref_.staticClass, "getObject", "(Ljava/util/Map;)Ljava/lang/Object;", ref global::java.sql.Ref_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject24755;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.Object java.sql.Ref.getObject()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Ref_.staticClass, "getObject", "()Ljava/lang/Object;", ref global::java.sql.Ref_._getObject24755) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Ref_.staticClass, "getObject", "()Ljava/lang/Object;", ref global::java.sql.Ref_._m1) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setObject24756;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void java.sql.Ref.setObject(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Ref_.staticClass, "setObject", "(Ljava/lang/Object;)V", ref global::java.sql.Ref_._setObject24756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Ref_.staticClass, "setObject", "(Ljava/lang/Object;)V", ref global::java.sql.Ref_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getBaseTypeName24757;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String java.sql.Ref.getBaseTypeName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.Ref_.staticClass, "getBaseTypeName", "()Ljava/lang/String;", ref global::java.sql.Ref_._getBaseTypeName24757) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.Ref_.staticClass, "getBaseTypeName", "()Ljava/lang/String;", ref global::java.sql.Ref_._m3) as java.lang.String;
 		}
 		static Ref_()
 		{

@@ -13,10 +13,10 @@ namespace org.apache.http.entity
 		internal ContentLengthStrategy_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _determineLength32529;
+		private static global::MonoJavaBridge.MethodId _m0;
 		long org.apache.http.entity.ContentLengthStrategy.determineLength(org.apache.http.HttpMessage arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.ContentLengthStrategy_.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.entity.ContentLengthStrategy_._determineLength32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.ContentLengthStrategy_.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.entity.ContentLengthStrategy_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ContentLengthStrategy_()
 		{

@@ -7,152 +7,152 @@ namespace java.util
 		protected BitSet(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get25876;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.util.BitSet get(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.BitSet.staticClass, "get", "(II)Ljava/util/BitSet;", ref global::java.util.BitSet._get25876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.BitSet;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.BitSet.staticClass, "get", "(II)Ljava/util/BitSet;", ref global::java.util.BitSet._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.BitSet;
 		}
-		internal static global::MonoJavaBridge.MethodId _get25877;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool get(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "get", "(I)Z", ref global::java.util.BitSet._get25877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "get", "(I)Z", ref global::java.util.BitSet._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _equals25878;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.BitSet._equals25878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.BitSet._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString25879;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.BitSet.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.BitSet._toString25879) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.BitSet.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.BitSet._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode25880;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "hashCode", "()I", ref global::java.util.BitSet._hashCode25880);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "hashCode", "()I", ref global::java.util.BitSet._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _clone25881;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.BitSet.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.BitSet._clone25881) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.BitSet.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.util.BitSet._m5) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _clear25882;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void clear(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "(II)V", ref global::java.util.BitSet._clear25882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "(II)V", ref global::java.util.BitSet._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _clear25883;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void clear(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "(I)V", ref global::java.util.BitSet._clear25883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "(I)V", ref global::java.util.BitSet._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _clear25884;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "()V", ref global::java.util.BitSet._clear25884);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "clear", "()V", ref global::java.util.BitSet._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _length25885;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int length()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "length", "()I", ref global::java.util.BitSet._length25885);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "length", "()I", ref global::java.util.BitSet._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty25886;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "isEmpty", "()Z", ref global::java.util.BitSet._isEmpty25886);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "isEmpty", "()Z", ref global::java.util.BitSet._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _size25887;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int size()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "size", "()I", ref global::java.util.BitSet._size25887);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "size", "()I", ref global::java.util.BitSet._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _set25888;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void set(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(IZ)V", ref global::java.util.BitSet._set25888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(IZ)V", ref global::java.util.BitSet._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _set25889;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void set(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(II)V", ref global::java.util.BitSet._set25889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(II)V", ref global::java.util.BitSet._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _set25890;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void set(int arg0, int arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(IIZ)V", ref global::java.util.BitSet._set25890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(IIZ)V", ref global::java.util.BitSet._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _set25891;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void set(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(I)V", ref global::java.util.BitSet._set25891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "set", "(I)V", ref global::java.util.BitSet._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _flip25892;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void flip(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "flip", "(I)V", ref global::java.util.BitSet._flip25892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "flip", "(I)V", ref global::java.util.BitSet._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _flip25893;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void flip(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "flip", "(II)V", ref global::java.util.BitSet._flip25893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "flip", "(II)V", ref global::java.util.BitSet._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _nextSetBit25894;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual int nextSetBit(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "nextSetBit", "(I)I", ref global::java.util.BitSet._nextSetBit25894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "nextSetBit", "(I)I", ref global::java.util.BitSet._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _nextClearBit25895;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual int nextClearBit(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "nextClearBit", "(I)I", ref global::java.util.BitSet._nextClearBit25895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "nextClearBit", "(I)I", ref global::java.util.BitSet._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _intersects25896;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool intersects(java.util.BitSet arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "intersects", "(Ljava/util/BitSet;)Z", ref global::java.util.BitSet._intersects25896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.BitSet.staticClass, "intersects", "(Ljava/util/BitSet;)Z", ref global::java.util.BitSet._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _cardinality25897;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual int cardinality()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "cardinality", "()I", ref global::java.util.BitSet._cardinality25897);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.BitSet.staticClass, "cardinality", "()I", ref global::java.util.BitSet._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _and25898;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void and(java.util.BitSet arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "and", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._and25898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "and", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _or25899;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void or(java.util.BitSet arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "or", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._or25899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "or", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _xor25900;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void xor(java.util.BitSet arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "xor", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._xor25900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "xor", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _andNot25901;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual void andNot(java.util.BitSet arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "andNot", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._andNot25901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.BitSet.staticClass, "andNot", "(Ljava/util/BitSet;)V", ref global::java.util.BitSet._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _BitSet25902;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public BitSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.BitSet._BitSet25902.native == global::System.IntPtr.Zero)
-				global::java.util.BitSet._BitSet25902 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.BitSet.staticClass, global::java.util.BitSet._BitSet25902);
+			if (global::java.util.BitSet._m26.native == global::System.IntPtr.Zero)
+				global::java.util.BitSet._m26 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.BitSet.staticClass, global::java.util.BitSet._m26);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BitSet25903;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public BitSet(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.BitSet._BitSet25903.native == global::System.IntPtr.Zero)
-				global::java.util.BitSet._BitSet25903 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.BitSet.staticClass, global::java.util.BitSet._BitSet25903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.util.BitSet._m27.native == global::System.IntPtr.Zero)
+				global::java.util.BitSet._m27 = @__env.GetMethodIDNoThrow(global::java.util.BitSet.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.BitSet.staticClass, global::java.util.BitSet._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BitSet()

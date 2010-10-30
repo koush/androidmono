@@ -14,15 +14,15 @@ namespace org.apache.http.impl.conn.tsccm
 		internal PoolEntryRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _abortRequest33151;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.impl.conn.tsccm.PoolEntryRequest.abortRequest()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "abortRequest", "()V", ref global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._abortRequest33151);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "abortRequest", "()V", ref global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPoolEntry33152;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.apache.http.impl.conn.tsccm.BasicPoolEntry org.apache.http.impl.conn.tsccm.PoolEntryRequest.getPoolEntry(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "getPoolEntry", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;", ref global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._getPoolEntry33152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.impl.conn.tsccm.BasicPoolEntry;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, "getPoolEntry", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;", ref global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as org.apache.http.impl.conn.tsccm.BasicPoolEntry;
 		}
 		static PoolEntryRequest_()
 		{

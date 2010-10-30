@@ -7,10 +7,10 @@ namespace org.apache.http.impl
 		protected HttpConnectionMetricsImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _reset32653;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "reset", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._reset32653);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "reset", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m0);
 		}
 		public new long RequestCount
 		{
@@ -19,10 +19,10 @@ namespace org.apache.http.impl
 				return getRequestCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRequestCount32654;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual long getRequestCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getRequestCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._getRequestCount32654);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getRequestCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m1);
 		}
 		public new long ResponseCount
 		{
@@ -31,10 +31,10 @@ namespace org.apache.http.impl
 				return getResponseCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getResponseCount32655;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual long getResponseCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getResponseCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._getResponseCount32655);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getResponseCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m2);
 		}
 		public new long SentBytesCount
 		{
@@ -43,10 +43,10 @@ namespace org.apache.http.impl
 				return getSentBytesCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSentBytesCount32656;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual long getSentBytesCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getSentBytesCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._getSentBytesCount32656);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getSentBytesCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m3);
 		}
 		public new long ReceivedBytesCount
 		{
@@ -55,38 +55,38 @@ namespace org.apache.http.impl
 				return getReceivedBytesCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getReceivedBytesCount32657;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual long getReceivedBytesCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getReceivedBytesCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._getReceivedBytesCount32657);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getReceivedBytesCount", "()J", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetric32658;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.lang.Object getMetric(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getMetric", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._getMetric32658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "getMetric", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _incrementRequestCount32659;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void incrementRequestCount()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "incrementRequestCount", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._incrementRequestCount32659);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "incrementRequestCount", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _incrementResponseCount32660;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void incrementResponseCount()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "incrementResponseCount", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._incrementResponseCount32660);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "incrementResponseCount", "()V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMetric32661;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setMetric(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "setMetric", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._setMetric32661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "setMetric", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::org.apache.http.impl.HttpConnectionMetricsImpl._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpConnectionMetricsImpl32662;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public HttpConnectionMetricsImpl(org.apache.http.io.HttpTransportMetrics arg0, org.apache.http.io.HttpTransportMetrics arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.HttpConnectionMetricsImpl._HttpConnectionMetricsImpl32662.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.HttpConnectionMetricsImpl._HttpConnectionMetricsImpl32662 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "<init>", "(Lorg/apache/http/io/HttpTransportMetrics;Lorg/apache/http/io/HttpTransportMetrics;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, global::org.apache.http.impl.HttpConnectionMetricsImpl._HttpConnectionMetricsImpl32662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.impl.HttpConnectionMetricsImpl._m9.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.HttpConnectionMetricsImpl._m9 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, "<init>", "(Lorg/apache/http/io/HttpTransportMetrics;Lorg/apache/http/io/HttpTransportMetrics;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.HttpConnectionMetricsImpl.staticClass, global::org.apache.http.impl.HttpConnectionMetricsImpl._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String REQUEST_COUNT

@@ -15,20 +15,20 @@ namespace org.w3c.dom
 		internal DOMStringList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength34383;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.w3c.dom.DOMStringList.getLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMStringList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.DOMStringList_._getLength34383);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.DOMStringList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.DOMStringList_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _contains34384;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool org.w3c.dom.DOMStringList.contains(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DOMStringList_.staticClass, "contains", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.DOMStringList_._contains34384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.DOMStringList_.staticClass, "contains", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.DOMStringList_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _item34385;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.w3c.dom.DOMStringList.item(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMStringList_.staticClass, "item", "(I)Ljava/lang/String;", ref global::org.w3c.dom.DOMStringList_._item34385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMStringList_.staticClass, "item", "(I)Ljava/lang/String;", ref global::org.w3c.dom.DOMStringList_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		static DOMStringList_()
 		{

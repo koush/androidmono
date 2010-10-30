@@ -7,22 +7,22 @@ namespace android.database
 		protected StaleDataException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _StaleDataException4702;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public StaleDataException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.StaleDataException._StaleDataException4702.native == global::System.IntPtr.Zero)
-				global::android.database.StaleDataException._StaleDataException4702 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException4702);
+			if (global::android.database.StaleDataException._m0.native == global::System.IntPtr.Zero)
+				global::android.database.StaleDataException._m0 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StaleDataException4703;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public StaleDataException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.StaleDataException._StaleDataException4703.native == global::System.IntPtr.Zero)
-				global::android.database.StaleDataException._StaleDataException4703 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException4703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.database.StaleDataException._m1.native == global::System.IntPtr.Zero)
+				global::android.database.StaleDataException._m1 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static StaleDataException()

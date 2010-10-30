@@ -13,10 +13,10 @@ namespace javax.xml.xpath
 		internal XPathFunctionResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveFunction31333;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::javax.xml.xpath.XPathFunction javax.xml.xpath.XPathFunctionResolver.resolveFunction(javax.xml.@namespace.QName arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathFunction>(this, global::javax.xml.xpath.XPathFunctionResolver_.staticClass, "resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;", ref global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.xml.xpath.XPathFunction;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathFunction>(this, global::javax.xml.xpath.XPathFunctionResolver_.staticClass, "resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;", ref global::javax.xml.xpath.XPathFunctionResolver_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as javax.xml.xpath.XPathFunction;
 		}
 		static XPathFunctionResolver_()
 		{

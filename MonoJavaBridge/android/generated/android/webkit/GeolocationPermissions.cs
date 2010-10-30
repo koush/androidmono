@@ -20,10 +20,10 @@ namespace android.webkit
 			internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _invoke16042;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.webkit.GeolocationPermissions.Callback.invoke(java.lang.String arg0, bool arg1, bool arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.Callback_.staticClass, "invoke", "(Ljava/lang/String;ZZ)V", ref global::android.webkit.GeolocationPermissions.Callback_._invoke16042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.Callback_.staticClass, "invoke", "(Ljava/lang/String;ZZ)V", ref global::android.webkit.GeolocationPermissions.Callback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static Callback_()
 			{
@@ -43,13 +43,13 @@ namespace android.webkit
 			protected CallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _CallbackDelegateWrapper16043;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public CallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._CallbackDelegateWrapper16043.native == global::System.IntPtr.Zero)
-					global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._CallbackDelegateWrapper16043 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._CallbackDelegateWrapper16043);
+				if (global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass, global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static CallbackDelegateWrapper()
@@ -76,10 +76,10 @@ namespace android.webkit
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _clear16044;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public void clear(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "clear", "(Ljava/lang/String;)V", ref global::android.webkit.GeolocationPermissions._clear16044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "clear", "(Ljava/lang/String;)V", ref global::android.webkit.GeolocationPermissions._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::android.webkit.GeolocationPermissions Instance
 		{
@@ -88,49 +88,49 @@ namespace android.webkit
 				return getInstance();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance16045;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static global::android.webkit.GeolocationPermissions getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.GeolocationPermissions._getInstance16045.native == global::System.IntPtr.Zero)
-				global::android.webkit.GeolocationPermissions._getInstance16045 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "getInstance", "()Landroid/webkit/GeolocationPermissions;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.GeolocationPermissions>(@__env.CallStaticObjectMethod(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._getInstance16045)) as android.webkit.GeolocationPermissions;
+			if (global::android.webkit.GeolocationPermissions._m1.native == global::System.IntPtr.Zero)
+				global::android.webkit.GeolocationPermissions._m1 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "getInstance", "()Landroid/webkit/GeolocationPermissions;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.GeolocationPermissions>(@__env.CallStaticObjectMethod(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._m1)) as android.webkit.GeolocationPermissions;
 		}
-		internal static global::MonoJavaBridge.MethodId _allow16046;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void allow(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "allow", "(Ljava/lang/String;)V", ref global::android.webkit.GeolocationPermissions._allow16046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "allow", "(Ljava/lang/String;)V", ref global::android.webkit.GeolocationPermissions._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrigins16047;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public void getOrigins(android.webkit.ValueCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "getOrigins", "(Landroid/webkit/ValueCallback;)V", ref global::android.webkit.GeolocationPermissions._getOrigins16047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "getOrigins", "(Landroid/webkit/ValueCallback;)V", ref global::android.webkit.GeolocationPermissions._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void getOrigins(global::android.webkit.ValueCallbackDelegate arg0)
 		{
 			getOrigins((global::android.webkit.ValueCallbackDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getAllowed16048;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public void getAllowed(java.lang.String arg0, android.webkit.ValueCallback arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "getAllowed", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.GeolocationPermissions._getAllowed16048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "getAllowed", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.GeolocationPermissions._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void getAllowed(java.lang.String arg0, global::android.webkit.ValueCallbackDelegate arg1)
 		{
 			getAllowed(arg0, (global::android.webkit.ValueCallbackDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearAll16049;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public void clearAll()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "clearAll", "()V", ref global::android.webkit.GeolocationPermissions._clearAll16049);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, "clearAll", "()V", ref global::android.webkit.GeolocationPermissions._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _GeolocationPermissions16050;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public GeolocationPermissions() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.GeolocationPermissions._GeolocationPermissions16050.native == global::System.IntPtr.Zero)
-				global::android.webkit.GeolocationPermissions._GeolocationPermissions16050 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._GeolocationPermissions16050);
+			if (global::android.webkit.GeolocationPermissions._m6.native == global::System.IntPtr.Zero)
+				global::android.webkit.GeolocationPermissions._m6 = @__env.GetMethodIDNoThrow(global::android.webkit.GeolocationPermissions.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._m6);
 			Init(@__env, handle);
 		}
 		static GeolocationPermissions()

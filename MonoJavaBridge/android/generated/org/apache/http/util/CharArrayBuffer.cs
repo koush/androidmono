@@ -7,128 +7,128 @@ namespace org.apache.http.util
 		internal CharArrayBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString33980;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._toString33980) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _append33981;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public void append(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Ljava/lang/String;)V", ref global::org.apache.http.util.CharArrayBuffer._append33981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Ljava/lang/String;)V", ref global::org.apache.http.util.CharArrayBuffer._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33982;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void append(org.apache.http.util.CharArrayBuffer arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/CharArrayBuffer;II)V", ref global::org.apache.http.util.CharArrayBuffer._append33982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/CharArrayBuffer;II)V", ref global::org.apache.http.util.CharArrayBuffer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33983;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public void append(org.apache.http.util.CharArrayBuffer arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/CharArrayBuffer;)V", ref global::org.apache.http.util.CharArrayBuffer._append33983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/CharArrayBuffer;)V", ref global::org.apache.http.util.CharArrayBuffer._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33984;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public void append(char arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(C)V", ref global::org.apache.http.util.CharArrayBuffer._append33984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(C)V", ref global::org.apache.http.util.CharArrayBuffer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33985;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public void append(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "([BII)V", ref global::org.apache.http.util.CharArrayBuffer._append33985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "([BII)V", ref global::org.apache.http.util.CharArrayBuffer._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33986;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public void append(org.apache.http.util.ByteArrayBuffer arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/ByteArrayBuffer;II)V", ref global::org.apache.http.util.CharArrayBuffer._append33986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Lorg/apache/http/util/ByteArrayBuffer;II)V", ref global::org.apache.http.util.CharArrayBuffer._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33987;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public void append(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Ljava/lang/Object;)V", ref global::org.apache.http.util.CharArrayBuffer._append33987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "(Ljava/lang/Object;)V", ref global::org.apache.http.util.CharArrayBuffer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _append33988;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public void append(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "([CII)V", ref global::org.apache.http.util.CharArrayBuffer._append33988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "append", "([CII)V", ref global::org.apache.http.util.CharArrayBuffer._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf33989;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public int indexOf(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "indexOf", "(I)I", ref global::org.apache.http.util.CharArrayBuffer._indexOf33989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "indexOf", "(I)I", ref global::org.apache.http.util.CharArrayBuffer._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf33990;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public int indexOf(int arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "indexOf", "(III)I", ref global::org.apache.http.util.CharArrayBuffer._indexOf33990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "indexOf", "(III)I", ref global::org.apache.http.util.CharArrayBuffer._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _clear33991;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public void clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "clear", "()V", ref global::org.apache.http.util.CharArrayBuffer._clear33991);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "clear", "()V", ref global::org.apache.http.util.CharArrayBuffer._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _length33992;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public int length()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "length", "()I", ref global::org.apache.http.util.CharArrayBuffer._length33992);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "length", "()I", ref global::org.apache.http.util.CharArrayBuffer._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty33993;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public bool isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "isEmpty", "()Z", ref global::org.apache.http.util.CharArrayBuffer._isEmpty33993);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "isEmpty", "()Z", ref global::org.apache.http.util.CharArrayBuffer._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _charAt33994;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public char charAt(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "charAt", "(I)C", ref global::org.apache.http.util.CharArrayBuffer._charAt33994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "charAt", "(I)C", ref global::org.apache.http.util.CharArrayBuffer._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _substring33995;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public global::java.lang.String substring(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "substring", "(II)Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._substring33995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "substring", "(II)Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _toCharArray33996;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public char[] toCharArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "toCharArray", "()[C", ref global::org.apache.http.util.CharArrayBuffer._toCharArray33996) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "toCharArray", "()[C", ref global::org.apache.http.util.CharArrayBuffer._m16) as char[];
 		}
-		internal static global::MonoJavaBridge.MethodId _ensureCapacity33997;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public void ensureCapacity(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "ensureCapacity", "(I)V", ref global::org.apache.http.util.CharArrayBuffer._ensureCapacity33997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "ensureCapacity", "(I)V", ref global::org.apache.http.util.CharArrayBuffer._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _capacity33998;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public int capacity()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "capacity", "()I", ref global::org.apache.http.util.CharArrayBuffer._capacity33998);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "capacity", "()I", ref global::org.apache.http.util.CharArrayBuffer._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _setLength33999;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public void setLength(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "setLength", "(I)V", ref global::org.apache.http.util.CharArrayBuffer._setLength33999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "setLength", "(I)V", ref global::org.apache.http.util.CharArrayBuffer._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _buffer34000;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public char[] buffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "buffer", "()[C", ref global::org.apache.http.util.CharArrayBuffer._buffer34000) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "buffer", "()[C", ref global::org.apache.http.util.CharArrayBuffer._m20) as char[];
 		}
-		internal static global::MonoJavaBridge.MethodId _isFull34001;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public bool isFull()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "isFull", "()Z", ref global::org.apache.http.util.CharArrayBuffer._isFull34001);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "isFull", "()Z", ref global::org.apache.http.util.CharArrayBuffer._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _substringTrimmed34002;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public global::java.lang.String substringTrimmed(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "substringTrimmed", "(II)Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._substringTrimmed34002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.util.CharArrayBuffer.staticClass, "substringTrimmed", "(II)Ljava/lang/String;", ref global::org.apache.http.util.CharArrayBuffer._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _CharArrayBuffer34003;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public CharArrayBuffer(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.util.CharArrayBuffer._CharArrayBuffer34003.native == global::System.IntPtr.Zero)
-				global::org.apache.http.util.CharArrayBuffer._CharArrayBuffer34003 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.CharArrayBuffer.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.util.CharArrayBuffer.staticClass, global::org.apache.http.util.CharArrayBuffer._CharArrayBuffer34003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.util.CharArrayBuffer._m23.native == global::System.IntPtr.Zero)
+				global::org.apache.http.util.CharArrayBuffer._m23 = @__env.GetMethodIDNoThrow(global::org.apache.http.util.CharArrayBuffer.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.util.CharArrayBuffer.staticClass, global::org.apache.http.util.CharArrayBuffer._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static CharArrayBuffer()

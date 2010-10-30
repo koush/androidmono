@@ -13,10 +13,10 @@ namespace android.webkit
 		internal ValueCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onReceiveValue16121;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.ValueCallback_.staticClass, "onReceiveValue", "(Ljava/lang/Object;)V", ref global::android.webkit.ValueCallback_._onReceiveValue16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.ValueCallback_.staticClass, "onReceiveValue", "(Ljava/lang/Object;)V", ref global::android.webkit.ValueCallback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ValueCallback_()
 		{
@@ -36,13 +36,13 @@ namespace android.webkit
 		protected ValueCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ValueCallbackDelegateWrapper16122;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ValueCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.ValueCallbackDelegateWrapper._ValueCallbackDelegateWrapper16122.native == global::System.IntPtr.Zero)
-				global::android.webkit.ValueCallbackDelegateWrapper._ValueCallbackDelegateWrapper16122 = @__env.GetMethodIDNoThrow(global::android.webkit.ValueCallbackDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.ValueCallbackDelegateWrapper.staticClass, global::android.webkit.ValueCallbackDelegateWrapper._ValueCallbackDelegateWrapper16122);
+			if (global::android.webkit.ValueCallbackDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.webkit.ValueCallbackDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.webkit.ValueCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.ValueCallbackDelegateWrapper.staticClass, global::android.webkit.ValueCallbackDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static ValueCallbackDelegateWrapper()

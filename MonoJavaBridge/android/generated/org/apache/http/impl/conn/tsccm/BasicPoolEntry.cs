@@ -14,10 +14,10 @@ namespace org.apache.http.impl.conn.tsccm
 				return getConnection();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection33122;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual global::org.apache.http.conn.OperatedClientConnection getConnection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.OperatedClientConnection>(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getConnection", "()Lorg/apache/http/conn/OperatedClientConnection;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getConnection33122) as org.apache.http.conn.OperatedClientConnection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.conn.OperatedClientConnection>(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getConnection", "()Lorg/apache/http/conn/OperatedClientConnection;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m0) as org.apache.http.conn.OperatedClientConnection;
 		}
 		protected new global::org.apache.http.conn.routing.HttpRoute PlannedRoute
 		{
@@ -26,10 +26,10 @@ namespace org.apache.http.impl.conn.tsccm
 				return getPlannedRoute();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPlannedRoute33123;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected virtual global::org.apache.http.conn.routing.HttpRoute getPlannedRoute()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.conn.routing.HttpRoute>(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getPlannedRoute", "()Lorg/apache/http/conn/routing/HttpRoute;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getPlannedRoute33123) as org.apache.http.conn.routing.HttpRoute;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.conn.routing.HttpRoute>(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getPlannedRoute", "()Lorg/apache/http/conn/routing/HttpRoute;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m1) as org.apache.http.conn.routing.HttpRoute;
 		}
 		protected new global::org.apache.http.impl.conn.tsccm.BasicPoolEntryRef WeakRef
 		{
@@ -38,18 +38,18 @@ namespace org.apache.http.impl.conn.tsccm
 				return getWeakRef();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWeakRef33124;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntryRef getWeakRef()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getWeakRef", "()Lorg/apache/http/impl/conn/tsccm/BasicPoolEntryRef;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getWeakRef33124) as org.apache.http.impl.conn.tsccm.BasicPoolEntryRef;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "getWeakRef", "()Lorg/apache/http/impl/conn/tsccm/BasicPoolEntryRef;", ref global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m2) as org.apache.http.impl.conn.tsccm.BasicPoolEntryRef;
 		}
-		internal static global::MonoJavaBridge.MethodId _BasicPoolEntry33125;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public BasicPoolEntry(org.apache.http.conn.ClientConnectionOperator arg0, org.apache.http.conn.routing.HttpRoute arg1, java.lang.@ref.ReferenceQueue arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33125.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33125 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/ref/ReferenceQueue;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, "<init>", "(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/ref/ReferenceQueue;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static BasicPoolEntry()

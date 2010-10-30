@@ -7,13 +7,13 @@ namespace android.content
 		protected ReceiverCallNotAllowedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ReceiverCallNotAllowedException3499;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ReceiverCallNotAllowedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException3499.native == global::System.IntPtr.Zero)
-				global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException3499 = @__env.GetMethodIDNoThrow(global::android.content.ReceiverCallNotAllowedException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ReceiverCallNotAllowedException.staticClass, global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException3499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.ReceiverCallNotAllowedException._m0.native == global::System.IntPtr.Zero)
+				global::android.content.ReceiverCallNotAllowedException._m0 = @__env.GetMethodIDNoThrow(global::android.content.ReceiverCallNotAllowedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ReceiverCallNotAllowedException.staticClass, global::android.content.ReceiverCallNotAllowedException._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ReceiverCallNotAllowedException()

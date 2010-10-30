@@ -14,15 +14,15 @@ namespace org.w3c.dom
 		internal NodeList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength34739;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.w3c.dom.NodeList.getLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.NodeList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.NodeList_._getLength34739);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.NodeList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.NodeList_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _item34740;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.w3c.dom.Node org.w3c.dom.NodeList.item(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.NodeList_.staticClass, "item", "(I)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.NodeList_._item34740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.NodeList_.staticClass, "item", "(I)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.NodeList_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Node;
 		}
 		static NodeList_()
 		{

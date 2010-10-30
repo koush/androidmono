@@ -7,10 +7,10 @@ namespace android.webkit
 		protected WebHistoryItem(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clone16154;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual global::android.webkit.WebHistoryItem clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebHistoryItem._clone16154) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebHistoryItem._m0) as android.webkit.WebHistoryItem;
 		}
 		public new int Id
 		{
@@ -19,10 +19,10 @@ namespace android.webkit
 				return getId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getId16155;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebHistoryItem.staticClass, "getId", "()I", ref global::android.webkit.WebHistoryItem._getId16155);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebHistoryItem.staticClass, "getId", "()I", ref global::android.webkit.WebHistoryItem._m1);
 		}
 		public new global::java.lang.String Title
 		{
@@ -31,10 +31,10 @@ namespace android.webkit
 				return getTitle();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTitle16156;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.String getTitle()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getTitle16156) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._m2) as java.lang.String;
 		}
 		public new global::java.lang.String Url
 		{
@@ -43,10 +43,10 @@ namespace android.webkit
 				return getUrl();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUrl16157;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getUrl()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getUrl16157) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._m3) as java.lang.String;
 		}
 		public new global::java.lang.String OriginalUrl
 		{
@@ -55,10 +55,10 @@ namespace android.webkit
 				return getOriginalUrl();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOriginalUrl16158;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.String getOriginalUrl()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._getOriginalUrl16158) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;", ref global::android.webkit.WebHistoryItem._m4) as java.lang.String;
 		}
 		public new global::android.graphics.Bitmap Favicon
 		{
@@ -67,10 +67,10 @@ namespace android.webkit
 				return getFavicon();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFavicon16159;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::android.graphics.Bitmap getFavicon()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;", ref global::android.webkit.WebHistoryItem._getFavicon16159) as android.graphics.Bitmap;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Bitmap>(this, global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;", ref global::android.webkit.WebHistoryItem._m5) as android.graphics.Bitmap;
 		}
 		static WebHistoryItem()
 		{

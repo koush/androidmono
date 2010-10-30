@@ -14,15 +14,15 @@ namespace org.apache.http.entity
 				return getContent();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContent32515;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.io.InputStream getContent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.BufferedHttpEntity._getContent32515) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.BufferedHttpEntity._m0) as java.io.InputStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeTo32516;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.BufferedHttpEntity._writeTo32516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.BufferedHttpEntity._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long ContentLength
 		{
@@ -31,33 +31,33 @@ namespace org.apache.http.entity
 				return getContentLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentLength32517;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override long getContentLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.BufferedHttpEntity._getContentLength32517);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.BufferedHttpEntity._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _isRepeatable32518;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool isRepeatable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._isRepeatable32518);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isChunked32519;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isChunked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isChunked", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._isChunked32519);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isChunked", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _isStreaming32520;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool isStreaming()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._isStreaming32520);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BufferedHttpEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.BufferedHttpEntity._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _BufferedHttpEntity32521;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public BufferedHttpEntity(org.apache.http.HttpEntity arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.BufferedHttpEntity._BufferedHttpEntity32521.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.BufferedHttpEntity._BufferedHttpEntity32521 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BufferedHttpEntity.staticClass, "<init>", "(Lorg/apache/http/HttpEntity;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BufferedHttpEntity.staticClass, global::org.apache.http.entity.BufferedHttpEntity._BufferedHttpEntity32521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.entity.BufferedHttpEntity._m6.native == global::System.IntPtr.Zero)
+				global::org.apache.http.entity.BufferedHttpEntity._m6 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BufferedHttpEntity.staticClass, "<init>", "(Lorg/apache/http/HttpEntity;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BufferedHttpEntity.staticClass, global::org.apache.http.entity.BufferedHttpEntity._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BufferedHttpEntity()

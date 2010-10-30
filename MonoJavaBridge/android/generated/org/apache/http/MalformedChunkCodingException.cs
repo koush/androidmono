@@ -7,22 +7,22 @@ namespace org.apache.http
 		protected MalformedChunkCodingException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedChunkCodingException31734;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public MalformedChunkCodingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31734.native == global::System.IntPtr.Zero)
-				global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31734 = @__env.GetMethodIDNoThrow(global::org.apache.http.MalformedChunkCodingException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31734);
+			if (global::org.apache.http.MalformedChunkCodingException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.MalformedChunkCodingException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.MalformedChunkCodingException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedChunkCodingException31735;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public MalformedChunkCodingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31735.native == global::System.IntPtr.Zero)
-				global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31735 = @__env.GetMethodIDNoThrow(global::org.apache.http.MalformedChunkCodingException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.MalformedChunkCodingException._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.MalformedChunkCodingException._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.MalformedChunkCodingException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static MalformedChunkCodingException()

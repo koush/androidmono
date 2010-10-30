@@ -7,41 +7,41 @@ namespace android.view.inputmethod
 		protected EditorInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _dump15810;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.view.inputmethod.EditorInfo._dump15810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V", ref global::android.view.inputmethod.EditorInfo._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
 		{
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel15811;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.inputmethod.EditorInfo._writeToParcel15811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.inputmethod.EditorInfo._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents15812;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I", ref global::android.view.inputmethod.EditorInfo._describeContents15812);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I", ref global::android.view.inputmethod.EditorInfo._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _EditorInfo15813;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public EditorInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.inputmethod.EditorInfo._EditorInfo15813.native == global::System.IntPtr.Zero)
-				global::android.view.inputmethod.EditorInfo._EditorInfo15813 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._EditorInfo15813);
+			if (global::android.view.inputmethod.EditorInfo._m3.native == global::System.IntPtr.Zero)
+				global::android.view.inputmethod.EditorInfo._m3 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._m3);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _inputType15814;
+		internal static global::MonoJavaBridge.FieldId _inputType5911;
 		public int inputType
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _inputType15814);
+				return @__env.GetIntField(this.JvmHandle, _inputType5911);
 			}
 			set
 			{
@@ -131,190 +131,190 @@ namespace android.view.inputmethod
 				return 0;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _imeOptions15827;
+		internal static global::MonoJavaBridge.FieldId _imeOptions5924;
 		public int imeOptions
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _imeOptions15827);
+				return @__env.GetIntField(this.JvmHandle, _imeOptions5924);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _privateImeOptions15828;
+		internal static global::MonoJavaBridge.FieldId _privateImeOptions5925;
 		public global::java.lang.String privateImeOptions
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _privateImeOptions15828)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _privateImeOptions5925)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _actionLabel15829;
+		internal static global::MonoJavaBridge.FieldId _actionLabel5926;
 		public global::java.lang.CharSequence actionLabel
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _actionLabel15829)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _actionLabel5926)) as java.lang.CharSequence;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _actionId15830;
+		internal static global::MonoJavaBridge.FieldId _actionId5927;
 		public int actionId
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _actionId15830);
+				return @__env.GetIntField(this.JvmHandle, _actionId5927);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _initialSelStart15831;
+		internal static global::MonoJavaBridge.FieldId _initialSelStart5928;
 		public int initialSelStart
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _initialSelStart15831);
+				return @__env.GetIntField(this.JvmHandle, _initialSelStart5928);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _initialSelEnd15832;
+		internal static global::MonoJavaBridge.FieldId _initialSelEnd5929;
 		public int initialSelEnd
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _initialSelEnd15832);
+				return @__env.GetIntField(this.JvmHandle, _initialSelEnd5929);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _initialCapsMode15833;
+		internal static global::MonoJavaBridge.FieldId _initialCapsMode5930;
 		public int initialCapsMode
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _initialCapsMode15833);
+				return @__env.GetIntField(this.JvmHandle, _initialCapsMode5930);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _hintText15834;
+		internal static global::MonoJavaBridge.FieldId _hintText5931;
 		public global::java.lang.CharSequence hintText
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _hintText15834)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _hintText5931)) as java.lang.CharSequence;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _label15835;
+		internal static global::MonoJavaBridge.FieldId _label5932;
 		public global::java.lang.CharSequence label
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _label15835)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _label5932)) as java.lang.CharSequence;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _packageName15836;
+		internal static global::MonoJavaBridge.FieldId _packageName5933;
 		public global::java.lang.String packageName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _packageName15836)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _packageName5933)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _fieldId15837;
+		internal static global::MonoJavaBridge.FieldId _fieldId5934;
 		public int fieldId
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _fieldId15837);
+				return @__env.GetIntField(this.JvmHandle, _fieldId5934);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _fieldName15838;
+		internal static global::MonoJavaBridge.FieldId _fieldName5935;
 		public global::java.lang.String fieldName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _fieldName15838)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _fieldName5935)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _extras15839;
+		internal static global::MonoJavaBridge.FieldId _extras5936;
 		public global::android.os.Bundle extras
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.GetObjectField(this.JvmHandle, _extras15839)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.GetObjectField(this.JvmHandle, _extras5936)) as android.os.Bundle;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR15840;
+		internal static global::MonoJavaBridge.FieldId _CREATOR5937;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.EditorInfo.staticClass, _CREATOR15840)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.inputmethod.EditorInfo.staticClass, _CREATOR5937)) as android.os.Parcelable_Creator;
 			}
 		}
 		static EditorInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.EditorInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/EditorInfo"));
-			global::android.view.inputmethod.EditorInfo._inputType15814 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "inputType", "I");
-			global::android.view.inputmethod.EditorInfo._imeOptions15827 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "imeOptions", "I");
-			global::android.view.inputmethod.EditorInfo._privateImeOptions15828 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "privateImeOptions", "Ljava/lang/String;");
-			global::android.view.inputmethod.EditorInfo._actionLabel15829 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "actionLabel", "Ljava/lang/CharSequence;");
-			global::android.view.inputmethod.EditorInfo._actionId15830 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "actionId", "I");
-			global::android.view.inputmethod.EditorInfo._initialSelStart15831 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialSelStart", "I");
-			global::android.view.inputmethod.EditorInfo._initialSelEnd15832 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialSelEnd", "I");
-			global::android.view.inputmethod.EditorInfo._initialCapsMode15833 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialCapsMode", "I");
-			global::android.view.inputmethod.EditorInfo._hintText15834 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "hintText", "Ljava/lang/CharSequence;");
-			global::android.view.inputmethod.EditorInfo._label15835 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "label", "Ljava/lang/CharSequence;");
-			global::android.view.inputmethod.EditorInfo._packageName15836 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "packageName", "Ljava/lang/String;");
-			global::android.view.inputmethod.EditorInfo._fieldId15837 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "fieldId", "I");
-			global::android.view.inputmethod.EditorInfo._fieldName15838 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "fieldName", "Ljava/lang/String;");
-			global::android.view.inputmethod.EditorInfo._extras15839 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "extras", "Landroid/os/Bundle;");
-			global::android.view.inputmethod.EditorInfo._CREATOR15840 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.view.inputmethod.EditorInfo._inputType5911 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "inputType", "I");
+			global::android.view.inputmethod.EditorInfo._imeOptions5924 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "imeOptions", "I");
+			global::android.view.inputmethod.EditorInfo._privateImeOptions5925 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "privateImeOptions", "Ljava/lang/String;");
+			global::android.view.inputmethod.EditorInfo._actionLabel5926 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "actionLabel", "Ljava/lang/CharSequence;");
+			global::android.view.inputmethod.EditorInfo._actionId5927 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "actionId", "I");
+			global::android.view.inputmethod.EditorInfo._initialSelStart5928 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialSelStart", "I");
+			global::android.view.inputmethod.EditorInfo._initialSelEnd5929 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialSelEnd", "I");
+			global::android.view.inputmethod.EditorInfo._initialCapsMode5930 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "initialCapsMode", "I");
+			global::android.view.inputmethod.EditorInfo._hintText5931 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "hintText", "Ljava/lang/CharSequence;");
+			global::android.view.inputmethod.EditorInfo._label5932 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "label", "Ljava/lang/CharSequence;");
+			global::android.view.inputmethod.EditorInfo._packageName5933 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "packageName", "Ljava/lang/String;");
+			global::android.view.inputmethod.EditorInfo._fieldId5934 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "fieldId", "I");
+			global::android.view.inputmethod.EditorInfo._fieldName5935 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "fieldName", "Ljava/lang/String;");
+			global::android.view.inputmethod.EditorInfo._extras5936 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "extras", "Landroid/os/Bundle;");
+			global::android.view.inputmethod.EditorInfo._CREATOR5937 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

@@ -17,10 +17,10 @@ namespace java.lang
 		{
 			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
-		internal static global::MonoJavaBridge.MethodId _iterator20240;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.util.Iterator java.lang.Iterable.iterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.lang.Iterable_._iterator20240) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.lang.Iterable_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.lang.Iterable_._m0) as java.util.Iterator;
 		}
 		static Iterable_()
 		{

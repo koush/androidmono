@@ -12,20 +12,20 @@ namespace javax.crypto
 		internal SecretKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded28714;
+		private static global::MonoJavaBridge.MethodId _m0;
 		byte[] java.security.Key.getEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.SecretKey_.staticClass, "getEncoded", "()[B", ref global::javax.crypto.SecretKey_._getEncoded28714) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.SecretKey_.staticClass, "getEncoded", "()[B", ref global::javax.crypto.SecretKey_._m0) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm28715;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.SecretKey_._getAlgorithm28715) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.SecretKey_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat28716;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::javax.crypto.SecretKey_._getFormat28716) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.SecretKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::javax.crypto.SecretKey_._m2) as java.lang.String;
 		}
 		static SecretKey_()
 		{

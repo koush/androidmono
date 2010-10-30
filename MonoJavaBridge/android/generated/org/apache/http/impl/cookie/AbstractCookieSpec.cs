@@ -7,45 +7,45 @@ namespace org.apache.http.impl.cookie
 		protected AbstractCookieSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _parse33200;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract global::java.util.List parse(org.apache.http.Header arg0, org.apache.http.cookie.CookieOrigin arg1);
-		internal static global::MonoJavaBridge.MethodId _match33201;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1);
-		internal static global::MonoJavaBridge.MethodId _getVersion33202;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract int getVersion();
-		internal static global::MonoJavaBridge.MethodId _validate33203;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1);
-		internal static global::MonoJavaBridge.MethodId _formatCookies33204;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::java.util.List formatCookies(java.util.List arg0);
-		internal static global::MonoJavaBridge.MethodId _getVersionHeader33205;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract global::org.apache.http.Header getVersionHeader();
-		internal static global::MonoJavaBridge.MethodId _registerAttribHandler33206;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void registerAttribHandler(java.lang.String arg0, org.apache.http.cookie.CookieAttributeHandler arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "registerAttribHandler", "(Ljava/lang/String;Lorg/apache/http/cookie/CookieAttributeHandler;)V", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._registerAttribHandler33206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "registerAttribHandler", "(Ljava/lang/String;Lorg/apache/http/cookie/CookieAttributeHandler;)V", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _findAttribHandler33207;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected virtual global::org.apache.http.cookie.CookieAttributeHandler findAttribHandler(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieAttributeHandler>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "findAttribHandler", "(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._findAttribHandler33207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieAttributeHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieAttributeHandler>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "findAttribHandler", "(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieAttributeHandler;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAttribHandler33208;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected virtual global::org.apache.http.cookie.CookieAttributeHandler getAttribHandler(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieAttributeHandler>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "getAttribHandler", "(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._getAttribHandler33208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieAttributeHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.cookie.CookieAttributeHandler>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "getAttribHandler", "(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.cookie.CookieAttributeHandler;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAttribHandlers33209;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected virtual global::java.util.Collection getAttribHandlers()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "getAttribHandlers", "()Ljava/util/Collection;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._getAttribHandlers33209) as java.util.Collection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Collection>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "getAttribHandlers", "()Ljava/util/Collection;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec._m9) as java.util.Collection;
 		}
-		internal static global::MonoJavaBridge.MethodId _AbstractCookieSpec33210;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public AbstractCookieSpec() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.cookie.AbstractCookieSpec._AbstractCookieSpec33210.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.cookie.AbstractCookieSpec._AbstractCookieSpec33210 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, global::org.apache.http.impl.cookie.AbstractCookieSpec._AbstractCookieSpec33210);
+			if (global::org.apache.http.impl.cookie.AbstractCookieSpec._m10.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.cookie.AbstractCookieSpec._m10 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.AbstractCookieSpec.staticClass, global::org.apache.http.impl.cookie.AbstractCookieSpec._m10);
 			Init(@__env, handle);
 		}
 		static AbstractCookieSpec()
@@ -65,35 +65,35 @@ namespace org.apache.http.impl.cookie
 		internal AbstractCookieSpec_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _parse33211;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.util.List parse(org.apache.http.Header arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "parse", "(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._parse33211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "parse", "(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _match33212;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._match33212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "match", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion33213;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int getVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "getVersion", "()I", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._getVersion33213);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "getVersion", "()I", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _validate33214;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._validate33214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "validate", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _formatCookies33215;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::java.util.List formatCookies(java.util.List arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "formatCookies", "(Ljava/util/List;)Ljava/util/List;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._formatCookies33215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "formatCookies", "(Ljava/util/List;)Ljava/util/List;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersionHeader33216;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::org.apache.http.Header getVersionHeader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "getVersionHeader", "()Lorg/apache/http/Header;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._getVersionHeader33216) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.impl.cookie.AbstractCookieSpec_.staticClass, "getVersionHeader", "()Lorg/apache/http/Header;", ref global::org.apache.http.impl.cookie.AbstractCookieSpec_._m5) as org.apache.http.Header;
 		}
 		static AbstractCookieSpec_()
 		{

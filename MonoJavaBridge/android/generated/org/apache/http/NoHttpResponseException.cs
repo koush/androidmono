@@ -7,13 +7,13 @@ namespace org.apache.http
 		protected NoHttpResponseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NoHttpResponseException31740;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public NoHttpResponseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.NoHttpResponseException._NoHttpResponseException31740.native == global::System.IntPtr.Zero)
-				global::org.apache.http.NoHttpResponseException._NoHttpResponseException31740 = @__env.GetMethodIDNoThrow(global::org.apache.http.NoHttpResponseException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.NoHttpResponseException.staticClass, global::org.apache.http.NoHttpResponseException._NoHttpResponseException31740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.NoHttpResponseException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.NoHttpResponseException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.NoHttpResponseException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.NoHttpResponseException.staticClass, global::org.apache.http.NoHttpResponseException._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static NoHttpResponseException()

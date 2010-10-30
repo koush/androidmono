@@ -7,22 +7,22 @@ namespace java.lang
 		protected VirtualMachineError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _VirtualMachineError20935;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public VirtualMachineError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.VirtualMachineError._VirtualMachineError20935.native == global::System.IntPtr.Zero)
-				global::java.lang.VirtualMachineError._VirtualMachineError20935 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20935);
+			if (global::java.lang.VirtualMachineError._m0.native == global::System.IntPtr.Zero)
+				global::java.lang.VirtualMachineError._m0 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _VirtualMachineError20936;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public VirtualMachineError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.VirtualMachineError._VirtualMachineError20936.native == global::System.IntPtr.Zero)
-				global::java.lang.VirtualMachineError._VirtualMachineError20936 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.lang.VirtualMachineError._m1.native == global::System.IntPtr.Zero)
+				global::java.lang.VirtualMachineError._m1 = @__env.GetMethodIDNoThrow(global::java.lang.VirtualMachineError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static VirtualMachineError()

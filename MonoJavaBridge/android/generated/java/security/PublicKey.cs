@@ -12,20 +12,20 @@ namespace java.security
 		internal PublicKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded23295;
+		private static global::MonoJavaBridge.MethodId _m0;
 		byte[] java.security.Key.getEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.PublicKey_.staticClass, "getEncoded", "()[B", ref global::java.security.PublicKey_._getEncoded23295) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.PublicKey_.staticClass, "getEncoded", "()[B", ref global::java.security.PublicKey_._m0) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm23296;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.PublicKey_._getAlgorithm23296) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::java.security.PublicKey_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat23297;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PublicKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.PublicKey_._getFormat23297) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.PublicKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::java.security.PublicKey_._m2) as java.lang.String;
 		}
 		static PublicKey_()
 		{

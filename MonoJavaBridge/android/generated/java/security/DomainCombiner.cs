@@ -13,10 +13,10 @@ namespace java.security
 		internal DomainCombiner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _combine22952;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.security.ProtectionDomain[] java.security.DomainCombiner.combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.ProtectionDomain>(this, global::java.security.DomainCombiner_.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", ref global::java.security.DomainCombiner_._combine22952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.ProtectionDomain[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.ProtectionDomain>(this, global::java.security.DomainCombiner_.staticClass, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", ref global::java.security.DomainCombiner_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.security.ProtectionDomain[];
 		}
 		static DomainCombiner_()
 		{

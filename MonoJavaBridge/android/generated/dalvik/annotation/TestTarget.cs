@@ -15,40 +15,40 @@ namespace dalvik.annotation
 		internal TestTarget_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _methodName18337;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String dalvik.annotation.TestTarget.methodName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "methodName", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._methodName18337) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "methodName", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _conceptName18338;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String dalvik.annotation.TestTarget.conceptName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "conceptName", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._conceptName18338) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "conceptName", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _methodArgs18339;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.Class[] dalvik.annotation.TestTarget.methodArgs()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::dalvik.annotation.TestTarget_.staticClass, "methodArgs", "()[Ljava/lang/Class;", ref global::dalvik.annotation.TestTarget_._methodArgs18339) as java.lang.Class[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::dalvik.annotation.TestTarget_.staticClass, "methodArgs", "()[Ljava/lang/Class;", ref global::dalvik.annotation.TestTarget_._m2) as java.lang.Class[];
 		}
-		internal static global::MonoJavaBridge.MethodId _equals18340;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::dalvik.annotation.TestTarget_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::dalvik.annotation.TestTarget_._equals18340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::dalvik.annotation.TestTarget_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::dalvik.annotation.TestTarget_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString18341;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "toString", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._toString18341) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::dalvik.annotation.TestTarget_.staticClass, "toString", "()Ljava/lang/String;", ref global::dalvik.annotation.TestTarget_._m4) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode18342;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int java.lang.annotation.Annotation.hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::dalvik.annotation.TestTarget_.staticClass, "hashCode", "()I", ref global::dalvik.annotation.TestTarget_._hashCode18342);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::dalvik.annotation.TestTarget_.staticClass, "hashCode", "()I", ref global::dalvik.annotation.TestTarget_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _annotationType18343;
+		private static global::MonoJavaBridge.MethodId _m6;
 		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::dalvik.annotation.TestTarget_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::dalvik.annotation.TestTarget_._annotationType18343) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::dalvik.annotation.TestTarget_.staticClass, "annotationType", "()Ljava/lang/Class;", ref global::dalvik.annotation.TestTarget_._m6) as java.lang.Class;
 		}
 		static TestTarget_()
 		{

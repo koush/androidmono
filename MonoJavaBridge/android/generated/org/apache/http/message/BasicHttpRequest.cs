@@ -14,10 +14,10 @@ namespace org.apache.http.message
 				return getProtocolVersion();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getProtocolVersion33574;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::org.apache.http.ProtocolVersion getProtocolVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicHttpRequest._getProtocolVersion33574) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.message.BasicHttpRequest._m0) as org.apache.http.ProtocolVersion;
 		}
 		public new global::org.apache.http.RequestLine RequestLine
 		{
@@ -26,36 +26,36 @@ namespace org.apache.http.message
 				return getRequestLine();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRequestLine33575;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::org.apache.http.RequestLine getRequestLine()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getRequestLine", "()Lorg/apache/http/RequestLine;", ref global::org.apache.http.message.BasicHttpRequest._getRequestLine33575) as org.apache.http.RequestLine;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.RequestLine>(this, global::org.apache.http.message.BasicHttpRequest.staticClass, "getRequestLine", "()Lorg/apache/http/RequestLine;", ref global::org.apache.http.message.BasicHttpRequest._m1) as org.apache.http.RequestLine;
 		}
-		internal static global::MonoJavaBridge.MethodId _BasicHttpRequest33576;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public BasicHttpRequest(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33576.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33576 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.message.BasicHttpRequest._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BasicHttpRequest._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BasicHttpRequest33577;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public BasicHttpRequest(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33577.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33577 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.apache.http.message.BasicHttpRequest._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BasicHttpRequest._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BasicHttpRequest33578;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public BasicHttpRequest(org.apache.http.RequestLine arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33578.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33578 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Lorg/apache/http/RequestLine;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._BasicHttpRequest33578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.message.BasicHttpRequest._m4.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.BasicHttpRequest._m4 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.BasicHttpRequest.staticClass, "<init>", "(Lorg/apache/http/RequestLine;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpRequest.staticClass, global::org.apache.http.message.BasicHttpRequest._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static BasicHttpRequest()

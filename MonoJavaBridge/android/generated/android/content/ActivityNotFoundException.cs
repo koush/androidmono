@@ -7,22 +7,22 @@ namespace android.content
 		protected ActivityNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ActivityNotFoundException2565;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ActivityNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ActivityNotFoundException._ActivityNotFoundException2565.native == global::System.IntPtr.Zero)
-				global::android.content.ActivityNotFoundException._ActivityNotFoundException2565 = @__env.GetMethodIDNoThrow(global::android.content.ActivityNotFoundException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._ActivityNotFoundException2565);
+			if (global::android.content.ActivityNotFoundException._m0.native == global::System.IntPtr.Zero)
+				global::android.content.ActivityNotFoundException._m0 = @__env.GetMethodIDNoThrow(global::android.content.ActivityNotFoundException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ActivityNotFoundException2566;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ActivityNotFoundException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ActivityNotFoundException._ActivityNotFoundException2566.native == global::System.IntPtr.Zero)
-				global::android.content.ActivityNotFoundException._ActivityNotFoundException2566 = @__env.GetMethodIDNoThrow(global::android.content.ActivityNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._ActivityNotFoundException2566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.ActivityNotFoundException._m1.native == global::System.IntPtr.Zero)
+				global::android.content.ActivityNotFoundException._m1 = @__env.GetMethodIDNoThrow(global::android.content.ActivityNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ActivityNotFoundException()

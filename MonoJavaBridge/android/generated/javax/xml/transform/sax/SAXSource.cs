@@ -18,15 +18,15 @@ namespace javax.xml.transform.sax
 				setSystemId(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId31074;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.String getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.sax.SAXSource._getSystemId31074) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.sax.SAXSource._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId31075;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.sax.SAXSource._setSystemId31075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.sax.SAXSource._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.xml.sax.XMLReader XMLReader
 		{
@@ -39,20 +39,20 @@ namespace javax.xml.transform.sax
 				setXMLReader(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getXMLReader31076;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::org.xml.sax.XMLReader getXMLReader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLReader>(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getXMLReader", "()Lorg/xml/sax/XMLReader;", ref global::javax.xml.transform.sax.SAXSource._getXMLReader31076) as org.xml.sax.XMLReader;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLReader>(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getXMLReader", "()Lorg/xml/sax/XMLReader;", ref global::javax.xml.transform.sax.SAXSource._m2) as org.xml.sax.XMLReader;
 		}
-		internal static global::MonoJavaBridge.MethodId _setXMLReader31077;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setXMLReader(org.xml.sax.XMLReader arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setXMLReader", "(Lorg/xml/sax/XMLReader;)V", ref global::javax.xml.transform.sax.SAXSource._setXMLReader31077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setXMLReader", "(Lorg/xml/sax/XMLReader;)V", ref global::javax.xml.transform.sax.SAXSource._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setInputSource31078;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setInputSource(org.xml.sax.InputSource arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setInputSource", "(Lorg/xml/sax/InputSource;)V", ref global::javax.xml.transform.sax.SAXSource._setInputSource31078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "setInputSource", "(Lorg/xml/sax/InputSource;)V", ref global::javax.xml.transform.sax.SAXSource._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.xml.sax.InputSource InputSource
 		{
@@ -65,44 +65,44 @@ namespace javax.xml.transform.sax
 				setInputSource(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputSource31079;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::org.xml.sax.InputSource getInputSource()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getInputSource", "()Lorg/xml/sax/InputSource;", ref global::javax.xml.transform.sax.SAXSource._getInputSource31079) as org.xml.sax.InputSource;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.sax.SAXSource.staticClass, "getInputSource", "()Lorg/xml/sax/InputSource;", ref global::javax.xml.transform.sax.SAXSource._m5) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _sourceToInputSource31080;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static global::org.xml.sax.InputSource sourceToInputSource(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXSource._sourceToInputSource31080.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXSource._sourceToInputSource31080 = @__env.GetStaticMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "sourceToInputSource", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/InputSource;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._sourceToInputSource31080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.InputSource;
+			if (global::javax.xml.transform.sax.SAXSource._m6.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.sax.SAXSource._m6 = @__env.GetStaticMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "sourceToInputSource", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/InputSource;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXSource31081;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public SAXSource(org.xml.sax.XMLReader arg0, org.xml.sax.InputSource arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXSource._SAXSource31081.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXSource._SAXSource31081 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._SAXSource31081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.xml.transform.sax.SAXSource._m7.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.sax.SAXSource._m7 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXSource31082;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public SAXSource(org.xml.sax.InputSource arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXSource._SAXSource31082.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXSource._SAXSource31082 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/InputSource;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._SAXSource31082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.transform.sax.SAXSource._m8.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.sax.SAXSource._m8 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "(Lorg/xml/sax/InputSource;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXSource31083;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public SAXSource() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.transform.sax.SAXSource._SAXSource31083.native == global::System.IntPtr.Zero)
-				global::javax.xml.transform.sax.SAXSource._SAXSource31083 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._SAXSource31083);
+			if (global::javax.xml.transform.sax.SAXSource._m9.native == global::System.IntPtr.Zero)
+				global::javax.xml.transform.sax.SAXSource._m9 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.sax.SAXSource.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXSource.staticClass, global::javax.xml.transform.sax.SAXSource._m9);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String FEATURE

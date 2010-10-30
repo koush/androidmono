@@ -16,25 +16,25 @@ namespace org.apache.http.client
 		internal CookieStore_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clear31874;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.client.CookieStore.clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "clear", "()V", ref global::org.apache.http.client.CookieStore_._clear31874);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "clear", "()V", ref global::org.apache.http.client.CookieStore_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _addCookie31875;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.http.client.CookieStore.addCookie(org.apache.http.cookie.Cookie arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "addCookie", "(Lorg/apache/http/cookie/Cookie;)V", ref global::org.apache.http.client.CookieStore_._addCookie31875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "addCookie", "(Lorg/apache/http/cookie/Cookie;)V", ref global::org.apache.http.client.CookieStore_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getCookies31876;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.util.List org.apache.http.client.CookieStore.getCookies()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.client.CookieStore_.staticClass, "getCookies", "()Ljava/util/List;", ref global::org.apache.http.client.CookieStore_._getCookies31876) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::org.apache.http.client.CookieStore_.staticClass, "getCookies", "()Ljava/util/List;", ref global::org.apache.http.client.CookieStore_._m2) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearExpired31877;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool org.apache.http.client.CookieStore.clearExpired(java.util.Date arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "clearExpired", "(Ljava/util/Date;)Z", ref global::org.apache.http.client.CookieStore_._clearExpired31877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.client.CookieStore_.staticClass, "clearExpired", "(Ljava/util/Date;)Z", ref global::org.apache.http.client.CookieStore_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CookieStore_()
 		{

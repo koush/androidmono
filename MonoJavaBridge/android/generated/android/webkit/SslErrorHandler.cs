@@ -7,20 +7,20 @@ namespace android.webkit
 		protected SslErrorHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel16092;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "cancel", "()V", ref global::android.webkit.SslErrorHandler._cancel16092);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "cancel", "()V", ref global::android.webkit.SslErrorHandler._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _handleMessage16093;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void handleMessage(android.os.Message arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V", ref global::android.webkit.SslErrorHandler._handleMessage16093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V", ref global::android.webkit.SslErrorHandler._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _proceed16094;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void proceed()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "proceed", "()V", ref global::android.webkit.SslErrorHandler._proceed16094);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, "proceed", "()V", ref global::android.webkit.SslErrorHandler._m2);
 		}
 		static SslErrorHandler()
 		{

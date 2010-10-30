@@ -7,55 +7,55 @@ namespace java.io
 		protected InputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close19094;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "close", "()V", ref global::java.io.InputStream._close19094);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "close", "()V", ref global::java.io.InputStream._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _mark19095;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void mark(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "mark", "(I)V", ref global::java.io.InputStream._mark19095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "mark", "(I)V", ref global::java.io.InputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset19096;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "reset", "()V", ref global::java.io.InputStream._reset19096);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.InputStream.staticClass, "reset", "()V", ref global::java.io.InputStream._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19097;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int read(byte[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "read", "([BII)I", ref global::java.io.InputStream._read19097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "read", "([BII)I", ref global::java.io.InputStream._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read19098;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int read(byte[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "read", "([B)I", ref global::java.io.InputStream._read19098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "read", "([B)I", ref global::java.io.InputStream._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read19099;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract int read();
-		internal static global::MonoJavaBridge.MethodId _skip19100;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual long skip(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.InputStream.staticClass, "skip", "(J)J", ref global::java.io.InputStream._skip19100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.io.InputStream.staticClass, "skip", "(J)J", ref global::java.io.InputStream._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _available19101;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int available()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "available", "()I", ref global::java.io.InputStream._available19101);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream.staticClass, "available", "()I", ref global::java.io.InputStream._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _markSupported19102;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool markSupported()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.InputStream.staticClass, "markSupported", "()Z", ref global::java.io.InputStream._markSupported19102);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.InputStream.staticClass, "markSupported", "()Z", ref global::java.io.InputStream._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _InputStream19103;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public InputStream() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.InputStream._InputStream19103.native == global::System.IntPtr.Zero)
-				global::java.io.InputStream._InputStream19103 = @__env.GetMethodIDNoThrow(global::java.io.InputStream.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InputStream.staticClass, global::java.io.InputStream._InputStream19103);
+			if (global::java.io.InputStream._m9.native == global::System.IntPtr.Zero)
+				global::java.io.InputStream._m9 = @__env.GetMethodIDNoThrow(global::java.io.InputStream.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InputStream.staticClass, global::java.io.InputStream._m9);
 			Init(@__env, handle);
 		}
 		static InputStream()
@@ -75,10 +75,10 @@ namespace java.io
 		internal InputStream_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _read19104;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream_.staticClass, "read", "()I", ref global::java.io.InputStream_._read19104);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.io.InputStream_.staticClass, "read", "()I", ref global::java.io.InputStream_._m0);
 		}
 		static InputStream_()
 		{

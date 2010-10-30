@@ -14,22 +14,22 @@ namespace android.content.pm
 			protected NameNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _NameNotFoundException3793;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public NameNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3793.native == global::System.IntPtr.Zero)
-					global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3793 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3793);
+				if (global::android.content.pm.PackageManager.NameNotFoundException._m0.native == global::System.IntPtr.Zero)
+					global::android.content.pm.PackageManager.NameNotFoundException._m0 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._m0);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _NameNotFoundException3794;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public NameNotFoundException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3794.native == global::System.IntPtr.Zero)
-					global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3794 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException3794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.content.pm.PackageManager.NameNotFoundException._m1.native == global::System.IntPtr.Zero)
+					global::android.content.pm.PackageManager.NameNotFoundException._m1 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static NameNotFoundException()
@@ -41,138 +41,138 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _checkPermission3795;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract int checkPermission(java.lang.String arg0, java.lang.String arg1);
-		internal static global::MonoJavaBridge.MethodId _getPackageInfo3796;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getApplicationInfo3797;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getText3798;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::MonoJavaBridge.MethodId _resolveActivity3799;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getDrawable3800;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::MonoJavaBridge.MethodId _getXml3801;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::MonoJavaBridge.MethodId _currentToCanonicalPackageNames3802;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public abstract global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0);
-		internal static global::MonoJavaBridge.MethodId _canonicalToCurrentPackageNames3803;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0);
-		internal static global::MonoJavaBridge.MethodId _getLaunchIntentForPackage3804;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getPackageGids3805;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract int[] getPackageGids(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getPermissionInfo3806;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public abstract global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _queryPermissionsByGroup3807;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getPermissionGroupInfo3808;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public abstract global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getAllPermissionGroups3809;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public abstract global::java.util.List getAllPermissionGroups(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getActivityInfo3810;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public abstract global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getReceiverInfo3811;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public abstract global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getServiceInfo3812;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public abstract global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getInstalledPackages3813;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public abstract global::java.util.List getInstalledPackages(int arg0);
-		internal static global::MonoJavaBridge.MethodId _addPermission3814;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public abstract bool addPermission(android.content.pm.PermissionInfo arg0);
-		internal static global::MonoJavaBridge.MethodId _addPermissionAsync3815;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public abstract bool addPermissionAsync(android.content.pm.PermissionInfo arg0);
-		internal static global::MonoJavaBridge.MethodId _removePermission3816;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public abstract void removePermission(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _checkSignatures3817;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public abstract int checkSignatures(java.lang.String arg0, java.lang.String arg1);
-		internal static global::MonoJavaBridge.MethodId _checkSignatures3818;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public abstract int checkSignatures(int arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getPackagesForUid3819;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public abstract global::java.lang.String[] getPackagesForUid(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getNameForUid3820;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public abstract global::java.lang.String getNameForUid(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getInstalledApplications3821;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public abstract global::java.util.List getInstalledApplications(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getSystemSharedLibraryNames3822;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public abstract global::java.lang.String[] getSystemSharedLibraryNames();
-		internal static global::MonoJavaBridge.MethodId _getSystemAvailableFeatures3823;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public abstract global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures();
-		internal static global::MonoJavaBridge.MethodId _hasSystemFeature3824;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public abstract bool hasSystemFeature(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _queryIntentActivities3825;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public abstract global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _queryIntentActivityOptions3826;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public abstract global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3);
-		internal static global::MonoJavaBridge.MethodId _queryBroadcastReceivers3827;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public abstract global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _resolveService3828;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public abstract global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _queryIntentServices3829;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public abstract global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _resolveContentProvider3830;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public abstract global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _queryContentProviders3831;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public abstract global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _getInstrumentationInfo3832;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public abstract global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _queryInstrumentation3833;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public abstract global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _getActivityIcon3834;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public abstract global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0);
-		internal static global::MonoJavaBridge.MethodId _getActivityIcon3835;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public abstract global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0);
-		internal static global::MonoJavaBridge.MethodId _getDefaultActivityIcon3836;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public abstract global::android.graphics.drawable.Drawable getDefaultActivityIcon();
-		internal static global::MonoJavaBridge.MethodId _getApplicationIcon3837;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public abstract global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0);
-		internal static global::MonoJavaBridge.MethodId _getApplicationIcon3838;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public abstract global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getApplicationLabel3839;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public abstract global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0);
-		internal static global::MonoJavaBridge.MethodId _getResourcesForActivity3840;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public abstract global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0);
-		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication3841;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public abstract global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication3842;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public abstract global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0);
-		internal static global::MonoJavaBridge.MethodId _getPackageArchiveInfo3843;
+		private static global::MonoJavaBridge.MethodId _m48;
 		public virtual global::android.content.pm.PackageInfo getPackageArchiveInfo(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager.staticClass, "getPackageArchiveInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", ref global::android.content.pm.PackageManager._getPackageArchiveInfo3843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PackageInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager.staticClass, "getPackageArchiveInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", ref global::android.content.pm.PackageManager._m48, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PackageInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstallerPackageName3844;
+		private static global::MonoJavaBridge.MethodId _m49;
 		public abstract global::java.lang.String getInstallerPackageName(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _addPackageToPreferred3845;
+		private static global::MonoJavaBridge.MethodId _m50;
 		public abstract void addPackageToPreferred(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _removePackageFromPreferred3846;
+		private static global::MonoJavaBridge.MethodId _m51;
 		public abstract void removePackageFromPreferred(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getPreferredPackages3847;
+		private static global::MonoJavaBridge.MethodId _m52;
 		public abstract global::java.util.List getPreferredPackages(int arg0);
-		internal static global::MonoJavaBridge.MethodId _addPreferredActivity3848;
+		private static global::MonoJavaBridge.MethodId _m53;
 		public abstract void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3);
-		internal static global::MonoJavaBridge.MethodId _clearPackagePreferredActivities3849;
+		private static global::MonoJavaBridge.MethodId _m54;
 		public abstract void clearPackagePreferredActivities(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _getPreferredActivities3850;
+		private static global::MonoJavaBridge.MethodId _m55;
 		public abstract int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2);
-		internal static global::MonoJavaBridge.MethodId _setComponentEnabledSetting3851;
+		private static global::MonoJavaBridge.MethodId _m56;
 		public abstract void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _getComponentEnabledSetting3852;
+		private static global::MonoJavaBridge.MethodId _m57;
 		public abstract int getComponentEnabledSetting(android.content.ComponentName arg0);
-		internal static global::MonoJavaBridge.MethodId _setApplicationEnabledSetting3853;
+		private static global::MonoJavaBridge.MethodId _m58;
 		public abstract void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _getApplicationEnabledSetting3854;
+		private static global::MonoJavaBridge.MethodId _m59;
 		public abstract int getApplicationEnabledSetting(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _isSafeMode3855;
+		private static global::MonoJavaBridge.MethodId _m60;
 		public abstract bool isSafeMode();
-		internal static global::MonoJavaBridge.MethodId _PackageManager3856;
+		private static global::MonoJavaBridge.MethodId _m61;
 		public PackageManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.PackageManager._PackageManager3856.native == global::System.IntPtr.Zero)
-				global::android.content.pm.PackageManager._PackageManager3856 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._PackageManager3856);
+			if (global::android.content.pm.PackageManager._m61.native == global::System.IntPtr.Zero)
+				global::android.content.pm.PackageManager._m61 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._m61);
 			Init(@__env, handle);
 		}
 		public static int GET_ACTIVITIES
@@ -535,305 +535,305 @@ namespace android.content.pm
 		internal PackageManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _checkPermission3906;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int checkPermission(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._checkPermission3906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPackageInfo3907;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", ref global::android.content.pm.PackageManager_._getPackageInfo3907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PackageInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", ref global::android.content.pm.PackageManager_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PackageInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationInfo3908;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;", ref global::android.content.pm.PackageManager_._getApplicationInfo3908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ApplicationInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;", ref global::android.content.pm.PackageManager_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ApplicationInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getText3909;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.PackageManager_.staticClass, "getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", ref global::android.content.pm.PackageManager_._getText3909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.PackageManager_.staticClass, "getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", ref global::android.content.pm.PackageManager_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveActivity3910;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", ref global::android.content.pm.PackageManager_._resolveActivity3910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ResolveInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", ref global::android.content.pm.PackageManager_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ResolveInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getDrawable3911;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getDrawable3911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getXml3912;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.content.res.XmlResourceParser>(this, global::android.content.pm.PackageManager_.staticClass, "getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;", ref global::android.content.pm.PackageManager_._getXml3912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.content.res.XmlResourceParser;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.content.res.XmlResourceParser>(this, global::android.content.pm.PackageManager_.staticClass, "getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;", ref global::android.content.pm.PackageManager_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.content.res.XmlResourceParser;
 		}
-		internal static global::MonoJavaBridge.MethodId _currentToCanonicalPackageNames3913;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "currentToCanonicalPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._currentToCanonicalPackageNames3913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "currentToCanonicalPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _canonicalToCurrentPackageNames3914;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "canonicalToCurrentPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._canonicalToCurrentPackageNames3914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "canonicalToCurrentPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getLaunchIntentForPackage3915;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getLaunchIntentForPackage", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.pm.PackageManager_._getLaunchIntentForPackage3915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getLaunchIntentForPackage", "(Ljava/lang/String;)Landroid/content/Intent;", ref global::android.content.pm.PackageManager_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.Intent;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPackageGids3916;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override int[] getPackageGids(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.content.pm.PackageManager_.staticClass, "getPackageGids", "(Ljava/lang/String;)[I", ref global::android.content.pm.PackageManager_._getPackageGids3916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.content.pm.PackageManager_.staticClass, "getPackageGids", "(Ljava/lang/String;)[I", ref global::android.content.pm.PackageManager_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPermissionInfo3917;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;", ref global::android.content.pm.PackageManager_._getPermissionInfo3917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PermissionInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;", ref global::android.content.pm.PackageManager_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PermissionInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryPermissionsByGroup3918;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryPermissionsByGroup3918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPermissionGroupInfo3919;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public override global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;", ref global::android.content.pm.PackageManager_._getPermissionGroupInfo3919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PermissionGroupInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;", ref global::android.content.pm.PackageManager_._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.PermissionGroupInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAllPermissionGroups3920;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public override global::java.util.List getAllPermissionGroups(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getAllPermissionGroups", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._getAllPermissionGroups3920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getAllPermissionGroups", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getActivityInfo3921;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public override global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", ref global::android.content.pm.PackageManager_._getActivityInfo3921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", ref global::android.content.pm.PackageManager_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getReceiverInfo3922;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", ref global::android.content.pm.PackageManager_._getReceiverInfo3922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", ref global::android.content.pm.PackageManager_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ActivityInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getServiceInfo3923;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public override global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;", ref global::android.content.pm.PackageManager_._getServiceInfo3923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ServiceInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;", ref global::android.content.pm.PackageManager_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ServiceInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstalledPackages3924;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public override global::java.util.List getInstalledPackages(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getInstalledPackages", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._getInstalledPackages3924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getInstalledPackages", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _addPermission3925;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public override bool addPermission(android.content.pm.PermissionInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPermission", "(Landroid/content/pm/PermissionInfo;)Z", ref global::android.content.pm.PackageManager_._addPermission3925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPermission", "(Landroid/content/pm/PermissionInfo;)Z", ref global::android.content.pm.PackageManager_._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addPermissionAsync3926;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public override bool addPermissionAsync(android.content.pm.PermissionInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPermissionAsync", "(Landroid/content/pm/PermissionInfo;)Z", ref global::android.content.pm.PackageManager_._addPermissionAsync3926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPermissionAsync", "(Landroid/content/pm/PermissionInfo;)Z", ref global::android.content.pm.PackageManager_._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removePermission3927;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public override void removePermission(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "removePermission", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._removePermission3927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "removePermission", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _checkSignatures3928;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public override int checkSignatures(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._checkSignatures3928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _checkSignatures3929;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public override int checkSignatures(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(II)I", ref global::android.content.pm.PackageManager_._checkSignatures3929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(II)I", ref global::android.content.pm.PackageManager_._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPackagesForUid3930;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public override global::java.lang.String[] getPackagesForUid(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getPackagesForUid", "(I)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._getPackagesForUid3930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getPackagesForUid", "(I)[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getNameForUid3931;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public override global::java.lang.String getNameForUid(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getNameForUid", "(I)Ljava/lang/String;", ref global::android.content.pm.PackageManager_._getNameForUid3931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getNameForUid", "(I)Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstalledApplications3932;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public override global::java.util.List getInstalledApplications(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getInstalledApplications", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._getInstalledApplications3932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getInstalledApplications", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemSharedLibraryNames3933;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public override global::java.lang.String[] getSystemSharedLibraryNames()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getSystemSharedLibraryNames", "()[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._getSystemSharedLibraryNames3933) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getSystemSharedLibraryNames", "()[Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m27) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemAvailableFeatures3934;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public override global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.pm.FeatureInfo>(this, global::android.content.pm.PackageManager_.staticClass, "getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;", ref global::android.content.pm.PackageManager_._getSystemAvailableFeatures3934) as android.content.pm.FeatureInfo[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.pm.FeatureInfo>(this, global::android.content.pm.PackageManager_.staticClass, "getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;", ref global::android.content.pm.PackageManager_._m28) as android.content.pm.FeatureInfo[];
 		}
-		internal static global::MonoJavaBridge.MethodId _hasSystemFeature3935;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public override bool hasSystemFeature(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "hasSystemFeature", "(Ljava/lang/String;)Z", ref global::android.content.pm.PackageManager_._hasSystemFeature3935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "hasSystemFeature", "(Ljava/lang/String;)Z", ref global::android.content.pm.PackageManager_._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _queryIntentActivities3936;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public override global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryIntentActivities3936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryIntentActivityOptions3937;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public override global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryIntentActivityOptions3937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryBroadcastReceivers3938;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public override global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryBroadcastReceivers3938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveService3939;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public override global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", ref global::android.content.pm.PackageManager_._resolveService3939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ResolveInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", ref global::android.content.pm.PackageManager_._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ResolveInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryIntentServices3940;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public override global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryIntentServices3940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveContentProvider3941;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public override global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.pm.ProviderInfo>(this, global::android.content.pm.PackageManager_.staticClass, "resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;", ref global::android.content.pm.PackageManager_._resolveContentProvider3941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ProviderInfo;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.pm.ProviderInfo>(this, global::android.content.pm.PackageManager_.staticClass, "resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;", ref global::android.content.pm.PackageManager_._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.ProviderInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryContentProviders3942;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public override global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryContentProviders3942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstrumentationInfo3943;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public override global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;", ref global::android.content.pm.PackageManager_._getInstrumentationInfo3943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.InstrumentationInfo;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;", ref global::android.content.pm.PackageManager_._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.pm.InstrumentationInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryInstrumentation3944;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public override global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._queryInstrumentation3944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getActivityIcon3945;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/Intent;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getActivityIcon3945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/Intent;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getActivityIcon3946;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getActivityIcon3946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultActivityIcon3947;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public override global::android.graphics.drawable.Drawable getDefaultActivityIcon()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getDefaultActivityIcon3947) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m41) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationIcon3948;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public override global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getApplicationIcon3948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationIcon3949;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public override global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._getApplicationIcon3949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", ref global::android.content.pm.PackageManager_._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationLabel3950;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public override global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationLabel", "(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", ref global::android.content.pm.PackageManager_._getApplicationLabel3950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationLabel", "(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", ref global::android.content.pm.PackageManager_._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourcesForActivity3951;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public override global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForActivity", "(Landroid/content/ComponentName;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._getResourcesForActivity3951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForActivity", "(Landroid/content/ComponentName;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication3952;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public override global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Ljava/lang/String;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._getResourcesForApplication3952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Ljava/lang/String;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication3953;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public override global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._getResourcesForApplication3953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;", ref global::android.content.pm.PackageManager_._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.res.Resources;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstallerPackageName3954;
+		private static global::MonoJavaBridge.MethodId _m48;
 		public override global::java.lang.String getInstallerPackageName(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.content.pm.PackageManager_._getInstallerPackageName3954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.PackageManager_.staticClass, "getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;", ref global::android.content.pm.PackageManager_._m48, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _addPackageToPreferred3955;
+		private static global::MonoJavaBridge.MethodId _m49;
 		public override void addPackageToPreferred(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPackageToPreferred", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._addPackageToPreferred3955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPackageToPreferred", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._m49, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removePackageFromPreferred3956;
+		private static global::MonoJavaBridge.MethodId _m50;
 		public override void removePackageFromPreferred(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "removePackageFromPreferred", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._removePackageFromPreferred3956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "removePackageFromPreferred", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._m50, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreferredPackages3957;
+		private static global::MonoJavaBridge.MethodId _m51;
 		public override global::java.util.List getPreferredPackages(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getPreferredPackages", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._getPreferredPackages3957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.content.pm.PackageManager_.staticClass, "getPreferredPackages", "(I)Ljava/util/List;", ref global::android.content.pm.PackageManager_._m51, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _addPreferredActivity3958;
+		private static global::MonoJavaBridge.MethodId _m52;
 		public override void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V", ref global::android.content.pm.PackageManager_._addPreferredActivity3958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V", ref global::android.content.pm.PackageManager_._m52, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearPackagePreferredActivities3959;
+		private static global::MonoJavaBridge.MethodId _m53;
 		public override void clearPackagePreferredActivities(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "clearPackagePreferredActivities", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._clearPackagePreferredActivities3959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "clearPackagePreferredActivities", "(Ljava/lang/String;)V", ref global::android.content.pm.PackageManager_._m53, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreferredActivities3960;
+		private static global::MonoJavaBridge.MethodId _m54;
 		public override int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._getPreferredActivities3960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._m54, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setComponentEnabledSetting3961;
+		private static global::MonoJavaBridge.MethodId _m55;
 		public override void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V", ref global::android.content.pm.PackageManager_._setComponentEnabledSetting3961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V", ref global::android.content.pm.PackageManager_._m55, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _getComponentEnabledSetting3962;
+		private static global::MonoJavaBridge.MethodId _m56;
 		public override int getComponentEnabledSetting(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getComponentEnabledSetting", "(Landroid/content/ComponentName;)I", ref global::android.content.pm.PackageManager_._getComponentEnabledSetting3962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getComponentEnabledSetting", "(Landroid/content/ComponentName;)I", ref global::android.content.pm.PackageManager_._m56, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setApplicationEnabledSetting3963;
+		private static global::MonoJavaBridge.MethodId _m57;
 		public override void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V", ref global::android.content.pm.PackageManager_._setApplicationEnabledSetting3963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.PackageManager_.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V", ref global::android.content.pm.PackageManager_._m57, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationEnabledSetting3964;
+		private static global::MonoJavaBridge.MethodId _m58;
 		public override int getApplicationEnabledSetting(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._getApplicationEnabledSetting3964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.PackageManager_.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I", ref global::android.content.pm.PackageManager_._m58, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSafeMode3965;
+		private static global::MonoJavaBridge.MethodId _m59;
 		public override bool isSafeMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "isSafeMode", "()Z", ref global::android.content.pm.PackageManager_._isSafeMode3965);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.pm.PackageManager_.staticClass, "isSafeMode", "()Z", ref global::android.content.pm.PackageManager_._m59);
 		}
 		static PackageManager_()
 		{

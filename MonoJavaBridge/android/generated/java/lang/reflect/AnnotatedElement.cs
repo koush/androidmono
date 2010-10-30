@@ -16,25 +16,25 @@ namespace java.lang.reflect
 		internal AnnotatedElement_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotation21007;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.annotation.Annotation java.lang.reflect.AnnotatedElement.getAnnotation(java.lang.Class arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._getAnnotation21007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
 		}
-		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent21008;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool java.lang.reflect.AnnotatedElement.isAnnotationPresent(java.lang.Class arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z", ref global::java.lang.reflect.AnnotatedElement_._isAnnotationPresent21008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z", ref global::java.lang.reflect.AnnotatedElement_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotations21009;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.annotation.Annotation[] java.lang.reflect.AnnotatedElement.getAnnotations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._getAnnotations21009) as java.lang.annotation.Annotation[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._m2) as java.lang.annotation.Annotation[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21010;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.annotation.Annotation[] java.lang.reflect.AnnotatedElement.getDeclaredAnnotations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._getDeclaredAnnotations21010) as java.lang.annotation.Annotation[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.AnnotatedElement_.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.AnnotatedElement_._m3) as java.lang.annotation.Annotation[];
 		}
 		static AnnotatedElement_()
 		{

@@ -7,15 +7,15 @@ namespace android.text.style
 		protected SuperscriptSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13589;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.SuperscriptSpan._writeToParcel13589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.SuperscriptSpan._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13590;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "describeContents", "()I", ref global::android.text.style.SuperscriptSpan._describeContents13590);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "describeContents", "()I", ref global::android.text.style.SuperscriptSpan._m1);
 		}
 		public new int SpanTypeId
 		{
@@ -24,37 +24,37 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13591;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.SuperscriptSpan._getSpanTypeId13591);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.SuperscriptSpan._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13592;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.SuperscriptSpan._updateDrawState13592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.SuperscriptSpan._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateMeasureState13593;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.SuperscriptSpan._updateMeasureState13593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.SuperscriptSpan._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _SuperscriptSpan13594;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public SuperscriptSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.SuperscriptSpan._SuperscriptSpan13594.native == global::System.IntPtr.Zero)
-				global::android.text.style.SuperscriptSpan._SuperscriptSpan13594 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan13594);
+			if (global::android.text.style.SuperscriptSpan._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.SuperscriptSpan._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._m5);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SuperscriptSpan13595;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public SuperscriptSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.SuperscriptSpan._SuperscriptSpan13595.native == global::System.IntPtr.Zero)
-				global::android.text.style.SuperscriptSpan._SuperscriptSpan13595 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan13595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.SuperscriptSpan._m6.native == global::System.IntPtr.Zero)
+				global::android.text.style.SuperscriptSpan._m6 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static SuperscriptSpan()

@@ -7,27 +7,27 @@ namespace java.security
 		protected AlgorithmParametersSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit22876;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected abstract void engineInit(java.security.spec.AlgorithmParameterSpec arg0);
-		internal static global::MonoJavaBridge.MethodId _engineInit22877;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected abstract void engineInit(byte[] arg0);
-		internal static global::MonoJavaBridge.MethodId _engineInit22878;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected abstract void engineInit(byte[] arg0, java.lang.String arg1);
-		internal static global::MonoJavaBridge.MethodId _engineGetParameterSpec22879;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected abstract global::java.security.spec.AlgorithmParameterSpec engineGetParameterSpec(java.lang.Class arg0);
-		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22880;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected abstract byte[] engineGetEncoded();
-		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22881;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected abstract byte[] engineGetEncoded(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _engineToString22882;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected abstract global::java.lang.String engineToString();
-		internal static global::MonoJavaBridge.MethodId _AlgorithmParametersSpi22883;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public AlgorithmParametersSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22883.native == global::System.IntPtr.Zero)
-				global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22883 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParametersSpi.staticClass, global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22883);
+			if (global::java.security.AlgorithmParametersSpi._m7.native == global::System.IntPtr.Zero)
+				global::java.security.AlgorithmParametersSpi._m7 = @__env.GetMethodIDNoThrow(global::java.security.AlgorithmParametersSpi.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParametersSpi.staticClass, global::java.security.AlgorithmParametersSpi._m7);
 			Init(@__env, handle);
 		}
 		static AlgorithmParametersSpi()
@@ -47,40 +47,40 @@ namespace java.security
 		internal AlgorithmParametersSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit22884;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;)V", ref global::java.security.AlgorithmParametersSpi_._engineInit22884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;)V", ref global::java.security.AlgorithmParametersSpi_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit22885;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override void engineInit(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "([B)V", ref global::java.security.AlgorithmParametersSpi_._engineInit22885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "([B)V", ref global::java.security.AlgorithmParametersSpi_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit22886;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void engineInit(byte[] arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "([BLjava/lang/String;)V", ref global::java.security.AlgorithmParametersSpi_._engineInit22886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineInit", "([BLjava/lang/String;)V", ref global::java.security.AlgorithmParametersSpi_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGetParameterSpec22887;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override global::java.security.spec.AlgorithmParameterSpec engineGetParameterSpec(java.lang.Class arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.AlgorithmParameterSpec>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetParameterSpec", "(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;", ref global::java.security.AlgorithmParametersSpi_._engineGetParameterSpec22887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.spec.AlgorithmParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.spec.AlgorithmParameterSpec>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetParameterSpec", "(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;", ref global::java.security.AlgorithmParametersSpi_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.security.spec.AlgorithmParameterSpec;
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22888;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected override byte[] engineGetEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "()[B", ref global::java.security.AlgorithmParametersSpi_._engineGetEncoded22888) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "()[B", ref global::java.security.AlgorithmParametersSpi_._m4) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22889;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override byte[] engineGetEncoded(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "(Ljava/lang/String;)[B", ref global::java.security.AlgorithmParametersSpi_._engineGetEncoded22889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineGetEncoded", "(Ljava/lang/String;)[B", ref global::java.security.AlgorithmParametersSpi_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _engineToString22890;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override global::java.lang.String engineToString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineToString", "()Ljava/lang/String;", ref global::java.security.AlgorithmParametersSpi_._engineToString22890) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.AlgorithmParametersSpi_.staticClass, "engineToString", "()Ljava/lang/String;", ref global::java.security.AlgorithmParametersSpi_._m6) as java.lang.String;
 		}
 		static AlgorithmParametersSpi_()
 		{

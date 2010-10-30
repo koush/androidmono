@@ -7,76 +7,76 @@ namespace android.widget
 		protected BaseAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount16782;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract int getCount();
-		internal static global::MonoJavaBridge.MethodId _getItem16783;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::java.lang.Object getItem(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getItemId16784;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract long getItemId(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getView16785;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract global::android.view.View getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2);
-		internal static global::MonoJavaBridge.MethodId _isEmpty16786;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "isEmpty", "()Z", ref global::android.widget.BaseAdapter._isEmpty16786);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "isEmpty", "()Z", ref global::android.widget.BaseAdapter._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEnabled16787;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool isEnabled(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "isEnabled", "(I)Z", ref global::android.widget.BaseAdapter._isEnabled16787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "isEnabled", "(I)Z", ref global::android.widget.BaseAdapter._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver16788;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V", ref global::android.widget.BaseAdapter._registerDataSetObserver16788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V", ref global::android.widget.BaseAdapter._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver16789;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", ref global::android.widget.BaseAdapter._unregisterDataSetObserver16789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", ref global::android.widget.BaseAdapter._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _areAllItemsEnabled16790;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool areAllItemsEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "areAllItemsEnabled", "()Z", ref global::android.widget.BaseAdapter._areAllItemsEnabled16790);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "areAllItemsEnabled", "()Z", ref global::android.widget.BaseAdapter._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasStableIds16791;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool hasStableIds()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "hasStableIds", "()Z", ref global::android.widget.BaseAdapter._hasStableIds16791);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, "hasStableIds", "()Z", ref global::android.widget.BaseAdapter._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemViewType16792;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int getItemViewType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter.staticClass, "getItemViewType", "(I)I", ref global::android.widget.BaseAdapter._getItemViewType16792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter.staticClass, "getItemViewType", "(I)I", ref global::android.widget.BaseAdapter._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getViewTypeCount16793;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int getViewTypeCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter.staticClass, "getViewTypeCount", "()I", ref global::android.widget.BaseAdapter._getViewTypeCount16793);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter.staticClass, "getViewTypeCount", "()I", ref global::android.widget.BaseAdapter._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownView16794;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.BaseAdapter._getDropDownView16794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.BaseAdapter._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _notifyDataSetChanged16795;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void notifyDataSetChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "notifyDataSetChanged", "()V", ref global::android.widget.BaseAdapter._notifyDataSetChanged16795);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "notifyDataSetChanged", "()V", ref global::android.widget.BaseAdapter._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _notifyDataSetInvalidated16796;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void notifyDataSetInvalidated()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "notifyDataSetInvalidated", "()V", ref global::android.widget.BaseAdapter._notifyDataSetInvalidated16796);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.BaseAdapter.staticClass, "notifyDataSetInvalidated", "()V", ref global::android.widget.BaseAdapter._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _BaseAdapter16797;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public BaseAdapter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.BaseAdapter._BaseAdapter16797.native == global::System.IntPtr.Zero)
-				global::android.widget.BaseAdapter._BaseAdapter16797 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._BaseAdapter16797);
+			if (global::android.widget.BaseAdapter._m15.native == global::System.IntPtr.Zero)
+				global::android.widget.BaseAdapter._m15 = @__env.GetMethodIDNoThrow(global::android.widget.BaseAdapter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._m15);
 			Init(@__env, handle);
 		}
 		static BaseAdapter()
@@ -96,25 +96,25 @@ namespace android.widget
 		internal BaseAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount16798;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int getCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter_.staticClass, "getCount", "()I", ref global::android.widget.BaseAdapter_._getCount16798);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.BaseAdapter_.staticClass, "getCount", "()I", ref global::android.widget.BaseAdapter_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getItem16799;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.Object getItem(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter_.staticClass, "getItem", "(I)Ljava/lang/Object;", ref global::android.widget.BaseAdapter_._getItem16799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter_.staticClass, "getItem", "(I)Ljava/lang/Object;", ref global::android.widget.BaseAdapter_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemId16800;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override long getItemId(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.BaseAdapter_.staticClass, "getItemId", "(I)J", ref global::android.widget.BaseAdapter_._getItemId16800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.BaseAdapter_.staticClass, "getItemId", "(I)J", ref global::android.widget.BaseAdapter_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getView16801;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::android.view.View getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.BaseAdapter_._getView16801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.BaseAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.BaseAdapter_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
 		static BaseAdapter_()
 		{

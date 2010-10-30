@@ -7,20 +7,20 @@ namespace android.content.pm
 		protected FeatureInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString3716;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._toString3716) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel3717;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.FeatureInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.FeatureInfo._writeToParcel3717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.pm.FeatureInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.content.pm.FeatureInfo._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents3718;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.FeatureInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.FeatureInfo._describeContents3718);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.pm.FeatureInfo.staticClass, "describeContents", "()I", ref global::android.content.pm.FeatureInfo._m2);
 		}
 		public new global::java.lang.String GlEsVersion
 		{
@@ -29,36 +29,36 @@ namespace android.content.pm
 				return getGlEsVersion();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGlEsVersion3719;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getGlEsVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._getGlEsVersion3719) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.pm.FeatureInfo.staticClass, "getGlEsVersion", "()Ljava/lang/String;", ref global::android.content.pm.FeatureInfo._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _FeatureInfo3720;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public FeatureInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._FeatureInfo3720.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._FeatureInfo3720 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._FeatureInfo3720);
+			if (global::android.content.pm.FeatureInfo._m4.native == global::System.IntPtr.Zero)
+				global::android.content.pm.FeatureInfo._m4 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._m4);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FeatureInfo3721;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public FeatureInfo(android.content.pm.FeatureInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.pm.FeatureInfo._FeatureInfo3721.native == global::System.IntPtr.Zero)
-				global::android.content.pm.FeatureInfo._FeatureInfo3721 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "<init>", "(Landroid/content/pm/FeatureInfo;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._FeatureInfo3721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.pm.FeatureInfo._m5.native == global::System.IntPtr.Zero)
+				global::android.content.pm.FeatureInfo._m5 = @__env.GetMethodIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "<init>", "(Landroid/content/pm/FeatureInfo;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _name3722;
+		internal static global::MonoJavaBridge.FieldId _name1998;
 		public global::java.lang.String name
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _name3722)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _name1998)) as java.lang.String;
 			}
 			set
 			{
@@ -71,13 +71,13 @@ namespace android.content.pm
 				return 0;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _reqGlEsVersion3724;
+		internal static global::MonoJavaBridge.FieldId _reqGlEsVersion2000;
 		public int reqGlEsVersion
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _reqGlEsVersion3724);
+				return @__env.GetIntField(this.JvmHandle, _reqGlEsVersion2000);
 			}
 			set
 			{
@@ -90,35 +90,35 @@ namespace android.content.pm
 				return 1;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _flags3726;
+		internal static global::MonoJavaBridge.FieldId _flags2002;
 		public int flags
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _flags3726);
+				return @__env.GetIntField(this.JvmHandle, _flags2002);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR3727;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2003;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.FeatureInfo.staticClass, _CREATOR3727)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.pm.FeatureInfo.staticClass, _CREATOR2003)) as android.os.Parcelable_Creator;
 			}
 		}
 		static FeatureInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.pm.FeatureInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/FeatureInfo"));
-			global::android.content.pm.FeatureInfo._name3722 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "name", "Ljava/lang/String;");
-			global::android.content.pm.FeatureInfo._reqGlEsVersion3724 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "reqGlEsVersion", "I");
-			global::android.content.pm.FeatureInfo._flags3726 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "flags", "I");
-			global::android.content.pm.FeatureInfo._CREATOR3727 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.pm.FeatureInfo._name1998 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "name", "Ljava/lang/String;");
+			global::android.content.pm.FeatureInfo._reqGlEsVersion2000 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "reqGlEsVersion", "I");
+			global::android.content.pm.FeatureInfo._flags2002 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "flags", "I");
+			global::android.content.pm.FeatureInfo._CREATOR2003 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

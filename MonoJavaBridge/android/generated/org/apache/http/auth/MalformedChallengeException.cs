@@ -7,31 +7,31 @@ namespace org.apache.http.auth
 		protected MalformedChallengeException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedChallengeException31831;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public MalformedChallengeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31831.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31831 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31831);
+			if (global::org.apache.http.auth.MalformedChallengeException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.auth.MalformedChallengeException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedChallengeException31832;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public MalformedChallengeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31832.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31832 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.auth.MalformedChallengeException._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.auth.MalformedChallengeException._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedChallengeException31833;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public MalformedChallengeException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31833.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31833 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._MalformedChallengeException31833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.auth.MalformedChallengeException._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.auth.MalformedChallengeException._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.MalformedChallengeException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.MalformedChallengeException.staticClass, global::org.apache.http.auth.MalformedChallengeException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static MalformedChallengeException()

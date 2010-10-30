@@ -13,10 +13,10 @@ namespace android.view
 		internal MenuItem_OnMenuItemClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onMenuItemClick14346;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, "onMenuItemClick", "(Landroid/view/MenuItem;)Z", ref global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick14346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, "onMenuItemClick", "(Landroid/view/MenuItem;)Z", ref global::android.view.MenuItem_OnMenuItemClickListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static MenuItem_OnMenuItemClickListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.view
 		protected MenuItem_OnMenuItemClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _MenuItem_OnMenuItemClickListenerDelegateWrapper14347;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public MenuItem_OnMenuItemClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._MenuItem_OnMenuItemClickListenerDelegateWrapper14347.native == global::System.IntPtr.Zero)
-				global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._MenuItem_OnMenuItemClickListenerDelegateWrapper14347 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass, global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._MenuItem_OnMenuItemClickListenerDelegateWrapper14347);
+			if (global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass, global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static MenuItem_OnMenuItemClickListenerDelegateWrapper()

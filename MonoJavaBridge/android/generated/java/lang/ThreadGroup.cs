@@ -7,15 +7,15 @@ namespace java.lang
 		protected ThreadGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _uncaughtException20875;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V", ref global::java.lang.ThreadGroup._uncaughtException20875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V", ref global::java.lang.ThreadGroup._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString20876;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.ThreadGroup.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.ThreadGroup._toString20876) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.ThreadGroup.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.ThreadGroup._m1) as java.lang.String;
 		}
 		public new global::java.lang.String Name
 		{
@@ -24,10 +24,10 @@ namespace java.lang
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName20877;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.ThreadGroup.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.ThreadGroup._getName20877) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.ThreadGroup.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.ThreadGroup._m2) as java.lang.String;
 		}
 		public new global::java.lang.ThreadGroup Parent
 		{
@@ -36,10 +36,10 @@ namespace java.lang
 				return getParent();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParent20878;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.ThreadGroup getParent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ThreadGroup.staticClass, "getParent", "()Ljava/lang/ThreadGroup;", ref global::java.lang.ThreadGroup._getParent20878) as java.lang.ThreadGroup;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.ThreadGroup.staticClass, "getParent", "()Ljava/lang/ThreadGroup;", ref global::java.lang.ThreadGroup._m3) as java.lang.ThreadGroup;
 		}
 		public new bool Daemon
 		{
@@ -48,70 +48,70 @@ namespace java.lang
 				setDaemon(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDaemon20879;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setDaemon(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "setDaemon", "(Z)V", ref global::java.lang.ThreadGroup._setDaemon20879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "setDaemon", "(Z)V", ref global::java.lang.ThreadGroup._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _stop20880;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void stop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "stop", "()V", ref global::java.lang.ThreadGroup._stop20880);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "stop", "()V", ref global::java.lang.ThreadGroup._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _interrupt20881;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void interrupt()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "interrupt", "()V", ref global::java.lang.ThreadGroup._interrupt20881);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "interrupt", "()V", ref global::java.lang.ThreadGroup._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _destroy20882;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void destroy()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "destroy", "()V", ref global::java.lang.ThreadGroup._destroy20882);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "destroy", "()V", ref global::java.lang.ThreadGroup._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _suspend20883;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void suspend()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "suspend", "()V", ref global::java.lang.ThreadGroup._suspend20883);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "suspend", "()V", ref global::java.lang.ThreadGroup._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _resume20884;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void resume()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "resume", "()V", ref global::java.lang.ThreadGroup._resume20884);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "resume", "()V", ref global::java.lang.ThreadGroup._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _activeCount20885;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int activeCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "activeCount", "()I", ref global::java.lang.ThreadGroup._activeCount20885);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "activeCount", "()I", ref global::java.lang.ThreadGroup._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _enumerate20886;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int enumerate(java.lang.ThreadGroup[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;)I", ref global::java.lang.ThreadGroup._enumerate20886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;)I", ref global::java.lang.ThreadGroup._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _enumerate20887;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int enumerate(java.lang.ThreadGroup[] arg0, bool arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;Z)I", ref global::java.lang.ThreadGroup._enumerate20887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;Z)I", ref global::java.lang.ThreadGroup._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _enumerate20888;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int enumerate(java.lang.Thread[] arg0, bool arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;Z)I", ref global::java.lang.ThreadGroup._enumerate20888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;Z)I", ref global::java.lang.ThreadGroup._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _enumerate20889;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual int enumerate(java.lang.Thread[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;)I", ref global::java.lang.ThreadGroup._enumerate20889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;)I", ref global::java.lang.ThreadGroup._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDaemon20890;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool isDaemon()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "isDaemon", "()Z", ref global::java.lang.ThreadGroup._isDaemon20890);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "isDaemon", "()Z", ref global::java.lang.ThreadGroup._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _checkAccess20891;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void checkAccess()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "checkAccess", "()V", ref global::java.lang.ThreadGroup._checkAccess20891);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "checkAccess", "()V", ref global::java.lang.ThreadGroup._m16);
 		}
 		public new int MaxPriority
 		{
@@ -124,57 +124,57 @@ namespace java.lang
 				setMaxPriority(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxPriority20892;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual int getMaxPriority()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "getMaxPriority", "()I", ref global::java.lang.ThreadGroup._getMaxPriority20892);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "getMaxPriority", "()I", ref global::java.lang.ThreadGroup._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDestroyed20893;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual bool isDestroyed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "isDestroyed", "()Z", ref global::java.lang.ThreadGroup._isDestroyed20893);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "isDestroyed", "()Z", ref global::java.lang.ThreadGroup._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxPriority20894;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void setMaxPriority(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "setMaxPriority", "(I)V", ref global::java.lang.ThreadGroup._setMaxPriority20894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "setMaxPriority", "(I)V", ref global::java.lang.ThreadGroup._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _parentOf20895;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool parentOf(java.lang.ThreadGroup arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "parentOf", "(Ljava/lang/ThreadGroup;)Z", ref global::java.lang.ThreadGroup._parentOf20895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "parentOf", "(Ljava/lang/ThreadGroup;)Z", ref global::java.lang.ThreadGroup._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _activeGroupCount20896;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual int activeGroupCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "activeGroupCount", "()I", ref global::java.lang.ThreadGroup._activeGroupCount20896);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.ThreadGroup.staticClass, "activeGroupCount", "()I", ref global::java.lang.ThreadGroup._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _list20897;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void list()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "list", "()V", ref global::java.lang.ThreadGroup._list20897);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.ThreadGroup.staticClass, "list", "()V", ref global::java.lang.ThreadGroup._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _allowThreadSuspension20898;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual bool allowThreadSuspension(bool arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "allowThreadSuspension", "(Z)Z", ref global::java.lang.ThreadGroup._allowThreadSuspension20898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.ThreadGroup.staticClass, "allowThreadSuspension", "(Z)Z", ref global::java.lang.ThreadGroup._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ThreadGroup20899;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public ThreadGroup(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.ThreadGroup._ThreadGroup20899.native == global::System.IntPtr.Zero)
-				global::java.lang.ThreadGroup._ThreadGroup20899 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._ThreadGroup20899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.lang.ThreadGroup._m24.native == global::System.IntPtr.Zero)
+				global::java.lang.ThreadGroup._m24 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ThreadGroup20900;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public ThreadGroup(java.lang.ThreadGroup arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.ThreadGroup._ThreadGroup20900.native == global::System.IntPtr.Zero)
-				global::java.lang.ThreadGroup._ThreadGroup20900 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._ThreadGroup20900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.lang.ThreadGroup._m25.native == global::System.IntPtr.Zero)
+				global::java.lang.ThreadGroup._m25 = @__env.GetMethodIDNoThrow(global::java.lang.ThreadGroup.staticClass, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static ThreadGroup()

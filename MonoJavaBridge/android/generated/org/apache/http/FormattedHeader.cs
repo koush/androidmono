@@ -14,30 +14,30 @@ namespace org.apache.http
 		internal FormattedHeader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getBuffer31492;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.apache.http.util.CharArrayBuffer org.apache.http.FormattedHeader.getBuffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.util.CharArrayBuffer>(this, global::org.apache.http.FormattedHeader_.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;", ref global::org.apache.http.FormattedHeader_._getBuffer31492) as org.apache.http.util.CharArrayBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<org.apache.http.util.CharArrayBuffer>(this, global::org.apache.http.FormattedHeader_.staticClass, "getBuffer", "()Lorg/apache/http/util/CharArrayBuffer;", ref global::org.apache.http.FormattedHeader_._m0) as org.apache.http.util.CharArrayBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValuePos31493;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int org.apache.http.FormattedHeader.getValuePos()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.FormattedHeader_.staticClass, "getValuePos", "()I", ref global::org.apache.http.FormattedHeader_._getValuePos31493);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.FormattedHeader_.staticClass, "getValuePos", "()I", ref global::org.apache.http.FormattedHeader_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getName31494;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.apache.http.Header.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.FormattedHeader_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.FormattedHeader_._getName31494) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.FormattedHeader_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.FormattedHeader_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue31495;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String org.apache.http.Header.getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.FormattedHeader_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.FormattedHeader_._getValue31495) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.FormattedHeader_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.FormattedHeader_._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getElements31496;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::org.apache.http.HeaderElement[] org.apache.http.Header.getElements()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.FormattedHeader_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.FormattedHeader_._getElements31496) as org.apache.http.HeaderElement[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<org.apache.http.HeaderElement>(this, global::org.apache.http.FormattedHeader_.staticClass, "getElements", "()[Lorg/apache/http/HeaderElement;", ref global::org.apache.http.FormattedHeader_._m4) as org.apache.http.HeaderElement[];
 		}
 		static FormattedHeader_()
 		{

@@ -7,25 +7,25 @@ namespace java.lang.reflect
 		internal Method(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _invoke21097;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public global::java.lang.Object invoke(java.lang.Object arg0, java.lang.Object[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.Method.staticClass, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.lang.reflect.Method._invoke21097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.Method.staticClass, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", ref global::java.lang.reflect.Method._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _equals21098;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.reflect.Method._equals21098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.lang.reflect.Method._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString21099;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._toString21099) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode21100;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public sealed override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Method.staticClass, "hashCode", "()I", ref global::java.lang.reflect.Method._hashCode21100);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Method.staticClass, "hashCode", "()I", ref global::java.lang.reflect.Method._m3);
 		}
 		public new int Modifiers
 		{
@@ -34,10 +34,10 @@ namespace java.lang.reflect
 				return getModifiers();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getModifiers21101;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public int getModifiers()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Method.staticClass, "getModifiers", "()I", ref global::java.lang.reflect.Method._getModifiers21101);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Method.staticClass, "getModifiers", "()I", ref global::java.lang.reflect.Method._m4);
 		}
 		public new global::java.lang.String Name
 		{
@@ -46,15 +46,15 @@ namespace java.lang.reflect
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName21102;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._getName21102) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._m5) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isSynthetic21103;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public bool isSynthetic()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isSynthetic", "()Z", ref global::java.lang.reflect.Method._isSynthetic21103);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isSynthetic", "()Z", ref global::java.lang.reflect.Method._m6);
 		}
 		public new global::java.lang.reflect.TypeVariable[] TypeParameters
 		{
@@ -63,10 +63,10 @@ namespace java.lang.reflect
 				return getTypeParameters();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTypeParameters21104;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public global::java.lang.reflect.TypeVariable[] getTypeParameters()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.TypeVariable>(this, global::java.lang.reflect.Method.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;", ref global::java.lang.reflect.Method._getTypeParameters21104) as java.lang.reflect.TypeVariable[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.TypeVariable>(this, global::java.lang.reflect.Method.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;", ref global::java.lang.reflect.Method._m7) as java.lang.reflect.TypeVariable[];
 		}
 		public new global::java.lang.Class DeclaringClass
 		{
@@ -75,15 +75,15 @@ namespace java.lang.reflect
 				return getDeclaringClass();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaringClass21105;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public global::java.lang.Class getDeclaringClass()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getDeclaringClass", "()Ljava/lang/Class;", ref global::java.lang.reflect.Method._getDeclaringClass21105) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getDeclaringClass", "()Ljava/lang/Class;", ref global::java.lang.reflect.Method._m8) as java.lang.Class;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotation21106;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public sealed override global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.Method.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._getAnnotation21106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.Method.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.annotation.Annotation;
 		}
 		public new global::java.lang.annotation.Annotation[] DeclaredAnnotations
 		{
@@ -92,10 +92,10 @@ namespace java.lang.reflect
 				return getDeclaredAnnotations();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21107;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public sealed override global::java.lang.annotation.Annotation[] getDeclaredAnnotations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.Method.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._getDeclaredAnnotations21107) as java.lang.annotation.Annotation[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation>(this, global::java.lang.reflect.Method.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._m10) as java.lang.annotation.Annotation[];
 		}
 		public new global::java.lang.Class ReturnType
 		{
@@ -104,10 +104,10 @@ namespace java.lang.reflect
 				return getReturnType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getReturnType21108;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public global::java.lang.Class getReturnType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getReturnType", "()Ljava/lang/Class;", ref global::java.lang.reflect.Method._getReturnType21108) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getReturnType", "()Ljava/lang/Class;", ref global::java.lang.reflect.Method._m11) as java.lang.Class;
 		}
 		public new global::java.lang.Class[] ParameterTypes
 		{
@@ -116,15 +116,15 @@ namespace java.lang.reflect
 				return getParameterTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterTypes21109;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public global::java.lang.Class[] getParameterTypes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getParameterTypes", "()[Ljava/lang/Class;", ref global::java.lang.reflect.Method._getParameterTypes21109) as java.lang.Class[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getParameterTypes", "()[Ljava/lang/Class;", ref global::java.lang.reflect.Method._m12) as java.lang.Class[];
 		}
-		internal static global::MonoJavaBridge.MethodId _toGenericString21110;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public global::java.lang.String toGenericString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "toGenericString", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._toGenericString21110) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Method.staticClass, "toGenericString", "()Ljava/lang/String;", ref global::java.lang.reflect.Method._m13) as java.lang.String;
 		}
 		public new global::java.lang.reflect.Type GenericReturnType
 		{
@@ -133,10 +133,10 @@ namespace java.lang.reflect
 				return getGenericReturnType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenericReturnType21111;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public global::java.lang.reflect.Type getGenericReturnType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericReturnType", "()Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._getGenericReturnType21111) as java.lang.reflect.Type;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericReturnType", "()Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._m14) as java.lang.reflect.Type;
 		}
 		public new global::java.lang.reflect.Type[] GenericParameterTypes
 		{
@@ -145,10 +145,10 @@ namespace java.lang.reflect
 				return getGenericParameterTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenericParameterTypes21112;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public global::java.lang.reflect.Type[] getGenericParameterTypes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericParameterTypes", "()[Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._getGenericParameterTypes21112) as java.lang.reflect.Type[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericParameterTypes", "()[Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._m15) as java.lang.reflect.Type[];
 		}
 		public new global::java.lang.Class[] ExceptionTypes
 		{
@@ -157,10 +157,10 @@ namespace java.lang.reflect
 				return getExceptionTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getExceptionTypes21113;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public global::java.lang.Class[] getExceptionTypes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getExceptionTypes", "()[Ljava/lang/Class;", ref global::java.lang.reflect.Method._getExceptionTypes21113) as java.lang.Class[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Method.staticClass, "getExceptionTypes", "()[Ljava/lang/Class;", ref global::java.lang.reflect.Method._m16) as java.lang.Class[];
 		}
 		public new global::java.lang.reflect.Type[] GenericExceptionTypes
 		{
@@ -169,20 +169,20 @@ namespace java.lang.reflect
 				return getGenericExceptionTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenericExceptionTypes21114;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public global::java.lang.reflect.Type[] getGenericExceptionTypes()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._getGenericExceptionTypes21114) as java.lang.reflect.Type[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.Type>(this, global::java.lang.reflect.Method.staticClass, "getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;", ref global::java.lang.reflect.Method._m17) as java.lang.reflect.Type[];
 		}
-		internal static global::MonoJavaBridge.MethodId _isBridge21115;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public bool isBridge()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isBridge", "()Z", ref global::java.lang.reflect.Method._isBridge21115);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isBridge", "()Z", ref global::java.lang.reflect.Method._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _isVarArgs21116;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public bool isVarArgs()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isVarArgs", "()Z", ref global::java.lang.reflect.Method._isVarArgs21116);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Method.staticClass, "isVarArgs", "()Z", ref global::java.lang.reflect.Method._m19);
 		}
 		public new global::java.lang.Object DefaultValue
 		{
@@ -191,10 +191,10 @@ namespace java.lang.reflect
 				return getDefaultValue();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultValue21117;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public global::java.lang.Object getDefaultValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.Method.staticClass, "getDefaultValue", "()Ljava/lang/Object;", ref global::java.lang.reflect.Method._getDefaultValue21117) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.lang.reflect.Method.staticClass, "getDefaultValue", "()Ljava/lang/Object;", ref global::java.lang.reflect.Method._m20) as java.lang.Object;
 		}
 		public new global::java.lang.annotation.Annotation[][] ParameterAnnotations
 		{
@@ -203,10 +203,10 @@ namespace java.lang.reflect
 				return getParameterAnnotations();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterAnnotations21118;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public global::java.lang.annotation.Annotation[][] getParameterAnnotations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation[]>(this, global::java.lang.reflect.Method.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._getParameterAnnotations21118) as java.lang.annotation.Annotation[][];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.annotation.Annotation[]>(this, global::java.lang.reflect.Method.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;", ref global::java.lang.reflect.Method._m21) as java.lang.annotation.Annotation[][];
 		}
 		static Method()
 		{

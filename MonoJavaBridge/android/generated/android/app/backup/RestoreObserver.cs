@@ -7,28 +7,28 @@ namespace android.app.backup
 		protected RestoreObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _restoreStarting2333;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void restoreStarting(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "restoreStarting", "(I)V", ref global::android.app.backup.RestoreObserver._restoreStarting2333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "restoreStarting", "(I)V", ref global::android.app.backup.RestoreObserver._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onUpdate2334;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void onUpdate(int arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "onUpdate", "(ILjava/lang/String;)V", ref global::android.app.backup.RestoreObserver._onUpdate2334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "onUpdate", "(ILjava/lang/String;)V", ref global::android.app.backup.RestoreObserver._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _restoreFinished2335;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void restoreFinished(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "restoreFinished", "(I)V", ref global::android.app.backup.RestoreObserver._restoreFinished2335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.RestoreObserver.staticClass, "restoreFinished", "(I)V", ref global::android.app.backup.RestoreObserver._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RestoreObserver2336;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public RestoreObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.backup.RestoreObserver._RestoreObserver2336.native == global::System.IntPtr.Zero)
-				global::android.app.backup.RestoreObserver._RestoreObserver2336 = @__env.GetMethodIDNoThrow(global::android.app.backup.RestoreObserver.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._RestoreObserver2336);
+			if (global::android.app.backup.RestoreObserver._m3.native == global::System.IntPtr.Zero)
+				global::android.app.backup.RestoreObserver._m3 = @__env.GetMethodIDNoThrow(global::android.app.backup.RestoreObserver.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.RestoreObserver.staticClass, global::android.app.backup.RestoreObserver._m3);
 			Init(@__env, handle);
 		}
 		static RestoreObserver()

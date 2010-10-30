@@ -18,35 +18,35 @@ namespace org.w3c.dom
 		internal DOMError_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocation34340;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.w3c.dom.DOMLocator org.w3c.dom.DOMError.getLocation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMLocator>(this, global::org.w3c.dom.DOMError_.staticClass, "getLocation", "()Lorg/w3c/dom/DOMLocator;", ref global::org.w3c.dom.DOMError_._getLocation34340) as org.w3c.dom.DOMLocator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMLocator>(this, global::org.w3c.dom.DOMError_.staticClass, "getLocation", "()Lorg/w3c/dom/DOMLocator;", ref global::org.w3c.dom.DOMError_._m0) as org.w3c.dom.DOMLocator;
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage34341;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.w3c.dom.DOMError.getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMError_.staticClass, "getMessage", "()Ljava/lang/String;", ref global::org.w3c.dom.DOMError_._getMessage34341) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMError_.staticClass, "getMessage", "()Ljava/lang/String;", ref global::org.w3c.dom.DOMError_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getType34342;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.w3c.dom.DOMError.getType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMError_.staticClass, "getType", "()Ljava/lang/String;", ref global::org.w3c.dom.DOMError_._getType34342) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.DOMError_.staticClass, "getType", "()Ljava/lang/String;", ref global::org.w3c.dom.DOMError_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSeverity34343;
+		private static global::MonoJavaBridge.MethodId _m3;
 		short org.w3c.dom.DOMError.getSeverity()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getSeverity", "()S", ref global::org.w3c.dom.DOMError_._getSeverity34343);
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getSeverity", "()S", ref global::org.w3c.dom.DOMError_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _getRelatedException34344;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.Object org.w3c.dom.DOMError.getRelatedException()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getRelatedException", "()Ljava/lang/Object;", ref global::org.w3c.dom.DOMError_._getRelatedException34344) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getRelatedException", "()Ljava/lang/Object;", ref global::org.w3c.dom.DOMError_._m4) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getRelatedData34345;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::java.lang.Object org.w3c.dom.DOMError.getRelatedData()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getRelatedData", "()Ljava/lang/Object;", ref global::org.w3c.dom.DOMError_._getRelatedData34345) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.w3c.dom.DOMError_.staticClass, "getRelatedData", "()Ljava/lang/Object;", ref global::org.w3c.dom.DOMError_._m5) as java.lang.Object;
 		}
 		static DOMError_()
 		{

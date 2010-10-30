@@ -7,33 +7,33 @@ namespace android.graphics.drawable.shapes
 		protected RectShape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clone6248;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.graphics.drawable.shapes.RectShape clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "clone", "()Landroid/graphics/drawable/shapes/RectShape;", ref global::android.graphics.drawable.shapes.RectShape._clone6248) as android.graphics.drawable.shapes.RectShape;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "clone", "()Landroid/graphics/drawable/shapes/RectShape;", ref global::android.graphics.drawable.shapes.RectShape._m0) as android.graphics.drawable.shapes.RectShape;
 		}
-		internal static global::MonoJavaBridge.MethodId _draw6249;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V", ref global::android.graphics.drawable.shapes.RectShape._draw6249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V", ref global::android.graphics.drawable.shapes.RectShape._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _rect6250;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected virtual global::android.graphics.RectF rect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "rect", "()Landroid/graphics/RectF;", ref global::android.graphics.drawable.shapes.RectShape._rect6250) as android.graphics.RectF;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "rect", "()Landroid/graphics/RectF;", ref global::android.graphics.drawable.shapes.RectShape._m2) as android.graphics.RectF;
 		}
-		internal static global::MonoJavaBridge.MethodId _onResize6251;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void onResize(float arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "onResize", "(FF)V", ref global::android.graphics.drawable.shapes.RectShape._onResize6251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.shapes.RectShape.staticClass, "onResize", "(FF)V", ref global::android.graphics.drawable.shapes.RectShape._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _RectShape6252;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public RectShape() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.shapes.RectShape._RectShape6252.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.shapes.RectShape._RectShape6252 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RectShape.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._RectShape6252);
+			if (global::android.graphics.drawable.shapes.RectShape._m4.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.shapes.RectShape._m4 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.RectShape.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._m4);
 			Init(@__env, handle);
 		}
 		static RectShape()

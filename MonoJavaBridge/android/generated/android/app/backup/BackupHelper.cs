@@ -15,20 +15,20 @@ namespace android.app.backup
 		internal BackupHelper_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _performBackup2321;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.app.backup.BackupHelper.performBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupHelper_._performBackup2321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupHelper_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _restoreEntity2322;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.app.backup.BackupHelper.restoreEntity(android.app.backup.BackupDataInputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V", ref global::android.app.backup.BackupHelper_._restoreEntity2322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V", ref global::android.app.backup.BackupHelper_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeNewStateDescription2323;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void android.app.backup.BackupHelper.writeNewStateDescription(android.os.ParcelFileDescriptor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupHelper_._writeNewStateDescription2323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.BackupHelper_.staticClass, "writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.BackupHelper_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static BackupHelper_()
 		{

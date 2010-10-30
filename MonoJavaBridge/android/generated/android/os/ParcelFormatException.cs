@@ -7,22 +7,22 @@ namespace android.os
 		protected ParcelFormatException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ParcelFormatException10100;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ParcelFormatException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ParcelFormatException._ParcelFormatException10100.native == global::System.IntPtr.Zero)
-				global::android.os.ParcelFormatException._ParcelFormatException10100 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException10100);
+			if (global::android.os.ParcelFormatException._m0.native == global::System.IntPtr.Zero)
+				global::android.os.ParcelFormatException._m0 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ParcelFormatException10101;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ParcelFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.ParcelFormatException._ParcelFormatException10101.native == global::System.IntPtr.Zero)
-				global::android.os.ParcelFormatException._ParcelFormatException10101 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException10101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.os.ParcelFormatException._m1.native == global::System.IntPtr.Zero)
+				global::android.os.ParcelFormatException._m1 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ParcelFormatException()

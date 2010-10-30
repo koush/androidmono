@@ -7,171 +7,171 @@ namespace junit.runner
 		protected BaseTestRunner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLoader31435;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::junit.runner.TestSuiteLoader getLoader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<junit.runner.TestSuiteLoader>(this, global::junit.runner.BaseTestRunner.staticClass, "getLoader", "()Ljunit/runner/TestSuiteLoader;", ref global::junit.runner.BaseTestRunner._getLoader31435) as junit.runner.TestSuiteLoader;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<junit.runner.TestSuiteLoader>(this, global::junit.runner.BaseTestRunner.staticClass, "getLoader", "()Ljunit/runner/TestSuiteLoader;", ref global::junit.runner.BaseTestRunner._m0) as junit.runner.TestSuiteLoader;
 		}
-		internal static global::MonoJavaBridge.MethodId _truncate31436;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static global::java.lang.String truncate(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._truncate31436.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._truncate31436 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "truncate", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._truncate31436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::junit.runner.BaseTestRunner._m1.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m1 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "truncate", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreferences31437;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected static global::java.util.Properties getPreferences()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._getPreferences31437.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._getPreferences31437 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreferences", "()Ljava/util/Properties;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._getPreferences31437)) as java.util.Properties;
+			if (global::junit.runner.BaseTestRunner._m2.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m2 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreferences", "()Ljava/util/Properties;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m2)) as java.util.Properties;
 		}
-		internal static global::MonoJavaBridge.MethodId _addError31438;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void addError(junit.framework.Test arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.runner.BaseTestRunner._addError31438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.runner.BaseTestRunner._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreference31439;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int getPreference(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._getPreference31439.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._getPreference31439 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreference", "(Ljava/lang/String;I)I");
-			return @__env.CallStaticIntMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._getPreference31439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::junit.runner.BaseTestRunner._m4.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m4 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreference", "(Ljava/lang/String;I)I");
+			return @__env.CallStaticIntMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreference31440;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static global::java.lang.String getPreference(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._getPreference31440.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._getPreference31440 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreference", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._getPreference31440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::junit.runner.BaseTestRunner._m5.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m5 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getPreference", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _addFailure31441;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V", ref global::junit.runner.BaseTestRunner._addFailure31441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V", ref global::junit.runner.BaseTestRunner._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _endTest31442;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void endTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "endTest", "(Ljunit/framework/Test;)V", ref global::junit.runner.BaseTestRunner._endTest31442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "endTest", "(Ljunit/framework/Test;)V", ref global::junit.runner.BaseTestRunner._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startTest31443;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void startTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "startTest", "(Ljunit/framework/Test;)V", ref global::junit.runner.BaseTestRunner._startTest31443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "startTest", "(Ljunit/framework/Test;)V", ref global::junit.runner.BaseTestRunner._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _loadSuiteClass31444;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected virtual global::java.lang.Class loadSuiteClass(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.BaseTestRunner.staticClass, "loadSuiteClass", "(Ljava/lang/String;)Ljava/lang/Class;", ref global::junit.runner.BaseTestRunner._loadSuiteClass31444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.BaseTestRunner.staticClass, "loadSuiteClass", "(Ljava/lang/String;)Ljava/lang/Class;", ref global::junit.runner.BaseTestRunner._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
 		}
-		internal static global::MonoJavaBridge.MethodId _testStarted31445;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract void testStarted(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _testEnded31446;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public abstract void testEnded(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _testFailed31447;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract void testFailed(int arg0, junit.framework.Test arg1, java.lang.Throwable arg2);
-		internal static global::MonoJavaBridge.MethodId _runFailed31448;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected abstract void runFailed(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _setPreferences31449;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected static void setPreferences(java.util.Properties arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._setPreferences31449.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._setPreferences31449 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "setPreferences", "(Ljava/util/Properties;)V");
-			@__env.CallStaticVoidMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._setPreferences31449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::junit.runner.BaseTestRunner._m14.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m14 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "setPreferences", "(Ljava/util/Properties;)V");
+			@__env.CallStaticVoidMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _savePreferences31450;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static void savePreferences()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._savePreferences31450.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._savePreferences31450 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "savePreferences", "()V");
-			@__env.CallStaticVoidMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._savePreferences31450);
+			if (global::junit.runner.BaseTestRunner._m15.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m15 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "savePreferences", "()V");
+			@__env.CallStaticVoidMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreference31451;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setPreference(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "setPreference", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner._setPreference31451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "setPreference", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTest31452;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual global::junit.framework.Test getTest(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<junit.framework.Test>(this, global::junit.runner.BaseTestRunner.staticClass, "getTest", "(Ljava/lang/String;)Ljunit/framework/Test;", ref global::junit.runner.BaseTestRunner._getTest31452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as junit.framework.Test;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<junit.framework.Test>(this, global::junit.runner.BaseTestRunner.staticClass, "getTest", "(Ljava/lang/String;)Ljunit/framework/Test;", ref global::junit.runner.BaseTestRunner._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as junit.framework.Test;
 		}
-		internal static global::MonoJavaBridge.MethodId _elapsedTimeAsString31453;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual global::java.lang.String elapsedTimeAsString(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "elapsedTimeAsString", "(J)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._elapsedTimeAsString31453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "elapsedTimeAsString", "(J)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _processArguments31454;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected virtual global::java.lang.String processArguments(java.lang.String[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "processArguments", "([Ljava/lang/String;)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._processArguments31454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "processArguments", "([Ljava/lang/String;)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setLoading31455;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setLoading(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "setLoading", "(Z)V", ref global::junit.runner.BaseTestRunner._setLoading31455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "setLoading", "(Z)V", ref global::junit.runner.BaseTestRunner._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _extractClassName31456;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual global::java.lang.String extractClassName(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "extractClassName", "(Ljava/lang/String;)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._extractClassName31456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.runner.BaseTestRunner.staticClass, "extractClassName", "(Ljava/lang/String;)Ljava/lang/String;", ref global::junit.runner.BaseTestRunner._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearStatus31457;
+		private static global::MonoJavaBridge.MethodId _m22;
 		protected virtual void clearStatus()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "clearStatus", "()V", ref global::junit.runner.BaseTestRunner._clearStatus31457);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner.staticClass, "clearStatus", "()V", ref global::junit.runner.BaseTestRunner._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _useReloadingTestSuiteLoader31458;
+		private static global::MonoJavaBridge.MethodId _m23;
 		protected virtual bool useReloadingTestSuiteLoader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.runner.BaseTestRunner.staticClass, "useReloadingTestSuiteLoader", "()Z", ref global::junit.runner.BaseTestRunner._useReloadingTestSuiteLoader31458);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.runner.BaseTestRunner.staticClass, "useReloadingTestSuiteLoader", "()Z", ref global::junit.runner.BaseTestRunner._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _inVAJava31459;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static bool inVAJava()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._inVAJava31459.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._inVAJava31459 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "inVAJava", "()Z");
-			return @__env.CallStaticBooleanMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._inVAJava31459);
+			if (global::junit.runner.BaseTestRunner._m24.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m24 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "inVAJava", "()Z");
+			return @__env.CallStaticBooleanMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m24);
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilteredTrace31460;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public static global::java.lang.String getFilteredTrace(java.lang.Throwable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._getFilteredTrace31460.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._getFilteredTrace31460 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getFilteredTrace", "(Ljava/lang/Throwable;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._getFilteredTrace31460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::junit.runner.BaseTestRunner._m25.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m25 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getFilteredTrace", "(Ljava/lang/Throwable;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilteredTrace31461;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public static global::java.lang.String getFilteredTrace(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._getFilteredTrace31461.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._getFilteredTrace31461 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getFilteredTrace", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._getFilteredTrace31461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::junit.runner.BaseTestRunner._m26.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m26 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "getFilteredTrace", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _showStackRaw31462;
+		private static global::MonoJavaBridge.MethodId _m27;
 		protected static bool showStackRaw()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._showStackRaw31462.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._showStackRaw31462 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "showStackRaw", "()Z");
-			return @__env.CallStaticBooleanMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._showStackRaw31462);
+			if (global::junit.runner.BaseTestRunner._m27.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m27 = @__env.GetStaticMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "showStackRaw", "()Z");
+			return @__env.CallStaticBooleanMethod(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _BaseTestRunner31463;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public BaseTestRunner() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.runner.BaseTestRunner._BaseTestRunner31463.native == global::System.IntPtr.Zero)
-				global::junit.runner.BaseTestRunner._BaseTestRunner31463 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._BaseTestRunner31463);
+			if (global::junit.runner.BaseTestRunner._m28.native == global::System.IntPtr.Zero)
+				global::junit.runner.BaseTestRunner._m28 = @__env.GetMethodIDNoThrow(global::junit.runner.BaseTestRunner.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.runner.BaseTestRunner.staticClass, global::junit.runner.BaseTestRunner._m28);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String SUITE_METHODNAME
@@ -198,25 +198,25 @@ namespace junit.runner
 		internal BaseTestRunner_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _testStarted31465;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void testStarted(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testStarted", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._testStarted31465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testStarted", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _testEnded31466;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void testEnded(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testEnded", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._testEnded31466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testEnded", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _testFailed31467;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void testFailed(int arg0, junit.framework.Test arg1, java.lang.Throwable arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testFailed", "(ILjunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.runner.BaseTestRunner_._testFailed31467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "testFailed", "(ILjunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.runner.BaseTestRunner_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _runFailed31468;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void runFailed(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "runFailed", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._runFailed31468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.runner.BaseTestRunner_.staticClass, "runFailed", "(Ljava/lang/String;)V", ref global::junit.runner.BaseTestRunner_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static BaseTestRunner_()
 		{

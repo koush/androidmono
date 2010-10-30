@@ -15,20 +15,20 @@ namespace java.util
 		internal Iterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _hasNext26332;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.util.Iterator.hasNext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Iterator_.staticClass, "hasNext", "()Z", ref global::java.util.Iterator_._hasNext26332);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Iterator_.staticClass, "hasNext", "()Z", ref global::java.util.Iterator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _next26333;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.Object java.util.Iterator.next()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Iterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::java.util.Iterator_._next26333) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Iterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::java.util.Iterator_._m1) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _remove26334;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void java.util.Iterator.remove()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Iterator_.staticClass, "remove", "()V", ref global::java.util.Iterator_._remove26334);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.Iterator_.staticClass, "remove", "()V", ref global::java.util.Iterator_._m2);
 		}
 		static Iterator_()
 		{

@@ -22,20 +22,20 @@ namespace android.view.animation
 			internal AnimationListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onAnimationStart15575;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.view.animation.Animation.AnimationListener.onAnimationStart(android.view.animation.Animation arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationStart", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._onAnimationStart15575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationStart", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onAnimationEnd15576;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.view.animation.Animation.AnimationListener.onAnimationEnd(android.view.animation.Animation arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationEnd", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._onAnimationEnd15576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationEnd", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onAnimationRepeat15577;
+			private static global::MonoJavaBridge.MethodId _m2;
 			void android.view.animation.Animation.AnimationListener.onAnimationRepeat(android.view.animation.Animation arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationRepeat", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._onAnimationRepeat15577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.AnimationListener_.staticClass, "onAnimationRepeat", "(Landroid/view/animation/Animation;)V", ref global::android.view.animation.Animation.AnimationListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static AnimationListener_()
 			{
@@ -53,34 +53,34 @@ namespace android.view.animation
 			protected Description(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _Description15578;
+			private static global::MonoJavaBridge.MethodId _m0;
 			protected Description() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.animation.Animation.Description._Description15578.native == global::System.IntPtr.Zero)
-					global::android.view.animation.Animation.Description._Description15578 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.Description.staticClass, global::android.view.animation.Animation.Description._Description15578);
+				if (global::android.view.animation.Animation.Description._m0.native == global::System.IntPtr.Zero)
+					global::android.view.animation.Animation.Description._m0 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.Description.staticClass, global::android.view.animation.Animation.Description._m0);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _type15579;
+			internal static global::MonoJavaBridge.FieldId _type5876;
 			public int type
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _type15579);
+					return @__env.GetIntField(this.JvmHandle, _type5876);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _value15580;
+			internal static global::MonoJavaBridge.FieldId _value5877;
 			public float value
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetFloatField(this.JvmHandle, _value15580);
+					return @__env.GetFloatField(this.JvmHandle, _value5877);
 				}
 				set
 				{
@@ -90,243 +90,243 @@ namespace android.view.animation
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.animation.Animation.Description.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Animation$Description"));
-				global::android.view.animation.Animation.Description._type15579 = @__env.GetFieldIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "type", "I");
-				global::android.view.animation.Animation.Description._value15580 = @__env.GetFieldIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "value", "F");
+				global::android.view.animation.Animation.Description._type5876 = @__env.GetFieldIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "type", "I");
+				global::android.view.animation.Animation.Description._value5877 = @__env.GetFieldIDNoThrow(global::android.view.animation.Animation.Description.staticClass, "value", "F");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _clone15581;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual global::android.view.animation.Animation clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.Animation.staticClass, "clone", "()Landroid/view/animation/Animation;", ref global::android.view.animation.Animation._clone15581) as android.view.animation.Animation;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.animation.Animation.staticClass, "clone", "()Landroid/view/animation/Animation;", ref global::android.view.animation.Animation._m0) as android.view.animation.Animation;
 		}
-		internal static global::MonoJavaBridge.MethodId _start15582;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void start()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "start", "()V", ref global::android.view.animation.Animation._start15582);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "start", "()V", ref global::android.view.animation.Animation._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _reset15583;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "reset", "()V", ref global::android.view.animation.Animation._reset15583);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "reset", "()V", ref global::android.view.animation.Animation._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _initialize15584;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void initialize(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "initialize", "(IIII)V", ref global::android.view.animation.Animation._initialize15584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "initialize", "(IIII)V", ref global::android.view.animation.Animation._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel15585;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "cancel", "()V", ref global::android.view.animation.Animation._cancel15585);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "cancel", "()V", ref global::android.view.animation.Animation._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveSize15586;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected virtual float resolveSize(int arg0, float arg1, int arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.Animation.staticClass, "resolveSize", "(IFII)F", ref global::android.view.animation.Animation._resolveSize15586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.Animation.staticClass, "resolveSize", "(IFII)F", ref global::android.view.animation.Animation._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getRepeatCount15587;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getRepeatCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getRepeatCount", "()I", ref global::android.view.animation.Animation._getRepeatCount15587);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getRepeatCount", "()I", ref global::android.view.animation.Animation._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _setInterpolator15588;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setInterpolator(android.view.animation.Interpolator arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V", ref global::android.view.animation.Animation._setInterpolator15588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V", ref global::android.view.animation.Animation._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setInterpolator(global::android.view.animation.InterpolatorDelegate arg0)
 		{
 			setInterpolator((global::android.view.animation.InterpolatorDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setInterpolator15589;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setInterpolator(android.content.Context arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setInterpolator", "(Landroid/content/Context;I)V", ref global::android.view.animation.Animation._setInterpolator15589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setInterpolator", "(Landroid/content/Context;I)V", ref global::android.view.animation.Animation._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterpolator15590;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::android.view.animation.Interpolator getInterpolator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.animation.Interpolator>(this, global::android.view.animation.Animation.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;", ref global::android.view.animation.Animation._getInterpolator15590) as android.view.animation.Interpolator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.animation.Interpolator>(this, global::android.view.animation.Animation.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;", ref global::android.view.animation.Animation._m9) as android.view.animation.Interpolator;
 		}
-		internal static global::MonoJavaBridge.MethodId _isInitialized15591;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool isInitialized()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "isInitialized", "()Z", ref global::android.view.animation.Animation._isInitialized15591);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "isInitialized", "()Z", ref global::android.view.animation.Animation._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _setStartOffset15592;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setStartOffset(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setStartOffset", "(J)V", ref global::android.view.animation.Animation._setStartOffset15592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setStartOffset", "(J)V", ref global::android.view.animation.Animation._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDuration15593;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setDuration(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setDuration", "(J)V", ref global::android.view.animation.Animation._setDuration15593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setDuration", "(J)V", ref global::android.view.animation.Animation._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _restrictDuration15594;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void restrictDuration(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "restrictDuration", "(J)V", ref global::android.view.animation.Animation._restrictDuration15594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "restrictDuration", "(J)V", ref global::android.view.animation.Animation._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _scaleCurrentDuration15595;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void scaleCurrentDuration(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "scaleCurrentDuration", "(F)V", ref global::android.view.animation.Animation._scaleCurrentDuration15595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "scaleCurrentDuration", "(F)V", ref global::android.view.animation.Animation._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setStartTime15596;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setStartTime(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setStartTime", "(J)V", ref global::android.view.animation.Animation._setStartTime15596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setStartTime", "(J)V", ref global::android.view.animation.Animation._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startNow15597;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void startNow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "startNow", "()V", ref global::android.view.animation.Animation._startNow15597);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "startNow", "()V", ref global::android.view.animation.Animation._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _setRepeatMode15598;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setRepeatMode(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setRepeatMode", "(I)V", ref global::android.view.animation.Animation._setRepeatMode15598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setRepeatMode", "(I)V", ref global::android.view.animation.Animation._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRepeatCount15599;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setRepeatCount(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setRepeatCount", "(I)V", ref global::android.view.animation.Animation._setRepeatCount15599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setRepeatCount", "(I)V", ref global::android.view.animation.Animation._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isFillEnabled15600;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual bool isFillEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "isFillEnabled", "()Z", ref global::android.view.animation.Animation._isFillEnabled15600);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "isFillEnabled", "()Z", ref global::android.view.animation.Animation._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFillEnabled15601;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setFillEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillEnabled", "(Z)V", ref global::android.view.animation.Animation._setFillEnabled15601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillEnabled", "(Z)V", ref global::android.view.animation.Animation._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFillBefore15602;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setFillBefore(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillBefore", "(Z)V", ref global::android.view.animation.Animation._setFillBefore15602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillBefore", "(Z)V", ref global::android.view.animation.Animation._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFillAfter15603;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setFillAfter(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillAfter", "(Z)V", ref global::android.view.animation.Animation._setFillAfter15603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setFillAfter", "(Z)V", ref global::android.view.animation.Animation._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setZAdjustment15604;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void setZAdjustment(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setZAdjustment", "(I)V", ref global::android.view.animation.Animation._setZAdjustment15604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setZAdjustment", "(I)V", ref global::android.view.animation.Animation._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDetachWallpaper15605;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setDetachWallpaper(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setDetachWallpaper", "(Z)V", ref global::android.view.animation.Animation._setDetachWallpaper15605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setDetachWallpaper", "(Z)V", ref global::android.view.animation.Animation._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getStartTime15606;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual long getStartTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getStartTime", "()J", ref global::android.view.animation.Animation._getStartTime15606);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getStartTime", "()J", ref global::android.view.animation.Animation._m25);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDuration15607;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual long getDuration()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getDuration", "()J", ref global::android.view.animation.Animation._getDuration15607);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getDuration", "()J", ref global::android.view.animation.Animation._m26);
 		}
-		internal static global::MonoJavaBridge.MethodId _getStartOffset15608;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual long getStartOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getStartOffset", "()J", ref global::android.view.animation.Animation._getStartOffset15608);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "getStartOffset", "()J", ref global::android.view.animation.Animation._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _getRepeatMode15609;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual int getRepeatMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getRepeatMode", "()I", ref global::android.view.animation.Animation._getRepeatMode15609);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getRepeatMode", "()I", ref global::android.view.animation.Animation._m28);
 		}
-		internal static global::MonoJavaBridge.MethodId _getFillBefore15610;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool getFillBefore()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getFillBefore", "()Z", ref global::android.view.animation.Animation._getFillBefore15610);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getFillBefore", "()Z", ref global::android.view.animation.Animation._m29);
 		}
-		internal static global::MonoJavaBridge.MethodId _getFillAfter15611;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual bool getFillAfter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getFillAfter", "()Z", ref global::android.view.animation.Animation._getFillAfter15611);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getFillAfter", "()Z", ref global::android.view.animation.Animation._m30);
 		}
-		internal static global::MonoJavaBridge.MethodId _getZAdjustment15612;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual int getZAdjustment()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getZAdjustment", "()I", ref global::android.view.animation.Animation._getZAdjustment15612);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.animation.Animation.staticClass, "getZAdjustment", "()I", ref global::android.view.animation.Animation._m31);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDetachWallpaper15613;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual bool getDetachWallpaper()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getDetachWallpaper", "()Z", ref global::android.view.animation.Animation._getDetachWallpaper15613);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getDetachWallpaper", "()Z", ref global::android.view.animation.Animation._m32);
 		}
-		internal static global::MonoJavaBridge.MethodId _willChangeTransformationMatrix15614;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual bool willChangeTransformationMatrix()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "willChangeTransformationMatrix", "()Z", ref global::android.view.animation.Animation._willChangeTransformationMatrix15614);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "willChangeTransformationMatrix", "()Z", ref global::android.view.animation.Animation._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _willChangeBounds15615;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual bool willChangeBounds()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "willChangeBounds", "()Z", ref global::android.view.animation.Animation._willChangeBounds15615);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "willChangeBounds", "()Z", ref global::android.view.animation.Animation._m34);
 		}
-		internal static global::MonoJavaBridge.MethodId _setAnimationListener15616;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual void setAnimationListener(android.view.animation.Animation.AnimationListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setAnimationListener", "(Landroid/view/animation/Animation$AnimationListener;)V", ref global::android.view.animation.Animation._setAnimationListener15616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "setAnimationListener", "(Landroid/view/animation/Animation$AnimationListener;)V", ref global::android.view.animation.Animation._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ensureInterpolator15617;
+		private static global::MonoJavaBridge.MethodId _m36;
 		protected virtual void ensureInterpolator()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "ensureInterpolator", "()V", ref global::android.view.animation.Animation._ensureInterpolator15617);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "ensureInterpolator", "()V", ref global::android.view.animation.Animation._m36);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeDurationHint15618;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual long computeDurationHint()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "computeDurationHint", "()J", ref global::android.view.animation.Animation._computeDurationHint15618);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.animation.Animation.staticClass, "computeDurationHint", "()J", ref global::android.view.animation.Animation._m37);
 		}
-		internal static global::MonoJavaBridge.MethodId _getTransformation15619;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public virtual bool getTransformation(long arg0, android.view.animation.Transformation arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getTransformation", "(JLandroid/view/animation/Transformation;)Z", ref global::android.view.animation.Animation._getTransformation15619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "getTransformation", "(JLandroid/view/animation/Transformation;)Z", ref global::android.view.animation.Animation._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _hasStarted15620;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public virtual bool hasStarted()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "hasStarted", "()Z", ref global::android.view.animation.Animation._hasStarted15620);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "hasStarted", "()Z", ref global::android.view.animation.Animation._m39);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasEnded15621;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public virtual bool hasEnded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "hasEnded", "()Z", ref global::android.view.animation.Animation._hasEnded15621);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.animation.Animation.staticClass, "hasEnded", "()Z", ref global::android.view.animation.Animation._m40);
 		}
-		internal static global::MonoJavaBridge.MethodId _applyTransformation15622;
+		private static global::MonoJavaBridge.MethodId _m41;
 		protected virtual void applyTransformation(float arg0, android.view.animation.Transformation arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V", ref global::android.view.animation.Animation._applyTransformation15622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.animation.Animation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V", ref global::android.view.animation.Animation._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _Animation15623;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public Animation(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.Animation._Animation15623.native == global::System.IntPtr.Zero)
-				global::android.view.animation.Animation._Animation15623 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.staticClass, global::android.view.animation.Animation._Animation15623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.animation.Animation._m42.native == global::System.IntPtr.Zero)
+				global::android.view.animation.Animation._m42 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.staticClass, global::android.view.animation.Animation._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Animation15624;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public Animation() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.Animation._Animation15624.native == global::System.IntPtr.Zero)
-				global::android.view.animation.Animation._Animation15624 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.staticClass, global::android.view.animation.Animation._Animation15624);
+			if (global::android.view.animation.Animation._m43.native == global::System.IntPtr.Zero)
+				global::android.view.animation.Animation._m43 = @__env.GetMethodIDNoThrow(global::android.view.animation.Animation.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Animation.staticClass, global::android.view.animation.Animation._m43);
 			Init(@__env, handle);
 		}
 		public static int INFINITE

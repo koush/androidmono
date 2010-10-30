@@ -14,10 +14,10 @@ namespace android.webkit
 				return getInputStream();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputStream16079;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public global::java.io.InputStream getInputStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::android.webkit.PluginData._getInputStream16079) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::android.webkit.PluginData._m0) as java.io.InputStream;
 		}
 		public new long ContentLength
 		{
@@ -26,10 +26,10 @@ namespace android.webkit
 				return getContentLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentLength16080;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public long getContentLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.webkit.PluginData.staticClass, "getContentLength", "()J", ref global::android.webkit.PluginData._getContentLength16080);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.webkit.PluginData.staticClass, "getContentLength", "()J", ref global::android.webkit.PluginData._m1);
 		}
 		public new global::java.util.Map Headers
 		{
@@ -38,10 +38,10 @@ namespace android.webkit
 				return getHeaders();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeaders16081;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public global::java.util.Map getHeaders()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::android.webkit.PluginData._getHeaders16081) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::android.webkit.PluginData._m2) as java.util.Map;
 		}
 		public new int StatusCode
 		{
@@ -50,18 +50,18 @@ namespace android.webkit
 				return getStatusCode();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getStatusCode16082;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public int getStatusCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.PluginData.staticClass, "getStatusCode", "()I", ref global::android.webkit.PluginData._getStatusCode16082);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.PluginData.staticClass, "getStatusCode", "()I", ref global::android.webkit.PluginData._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _PluginData16083;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.PluginData._PluginData16083.native == global::System.IntPtr.Zero)
-				global::android.webkit.PluginData._PluginData16083 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "<init>", "(Ljava/io/InputStream;JLjava/util/Map;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginData.staticClass, global::android.webkit.PluginData._PluginData16083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.webkit.PluginData._m4.native == global::System.IntPtr.Zero)
+				global::android.webkit.PluginData._m4 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginData.staticClass, "<init>", "(Ljava/io/InputStream;JLjava/util/Map;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginData.staticClass, global::android.webkit.PluginData._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		static PluginData()

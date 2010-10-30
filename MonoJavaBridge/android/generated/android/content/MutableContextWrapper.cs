@@ -14,18 +14,18 @@ namespace android.content
 				setBaseContext(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setBaseContext3481;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setBaseContext(android.content.Context arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.MutableContextWrapper.staticClass, "setBaseContext", "(Landroid/content/Context;)V", ref global::android.content.MutableContextWrapper._setBaseContext3481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.MutableContextWrapper.staticClass, "setBaseContext", "(Landroid/content/Context;)V", ref global::android.content.MutableContextWrapper._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _MutableContextWrapper3482;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public MutableContextWrapper(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.MutableContextWrapper._MutableContextWrapper3482.native == global::System.IntPtr.Zero)
-				global::android.content.MutableContextWrapper._MutableContextWrapper3482 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._MutableContextWrapper3482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.MutableContextWrapper._m1.native == global::System.IntPtr.Zero)
+				global::android.content.MutableContextWrapper._m1 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static MutableContextWrapper()

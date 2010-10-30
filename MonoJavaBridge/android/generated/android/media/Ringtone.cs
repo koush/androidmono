@@ -7,20 +7,20 @@ namespace android.media
 		protected Ringtone(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _stop7443;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void stop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "stop", "()V", ref global::android.media.Ringtone._stop7443);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "stop", "()V", ref global::android.media.Ringtone._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getTitle7444;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String getTitle(android.content.Context arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.media.Ringtone.staticClass, "getTitle", "(Landroid/content/Context;)Ljava/lang/String;", ref global::android.media.Ringtone._getTitle7444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.media.Ringtone.staticClass, "getTitle", "(Landroid/content/Context;)Ljava/lang/String;", ref global::android.media.Ringtone._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _play7445;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void play()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "play", "()V", ref global::android.media.Ringtone._play7445);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "play", "()V", ref global::android.media.Ringtone._m2);
 		}
 		public new int StreamType
 		{
@@ -33,20 +33,20 @@ namespace android.media
 				setStreamType(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getStreamType7446;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getStreamType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.Ringtone.staticClass, "getStreamType", "()I", ref global::android.media.Ringtone._getStreamType7446);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.Ringtone.staticClass, "getStreamType", "()I", ref global::android.media.Ringtone._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isPlaying7447;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool isPlaying()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.Ringtone.staticClass, "isPlaying", "()Z", ref global::android.media.Ringtone._isPlaying7447);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.Ringtone.staticClass, "isPlaying", "()Z", ref global::android.media.Ringtone._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _setStreamType7448;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setStreamType(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "setStreamType", "(I)V", ref global::android.media.Ringtone._setStreamType7448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.Ringtone.staticClass, "setStreamType", "(I)V", ref global::android.media.Ringtone._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Ringtone()
 		{

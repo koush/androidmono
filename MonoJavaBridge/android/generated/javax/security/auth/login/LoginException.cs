@@ -7,22 +7,22 @@ namespace javax.security.auth.login
 		protected LoginException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _LoginException30208;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public LoginException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.login.LoginException._LoginException30208.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.login.LoginException._LoginException30208 = @__env.GetMethodIDNoThrow(global::javax.security.auth.login.LoginException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._LoginException30208);
+			if (global::javax.security.auth.login.LoginException._m0.native == global::System.IntPtr.Zero)
+				global::javax.security.auth.login.LoginException._m0 = @__env.GetMethodIDNoThrow(global::javax.security.auth.login.LoginException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _LoginException30209;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public LoginException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.auth.login.LoginException._LoginException30209.native == global::System.IntPtr.Zero)
-				global::javax.security.auth.login.LoginException._LoginException30209 = @__env.GetMethodIDNoThrow(global::javax.security.auth.login.LoginException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._LoginException30209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.security.auth.login.LoginException._m1.native == global::System.IntPtr.Zero)
+				global::javax.security.auth.login.LoginException._m1 = @__env.GetMethodIDNoThrow(global::javax.security.auth.login.LoginException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static LoginException()

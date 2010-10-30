@@ -7,114 +7,114 @@ namespace android.widget
 		protected CursorAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _init16893;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual void init(android.content.Context arg0, android.database.Cursor arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "init", "(Landroid/content/Context;Landroid/database/Cursor;Z)V", ref global::android.widget.CursorAdapter._init16893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "init", "(Landroid/content/Context;Landroid/database/Cursor;Z)V", ref global::android.widget.CursorAdapter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onContentChanged16894;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected virtual void onContentChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "onContentChanged", "()V", ref global::android.widget.CursorAdapter._onContentChanged16894);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "onContentChanged", "()V", ref global::android.widget.CursorAdapter._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount16895;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int getCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.CursorAdapter.staticClass, "getCount", "()I", ref global::android.widget.CursorAdapter._getCount16895);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.CursorAdapter.staticClass, "getCount", "()I", ref global::android.widget.CursorAdapter._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getItem16896;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.Object getItem(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;", ref global::android.widget.CursorAdapter._getItem16896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;", ref global::android.widget.CursorAdapter._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemId16897;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override long getItemId(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.CursorAdapter.staticClass, "getItemId", "(I)J", ref global::android.widget.CursorAdapter._getItemId16897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.widget.CursorAdapter.staticClass, "getItemId", "(I)J", ref global::android.widget.CursorAdapter._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter16898;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::android.widget.Filter getFilter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;", ref global::android.widget.CursorAdapter._getFilter16898) as android.widget.Filter;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;", ref global::android.widget.CursorAdapter._m5) as android.widget.Filter;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasStableIds16899;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool hasStableIds()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CursorAdapter.staticClass, "hasStableIds", "()Z", ref global::android.widget.CursorAdapter._hasStableIds16899);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CursorAdapter.staticClass, "hasStableIds", "()Z", ref global::android.widget.CursorAdapter._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _getView16900;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::android.view.View getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._getView16900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCursor16901;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::android.database.Cursor getCursor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.CursorAdapter.staticClass, "getCursor", "()Landroid/database/Cursor;", ref global::android.widget.CursorAdapter._getCursor16901) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.CursorAdapter.staticClass, "getCursor", "()Landroid/database/Cursor;", ref global::android.widget.CursorAdapter._m8) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownView16902;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._getDropDownView16902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _newView16903;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract global::android.view.View newView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2);
-		internal static global::MonoJavaBridge.MethodId _newDropDownView16904;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual global::android.view.View newDropDownView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "newDropDownView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._newDropDownView16904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter.staticClass, "newDropDownView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _bindView16905;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract void bindView(android.view.View arg0, android.content.Context arg1, android.database.Cursor arg2);
-		internal static global::MonoJavaBridge.MethodId _changeCursor16906;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void changeCursor(android.database.Cursor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "changeCursor", "(Landroid/database/Cursor;)V", ref global::android.widget.CursorAdapter._changeCursor16906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "changeCursor", "(Landroid/database/Cursor;)V", ref global::android.widget.CursorAdapter._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _convertToString16907;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.lang.CharSequence convertToString(android.database.Cursor arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.CursorAdapter.staticClass, "convertToString", "(Landroid/database/Cursor;)Ljava/lang/CharSequence;", ref global::android.widget.CursorAdapter._convertToString16907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.widget.CursorAdapter.staticClass, "convertToString", "(Landroid/database/Cursor;)Ljava/lang/CharSequence;", ref global::android.widget.CursorAdapter._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _runQueryOnBackgroundThread16908;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual global::android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.CursorAdapter.staticClass, "runQueryOnBackgroundThread", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;", ref global::android.widget.CursorAdapter._runQueryOnBackgroundThread16908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.widget.CursorAdapter.staticClass, "runQueryOnBackgroundThread", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;", ref global::android.widget.CursorAdapter._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.Cursor;
 		}
 		public android.database.Cursor runQueryOnBackgroundThread(string arg0)
 		{
 			return runQueryOnBackgroundThread((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilterQueryProvider16909;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual global::android.widget.FilterQueryProvider getFilterQueryProvider()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.FilterQueryProvider>(this, global::android.widget.CursorAdapter.staticClass, "getFilterQueryProvider", "()Landroid/widget/FilterQueryProvider;", ref global::android.widget.CursorAdapter._getFilterQueryProvider16909) as android.widget.FilterQueryProvider;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.FilterQueryProvider>(this, global::android.widget.CursorAdapter.staticClass, "getFilterQueryProvider", "()Landroid/widget/FilterQueryProvider;", ref global::android.widget.CursorAdapter._m16) as android.widget.FilterQueryProvider;
 		}
-		internal static global::MonoJavaBridge.MethodId _setFilterQueryProvider16910;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setFilterQueryProvider(android.widget.FilterQueryProvider arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "setFilterQueryProvider", "(Landroid/widget/FilterQueryProvider;)V", ref global::android.widget.CursorAdapter._setFilterQueryProvider16910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter.staticClass, "setFilterQueryProvider", "(Landroid/widget/FilterQueryProvider;)V", ref global::android.widget.CursorAdapter._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setFilterQueryProvider(global::android.widget.FilterQueryProviderDelegate arg0)
 		{
 			setFilterQueryProvider((global::android.widget.FilterQueryProviderDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _CursorAdapter16911;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public CursorAdapter(android.content.Context arg0, android.database.Cursor arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CursorAdapter._CursorAdapter16911.native == global::System.IntPtr.Zero)
-				global::android.widget.CursorAdapter._CursorAdapter16911 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CursorAdapter.staticClass, global::android.widget.CursorAdapter._CursorAdapter16911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.CursorAdapter._m18.native == global::System.IntPtr.Zero)
+				global::android.widget.CursorAdapter._m18 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CursorAdapter.staticClass, global::android.widget.CursorAdapter._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CursorAdapter16912;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public CursorAdapter(android.content.Context arg0, android.database.Cursor arg1, bool arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CursorAdapter._CursorAdapter16912.native == global::System.IntPtr.Zero)
-				global::android.widget.CursorAdapter._CursorAdapter16912 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;Z)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CursorAdapter.staticClass, global::android.widget.CursorAdapter._CursorAdapter16912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.CursorAdapter._m19.native == global::System.IntPtr.Zero)
+				global::android.widget.CursorAdapter._m19 = @__env.GetMethodIDNoThrow(global::android.widget.CursorAdapter.staticClass, "<init>", "(Landroid/content/Context;Landroid/database/Cursor;Z)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CursorAdapter.staticClass, global::android.widget.CursorAdapter._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static CursorAdapter()
@@ -134,15 +134,15 @@ namespace android.widget
 		internal CursorAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newView16913;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::android.view.View newView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter_.staticClass, "newView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter_._newView16913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.CursorAdapter_.staticClass, "newView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", ref global::android.widget.CursorAdapter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _bindView16914;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void bindView(android.view.View arg0, android.content.Context arg1, android.database.Cursor arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter_.staticClass, "bindView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V", ref global::android.widget.CursorAdapter_._bindView16914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CursorAdapter_.staticClass, "bindView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V", ref global::android.widget.CursorAdapter_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static CursorAdapter_()
 		{

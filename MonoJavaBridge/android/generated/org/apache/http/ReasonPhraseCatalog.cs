@@ -13,10 +13,10 @@ namespace org.apache.http
 		internal ReasonPhraseCatalog_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getReason31759;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.apache.http.ReasonPhraseCatalog.getReason(int arg0, java.util.Locale arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.ReasonPhraseCatalog_.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;", ref global::org.apache.http.ReasonPhraseCatalog_._getReason31759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.ReasonPhraseCatalog_.staticClass, "getReason", "(ILjava/util/Locale;)Ljava/lang/String;", ref global::org.apache.http.ReasonPhraseCatalog_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		static ReasonPhraseCatalog_()
 		{

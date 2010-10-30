@@ -7,38 +7,38 @@ namespace android.media
 		protected ToneGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize7511;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "finalize", "()V", ref global::android.media.ToneGenerator._finalize7511);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "finalize", "()V", ref global::android.media.ToneGenerator._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _release7512;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void release()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "release", "()V", ref global::android.media.ToneGenerator._release7512);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "release", "()V", ref global::android.media.ToneGenerator._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _startTone7513;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual bool startTone(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ToneGenerator.staticClass, "startTone", "(I)Z", ref global::android.media.ToneGenerator._startTone7513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ToneGenerator.staticClass, "startTone", "(I)Z", ref global::android.media.ToneGenerator._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startTone7514;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual bool startTone(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ToneGenerator.staticClass, "startTone", "(II)Z", ref global::android.media.ToneGenerator._startTone7514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.ToneGenerator.staticClass, "startTone", "(II)Z", ref global::android.media.ToneGenerator._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _stopTone7515;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void stopTone()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "stopTone", "()V", ref global::android.media.ToneGenerator._stopTone7515);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.ToneGenerator.staticClass, "stopTone", "()V", ref global::android.media.ToneGenerator._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _ToneGenerator7516;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public ToneGenerator(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.ToneGenerator._ToneGenerator7516.native == global::System.IntPtr.Zero)
-				global::android.media.ToneGenerator._ToneGenerator7516 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "<init>", "(II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._ToneGenerator7516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.media.ToneGenerator._m5.native == global::System.IntPtr.Zero)
+				global::android.media.ToneGenerator._m5 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int TONE_DTMF_0

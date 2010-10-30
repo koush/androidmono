@@ -7,161 +7,161 @@ namespace android.text.method
 		protected MetaKeyKeyListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyDown13310;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.MetaKeyKeyListener._onKeyDown13310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.MetaKeyKeyListener._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyUp13311;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool onKeyUp(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.MetaKeyKeyListener._onKeyUp13311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", ref global::android.text.method.MetaKeyKeyListener._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState13312;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static int getMetaState(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._getMetaState13312.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._getMetaState13312 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(Ljava/lang/CharSequence;)I");
-			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._getMetaState13312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m2.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m2 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(Ljava/lang/CharSequence;)I");
+			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int getMetaState(string arg0)
 		{
 			return getMetaState((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState13313;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int getMetaState(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._getMetaState13313.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._getMetaState13313 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(Ljava/lang/CharSequence;I)I");
-			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._getMetaState13313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.MetaKeyKeyListener._m3.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m3 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(Ljava/lang/CharSequence;I)I");
+			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static int getMetaState(string arg0, int arg1)
 		{
 			return getMetaState((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState13314;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int getMetaState(long arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._getMetaState13314.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._getMetaState13314 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(JI)I");
-			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._getMetaState13314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.MetaKeyKeyListener._m4.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m4 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(JI)I");
+			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState13315;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static int getMetaState(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._getMetaState13315.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._getMetaState13315 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(J)I");
-			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._getMetaState13315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m5.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m5 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "getMetaState", "(J)I");
+			return @__env.CallStaticIntMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearMetaKeyState13316;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual long clearMetaKeyState(long arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(JI)J", ref global::android.text.method.MetaKeyKeyListener._clearMetaKeyState13316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(JI)J", ref global::android.text.method.MetaKeyKeyListener._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearMetaKeyState13317;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void clearMetaKeyState(android.view.View arg0, android.text.Editable arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V", ref global::android.text.method.MetaKeyKeyListener._clearMetaKeyState13317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V", ref global::android.text.method.MetaKeyKeyListener._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearMetaKeyState13318;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static void clearMetaKeyState(android.text.Editable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._clearMetaKeyState13318.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._clearMetaKeyState13318 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(Landroid/text/Editable;I)V");
-			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._clearMetaKeyState13318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.MetaKeyKeyListener._m8.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m8 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "clearMetaKeyState", "(Landroid/text/Editable;I)V");
+			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _resetMetaState13319;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static void resetMetaState(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._resetMetaState13319.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._resetMetaState13319 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetMetaState", "(Landroid/text/Spannable;)V");
-			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._resetMetaState13319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m9.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m9 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetMetaState", "(Landroid/text/Spannable;)V");
+			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _adjustMetaAfterKeypress13320;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static long adjustMetaAfterKeypress(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13320.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13320 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "adjustMetaAfterKeypress", "(J)J");
-			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m10.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m10 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "adjustMetaAfterKeypress", "(J)J");
+			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _adjustMetaAfterKeypress13321;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static void adjustMetaAfterKeypress(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13321.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13321 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "adjustMetaAfterKeypress", "(Landroid/text/Spannable;)V");
-			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._adjustMetaAfterKeypress13321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m11.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m11 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "adjustMetaAfterKeypress", "(Landroid/text/Spannable;)V");
+			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isMetaTracker13322;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static bool isMetaTracker(java.lang.CharSequence arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._isMetaTracker13322.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._isMetaTracker13322 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "isMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._isMetaTracker13322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.MetaKeyKeyListener._m12.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m12 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "isMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static bool isMetaTracker(string arg0, java.lang.Object arg1)
 		{
 			return isMetaTracker((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _isSelectingMetaTracker13323;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static bool isSelectingMetaTracker(java.lang.CharSequence arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._isSelectingMetaTracker13323.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._isSelectingMetaTracker13323 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "isSelectingMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._isSelectingMetaTracker13323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.MetaKeyKeyListener._m13.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m13 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "isSelectingMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static bool isSelectingMetaTracker(string arg0, java.lang.Object arg1)
 		{
 			return isSelectingMetaTracker((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _resetLockedMeta13324;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected static void resetLockedMeta(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._resetLockedMeta13324.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._resetLockedMeta13324 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetLockedMeta", "(Landroid/text/Spannable;)V");
-			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._resetLockedMeta13324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m14.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m14 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetLockedMeta", "(Landroid/text/Spannable;)V");
+			@__env.CallStaticVoidMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _resetLockedMeta13325;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static long resetLockedMeta(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._resetLockedMeta13325.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._resetLockedMeta13325 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetLockedMeta", "(J)J");
-			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._resetLockedMeta13325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.method.MetaKeyKeyListener._m15.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m15 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "resetLockedMeta", "(J)J");
+			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _handleKeyDown13326;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static long handleKeyDown(long arg0, int arg1, android.view.KeyEvent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._handleKeyDown13326.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._handleKeyDown13326 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "handleKeyDown", "(JILandroid/view/KeyEvent;)J");
-			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._handleKeyDown13326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.method.MetaKeyKeyListener._m16.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m16 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "handleKeyDown", "(JILandroid/view/KeyEvent;)J");
+			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _handleKeyUp13327;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static long handleKeyUp(long arg0, int arg1, android.view.KeyEvent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._handleKeyUp13327.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._handleKeyUp13327 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "handleKeyUp", "(JILandroid/view/KeyEvent;)J");
-			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._handleKeyUp13327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.method.MetaKeyKeyListener._m17.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m17 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "handleKeyUp", "(JILandroid/view/KeyEvent;)J");
+			return @__env.CallStaticLongMethod(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _MetaKeyKeyListener13328;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public MetaKeyKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.MetaKeyKeyListener._MetaKeyKeyListener13328.native == global::System.IntPtr.Zero)
-				global::android.text.method.MetaKeyKeyListener._MetaKeyKeyListener13328 = @__env.GetMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._MetaKeyKeyListener13328);
+			if (global::android.text.method.MetaKeyKeyListener._m18.native == global::System.IntPtr.Zero)
+				global::android.text.method.MetaKeyKeyListener._m18 = @__env.GetMethodIDNoThrow(global::android.text.method.MetaKeyKeyListener.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.MetaKeyKeyListener.staticClass, global::android.text.method.MetaKeyKeyListener._m18);
 			Init(@__env, handle);
 		}
 		public static int META_SHIFT_ON

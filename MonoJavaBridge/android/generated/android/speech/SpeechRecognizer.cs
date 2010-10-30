@@ -7,49 +7,49 @@ namespace android.speech
 		protected SpeechRecognizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _destroy11701;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void destroy()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "destroy", "()V", ref global::android.speech.SpeechRecognizer._destroy11701);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "destroy", "()V", ref global::android.speech.SpeechRecognizer._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel11702;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "cancel", "()V", ref global::android.speech.SpeechRecognizer._cancel11702);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "cancel", "()V", ref global::android.speech.SpeechRecognizer._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _startListening11703;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void startListening(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "startListening", "(Landroid/content/Intent;)V", ref global::android.speech.SpeechRecognizer._startListening11703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "startListening", "(Landroid/content/Intent;)V", ref global::android.speech.SpeechRecognizer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _stopListening11704;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void stopListening()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "stopListening", "()V", ref global::android.speech.SpeechRecognizer._stopListening11704);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "stopListening", "()V", ref global::android.speech.SpeechRecognizer._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isRecognitionAvailable11705;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static bool isRecognitionAvailable(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.speech.SpeechRecognizer._isRecognitionAvailable11705.native == global::System.IntPtr.Zero)
-				global::android.speech.SpeechRecognizer._isRecognitionAvailable11705 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "isRecognitionAvailable", "(Landroid/content/Context;)Z");
-			return @__env.CallStaticBooleanMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._isRecognitionAvailable11705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.speech.SpeechRecognizer._m4.native == global::System.IntPtr.Zero)
+				global::android.speech.SpeechRecognizer._m4 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "isRecognitionAvailable", "(Landroid/content/Context;)Z");
+			return @__env.CallStaticBooleanMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _createSpeechRecognizer11706;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static global::android.speech.SpeechRecognizer createSpeechRecognizer(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.speech.SpeechRecognizer._createSpeechRecognizer11706.native == global::System.IntPtr.Zero)
-				global::android.speech.SpeechRecognizer._createSpeechRecognizer11706 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;)Landroid/speech/SpeechRecognizer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._createSpeechRecognizer11706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.speech.SpeechRecognizer;
+			if (global::android.speech.SpeechRecognizer._m5.native == global::System.IntPtr.Zero)
+				global::android.speech.SpeechRecognizer._m5 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;)Landroid/speech/SpeechRecognizer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.speech.SpeechRecognizer;
 		}
-		internal static global::MonoJavaBridge.MethodId _createSpeechRecognizer11707;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static global::android.speech.SpeechRecognizer createSpeechRecognizer(android.content.Context arg0, android.content.ComponentName arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.speech.SpeechRecognizer._createSpeechRecognizer11707.native == global::System.IntPtr.Zero)
-				global::android.speech.SpeechRecognizer._createSpeechRecognizer11707 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/speech/SpeechRecognizer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._createSpeechRecognizer11707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.speech.SpeechRecognizer;
+			if (global::android.speech.SpeechRecognizer._m6.native == global::System.IntPtr.Zero)
+				global::android.speech.SpeechRecognizer._m6 = @__env.GetStaticMethodIDNoThrow(global::android.speech.SpeechRecognizer.staticClass, "createSpeechRecognizer", "(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/speech/SpeechRecognizer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.SpeechRecognizer.staticClass, global::android.speech.SpeechRecognizer._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.speech.SpeechRecognizer;
 		}
 		public new global::android.speech.RecognitionListener RecognitionListener
 		{
@@ -58,10 +58,10 @@ namespace android.speech
 				setRecognitionListener(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setRecognitionListener11708;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setRecognitionListener(android.speech.RecognitionListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "setRecognitionListener", "(Landroid/speech/RecognitionListener;)V", ref global::android.speech.SpeechRecognizer._setRecognitionListener11708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.speech.SpeechRecognizer.staticClass, "setRecognitionListener", "(Landroid/speech/RecognitionListener;)V", ref global::android.speech.SpeechRecognizer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String RESULTS_RECOGNITION
 		{

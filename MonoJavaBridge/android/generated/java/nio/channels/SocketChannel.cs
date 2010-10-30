@@ -7,62 +7,62 @@ namespace java.nio.channels
 		protected SocketChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write22629;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual long write(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.SocketChannel._write22629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.SocketChannel._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22630;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract int write(java.nio.ByteBuffer arg0);
-		internal static global::MonoJavaBridge.MethodId _write22631;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _read22632;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _read22633;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual long read(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.SocketChannel._read22633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.SocketChannel._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22634;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract int read(java.nio.ByteBuffer arg0);
-		internal static global::MonoJavaBridge.MethodId _open22635;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static global::java.nio.channels.SocketChannel open(java.net.SocketAddress arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.SocketChannel._open22635.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.SocketChannel._open22635 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "open", "(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._open22635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.channels.SocketChannel;
+			if (global::java.nio.channels.SocketChannel._m6.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.SocketChannel._m6 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "open", "(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.channels.SocketChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _open22636;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static global::java.nio.channels.SocketChannel open()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.SocketChannel._open22636.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.SocketChannel._open22636 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "open", "()Ljava/nio/channels/SocketChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._open22636)) as java.nio.channels.SocketChannel;
+			if (global::java.nio.channels.SocketChannel._m7.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.SocketChannel._m7 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "open", "()Ljava/nio/channels/SocketChannel;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._m7)) as java.nio.channels.SocketChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _connect22637;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract bool connect(java.net.SocketAddress arg0);
-		internal static global::MonoJavaBridge.MethodId _socket22638;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract global::java.net.Socket socket();
-		internal static global::MonoJavaBridge.MethodId _isConnected22639;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract bool isConnected();
-		internal static global::MonoJavaBridge.MethodId _validOps22640;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public sealed override int validOps()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel.staticClass, "validOps", "()I", ref global::java.nio.channels.SocketChannel._validOps22640);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel.staticClass, "validOps", "()I", ref global::java.nio.channels.SocketChannel._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnectionPending22641;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract bool isConnectionPending();
-		internal static global::MonoJavaBridge.MethodId _finishConnect22642;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public abstract bool finishConnect();
-		internal static global::MonoJavaBridge.MethodId _SocketChannel22643;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected SocketChannel(java.nio.channels.spi.SelectorProvider arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.SocketChannel._SocketChannel22643.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.SocketChannel._SocketChannel22643 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._SocketChannel22643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.nio.channels.SocketChannel._m14.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.SocketChannel._m14 = @__env.GetMethodIDNoThrow(global::java.nio.channels.SocketChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static SocketChannel()
@@ -82,60 +82,60 @@ namespace java.nio.channels
 		internal SocketChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write22644;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int write(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.SocketChannel_._write22644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.SocketChannel_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22645;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.SocketChannel_._write22645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.SocketChannel_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22646;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.SocketChannel_._read22646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.SocketChannel_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22647;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int read(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.SocketChannel_._read22647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.SocketChannel_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _connect22648;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool connect(java.net.SocketAddress arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "connect", "(Ljava/net/SocketAddress;)Z", ref global::java.nio.channels.SocketChannel_._connect22648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "connect", "(Ljava/net/SocketAddress;)Z", ref global::java.nio.channels.SocketChannel_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _socket22649;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::java.net.Socket socket()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "socket", "()Ljava/net/Socket;", ref global::java.nio.channels.SocketChannel_._socket22649) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "socket", "()Ljava/net/Socket;", ref global::java.nio.channels.SocketChannel_._m5) as java.net.Socket;
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnected22650;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool isConnected()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "isConnected", "()Z", ref global::java.nio.channels.SocketChannel_._isConnected22650);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "isConnected", "()Z", ref global::java.nio.channels.SocketChannel_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnectionPending22651;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override bool isConnectionPending()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "isConnectionPending", "()Z", ref global::java.nio.channels.SocketChannel_._isConnectionPending22651);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "isConnectionPending", "()Z", ref global::java.nio.channels.SocketChannel_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _finishConnect22652;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override bool finishConnect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "finishConnect", "()Z", ref global::java.nio.channels.SocketChannel_._finishConnect22652);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "finishConnect", "()Z", ref global::java.nio.channels.SocketChannel_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22653;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override void implCloseSelectableChannel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.SocketChannel_._implCloseSelectableChannel22653);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.SocketChannel_._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22654;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override void implConfigureBlocking(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.SocketChannel_._implConfigureBlocking22654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.SocketChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.SocketChannel_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SocketChannel_()
 		{

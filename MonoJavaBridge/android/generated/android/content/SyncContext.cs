@@ -7,10 +7,10 @@ namespace android.content
 		protected SyncContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onFinished3546;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onFinished(android.content.SyncResult arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.SyncContext.staticClass, "onFinished", "(Landroid/content/SyncResult;)V", ref global::android.content.SyncContext._onFinished3546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.SyncContext.staticClass, "onFinished", "(Landroid/content/SyncResult;)V", ref global::android.content.SyncContext._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.os.IBinder SyncContextBinder
 		{
@@ -19,10 +19,10 @@ namespace android.content
 				return getSyncContextBinder();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSyncContextBinder3547;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::android.os.IBinder getSyncContextBinder()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.content.SyncContext.staticClass, "getSyncContextBinder", "()Landroid/os/IBinder;", ref global::android.content.SyncContext._getSyncContextBinder3547) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.content.SyncContext.staticClass, "getSyncContextBinder", "()Landroid/os/IBinder;", ref global::android.content.SyncContext._m1) as android.os.IBinder;
 		}
 		static SyncContext()
 		{

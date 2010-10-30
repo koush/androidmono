@@ -14,15 +14,15 @@ namespace org.xml.sax
 				return getCause();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCause35027;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.Throwable getCause()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::org.xml.sax.SAXException._getCause35027) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::org.xml.sax.SAXException._m0) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _toString35028;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;", ref global::org.xml.sax.SAXException._toString35028) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;", ref global::org.xml.sax.SAXException._m1) as java.lang.String;
 		}
 		public new global::java.lang.String Message
 		{
@@ -31,10 +31,10 @@ namespace org.xml.sax
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage35029;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::org.xml.sax.SAXException._getMessage35029) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;", ref global::org.xml.sax.SAXException._m2) as java.lang.String;
 		}
 		public new global::java.lang.Exception Exception
 		{
@@ -43,45 +43,45 @@ namespace org.xml.sax
 				return getException();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getException35030;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.Exception getException()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;", ref global::org.xml.sax.SAXException._getException35030) as java.lang.Exception;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;", ref global::org.xml.sax.SAXException._m3) as java.lang.Exception;
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXException35031;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public SAXException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXException._SAXException35031.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXException._SAXException35031 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException35031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.xml.sax.SAXException._m4.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXException._m4 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXException35032;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public SAXException(java.lang.Exception arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXException._SAXException35032.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXException._SAXException35032 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException35032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.xml.sax.SAXException._m5.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXException._m5 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXException35033;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public SAXException(java.lang.String arg0, java.lang.Exception arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXException._SAXException35033.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXException._SAXException35033 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException35033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.xml.sax.SAXException._m6.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXException._m6 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXException35034;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public SAXException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXException._SAXException35034.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXException._SAXException35034 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException35034);
+			if (global::org.xml.sax.SAXException._m7.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXException._m7 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._m7);
 			Init(@__env, handle);
 		}
 		static SAXException()

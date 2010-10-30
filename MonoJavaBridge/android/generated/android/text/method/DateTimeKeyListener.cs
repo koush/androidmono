@@ -14,13 +14,13 @@ namespace android.text.method
 				return getInstance();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance13271;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.text.method.DateTimeKeyListener getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DateTimeKeyListener._getInstance13271.native == global::System.IntPtr.Zero)
-				global::android.text.method.DateTimeKeyListener._getInstance13271 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "getInstance", "()Landroid/text/method/DateTimeKeyListener;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._getInstance13271)) as android.text.method.DateTimeKeyListener;
+			if (global::android.text.method.DateTimeKeyListener._m0.native == global::System.IntPtr.Zero)
+				global::android.text.method.DateTimeKeyListener._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "getInstance", "()Landroid/text/method/DateTimeKeyListener;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._m0)) as android.text.method.DateTimeKeyListener;
 		}
 		public new int InputType
 		{
@@ -29,10 +29,10 @@ namespace android.text.method
 				return getInputType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputType13272;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int getInputType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DateTimeKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.DateTimeKeyListener._getInputType13272);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.method.DateTimeKeyListener.staticClass, "getInputType", "()I", ref global::android.text.method.DateTimeKeyListener._m1);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -41,34 +41,34 @@ namespace android.text.method
 				return getAcceptedChars();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13273;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override char[] getAcceptedChars()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DateTimeKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.DateTimeKeyListener._getAcceptedChars13273) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.DateTimeKeyListener.staticClass, "getAcceptedChars", "()[C", ref global::android.text.method.DateTimeKeyListener._m2) as char[];
 		}
-		internal static global::MonoJavaBridge.MethodId _DateTimeKeyListener13274;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public DateTimeKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.DateTimeKeyListener._DateTimeKeyListener13274.native == global::System.IntPtr.Zero)
-				global::android.text.method.DateTimeKeyListener._DateTimeKeyListener13274 = @__env.GetMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._DateTimeKeyListener13274);
+			if (global::android.text.method.DateTimeKeyListener._m3.native == global::System.IntPtr.Zero)
+				global::android.text.method.DateTimeKeyListener._m3 = @__env.GetMethodIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._m3);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CHARACTERS13275;
+		internal static global::MonoJavaBridge.FieldId _CHARACTERS5346;
 		public static char[] CHARACTERS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.GetStaticObjectField(global::android.text.method.DateTimeKeyListener.staticClass, _CHARACTERS13275)) as char[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.GetStaticObjectField(global::android.text.method.DateTimeKeyListener.staticClass, _CHARACTERS5346)) as char[];
 			}
 		}
 		static DateTimeKeyListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.DateTimeKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DateTimeKeyListener"));
-			global::android.text.method.DateTimeKeyListener._CHARACTERS13275 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "CHARACTERS", "[C");
+			global::android.text.method.DateTimeKeyListener._CHARACTERS5346 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DateTimeKeyListener.staticClass, "CHARACTERS", "[C");
 		}
 		internal static void InitJNI()
 		{

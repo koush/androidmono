@@ -19,40 +19,40 @@ namespace org.xml.sax.ext
 		internal LexicalHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _comment35130;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.xml.sax.ext.LexicalHandler.comment(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "comment", "([CII)V", ref global::org.xml.sax.ext.LexicalHandler_._comment35130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "comment", "([CII)V", ref global::org.xml.sax.ext.LexicalHandler_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _startCDATA35131;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.xml.sax.ext.LexicalHandler.startCDATA()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startCDATA", "()V", ref global::org.xml.sax.ext.LexicalHandler_._startCDATA35131);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startCDATA", "()V", ref global::org.xml.sax.ext.LexicalHandler_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _endCDATA35132;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void org.xml.sax.ext.LexicalHandler.endCDATA()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endCDATA", "()V", ref global::org.xml.sax.ext.LexicalHandler_._endCDATA35132);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endCDATA", "()V", ref global::org.xml.sax.ext.LexicalHandler_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _startEntity35133;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void org.xml.sax.ext.LexicalHandler.startEntity(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startEntity", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._startEntity35133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startEntity", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _endEntity35134;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.xml.sax.ext.LexicalHandler.endEntity(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endEntity", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._endEntity35134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endEntity", "(Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startDTD35135;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.xml.sax.ext.LexicalHandler.startDTD(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._startDTD35135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::org.xml.sax.ext.LexicalHandler_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _endDTD35136;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.xml.sax.ext.LexicalHandler.endDTD()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endDTD", "()V", ref global::org.xml.sax.ext.LexicalHandler_._endDTD35136);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xml.sax.ext.LexicalHandler_.staticClass, "endDTD", "()V", ref global::org.xml.sax.ext.LexicalHandler_._m6);
 		}
 		static LexicalHandler_()
 		{

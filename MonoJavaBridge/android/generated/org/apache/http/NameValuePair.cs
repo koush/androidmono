@@ -14,15 +14,15 @@ namespace org.apache.http
 		internal NameValuePair_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getName31738;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.apache.http.NameValuePair.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._getName31738) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue31739;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.apache.http.NameValuePair.getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._getValue31739) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.NameValuePair_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.NameValuePair_._m1) as java.lang.String;
 		}
 		static NameValuePair_()
 		{

@@ -14,85 +14,85 @@ namespace android.graphics.drawable
 			protected DrawableContainerState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _getChangingConfigurations5977;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override int getChangingConfigurations()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChangingConfigurations", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChangingConfigurations5977);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChangingConfigurations", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _isStateful5978;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual bool isStateful()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "isStateful", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isStateful5978);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "isStateful", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m1);
 			}
-			internal static global::MonoJavaBridge.MethodId _getOpacity5979;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual int getOpacity()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getOpacity", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getOpacity5979);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getOpacity", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m2);
 			}
-			internal static global::MonoJavaBridge.MethodId _getChildCount5980;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual int getChildCount()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChildCount", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildCount5980);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChildCount", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m3);
 			}
-			internal static global::MonoJavaBridge.MethodId _addChild5981;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual int addChild(android.graphics.drawable.Drawable arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "addChild", "(Landroid/graphics/drawable/Drawable;)I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._addChild5981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "addChild", "(Landroid/graphics/drawable/Drawable;)I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _getChildren5982;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual global::android.graphics.drawable.Drawable[] getChildren()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.graphics.drawable.Drawable>(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChildren", "()[Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildren5982) as android.graphics.drawable.Drawable[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.graphics.drawable.Drawable>(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getChildren", "()[Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m5) as android.graphics.drawable.Drawable[];
 			}
-			internal static global::MonoJavaBridge.MethodId _setVariablePadding5983;
+			private static global::MonoJavaBridge.MethodId _m6;
 			public virtual void setVariablePadding(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "setVariablePadding", "(Z)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setVariablePadding5983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "setVariablePadding", "(Z)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _getConstantPadding5984;
+			private static global::MonoJavaBridge.MethodId _m7;
 			public virtual global::android.graphics.Rect getConstantPadding()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantPadding", "()Landroid/graphics/Rect;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantPadding5984) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantPadding", "()Landroid/graphics/Rect;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m7) as android.graphics.Rect;
 			}
-			internal static global::MonoJavaBridge.MethodId _setConstantSize5985;
+			private static global::MonoJavaBridge.MethodId _m8;
 			public virtual void setConstantSize(bool arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "setConstantSize", "(Z)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setConstantSize5985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "setConstantSize", "(Z)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isConstantSize5986;
+			private static global::MonoJavaBridge.MethodId _m9;
 			public virtual bool isConstantSize()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "isConstantSize", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isConstantSize5986);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "isConstantSize", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m9);
 			}
-			internal static global::MonoJavaBridge.MethodId _getConstantWidth5987;
+			private static global::MonoJavaBridge.MethodId _m10;
 			public virtual int getConstantWidth()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantWidth", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantWidth5987);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantWidth", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m10);
 			}
-			internal static global::MonoJavaBridge.MethodId _getConstantHeight5988;
+			private static global::MonoJavaBridge.MethodId _m11;
 			public virtual int getConstantHeight()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantHeight", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantHeight5988);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantHeight", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m11);
 			}
-			internal static global::MonoJavaBridge.MethodId _getConstantMinimumWidth5989;
+			private static global::MonoJavaBridge.MethodId _m12;
 			public virtual int getConstantMinimumWidth()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantMinimumWidth", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumWidth5989);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantMinimumWidth", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m12);
 			}
-			internal static global::MonoJavaBridge.MethodId _getConstantMinimumHeight5990;
+			private static global::MonoJavaBridge.MethodId _m13;
 			public virtual int getConstantMinimumHeight()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantMinimumHeight", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumHeight5990);
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "getConstantMinimumHeight", "()I", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m13);
 			}
-			internal static global::MonoJavaBridge.MethodId _growArray5991;
+			private static global::MonoJavaBridge.MethodId _m14;
 			public virtual void growArray(int arg0, int arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "growArray", "(II)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._growArray5991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "growArray", "(II)V", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _canConstantState5992;
+			private static global::MonoJavaBridge.MethodId _m15;
 			public virtual bool canConstantState()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "canConstantState", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._canConstantState5992);
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, "canConstantState", "()Z", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState._m15);
 			}
 			static DrawableContainerState()
 			{
@@ -111,10 +111,10 @@ namespace android.graphics.drawable
 			internal DrawableContainerState_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _newDrawable5993;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public override global::android.graphics.drawable.Drawable newDrawable()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass, "newDrawable", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState_._newDrawable5993) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass, "newDrawable", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer.DrawableContainerState_._m0) as android.graphics.drawable.Drawable;
 			}
 			static DrawableContainerState_()
 			{
@@ -125,10 +125,10 @@ namespace android.graphics.drawable
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _draw5994;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void draw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.graphics.drawable.DrawableContainer._draw5994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "draw", "(Landroid/graphics/Canvas;)V", ref global::android.graphics.drawable.DrawableContainer._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ChangingConfigurations
 		{
@@ -137,10 +137,10 @@ namespace android.graphics.drawable
 				return getChangingConfigurations();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations5995;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int getChangingConfigurations()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getChangingConfigurations", "()I", ref global::android.graphics.drawable.DrawableContainer._getChangingConfigurations5995);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getChangingConfigurations", "()I", ref global::android.graphics.drawable.DrawableContainer._m1);
 		}
 		public new bool Dither
 		{
@@ -149,10 +149,10 @@ namespace android.graphics.drawable
 				setDither(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDither5996;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void setDither(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setDither", "(Z)V", ref global::android.graphics.drawable.DrawableContainer._setDither5996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setDither", "(Z)V", ref global::android.graphics.drawable.DrawableContainer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Alpha
 		{
@@ -161,10 +161,10 @@ namespace android.graphics.drawable
 				setAlpha(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAlpha5997;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void setAlpha(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setAlpha", "(I)V", ref global::android.graphics.drawable.DrawableContainer._setAlpha5997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setAlpha", "(I)V", ref global::android.graphics.drawable.DrawableContainer._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.ColorFilter ColorFilter
 		{
@@ -173,15 +173,15 @@ namespace android.graphics.drawable
 				setColorFilter(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setColorFilter5998;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void setColorFilter(android.graphics.ColorFilter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V", ref global::android.graphics.drawable.DrawableContainer._setColorFilter5998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V", ref global::android.graphics.drawable.DrawableContainer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isStateful5999;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool isStateful()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "isStateful", "()Z", ref global::android.graphics.drawable.DrawableContainer._isStateful5999);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "isStateful", "()Z", ref global::android.graphics.drawable.DrawableContainer._m5);
 		}
 		public new global::android.graphics.drawable.Drawable Current
 		{
@@ -190,15 +190,15 @@ namespace android.graphics.drawable
 				return getCurrent();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrent6000;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::android.graphics.drawable.Drawable getCurrent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getCurrent", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer._getCurrent6000) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getCurrent", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer._m6) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _setVisible6001;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override bool setVisible(bool arg0, bool arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setVisible", "(ZZ)Z", ref global::android.graphics.drawable.DrawableContainer._setVisible6001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setVisible", "(ZZ)Z", ref global::android.graphics.drawable.DrawableContainer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int Opacity
 		{
@@ -207,25 +207,25 @@ namespace android.graphics.drawable
 				return getOpacity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOpacity6002;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override int getOpacity()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getOpacity", "()I", ref global::android.graphics.drawable.DrawableContainer._getOpacity6002);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getOpacity", "()I", ref global::android.graphics.drawable.DrawableContainer._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _onStateChange6003;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override bool onStateChange(int[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onStateChange", "([I)Z", ref global::android.graphics.drawable.DrawableContainer._onStateChange6003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onStateChange", "([I)Z", ref global::android.graphics.drawable.DrawableContainer._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLevelChange6004;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override bool onLevelChange(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onLevelChange", "(I)Z", ref global::android.graphics.drawable.DrawableContainer._onLevelChange6004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onLevelChange", "(I)Z", ref global::android.graphics.drawable.DrawableContainer._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onBoundsChange6005;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected override void onBoundsChange(android.graphics.Rect arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V", ref global::android.graphics.drawable.DrawableContainer._onBoundsChange6005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V", ref global::android.graphics.drawable.DrawableContainer._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int IntrinsicWidth
 		{
@@ -234,10 +234,10 @@ namespace android.graphics.drawable
 				return getIntrinsicWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth6006;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override int getIntrinsicWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getIntrinsicWidth", "()I", ref global::android.graphics.drawable.DrawableContainer._getIntrinsicWidth6006);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getIntrinsicWidth", "()I", ref global::android.graphics.drawable.DrawableContainer._m12);
 		}
 		public new int IntrinsicHeight
 		{
@@ -246,10 +246,10 @@ namespace android.graphics.drawable
 				return getIntrinsicHeight();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight6007;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public override int getIntrinsicHeight()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getIntrinsicHeight", "()I", ref global::android.graphics.drawable.DrawableContainer._getIntrinsicHeight6007);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getIntrinsicHeight", "()I", ref global::android.graphics.drawable.DrawableContainer._m13);
 		}
 		public new int MinimumWidth
 		{
@@ -258,10 +258,10 @@ namespace android.graphics.drawable
 				return getMinimumWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumWidth6008;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public override int getMinimumWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getMinimumWidth", "()I", ref global::android.graphics.drawable.DrawableContainer._getMinimumWidth6008);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getMinimumWidth", "()I", ref global::android.graphics.drawable.DrawableContainer._m14);
 		}
 		public new int MinimumHeight
 		{
@@ -270,20 +270,20 @@ namespace android.graphics.drawable
 				return getMinimumHeight();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumHeight6009;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public override int getMinimumHeight()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getMinimumHeight", "()I", ref global::android.graphics.drawable.DrawableContainer._getMinimumHeight6009);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getMinimumHeight", "()I", ref global::android.graphics.drawable.DrawableContainer._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPadding6010;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override bool getPadding(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.drawable.DrawableContainer._getPadding6010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.drawable.DrawableContainer._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _mutate6011;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public override global::android.graphics.drawable.Drawable mutate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer._mutate6011) as android.graphics.drawable.Drawable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;", ref global::android.graphics.drawable.DrawableContainer._m17) as android.graphics.drawable.Drawable;
 		}
 		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
 		{
@@ -292,51 +292,51 @@ namespace android.graphics.drawable
 				return getConstantState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getConstantState6012;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;", ref global::android.graphics.drawable.DrawableContainer._getConstantState6012) as android.graphics.drawable.Drawable.ConstantState;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;", ref global::android.graphics.drawable.DrawableContainer._m18) as android.graphics.drawable.Drawable.ConstantState;
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateDrawable6013;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.graphics.drawable.DrawableContainer._invalidateDrawable6013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.graphics.drawable.DrawableContainer._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _scheduleDrawable6014;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V", ref global::android.graphics.drawable.DrawableContainer._scheduleDrawable6014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V", ref global::android.graphics.drawable.DrawableContainer._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public void scheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1, long arg2)
 		{
 			scheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable6015;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V", ref global::android.graphics.drawable.DrawableContainer._unscheduleDrawable6015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V", ref global::android.graphics.drawable.DrawableContainer._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void unscheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1)
 		{
 			unscheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _selectDrawable6016;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual bool selectDrawable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "selectDrawable", "(I)Z", ref global::android.graphics.drawable.DrawableContainer._selectDrawable6016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "selectDrawable", "(I)Z", ref global::android.graphics.drawable.DrawableContainer._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setConstantState6017;
+		private static global::MonoJavaBridge.MethodId _m23;
 		protected virtual void setConstantState(android.graphics.drawable.DrawableContainer.DrawableContainerState arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setConstantState", "(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;)V", ref global::android.graphics.drawable.DrawableContainer._setConstantState6017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, "setConstantState", "(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;)V", ref global::android.graphics.drawable.DrawableContainer._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _DrawableContainer6018;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public DrawableContainer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.drawable.DrawableContainer._DrawableContainer6018.native == global::System.IntPtr.Zero)
-				global::android.graphics.drawable.DrawableContainer._DrawableContainer6018 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._DrawableContainer6018);
+			if (global::android.graphics.drawable.DrawableContainer._m24.native == global::System.IntPtr.Zero)
+				global::android.graphics.drawable.DrawableContainer._m24 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.DrawableContainer.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._m24);
 			Init(@__env, handle);
 		}
 		static DrawableContainer()

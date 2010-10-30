@@ -13,10 +13,10 @@ namespace android.accounts
 		internal OnAccountsUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onAccountsUpdated1384;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V", ref global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated1384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V", ref global::android.accounts.OnAccountsUpdateListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static OnAccountsUpdateListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.accounts
 		protected OnAccountsUpdateListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _OnAccountsUpdateListenerDelegateWrapper1385;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public OnAccountsUpdateListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385.native == global::System.IntPtr.Zero)
-				global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385);
+			if (global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static OnAccountsUpdateListenerDelegateWrapper()

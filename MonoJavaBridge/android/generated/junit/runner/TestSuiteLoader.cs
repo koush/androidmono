@@ -14,15 +14,15 @@ namespace junit.runner
 		internal TestSuiteLoader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _load31469;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Class junit.runner.TestSuiteLoader.load(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.TestSuiteLoader_.staticClass, "load", "(Ljava/lang/String;)Ljava/lang/Class;", ref global::junit.runner.TestSuiteLoader_._load31469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.TestSuiteLoader_.staticClass, "load", "(Ljava/lang/String;)Ljava/lang/Class;", ref global::junit.runner.TestSuiteLoader_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
 		}
-		internal static global::MonoJavaBridge.MethodId _reload31470;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.Class junit.runner.TestSuiteLoader.reload(java.lang.Class arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.TestSuiteLoader_.staticClass, "reload", "(Ljava/lang/Class;)Ljava/lang/Class;", ref global::junit.runner.TestSuiteLoader_._reload31470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::junit.runner.TestSuiteLoader_.staticClass, "reload", "(Ljava/lang/Class;)Ljava/lang/Class;", ref global::junit.runner.TestSuiteLoader_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Class;
 		}
 		static TestSuiteLoader_()
 		{

@@ -7,13 +7,13 @@ namespace java.net
 		protected SocketAddress(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SocketAddress21773;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SocketAddress() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.SocketAddress._SocketAddress21773.native == global::System.IntPtr.Zero)
-				global::java.net.SocketAddress._SocketAddress21773 = @__env.GetMethodIDNoThrow(global::java.net.SocketAddress.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._SocketAddress21773);
+			if (global::java.net.SocketAddress._m0.native == global::System.IntPtr.Zero)
+				global::java.net.SocketAddress._m0 = @__env.GetMethodIDNoThrow(global::java.net.SocketAddress.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._m0);
 			Init(@__env, handle);
 		}
 		static SocketAddress()

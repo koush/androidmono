@@ -30,95 +30,95 @@ namespace android.view.inputmethod
 		internal InputConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection15872;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool android.view.inputmethod.InputConnection.setSelection(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "setSelection", "(II)Z", ref global::android.view.inputmethod.InputConnection_._setSelection15872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "setSelection", "(II)Z", ref global::android.view.inputmethod.InputConnection_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _beginBatchEdit15873;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool android.view.inputmethod.InputConnection.beginBatchEdit()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "beginBatchEdit", "()Z", ref global::android.view.inputmethod.InputConnection_._beginBatchEdit15873);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "beginBatchEdit", "()Z", ref global::android.view.inputmethod.InputConnection_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _endBatchEdit15874;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool android.view.inputmethod.InputConnection.endBatchEdit()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "endBatchEdit", "()Z", ref global::android.view.inputmethod.InputConnection_._endBatchEdit15874);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "endBatchEdit", "()Z", ref global::android.view.inputmethod.InputConnection_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextBeforeCursor15875;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextBeforeCursor(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.InputConnection_.staticClass, "getTextBeforeCursor", "(II)Ljava/lang/CharSequence;", ref global::android.view.inputmethod.InputConnection_._getTextBeforeCursor15875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.InputConnection_.staticClass, "getTextBeforeCursor", "(II)Ljava/lang/CharSequence;", ref global::android.view.inputmethod.InputConnection_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextAfterCursor15876;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextAfterCursor(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.InputConnection_.staticClass, "getTextAfterCursor", "(II)Ljava/lang/CharSequence;", ref global::android.view.inputmethod.InputConnection_._getTextAfterCursor15876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::android.view.inputmethod.InputConnection_.staticClass, "getTextAfterCursor", "(II)Ljava/lang/CharSequence;", ref global::android.view.inputmethod.InputConnection_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCursorCapsMode15877;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int android.view.inputmethod.InputConnection.getCursorCapsMode(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "getCursorCapsMode", "(I)I", ref global::android.view.inputmethod.InputConnection_._getCursorCapsMode15877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "getCursorCapsMode", "(I)I", ref global::android.view.inputmethod.InputConnection_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getExtractedText15878;
+		private static global::MonoJavaBridge.MethodId _m6;
 		global::android.view.inputmethod.ExtractedText android.view.inputmethod.InputConnection.getExtractedText(android.view.inputmethod.ExtractedTextRequest arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "getExtractedText", "(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;", ref global::android.view.inputmethod.InputConnection_._getExtractedText15878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.inputmethod.ExtractedText;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "getExtractedText", "(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;", ref global::android.view.inputmethod.InputConnection_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.inputmethod.ExtractedText;
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteSurroundingText15879;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool android.view.inputmethod.InputConnection.deleteSurroundingText(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "deleteSurroundingText", "(II)Z", ref global::android.view.inputmethod.InputConnection_._deleteSurroundingText15879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "deleteSurroundingText", "(II)Z", ref global::android.view.inputmethod.InputConnection_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setComposingText15880;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool android.view.inputmethod.InputConnection.setComposingText(java.lang.CharSequence arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "setComposingText", "(Ljava/lang/CharSequence;I)Z", ref global::android.view.inputmethod.InputConnection_._setComposingText15880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "setComposingText", "(Ljava/lang/CharSequence;I)Z", ref global::android.view.inputmethod.InputConnection_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _finishComposingText15881;
+		private static global::MonoJavaBridge.MethodId _m9;
 		bool android.view.inputmethod.InputConnection.finishComposingText()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "finishComposingText", "()Z", ref global::android.view.inputmethod.InputConnection_._finishComposingText15881);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "finishComposingText", "()Z", ref global::android.view.inputmethod.InputConnection_._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _commitText15882;
+		private static global::MonoJavaBridge.MethodId _m10;
 		bool android.view.inputmethod.InputConnection.commitText(java.lang.CharSequence arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "commitText", "(Ljava/lang/CharSequence;I)Z", ref global::android.view.inputmethod.InputConnection_._commitText15882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "commitText", "(Ljava/lang/CharSequence;I)Z", ref global::android.view.inputmethod.InputConnection_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _commitCompletion15883;
+		private static global::MonoJavaBridge.MethodId _m11;
 		bool android.view.inputmethod.InputConnection.commitCompletion(android.view.inputmethod.CompletionInfo arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "commitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)Z", ref global::android.view.inputmethod.InputConnection_._commitCompletion15883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "commitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)Z", ref global::android.view.inputmethod.InputConnection_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _performEditorAction15884;
+		private static global::MonoJavaBridge.MethodId _m12;
 		bool android.view.inputmethod.InputConnection.performEditorAction(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performEditorAction", "(I)Z", ref global::android.view.inputmethod.InputConnection_._performEditorAction15884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performEditorAction", "(I)Z", ref global::android.view.inputmethod.InputConnection_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _performContextMenuAction15885;
+		private static global::MonoJavaBridge.MethodId _m13;
 		bool android.view.inputmethod.InputConnection.performContextMenuAction(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performContextMenuAction", "(I)Z", ref global::android.view.inputmethod.InputConnection_._performContextMenuAction15885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performContextMenuAction", "(I)Z", ref global::android.view.inputmethod.InputConnection_._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sendKeyEvent15886;
+		private static global::MonoJavaBridge.MethodId _m14;
 		bool android.view.inputmethod.InputConnection.sendKeyEvent(android.view.KeyEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "sendKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.view.inputmethod.InputConnection_._sendKeyEvent15886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "sendKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.view.inputmethod.InputConnection_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearMetaKeyStates15887;
+		private static global::MonoJavaBridge.MethodId _m15;
 		bool android.view.inputmethod.InputConnection.clearMetaKeyStates(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "clearMetaKeyStates", "(I)Z", ref global::android.view.inputmethod.InputConnection_._clearMetaKeyStates15887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "clearMetaKeyStates", "(I)Z", ref global::android.view.inputmethod.InputConnection_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reportFullscreenMode15888;
+		private static global::MonoJavaBridge.MethodId _m16;
 		bool android.view.inputmethod.InputConnection.reportFullscreenMode(bool arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "reportFullscreenMode", "(Z)Z", ref global::android.view.inputmethod.InputConnection_._reportFullscreenMode15888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "reportFullscreenMode", "(Z)Z", ref global::android.view.inputmethod.InputConnection_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _performPrivateCommand15889;
+		private static global::MonoJavaBridge.MethodId _m17;
 		bool android.view.inputmethod.InputConnection.performPrivateCommand(java.lang.String arg0, android.os.Bundle arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z", ref global::android.view.inputmethod.InputConnection_._performPrivateCommand15889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.inputmethod.InputConnection_.staticClass, "performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z", ref global::android.view.inputmethod.InputConnection_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static InputConnection_()
 		{

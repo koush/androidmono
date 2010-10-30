@@ -20,45 +20,45 @@ namespace android.os
 		internal IBinder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _dump9897;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.os.IBinder.dump(java.io.FileDescriptor arg0, java.lang.String[] arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_.staticClass, "dump", "(Ljava/io/FileDescriptor;[Ljava/lang/String;)V", ref global::android.os.IBinder_._dump9897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_.staticClass, "dump", "(Ljava/io/FileDescriptor;[Ljava/lang/String;)V", ref global::android.os.IBinder_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterfaceDescriptor9898;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String android.os.IBinder.getInterfaceDescriptor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.os.IBinder_.staticClass, "getInterfaceDescriptor", "()Ljava/lang/String;", ref global::android.os.IBinder_._getInterfaceDescriptor9898) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.os.IBinder_.staticClass, "getInterfaceDescriptor", "()Ljava/lang/String;", ref global::android.os.IBinder_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _pingBinder9899;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool android.os.IBinder.pingBinder()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "pingBinder", "()Z", ref global::android.os.IBinder_._pingBinder9899);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "pingBinder", "()Z", ref global::android.os.IBinder_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _isBinderAlive9900;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool android.os.IBinder.isBinderAlive()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "isBinderAlive", "()Z", ref global::android.os.IBinder_._isBinderAlive9900);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "isBinderAlive", "()Z", ref global::android.os.IBinder_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _queryLocalInterface9901;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IInterface>(this, global::android.os.IBinder_.staticClass, "queryLocalInterface", "(Ljava/lang/String;)Landroid/os/IInterface;", ref global::android.os.IBinder_._queryLocalInterface9901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IInterface;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IInterface>(this, global::android.os.IBinder_.staticClass, "queryLocalInterface", "(Ljava/lang/String;)Landroid/os/IInterface;", ref global::android.os.IBinder_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.os.IInterface;
 		}
-		internal static global::MonoJavaBridge.MethodId _transact9902;
+		private static global::MonoJavaBridge.MethodId _m5;
 		bool android.os.IBinder.transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "transact", "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z", ref global::android.os.IBinder_._transact9902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "transact", "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z", ref global::android.os.IBinder_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _linkToDeath9903;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void android.os.IBinder.linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_.staticClass, "linkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)V", ref global::android.os.IBinder_._linkToDeath9903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.IBinder_.staticClass, "linkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)V", ref global::android.os.IBinder_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _unlinkToDeath9904;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool android.os.IBinder.unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "unlinkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)Z", ref global::android.os.IBinder_._unlinkToDeath9904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.IBinder_.staticClass, "unlinkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)Z", ref global::android.os.IBinder_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static IBinder_()
 		{

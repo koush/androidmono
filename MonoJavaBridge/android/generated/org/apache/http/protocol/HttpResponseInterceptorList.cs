@@ -19,40 +19,40 @@ namespace org.apache.http.protocol
 		internal HttpResponseInterceptorList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _addResponseInterceptor33918;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.protocol.HttpResponseInterceptorList.addResponseInterceptor(org.apache.http.HttpResponseInterceptor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "addResponseInterceptor", "(Lorg/apache/http/HttpResponseInterceptor;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._addResponseInterceptor33918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "addResponseInterceptor", "(Lorg/apache/http/HttpResponseInterceptor;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addResponseInterceptor33919;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.http.protocol.HttpResponseInterceptorList.addResponseInterceptor(org.apache.http.HttpResponseInterceptor arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "addResponseInterceptor", "(Lorg/apache/http/HttpResponseInterceptor;I)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._addResponseInterceptor33919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "addResponseInterceptor", "(Lorg/apache/http/HttpResponseInterceptor;I)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getResponseInterceptor33920;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::org.apache.http.HttpResponseInterceptor org.apache.http.protocol.HttpResponseInterceptorList.getResponseInterceptor(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponseInterceptor>(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "getResponseInterceptor", "(I)Lorg/apache/http/HttpResponseInterceptor;", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._getResponseInterceptor33920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.HttpResponseInterceptor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponseInterceptor>(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "getResponseInterceptor", "(I)Lorg/apache/http/HttpResponseInterceptor;", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.apache.http.HttpResponseInterceptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResponseInterceptorCount33921;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int org.apache.http.protocol.HttpResponseInterceptorList.getResponseInterceptorCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "getResponseInterceptorCount", "()I", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._getResponseInterceptorCount33921);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "getResponseInterceptorCount", "()I", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearResponseInterceptors33922;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.apache.http.protocol.HttpResponseInterceptorList.clearResponseInterceptors()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "clearResponseInterceptors", "()V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._clearResponseInterceptors33922);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "clearResponseInterceptors", "()V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeResponseInterceptorByClass33923;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.apache.http.protocol.HttpResponseInterceptorList.removeResponseInterceptorByClass(java.lang.Class arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "removeResponseInterceptorByClass", "(Ljava/lang/Class;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._removeResponseInterceptorByClass33923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "removeResponseInterceptorByClass", "(Ljava/lang/Class;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setInterceptors33924;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.apache.http.protocol.HttpResponseInterceptorList.setInterceptors(java.util.List arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "setInterceptors", "(Ljava/util/List;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._setInterceptors33924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.protocol.HttpResponseInterceptorList_.staticClass, "setInterceptors", "(Ljava/util/List;)V", ref global::org.apache.http.protocol.HttpResponseInterceptorList_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static HttpResponseInterceptorList_()
 		{

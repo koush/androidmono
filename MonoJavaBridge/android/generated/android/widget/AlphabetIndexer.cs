@@ -7,10 +7,10 @@ namespace android.widget
 		protected AlphabetIndexer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compare16686;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual int compare(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.widget.AlphabetIndexer._compare16686, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::android.widget.AlphabetIndexer._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.database.Cursor Cursor
 		{
@@ -19,20 +19,20 @@ namespace android.widget
 				setCursor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setCursor16687;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setCursor(android.database.Cursor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "setCursor", "(Landroid/database/Cursor;)V", ref global::android.widget.AlphabetIndexer._setCursor16687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "setCursor", "(Landroid/database/Cursor;)V", ref global::android.widget.AlphabetIndexer._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onChanged16688;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void onChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "onChanged", "()V", ref global::android.widget.AlphabetIndexer._onChanged16688);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "onChanged", "()V", ref global::android.widget.AlphabetIndexer._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _onInvalidated16689;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void onInvalidated()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "onInvalidated", "()V", ref global::android.widget.AlphabetIndexer._onInvalidated16689);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, "onInvalidated", "()V", ref global::android.widget.AlphabetIndexer._m3);
 		}
 		public new global::java.lang.Object[] Sections
 		{
@@ -41,28 +41,28 @@ namespace android.widget
 				return getSections();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSections16690;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.Object[] getSections()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.widget.AlphabetIndexer.staticClass, "getSections", "()[Ljava/lang/Object;", ref global::android.widget.AlphabetIndexer._getSections16690) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.widget.AlphabetIndexer.staticClass, "getSections", "()[Ljava/lang/Object;", ref global::android.widget.AlphabetIndexer._m4) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPositionForSection16691;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getPositionForSection(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "getPositionForSection", "(I)I", ref global::android.widget.AlphabetIndexer._getPositionForSection16691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "getPositionForSection", "(I)I", ref global::android.widget.AlphabetIndexer._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSectionForPosition16692;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getSectionForPosition(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "getSectionForPosition", "(I)I", ref global::android.widget.AlphabetIndexer._getSectionForPosition16692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, "getSectionForPosition", "(I)I", ref global::android.widget.AlphabetIndexer._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AlphabetIndexer16693;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public AlphabetIndexer(android.database.Cursor arg0, int arg1, java.lang.CharSequence arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AlphabetIndexer._AlphabetIndexer16693.native == global::System.IntPtr.Zero)
-				global::android.widget.AlphabetIndexer._AlphabetIndexer16693 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "<init>", "(Landroid/database/Cursor;ILjava/lang/CharSequence;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._AlphabetIndexer16693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.AlphabetIndexer._m7.native == global::System.IntPtr.Zero)
+				global::android.widget.AlphabetIndexer._m7 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "<init>", "(Landroid/database/Cursor;ILjava/lang/CharSequence;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static AlphabetIndexer()

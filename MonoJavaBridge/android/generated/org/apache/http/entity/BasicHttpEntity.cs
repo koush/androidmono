@@ -18,15 +18,15 @@ namespace org.apache.http.entity
 				setContent(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContent32506;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.io.InputStream getContent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.BasicHttpEntity._getContent32506) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.BasicHttpEntity._m0) as java.io.InputStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeTo32507;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.BasicHttpEntity._writeTo32507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.BasicHttpEntity._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long ContentLength
 		{
@@ -39,43 +39,43 @@ namespace org.apache.http.entity
 				setContentLength(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentLength32508;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override long getContentLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.BasicHttpEntity._getContentLength32508);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.BasicHttpEntity._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _setContentLength32509;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setContentLength(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "setContentLength", "(J)V", ref global::org.apache.http.entity.BasicHttpEntity._setContentLength32509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "setContentLength", "(J)V", ref global::org.apache.http.entity.BasicHttpEntity._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isRepeatable32510;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isRepeatable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.BasicHttpEntity._isRepeatable32510);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.BasicHttpEntity._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _isStreaming32511;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool isStreaming()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.BasicHttpEntity._isStreaming32511);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.BasicHttpEntity._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _consumeContent32512;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override void consumeContent()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "consumeContent", "()V", ref global::org.apache.http.entity.BasicHttpEntity._consumeContent32512);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "consumeContent", "()V", ref global::org.apache.http.entity.BasicHttpEntity._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _setContent32513;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setContent(java.io.InputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "setContent", "(Ljava/io/InputStream;)V", ref global::org.apache.http.entity.BasicHttpEntity._setContent32513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.BasicHttpEntity.staticClass, "setContent", "(Ljava/io/InputStream;)V", ref global::org.apache.http.entity.BasicHttpEntity._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _BasicHttpEntity32514;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public BasicHttpEntity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.BasicHttpEntity._BasicHttpEntity32514.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.BasicHttpEntity._BasicHttpEntity32514 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BasicHttpEntity.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BasicHttpEntity.staticClass, global::org.apache.http.entity.BasicHttpEntity._BasicHttpEntity32514);
+			if (global::org.apache.http.entity.BasicHttpEntity._m8.native == global::System.IntPtr.Zero)
+				global::org.apache.http.entity.BasicHttpEntity._m8 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.BasicHttpEntity.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.BasicHttpEntity.staticClass, global::org.apache.http.entity.BasicHttpEntity._m8);
 			Init(@__env, handle);
 		}
 		static BasicHttpEntity()

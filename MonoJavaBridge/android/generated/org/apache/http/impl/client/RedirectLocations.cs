@@ -7,28 +7,28 @@ namespace org.apache.http.impl.client
 		protected RedirectLocations(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _add32934;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void add(java.net.URI arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "add", "(Ljava/net/URI;)V", ref global::org.apache.http.impl.client.RedirectLocations._add32934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "add", "(Ljava/net/URI;)V", ref global::org.apache.http.impl.client.RedirectLocations._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _contains32935;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool contains(java.net.URI arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "contains", "(Ljava/net/URI;)Z", ref global::org.apache.http.impl.client.RedirectLocations._contains32935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "contains", "(Ljava/net/URI;)Z", ref global::org.apache.http.impl.client.RedirectLocations._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _remove32936;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual bool remove(java.net.URI arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "remove", "(Ljava/net/URI;)Z", ref global::org.apache.http.impl.client.RedirectLocations._remove32936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.client.RedirectLocations.staticClass, "remove", "(Ljava/net/URI;)Z", ref global::org.apache.http.impl.client.RedirectLocations._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RedirectLocations32937;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public RedirectLocations() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.client.RedirectLocations._RedirectLocations32937.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.client.RedirectLocations._RedirectLocations32937 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RedirectLocations.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.RedirectLocations.staticClass, global::org.apache.http.impl.client.RedirectLocations._RedirectLocations32937);
+			if (global::org.apache.http.impl.client.RedirectLocations._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.client.RedirectLocations._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.RedirectLocations.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.RedirectLocations.staticClass, global::org.apache.http.impl.client.RedirectLocations._m3);
 			Init(@__env, handle);
 		}
 		static RedirectLocations()

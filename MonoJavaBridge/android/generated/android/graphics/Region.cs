@@ -14,140 +14,140 @@ namespace android.graphics
 			internal Op(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _values5748;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public static global::android.graphics.Region.Op[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.graphics.Region.Op._values5748.native == global::System.IntPtr.Zero)
-					global::android.graphics.Region.Op._values5748 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Region.Op>(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._values5748)) as android.graphics.Region.Op[];
+				if (global::android.graphics.Region.Op._m0.native == global::System.IntPtr.Zero)
+					global::android.graphics.Region.Op._m0 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Region.Op>(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._m0)) as android.graphics.Region.Op[];
 			}
-			internal static global::MonoJavaBridge.MethodId _valueOf5749;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public static global::android.graphics.Region.Op valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.graphics.Region.Op._valueOf5749.native == global::System.IntPtr.Zero)
-					global::android.graphics.Region.Op._valueOf5749 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;");
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._valueOf5749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region.Op;
+				if (global::android.graphics.Region.Op._m1.native == global::System.IntPtr.Zero)
+					global::android.graphics.Region.Op._m1 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region.Op;
 			}
-			internal static global::MonoJavaBridge.FieldId _DIFFERENCE5750;
+			internal static global::MonoJavaBridge.FieldId _DIFFERENCE2401;
 			public static global::android.graphics.Region.Op DIFFERENCE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _DIFFERENCE5750)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _DIFFERENCE2401)) as android.graphics.Region.Op;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _INTERSECT5751;
+			internal static global::MonoJavaBridge.FieldId _INTERSECT2402;
 			public static global::android.graphics.Region.Op INTERSECT
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _INTERSECT5751)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _INTERSECT2402)) as android.graphics.Region.Op;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _REPLACE5752;
+			internal static global::MonoJavaBridge.FieldId _REPLACE2403;
 			public static global::android.graphics.Region.Op REPLACE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REPLACE5752)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REPLACE2403)) as android.graphics.Region.Op;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _REVERSE_DIFFERENCE5753;
+			internal static global::MonoJavaBridge.FieldId _REVERSE_DIFFERENCE2404;
 			public static global::android.graphics.Region.Op REVERSE_DIFFERENCE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REVERSE_DIFFERENCE5753)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REVERSE_DIFFERENCE2404)) as android.graphics.Region.Op;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _UNION5754;
+			internal static global::MonoJavaBridge.FieldId _UNION2405;
 			public static global::android.graphics.Region.Op UNION
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _UNION5754)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _UNION2405)) as android.graphics.Region.Op;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _XOR5755;
+			internal static global::MonoJavaBridge.FieldId _XOR2406;
 			public static global::android.graphics.Region.Op XOR
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _XOR5755)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _XOR2406)) as android.graphics.Region.Op;
 				}
 			}
 			static Op()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.Region.Op.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Region$Op"));
-				global::android.graphics.Region.Op._DIFFERENCE5750 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "DIFFERENCE", "Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._INTERSECT5751 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "INTERSECT", "Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._REPLACE5752 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "REPLACE", "Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._REVERSE_DIFFERENCE5753 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "REVERSE_DIFFERENCE", "Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._UNION5754 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "UNION", "Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._XOR5755 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "XOR", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._DIFFERENCE2401 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "DIFFERENCE", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._INTERSECT2402 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "INTERSECT", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._REPLACE2403 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "REPLACE", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._REVERSE_DIFFERENCE2404 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "REVERSE_DIFFERENCE", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._UNION2405 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "UNION", "Landroid/graphics/Region$Op;");
+				global::android.graphics.Region.Op._XOR2406 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "XOR", "Landroid/graphics/Region$Op;");
 			}
 			internal static void InitJNI()
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize5756;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "finalize", "()V", ref global::android.graphics.Region._finalize5756);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "finalize", "()V", ref global::android.graphics.Region._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _equals5757;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.graphics.Region._equals5757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.graphics.Region._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty5758;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual bool isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isEmpty", "()Z", ref global::android.graphics.Region._isEmpty5758);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isEmpty", "()Z", ref global::android.graphics.Region._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _contains5759;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual bool contains(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "contains", "(II)Z", ref global::android.graphics.Region._contains5759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "contains", "(II)Z", ref global::android.graphics.Region._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _set5760;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool set(android.graphics.Region arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Region;)Z", ref global::android.graphics.Region._set5760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Region;)Z", ref global::android.graphics.Region._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _set5761;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool set(int arg0, int arg1, int arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(IIII)Z", ref global::android.graphics.Region._set5761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(IIII)Z", ref global::android.graphics.Region._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _set5762;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool set(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._set5762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _union5763;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual bool union(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "union", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._union5763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "union", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel5764;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.graphics.Region._writeToParcel5764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.graphics.Region._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents5765;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Region.staticClass, "describeContents", "()I", ref global::android.graphics.Region._describeContents5765);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.graphics.Region.staticClass, "describeContents", "()I", ref global::android.graphics.Region._m9);
 		}
 		public new global::android.graphics.Rect Bounds
 		{
@@ -156,85 +156,85 @@ namespace android.graphics
 				return getBounds();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBounds5766;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::android.graphics.Rect getBounds()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.graphics.Region.staticClass, "getBounds", "()Landroid/graphics/Rect;", ref global::android.graphics.Region._getBounds5766) as android.graphics.Rect;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.graphics.Rect>(this, global::android.graphics.Region.staticClass, "getBounds", "()Landroid/graphics/Rect;", ref global::android.graphics.Region._m10) as android.graphics.Rect;
 		}
-		internal static global::MonoJavaBridge.MethodId _getBounds5767;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual bool getBounds(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "getBounds", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._getBounds5767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "getBounds", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _translate5768;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void translate(int arg0, int arg1, android.graphics.Region arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "translate", "(IILandroid/graphics/Region;)V", ref global::android.graphics.Region._translate5768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "translate", "(IILandroid/graphics/Region;)V", ref global::android.graphics.Region._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _translate5769;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void translate(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "translate", "(II)V", ref global::android.graphics.Region._translate5769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "translate", "(II)V", ref global::android.graphics.Region._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _op5770;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._op5770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _op5771;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool op(int arg0, int arg1, int arg2, int arg3, android.graphics.Region.Op arg4)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(IIIILandroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._op5771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(IIIILandroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _op5772;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region.Op arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._op5772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _op5773;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._op5773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _op5774;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region.Op arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._op5774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", ref global::android.graphics.Region._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _quickReject5775;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual bool quickReject(int arg0, int arg1, int arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(IIII)Z", ref global::android.graphics.Region._quickReject5775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(IIII)Z", ref global::android.graphics.Region._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _quickReject5776;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool quickReject(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._quickReject5776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _quickReject5777;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual bool quickReject(android.graphics.Region arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Region;)Z", ref global::android.graphics.Region._quickReject5777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Region;)Z", ref global::android.graphics.Region._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setEmpty5778;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setEmpty()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "setEmpty", "()V", ref global::android.graphics.Region._setEmpty5778);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.Region.staticClass, "setEmpty", "()V", ref global::android.graphics.Region._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPath5779;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual bool setPath(android.graphics.Path arg0, android.graphics.Region arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "setPath", "(Landroid/graphics/Path;Landroid/graphics/Region;)Z", ref global::android.graphics.Region._setPath5779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "setPath", "(Landroid/graphics/Path;Landroid/graphics/Region;)Z", ref global::android.graphics.Region._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isRect5780;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual bool isRect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isRect", "()Z", ref global::android.graphics.Region._isRect5780);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isRect", "()Z", ref global::android.graphics.Region._m24);
 		}
-		internal static global::MonoJavaBridge.MethodId _isComplex5781;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual bool isComplex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isComplex", "()Z", ref global::android.graphics.Region._isComplex5781);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "isComplex", "()Z", ref global::android.graphics.Region._m25);
 		}
 		public new global::android.graphics.Path BoundaryPath
 		{
@@ -243,76 +243,76 @@ namespace android.graphics
 				return getBoundaryPath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBoundaryPath5782;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual global::android.graphics.Path getBoundaryPath()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.Region.staticClass, "getBoundaryPath", "()Landroid/graphics/Path;", ref global::android.graphics.Region._getBoundaryPath5782) as android.graphics.Path;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.graphics.Region.staticClass, "getBoundaryPath", "()Landroid/graphics/Path;", ref global::android.graphics.Region._m26) as android.graphics.Path;
 		}
-		internal static global::MonoJavaBridge.MethodId _getBoundaryPath5783;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual bool getBoundaryPath(android.graphics.Path arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "getBoundaryPath", "(Landroid/graphics/Path;)Z", ref global::android.graphics.Region._getBoundaryPath5783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "getBoundaryPath", "(Landroid/graphics/Path;)Z", ref global::android.graphics.Region._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _quickContains5784;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual bool quickContains(int arg0, int arg1, int arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickContains", "(IIII)Z", ref global::android.graphics.Region._quickContains5784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickContains", "(IIII)Z", ref global::android.graphics.Region._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _quickContains5785;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool quickContains(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickContains", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._quickContains5785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.Region.staticClass, "quickContains", "(Landroid/graphics/Rect;)Z", ref global::android.graphics.Region._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _Region5786;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public Region() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Region._Region5786.native == global::System.IntPtr.Zero)
-				global::android.graphics.Region._Region5786 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._Region5786);
+			if (global::android.graphics.Region._m30.native == global::System.IntPtr.Zero)
+				global::android.graphics.Region._m30 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._m30);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Region5787;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public Region(android.graphics.Region arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Region._Region5787.native == global::System.IntPtr.Zero)
-				global::android.graphics.Region._Region5787 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Region;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._Region5787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Region._m31.native == global::System.IntPtr.Zero)
+				global::android.graphics.Region._m31 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Region;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Region5788;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public Region(android.graphics.Rect arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Region._Region5788.native == global::System.IntPtr.Zero)
-				global::android.graphics.Region._Region5788 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Rect;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._Region5788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Region._m32.native == global::System.IntPtr.Zero)
+				global::android.graphics.Region._m32 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Rect;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Region5789;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public Region(int arg0, int arg1, int arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Region._Region5789.native == global::System.IntPtr.Zero)
-				global::android.graphics.Region._Region5789 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(IIII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._Region5789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.graphics.Region._m33.native == global::System.IntPtr.Zero)
+				global::android.graphics.Region._m33 = @__env.GetMethodIDNoThrow(global::android.graphics.Region.staticClass, "<init>", "(IIII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Region.staticClass, global::android.graphics.Region._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR5790;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2407;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.graphics.Region.staticClass, _CREATOR5790)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.graphics.Region.staticClass, _CREATOR2407)) as android.os.Parcelable_Creator;
 			}
 		}
 		static Region()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Region.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Region"));
-			global::android.graphics.Region._CREATOR5790 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.graphics.Region._CREATOR2407 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

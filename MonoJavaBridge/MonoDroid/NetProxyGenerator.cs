@@ -90,6 +90,8 @@ namespace MonoDroid
             
             hash.Add(type);
             
+            AddAllTypes(model, hash, FindType(type.Name + "Constants"));
+            
             AddAllTypes(model, hash, type.ParentType);
             foreach (var iface in type.InterfaceTypes)
             {
@@ -110,9 +112,17 @@ namespace MonoDroid
         }
         
         ObjectModel myModel;
+        HashSet<Type> myTypesOfInterest = new HashSet<Type>();
         protected override void Prepare (ObjectModel model)
         {
             myModel = model;
+            
+            var androidTypes = from type in myModel.Types where (type.Name.StartsWith("android.") || !type.Name.StartsWith("java.")) && (!type.Name.StartsWith("android.test.")) select type;
+            foreach (var type in androidTypes)
+            {
+                AddAllTypes(myModel, myTypesOfInterest, type);
+            }
+
 
             foreach (var type in model.Types)
             {
@@ -174,6 +184,9 @@ namespace MonoDroid
         protected override bool BeginType (Type type)
         {
             myInitJni.Clear();
+            
+            if (!myTypesOfInterest.Contains(type))
+                return false;
             
             if (type.WrappedInterface == null)
             {
@@ -351,6 +364,7 @@ namespace MonoDroid
             }
             
             myIndent--;
+            myTypesOfInterest.Add(wrapperType);
             GenerateType(wrapperType);
             myIndent++;
             
@@ -363,6 +377,7 @@ namespace MonoDroid
                 WriteLine(");");
                 WriteLine();
                 var delegateWrapper = new Type();
+                myTypesOfInterest.Add(delegateWrapper);
                 delegateWrapper.Name = interfaceType.Name + "DelegateWrapper";
                 delegateWrapper.NativeName = interfaceType.NativeName.Replace('$', '_') + "DelegateWrapper";
                 if (delegateWrapper.NativeName.StartsWith("java."))
@@ -892,10 +907,14 @@ namespace MonoDroid
                 else
                     methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
                 methodIdLookup = methodId;
+                methodId = methodId.Replace("@", string.Empty);
+                methodId = string.Format("_m{0}", method.Index);
+                /*
                 methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
+                */
                 initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : methodIdLookup, signature, method.Static ? "Static" : string.Empty);
                 //myInitJni.Add(initJni);
-                WriteLine("internal static global::MonoJavaBridge.MethodId {0};", methodId);
+                WriteLine("private static global::MonoJavaBridge.MethodId {0};", methodId);
                 
                 if (method.Scope != null)
                     Write(method.Scope);

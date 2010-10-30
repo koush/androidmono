@@ -7,22 +7,22 @@ namespace javax.xml.xpath
 		protected XPathFactoryConfigurationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _XPathFactoryConfigurationException31328;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public XPathFactoryConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31328.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31328 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactoryConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFactoryConfigurationException.staticClass, global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.xpath.XPathFactoryConfigurationException._m0.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathFactoryConfigurationException._m0 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactoryConfigurationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFactoryConfigurationException.staticClass, global::javax.xml.xpath.XPathFactoryConfigurationException._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _XPathFactoryConfigurationException31329;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public XPathFactoryConfigurationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31329.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31329 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactoryConfigurationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFactoryConfigurationException.staticClass, global::javax.xml.xpath.XPathFactoryConfigurationException._XPathFactoryConfigurationException31329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.xpath.XPathFactoryConfigurationException._m1.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathFactoryConfigurationException._m1 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFactoryConfigurationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFactoryConfigurationException.staticClass, global::javax.xml.xpath.XPathFactoryConfigurationException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static XPathFactoryConfigurationException()

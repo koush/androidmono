@@ -20,10 +20,10 @@ namespace android.app
 			internal OnTimeSetListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onTimeSet2173;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.app.TimePickerDialog.OnTimeSetListener.onTimeSet(android.widget.TimePicker arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.OnTimeSetListener_.staticClass, "onTimeSet", "(Landroid/widget/TimePicker;II)V", ref global::android.app.TimePickerDialog.OnTimeSetListener_._onTimeSet2173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.OnTimeSetListener_.staticClass, "onTimeSet", "(Landroid/widget/TimePicker;II)V", ref global::android.app.TimePickerDialog.OnTimeSetListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnTimeSetListener_()
 			{
@@ -43,13 +43,13 @@ namespace android.app
 			protected OnTimeSetListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnTimeSetListenerDelegateWrapper2174;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnTimeSetListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._OnTimeSetListenerDelegateWrapper2174.native == global::System.IntPtr.Zero)
-					global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._OnTimeSetListenerDelegateWrapper2174 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper.staticClass, global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._OnTimeSetListenerDelegateWrapper2174);
+				if (global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper.staticClass, global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnTimeSetListenerDelegateWrapper()
@@ -76,47 +76,47 @@ namespace android.app
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick2175;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onClick(android.content.DialogInterface arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V", ref global::android.app.TimePickerDialog._onClick2175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V", ref global::android.app.TimePickerDialog._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState2176;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.app.TimePickerDialog._onRestoreInstanceState2176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.app.TimePickerDialog._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState2177;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::android.os.Bundle onSaveInstanceState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.app.TimePickerDialog.staticClass, "onSaveInstanceState", "()Landroid/os/Bundle;", ref global::android.app.TimePickerDialog._onSaveInstanceState2177) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.app.TimePickerDialog.staticClass, "onSaveInstanceState", "()Landroid/os/Bundle;", ref global::android.app.TimePickerDialog._m2) as android.os.Bundle;
 		}
-		internal static global::MonoJavaBridge.MethodId _onTimeChanged2178;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void onTimeChanged(android.widget.TimePicker arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onTimeChanged", "(Landroid/widget/TimePicker;II)V", ref global::android.app.TimePickerDialog._onTimeChanged2178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "onTimeChanged", "(Landroid/widget/TimePicker;II)V", ref global::android.app.TimePickerDialog._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateTime2179;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void updateTime(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "updateTime", "(II)V", ref global::android.app.TimePickerDialog._updateTime2179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.TimePickerDialog.staticClass, "updateTime", "(II)V", ref global::android.app.TimePickerDialog._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _TimePickerDialog2180;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public TimePickerDialog(android.content.Context arg0, android.app.TimePickerDialog.OnTimeSetListener arg1, int arg2, int arg3, bool arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.TimePickerDialog._TimePickerDialog2180.native == global::System.IntPtr.Zero)
-				global::android.app.TimePickerDialog._TimePickerDialog2180 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.staticClass, global::android.app.TimePickerDialog._TimePickerDialog2180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.app.TimePickerDialog._m5.native == global::System.IntPtr.Zero)
+				global::android.app.TimePickerDialog._m5 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.staticClass, global::android.app.TimePickerDialog._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _TimePickerDialog2181;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public TimePickerDialog(android.content.Context arg0, int arg1, android.app.TimePickerDialog.OnTimeSetListener arg2, int arg3, int arg4, bool arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.TimePickerDialog._TimePickerDialog2181.native == global::System.IntPtr.Zero)
-				global::android.app.TimePickerDialog._TimePickerDialog2181 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.staticClass, "<init>", "(Landroid/content/Context;ILandroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.staticClass, global::android.app.TimePickerDialog._TimePickerDialog2181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.app.TimePickerDialog._m6.native == global::System.IntPtr.Zero)
+				global::android.app.TimePickerDialog._m6 = @__env.GetMethodIDNoThrow(global::android.app.TimePickerDialog.staticClass, "<init>", "(Landroid/content/Context;ILandroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TimePickerDialog.staticClass, global::android.app.TimePickerDialog._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
 		static TimePickerDialog()

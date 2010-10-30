@@ -7,21 +7,21 @@ namespace android.media
 		protected CameraProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getJpegEncodingQualityParameter7241;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int getJpegEncodingQualityParameter(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.CameraProfile._getJpegEncodingQualityParameter7241.native == global::System.IntPtr.Zero)
-				global::android.media.CameraProfile._getJpegEncodingQualityParameter7241 = @__env.GetStaticMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "getJpegEncodingQualityParameter", "(I)I");
-			return @__env.CallStaticIntMethod(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._getJpegEncodingQualityParameter7241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.media.CameraProfile._m0.native == global::System.IntPtr.Zero)
+				global::android.media.CameraProfile._m0 = @__env.GetStaticMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "getJpegEncodingQualityParameter", "(I)I");
+			return @__env.CallStaticIntMethod(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _CameraProfile7242;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public CameraProfile() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.CameraProfile._CameraProfile7242.native == global::System.IntPtr.Zero)
-				global::android.media.CameraProfile._CameraProfile7242 = @__env.GetMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._CameraProfile7242);
+			if (global::android.media.CameraProfile._m1.native == global::System.IntPtr.Zero)
+				global::android.media.CameraProfile._m1 = @__env.GetMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._m1);
 			Init(@__env, handle);
 		}
 		public static int QUALITY_LOW

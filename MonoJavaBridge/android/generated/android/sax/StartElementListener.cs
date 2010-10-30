@@ -13,10 +13,10 @@ namespace android.sax
 		internal StartElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _start11617;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.StartElementListener_._start11617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.sax.StartElementListener_.staticClass, "start", "(Lorg/xml/sax/Attributes;)V", ref global::android.sax.StartElementListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static StartElementListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.sax
 		protected StartElementListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _StartElementListenerDelegateWrapper11618;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public StartElementListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618.native == global::System.IntPtr.Zero)
-				global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.StartElementListenerDelegateWrapper.staticClass, global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618);
+			if (global::android.sax.StartElementListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.sax.StartElementListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.sax.StartElementListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.StartElementListenerDelegateWrapper.staticClass, global::android.sax.StartElementListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static StartElementListenerDelegateWrapper()

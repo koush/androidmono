@@ -7,114 +7,114 @@ namespace java.nio
 		protected FloatBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get22205;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract float get();
-		internal static global::MonoJavaBridge.MethodId _get22206;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.nio.FloatBuffer get(float[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._get22206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _get22207;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.nio.FloatBuffer get(float[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._get22207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "get", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _get22208;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract float get(int arg0);
-		internal static global::MonoJavaBridge.MethodId _put22209;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.nio.FloatBuffer put(java.nio.FloatBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22210;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract global::java.nio.FloatBuffer put(float arg0);
-		internal static global::MonoJavaBridge.MethodId _put22211;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract global::java.nio.FloatBuffer put(int arg0, float arg1);
-		internal static global::MonoJavaBridge.MethodId _put22212;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.nio.FloatBuffer put(float[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([FII)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22213;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::java.nio.FloatBuffer put(float[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._put22213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "put", "([F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _equals22214;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.nio.FloatBuffer._equals22214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.nio.FloatBuffer._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString22215;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.FloatBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.FloatBuffer._toString22215) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.FloatBuffer.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.FloatBuffer._m10) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode22216;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "hashCode", "()I", ref global::java.nio.FloatBuffer._hashCode22216);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "hashCode", "()I", ref global::java.nio.FloatBuffer._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo22217;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int compareTo(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.nio.FloatBuffer._compareTo22217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.nio.FloatBuffer._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo22218;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int compareTo(java.nio.FloatBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/nio/FloatBuffer;)I", ref global::java.nio.FloatBuffer._compareTo22218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "compareTo", "(Ljava/nio/FloatBuffer;)I", ref global::java.nio.FloatBuffer._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDirect22219;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public abstract bool isDirect();
-		internal static global::MonoJavaBridge.MethodId _hasArray22220;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public sealed override bool hasArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "hasArray", "()Z", ref global::java.nio.FloatBuffer._hasArray22220);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, "hasArray", "()Z", ref global::java.nio.FloatBuffer._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _array22221;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override global::java.lang.Object array()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "array", "()Ljava/lang/Object;", ref global::java.nio.FloatBuffer._array22221) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer.staticClass, "array", "()Ljava/lang/Object;", ref global::java.nio.FloatBuffer._m16) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _arrayOffset22222;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public sealed override int arrayOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "arrayOffset", "()I", ref global::java.nio.FloatBuffer._arrayOffset22222);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.FloatBuffer.staticClass, "arrayOffset", "()I", ref global::java.nio.FloatBuffer._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _wrap22223;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static global::java.nio.FloatBuffer wrap(float[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._wrap22223.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._wrap22223 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "wrap", "([FII)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._wrap22223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.FloatBuffer;
+			if (global::java.nio.FloatBuffer._m18.native == global::System.IntPtr.Zero)
+				global::java.nio.FloatBuffer._m18 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "wrap", "([FII)Ljava/nio/FloatBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _wrap22224;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static global::java.nio.FloatBuffer wrap(float[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._wrap22224.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._wrap22224 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "wrap", "([F)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._wrap22224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.FloatBuffer;
+			if (global::java.nio.FloatBuffer._m19.native == global::System.IntPtr.Zero)
+				global::java.nio.FloatBuffer._m19 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "wrap", "([F)Ljava/nio/FloatBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _allocate22225;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::java.nio.FloatBuffer allocate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.FloatBuffer._allocate22225.native == global::System.IntPtr.Zero)
-				global::java.nio.FloatBuffer._allocate22225 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "allocate", "(I)Ljava/nio/FloatBuffer;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._allocate22225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.FloatBuffer;
+			if (global::java.nio.FloatBuffer._m20.native == global::System.IntPtr.Zero)
+				global::java.nio.FloatBuffer._m20 = @__env.GetStaticMethodIDNoThrow(global::java.nio.FloatBuffer.staticClass, "allocate", "(I)Ljava/nio/FloatBuffer;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _duplicate22226;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public abstract global::java.nio.FloatBuffer duplicate();
-		internal static global::MonoJavaBridge.MethodId _slice22227;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public abstract global::java.nio.FloatBuffer slice();
-		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22228;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public abstract global::java.nio.FloatBuffer asReadOnlyBuffer();
-		internal static global::MonoJavaBridge.MethodId _compact22229;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public abstract global::java.nio.FloatBuffer compact();
-		internal static global::MonoJavaBridge.MethodId _order22230;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public abstract global::java.nio.ByteOrder order();
 		static FloatBuffer()
 		{
@@ -133,60 +133,60 @@ namespace java.nio
 		internal FloatBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get22231;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override float get()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "()F", ref global::java.nio.FloatBuffer_._get22231);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "()F", ref global::java.nio.FloatBuffer_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _get22232;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override float get(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "(I)F", ref global::java.nio.FloatBuffer_._get22232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.FloatBuffer_.staticClass, "get", "(I)F", ref global::java.nio.FloatBuffer_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _put22233;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.nio.FloatBuffer put(float arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._put22233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(F)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _put22234;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.nio.FloatBuffer put(int arg0, float arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(IF)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._put22234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "put", "(IF)Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDirect22235;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isDirect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isDirect", "()Z", ref global::java.nio.FloatBuffer_._isDirect22235);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isDirect", "()Z", ref global::java.nio.FloatBuffer_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _duplicate22236;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::java.nio.FloatBuffer duplicate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "duplicate", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._duplicate22236) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "duplicate", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m5) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _slice22237;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::java.nio.FloatBuffer slice()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "slice", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._slice22237) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "slice", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m6) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22238;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::java.nio.FloatBuffer asReadOnlyBuffer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._asReadOnlyBuffer22238) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m7) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _compact22239;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override global::java.nio.FloatBuffer compact()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "compact", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._compact22239) as java.nio.FloatBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.FloatBuffer_.staticClass, "compact", "()Ljava/nio/FloatBuffer;", ref global::java.nio.FloatBuffer_._m8) as java.nio.FloatBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _order22240;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::java.nio.ByteOrder order()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.nio.ByteOrder>(this, global::java.nio.FloatBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;", ref global::java.nio.FloatBuffer_._order22240) as java.nio.ByteOrder;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.nio.ByteOrder>(this, global::java.nio.FloatBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;", ref global::java.nio.FloatBuffer_._m9) as java.nio.ByteOrder;
 		}
-		internal static global::MonoJavaBridge.MethodId _isReadOnly22241;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override bool isReadOnly()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isReadOnly", "()Z", ref global::java.nio.FloatBuffer_._isReadOnly22241);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.FloatBuffer_.staticClass, "isReadOnly", "()Z", ref global::java.nio.FloatBuffer_._m10);
 		}
 		static FloatBuffer_()
 		{

@@ -13,10 +13,10 @@ namespace android.text.style
 		internal TabStopSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getTabStop13598;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int android.text.style.TabStopSpan.getTabStop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TabStopSpan_.staticClass, "getTabStop", "()I", ref global::android.text.style.TabStopSpan_._getTabStop13598);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.TabStopSpan_.staticClass, "getTabStop", "()I", ref global::android.text.style.TabStopSpan_._m0);
 		}
 		static TabStopSpan_()
 		{

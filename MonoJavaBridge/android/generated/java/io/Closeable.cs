@@ -13,10 +13,10 @@ namespace java.io
 		internal Closeable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close18883;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Closeable_.staticClass, "close", "()V", ref global::java.io.Closeable_._close18883);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Closeable_.staticClass, "close", "()V", ref global::java.io.Closeable_._m0);
 		}
 		static Closeable_()
 		{

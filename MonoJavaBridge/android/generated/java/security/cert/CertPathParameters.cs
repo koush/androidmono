@@ -13,10 +13,10 @@ namespace java.security.cert
 		internal CertPathParameters_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clone23512;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object java.security.cert.CertPathParameters.clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathParameters_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CertPathParameters_._clone23512) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPathParameters_.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.security.cert.CertPathParameters_._m0) as java.lang.Object;
 		}
 		static CertPathParameters_()
 		{

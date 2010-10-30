@@ -7,67 +7,67 @@ namespace java.net
 		protected DatagramSocketImpl(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getOption21426;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract global::java.lang.Object getOption(int arg0);
-		internal static global::MonoJavaBridge.MethodId _setOption21427;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract void setOption(int arg0, java.lang.Object arg1);
-		internal static global::MonoJavaBridge.MethodId _join21428;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected abstract void join(java.net.InetAddress arg0);
-		internal static global::MonoJavaBridge.MethodId _close21429;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected abstract void close();
-		internal static global::MonoJavaBridge.MethodId _peek21430;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected abstract int peek(java.net.InetAddress arg0);
-		internal static global::MonoJavaBridge.MethodId _send21431;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected abstract void send(java.net.DatagramPacket arg0);
-		internal static global::MonoJavaBridge.MethodId _create21432;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected abstract void create();
-		internal static global::MonoJavaBridge.MethodId _connect21433;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected virtual void connect(java.net.InetAddress arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, "connect", "(Ljava/net/InetAddress;I)V", ref global::java.net.DatagramSocketImpl._connect21433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, "connect", "(Ljava/net/InetAddress;I)V", ref global::java.net.DatagramSocketImpl._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _peekData21434;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected abstract int peekData(java.net.DatagramPacket arg0);
-		internal static global::MonoJavaBridge.MethodId _getFileDescriptor21435;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected virtual global::java.io.FileDescriptor getFileDescriptor()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::java.net.DatagramSocketImpl.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::java.net.DatagramSocketImpl._getFileDescriptor21435) as java.io.FileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.io.FileDescriptor>(this, global::java.net.DatagramSocketImpl.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;", ref global::java.net.DatagramSocketImpl._m9) as java.io.FileDescriptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _bind21436;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected abstract void bind(int arg0, java.net.InetAddress arg1);
-		internal static global::MonoJavaBridge.MethodId _disconnect21437;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected virtual void disconnect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, "disconnect", "()V", ref global::java.net.DatagramSocketImpl._disconnect21437);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, "disconnect", "()V", ref global::java.net.DatagramSocketImpl._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalPort21438;
+		private static global::MonoJavaBridge.MethodId _m12;
 		protected virtual int getLocalPort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl.staticClass, "getLocalPort", "()I", ref global::java.net.DatagramSocketImpl._getLocalPort21438);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl.staticClass, "getLocalPort", "()I", ref global::java.net.DatagramSocketImpl._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _receive21439;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected abstract void receive(java.net.DatagramPacket arg0);
-		internal static global::MonoJavaBridge.MethodId _setTTL21440;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected abstract void setTTL(byte arg0);
-		internal static global::MonoJavaBridge.MethodId _getTTL21441;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected abstract byte getTTL();
-		internal static global::MonoJavaBridge.MethodId _setTimeToLive21442;
+		private static global::MonoJavaBridge.MethodId _m16;
 		protected abstract void setTimeToLive(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getTimeToLive21443;
+		private static global::MonoJavaBridge.MethodId _m17;
 		protected abstract int getTimeToLive();
-		internal static global::MonoJavaBridge.MethodId _leave21444;
+		private static global::MonoJavaBridge.MethodId _m18;
 		protected abstract void leave(java.net.InetAddress arg0);
-		internal static global::MonoJavaBridge.MethodId _joinGroup21445;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected abstract void joinGroup(java.net.SocketAddress arg0, java.net.NetworkInterface arg1);
-		internal static global::MonoJavaBridge.MethodId _leaveGroup21446;
+		private static global::MonoJavaBridge.MethodId _m20;
 		protected abstract void leaveGroup(java.net.SocketAddress arg0, java.net.NetworkInterface arg1);
-		internal static global::MonoJavaBridge.MethodId _DatagramSocketImpl21447;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public DatagramSocketImpl() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.DatagramSocketImpl._DatagramSocketImpl21447.native == global::System.IntPtr.Zero)
-				global::java.net.DatagramSocketImpl._DatagramSocketImpl21447 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._DatagramSocketImpl21447);
+			if (global::java.net.DatagramSocketImpl._m21.native == global::System.IntPtr.Zero)
+				global::java.net.DatagramSocketImpl._m21 = @__env.GetMethodIDNoThrow(global::java.net.DatagramSocketImpl.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._m21);
 			Init(@__env, handle);
 		}
 		static DatagramSocketImpl()
@@ -87,90 +87,90 @@ namespace java.net
 		internal DatagramSocketImpl_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getOption21448;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.Object getOption(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getOption", "(I)Ljava/lang/Object;", ref global::java.net.DatagramSocketImpl_._getOption21448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getOption", "(I)Ljava/lang/Object;", ref global::java.net.DatagramSocketImpl_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setOption21449;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void setOption(int arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setOption", "(ILjava/lang/Object;)V", ref global::java.net.DatagramSocketImpl_._setOption21449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setOption", "(ILjava/lang/Object;)V", ref global::java.net.DatagramSocketImpl_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _join21450;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void join(java.net.InetAddress arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "join", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._join21450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "join", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _close21451;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "close", "()V", ref global::java.net.DatagramSocketImpl_._close21451);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "close", "()V", ref global::java.net.DatagramSocketImpl_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _peek21452;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected override int peek(java.net.InetAddress arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "peek", "(Ljava/net/InetAddress;)I", ref global::java.net.DatagramSocketImpl_._peek21452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "peek", "(Ljava/net/InetAddress;)I", ref global::java.net.DatagramSocketImpl_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _send21453;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override void send(java.net.DatagramPacket arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "send", "(Ljava/net/DatagramPacket;)V", ref global::java.net.DatagramSocketImpl_._send21453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "send", "(Ljava/net/DatagramPacket;)V", ref global::java.net.DatagramSocketImpl_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _create21454;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void create()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "create", "()V", ref global::java.net.DatagramSocketImpl_._create21454);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "create", "()V", ref global::java.net.DatagramSocketImpl_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _peekData21455;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected override int peekData(java.net.DatagramPacket arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "peekData", "(Ljava/net/DatagramPacket;)I", ref global::java.net.DatagramSocketImpl_._peekData21455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "peekData", "(Ljava/net/DatagramPacket;)I", ref global::java.net.DatagramSocketImpl_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _bind21456;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected override void bind(int arg0, java.net.InetAddress arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "bind", "(ILjava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._bind21456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "bind", "(ILjava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _receive21457;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override void receive(java.net.DatagramPacket arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "receive", "(Ljava/net/DatagramPacket;)V", ref global::java.net.DatagramSocketImpl_._receive21457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "receive", "(Ljava/net/DatagramPacket;)V", ref global::java.net.DatagramSocketImpl_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setTTL21458;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override void setTTL(byte arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setTTL", "(B)V", ref global::java.net.DatagramSocketImpl_._setTTL21458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setTTL", "(B)V", ref global::java.net.DatagramSocketImpl_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTTL21459;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected override byte getTTL()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getTTL", "()B", ref global::java.net.DatagramSocketImpl_._getTTL21459);
+			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getTTL", "()B", ref global::java.net.DatagramSocketImpl_._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _setTimeToLive21460;
+		private static global::MonoJavaBridge.MethodId _m12;
 		protected override void setTimeToLive(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setTimeToLive", "(I)V", ref global::java.net.DatagramSocketImpl_._setTimeToLive21460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "setTimeToLive", "(I)V", ref global::java.net.DatagramSocketImpl_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTimeToLive21461;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected override int getTimeToLive()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getTimeToLive", "()I", ref global::java.net.DatagramSocketImpl_._getTimeToLive21461);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "getTimeToLive", "()I", ref global::java.net.DatagramSocketImpl_._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _leave21462;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected override void leave(java.net.InetAddress arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "leave", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._leave21462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "leave", "(Ljava/net/InetAddress;)V", ref global::java.net.DatagramSocketImpl_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _joinGroup21463;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected override void joinGroup(java.net.SocketAddress arg0, java.net.NetworkInterface arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "joinGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", ref global::java.net.DatagramSocketImpl_._joinGroup21463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "joinGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", ref global::java.net.DatagramSocketImpl_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _leaveGroup21464;
+		private static global::MonoJavaBridge.MethodId _m16;
 		protected override void leaveGroup(java.net.SocketAddress arg0, java.net.NetworkInterface arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", ref global::java.net.DatagramSocketImpl_._leaveGroup21464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.net.DatagramSocketImpl_.staticClass, "leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", ref global::java.net.DatagramSocketImpl_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static DatagramSocketImpl_()
 		{

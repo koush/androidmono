@@ -13,10 +13,10 @@ namespace android.webkit
 		internal DownloadListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onDownloadStart16040;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.webkit.DownloadListener.onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.DownloadListener_.staticClass, "onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V", ref global::android.webkit.DownloadListener_._onDownloadStart16040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.DownloadListener_.staticClass, "onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V", ref global::android.webkit.DownloadListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		static DownloadListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.webkit
 		protected DownloadListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DownloadListenerDelegateWrapper16041;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public DownloadListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.DownloadListenerDelegateWrapper._DownloadListenerDelegateWrapper16041.native == global::System.IntPtr.Zero)
-				global::android.webkit.DownloadListenerDelegateWrapper._DownloadListenerDelegateWrapper16041 = @__env.GetMethodIDNoThrow(global::android.webkit.DownloadListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.DownloadListenerDelegateWrapper.staticClass, global::android.webkit.DownloadListenerDelegateWrapper._DownloadListenerDelegateWrapper16041);
+			if (global::android.webkit.DownloadListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.webkit.DownloadListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.webkit.DownloadListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.DownloadListenerDelegateWrapper.staticClass, global::android.webkit.DownloadListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static DownloadListenerDelegateWrapper()

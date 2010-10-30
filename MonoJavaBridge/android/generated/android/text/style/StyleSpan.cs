@@ -7,15 +7,15 @@ namespace android.text.style
 		protected StyleSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13574;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.StyleSpan._writeToParcel13574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.StyleSpan._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13575;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "describeContents", "()I", ref global::android.text.style.StyleSpan._describeContents13575);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "describeContents", "()I", ref global::android.text.style.StyleSpan._m1);
 		}
 		public new int Style
 		{
@@ -24,10 +24,10 @@ namespace android.text.style
 				return getStyle();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getStyle13576;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getStyle()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "getStyle", "()I", ref global::android.text.style.StyleSpan._getStyle13576);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "getStyle", "()I", ref global::android.text.style.StyleSpan._m2);
 		}
 		public new int SpanTypeId
 		{
@@ -36,37 +36,37 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13577;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.StyleSpan._getSpanTypeId13577);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StyleSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.StyleSpan._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13578;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StyleSpan._updateDrawState13578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StyleSpan._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateMeasureState13579;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StyleSpan._updateMeasureState13579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StyleSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StyleSpan._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _StyleSpan13580;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public StyleSpan(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.StyleSpan._StyleSpan13580.native == global::System.IntPtr.Zero)
-				global::android.text.style.StyleSpan._StyleSpan13580 = @__env.GetMethodIDNoThrow(global::android.text.style.StyleSpan.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._StyleSpan13580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.StyleSpan._m6.native == global::System.IntPtr.Zero)
+				global::android.text.style.StyleSpan._m6 = @__env.GetMethodIDNoThrow(global::android.text.style.StyleSpan.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StyleSpan13581;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public StyleSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.StyleSpan._StyleSpan13581.native == global::System.IntPtr.Zero)
-				global::android.text.style.StyleSpan._StyleSpan13581 = @__env.GetMethodIDNoThrow(global::android.text.style.StyleSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._StyleSpan13581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.StyleSpan._m7.native == global::System.IntPtr.Zero)
+				global::android.text.style.StyleSpan._m7 = @__env.GetMethodIDNoThrow(global::android.text.style.StyleSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StyleSpan.staticClass, global::android.text.style.StyleSpan._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static StyleSpan()

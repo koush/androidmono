@@ -7,18 +7,18 @@ namespace org.apache.http.impl.entity
 		protected StrictContentLengthStrategy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _determineLength33378;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual long determineLength(org.apache.http.HttpMessage arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.impl.entity.StrictContentLengthStrategy._determineLength33378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "determineLength", "(Lorg/apache/http/HttpMessage;)J", ref global::org.apache.http.impl.entity.StrictContentLengthStrategy._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _StrictContentLengthStrategy33379;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public StrictContentLengthStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.entity.StrictContentLengthStrategy._StrictContentLengthStrategy33379.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.entity.StrictContentLengthStrategy._StrictContentLengthStrategy33379 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.StrictContentLengthStrategy._StrictContentLengthStrategy33379);
+			if (global::org.apache.http.impl.entity.StrictContentLengthStrategy._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.entity.StrictContentLengthStrategy._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.StrictContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.StrictContentLengthStrategy._m1);
 			Init(@__env, handle);
 		}
 		static StrictContentLengthStrategy()

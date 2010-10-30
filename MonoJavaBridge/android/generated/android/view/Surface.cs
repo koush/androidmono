@@ -14,22 +14,22 @@ namespace android.view
 			protected OutOfResourcesException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OutOfResourcesException14521;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OutOfResourcesException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14521.native == global::System.IntPtr.Zero)
-					global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14521 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Surface.OutOfResourcesException.staticClass, global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14521);
+				if (global::android.view.Surface.OutOfResourcesException._m0.native == global::System.IntPtr.Zero)
+					global::android.view.Surface.OutOfResourcesException._m0 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Surface.OutOfResourcesException.staticClass, global::android.view.Surface.OutOfResourcesException._m0);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _OutOfResourcesException14522;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public OutOfResourcesException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14522.native == global::System.IntPtr.Zero)
-					global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14522 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Surface.OutOfResourcesException.staticClass, global::android.view.Surface.OutOfResourcesException._OutOfResourcesException14522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::android.view.Surface.OutOfResourcesException._m1.native == global::System.IntPtr.Zero)
+					global::android.view.Surface.OutOfResourcesException._m1 = @__env.GetMethodIDNoThrow(global::android.view.Surface.OutOfResourcesException.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Surface.OutOfResourcesException.staticClass, global::android.view.Surface.OutOfResourcesException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static OutOfResourcesException()
@@ -41,45 +41,45 @@ namespace android.view
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize14523;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "finalize", "()V", ref global::android.view.Surface._finalize14523);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "finalize", "()V", ref global::android.view.Surface._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _toString14524;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.Surface.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.Surface._toString14524) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.Surface.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.Surface._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSize14525;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setSize(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setSize", "(II)V", ref global::android.view.Surface._setSize14525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setSize", "(II)V", ref global::android.view.Surface._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isValid14526;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual bool isValid()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.Surface.staticClass, "isValid", "()Z", ref global::android.view.Surface._isValid14526);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.Surface.staticClass, "isValid", "()Z", ref global::android.view.Surface._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel14527;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.Surface._writeToParcel14527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.Surface._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents14528;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Surface.staticClass, "describeContents", "()I", ref global::android.view.Surface._describeContents14528);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.Surface.staticClass, "describeContents", "()I", ref global::android.view.Surface._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFlags14529;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setFlags(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setFlags", "(II)V", ref global::android.view.Surface._setFlags14529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setFlags", "(II)V", ref global::android.view.Surface._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _readFromParcel14530;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void readFromParcel(android.os.Parcel arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V", ref global::android.view.Surface._readFromParcel14530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V", ref global::android.view.Surface._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float Alpha
 		{
@@ -88,48 +88,48 @@ namespace android.view
 				setAlpha(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAlpha14531;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setAlpha(float arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setAlpha", "(F)V", ref global::android.view.Surface._setAlpha14531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setAlpha", "(F)V", ref global::android.view.Surface._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMatrix14532;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setMatrix(float arg0, float arg1, float arg2, float arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setMatrix", "(FFFF)V", ref global::android.view.Surface._setMatrix14532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setMatrix", "(FFFF)V", ref global::android.view.Surface._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _show14533;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void show()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "show", "()V", ref global::android.view.Surface._show14533);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "show", "()V", ref global::android.view.Surface._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _hide14534;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void hide()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "hide", "()V", ref global::android.view.Surface._hide14534);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "hide", "()V", ref global::android.view.Surface._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOrientation14535;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static void setOrientation(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.Surface._setOrientation14535.native == global::System.IntPtr.Zero)
-				global::android.view.Surface._setOrientation14535 = @__env.GetStaticMethodIDNoThrow(global::android.view.Surface.staticClass, "setOrientation", "(II)V");
-			@__env.CallStaticVoidMethod(android.view.Surface.staticClass, global::android.view.Surface._setOrientation14535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.Surface._m12.native == global::System.IntPtr.Zero)
+				global::android.view.Surface._m12 = @__env.GetStaticMethodIDNoThrow(global::android.view.Surface.staticClass, "setOrientation", "(II)V");
+			@__env.CallStaticVoidMethod(android.view.Surface.staticClass, global::android.view.Surface._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _lockCanvas14536;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual global::android.graphics.Canvas lockCanvas(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.Surface.staticClass, "lockCanvas", "(Landroid/graphics/Rect;)Landroid/graphics/Canvas;", ref global::android.view.Surface._lockCanvas14536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Canvas;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.Surface.staticClass, "lockCanvas", "(Landroid/graphics/Rect;)Landroid/graphics/Canvas;", ref global::android.view.Surface._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.graphics.Canvas;
 		}
-		internal static global::MonoJavaBridge.MethodId _unlockCanvasAndPost14537;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void unlockCanvasAndPost(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unlockCanvasAndPost", "(Landroid/graphics/Canvas;)V", ref global::android.view.Surface._unlockCanvasAndPost14537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unlockCanvasAndPost", "(Landroid/graphics/Canvas;)V", ref global::android.view.Surface._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unlockCanvas14538;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void unlockCanvas(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unlockCanvas", "(Landroid/graphics/Canvas;)V", ref global::android.view.Surface._unlockCanvas14538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unlockCanvas", "(Landroid/graphics/Canvas;)V", ref global::android.view.Surface._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Layer
 		{
@@ -138,15 +138,15 @@ namespace android.view
 				setLayer(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setLayer14539;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setLayer(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setLayer", "(I)V", ref global::android.view.Surface._setLayer14539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setLayer", "(I)V", ref global::android.view.Surface._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPosition14540;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setPosition(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setPosition", "(II)V", ref global::android.view.Surface._setPosition14540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setPosition", "(II)V", ref global::android.view.Surface._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::android.graphics.Region TransparentRegionHint
 		{
@@ -155,20 +155,20 @@ namespace android.view
 				setTransparentRegionHint(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setTransparentRegionHint14541;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setTransparentRegionHint(android.graphics.Region arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setTransparentRegionHint", "(Landroid/graphics/Region;)V", ref global::android.view.Surface._setTransparentRegionHint14541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setTransparentRegionHint", "(Landroid/graphics/Region;)V", ref global::android.view.Surface._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _freeze14542;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void freeze()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "freeze", "()V", ref global::android.view.Surface._freeze14542);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "freeze", "()V", ref global::android.view.Surface._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _unfreeze14543;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void unfreeze()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unfreeze", "()V", ref global::android.view.Surface._unfreeze14543);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "unfreeze", "()V", ref global::android.view.Surface._m20);
 		}
 		public new int FreezeTint
 		{
@@ -177,10 +177,10 @@ namespace android.view
 				setFreezeTint(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFreezeTint14544;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setFreezeTint(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setFreezeTint", "(I)V", ref global::android.view.Surface._setFreezeTint14544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.Surface.staticClass, "setFreezeTint", "(I)V", ref global::android.view.Surface._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int HIDDEN
 		{
@@ -315,20 +315,20 @@ namespace android.view
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR14564;
+		internal static global::MonoJavaBridge.FieldId _CREATOR5677;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.Surface.staticClass, _CREATOR14564)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.Surface.staticClass, _CREATOR5677)) as android.os.Parcelable_Creator;
 			}
 		}
 		static Surface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Surface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Surface"));
-			global::android.view.Surface._CREATOR14564 = @__env.GetStaticFieldIDNoThrow(global::android.view.Surface.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.view.Surface._CREATOR5677 = @__env.GetStaticFieldIDNoThrow(global::android.view.Surface.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

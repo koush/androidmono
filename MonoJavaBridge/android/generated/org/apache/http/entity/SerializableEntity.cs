@@ -14,15 +14,15 @@ namespace org.apache.http.entity
 				return getContent();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContent32564;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.io.InputStream getContent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.SerializableEntity._getContent32564) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.entity.SerializableEntity._m0) as java.io.InputStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeTo32565;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.SerializableEntity._writeTo32565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.SerializableEntity._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long ContentLength
 		{
@@ -31,28 +31,28 @@ namespace org.apache.http.entity
 				return getContentLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentLength32566;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override long getContentLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.SerializableEntity._getContentLength32566);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "getContentLength", "()J", ref global::org.apache.http.entity.SerializableEntity._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _isRepeatable32567;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool isRepeatable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.SerializableEntity._isRepeatable32567);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.entity.SerializableEntity._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isStreaming32568;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool isStreaming()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.SerializableEntity._isStreaming32568);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.entity.SerializableEntity.staticClass, "isStreaming", "()Z", ref global::org.apache.http.entity.SerializableEntity._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _SerializableEntity32569;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public SerializableEntity(java.io.Serializable arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.entity.SerializableEntity._SerializableEntity32569.native == global::System.IntPtr.Zero)
-				global::org.apache.http.entity.SerializableEntity._SerializableEntity32569 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.SerializableEntity.staticClass, "<init>", "(Ljava/io/Serializable;Z)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.SerializableEntity.staticClass, global::org.apache.http.entity.SerializableEntity._SerializableEntity32569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.entity.SerializableEntity._m5.native == global::System.IntPtr.Zero)
+				global::org.apache.http.entity.SerializableEntity._m5 = @__env.GetMethodIDNoThrow(global::org.apache.http.entity.SerializableEntity.staticClass, "<init>", "(Ljava/io/Serializable;Z)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.SerializableEntity.staticClass, global::org.apache.http.entity.SerializableEntity._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static SerializableEntity()

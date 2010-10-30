@@ -7,45 +7,45 @@ namespace android.util
 		protected FloatMath(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _sin13768;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static float sin(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.FloatMath._sin13768.native == global::System.IntPtr.Zero)
-				global::android.util.FloatMath._sin13768 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sin", "(F)F");
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sin13768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.FloatMath._m0.native == global::System.IntPtr.Zero)
+				global::android.util.FloatMath._m0 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sin", "(F)F");
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _cos13769;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static float cos(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.FloatMath._cos13769.native == global::System.IntPtr.Zero)
-				global::android.util.FloatMath._cos13769 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "cos", "(F)F");
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._cos13769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.FloatMath._m1.native == global::System.IntPtr.Zero)
+				global::android.util.FloatMath._m1 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "cos", "(F)F");
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sqrt13770;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static float sqrt(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.FloatMath._sqrt13770.native == global::System.IntPtr.Zero)
-				global::android.util.FloatMath._sqrt13770 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sqrt", "(F)F");
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sqrt13770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.FloatMath._m2.native == global::System.IntPtr.Zero)
+				global::android.util.FloatMath._m2 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sqrt", "(F)F");
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ceil13771;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static float ceil(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.FloatMath._ceil13771.native == global::System.IntPtr.Zero)
-				global::android.util.FloatMath._ceil13771 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "ceil", "(F)F");
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._ceil13771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.FloatMath._m3.native == global::System.IntPtr.Zero)
+				global::android.util.FloatMath._m3 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "ceil", "(F)F");
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _floor13772;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static float floor(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.util.FloatMath._floor13772.native == global::System.IntPtr.Zero)
-				global::android.util.FloatMath._floor13772 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "floor", "(F)F");
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._floor13772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.util.FloatMath._m4.native == global::System.IntPtr.Zero)
+				global::android.util.FloatMath._m4 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "floor", "(F)F");
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static FloatMath()
 		{

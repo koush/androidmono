@@ -23,25 +23,25 @@ namespace android.view
 			internal Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onKeyDown14120;
+			private static global::MonoJavaBridge.MethodId _m0;
 			bool android.view.KeyEvent.Callback.onKeyDown(int arg0, android.view.KeyEvent arg1)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._onKeyDown14120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onKeyLongPress14121;
+			private static global::MonoJavaBridge.MethodId _m1;
 			bool android.view.KeyEvent.Callback.onKeyLongPress(int arg0, android.view.KeyEvent arg1)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._onKeyLongPress14121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onKeyUp14122;
+			private static global::MonoJavaBridge.MethodId _m2;
 			bool android.view.KeyEvent.Callback.onKeyUp(int arg0, android.view.KeyEvent arg1)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._onKeyUp14122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onKeyMultiple14123;
+			private static global::MonoJavaBridge.MethodId _m3;
 			bool android.view.KeyEvent.Callback.onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._onKeyMultiple14123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.Callback_.staticClass, "onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.Callback_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static Callback_()
 			{
@@ -59,43 +59,43 @@ namespace android.view
 			protected DispatcherState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _reset14124;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public virtual void reset()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "reset", "()V", ref global::android.view.KeyEvent.DispatcherState._reset14124);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "reset", "()V", ref global::android.view.KeyEvent.DispatcherState._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _reset14125;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public virtual void reset(java.lang.Object arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "reset", "(Ljava/lang/Object;)V", ref global::android.view.KeyEvent.DispatcherState._reset14125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "reset", "(Ljava/lang/Object;)V", ref global::android.view.KeyEvent.DispatcherState._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _startTracking14126;
+			private static global::MonoJavaBridge.MethodId _m2;
 			public virtual void startTracking(android.view.KeyEvent arg0, java.lang.Object arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "startTracking", "(Landroid/view/KeyEvent;Ljava/lang/Object;)V", ref global::android.view.KeyEvent.DispatcherState._startTracking14126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "startTracking", "(Landroid/view/KeyEvent;Ljava/lang/Object;)V", ref global::android.view.KeyEvent.DispatcherState._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _isTracking14127;
+			private static global::MonoJavaBridge.MethodId _m3;
 			public virtual bool isTracking(android.view.KeyEvent arg0)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "isTracking", "(Landroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.DispatcherState._isTracking14127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "isTracking", "(Landroid/view/KeyEvent;)Z", ref global::android.view.KeyEvent.DispatcherState._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _performedLongPress14128;
+			private static global::MonoJavaBridge.MethodId _m4;
 			public virtual void performedLongPress(android.view.KeyEvent arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "performedLongPress", "(Landroid/view/KeyEvent;)V", ref global::android.view.KeyEvent.DispatcherState._performedLongPress14128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "performedLongPress", "(Landroid/view/KeyEvent;)V", ref global::android.view.KeyEvent.DispatcherState._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _handleUpEvent14129;
+			private static global::MonoJavaBridge.MethodId _m5;
 			public virtual void handleUpEvent(android.view.KeyEvent arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "handleUpEvent", "(Landroid/view/KeyEvent;)V", ref global::android.view.KeyEvent.DispatcherState._handleUpEvent14129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.DispatcherState.staticClass, "handleUpEvent", "(Landroid/view/KeyEvent;)V", ref global::android.view.KeyEvent.DispatcherState._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _DispatcherState14130;
+			private static global::MonoJavaBridge.MethodId _m6;
 			public DispatcherState() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.view.KeyEvent.DispatcherState._DispatcherState14130.native == global::System.IntPtr.Zero)
-					global::android.view.KeyEvent.DispatcherState._DispatcherState14130 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.DispatcherState.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.DispatcherState.staticClass, global::android.view.KeyEvent.DispatcherState._DispatcherState14130);
+				if (global::android.view.KeyEvent.DispatcherState._m6.native == global::System.IntPtr.Zero)
+					global::android.view.KeyEvent.DispatcherState._m6 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.DispatcherState.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.DispatcherState.staticClass, global::android.view.KeyEvent.DispatcherState._m6);
 				Init(@__env, handle);
 			}
 			static DispatcherState()
@@ -107,20 +107,20 @@ namespace android.view
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatch14131;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual bool dispatch(android.view.KeyEvent.Callback arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "dispatch", "(Landroid/view/KeyEvent$Callback;)Z", ref global::android.view.KeyEvent._dispatch14131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "dispatch", "(Landroid/view/KeyEvent$Callback;)Z", ref global::android.view.KeyEvent._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatch14132;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool dispatch(android.view.KeyEvent.Callback arg0, android.view.KeyEvent.DispatcherState arg1, java.lang.Object arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "dispatch", "(Landroid/view/KeyEvent$Callback;Landroid/view/KeyEvent$DispatcherState;Ljava/lang/Object;)Z", ref global::android.view.KeyEvent._dispatch14132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "dispatch", "(Landroid/view/KeyEvent$Callback;Landroid/view/KeyEvent$DispatcherState;Ljava/lang/Object;)Z", ref global::android.view.KeyEvent._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString14133;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.KeyEvent.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.KeyEvent._toString14133) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.KeyEvent.staticClass, "toString", "()Ljava/lang/String;", ref global::android.view.KeyEvent._m2) as java.lang.String;
 		}
 		public new char Number
 		{
@@ -129,10 +129,10 @@ namespace android.view
 				return getNumber();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNumber14134;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual char getNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getNumber", "()C", ref global::android.view.KeyEvent._getNumber14134);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getNumber", "()C", ref global::android.view.KeyEvent._m3);
 		}
 		public new long EventTime
 		{
@@ -141,20 +141,20 @@ namespace android.view
 				return getEventTime();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEventTime14135;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual long getEventTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.KeyEvent.staticClass, "getEventTime", "()J", ref global::android.view.KeyEvent._getEventTime14135);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.KeyEvent.staticClass, "getEventTime", "()J", ref global::android.view.KeyEvent._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel14136;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.KeyEvent._writeToParcel14136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.view.KeyEvent._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents14137;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "describeContents", "()I", ref global::android.view.KeyEvent._describeContents14137);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "describeContents", "()I", ref global::android.view.KeyEvent._m6);
 		}
 		public new int Action
 		{
@@ -163,10 +163,10 @@ namespace android.view
 				return getAction();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAction14138;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int getAction()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getAction", "()I", ref global::android.view.KeyEvent._getAction14138);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getAction", "()I", ref global::android.view.KeyEvent._m7);
 		}
 		public new int Flags
 		{
@@ -175,10 +175,10 @@ namespace android.view
 				return getFlags();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFlags14139;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int getFlags()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getFlags", "()I", ref global::android.view.KeyEvent._getFlags14139);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getFlags", "()I", ref global::android.view.KeyEvent._m8);
 		}
 		public static int MaxKeyCode
 		{
@@ -187,58 +187,58 @@ namespace android.view
 				return getMaxKeyCode();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxKeyCode14140;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static int getMaxKeyCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._getMaxKeyCode14140.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._getMaxKeyCode14140 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "getMaxKeyCode", "()I");
-			return @__env.CallStaticIntMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._getMaxKeyCode14140);
+			if (global::android.view.KeyEvent._m9.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m9 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "getMaxKeyCode", "()I");
+			return @__env.CallStaticIntMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeadChar14141;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static int getDeadChar(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._getDeadChar14141.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._getDeadChar14141 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "getDeadChar", "(II)I");
-			return @__env.CallStaticIntMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._getDeadChar14141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.KeyEvent._m10.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m10 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "getDeadChar", "(II)I");
+			return @__env.CallStaticIntMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _changeTimeRepeat14142;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static global::android.view.KeyEvent changeTimeRepeat(android.view.KeyEvent arg0, long arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._changeTimeRepeat14142.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._changeTimeRepeat14142 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeTimeRepeat", "(Landroid/view/KeyEvent;JII)Landroid/view/KeyEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._changeTimeRepeat14142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.KeyEvent;
+			if (global::android.view.KeyEvent._m11.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m11 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeTimeRepeat", "(Landroid/view/KeyEvent;JII)Landroid/view/KeyEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.KeyEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _changeTimeRepeat14143;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static global::android.view.KeyEvent changeTimeRepeat(android.view.KeyEvent arg0, long arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._changeTimeRepeat14143.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._changeTimeRepeat14143 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeTimeRepeat", "(Landroid/view/KeyEvent;JI)Landroid/view/KeyEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._changeTimeRepeat14143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.KeyEvent;
+			if (global::android.view.KeyEvent._m12.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m12 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeTimeRepeat", "(Landroid/view/KeyEvent;JI)Landroid/view/KeyEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.KeyEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _changeAction14144;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static global::android.view.KeyEvent changeAction(android.view.KeyEvent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._changeAction14144.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._changeAction14144 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeAction", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._changeAction14144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.KeyEvent;
+			if (global::android.view.KeyEvent._m13.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m13 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeAction", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.KeyEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _changeFlags14145;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static global::android.view.KeyEvent changeFlags(android.view.KeyEvent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._changeFlags14145.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._changeFlags14145 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeFlags", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._changeFlags14145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.KeyEvent;
+			if (global::android.view.KeyEvent._m14.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m14 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "changeFlags", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.KeyEvent;
 		}
-		internal static global::MonoJavaBridge.MethodId _isSystem14146;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool isSystem()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isSystem", "()Z", ref global::android.view.KeyEvent._isSystem14146);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isSystem", "()Z", ref global::android.view.KeyEvent._m15);
 		}
 		public new int MetaState
 		{
@@ -247,53 +247,53 @@ namespace android.view
 				return getMetaState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetaState14147;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual int getMetaState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getMetaState", "()I", ref global::android.view.KeyEvent._getMetaState14147);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getMetaState", "()I", ref global::android.view.KeyEvent._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _isModifierKey14148;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static bool isModifierKey(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._isModifierKey14148.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._isModifierKey14148 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "isModifierKey", "(I)Z");
-			return @__env.CallStaticBooleanMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._isModifierKey14148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.KeyEvent._m17.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m17 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "isModifierKey", "(I)Z");
+			return @__env.CallStaticBooleanMethod(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAltPressed14149;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual bool isAltPressed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isAltPressed", "()Z", ref global::android.view.KeyEvent._isAltPressed14149);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isAltPressed", "()Z", ref global::android.view.KeyEvent._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _isShiftPressed14150;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual bool isShiftPressed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isShiftPressed", "()Z", ref global::android.view.KeyEvent._isShiftPressed14150);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isShiftPressed", "()Z", ref global::android.view.KeyEvent._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _isSymPressed14151;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool isSymPressed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isSymPressed", "()Z", ref global::android.view.KeyEvent._isSymPressed14151);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isSymPressed", "()Z", ref global::android.view.KeyEvent._m20);
 		}
-		internal static global::MonoJavaBridge.MethodId _isCanceled14152;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual bool isCanceled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isCanceled", "()Z", ref global::android.view.KeyEvent._isCanceled14152);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isCanceled", "()Z", ref global::android.view.KeyEvent._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _startTracking14153;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void startTracking()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.staticClass, "startTracking", "()V", ref global::android.view.KeyEvent._startTracking14153);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.KeyEvent.staticClass, "startTracking", "()V", ref global::android.view.KeyEvent._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _isTracking14154;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual bool isTracking()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isTracking", "()Z", ref global::android.view.KeyEvent._isTracking14154);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isTracking", "()Z", ref global::android.view.KeyEvent._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _isLongPress14155;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual bool isLongPress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isLongPress", "()Z", ref global::android.view.KeyEvent._isLongPress14155);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isLongPress", "()Z", ref global::android.view.KeyEvent._m24);
 		}
 		public new int KeyCode
 		{
@@ -302,10 +302,10 @@ namespace android.view
 				return getKeyCode();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyCode14156;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual int getKeyCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getKeyCode", "()I", ref global::android.view.KeyEvent._getKeyCode14156);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getKeyCode", "()I", ref global::android.view.KeyEvent._m25);
 		}
 		public new global::java.lang.String Characters
 		{
@@ -314,10 +314,10 @@ namespace android.view
 				return getCharacters();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCharacters14157;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual global::java.lang.String getCharacters()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.KeyEvent.staticClass, "getCharacters", "()Ljava/lang/String;", ref global::android.view.KeyEvent._getCharacters14157) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.view.KeyEvent.staticClass, "getCharacters", "()Ljava/lang/String;", ref global::android.view.KeyEvent._m26) as java.lang.String;
 		}
 		public new int ScanCode
 		{
@@ -326,10 +326,10 @@ namespace android.view
 				return getScanCode();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScanCode14158;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual int getScanCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getScanCode", "()I", ref global::android.view.KeyEvent._getScanCode14158);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getScanCode", "()I", ref global::android.view.KeyEvent._m27);
 		}
 		public new int RepeatCount
 		{
@@ -338,10 +338,10 @@ namespace android.view
 				return getRepeatCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRepeatCount14159;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual int getRepeatCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getRepeatCount", "()I", ref global::android.view.KeyEvent._getRepeatCount14159);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getRepeatCount", "()I", ref global::android.view.KeyEvent._m28);
 		}
 		public new long DownTime
 		{
@@ -350,10 +350,10 @@ namespace android.view
 				return getDownTime();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDownTime14160;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual long getDownTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.KeyEvent.staticClass, "getDownTime", "()J", ref global::android.view.KeyEvent._getDownTime14160);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.view.KeyEvent.staticClass, "getDownTime", "()J", ref global::android.view.KeyEvent._m29);
 		}
 		public new int DeviceId
 		{
@@ -362,10 +362,10 @@ namespace android.view
 				return getDeviceId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeviceId14161;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual int getDeviceId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getDeviceId", "()I", ref global::android.view.KeyEvent._getDeviceId14161);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getDeviceId", "()I", ref global::android.view.KeyEvent._m30);
 		}
 		public new char DisplayLabel
 		{
@@ -374,15 +374,15 @@ namespace android.view
 				return getDisplayLabel();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDisplayLabel14162;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual char getDisplayLabel()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getDisplayLabel", "()C", ref global::android.view.KeyEvent._getDisplayLabel14162);
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getDisplayLabel", "()C", ref global::android.view.KeyEvent._m31);
 		}
-		internal static global::MonoJavaBridge.MethodId _getUnicodeChar14163;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual int getUnicodeChar(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getUnicodeChar", "(I)I", ref global::android.view.KeyEvent._getUnicodeChar14163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getUnicodeChar", "(I)I", ref global::android.view.KeyEvent._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int UnicodeChar
 		{
@@ -391,101 +391,101 @@ namespace android.view
 				return getUnicodeChar();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUnicodeChar14164;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual int getUnicodeChar()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getUnicodeChar", "()I", ref global::android.view.KeyEvent._getUnicodeChar14164);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.view.KeyEvent.staticClass, "getUnicodeChar", "()I", ref global::android.view.KeyEvent._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyData14165;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual bool getKeyData(android.view.KeyCharacterMap.KeyData arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "getKeyData", "(Landroid/view/KeyCharacterMap$KeyData;)Z", ref global::android.view.KeyEvent._getKeyData14165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "getKeyData", "(Landroid/view/KeyCharacterMap$KeyData;)Z", ref global::android.view.KeyEvent._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMatch14166;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual char getMatch(char[] arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getMatch", "([CI)C", ref global::android.view.KeyEvent._getMatch14166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getMatch", "([CI)C", ref global::android.view.KeyEvent._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMatch14167;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual char getMatch(char[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getMatch", "([C)C", ref global::android.view.KeyEvent._getMatch14167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::android.view.KeyEvent.staticClass, "getMatch", "([C)C", ref global::android.view.KeyEvent._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isPrintingKey14168;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual bool isPrintingKey()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isPrintingKey", "()Z", ref global::android.view.KeyEvent._isPrintingKey14168);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.KeyEvent.staticClass, "isPrintingKey", "()Z", ref global::android.view.KeyEvent._m37);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14169;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public KeyEvent(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14169.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14169 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.KeyEvent._m38.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m38 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14170;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public KeyEvent(long arg0, long arg1, int arg2, int arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14170.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14170 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.view.KeyEvent._m39.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m39 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14171;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public KeyEvent(long arg0, long arg1, int arg2, int arg3, int arg4, int arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14171.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14171 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.view.KeyEvent._m40.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m40 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14172;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public KeyEvent(long arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14172.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14172 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIIIII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
+			if (global::android.view.KeyEvent._m41.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m41 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIIIII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14173;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public KeyEvent(long arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14173.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14173 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIIIIII)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
+			if (global::android.view.KeyEvent._m42.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m42 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JJIIIIIII)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14174;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public KeyEvent(long arg0, java.lang.String arg1, int arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14174.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14174 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JLjava/lang/String;II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.view.KeyEvent._m43.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m43 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(JLjava/lang/String;II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14175;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public KeyEvent(android.view.KeyEvent arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14175.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14175 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(Landroid/view/KeyEvent;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.KeyEvent._m44.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m44 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(Landroid/view/KeyEvent;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _KeyEvent14176;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public KeyEvent(android.view.KeyEvent arg0, long arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.KeyEvent._KeyEvent14176.native == global::System.IntPtr.Zero)
-				global::android.view.KeyEvent._KeyEvent14176 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(Landroid/view/KeyEvent;JI)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._KeyEvent14176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.view.KeyEvent._m45.native == global::System.IntPtr.Zero)
+				global::android.view.KeyEvent._m45 = @__env.GetMethodIDNoThrow(global::android.view.KeyEvent.staticClass, "<init>", "(Landroid/view/KeyEvent;JI)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyEvent.staticClass, global::android.view.KeyEvent._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		public static int KEYCODE_UNKNOWN
@@ -1279,20 +1279,20 @@ namespace android.view
 				return 512;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR14290;
+		internal static global::MonoJavaBridge.FieldId _CREATOR5618;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.KeyEvent.staticClass, _CREATOR14290)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.KeyEvent.staticClass, _CREATOR5618)) as android.os.Parcelable_Creator;
 			}
 		}
 		static KeyEvent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.KeyEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyEvent"));
-			global::android.view.KeyEvent._CREATOR14290 = @__env.GetStaticFieldIDNoThrow(global::android.view.KeyEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.view.KeyEvent._CREATOR5618 = @__env.GetStaticFieldIDNoThrow(global::android.view.KeyEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

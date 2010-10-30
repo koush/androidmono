@@ -7,15 +7,15 @@ namespace javax.crypto.spec
 		protected RC2ParameterSpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals28808;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.crypto.spec.RC2ParameterSpec._equals28808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.crypto.spec.RC2ParameterSpec._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode28809;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "hashCode", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._hashCode28809);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "hashCode", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._m1);
 		}
 		public new byte[] IV
 		{
@@ -24,10 +24,10 @@ namespace javax.crypto.spec
 				return getIV();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIV28810;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual byte[] getIV()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getIV", "()[B", ref global::javax.crypto.spec.RC2ParameterSpec._getIV28810) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getIV", "()[B", ref global::javax.crypto.spec.RC2ParameterSpec._m2) as byte[];
 		}
 		public new int EffectiveKeyBits
 		{
@@ -36,36 +36,36 @@ namespace javax.crypto.spec
 				return getEffectiveKeyBits();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEffectiveKeyBits28811;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getEffectiveKeyBits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getEffectiveKeyBits", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._getEffectiveKeyBits28811);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.crypto.spec.RC2ParameterSpec.staticClass, "getEffectiveKeyBits", "()I", ref global::javax.crypto.spec.RC2ParameterSpec._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _RC2ParameterSpec28812;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public RC2ParameterSpec(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28812.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28812 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.crypto.spec.RC2ParameterSpec._m4.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.RC2ParameterSpec._m4 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RC2ParameterSpec28813;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public RC2ParameterSpec(int arg0, byte[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28813.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28813 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I[B)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.spec.RC2ParameterSpec._m5.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.RC2ParameterSpec._m5 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I[B)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RC2ParameterSpec28814;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public RC2ParameterSpec(int arg0, byte[] arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28814.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28814 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I[BI)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._RC2ParameterSpec28814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::javax.crypto.spec.RC2ParameterSpec._m6.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.RC2ParameterSpec._m6 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.RC2ParameterSpec.staticClass, "<init>", "(I[BI)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.RC2ParameterSpec.staticClass, global::javax.crypto.spec.RC2ParameterSpec._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static RC2ParameterSpec()

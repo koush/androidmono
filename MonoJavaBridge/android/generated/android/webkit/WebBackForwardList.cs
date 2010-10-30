@@ -7,10 +7,10 @@ namespace android.webkit
 		protected WebBackForwardList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clone16123;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual global::android.webkit.WebBackForwardList clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "clone", "()Landroid/webkit/WebBackForwardList;", ref global::android.webkit.WebBackForwardList._clone16123) as android.webkit.WebBackForwardList;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "clone", "()Landroid/webkit/WebBackForwardList;", ref global::android.webkit.WebBackForwardList._m0) as android.webkit.WebBackForwardList;
 		}
 		public new int Size
 		{
@@ -19,10 +19,10 @@ namespace android.webkit
 				return getSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSize16124;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getSize", "()I", ref global::android.webkit.WebBackForwardList._getSize16124);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getSize", "()I", ref global::android.webkit.WebBackForwardList._m1);
 		}
 		public new global::android.webkit.WebHistoryItem CurrentItem
 		{
@@ -31,10 +31,10 @@ namespace android.webkit
 				return getCurrentItem();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentItem16125;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::android.webkit.WebHistoryItem getCurrentItem()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getCurrentItem", "()Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebBackForwardList._getCurrentItem16125) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getCurrentItem", "()Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebBackForwardList._m2) as android.webkit.WebHistoryItem;
 		}
 		public new int CurrentIndex
 		{
@@ -43,15 +43,15 @@ namespace android.webkit
 				return getCurrentIndex();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentIndex16126;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getCurrentIndex()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getCurrentIndex", "()I", ref global::android.webkit.WebBackForwardList._getCurrentIndex16126);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getCurrentIndex", "()I", ref global::android.webkit.WebBackForwardList._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemAtIndex16127;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::android.webkit.WebHistoryItem getItemAtIndex(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getItemAtIndex", "(I)Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebBackForwardList._getItemAtIndex16127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.webkit.WebHistoryItem;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.webkit.WebBackForwardList.staticClass, "getItemAtIndex", "(I)Landroid/webkit/WebHistoryItem;", ref global::android.webkit.WebBackForwardList._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.webkit.WebHistoryItem;
 		}
 		static WebBackForwardList()
 		{

@@ -14,35 +14,35 @@ namespace java.nio.channels
 		internal GatheringByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write22502;
+		private static global::MonoJavaBridge.MethodId _m0;
 		long java.nio.channels.GatheringByteChannel.write(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.GatheringByteChannel_._write22502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.GatheringByteChannel_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22503;
+		private static global::MonoJavaBridge.MethodId _m1;
 		long java.nio.channels.GatheringByteChannel.write(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.GatheringByteChannel_._write22503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.GatheringByteChannel_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22504;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.GatheringByteChannel_._write22504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.GatheringByteChannel_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _close22505;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.GatheringByteChannel_._close22505);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.GatheringByteChannel_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen22506;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.GatheringByteChannel_._isOpen22506);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.GatheringByteChannel_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _close22507;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.GatheringByteChannel_._close22507);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.GatheringByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.GatheringByteChannel_._m5);
 		}
 		static GatheringByteChannel_()
 		{

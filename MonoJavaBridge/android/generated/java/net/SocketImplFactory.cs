@@ -13,10 +13,10 @@ namespace java.net
 		internal SocketImplFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createSocketImpl21814;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.SocketImplFactory_.staticClass, "createSocketImpl", "()Ljava/net/SocketImpl;", ref global::java.net.SocketImplFactory_._createSocketImpl21814) as java.net.SocketImpl;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.SocketImplFactory_.staticClass, "createSocketImpl", "()Ljava/net/SocketImpl;", ref global::java.net.SocketImplFactory_._m0) as java.net.SocketImpl;
 		}
 		static SocketImplFactory_()
 		{

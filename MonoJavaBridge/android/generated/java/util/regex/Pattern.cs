@@ -7,83 +7,83 @@ namespace java.util.regex
 		internal Pattern(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString28304;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.regex.Pattern._toString28304) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "toString", "()Ljava/lang/String;", ref global::java.util.regex.Pattern._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _flags28305;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public int flags()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.Pattern.staticClass, "flags", "()I", ref global::java.util.regex.Pattern._flags28305);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.regex.Pattern.staticClass, "flags", "()I", ref global::java.util.regex.Pattern._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _matches28306;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static bool matches(java.lang.String arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.regex.Pattern._matches28306.native == global::System.IntPtr.Zero)
-				global::java.util.regex.Pattern._matches28306 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z");
-			return @__env.CallStaticBooleanMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._matches28306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.util.regex.Pattern._m2.native == global::System.IntPtr.Zero)
+				global::java.util.regex.Pattern._m2 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z");
+			return @__env.CallStaticBooleanMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public static bool matches(java.lang.String arg0, string arg1)
 		{
 			return matches(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _split28307;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public global::java.lang.String[] split(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;", ref global::java.util.regex.Pattern._split28307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;", ref global::java.util.regex.Pattern._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String[];
 		}
 		public java.lang.String[] split(string arg0)
 		{
 			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _split28308;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public global::java.lang.String[] split(java.lang.CharSequence arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;", ref global::java.util.regex.Pattern._split28308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;", ref global::java.util.regex.Pattern._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String[];
 		}
 		public java.lang.String[] split(string arg0, int arg1)
 		{
 			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _compile28309;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static global::java.util.regex.Pattern compile(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.regex.Pattern._compile28309.native == global::System.IntPtr.Zero)
-				global::java.util.regex.Pattern._compile28309 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._compile28309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.regex.Pattern;
+			if (global::java.util.regex.Pattern._m5.native == global::System.IntPtr.Zero)
+				global::java.util.regex.Pattern._m5 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.regex.Pattern;
 		}
-		internal static global::MonoJavaBridge.MethodId _compile28310;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static global::java.util.regex.Pattern compile(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.regex.Pattern._compile28310.native == global::System.IntPtr.Zero)
-				global::java.util.regex.Pattern._compile28310 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._compile28310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.regex.Pattern;
+			if (global::java.util.regex.Pattern._m6.native == global::System.IntPtr.Zero)
+				global::java.util.regex.Pattern._m6 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.regex.Pattern;
 		}
-		internal static global::MonoJavaBridge.MethodId _matcher28311;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public global::java.util.regex.Matcher matcher(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.regex.Matcher>(this, global::java.util.regex.Pattern.staticClass, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", ref global::java.util.regex.Pattern._matcher28311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.regex.Matcher;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.regex.Matcher>(this, global::java.util.regex.Pattern.staticClass, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", ref global::java.util.regex.Pattern._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.regex.Matcher;
 		}
 		public java.util.regex.Matcher matcher(string arg0)
 		{
 			return matcher((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _quote28312;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static global::java.lang.String quote(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.util.regex.Pattern._quote28312.native == global::System.IntPtr.Zero)
-				global::java.util.regex.Pattern._quote28312 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._quote28312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::java.util.regex.Pattern._m8.native == global::System.IntPtr.Zero)
+				global::java.util.regex.Pattern._m8 = @__env.GetStaticMethodIDNoThrow(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _pattern28313;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public global::java.lang.String pattern()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;", ref global::java.util.regex.Pattern._pattern28313) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;", ref global::java.util.regex.Pattern._m9) as java.lang.String;
 		}
 		public static int UNIX_LINES
 		{

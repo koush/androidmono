@@ -15,20 +15,20 @@ namespace javax.sql
 		internal RowSetListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _rowSetChanged30580;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void javax.sql.RowSetListener.rowSetChanged(javax.sql.RowSetEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._rowSetChanged30580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _rowChanged30581;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void javax.sql.RowSetListener.rowChanged(javax.sql.RowSetEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "rowChanged", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._rowChanged30581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "rowChanged", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _cursorMoved30582;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void javax.sql.RowSetListener.cursorMoved(javax.sql.RowSetEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._cursorMoved30582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetListener_.staticClass, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V", ref global::javax.sql.RowSetListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetListener_()
 		{

@@ -7,20 +7,20 @@ namespace android.net.wifi
 		protected WifiInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString8045;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._toString8045) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel8046;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.wifi.WifiInfo._writeToParcel8046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.net.wifi.WifiInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.net.wifi.WifiInfo._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents8047;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "describeContents", "()I", ref global::android.net.wifi.WifiInfo._describeContents8047);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "describeContents", "()I", ref global::android.net.wifi.WifiInfo._m2);
 		}
 		public new global::java.lang.String SSID
 		{
@@ -29,10 +29,10 @@ namespace android.net.wifi
 				return getSSID();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSSID8048;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getSSID()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getSSID", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._getSSID8048) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getSSID", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._m3) as java.lang.String;
 		}
 		public new global::java.lang.String BSSID
 		{
@@ -41,10 +41,10 @@ namespace android.net.wifi
 				return getBSSID();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBSSID8049;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.String getBSSID()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getBSSID", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._getBSSID8049) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getBSSID", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._m4) as java.lang.String;
 		}
 		public new int Rssi
 		{
@@ -53,10 +53,10 @@ namespace android.net.wifi
 				return getRssi();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRssi8050;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual int getRssi()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getRssi", "()I", ref global::android.net.wifi.WifiInfo._getRssi8050);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getRssi", "()I", ref global::android.net.wifi.WifiInfo._m5);
 		}
 		public new int LinkSpeed
 		{
@@ -65,10 +65,10 @@ namespace android.net.wifi
 				return getLinkSpeed();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLinkSpeed8051;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getLinkSpeed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getLinkSpeed", "()I", ref global::android.net.wifi.WifiInfo._getLinkSpeed8051);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getLinkSpeed", "()I", ref global::android.net.wifi.WifiInfo._m6);
 		}
 		public new global::java.lang.String MacAddress
 		{
@@ -77,10 +77,10 @@ namespace android.net.wifi
 				return getMacAddress();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMacAddress8052;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.lang.String getMacAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getMacAddress", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._getMacAddress8052) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.wifi.WifiInfo.staticClass, "getMacAddress", "()Ljava/lang/String;", ref global::android.net.wifi.WifiInfo._m7) as java.lang.String;
 		}
 		public new int NetworkId
 		{
@@ -89,10 +89,10 @@ namespace android.net.wifi
 				return getNetworkId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNetworkId8053;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int getNetworkId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getNetworkId", "()I", ref global::android.net.wifi.WifiInfo._getNetworkId8053);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getNetworkId", "()I", ref global::android.net.wifi.WifiInfo._m8);
 		}
 		public new global::android.net.wifi.SupplicantState SupplicantState
 		{
@@ -101,10 +101,10 @@ namespace android.net.wifi
 				return getSupplicantState();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSupplicantState8054;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::android.net.wifi.SupplicantState getSupplicantState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.wifi.SupplicantState>(this, global::android.net.wifi.WifiInfo.staticClass, "getSupplicantState", "()Landroid/net/wifi/SupplicantState;", ref global::android.net.wifi.WifiInfo._getSupplicantState8054) as android.net.wifi.SupplicantState;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.net.wifi.SupplicantState>(this, global::android.net.wifi.WifiInfo.staticClass, "getSupplicantState", "()Landroid/net/wifi/SupplicantState;", ref global::android.net.wifi.WifiInfo._m9) as android.net.wifi.SupplicantState;
 		}
 		public new int IpAddress
 		{
@@ -113,10 +113,10 @@ namespace android.net.wifi
 				return getIpAddress();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIpAddress8055;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int getIpAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getIpAddress", "()I", ref global::android.net.wifi.WifiInfo._getIpAddress8055);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getIpAddress", "()I", ref global::android.net.wifi.WifiInfo._m10);
 		}
 		public new bool HiddenSSID
 		{
@@ -125,18 +125,18 @@ namespace android.net.wifi
 				return getHiddenSSID();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHiddenSSID8056;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual bool getHiddenSSID()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getHiddenSSID", "()Z", ref global::android.net.wifi.WifiInfo._getHiddenSSID8056);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.net.wifi.WifiInfo.staticClass, "getHiddenSSID", "()Z", ref global::android.net.wifi.WifiInfo._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDetailedStateOf8057;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static global::android.net.NetworkInfo.DetailedState getDetailedStateOf(android.net.wifi.SupplicantState arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.wifi.WifiInfo._getDetailedStateOf8057.native == global::System.IntPtr.Zero)
-				global::android.net.wifi.WifiInfo._getDetailedStateOf8057 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiInfo.staticClass, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getDetailedStateOf8057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.DetailedState;
+			if (global::android.net.wifi.WifiInfo._m12.native == global::System.IntPtr.Zero)
+				global::android.net.wifi.WifiInfo._m12 = @__env.GetStaticMethodIDNoThrow(global::android.net.wifi.WifiInfo.staticClass, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.DetailedState;
 		}
 		public static global::java.lang.String LINK_SPEED_UNITS
 		{

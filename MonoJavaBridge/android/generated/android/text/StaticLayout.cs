@@ -14,10 +14,10 @@ namespace android.text
 				return getLineCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineCount13017;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int getLineCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineCount", "()I", ref global::android.text.StaticLayout._getLineCount13017);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineCount", "()I", ref global::android.text.StaticLayout._m0);
 		}
 		public new int EllipsizedWidth
 		{
@@ -26,40 +26,40 @@ namespace android.text
 				return getEllipsizedWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsizedWidth13018;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int getEllipsizedWidth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsizedWidth", "()I", ref global::android.text.StaticLayout._getEllipsizedWidth13018);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsizedWidth", "()I", ref global::android.text.StaticLayout._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineTop13019;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int getLineTop(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineTop", "(I)I", ref global::android.text.StaticLayout._getLineTop13019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineTop", "(I)I", ref global::android.text.StaticLayout._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDescent13020;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int getLineDescent(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineDescent", "(I)I", ref global::android.text.StaticLayout._getLineDescent13020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineDescent", "(I)I", ref global::android.text.StaticLayout._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineStart13021;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int getLineStart(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineStart", "(I)I", ref global::android.text.StaticLayout._getLineStart13021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineStart", "(I)I", ref global::android.text.StaticLayout._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphDirection13022;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override int getParagraphDirection(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getParagraphDirection", "(I)I", ref global::android.text.StaticLayout._getParagraphDirection13022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getParagraphDirection", "(I)I", ref global::android.text.StaticLayout._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineContainsTab13023;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool getLineContainsTab(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.StaticLayout.staticClass, "getLineContainsTab", "(I)Z", ref global::android.text.StaticLayout._getLineContainsTab13023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.text.StaticLayout.staticClass, "getLineContainsTab", "(I)Z", ref global::android.text.StaticLayout._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDirections13024;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public sealed override global::android.text.Layout.Directions getLineDirections(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.StaticLayout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;", ref global::android.text.StaticLayout._getLineDirections13024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Layout.Directions;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.text.StaticLayout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;", ref global::android.text.StaticLayout._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.text.Layout.Directions;
 		}
 		public new int TopPadding
 		{
@@ -68,10 +68,10 @@ namespace android.text
 				return getTopPadding();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTopPadding13025;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override int getTopPadding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getTopPadding", "()I", ref global::android.text.StaticLayout._getTopPadding13025);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getTopPadding", "()I", ref global::android.text.StaticLayout._m8);
 		}
 		public new int BottomPadding
 		{
@@ -80,51 +80,51 @@ namespace android.text
 				return getBottomPadding();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBottomPadding13026;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override int getBottomPadding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getBottomPadding", "()I", ref global::android.text.StaticLayout._getBottomPadding13026);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getBottomPadding", "()I", ref global::android.text.StaticLayout._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineForVertical13027;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override int getLineForVertical(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineForVertical", "(I)I", ref global::android.text.StaticLayout._getLineForVertical13027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getLineForVertical", "(I)I", ref global::android.text.StaticLayout._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisStart13028;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override int getEllipsisStart(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsisStart", "(I)I", ref global::android.text.StaticLayout._getEllipsisStart13028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsisStart", "(I)I", ref global::android.text.StaticLayout._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisCount13029;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override int getEllipsisCount(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsisCount", "(I)I", ref global::android.text.StaticLayout._getEllipsisCount13029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.StaticLayout.staticClass, "getEllipsisCount", "(I)I", ref global::android.text.StaticLayout._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _StaticLayout13030;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public StaticLayout(java.lang.CharSequence arg0, int arg1, int arg2, android.text.TextPaint arg3, int arg4, android.text.Layout.Alignment arg5, float arg6, float arg7, bool arg8) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.StaticLayout._StaticLayout13030.native == global::System.IntPtr.Zero)
-				global::android.text.StaticLayout._StaticLayout13030 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._StaticLayout13030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
+			if (global::android.text.StaticLayout._m13.native == global::System.IntPtr.Zero)
+				global::android.text.StaticLayout._m13 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StaticLayout13031;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public StaticLayout(java.lang.CharSequence arg0, int arg1, int arg2, android.text.TextPaint arg3, int arg4, android.text.Layout.Alignment arg5, float arg6, float arg7, bool arg8, android.text.TextUtils.TruncateAt arg9, int arg10) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.StaticLayout._StaticLayout13031.native == global::System.IntPtr.Zero)
-				global::android.text.StaticLayout._StaticLayout13031 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._StaticLayout13031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10));
+			if (global::android.text.StaticLayout._m14.native == global::System.IntPtr.Zero)
+				global::android.text.StaticLayout._m14 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StaticLayout13032;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public StaticLayout(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, bool arg6) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.StaticLayout._StaticLayout13032.native == global::System.IntPtr.Zero)
-				global::android.text.StaticLayout._StaticLayout13032 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._StaticLayout13032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			if (global::android.text.StaticLayout._m15.native == global::System.IntPtr.Zero)
+				global::android.text.StaticLayout._m15 = @__env.GetMethodIDNoThrow(global::android.text.StaticLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.StaticLayout.staticClass, global::android.text.StaticLayout._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 			Init(@__env, handle);
 		}
 		static StaticLayout()

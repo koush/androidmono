@@ -21,50 +21,50 @@ namespace org.apache.http
 		internal HttpEntity_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getContent31542;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.io.InputStream org.apache.http.HttpEntity.getContent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpEntity_.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.HttpEntity_._getContent31542) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.HttpEntity_.staticClass, "getContent", "()Ljava/io/InputStream;", ref global::org.apache.http.HttpEntity_._m0) as java.io.InputStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeTo31543;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.http.HttpEntity.writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpEntity_.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.HttpEntity_._writeTo31543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpEntity_.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.HttpEntity_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentType31544;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::org.apache.http.Header org.apache.http.HttpEntity.getContentType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpEntity_.staticClass, "getContentType", "()Lorg/apache/http/Header;", ref global::org.apache.http.HttpEntity_._getContentType31544) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpEntity_.staticClass, "getContentType", "()Lorg/apache/http/Header;", ref global::org.apache.http.HttpEntity_._m2) as org.apache.http.Header;
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentLength31545;
+		private static global::MonoJavaBridge.MethodId _m3;
 		long org.apache.http.HttpEntity.getContentLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.HttpEntity_.staticClass, "getContentLength", "()J", ref global::org.apache.http.HttpEntity_._getContentLength31545);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.HttpEntity_.staticClass, "getContentLength", "()J", ref global::org.apache.http.HttpEntity_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentEncoding31546;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::org.apache.http.Header org.apache.http.HttpEntity.getContentEncoding()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpEntity_.staticClass, "getContentEncoding", "()Lorg/apache/http/Header;", ref global::org.apache.http.HttpEntity_._getContentEncoding31546) as org.apache.http.Header;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.Header>(this, global::org.apache.http.HttpEntity_.staticClass, "getContentEncoding", "()Lorg/apache/http/Header;", ref global::org.apache.http.HttpEntity_._m4) as org.apache.http.Header;
 		}
-		internal static global::MonoJavaBridge.MethodId _isRepeatable31547;
+		private static global::MonoJavaBridge.MethodId _m5;
 		bool org.apache.http.HttpEntity.isRepeatable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.HttpEntity_._isRepeatable31547);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isRepeatable", "()Z", ref global::org.apache.http.HttpEntity_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _isChunked31548;
+		private static global::MonoJavaBridge.MethodId _m6;
 		bool org.apache.http.HttpEntity.isChunked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isChunked", "()Z", ref global::org.apache.http.HttpEntity_._isChunked31548);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isChunked", "()Z", ref global::org.apache.http.HttpEntity_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _isStreaming31549;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool org.apache.http.HttpEntity.isStreaming()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isStreaming", "()Z", ref global::org.apache.http.HttpEntity_._isStreaming31549);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpEntity_.staticClass, "isStreaming", "()Z", ref global::org.apache.http.HttpEntity_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _consumeContent31550;
+		private static global::MonoJavaBridge.MethodId _m8;
 		void org.apache.http.HttpEntity.consumeContent()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpEntity_.staticClass, "consumeContent", "()V", ref global::org.apache.http.HttpEntity_._consumeContent31550);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpEntity_.staticClass, "consumeContent", "()V", ref global::org.apache.http.HttpEntity_._m8);
 		}
 		static HttpEntity_()
 		{

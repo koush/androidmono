@@ -37,214 +37,214 @@ namespace java.util
 		internal List_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _add26389;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.util.List.add(int arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "add", "(ILjava/lang/Object;)V", ref global::java.util.List_._add26389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "add", "(ILjava/lang/Object;)V", ref global::java.util.List_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _add26390;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool java.util.List.add(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "add", "(Ljava/lang/Object;)Z", ref global::java.util.List_._add26390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "add", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _get26391;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.Object java.util.List.get(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "get", "(I)Ljava/lang/Object;", ref global::java.util.List_._get26391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "get", "(I)Ljava/lang/Object;", ref global::java.util.List_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _equals26392;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool java.util.List.equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.List_._equals26392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode26393;
+		private static global::MonoJavaBridge.MethodId _m4;
 		int java.util.List.hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "hashCode", "()I", ref global::java.util.List_._hashCode26393);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "hashCode", "()I", ref global::java.util.List_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf26394;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int java.util.List.indexOf(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "indexOf", "(Ljava/lang/Object;)I", ref global::java.util.List_._indexOf26394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "indexOf", "(Ljava/lang/Object;)I", ref global::java.util.List_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _clear26395;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void java.util.List.clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "clear", "()V", ref global::java.util.List_._clear26395);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "clear", "()V", ref global::java.util.List_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty26396;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool java.util.List.isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "isEmpty", "()Z", ref global::java.util.List_._isEmpty26396);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "isEmpty", "()Z", ref global::java.util.List_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf26397;
+		private static global::MonoJavaBridge.MethodId _m8;
 		int java.util.List.lastIndexOf(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "lastIndexOf", "(Ljava/lang/Object;)I", ref global::java.util.List_._lastIndexOf26397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "lastIndexOf", "(Ljava/lang/Object;)I", ref global::java.util.List_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _contains26398;
+		private static global::MonoJavaBridge.MethodId _m9;
 		bool java.util.List.contains(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "contains", "(Ljava/lang/Object;)Z", ref global::java.util.List_._contains26398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "contains", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addAll26399;
+		private static global::MonoJavaBridge.MethodId _m10;
 		bool java.util.List.addAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._addAll26399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addAll26400;
+		private static global::MonoJavaBridge.MethodId _m11;
 		bool java.util.List.addAll(int arg0, java.util.Collection arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(ILjava/util/Collection;)Z", ref global::java.util.List_._addAll26400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(ILjava/util/Collection;)Z", ref global::java.util.List_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _size26401;
+		private static global::MonoJavaBridge.MethodId _m12;
 		int java.util.List.size()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "size", "()I", ref global::java.util.List_._size26401);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "size", "()I", ref global::java.util.List_._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _toArray26402;
+		private static global::MonoJavaBridge.MethodId _m13;
 		global::java.lang.Object[] java.util.List.toArray(java.lang.Object[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", ref global::java.util.List_._toArray26402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", ref global::java.util.List_._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _toArray26403;
+		private static global::MonoJavaBridge.MethodId _m14;
 		global::java.lang.Object[] java.util.List.toArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "()[Ljava/lang/Object;", ref global::java.util.List_._toArray26403) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "()[Ljava/lang/Object;", ref global::java.util.List_._m14) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _iterator26404;
+		private static global::MonoJavaBridge.MethodId _m15;
 		global::java.util.Iterator java.util.List.iterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._iterator26404) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._m15) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _remove26405;
+		private static global::MonoJavaBridge.MethodId _m16;
 		bool java.util.List.remove(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "remove", "(Ljava/lang/Object;)Z", ref global::java.util.List_._remove26405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "remove", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _remove26406;
+		private static global::MonoJavaBridge.MethodId _m17;
 		global::java.lang.Object java.util.List.remove(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "remove", "(I)Ljava/lang/Object;", ref global::java.util.List_._remove26406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "remove", "(I)Ljava/lang/Object;", ref global::java.util.List_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _set26407;
+		private static global::MonoJavaBridge.MethodId _m18;
 		global::java.lang.Object java.util.List.set(int arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;", ref global::java.util.List_._set26407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.List_.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;", ref global::java.util.List_._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _containsAll26408;
+		private static global::MonoJavaBridge.MethodId _m19;
 		bool java.util.List.containsAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "containsAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._containsAll26408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "containsAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAll26409;
+		private static global::MonoJavaBridge.MethodId _m20;
 		bool java.util.List.removeAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._removeAll26409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _retainAll26410;
+		private static global::MonoJavaBridge.MethodId _m21;
 		bool java.util.List.retainAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "retainAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._retainAll26410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "retainAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _subList26411;
+		private static global::MonoJavaBridge.MethodId _m22;
 		global::java.util.List java.util.List.subList(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.util.List_.staticClass, "subList", "(II)Ljava/util/List;", ref global::java.util.List_._subList26411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::java.util.List_.staticClass, "subList", "(II)Ljava/util/List;", ref global::java.util.List_._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _listIterator26412;
+		private static global::MonoJavaBridge.MethodId _m23;
 		global::java.util.ListIterator java.util.List.listIterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.ListIterator>(this, global::java.util.List_.staticClass, "listIterator", "()Ljava/util/ListIterator;", ref global::java.util.List_._listIterator26412) as java.util.ListIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.ListIterator>(this, global::java.util.List_.staticClass, "listIterator", "()Ljava/util/ListIterator;", ref global::java.util.List_._m23) as java.util.ListIterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _listIterator26413;
+		private static global::MonoJavaBridge.MethodId _m24;
 		global::java.util.ListIterator java.util.List.listIterator(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.ListIterator>(this, global::java.util.List_.staticClass, "listIterator", "(I)Ljava/util/ListIterator;", ref global::java.util.List_._listIterator26413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ListIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.ListIterator>(this, global::java.util.List_.staticClass, "listIterator", "(I)Ljava/util/ListIterator;", ref global::java.util.List_._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.util.ListIterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _add26414;
+		private static global::MonoJavaBridge.MethodId _m25;
 		bool java.util.Collection.add(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "add", "(Ljava/lang/Object;)Z", ref global::java.util.List_._add26414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "add", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _equals26415;
+		private static global::MonoJavaBridge.MethodId _m26;
 		bool java.util.Collection.equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.List_._equals26415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode26416;
+		private static global::MonoJavaBridge.MethodId _m27;
 		int java.util.Collection.hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "hashCode", "()I", ref global::java.util.List_._hashCode26416);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "hashCode", "()I", ref global::java.util.List_._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _clear26417;
+		private static global::MonoJavaBridge.MethodId _m28;
 		void java.util.Collection.clear()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "clear", "()V", ref global::java.util.List_._clear26417);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.List_.staticClass, "clear", "()V", ref global::java.util.List_._m28);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty26418;
+		private static global::MonoJavaBridge.MethodId _m29;
 		bool java.util.Collection.isEmpty()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "isEmpty", "()Z", ref global::java.util.List_._isEmpty26418);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "isEmpty", "()Z", ref global::java.util.List_._m29);
 		}
-		internal static global::MonoJavaBridge.MethodId _contains26419;
+		private static global::MonoJavaBridge.MethodId _m30;
 		bool java.util.Collection.contains(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "contains", "(Ljava/lang/Object;)Z", ref global::java.util.List_._contains26419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "contains", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addAll26420;
+		private static global::MonoJavaBridge.MethodId _m31;
 		bool java.util.Collection.addAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._addAll26420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "addAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _size26421;
+		private static global::MonoJavaBridge.MethodId _m32;
 		int java.util.Collection.size()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "size", "()I", ref global::java.util.List_._size26421);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.util.List_.staticClass, "size", "()I", ref global::java.util.List_._m32);
 		}
-		internal static global::MonoJavaBridge.MethodId _toArray26422;
+		private static global::MonoJavaBridge.MethodId _m33;
 		global::java.lang.Object[] java.util.Collection.toArray(java.lang.Object[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", ref global::java.util.List_._toArray26422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", ref global::java.util.List_._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _toArray26423;
+		private static global::MonoJavaBridge.MethodId _m34;
 		global::java.lang.Object[] java.util.Collection.toArray()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "()[Ljava/lang/Object;", ref global::java.util.List_._toArray26423) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::java.util.List_.staticClass, "toArray", "()[Ljava/lang/Object;", ref global::java.util.List_._m34) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _iterator26424;
+		private static global::MonoJavaBridge.MethodId _m35;
 		global::java.util.Iterator java.util.Collection.iterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._iterator26424) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._m35) as java.util.Iterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _remove26425;
+		private static global::MonoJavaBridge.MethodId _m36;
 		bool java.util.Collection.remove(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "remove", "(Ljava/lang/Object;)Z", ref global::java.util.List_._remove26425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "remove", "(Ljava/lang/Object;)Z", ref global::java.util.List_._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _containsAll26426;
+		private static global::MonoJavaBridge.MethodId _m37;
 		bool java.util.Collection.containsAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "containsAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._containsAll26426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "containsAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAll26427;
+		private static global::MonoJavaBridge.MethodId _m38;
 		bool java.util.Collection.removeAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._removeAll26427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "removeAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _retainAll26428;
+		private static global::MonoJavaBridge.MethodId _m39;
 		bool java.util.Collection.retainAll(java.util.Collection arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "retainAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._retainAll26428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.List_.staticClass, "retainAll", "(Ljava/util/Collection;)Z", ref global::java.util.List_._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
 			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
-		internal static global::MonoJavaBridge.MethodId _iterator26429;
+		private static global::MonoJavaBridge.MethodId _m40;
 		global::java.util.Iterator java.lang.Iterable.iterator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._iterator26429) as java.util.Iterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Iterator>(this, global::java.util.List_.staticClass, "iterator", "()Ljava/util/Iterator;", ref global::java.util.List_._m40) as java.util.Iterator;
 		}
 		static List_()
 		{

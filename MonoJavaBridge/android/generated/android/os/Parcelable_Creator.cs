@@ -14,15 +14,15 @@ namespace android.os
 		internal Parcelable_Creator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newArray10111;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object[] android.os.Parcelable_Creator.newArray(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.os.Parcelable_Creator_.staticClass, "newArray", "(I)[Ljava/lang/Object;", ref global::android.os.Parcelable_Creator_._newArray10111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::android.os.Parcelable_Creator_.staticClass, "newArray", "(I)[Ljava/lang/Object;", ref global::android.os.Parcelable_Creator_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _createFromParcel10112;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.Object android.os.Parcelable_Creator.createFromParcel(android.os.Parcel arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.Parcelable_Creator_.staticClass, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;", ref global::android.os.Parcelable_Creator_._createFromParcel10112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.Parcelable_Creator_.staticClass, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;", ref global::android.os.Parcelable_Creator_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		static Parcelable_Creator_()
 		{

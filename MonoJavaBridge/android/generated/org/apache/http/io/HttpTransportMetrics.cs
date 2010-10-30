@@ -14,15 +14,15 @@ namespace org.apache.http.io
 		internal HttpTransportMetrics_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _reset33469;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.io.HttpTransportMetrics.reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.HttpTransportMetrics_.staticClass, "reset", "()V", ref global::org.apache.http.io.HttpTransportMetrics_._reset33469);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.io.HttpTransportMetrics_.staticClass, "reset", "()V", ref global::org.apache.http.io.HttpTransportMetrics_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getBytesTransferred33470;
+		private static global::MonoJavaBridge.MethodId _m1;
 		long org.apache.http.io.HttpTransportMetrics.getBytesTransferred()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.io.HttpTransportMetrics_.staticClass, "getBytesTransferred", "()J", ref global::org.apache.http.io.HttpTransportMetrics_._getBytesTransferred33470);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::org.apache.http.io.HttpTransportMetrics_.staticClass, "getBytesTransferred", "()J", ref global::org.apache.http.io.HttpTransportMetrics_._m1);
 		}
 		static HttpTransportMetrics_()
 		{

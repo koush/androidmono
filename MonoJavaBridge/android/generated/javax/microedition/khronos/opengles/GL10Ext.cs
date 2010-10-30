@@ -14,15 +14,15 @@ namespace javax.microedition.khronos.opengles
 		internal GL10Ext_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES29318;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int javax.microedition.khronos.opengles.GL10Ext.glQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "([II[II)I", ref global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "([II[II)I", ref global::javax.microedition.khronos.opengles.GL10Ext_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES29319;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int javax.microedition.khronos.opengles.GL10Ext.glQueryMatrixxOES(java.nio.IntBuffer arg0, java.nio.IntBuffer arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I", ref global::javax.microedition.khronos.opengles.GL10Ext_._glQueryMatrixxOES29319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.microedition.khronos.opengles.GL10Ext_.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I", ref global::javax.microedition.khronos.opengles.GL10Ext_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static GL10Ext_()
 		{

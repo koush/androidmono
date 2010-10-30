@@ -14,15 +14,15 @@ namespace javax.sql
 		internal DataSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection30284;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.sql.Connection javax.sql.DataSource.getConnection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.DataSource_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::javax.sql.DataSource_._getConnection30284) as java.sql.Connection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.DataSource_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::javax.sql.DataSource_._m0) as java.sql.Connection;
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection30285;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.sql.Connection javax.sql.DataSource.getConnection(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.DataSource_.staticClass, "getConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", ref global::javax.sql.DataSource_._getConnection30285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.sql.Connection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.DataSource_.staticClass, "getConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", ref global::javax.sql.DataSource_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.sql.Connection;
 		}
 		static DataSource_()
 		{

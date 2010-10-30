@@ -21,50 +21,50 @@ namespace org.w3c.dom.ls
 		internal LSParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _parse34916;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.w3c.dom.Document org.w3c.dom.ls.LSParser.parse(org.w3c.dom.ls.LSInput arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", ref global::org.w3c.dom.ls.LSParser_._parse34916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Document;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", ref global::org.w3c.dom.ls.LSParser_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Document;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter34917;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.w3c.dom.ls.LSParserFilter org.w3c.dom.ls.LSParser.getFilter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.ls.LSParserFilter>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;", ref global::org.w3c.dom.ls.LSParser_._getFilter34917) as org.w3c.dom.ls.LSParserFilter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.ls.LSParserFilter>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;", ref global::org.w3c.dom.ls.LSParser_._m1) as org.w3c.dom.ls.LSParserFilter;
 		}
-		internal static global::MonoJavaBridge.MethodId _setFilter34918;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void org.w3c.dom.ls.LSParser.setFilter(org.w3c.dom.ls.LSParserFilter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", ref global::org.w3c.dom.ls.LSParser_._setFilter34918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", ref global::org.w3c.dom.ls.LSParser_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _abort34919;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void org.w3c.dom.ls.LSParser.abort()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "abort", "()V", ref global::org.w3c.dom.ls.LSParser_._abort34919);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "abort", "()V", ref global::org.w3c.dom.ls.LSParser_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDomConfig34920;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::org.w3c.dom.DOMConfiguration org.w3c.dom.ls.LSParser.getDomConfig()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMConfiguration>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;", ref global::org.w3c.dom.ls.LSParser_._getDomConfig34920) as org.w3c.dom.DOMConfiguration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.DOMConfiguration>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;", ref global::org.w3c.dom.ls.LSParser_._m4) as org.w3c.dom.DOMConfiguration;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAsync34921;
+		private static global::MonoJavaBridge.MethodId _m5;
 		bool org.w3c.dom.ls.LSParser.getAsync()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getAsync", "()Z", ref global::org.w3c.dom.ls.LSParser_._getAsync34921);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getAsync", "()Z", ref global::org.w3c.dom.ls.LSParser_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _getBusy34922;
+		private static global::MonoJavaBridge.MethodId _m6;
 		bool org.w3c.dom.ls.LSParser.getBusy()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getBusy", "()Z", ref global::org.w3c.dom.ls.LSParser_._getBusy34922);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.ls.LSParser_.staticClass, "getBusy", "()Z", ref global::org.w3c.dom.ls.LSParser_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _parseURI34923;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::org.w3c.dom.Document org.w3c.dom.ls.LSParser.parseURI(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", ref global::org.w3c.dom.ls.LSParser_._parseURI34923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Document;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Document>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", ref global::org.w3c.dom.ls.LSParser_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as org.w3c.dom.Document;
 		}
-		internal static global::MonoJavaBridge.MethodId _parseWithContext34924;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::org.w3c.dom.Node org.w3c.dom.ls.LSParser.parseWithContext(org.w3c.dom.ls.LSInput arg0, org.w3c.dom.Node arg1, short arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.ls.LSParser_._parseWithContext34924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.w3c.dom.Node;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.Node>(this, global::org.w3c.dom.ls.LSParser_.staticClass, "parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", ref global::org.w3c.dom.ls.LSParser_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as org.w3c.dom.Node;
 		}
 		static LSParser_()
 		{

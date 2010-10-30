@@ -7,35 +7,35 @@ namespace java.io
 		protected OutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write19352;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract void write(int arg0);
-		internal static global::MonoJavaBridge.MethodId _write19353;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void write(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "write", "([B)V", ref global::java.io.OutputStream._write19353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "write", "([B)V", ref global::java.io.OutputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19354;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "write", "([BII)V", ref global::java.io.OutputStream._write19354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "write", "([BII)V", ref global::java.io.OutputStream._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19355;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "flush", "()V", ref global::java.io.OutputStream._flush19355);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "flush", "()V", ref global::java.io.OutputStream._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _close19356;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "close", "()V", ref global::java.io.OutputStream._close19356);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream.staticClass, "close", "()V", ref global::java.io.OutputStream._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _OutputStream19357;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public OutputStream() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.OutputStream._OutputStream19357.native == global::System.IntPtr.Zero)
-				global::java.io.OutputStream._OutputStream19357 = @__env.GetMethodIDNoThrow(global::java.io.OutputStream.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStream.staticClass, global::java.io.OutputStream._OutputStream19357);
+			if (global::java.io.OutputStream._m5.native == global::System.IntPtr.Zero)
+				global::java.io.OutputStream._m5 = @__env.GetMethodIDNoThrow(global::java.io.OutputStream.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStream.staticClass, global::java.io.OutputStream._m5);
 			Init(@__env, handle);
 		}
 		static OutputStream()
@@ -55,10 +55,10 @@ namespace java.io
 		internal OutputStream_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write19358;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream_.staticClass, "write", "(I)V", ref global::java.io.OutputStream_._write19358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.OutputStream_.staticClass, "write", "(I)V", ref global::java.io.OutputStream_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static OutputStream_()
 		{

@@ -13,25 +13,25 @@ namespace java.nio.channels
 		internal ReadableByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _read22546;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int java.nio.channels.ReadableByteChannel.read(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ReadableByteChannel_._read22546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.ReadableByteChannel_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _close22547;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void java.nio.channels.Channel.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ReadableByteChannel_._close22547);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ReadableByteChannel_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen22548;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.nio.channels.Channel.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.ReadableByteChannel_._isOpen22548);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "isOpen", "()Z", ref global::java.nio.channels.ReadableByteChannel_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _close22549;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void java.io.Closeable.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ReadableByteChannel_._close22549);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.ReadableByteChannel_.staticClass, "close", "()V", ref global::java.nio.channels.ReadableByteChannel_._m3);
 		}
 		static ReadableByteChannel_()
 		{

@@ -17,30 +17,30 @@ namespace javax.sql
 		internal RowSetInternal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getParams30575;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object[] javax.sql.RowSetInternal.getParams()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::javax.sql.RowSetInternal_.staticClass, "getParams", "()[Ljava/lang/Object;", ref global::javax.sql.RowSetInternal_._getParams30575) as java.lang.Object[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.Object>(this, global::javax.sql.RowSetInternal_.staticClass, "getParams", "()[Ljava/lang/Object;", ref global::javax.sql.RowSetInternal_._m0) as java.lang.Object[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection30576;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.sql.Connection javax.sql.RowSetInternal.getConnection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.RowSetInternal_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::javax.sql.RowSetInternal_._getConnection30576) as java.sql.Connection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::javax.sql.RowSetInternal_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::javax.sql.RowSetInternal_._m1) as java.sql.Connection;
 		}
-		internal static global::MonoJavaBridge.MethodId _getOriginal30577;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.sql.ResultSet javax.sql.RowSetInternal.getOriginal()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::javax.sql.RowSetInternal_.staticClass, "getOriginal", "()Ljava/sql/ResultSet;", ref global::javax.sql.RowSetInternal_._getOriginal30577) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::javax.sql.RowSetInternal_.staticClass, "getOriginal", "()Ljava/sql/ResultSet;", ref global::javax.sql.RowSetInternal_._m2) as java.sql.ResultSet;
 		}
-		internal static global::MonoJavaBridge.MethodId _setMetaData30578;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void javax.sql.RowSetInternal.setMetaData(javax.sql.RowSetMetaData arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetInternal_.staticClass, "setMetaData", "(Ljavax/sql/RowSetMetaData;)V", ref global::javax.sql.RowSetInternal_._setMetaData30578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.sql.RowSetInternal_.staticClass, "setMetaData", "(Ljavax/sql/RowSetMetaData;)V", ref global::javax.sql.RowSetInternal_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOriginalRow30579;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.sql.ResultSet javax.sql.RowSetInternal.getOriginalRow()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::javax.sql.RowSetInternal_.staticClass, "getOriginalRow", "()Ljava/sql/ResultSet;", ref global::javax.sql.RowSetInternal_._getOriginalRow30579) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::javax.sql.RowSetInternal_.staticClass, "getOriginalRow", "()Ljava/sql/ResultSet;", ref global::javax.sql.RowSetInternal_._m4) as java.sql.ResultSet;
 		}
 		static RowSetInternal_()
 		{

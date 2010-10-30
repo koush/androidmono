@@ -14,13 +14,13 @@ namespace android.text.method
 				return getInstance();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance13290;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.text.method.HideReturnsTransformationMethod getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.HideReturnsTransformationMethod._getInstance13290.native == global::System.IntPtr.Zero)
-				global::android.text.method.HideReturnsTransformationMethod._getInstance13290 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/HideReturnsTransformationMethod;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._getInstance13290)) as android.text.method.HideReturnsTransformationMethod;
+			if (global::android.text.method.HideReturnsTransformationMethod._m0.native == global::System.IntPtr.Zero)
+				global::android.text.method.HideReturnsTransformationMethod._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/HideReturnsTransformationMethod;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._m0)) as android.text.method.HideReturnsTransformationMethod;
 		}
 		protected new char[] Original
 		{
@@ -29,10 +29,10 @@ namespace android.text.method
 				return getOriginal();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOriginal13291;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override char[] getOriginal()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getOriginal", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._getOriginal13291) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getOriginal", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._m1) as char[];
 		}
 		protected new char[] Replacement
 		{
@@ -41,18 +41,18 @@ namespace android.text.method
 				return getReplacement();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getReplacement13292;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override char[] getReplacement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getReplacement", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._getReplacement13292) as char[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, "getReplacement", "()[C", ref global::android.text.method.HideReturnsTransformationMethod._m2) as char[];
 		}
-		internal static global::MonoJavaBridge.MethodId _HideReturnsTransformationMethod13293;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public HideReturnsTransformationMethod() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.HideReturnsTransformationMethod._HideReturnsTransformationMethod13293.native == global::System.IntPtr.Zero)
-				global::android.text.method.HideReturnsTransformationMethod._HideReturnsTransformationMethod13293 = @__env.GetMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._HideReturnsTransformationMethod13293);
+			if (global::android.text.method.HideReturnsTransformationMethod._m3.native == global::System.IntPtr.Zero)
+				global::android.text.method.HideReturnsTransformationMethod._m3 = @__env.GetMethodIDNoThrow(global::android.text.method.HideReturnsTransformationMethod.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._m3);
 			Init(@__env, handle);
 		}
 		static HideReturnsTransformationMethod()

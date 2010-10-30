@@ -20,10 +20,10 @@ namespace android.app
 			internal OnDateSetListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onDateSet1737;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.app.DatePickerDialog.OnDateSetListener.onDateSet(android.widget.DatePicker arg0, int arg1, int arg2, int arg3)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.OnDateSetListener_.staticClass, "onDateSet", "(Landroid/widget/DatePicker;III)V", ref global::android.app.DatePickerDialog.OnDateSetListener_._onDateSet1737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.OnDateSetListener_.staticClass, "onDateSet", "(Landroid/widget/DatePicker;III)V", ref global::android.app.DatePickerDialog.OnDateSetListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			static OnDateSetListener_()
 			{
@@ -43,13 +43,13 @@ namespace android.app
 			protected OnDateSetListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnDateSetListenerDelegateWrapper1738;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnDateSetListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._OnDateSetListenerDelegateWrapper1738.native == global::System.IntPtr.Zero)
-					global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._OnDateSetListenerDelegateWrapper1738 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper.staticClass, global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._OnDateSetListenerDelegateWrapper1738);
+				if (global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper.staticClass, global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnDateSetListenerDelegateWrapper()
@@ -76,52 +76,52 @@ namespace android.app
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick1739;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onClick(android.content.DialogInterface arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V", ref global::android.app.DatePickerDialog._onClick1739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V", ref global::android.app.DatePickerDialog._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState1740;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.app.DatePickerDialog._onRestoreInstanceState1740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.app.DatePickerDialog._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState1741;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::android.os.Bundle onSaveInstanceState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.app.DatePickerDialog.staticClass, "onSaveInstanceState", "()Landroid/os/Bundle;", ref global::android.app.DatePickerDialog._onSaveInstanceState1741) as android.os.Bundle;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.os.Bundle>(this, global::android.app.DatePickerDialog.staticClass, "onSaveInstanceState", "()Landroid/os/Bundle;", ref global::android.app.DatePickerDialog._m2) as android.os.Bundle;
 		}
-		internal static global::MonoJavaBridge.MethodId _show1742;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void show()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "show", "()V", ref global::android.app.DatePickerDialog._show1742);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "show", "()V", ref global::android.app.DatePickerDialog._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDateChanged1743;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void onDateChanged(android.widget.DatePicker arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onDateChanged", "(Landroid/widget/DatePicker;III)V", ref global::android.app.DatePickerDialog._onDateChanged1743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "onDateChanged", "(Landroid/widget/DatePicker;III)V", ref global::android.app.DatePickerDialog._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDate1744;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void updateDate(int arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "updateDate", "(III)V", ref global::android.app.DatePickerDialog._updateDate1744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.DatePickerDialog.staticClass, "updateDate", "(III)V", ref global::android.app.DatePickerDialog._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _DatePickerDialog1745;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public DatePickerDialog(android.content.Context arg0, int arg1, android.app.DatePickerDialog.OnDateSetListener arg2, int arg3, int arg4, int arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.DatePickerDialog._DatePickerDialog1745.native == global::System.IntPtr.Zero)
-				global::android.app.DatePickerDialog._DatePickerDialog1745 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.staticClass, "<init>", "(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.staticClass, global::android.app.DatePickerDialog._DatePickerDialog1745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			if (global::android.app.DatePickerDialog._m6.native == global::System.IntPtr.Zero)
+				global::android.app.DatePickerDialog._m6 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.staticClass, "<init>", "(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.staticClass, global::android.app.DatePickerDialog._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatePickerDialog1746;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public DatePickerDialog(android.content.Context arg0, android.app.DatePickerDialog.OnDateSetListener arg1, int arg2, int arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.app.DatePickerDialog._DatePickerDialog1746.native == global::System.IntPtr.Zero)
-				global::android.app.DatePickerDialog._DatePickerDialog1746 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/app/DatePickerDialog$OnDateSetListener;III)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.staticClass, global::android.app.DatePickerDialog._DatePickerDialog1746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::android.app.DatePickerDialog._m7.native == global::System.IntPtr.Zero)
+				global::android.app.DatePickerDialog._m7 = @__env.GetMethodIDNoThrow(global::android.app.DatePickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/app/DatePickerDialog$OnDateSetListener;III)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.DatePickerDialog.staticClass, global::android.app.DatePickerDialog._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
 		static DatePickerDialog()

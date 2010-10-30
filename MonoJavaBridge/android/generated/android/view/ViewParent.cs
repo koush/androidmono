@@ -30,95 +30,95 @@ namespace android.view
 		internal ViewParent_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getParent15188;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.view.ViewParent android.view.ViewParent.getParent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.ViewParent>(this, global::android.view.ViewParent_.staticClass, "getParent", "()Landroid/view/ViewParent;", ref global::android.view.ViewParent_._getParent15188) as android.view.ViewParent;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.ViewParent>(this, global::android.view.ViewParent_.staticClass, "getParent", "()Landroid/view/ViewParent;", ref global::android.view.ViewParent_._m0) as android.view.ViewParent;
 		}
-		internal static global::MonoJavaBridge.MethodId _focusSearch15189;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::android.view.View android.view.ViewParent.focusSearch(android.view.View arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.ViewParent_.staticClass, "focusSearch", "(Landroid/view/View;I)Landroid/view/View;", ref global::android.view.ViewParent_._focusSearch15189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.ViewParent_.staticClass, "focusSearch", "(Landroid/view/View;I)Landroid/view/View;", ref global::android.view.ViewParent_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _createContextMenu15190;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void android.view.ViewParent.createContextMenu(android.view.ContextMenu arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "createContextMenu", "(Landroid/view/ContextMenu;)V", ref global::android.view.ViewParent_._createContextMenu15190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "createContextMenu", "(Landroid/view/ContextMenu;)V", ref global::android.view.ViewParent_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isLayoutRequested15191;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool android.view.ViewParent.isLayoutRequested()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "isLayoutRequested", "()Z", ref global::android.view.ViewParent_._isLayoutRequested15191);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "isLayoutRequested", "()Z", ref global::android.view.ViewParent_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _requestLayout15192;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void android.view.ViewParent.requestLayout()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestLayout", "()V", ref global::android.view.ViewParent_._requestLayout15192);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestLayout", "()V", ref global::android.view.ViewParent_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _requestChildFocus15193;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void android.view.ViewParent.requestChildFocus(android.view.View arg0, android.view.View arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", ref global::android.view.ViewParent_._requestChildFocus15193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", ref global::android.view.ViewParent_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _focusableViewAvailable15194;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void android.view.ViewParent.focusableViewAvailable(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "focusableViewAvailable", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._focusableViewAvailable15194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "focusableViewAvailable", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _showContextMenuForChild15195;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool android.view.ViewParent.showContextMenuForChild(android.view.View arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z", ref global::android.view.ViewParent_._showContextMenuForChild15195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z", ref global::android.view.ViewParent_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestChildRectangleOnScreen15196;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool android.view.ViewParent.requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", ref global::android.view.ViewParent_._requestChildRectangleOnScreen15196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", ref global::android.view.ViewParent_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _clearChildFocus15197;
+		private static global::MonoJavaBridge.MethodId _m9;
 		void android.view.ViewParent.clearChildFocus(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "clearChildFocus", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._clearChildFocus15197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "clearChildFocus", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _recomputeViewAttributes15198;
+		private static global::MonoJavaBridge.MethodId _m10;
 		void android.view.ViewParent.recomputeViewAttributes(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "recomputeViewAttributes", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._recomputeViewAttributes15198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "recomputeViewAttributes", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _bringChildToFront15199;
+		private static global::MonoJavaBridge.MethodId _m11;
 		void android.view.ViewParent.bringChildToFront(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "bringChildToFront", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._bringChildToFront15199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "bringChildToFront", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestDisallowInterceptTouchEvent15200;
+		private static global::MonoJavaBridge.MethodId _m12;
 		void android.view.ViewParent.requestDisallowInterceptTouchEvent(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestDisallowInterceptTouchEvent", "(Z)V", ref global::android.view.ViewParent_._requestDisallowInterceptTouchEvent15200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestDisallowInterceptTouchEvent", "(Z)V", ref global::android.view.ViewParent_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateChild15201;
+		private static global::MonoJavaBridge.MethodId _m13;
 		void android.view.ViewParent.invalidateChild(android.view.View arg0, android.graphics.Rect arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V", ref global::android.view.ViewParent_._invalidateChild15201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V", ref global::android.view.ViewParent_._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateChildInParent15202;
+		private static global::MonoJavaBridge.MethodId _m14;
 		global::android.view.ViewParent android.view.ViewParent.invalidateChildInParent(int[] arg0, android.graphics.Rect arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.ViewParent>(this, global::android.view.ViewParent_.staticClass, "invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;", ref global::android.view.ViewParent_._invalidateChildInParent15202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.ViewParent;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.view.ViewParent>(this, global::android.view.ViewParent_.staticClass, "invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;", ref global::android.view.ViewParent_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.view.ViewParent;
 		}
-		internal static global::MonoJavaBridge.MethodId _getChildVisibleRect15203;
+		private static global::MonoJavaBridge.MethodId _m15;
 		bool android.view.ViewParent.getChildVisibleRect(android.view.View arg0, android.graphics.Rect arg1, android.graphics.Point arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z", ref global::android.view.ViewParent_._getChildVisibleRect15203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.ViewParent_.staticClass, "getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z", ref global::android.view.ViewParent_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestTransparentRegion15204;
+		private static global::MonoJavaBridge.MethodId _m16;
 		void android.view.ViewParent.requestTransparentRegion(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestTransparentRegion", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._requestTransparentRegion15204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "requestTransparentRegion", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _childDrawableStateChanged15205;
+		private static global::MonoJavaBridge.MethodId _m17;
 		void android.view.ViewParent.childDrawableStateChanged(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "childDrawableStateChanged", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._childDrawableStateChanged15205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ViewParent_.staticClass, "childDrawableStateChanged", "(Landroid/view/View;)V", ref global::android.view.ViewParent_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ViewParent_()
 		{

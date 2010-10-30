@@ -7,20 +7,20 @@ namespace java.net
 		protected InetSocketAddress(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals21586;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.net.InetSocketAddress._equals21586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.net.InetSocketAddress._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString21587;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.InetSocketAddress.staticClass, "toString", "()Ljava/lang/String;", ref global::java.net.InetSocketAddress._toString21587) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.InetSocketAddress.staticClass, "toString", "()Ljava/lang/String;", ref global::java.net.InetSocketAddress._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode21588;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public sealed override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, "hashCode", "()I", ref global::java.net.InetSocketAddress._hashCode21588);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, "hashCode", "()I", ref global::java.net.InetSocketAddress._m2);
 		}
 		public new global::java.net.InetAddress Address
 		{
@@ -29,10 +29,10 @@ namespace java.net
 				return getAddress();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAddress21589;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.net.InetAddress getAddress()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.InetSocketAddress.staticClass, "getAddress", "()Ljava/net/InetAddress;", ref global::java.net.InetSocketAddress._getAddress21589) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.InetSocketAddress.staticClass, "getAddress", "()Ljava/net/InetAddress;", ref global::java.net.InetSocketAddress._m3) as java.net.InetAddress;
 		}
 		public new int Port
 		{
@@ -41,15 +41,15 @@ namespace java.net
 				return getPort();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPort21590;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getPort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, "getPort", "()I", ref global::java.net.InetSocketAddress._getPort21590);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.net.InetSocketAddress.staticClass, "getPort", "()I", ref global::java.net.InetSocketAddress._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _isUnresolved21591;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool isUnresolved()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, "isUnresolved", "()Z", ref global::java.net.InetSocketAddress._isUnresolved21591);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.net.InetSocketAddress.staticClass, "isUnresolved", "()Z", ref global::java.net.InetSocketAddress._m5);
 		}
 		public new global::java.lang.String HostName
 		{
@@ -58,44 +58,44 @@ namespace java.net
 				return getHostName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHostName21592;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.lang.String getHostName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.InetSocketAddress.staticClass, "getHostName", "()Ljava/lang/String;", ref global::java.net.InetSocketAddress._getHostName21592) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.net.InetSocketAddress.staticClass, "getHostName", "()Ljava/lang/String;", ref global::java.net.InetSocketAddress._m6) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _createUnresolved21593;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static global::java.net.InetSocketAddress createUnresolved(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.InetSocketAddress._createUnresolved21593.native == global::System.IntPtr.Zero)
-				global::java.net.InetSocketAddress._createUnresolved21593 = @__env.GetStaticMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "createUnresolved", "(Ljava/lang/String;I)Ljava/net/InetSocketAddress;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._createUnresolved21593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.InetSocketAddress;
+			if (global::java.net.InetSocketAddress._m7.native == global::System.IntPtr.Zero)
+				global::java.net.InetSocketAddress._m7 = @__env.GetStaticMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "createUnresolved", "(Ljava/lang/String;I)Ljava/net/InetSocketAddress;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.InetSocketAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _InetSocketAddress21594;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public InetSocketAddress(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.InetSocketAddress._InetSocketAddress21594.native == global::System.IntPtr.Zero)
-				global::java.net.InetSocketAddress._InetSocketAddress21594 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._InetSocketAddress21594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.net.InetSocketAddress._m8.native == global::System.IntPtr.Zero)
+				global::java.net.InetSocketAddress._m8 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _InetSocketAddress21595;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public InetSocketAddress(java.net.InetAddress arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.InetSocketAddress._InetSocketAddress21595.native == global::System.IntPtr.Zero)
-				global::java.net.InetSocketAddress._InetSocketAddress21595 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(Ljava/net/InetAddress;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._InetSocketAddress21595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.net.InetSocketAddress._m9.native == global::System.IntPtr.Zero)
+				global::java.net.InetSocketAddress._m9 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(Ljava/net/InetAddress;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _InetSocketAddress21596;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public InetSocketAddress(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.net.InetSocketAddress._InetSocketAddress21596.native == global::System.IntPtr.Zero)
-				global::java.net.InetSocketAddress._InetSocketAddress21596 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(Ljava/lang/String;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._InetSocketAddress21596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::java.net.InetSocketAddress._m10.native == global::System.IntPtr.Zero)
+				global::java.net.InetSocketAddress._m10 = @__env.GetMethodIDNoThrow(global::java.net.InetSocketAddress.staticClass, "<init>", "(Ljava/lang/String;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.InetSocketAddress.staticClass, global::java.net.InetSocketAddress._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static InetSocketAddress()

@@ -7,20 +7,20 @@ namespace javax.xml.xpath
 		protected XPathException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace31298;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void printStackTrace(java.io.PrintStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V", ref global::javax.xml.xpath.XPathException._printStackTrace31298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V", ref global::javax.xml.xpath.XPathException._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace31299;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void printStackTrace()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "()V", ref global::javax.xml.xpath.XPathException._printStackTrace31299);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "()V", ref global::javax.xml.xpath.XPathException._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace31300;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void printStackTrace(java.io.PrintWriter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V", ref global::javax.xml.xpath.XPathException._printStackTrace31300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPathException.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V", ref global::javax.xml.xpath.XPathException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.Throwable Cause
 		{
@@ -29,27 +29,27 @@ namespace javax.xml.xpath
 				return getCause();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCause31301;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.Throwable getCause()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPathException.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::javax.xml.xpath.XPathException._getCause31301) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPathException.staticClass, "getCause", "()Ljava/lang/Throwable;", ref global::javax.xml.xpath.XPathException._m3) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _XPathException31302;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public XPathException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathException._XPathException31302.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathException._XPathException31302 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._XPathException31302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.xpath.XPathException._m4.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathException._m4 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _XPathException31303;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public XPathException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.xpath.XPathException._XPathException31303.native == global::System.IntPtr.Zero)
-				global::javax.xml.xpath.XPathException._XPathException31303 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._XPathException31303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.xml.xpath.XPathException._m5.native == global::System.IntPtr.Zero)
+				global::javax.xml.xpath.XPathException._m5 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static XPathException()

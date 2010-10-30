@@ -14,25 +14,25 @@ namespace android.text.style
 				return getURL();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getURL13621;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.String getURL()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.URLSpan.staticClass, "getURL", "()Ljava/lang/String;", ref global::android.text.style.URLSpan._getURL13621) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.text.style.URLSpan.staticClass, "getURL", "()Ljava/lang/String;", ref global::android.text.style.URLSpan._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick13622;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void onClick(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.URLSpan.staticClass, "onClick", "(Landroid/view/View;)V", ref global::android.text.style.URLSpan._onClick13622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.URLSpan.staticClass, "onClick", "(Landroid/view/View;)V", ref global::android.text.style.URLSpan._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13623;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.URLSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.URLSpan._writeToParcel13623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.URLSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.URLSpan._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13624;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.URLSpan.staticClass, "describeContents", "()I", ref global::android.text.style.URLSpan._describeContents13624);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.URLSpan.staticClass, "describeContents", "()I", ref global::android.text.style.URLSpan._m3);
 		}
 		public new int SpanTypeId
 		{
@@ -41,27 +41,27 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13625;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.URLSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.URLSpan._getSpanTypeId13625);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.URLSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.URLSpan._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _URLSpan13626;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public URLSpan(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.URLSpan._URLSpan13626.native == global::System.IntPtr.Zero)
-				global::android.text.style.URLSpan._URLSpan13626 = @__env.GetMethodIDNoThrow(global::android.text.style.URLSpan.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.URLSpan.staticClass, global::android.text.style.URLSpan._URLSpan13626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.URLSpan._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.URLSpan._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.URLSpan.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.URLSpan.staticClass, global::android.text.style.URLSpan._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _URLSpan13627;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public URLSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.URLSpan._URLSpan13627.native == global::System.IntPtr.Zero)
-				global::android.text.style.URLSpan._URLSpan13627 = @__env.GetMethodIDNoThrow(global::android.text.style.URLSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.URLSpan.staticClass, global::android.text.style.URLSpan._URLSpan13627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.URLSpan._m6.native == global::System.IntPtr.Zero)
+				global::android.text.style.URLSpan._m6 = @__env.GetMethodIDNoThrow(global::android.text.style.URLSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.URLSpan.staticClass, global::android.text.style.URLSpan._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static URLSpan()

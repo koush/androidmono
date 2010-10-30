@@ -7,23 +7,23 @@ namespace org.apache.http.cookie
 		protected CookieIdentityComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compare32407;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int compare(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.Cookie arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I", ref global::org.apache.http.cookie.CookieIdentityComparator._compare32407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I", ref global::org.apache.http.cookie.CookieIdentityComparator._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _compare32408;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::org.apache.http.cookie.CookieIdentityComparator._compare32408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", ref global::org.apache.http.cookie.CookieIdentityComparator._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _CookieIdentityComparator32409;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public CookieIdentityComparator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator32409.native == global::System.IntPtr.Zero)
-				global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator32409 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator32409);
+			if (global::org.apache.http.cookie.CookieIdentityComparator._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.cookie.CookieIdentityComparator._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._m2);
 			Init(@__env, handle);
 		}
 		static CookieIdentityComparator()

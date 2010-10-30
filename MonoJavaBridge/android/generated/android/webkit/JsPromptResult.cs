@@ -7,10 +7,10 @@ namespace android.webkit
 		protected JsPromptResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _confirm16055;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void confirm(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsPromptResult.staticClass, "confirm", "(Ljava/lang/String;)V", ref global::android.webkit.JsPromptResult._confirm16055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.JsPromptResult.staticClass, "confirm", "(Ljava/lang/String;)V", ref global::android.webkit.JsPromptResult._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static JsPromptResult()
 		{

@@ -16,25 +16,25 @@ namespace android.widget
 		internal HeterogeneousExpandableList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getChildType17201;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int android.widget.HeterogeneousExpandableList.getChildType(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildType", "(II)I", ref global::android.widget.HeterogeneousExpandableList_._getChildType17201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildType", "(II)I", ref global::android.widget.HeterogeneousExpandableList_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getChildTypeCount17202;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int android.widget.HeterogeneousExpandableList.getChildTypeCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._getChildTypeCount17202);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getGroupType17203;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int android.widget.HeterogeneousExpandableList.getGroupType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I", ref global::android.widget.HeterogeneousExpandableList_._getGroupType17203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I", ref global::android.widget.HeterogeneousExpandableList_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getGroupTypeCount17204;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int android.widget.HeterogeneousExpandableList.getGroupTypeCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount17204);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I", ref global::android.widget.HeterogeneousExpandableList_._m3);
 		}
 		static HeterogeneousExpandableList_()
 		{

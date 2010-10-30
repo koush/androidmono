@@ -13,10 +13,10 @@ namespace org.apache.http.conn.@params
 		internal ConnPerRoute_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxForRoute32191;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.apache.http.conn.@params.ConnPerRoute.getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.conn.@params.ConnPerRoute_.staticClass, "getMaxForRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)I", ref global::org.apache.http.conn.@params.ConnPerRoute_._getMaxForRoute32191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.conn.@params.ConnPerRoute_.staticClass, "getMaxForRoute", "(Lorg/apache/http/conn/routing/HttpRoute;)I", ref global::org.apache.http.conn.@params.ConnPerRoute_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ConnPerRoute_()
 		{

@@ -16,25 +16,25 @@ namespace java.security.cert
 		internal X509Extension_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _hasUnsupportedCriticalExtension23891;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.X509Extension_.staticClass, "hasUnsupportedCriticalExtension", "()Z", ref global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23891);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.cert.X509Extension_.staticClass, "hasUnsupportedCriticalExtension", "()Z", ref global::java.security.cert.X509Extension_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCriticalExtensionOIDs23892;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23892) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._m1) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNonCriticalExtensionOIDs23893;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23893) as java.util.Set;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Set>(this, global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;", ref global::java.security.cert.X509Extension_._m2) as java.util.Set;
 		}
-		internal static global::MonoJavaBridge.MethodId _getExtensionValue23894;
+		private static global::MonoJavaBridge.MethodId _m3;
 		byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B", ref global::java.security.cert.X509Extension_._getExtensionValue23894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B", ref global::java.security.cert.X509Extension_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		static X509Extension_()
 		{

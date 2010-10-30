@@ -7,20 +7,20 @@ namespace org.apache.http.auth
 		protected NTUserPrincipal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals31844;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::org.apache.http.auth.NTUserPrincipal._equals31844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::org.apache.http.auth.NTUserPrincipal._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString31845;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._toString31845) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode31846;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "hashCode", "()I", ref global::org.apache.http.auth.NTUserPrincipal._hashCode31846);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "hashCode", "()I", ref global::org.apache.http.auth.NTUserPrincipal._m2);
 		}
 		public new global::java.lang.String Name
 		{
@@ -29,10 +29,10 @@ namespace org.apache.http.auth
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName31847;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._getName31847) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._m3) as java.lang.String;
 		}
 		public new global::java.lang.String Domain
 		{
@@ -41,10 +41,10 @@ namespace org.apache.http.auth
 				return getDomain();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDomain31848;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.String getDomain()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getDomain", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._getDomain31848) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getDomain", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._m4) as java.lang.String;
 		}
 		public new global::java.lang.String Username
 		{
@@ -53,18 +53,18 @@ namespace org.apache.http.auth
 				return getUsername();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUsername31849;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.lang.String getUsername()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getUsername", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._getUsername31849) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.NTUserPrincipal.staticClass, "getUsername", "()Ljava/lang/String;", ref global::org.apache.http.auth.NTUserPrincipal._m5) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _NTUserPrincipal31850;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public NTUserPrincipal(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.NTUserPrincipal._NTUserPrincipal31850.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.NTUserPrincipal._NTUserPrincipal31850 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.NTUserPrincipal.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.NTUserPrincipal.staticClass, global::org.apache.http.auth.NTUserPrincipal._NTUserPrincipal31850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.auth.NTUserPrincipal._m6.native == global::System.IntPtr.Zero)
+				global::org.apache.http.auth.NTUserPrincipal._m6 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.NTUserPrincipal.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.NTUserPrincipal.staticClass, global::org.apache.http.auth.NTUserPrincipal._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static NTUserPrincipal()

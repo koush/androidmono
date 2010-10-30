@@ -14,15 +14,15 @@ namespace javax.xml.transform
 		internal Source_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId30951;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String javax.xml.transform.Source.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.Source_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.Source_._getSystemId30951) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.Source_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.Source_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId30952;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void javax.xml.transform.Source.setSystemId(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.Source_.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.Source_._setSystemId30952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.transform.Source_.staticClass, "setSystemId", "(Ljava/lang/String;)V", ref global::javax.xml.transform.Source_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Source_()
 		{

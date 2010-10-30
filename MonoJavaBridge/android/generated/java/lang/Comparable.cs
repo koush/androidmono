@@ -13,10 +13,10 @@ namespace java.lang
 		internal Comparable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo20078;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Comparable_.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.lang.Comparable_._compareTo20078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Comparable_.staticClass, "compareTo", "(Ljava/lang/Object;)I", ref global::java.lang.Comparable_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static Comparable_()
 		{

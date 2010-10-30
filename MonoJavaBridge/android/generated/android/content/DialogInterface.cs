@@ -14,15 +14,15 @@ namespace android.content
 		internal DialogInterface_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel3079;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.content.DialogInterface.cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "cancel", "()V", ref global::android.content.DialogInterface_._cancel3079);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "cancel", "()V", ref global::android.content.DialogInterface_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _dismiss3080;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.content.DialogInterface.dismiss()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "dismiss", "()V", ref global::android.content.DialogInterface_._dismiss3080);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.DialogInterface_.staticClass, "dismiss", "()V", ref global::android.content.DialogInterface_._m1);
 		}
 		static DialogInterface_()
 		{

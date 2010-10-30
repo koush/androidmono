@@ -7,50 +7,50 @@ namespace javax.xml.validation
 		protected Validator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setProperty31221;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.validation.Validator._setProperty31221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.validation.Validator._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getProperty31222;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.Object getProperty(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Validator.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.validation.Validator._getProperty31222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Validator.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.validation.Validator._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _reset31223;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract void reset();
-		internal static global::MonoJavaBridge.MethodId _validate31224;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract void validate(javax.xml.transform.Source arg0, javax.xml.transform.Result arg1);
-		internal static global::MonoJavaBridge.MethodId _validate31225;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void validate(javax.xml.transform.Source arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "validate", "(Ljavax/xml/transform/Source;)V", ref global::javax.xml.validation.Validator._validate31225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "validate", "(Ljavax/xml/transform/Source;)V", ref global::javax.xml.validation.Validator._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFeature31226;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setFeature(java.lang.String arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "setFeature", "(Ljava/lang/String;Z)V", ref global::javax.xml.validation.Validator._setFeature31226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator.staticClass, "setFeature", "(Ljava/lang/String;Z)V", ref global::javax.xml.validation.Validator._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getFeature31227;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool getFeature(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.validation.Validator.staticClass, "getFeature", "(Ljava/lang/String;)Z", ref global::javax.xml.validation.Validator._getFeature31227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.validation.Validator.staticClass, "getFeature", "(Ljava/lang/String;)Z", ref global::javax.xml.validation.Validator._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setErrorHandler31228;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public abstract void setErrorHandler(org.xml.sax.ErrorHandler arg0);
-		internal static global::MonoJavaBridge.MethodId _getErrorHandler31229;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract global::org.xml.sax.ErrorHandler getErrorHandler();
-		internal static global::MonoJavaBridge.MethodId _setResourceResolver31230;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0);
-		internal static global::MonoJavaBridge.MethodId _getResourceResolver31231;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract global::org.w3c.dom.ls.LSResourceResolver getResourceResolver();
-		internal static global::MonoJavaBridge.MethodId _Validator31232;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected Validator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.validation.Validator._Validator31232.native == global::System.IntPtr.Zero)
-				global::javax.xml.validation.Validator._Validator31232 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._Validator31232);
+			if (global::javax.xml.validation.Validator._m11.native == global::System.IntPtr.Zero)
+				global::javax.xml.validation.Validator._m11 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Validator.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._m11);
 			Init(@__env, handle);
 		}
 		static Validator()
@@ -70,35 +70,35 @@ namespace javax.xml.validation
 		internal Validator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _reset31233;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "reset", "()V", ref global::javax.xml.validation.Validator_._reset31233);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "reset", "()V", ref global::javax.xml.validation.Validator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _validate31234;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void validate(javax.xml.transform.Source arg0, javax.xml.transform.Result arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "validate", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", ref global::javax.xml.validation.Validator_._validate31234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "validate", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", ref global::javax.xml.validation.Validator_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setErrorHandler31235;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", ref global::javax.xml.validation.Validator_._setErrorHandler31235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", ref global::javax.xml.validation.Validator_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getErrorHandler31236;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::org.xml.sax.ErrorHandler getErrorHandler()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.ErrorHandler>(this, global::javax.xml.validation.Validator_.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;", ref global::javax.xml.validation.Validator_._getErrorHandler31236) as org.xml.sax.ErrorHandler;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.ErrorHandler>(this, global::javax.xml.validation.Validator_.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;", ref global::javax.xml.validation.Validator_._m3) as org.xml.sax.ErrorHandler;
 		}
-		internal static global::MonoJavaBridge.MethodId _setResourceResolver31237;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", ref global::javax.xml.validation.Validator_._setResourceResolver31237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.validation.Validator_.staticClass, "setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", ref global::javax.xml.validation.Validator_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourceResolver31238;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::org.w3c.dom.ls.LSResourceResolver getResourceResolver()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.ls.LSResourceResolver>(this, global::javax.xml.validation.Validator_.staticClass, "getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;", ref global::javax.xml.validation.Validator_._getResourceResolver31238) as org.w3c.dom.ls.LSResourceResolver;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.w3c.dom.ls.LSResourceResolver>(this, global::javax.xml.validation.Validator_.staticClass, "getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;", ref global::javax.xml.validation.Validator_._m5) as org.w3c.dom.ls.LSResourceResolver;
 		}
 		static Validator_()
 		{

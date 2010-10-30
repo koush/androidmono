@@ -13,10 +13,10 @@ namespace javax.xml.xpath
 		internal XPathFunction_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _evaluate31330;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object javax.xml.xpath.XPathFunction.evaluate(java.util.List arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPathFunction_.staticClass, "evaluate", "(Ljava/util/List;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPathFunction_._evaluate31330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPathFunction_.staticClass, "evaluate", "(Ljava/util/List;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPathFunction_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		static XPathFunction_()
 		{

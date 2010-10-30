@@ -52,205 +52,205 @@ namespace java.sql
 		internal Statement_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close25045;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.sql.Statement.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "close", "()V", ref global::java.sql.Statement_._close25045);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "close", "()V", ref global::java.sql.Statement_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isClosed25046;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool java.sql.Statement.isClosed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "isClosed", "()Z", ref global::java.sql.Statement_._isClosed25046);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "isClosed", "()Z", ref global::java.sql.Statement_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _execute25047;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.sql.Statement.execute(java.lang.String arg0, int[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;[I)Z", ref global::java.sql.Statement_._execute25047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;[I)Z", ref global::java.sql.Statement_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _execute25048;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool java.sql.Statement.execute(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;I)Z", ref global::java.sql.Statement_._execute25048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;I)Z", ref global::java.sql.Statement_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _execute25049;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool java.sql.Statement.execute(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;)Z", ref global::java.sql.Statement_._execute25049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;)Z", ref global::java.sql.Statement_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _execute25050;
+		private static global::MonoJavaBridge.MethodId _m5;
 		bool java.sql.Statement.execute(java.lang.String arg0, java.lang.String[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;[Ljava/lang/String;)Z", ref global::java.sql.Statement_._execute25050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "execute", "(Ljava/lang/String;[Ljava/lang/String;)Z", ref global::java.sql.Statement_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _cancel25051;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void java.sql.Statement.cancel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "cancel", "()V", ref global::java.sql.Statement_._cancel25051);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "cancel", "()V", ref global::java.sql.Statement_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _addBatch25052;
+		private static global::MonoJavaBridge.MethodId _m7;
 		void java.sql.Statement.addBatch(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "addBatch", "(Ljava/lang/String;)V", ref global::java.sql.Statement_._addBatch25052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "addBatch", "(Ljava/lang/String;)V", ref global::java.sql.Statement_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getConnection25053;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::java.sql.Connection java.sql.Statement.getConnection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::java.sql.Statement_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::java.sql.Statement_._getConnection25053) as java.sql.Connection;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.Connection>(this, global::java.sql.Statement_.staticClass, "getConnection", "()Ljava/sql/Connection;", ref global::java.sql.Statement_._m8) as java.sql.Connection;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResultSet25054;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::java.sql.ResultSet java.sql.Statement.getResultSet()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "getResultSet", "()Ljava/sql/ResultSet;", ref global::java.sql.Statement_._getResultSet25054) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "getResultSet", "()Ljava/sql/ResultSet;", ref global::java.sql.Statement_._m9) as java.sql.ResultSet;
 		}
-		internal static global::MonoJavaBridge.MethodId _getWarnings25055;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::java.sql.SQLWarning java.sql.Statement.getWarnings()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Statement_.staticClass, "getWarnings", "()Ljava/sql/SQLWarning;", ref global::java.sql.Statement_._getWarnings25055) as java.sql.SQLWarning;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.sql.Statement_.staticClass, "getWarnings", "()Ljava/sql/SQLWarning;", ref global::java.sql.Statement_._m10) as java.sql.SQLWarning;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearWarnings25056;
+		private static global::MonoJavaBridge.MethodId _m11;
 		void java.sql.Statement.clearWarnings()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "clearWarnings", "()V", ref global::java.sql.Statement_._clearWarnings25056);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "clearWarnings", "()V", ref global::java.sql.Statement_._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFetchDirection25057;
+		private static global::MonoJavaBridge.MethodId _m12;
 		void java.sql.Statement.setFetchDirection(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setFetchDirection", "(I)V", ref global::java.sql.Statement_._setFetchDirection25057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setFetchDirection", "(I)V", ref global::java.sql.Statement_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getFetchDirection25058;
+		private static global::MonoJavaBridge.MethodId _m13;
 		int java.sql.Statement.getFetchDirection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getFetchDirection", "()I", ref global::java.sql.Statement_._getFetchDirection25058);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getFetchDirection", "()I", ref global::java.sql.Statement_._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFetchSize25059;
+		private static global::MonoJavaBridge.MethodId _m14;
 		void java.sql.Statement.setFetchSize(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setFetchSize", "(I)V", ref global::java.sql.Statement_._setFetchSize25059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setFetchSize", "(I)V", ref global::java.sql.Statement_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getFetchSize25060;
+		private static global::MonoJavaBridge.MethodId _m15;
 		int java.sql.Statement.getFetchSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getFetchSize", "()I", ref global::java.sql.Statement_._getFetchSize25060);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getFetchSize", "()I", ref global::java.sql.Statement_._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _executeQuery25061;
+		private static global::MonoJavaBridge.MethodId _m16;
 		global::java.sql.ResultSet java.sql.Statement.executeQuery(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "executeQuery", "(Ljava/lang/String;)Ljava/sql/ResultSet;", ref global::java.sql.Statement_._executeQuery25061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "executeQuery", "(Ljava/lang/String;)Ljava/sql/ResultSet;", ref global::java.sql.Statement_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.sql.ResultSet;
 		}
-		internal static global::MonoJavaBridge.MethodId _executeUpdate25062;
+		private static global::MonoJavaBridge.MethodId _m17;
 		int java.sql.Statement.executeUpdate(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;I)I", ref global::java.sql.Statement_._executeUpdate25062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;I)I", ref global::java.sql.Statement_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _executeUpdate25063;
+		private static global::MonoJavaBridge.MethodId _m18;
 		int java.sql.Statement.executeUpdate(java.lang.String arg0, int[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;[I)I", ref global::java.sql.Statement_._executeUpdate25063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;[I)I", ref global::java.sql.Statement_._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _executeUpdate25064;
+		private static global::MonoJavaBridge.MethodId _m19;
 		int java.sql.Statement.executeUpdate(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;)I", ref global::java.sql.Statement_._executeUpdate25064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;)I", ref global::java.sql.Statement_._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _executeUpdate25065;
+		private static global::MonoJavaBridge.MethodId _m20;
 		int java.sql.Statement.executeUpdate(java.lang.String arg0, java.lang.String[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)I", ref global::java.sql.Statement_._executeUpdate25065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "executeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)I", ref global::java.sql.Statement_._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxFieldSize25066;
+		private static global::MonoJavaBridge.MethodId _m21;
 		int java.sql.Statement.getMaxFieldSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getMaxFieldSize", "()I", ref global::java.sql.Statement_._getMaxFieldSize25066);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getMaxFieldSize", "()I", ref global::java.sql.Statement_._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxFieldSize25067;
+		private static global::MonoJavaBridge.MethodId _m22;
 		void java.sql.Statement.setMaxFieldSize(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setMaxFieldSize", "(I)V", ref global::java.sql.Statement_._setMaxFieldSize25067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setMaxFieldSize", "(I)V", ref global::java.sql.Statement_._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxRows25068;
+		private static global::MonoJavaBridge.MethodId _m23;
 		int java.sql.Statement.getMaxRows()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getMaxRows", "()I", ref global::java.sql.Statement_._getMaxRows25068);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getMaxRows", "()I", ref global::java.sql.Statement_._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxRows25069;
+		private static global::MonoJavaBridge.MethodId _m24;
 		void java.sql.Statement.setMaxRows(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setMaxRows", "(I)V", ref global::java.sql.Statement_._setMaxRows25069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setMaxRows", "(I)V", ref global::java.sql.Statement_._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setEscapeProcessing25070;
+		private static global::MonoJavaBridge.MethodId _m25;
 		void java.sql.Statement.setEscapeProcessing(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setEscapeProcessing", "(Z)V", ref global::java.sql.Statement_._setEscapeProcessing25070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setEscapeProcessing", "(Z)V", ref global::java.sql.Statement_._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getQueryTimeout25071;
+		private static global::MonoJavaBridge.MethodId _m26;
 		int java.sql.Statement.getQueryTimeout()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getQueryTimeout", "()I", ref global::java.sql.Statement_._getQueryTimeout25071);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getQueryTimeout", "()I", ref global::java.sql.Statement_._m26);
 		}
-		internal static global::MonoJavaBridge.MethodId _setQueryTimeout25072;
+		private static global::MonoJavaBridge.MethodId _m27;
 		void java.sql.Statement.setQueryTimeout(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setQueryTimeout", "(I)V", ref global::java.sql.Statement_._setQueryTimeout25072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setQueryTimeout", "(I)V", ref global::java.sql.Statement_._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setCursorName25073;
+		private static global::MonoJavaBridge.MethodId _m28;
 		void java.sql.Statement.setCursorName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setCursorName", "(Ljava/lang/String;)V", ref global::java.sql.Statement_._setCursorName25073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setCursorName", "(Ljava/lang/String;)V", ref global::java.sql.Statement_._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getUpdateCount25074;
+		private static global::MonoJavaBridge.MethodId _m29;
 		int java.sql.Statement.getUpdateCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getUpdateCount", "()I", ref global::java.sql.Statement_._getUpdateCount25074);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getUpdateCount", "()I", ref global::java.sql.Statement_._m29);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMoreResults25075;
+		private static global::MonoJavaBridge.MethodId _m30;
 		bool java.sql.Statement.getMoreResults()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "getMoreResults", "()Z", ref global::java.sql.Statement_._getMoreResults25075);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "getMoreResults", "()Z", ref global::java.sql.Statement_._m30);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMoreResults25076;
+		private static global::MonoJavaBridge.MethodId _m31;
 		bool java.sql.Statement.getMoreResults(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "getMoreResults", "(I)Z", ref global::java.sql.Statement_._getMoreResults25076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "getMoreResults", "(I)Z", ref global::java.sql.Statement_._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getResultSetConcurrency25077;
+		private static global::MonoJavaBridge.MethodId _m32;
 		int java.sql.Statement.getResultSetConcurrency()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetConcurrency", "()I", ref global::java.sql.Statement_._getResultSetConcurrency25077);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetConcurrency", "()I", ref global::java.sql.Statement_._m32);
 		}
-		internal static global::MonoJavaBridge.MethodId _getResultSetType25078;
+		private static global::MonoJavaBridge.MethodId _m33;
 		int java.sql.Statement.getResultSetType()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetType", "()I", ref global::java.sql.Statement_._getResultSetType25078);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetType", "()I", ref global::java.sql.Statement_._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearBatch25079;
+		private static global::MonoJavaBridge.MethodId _m34;
 		void java.sql.Statement.clearBatch()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "clearBatch", "()V", ref global::java.sql.Statement_._clearBatch25079);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "clearBatch", "()V", ref global::java.sql.Statement_._m34);
 		}
-		internal static global::MonoJavaBridge.MethodId _executeBatch25080;
+		private static global::MonoJavaBridge.MethodId _m35;
 		int[] java.sql.Statement.executeBatch()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::java.sql.Statement_.staticClass, "executeBatch", "()[I", ref global::java.sql.Statement_._executeBatch25080) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::java.sql.Statement_.staticClass, "executeBatch", "()[I", ref global::java.sql.Statement_._m35) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getGeneratedKeys25081;
+		private static global::MonoJavaBridge.MethodId _m36;
 		global::java.sql.ResultSet java.sql.Statement.getGeneratedKeys()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "getGeneratedKeys", "()Ljava/sql/ResultSet;", ref global::java.sql.Statement_._getGeneratedKeys25081) as java.sql.ResultSet;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.sql.ResultSet>(this, global::java.sql.Statement_.staticClass, "getGeneratedKeys", "()Ljava/sql/ResultSet;", ref global::java.sql.Statement_._m36) as java.sql.ResultSet;
 		}
-		internal static global::MonoJavaBridge.MethodId _getResultSetHoldability25082;
+		private static global::MonoJavaBridge.MethodId _m37;
 		int java.sql.Statement.getResultSetHoldability()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetHoldability", "()I", ref global::java.sql.Statement_._getResultSetHoldability25082);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.Statement_.staticClass, "getResultSetHoldability", "()I", ref global::java.sql.Statement_._m37);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPoolable25083;
+		private static global::MonoJavaBridge.MethodId _m38;
 		void java.sql.Statement.setPoolable(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setPoolable", "(Z)V", ref global::java.sql.Statement_._setPoolable25083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.sql.Statement_.staticClass, "setPoolable", "(Z)V", ref global::java.sql.Statement_._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isPoolable25084;
+		private static global::MonoJavaBridge.MethodId _m39;
 		bool java.sql.Statement.isPoolable()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "isPoolable", "()Z", ref global::java.sql.Statement_._isPoolable25084);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.Statement_.staticClass, "isPoolable", "()Z", ref global::java.sql.Statement_._m39);
 		}
 		static Statement_()
 		{

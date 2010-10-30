@@ -7,90 +7,90 @@ namespace javax.xml.parsers
 		protected SAXParser(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setProperty30891;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract void setProperty(java.lang.String arg0, java.lang.Object arg1);
-		internal static global::MonoJavaBridge.MethodId _getProperty30892;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::java.lang.Object getProperty(java.lang.String arg0);
-		internal static global::MonoJavaBridge.MethodId _reset30893;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "reset", "()V", ref global::javax.xml.parsers.SAXParser._reset30893);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "reset", "()V", ref global::javax.xml.parsers.SAXParser._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30894;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;Ljava/lang/String;)V", ref global::javax.xml.parsers.SAXParser._parse30894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;Ljava/lang/String;)V", ref global::javax.xml.parsers.SAXParser._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30895;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void parse(java.lang.String arg0, org.xml.sax.HandlerBase arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._parse30895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30896;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void parse(java.lang.String arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._parse30896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/lang/String;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30897;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void parse(java.io.File arg0, org.xml.sax.HandlerBase arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/File;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._parse30897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/File;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30898;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void parse(java.io.File arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/File;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._parse30898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/File;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30899;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._parse30899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30900;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.HandlerBase arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._parse30900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30901;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._parse30901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;)V", ref global::javax.xml.parsers.SAXParser._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30902;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;Ljava/lang/String;)V", ref global::javax.xml.parsers.SAXParser._parse30902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;Ljava/lang/String;)V", ref global::javax.xml.parsers.SAXParser._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse30903;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._parse30903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;)V", ref global::javax.xml.parsers.SAXParser._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isNamespaceAware30904;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public abstract bool isNamespaceAware();
-		internal static global::MonoJavaBridge.MethodId _isValidating30905;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public abstract bool isValidating();
-		internal static global::MonoJavaBridge.MethodId _getSchema30906;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual global::javax.xml.validation.Schema getSchema()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "getSchema", "()Ljavax/xml/validation/Schema;", ref global::javax.xml.parsers.SAXParser._getSchema30906) as javax.xml.validation.Schema;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "getSchema", "()Ljavax/xml/validation/Schema;", ref global::javax.xml.parsers.SAXParser._m15) as javax.xml.validation.Schema;
 		}
-		internal static global::MonoJavaBridge.MethodId _isXIncludeAware30907;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual bool isXIncludeAware()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "isXIncludeAware", "()Z", ref global::javax.xml.parsers.SAXParser._isXIncludeAware30907);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser.staticClass, "isXIncludeAware", "()Z", ref global::javax.xml.parsers.SAXParser._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _getParser30908;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public abstract global::org.xml.sax.Parser getParser();
-		internal static global::MonoJavaBridge.MethodId _getXMLReader30909;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public abstract global::org.xml.sax.XMLReader getXMLReader();
-		internal static global::MonoJavaBridge.MethodId _SAXParser30910;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected SAXParser() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.parsers.SAXParser._SAXParser30910.native == global::System.IntPtr.Zero)
-				global::javax.xml.parsers.SAXParser._SAXParser30910 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParser.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._SAXParser30910);
+			if (global::javax.xml.parsers.SAXParser._m19.native == global::System.IntPtr.Zero)
+				global::javax.xml.parsers.SAXParser._m19 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.SAXParser.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._m19);
 			Init(@__env, handle);
 		}
 		static SAXParser()
@@ -110,35 +110,35 @@ namespace javax.xml.parsers
 		internal SAXParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setProperty30911;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.parsers.SAXParser_._setProperty30911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.xml.parsers.SAXParser_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getProperty30912;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.Object getProperty(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.parsers.SAXParser_._getProperty30912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.xml.parsers.SAXParser_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _isNamespaceAware30913;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override bool isNamespaceAware()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "isNamespaceAware", "()Z", ref global::javax.xml.parsers.SAXParser_._isNamespaceAware30913);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "isNamespaceAware", "()Z", ref global::javax.xml.parsers.SAXParser_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _isValidating30914;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool isValidating()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "isValidating", "()Z", ref global::javax.xml.parsers.SAXParser_._isValidating30914);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.xml.parsers.SAXParser_.staticClass, "isValidating", "()Z", ref global::javax.xml.parsers.SAXParser_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _getParser30915;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::org.xml.sax.Parser getParser()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.Parser>(this, global::javax.xml.parsers.SAXParser_.staticClass, "getParser", "()Lorg/xml/sax/Parser;", ref global::javax.xml.parsers.SAXParser_._getParser30915) as org.xml.sax.Parser;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.Parser>(this, global::javax.xml.parsers.SAXParser_.staticClass, "getParser", "()Lorg/xml/sax/Parser;", ref global::javax.xml.parsers.SAXParser_._m4) as org.xml.sax.Parser;
 		}
-		internal static global::MonoJavaBridge.MethodId _getXMLReader30916;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::org.xml.sax.XMLReader getXMLReader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLReader>(this, global::javax.xml.parsers.SAXParser_.staticClass, "getXMLReader", "()Lorg/xml/sax/XMLReader;", ref global::javax.xml.parsers.SAXParser_._getXMLReader30916) as org.xml.sax.XMLReader;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.xml.sax.XMLReader>(this, global::javax.xml.parsers.SAXParser_.staticClass, "getXMLReader", "()Lorg/xml/sax/XMLReader;", ref global::javax.xml.parsers.SAXParser_._m5) as org.xml.sax.XMLReader;
 		}
 		static SAXParser_()
 		{

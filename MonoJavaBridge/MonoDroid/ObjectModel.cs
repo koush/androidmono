@@ -452,6 +452,11 @@ namespace MonoDroid
 	
 	public class Method : Overridable
 	{
+        public int Index
+        {
+            get;set;
+        }
+        
 		public bool IsNew
 		{
 			get;set;

@@ -115,10 +115,10 @@ namespace android.media
 			internal OnErrorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onError7383;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.MediaRecorder.OnErrorListener.onError(android.media.MediaRecorder arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.OnErrorListener_.staticClass, "onError", "(Landroid/media/MediaRecorder;II)V", ref global::android.media.MediaRecorder.OnErrorListener_._onError7383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.OnErrorListener_.staticClass, "onError", "(Landroid/media/MediaRecorder;II)V", ref global::android.media.MediaRecorder.OnErrorListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnErrorListener_()
 			{
@@ -138,13 +138,13 @@ namespace android.media
 			protected OnErrorListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnErrorListenerDelegateWrapper7384;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnErrorListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._OnErrorListenerDelegateWrapper7384.native == global::System.IntPtr.Zero)
-					global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._OnErrorListenerDelegateWrapper7384 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.OnErrorListenerDelegateWrapper.staticClass, global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._OnErrorListenerDelegateWrapper7384);
+				if (global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.OnErrorListenerDelegateWrapper.staticClass, global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnErrorListenerDelegateWrapper()
@@ -184,10 +184,10 @@ namespace android.media
 			internal OnInfoListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onInfo7385;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.MediaRecorder.OnInfoListener.onInfo(android.media.MediaRecorder arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.OnInfoListener_.staticClass, "onInfo", "(Landroid/media/MediaRecorder;II)V", ref global::android.media.MediaRecorder.OnInfoListener_._onInfo7385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.OnInfoListener_.staticClass, "onInfo", "(Landroid/media/MediaRecorder;II)V", ref global::android.media.MediaRecorder.OnInfoListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnInfoListener_()
 			{
@@ -207,13 +207,13 @@ namespace android.media
 			protected OnInfoListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnInfoListenerDelegateWrapper7386;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnInfoListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._OnInfoListenerDelegateWrapper7386.native == global::System.IntPtr.Zero)
-					global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._OnInfoListenerDelegateWrapper7386 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.OnInfoListenerDelegateWrapper.staticClass, global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._OnInfoListenerDelegateWrapper7386);
+				if (global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.OnInfoListenerDelegateWrapper.staticClass, global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnInfoListenerDelegateWrapper()
@@ -358,40 +358,40 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize7397;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "finalize", "()V", ref global::android.media.MediaRecorder._finalize7397);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "finalize", "()V", ref global::android.media.MediaRecorder._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _start7398;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void start()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "start", "()V", ref global::android.media.MediaRecorder._start7398);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "start", "()V", ref global::android.media.MediaRecorder._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _stop7399;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void stop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "stop", "()V", ref global::android.media.MediaRecorder._stop7399);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "stop", "()V", ref global::android.media.MediaRecorder._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _reset7400;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "reset", "()V", ref global::android.media.MediaRecorder._reset7400);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "reset", "()V", ref global::android.media.MediaRecorder._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _release7401;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void release()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "release", "()V", ref global::android.media.MediaRecorder._release7401);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "release", "()V", ref global::android.media.MediaRecorder._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOutputFormat7402;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setOutputFormat(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFormat", "(I)V", ref global::android.media.MediaRecorder._setOutputFormat7402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFormat", "(I)V", ref global::android.media.MediaRecorder._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _prepare7403;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void prepare()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "prepare", "()V", ref global::android.media.MediaRecorder._prepare7403);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "prepare", "()V", ref global::android.media.MediaRecorder._m6);
 		}
 		public new global::android.view.Surface PreviewDisplay
 		{
@@ -400,24 +400,24 @@ namespace android.media
 				setPreviewDisplay(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreviewDisplay7404;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setPreviewDisplay(android.view.Surface arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setPreviewDisplay", "(Landroid/view/Surface;)V", ref global::android.media.MediaRecorder._setPreviewDisplay7404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setPreviewDisplay", "(Landroid/view/Surface;)V", ref global::android.media.MediaRecorder._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnErrorListener7405;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setOnErrorListener(android.media.MediaRecorder.OnErrorListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOnErrorListener", "(Landroid/media/MediaRecorder$OnErrorListener;)V", ref global::android.media.MediaRecorder._setOnErrorListener7405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOnErrorListener", "(Landroid/media/MediaRecorder$OnErrorListener;)V", ref global::android.media.MediaRecorder._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnErrorListener(global::android.media.MediaRecorder.OnErrorListenerDelegate arg0)
 		{
 			setOnErrorListener((global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnInfoListener7406;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setOnInfoListener(android.media.MediaRecorder.OnInfoListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOnInfoListener", "(Landroid/media/MediaRecorder$OnInfoListener;)V", ref global::android.media.MediaRecorder._setOnInfoListener7406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOnInfoListener", "(Landroid/media/MediaRecorder$OnInfoListener;)V", ref global::android.media.MediaRecorder._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnInfoListener(global::android.media.MediaRecorder.OnInfoListenerDelegate arg0)
 		{
@@ -430,15 +430,15 @@ namespace android.media
 				setCamera(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setCamera7407;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setCamera(android.hardware.Camera arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setCamera", "(Landroid/hardware/Camera;)V", ref global::android.media.MediaRecorder._setCamera7407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setCamera", "(Landroid/hardware/Camera;)V", ref global::android.media.MediaRecorder._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setAudioSource7408;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setAudioSource(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioSource", "(I)V", ref global::android.media.MediaRecorder._setAudioSource7408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioSource", "(I)V", ref global::android.media.MediaRecorder._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int AudioSourceMax
 		{
@@ -447,18 +447,18 @@ namespace android.media
 				return getAudioSourceMax();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAudioSourceMax7409;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static int getAudioSourceMax()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.MediaRecorder._getAudioSourceMax7409.native == global::System.IntPtr.Zero)
-				global::android.media.MediaRecorder._getAudioSourceMax7409 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaRecorder.staticClass, "getAudioSourceMax", "()I");
-			return @__env.CallStaticIntMethod(android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._getAudioSourceMax7409);
+			if (global::android.media.MediaRecorder._m12.native == global::System.IntPtr.Zero)
+				global::android.media.MediaRecorder._m12 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaRecorder.staticClass, "getAudioSourceMax", "()I");
+			return @__env.CallStaticIntMethod(android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _setVideoSource7410;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setVideoSource(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoSource", "(I)V", ref global::android.media.MediaRecorder._setVideoSource7410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoSource", "(I)V", ref global::android.media.MediaRecorder._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.media.CamcorderProfile Profile
 		{
@@ -467,15 +467,15 @@ namespace android.media
 				setProfile(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setProfile7411;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setProfile(android.media.CamcorderProfile arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setProfile", "(Landroid/media/CamcorderProfile;)V", ref global::android.media.MediaRecorder._setProfile7411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setProfile", "(Landroid/media/CamcorderProfile;)V", ref global::android.media.MediaRecorder._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVideoSize7412;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setVideoSize(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoSize", "(II)V", ref global::android.media.MediaRecorder._setVideoSize7412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoSize", "(II)V", ref global::android.media.MediaRecorder._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int VideoFrameRate
 		{
@@ -484,10 +484,10 @@ namespace android.media
 				setVideoFrameRate(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setVideoFrameRate7413;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setVideoFrameRate(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoFrameRate", "(I)V", ref global::android.media.MediaRecorder._setVideoFrameRate7413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoFrameRate", "(I)V", ref global::android.media.MediaRecorder._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaxDuration
 		{
@@ -496,10 +496,10 @@ namespace android.media
 				setMaxDuration(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxDuration7414;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setMaxDuration(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setMaxDuration", "(I)V", ref global::android.media.MediaRecorder._setMaxDuration7414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setMaxDuration", "(I)V", ref global::android.media.MediaRecorder._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long MaxFileSize
 		{
@@ -508,20 +508,20 @@ namespace android.media
 				setMaxFileSize(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxFileSize7415;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual void setMaxFileSize(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setMaxFileSize", "(J)V", ref global::android.media.MediaRecorder._setMaxFileSize7415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setMaxFileSize", "(J)V", ref global::android.media.MediaRecorder._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setAudioEncoder7416;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual void setAudioEncoder(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioEncoder", "(I)V", ref global::android.media.MediaRecorder._setAudioEncoder7416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioEncoder", "(I)V", ref global::android.media.MediaRecorder._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVideoEncoder7417;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setVideoEncoder(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoEncoder", "(I)V", ref global::android.media.MediaRecorder._setVideoEncoder7417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoEncoder", "(I)V", ref global::android.media.MediaRecorder._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int AudioSamplingRate
 		{
@@ -530,10 +530,10 @@ namespace android.media
 				setAudioSamplingRate(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAudioSamplingRate7418;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void setAudioSamplingRate(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioSamplingRate", "(I)V", ref global::android.media.MediaRecorder._setAudioSamplingRate7418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioSamplingRate", "(I)V", ref global::android.media.MediaRecorder._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int AudioChannels
 		{
@@ -542,10 +542,10 @@ namespace android.media
 				setAudioChannels(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAudioChannels7419;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void setAudioChannels(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioChannels", "(I)V", ref global::android.media.MediaRecorder._setAudioChannels7419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioChannels", "(I)V", ref global::android.media.MediaRecorder._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int AudioEncodingBitRate
 		{
@@ -554,10 +554,10 @@ namespace android.media
 				setAudioEncodingBitRate(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAudioEncodingBitRate7420;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void setAudioEncodingBitRate(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioEncodingBitRate", "(I)V", ref global::android.media.MediaRecorder._setAudioEncodingBitRate7420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setAudioEncodingBitRate", "(I)V", ref global::android.media.MediaRecorder._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int VideoEncodingBitRate
 		{
@@ -566,20 +566,20 @@ namespace android.media
 				setVideoEncodingBitRate(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setVideoEncodingBitRate7421;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setVideoEncodingBitRate(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoEncodingBitRate", "(I)V", ref global::android.media.MediaRecorder._setVideoEncodingBitRate7421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setVideoEncodingBitRate", "(I)V", ref global::android.media.MediaRecorder._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOutputFile7422;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual void setOutputFile(java.io.FileDescriptor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFile", "(Ljava/io/FileDescriptor;)V", ref global::android.media.MediaRecorder._setOutputFile7422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFile", "(Ljava/io/FileDescriptor;)V", ref global::android.media.MediaRecorder._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOutputFile7423;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void setOutputFile(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFile", "(Ljava/lang/String;)V", ref global::android.media.MediaRecorder._setOutputFile7423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaRecorder.staticClass, "setOutputFile", "(Ljava/lang/String;)V", ref global::android.media.MediaRecorder._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaxAmplitude
 		{
@@ -588,18 +588,18 @@ namespace android.media
 				return getMaxAmplitude();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxAmplitude7424;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual int getMaxAmplitude()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.MediaRecorder.staticClass, "getMaxAmplitude", "()I", ref global::android.media.MediaRecorder._getMaxAmplitude7424);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.MediaRecorder.staticClass, "getMaxAmplitude", "()I", ref global::android.media.MediaRecorder._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _MediaRecorder7425;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public MediaRecorder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.MediaRecorder._MediaRecorder7425.native == global::System.IntPtr.Zero)
-				global::android.media.MediaRecorder._MediaRecorder7425 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._MediaRecorder7425);
+			if (global::android.media.MediaRecorder._m28.native == global::System.IntPtr.Zero)
+				global::android.media.MediaRecorder._m28 = @__env.GetMethodIDNoThrow(global::android.media.MediaRecorder.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._m28);
 			Init(@__env, handle);
 		}
 		public static int MEDIA_RECORDER_ERROR_UNKNOWN

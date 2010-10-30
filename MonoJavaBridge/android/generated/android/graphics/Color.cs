@@ -7,101 +7,101 @@ namespace android.graphics
 		protected Color(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _alpha5215;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int alpha(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._alpha5215.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._alpha5215 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "alpha", "(I)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._alpha5215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m0.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m0 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "alpha", "(I)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _red5216;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int red(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._red5216.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._red5216 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "red", "(I)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._red5216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m1.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m1 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "red", "(I)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _green5217;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static int green(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._green5217.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._green5217 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "green", "(I)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._green5217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m2.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m2 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "green", "(I)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _blue5218;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int blue(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._blue5218.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._blue5218 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "blue", "(I)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._blue5218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m3.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m3 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "blue", "(I)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _rgb5219;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int rgb(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._rgb5219.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._rgb5219 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "rgb", "(III)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._rgb5219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.graphics.Color._m4.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m4 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "rgb", "(III)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _argb5220;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static int argb(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._argb5220.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._argb5220 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "argb", "(IIII)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._argb5220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.graphics.Color._m5.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m5 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "argb", "(IIII)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _parseColor5221;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static int parseColor(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._parseColor5221.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._parseColor5221 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "parseColor", "(Ljava/lang/String;)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._parseColor5221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m6.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m6 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "parseColor", "(Ljava/lang/String;)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RGBToHSV5222;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static void RGBToHSV(int arg0, int arg1, int arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._RGBToHSV5222.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._RGBToHSV5222 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "RGBToHSV", "(III[F)V");
-			@__env.CallStaticVoidMethod(android.graphics.Color.staticClass, global::android.graphics.Color._RGBToHSV5222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.graphics.Color._m7.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m7 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "RGBToHSV", "(III[F)V");
+			@__env.CallStaticVoidMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _colorToHSV5223;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static void colorToHSV(int arg0, float[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._colorToHSV5223.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._colorToHSV5223 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "colorToHSV", "(I[F)V");
-			@__env.CallStaticVoidMethod(android.graphics.Color.staticClass, global::android.graphics.Color._colorToHSV5223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.graphics.Color._m8.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m8 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "colorToHSV", "(I[F)V");
+			@__env.CallStaticVoidMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _HSVToColor5224;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static int HSVToColor(float[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._HSVToColor5224.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._HSVToColor5224 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "([F)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._HSVToColor5224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.Color._m9.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m9 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "([F)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _HSVToColor5225;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static int HSVToColor(int arg0, float[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._HSVToColor5225.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._HSVToColor5225 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "(I[F)I");
-			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._HSVToColor5225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.graphics.Color._m10.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m10 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Color.staticClass, "HSVToColor", "(I[F)I");
+			return @__env.CallStaticIntMethod(android.graphics.Color.staticClass, global::android.graphics.Color._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _Color5226;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public Color() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.Color._Color5226.native == global::System.IntPtr.Zero)
-				global::android.graphics.Color._Color5226 = @__env.GetMethodIDNoThrow(global::android.graphics.Color.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Color.staticClass, global::android.graphics.Color._Color5226);
+			if (global::android.graphics.Color._m11.native == global::System.IntPtr.Zero)
+				global::android.graphics.Color._m11 = @__env.GetMethodIDNoThrow(global::android.graphics.Color.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Color.staticClass, global::android.graphics.Color._m11);
 			Init(@__env, handle);
 		}
 		public static int BLACK

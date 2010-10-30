@@ -7,10 +7,10 @@ namespace android.app.admin
 		protected DevicePolicyManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isAdminActive2271;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual bool isAdminActive(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "isAdminActive", "(Landroid/content/ComponentName;)Z", ref global::android.app.admin.DevicePolicyManager._isAdminActive2271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "isAdminActive", "(Landroid/content/ComponentName;)Z", ref global::android.app.admin.DevicePolicyManager._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.List ActiveAdmins
 		{
@@ -19,45 +19,45 @@ namespace android.app.admin
 				return getActiveAdmins();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getActiveAdmins2272;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.util.List getActiveAdmins()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.admin.DevicePolicyManager.staticClass, "getActiveAdmins", "()Ljava/util/List;", ref global::android.app.admin.DevicePolicyManager._getActiveAdmins2272) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.app.admin.DevicePolicyManager.staticClass, "getActiveAdmins", "()Ljava/util/List;", ref global::android.app.admin.DevicePolicyManager._m1) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _removeActiveAdmin2273;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void removeActiveAdmin(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "removeActiveAdmin", "(Landroid/content/ComponentName;)V", ref global::android.app.admin.DevicePolicyManager._removeActiveAdmin2273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "removeActiveAdmin", "(Landroid/content/ComponentName;)V", ref global::android.app.admin.DevicePolicyManager._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPasswordQuality2274;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setPasswordQuality(android.content.ComponentName arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordQuality", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._setPasswordQuality2274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordQuality", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPasswordQuality2275;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getPasswordQuality(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordQuality", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._getPasswordQuality2275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordQuality", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPasswordMinimumLength2276;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setPasswordMinimumLength(android.content.ComponentName arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordMinimumLength", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength2276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordMinimumLength", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPasswordMinimumLength2277;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int getPasswordMinimumLength(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMinimumLength", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength2277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMinimumLength", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPasswordMaximumLength2278;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual int getPasswordMaximumLength(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMaximumLength", "(I)I", ref global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength2278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMaximumLength", "(I)I", ref global::android.app.admin.DevicePolicyManager._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isActivePasswordSufficient2279;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool isActivePasswordSufficient()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "isActivePasswordSufficient", "()Z", ref global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient2279);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "isActivePasswordSufficient", "()Z", ref global::android.app.admin.DevicePolicyManager._m8);
 		}
 		public new int CurrentFailedPasswordAttempts
 		{
@@ -66,45 +66,45 @@ namespace android.app.admin
 				return getCurrentFailedPasswordAttempts();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentFailedPasswordAttempts2280;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int getCurrentFailedPasswordAttempts()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getCurrentFailedPasswordAttempts", "()I", ref global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts2280);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getCurrentFailedPasswordAttempts", "()I", ref global::android.app.admin.DevicePolicyManager._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumFailedPasswordsForWipe2281;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setMaximumFailedPasswordsForWipe(android.content.ComponentName arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe2281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;I)V", ref global::android.app.admin.DevicePolicyManager._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumFailedPasswordsForWipe2282;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int getMaximumFailedPasswordsForWipe(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe2282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;)I", ref global::android.app.admin.DevicePolicyManager._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _resetPassword2283;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual bool resetPassword(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "resetPassword", "(Ljava/lang/String;I)Z", ref global::android.app.admin.DevicePolicyManager._resetPassword2283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "resetPassword", "(Ljava/lang/String;I)Z", ref global::android.app.admin.DevicePolicyManager._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumTimeToLock2284;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setMaximumTimeToLock(android.content.ComponentName arg0, long arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumTimeToLock", "(Landroid/content/ComponentName;J)V", ref global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock2284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumTimeToLock", "(Landroid/content/ComponentName;J)V", ref global::android.app.admin.DevicePolicyManager._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumTimeToLock2285;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual long getMaximumTimeToLock(android.content.ComponentName arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumTimeToLock", "(Landroid/content/ComponentName;)J", ref global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock2285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumTimeToLock", "(Landroid/content/ComponentName;)J", ref global::android.app.admin.DevicePolicyManager._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _lockNow2286;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void lockNow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "lockNow", "()V", ref global::android.app.admin.DevicePolicyManager._lockNow2286);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "lockNow", "()V", ref global::android.app.admin.DevicePolicyManager._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _wipeData2287;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void wipeData(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "wipeData", "(I)V", ref global::android.app.admin.DevicePolicyManager._wipeData2287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, "wipeData", "(I)V", ref global::android.app.admin.DevicePolicyManager._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String ACTION_ADD_DEVICE_ADMIN
 		{

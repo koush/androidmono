@@ -20,10 +20,10 @@ namespace android.media
 			internal OnLoadCompleteListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onLoadComplete7485;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.SoundPool.OnLoadCompleteListener.onLoadComplete(android.media.SoundPool arg0, int arg1, int arg2)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, "onLoadComplete", "(Landroid/media/SoundPool;II)V", ref global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete7485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, "onLoadComplete", "(Landroid/media/SoundPool;II)V", ref global::android.media.SoundPool.OnLoadCompleteListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
 			static OnLoadCompleteListener_()
 			{
@@ -43,13 +43,13 @@ namespace android.media
 			protected OnLoadCompleteListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnLoadCompleteListenerDelegateWrapper7486;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnLoadCompleteListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._OnLoadCompleteListenerDelegateWrapper7486.native == global::System.IntPtr.Zero)
-					global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._OnLoadCompleteListenerDelegateWrapper7486 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._OnLoadCompleteListenerDelegateWrapper7486);
+				if (global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass, global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnLoadCompleteListenerDelegateWrapper()
@@ -76,107 +76,107 @@ namespace android.media
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize7487;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "finalize", "()V", ref global::android.media.SoundPool._finalize7487);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "finalize", "()V", ref global::android.media.SoundPool._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _load7488;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int load(android.content.Context arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Landroid/content/Context;II)I", ref global::android.media.SoundPool._load7488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Landroid/content/Context;II)I", ref global::android.media.SoundPool._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _load7489;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int load(android.content.res.AssetFileDescriptor arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Landroid/content/res/AssetFileDescriptor;I)I", ref global::android.media.SoundPool._load7489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Landroid/content/res/AssetFileDescriptor;I)I", ref global::android.media.SoundPool._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _load7490;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int load(java.io.FileDescriptor arg0, long arg1, long arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Ljava/io/FileDescriptor;JJI)I", ref global::android.media.SoundPool._load7490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Ljava/io/FileDescriptor;JJI)I", ref global::android.media.SoundPool._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _load7491;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int load(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Ljava/lang/String;I)I", ref global::android.media.SoundPool._load7491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "load", "(Ljava/lang/String;I)I", ref global::android.media.SoundPool._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPriority7492;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setPriority(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setPriority", "(II)V", ref global::android.media.SoundPool._setPriority7492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setPriority", "(II)V", ref global::android.media.SoundPool._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _stop7493;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void stop(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "stop", "(I)V", ref global::android.media.SoundPool._stop7493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "stop", "(I)V", ref global::android.media.SoundPool._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _resume7494;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void resume(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "resume", "(I)V", ref global::android.media.SoundPool._resume7494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "resume", "(I)V", ref global::android.media.SoundPool._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _release7495;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void release()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "release", "()V", ref global::android.media.SoundPool._release7495);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "release", "()V", ref global::android.media.SoundPool._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _unload7496;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual bool unload(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.SoundPool.staticClass, "unload", "(I)Z", ref global::android.media.SoundPool._unload7496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.SoundPool.staticClass, "unload", "(I)Z", ref global::android.media.SoundPool._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _play7497;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int play(int arg0, float arg1, float arg2, int arg3, int arg4, float arg5)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "play", "(IFFIIF)I", ref global::android.media.SoundPool._play7497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.media.SoundPool.staticClass, "play", "(IFFIIF)I", ref global::android.media.SoundPool._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _pause7498;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void pause(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "pause", "(I)V", ref global::android.media.SoundPool._pause7498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "pause", "(I)V", ref global::android.media.SoundPool._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVolume7499;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setVolume(int arg0, float arg1, float arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setVolume", "(IFF)V", ref global::android.media.SoundPool._setVolume7499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setVolume", "(IFF)V", ref global::android.media.SoundPool._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _autoPause7500;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void autoPause()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "autoPause", "()V", ref global::android.media.SoundPool._autoPause7500);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "autoPause", "()V", ref global::android.media.SoundPool._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _autoResume7501;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void autoResume()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "autoResume", "()V", ref global::android.media.SoundPool._autoResume7501);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "autoResume", "()V", ref global::android.media.SoundPool._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _setLoop7502;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setLoop(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setLoop", "(II)V", ref global::android.media.SoundPool._setLoop7502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setLoop", "(II)V", ref global::android.media.SoundPool._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRate7503;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setRate(int arg0, float arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setRate", "(IF)V", ref global::android.media.SoundPool._setRate7503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setRate", "(IF)V", ref global::android.media.SoundPool._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnLoadCompleteListener7504;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setOnLoadCompleteListener(android.media.SoundPool.OnLoadCompleteListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V", ref global::android.media.SoundPool._setOnLoadCompleteListener7504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.SoundPool.staticClass, "setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V", ref global::android.media.SoundPool._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnLoadCompleteListener(global::android.media.SoundPool.OnLoadCompleteListenerDelegate arg0)
 		{
 			setOnLoadCompleteListener((global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _SoundPool7505;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public SoundPool(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.SoundPool._SoundPool7505.native == global::System.IntPtr.Zero)
-				global::android.media.SoundPool._SoundPool7505 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "<init>", "(III)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.staticClass, global::android.media.SoundPool._SoundPool7505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.media.SoundPool._m18.native == global::System.IntPtr.Zero)
+				global::android.media.SoundPool._m18 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "<init>", "(III)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.staticClass, global::android.media.SoundPool._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static SoundPool()

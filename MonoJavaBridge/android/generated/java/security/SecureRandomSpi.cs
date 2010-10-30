@@ -7,19 +7,19 @@ namespace java.security
 		protected SecureRandomSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineSetSeed23318;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected abstract void engineSetSeed(byte[] arg0);
-		internal static global::MonoJavaBridge.MethodId _engineNextBytes23319;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected abstract void engineNextBytes(byte[] arg0);
-		internal static global::MonoJavaBridge.MethodId _engineGenerateSeed23320;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected abstract byte[] engineGenerateSeed(int arg0);
-		internal static global::MonoJavaBridge.MethodId _SecureRandomSpi23321;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public SecureRandomSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.security.SecureRandomSpi._SecureRandomSpi23321.native == global::System.IntPtr.Zero)
-				global::java.security.SecureRandomSpi._SecureRandomSpi23321 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandomSpi.staticClass, global::java.security.SecureRandomSpi._SecureRandomSpi23321);
+			if (global::java.security.SecureRandomSpi._m3.native == global::System.IntPtr.Zero)
+				global::java.security.SecureRandomSpi._m3 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandomSpi.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandomSpi.staticClass, global::java.security.SecureRandomSpi._m3);
 			Init(@__env, handle);
 		}
 		static SecureRandomSpi()
@@ -39,20 +39,20 @@ namespace java.security
 		internal SecureRandomSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineSetSeed23322;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void engineSetSeed(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.SecureRandomSpi_.staticClass, "engineSetSeed", "([B)V", ref global::java.security.SecureRandomSpi_._engineSetSeed23322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.SecureRandomSpi_.staticClass, "engineSetSeed", "([B)V", ref global::java.security.SecureRandomSpi_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineNextBytes23323;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override void engineNextBytes(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.SecureRandomSpi_.staticClass, "engineNextBytes", "([B)V", ref global::java.security.SecureRandomSpi_._engineNextBytes23323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.SecureRandomSpi_.staticClass, "engineNextBytes", "([B)V", ref global::java.security.SecureRandomSpi_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGenerateSeed23324;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override byte[] engineGenerateSeed(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.SecureRandomSpi_.staticClass, "engineGenerateSeed", "(I)[B", ref global::java.security.SecureRandomSpi_._engineGenerateSeed23324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::java.security.SecureRandomSpi_.staticClass, "engineGenerateSeed", "(I)[B", ref global::java.security.SecureRandomSpi_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as byte[];
 		}
 		static SecureRandomSpi_()
 		{

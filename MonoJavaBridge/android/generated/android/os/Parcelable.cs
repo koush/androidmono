@@ -14,15 +14,15 @@ namespace android.os
 		internal Parcelable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel10113;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.Parcelable_._writeToParcel10113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.os.Parcelable_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents10114;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int android.os.Parcelable.describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Parcelable_.staticClass, "describeContents", "()I", ref global::android.os.Parcelable_._describeContents10114);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.Parcelable_.staticClass, "describeContents", "()I", ref global::android.os.Parcelable_._m1);
 		}
 		static Parcelable_()
 		{

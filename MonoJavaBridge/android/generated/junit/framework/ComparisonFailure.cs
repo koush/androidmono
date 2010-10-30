@@ -14,18 +14,18 @@ namespace junit.framework
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage31372;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String getMessage()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.framework.ComparisonFailure.staticClass, "getMessage", "()Ljava/lang/String;", ref global::junit.framework.ComparisonFailure._getMessage31372) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::junit.framework.ComparisonFailure.staticClass, "getMessage", "()Ljava/lang/String;", ref global::junit.framework.ComparisonFailure._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _ComparisonFailure31373;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ComparisonFailure(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.ComparisonFailure._ComparisonFailure31373.native == global::System.IntPtr.Zero)
-				global::junit.framework.ComparisonFailure._ComparisonFailure31373 = @__env.GetMethodIDNoThrow(global::junit.framework.ComparisonFailure.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.ComparisonFailure.staticClass, global::junit.framework.ComparisonFailure._ComparisonFailure31373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::junit.framework.ComparisonFailure._m1.native == global::System.IntPtr.Zero)
+				global::junit.framework.ComparisonFailure._m1 = @__env.GetMethodIDNoThrow(global::junit.framework.ComparisonFailure.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.ComparisonFailure.staticClass, global::junit.framework.ComparisonFailure._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static ComparisonFailure()

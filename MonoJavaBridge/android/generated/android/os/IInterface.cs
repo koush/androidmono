@@ -13,10 +13,10 @@ namespace android.os
 		internal IInterface_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _asBinder9911;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.os.IBinder android.os.IInterface.asBinder()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;", ref global::android.os.IInterface_._asBinder9911) as android.os.IBinder;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.IBinder>(this, global::android.os.IInterface_.staticClass, "asBinder", "()Landroid/os/IBinder;", ref global::android.os.IInterface_._m0) as android.os.IBinder;
 		}
 		static IInterface_()
 		{
@@ -36,13 +36,13 @@ namespace android.os
 		protected IInterfaceDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _IInterfaceDelegateWrapper9912;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public IInterfaceDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912.native == global::System.IntPtr.Zero)
-				global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912 = @__env.GetMethodIDNoThrow(global::android.os.IInterfaceDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IInterfaceDelegateWrapper.staticClass, global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912);
+			if (global::android.os.IInterfaceDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.os.IInterfaceDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.os.IInterfaceDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IInterfaceDelegateWrapper.staticClass, global::android.os.IInterfaceDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static IInterfaceDelegateWrapper()

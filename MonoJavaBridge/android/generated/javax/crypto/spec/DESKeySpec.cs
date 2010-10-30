@@ -14,43 +14,43 @@ namespace javax.crypto.spec
 				return getKey();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKey28756;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual byte[] getKey()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.DESKeySpec.staticClass, "getKey", "()[B", ref global::javax.crypto.spec.DESKeySpec._getKey28756) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.DESKeySpec.staticClass, "getKey", "()[B", ref global::javax.crypto.spec.DESKeySpec._m0) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _isParityAdjusted28757;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static bool isParityAdjusted(byte[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DESKeySpec._isParityAdjusted28757.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DESKeySpec._isParityAdjusted28757 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "isParityAdjusted", "([BI)Z");
-			return @__env.CallStaticBooleanMethod(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._isParityAdjusted28757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.spec.DESKeySpec._m1.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.DESKeySpec._m1 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "isParityAdjusted", "([BI)Z");
+			return @__env.CallStaticBooleanMethod(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isWeak28758;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static bool isWeak(byte[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DESKeySpec._isWeak28758.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DESKeySpec._isWeak28758 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "isWeak", "([BI)Z");
-			return @__env.CallStaticBooleanMethod(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._isWeak28758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.spec.DESKeySpec._m2.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.DESKeySpec._m2 = @__env.GetStaticMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "isWeak", "([BI)Z");
+			return @__env.CallStaticBooleanMethod(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _DESKeySpec28759;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public DESKeySpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DESKeySpec._DESKeySpec28759.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DESKeySpec._DESKeySpec28759 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([B)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._DESKeySpec28759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.crypto.spec.DESKeySpec._m3.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.DESKeySpec._m3 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([B)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DESKeySpec28760;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public DESKeySpec(byte[] arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.DESKeySpec._DESKeySpec28760.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.DESKeySpec._DESKeySpec28760 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([BI)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._DESKeySpec28760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.crypto.spec.DESKeySpec._m4.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.DESKeySpec._m4 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.DESKeySpec.staticClass, "<init>", "([BI)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DESKeySpec.staticClass, global::javax.crypto.spec.DESKeySpec._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int DES_KEY_LEN

@@ -15,20 +15,20 @@ namespace android.graphics.drawable
 		internal Animatable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _start5834;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.graphics.drawable.Animatable.start()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "start", "()V", ref global::android.graphics.drawable.Animatable_._start5834);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "start", "()V", ref global::android.graphics.drawable.Animatable_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _stop5835;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.graphics.drawable.Animatable.stop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "stop", "()V", ref global::android.graphics.drawable.Animatable_._stop5835);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "stop", "()V", ref global::android.graphics.drawable.Animatable_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _isRunning5836;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool android.graphics.drawable.Animatable.isRunning()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "isRunning", "()Z", ref global::android.graphics.drawable.Animatable_._isRunning5836);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.graphics.drawable.Animatable_.staticClass, "isRunning", "()Z", ref global::android.graphics.drawable.Animatable_._m2);
 		}
 		static Animatable_()
 		{

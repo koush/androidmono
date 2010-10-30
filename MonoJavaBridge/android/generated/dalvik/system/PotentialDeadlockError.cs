@@ -7,22 +7,22 @@ namespace dalvik.system
 		protected PotentialDeadlockError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _PotentialDeadlockError18605;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public PotentialDeadlockError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18605.native == global::System.IntPtr.Zero)
-				global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18605 = @__env.GetMethodIDNoThrow(global::dalvik.system.PotentialDeadlockError.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18605);
+			if (global::dalvik.system.PotentialDeadlockError._m0.native == global::System.IntPtr.Zero)
+				global::dalvik.system.PotentialDeadlockError._m0 = @__env.GetMethodIDNoThrow(global::dalvik.system.PotentialDeadlockError.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PotentialDeadlockError18606;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public PotentialDeadlockError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18606.native == global::System.IntPtr.Zero)
-				global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18606 = @__env.GetMethodIDNoThrow(global::dalvik.system.PotentialDeadlockError.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.PotentialDeadlockError._m1.native == global::System.IntPtr.Zero)
+				global::dalvik.system.PotentialDeadlockError._m1 = @__env.GetMethodIDNoThrow(global::dalvik.system.PotentialDeadlockError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static PotentialDeadlockError()

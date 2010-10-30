@@ -7,93 +7,93 @@ namespace junit.framework
 		protected TestResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run31401;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected virtual void run(junit.framework.TestCase arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "run", "(Ljunit/framework/TestCase;)V", ref global::junit.framework.TestResult._run31401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "run", "(Ljunit/framework/TestCase;)V", ref global::junit.framework.TestResult._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _stop31402;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void stop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "stop", "()V", ref global::junit.framework.TestResult._stop31402);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "stop", "()V", ref global::junit.framework.TestResult._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _errors31403;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.util.Enumeration errors()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::junit.framework.TestResult.staticClass, "errors", "()Ljava/util/Enumeration;", ref global::junit.framework.TestResult._errors31403) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::junit.framework.TestResult.staticClass, "errors", "()Ljava/util/Enumeration;", ref global::junit.framework.TestResult._m2) as java.util.Enumeration;
 		}
-		internal static global::MonoJavaBridge.MethodId _addError31404;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void addError(junit.framework.Test arg0, java.lang.Throwable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.framework.TestResult._addError31404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addError", "(Ljunit/framework/Test;Ljava/lang/Throwable;)V", ref global::junit.framework.TestResult._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addFailure31405;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V", ref global::junit.framework.TestResult._addFailure31405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addFailure", "(Ljunit/framework/Test;Ljunit/framework/AssertionFailedError;)V", ref global::junit.framework.TestResult._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addListener31406;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void addListener(junit.framework.TestListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addListener", "(Ljunit/framework/TestListener;)V", ref global::junit.framework.TestResult._addListener31406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "addListener", "(Ljunit/framework/TestListener;)V", ref global::junit.framework.TestResult._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeListener31407;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void removeListener(junit.framework.TestListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "removeListener", "(Ljunit/framework/TestListener;)V", ref global::junit.framework.TestResult._removeListener31407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "removeListener", "(Ljunit/framework/TestListener;)V", ref global::junit.framework.TestResult._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _endTest31408;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void endTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "endTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestResult._endTest31408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "endTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestResult._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _errorCount31409;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual int errorCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "errorCount", "()I", ref global::junit.framework.TestResult._errorCount31409);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "errorCount", "()I", ref global::junit.framework.TestResult._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _failureCount31410;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual int failureCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "failureCount", "()I", ref global::junit.framework.TestResult._failureCount31410);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "failureCount", "()I", ref global::junit.framework.TestResult._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _failures31411;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.util.Enumeration failures()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::junit.framework.TestResult.staticClass, "failures", "()Ljava/util/Enumeration;", ref global::junit.framework.TestResult._failures31411) as java.util.Enumeration;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Enumeration>(this, global::junit.framework.TestResult.staticClass, "failures", "()Ljava/util/Enumeration;", ref global::junit.framework.TestResult._m10) as java.util.Enumeration;
 		}
-		internal static global::MonoJavaBridge.MethodId _runCount31412;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual int runCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "runCount", "()I", ref global::junit.framework.TestResult._runCount31412);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::junit.framework.TestResult.staticClass, "runCount", "()I", ref global::junit.framework.TestResult._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _runProtected31413;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void runProtected(junit.framework.Test arg0, junit.framework.Protectable arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "runProtected", "(Ljunit/framework/Test;Ljunit/framework/Protectable;)V", ref global::junit.framework.TestResult._runProtected31413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "runProtected", "(Ljunit/framework/Test;Ljunit/framework/Protectable;)V", ref global::junit.framework.TestResult._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _shouldStop31414;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual bool shouldStop()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.framework.TestResult.staticClass, "shouldStop", "()Z", ref global::junit.framework.TestResult._shouldStop31414);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.framework.TestResult.staticClass, "shouldStop", "()Z", ref global::junit.framework.TestResult._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _startTest31415;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void startTest(junit.framework.Test arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "startTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestResult._startTest31415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.TestResult.staticClass, "startTest", "(Ljunit/framework/Test;)V", ref global::junit.framework.TestResult._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _wasSuccessful31416;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool wasSuccessful()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.framework.TestResult.staticClass, "wasSuccessful", "()Z", ref global::junit.framework.TestResult._wasSuccessful31416);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::junit.framework.TestResult.staticClass, "wasSuccessful", "()Z", ref global::junit.framework.TestResult._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _TestResult31417;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public TestResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::junit.framework.TestResult._TestResult31417.native == global::System.IntPtr.Zero)
-				global::junit.framework.TestResult._TestResult31417 = @__env.GetMethodIDNoThrow(global::junit.framework.TestResult.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestResult.staticClass, global::junit.framework.TestResult._TestResult31417);
+			if (global::junit.framework.TestResult._m16.native == global::System.IntPtr.Zero)
+				global::junit.framework.TestResult._m16 = @__env.GetMethodIDNoThrow(global::junit.framework.TestResult.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.TestResult.staticClass, global::junit.framework.TestResult._m16);
 			Init(@__env, handle);
 		}
 		static TestResult()

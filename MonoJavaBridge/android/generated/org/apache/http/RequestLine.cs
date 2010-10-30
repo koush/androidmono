@@ -15,20 +15,20 @@ namespace org.apache.http
 		internal RequestLine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getMethod31760;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.apache.http.RequestLine.getMethod()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.RequestLine_.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.RequestLine_._getMethod31760) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.RequestLine_.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.RequestLine_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getProtocolVersion31761;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::org.apache.http.ProtocolVersion org.apache.http.RequestLine.getProtocolVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.RequestLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.RequestLine_._getProtocolVersion31761) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.RequestLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.RequestLine_._m1) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::MonoJavaBridge.MethodId _getUri31762;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.apache.http.RequestLine.getUri()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.RequestLine_.staticClass, "getUri", "()Ljava/lang/String;", ref global::org.apache.http.RequestLine_._getUri31762) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.RequestLine_.staticClass, "getUri", "()Ljava/lang/String;", ref global::org.apache.http.RequestLine_._m2) as java.lang.String;
 		}
 		static RequestLine_()
 		{

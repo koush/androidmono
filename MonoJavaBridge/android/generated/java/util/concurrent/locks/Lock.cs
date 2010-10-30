@@ -18,35 +18,35 @@ namespace java.util.concurrent.locks
 		internal Lock_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _lock27739;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.util.concurrent.locks.Lock.@lock()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "@lock", "()V", ref global::java.util.concurrent.locks.Lock_._lock27739);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "@lock", "()V", ref global::java.util.concurrent.locks.Lock_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _unlock27740;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void java.util.concurrent.locks.Lock.unlock()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "unlock", "()V", ref global::java.util.concurrent.locks.Lock_._unlock27740);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "unlock", "()V", ref global::java.util.concurrent.locks.Lock_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _lockInterruptibly27741;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void java.util.concurrent.locks.Lock.lockInterruptibly()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "lockInterruptibly", "()V", ref global::java.util.concurrent.locks.Lock_._lockInterruptibly27741);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "lockInterruptibly", "()V", ref global::java.util.concurrent.locks.Lock_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _tryLock27742;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool java.util.concurrent.locks.Lock.tryLock()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "()Z", ref global::java.util.concurrent.locks.Lock_._tryLock27742);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "()Z", ref global::java.util.concurrent.locks.Lock_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _tryLock27743;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool java.util.concurrent.locks.Lock.tryLock(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", ref global::java.util.concurrent.locks.Lock_._tryLock27743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.concurrent.locks.Lock_.staticClass, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", ref global::java.util.concurrent.locks.Lock_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _newCondition27744;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::java.util.concurrent.locks.Condition java.util.concurrent.locks.Lock.newCondition()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.locks.Condition>(this, global::java.util.concurrent.locks.Lock_.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;", ref global::java.util.concurrent.locks.Lock_._newCondition27744) as java.util.concurrent.locks.Condition;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.concurrent.locks.Condition>(this, global::java.util.concurrent.locks.Lock_.staticClass, "newCondition", "()Ljava/util/concurrent/locks/Condition;", ref global::java.util.concurrent.locks.Lock_._m5) as java.util.concurrent.locks.Condition;
 		}
 		static Lock_()
 		{

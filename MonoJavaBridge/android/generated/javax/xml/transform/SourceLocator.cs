@@ -16,25 +16,25 @@ namespace javax.xml.transform
 		internal SourceLocator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineNumber30953;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int javax.xml.transform.SourceLocator.getLineNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getLineNumber", "()I", ref global::javax.xml.transform.SourceLocator_._getLineNumber30953);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getLineNumber", "()I", ref global::javax.xml.transform.SourceLocator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicId30954;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String javax.xml.transform.SourceLocator.getPublicId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._getPublicId30954) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getPublicId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId30955;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String javax.xml.transform.SourceLocator.getSystemId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._getSystemId30955) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.transform.SourceLocator_.staticClass, "getSystemId", "()Ljava/lang/String;", ref global::javax.xml.transform.SourceLocator_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnNumber30956;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int javax.xml.transform.SourceLocator.getColumnNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getColumnNumber", "()I", ref global::javax.xml.transform.SourceLocator_._getColumnNumber30956);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.xml.transform.SourceLocator_.staticClass, "getColumnNumber", "()I", ref global::javax.xml.transform.SourceLocator_._m3);
 		}
 		static SourceLocator_()
 		{

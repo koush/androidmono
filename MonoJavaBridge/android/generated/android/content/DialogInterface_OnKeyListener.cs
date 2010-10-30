@@ -13,10 +13,10 @@ namespace android.content
 		internal DialogInterface_OnKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onKey3073;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool android.content.DialogInterface_OnKeyListener.onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z", ref global::android.content.DialogInterface_OnKeyListener_._onKey3073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z", ref global::android.content.DialogInterface_OnKeyListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		static DialogInterface_OnKeyListener_()
 		{
@@ -36,13 +36,13 @@ namespace android.content
 		protected DialogInterface_OnKeyListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnKeyListenerDelegateWrapper3074;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public DialogInterface_OnKeyListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074.native == global::System.IntPtr.Zero)
-				global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074);
+			if (global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static DialogInterface_OnKeyListenerDelegateWrapper()

@@ -7,15 +7,15 @@ namespace android.view
 		protected ContextThemeWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _attachBaseContext14007;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void attachBaseContext(android.content.Context arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "attachBaseContext", "(Landroid/content/Context;)V", ref global::android.view.ContextThemeWrapper._attachBaseContext14007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "attachBaseContext", "(Landroid/content/Context;)V", ref global::android.view.ContextThemeWrapper._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setTheme14008;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void setTheme(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "setTheme", "(I)V", ref global::android.view.ContextThemeWrapper._setTheme14008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "setTheme", "(I)V", ref global::android.view.ContextThemeWrapper._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.content.res.Resources.Theme Theme
 		{
@@ -24,37 +24,37 @@ namespace android.view
 				return getTheme();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTheme14009;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::android.content.res.Resources.Theme getTheme()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.res.Resources.Theme>(this, global::android.view.ContextThemeWrapper.staticClass, "getTheme", "()Landroid/content/res/Resources$Theme;", ref global::android.view.ContextThemeWrapper._getTheme14009) as android.content.res.Resources.Theme;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.content.res.Resources.Theme>(this, global::android.view.ContextThemeWrapper.staticClass, "getTheme", "()Landroid/content/res/Resources$Theme;", ref global::android.view.ContextThemeWrapper._m2) as android.content.res.Resources.Theme;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemService14010;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.Object getSystemService(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.ContextThemeWrapper.staticClass, "getSystemService", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::android.view.ContextThemeWrapper._getSystemService14010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.view.ContextThemeWrapper.staticClass, "getSystemService", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::android.view.ContextThemeWrapper._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _onApplyThemeResource14011;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected virtual void onApplyThemeResource(android.content.res.Resources.Theme arg0, int arg1, bool arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "onApplyThemeResource", "(Landroid/content/res/Resources$Theme;IZ)V", ref global::android.view.ContextThemeWrapper._onApplyThemeResource14011, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.ContextThemeWrapper.staticClass, "onApplyThemeResource", "(Landroid/content/res/Resources$Theme;IZ)V", ref global::android.view.ContextThemeWrapper._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _ContextThemeWrapper14012;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public ContextThemeWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ContextThemeWrapper._ContextThemeWrapper14012.native == global::System.IntPtr.Zero)
-				global::android.view.ContextThemeWrapper._ContextThemeWrapper14012 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._ContextThemeWrapper14012);
+			if (global::android.view.ContextThemeWrapper._m5.native == global::System.IntPtr.Zero)
+				global::android.view.ContextThemeWrapper._m5 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._m5);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ContextThemeWrapper14013;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public ContextThemeWrapper(android.content.Context arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.ContextThemeWrapper._ContextThemeWrapper14013.native == global::System.IntPtr.Zero)
-				global::android.view.ContextThemeWrapper._ContextThemeWrapper14013 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "(Landroid/content/Context;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._ContextThemeWrapper14013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.ContextThemeWrapper._m6.native == global::System.IntPtr.Zero)
+				global::android.view.ContextThemeWrapper._m6 = @__env.GetMethodIDNoThrow(global::android.view.ContextThemeWrapper.staticClass, "<init>", "(Landroid/content/Context;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static ContextThemeWrapper()

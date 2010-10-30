@@ -13,10 +13,10 @@ namespace org.apache.http.conn.scheme
 		internal HostNameResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolve32289;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.InetAddress org.apache.http.conn.scheme.HostNameResolver.resolve(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;", ref global::org.apache.http.conn.scheme.HostNameResolver_._resolve32289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.InetAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;", ref global::org.apache.http.conn.scheme.HostNameResolver_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.InetAddress;
 		}
 		static HostNameResolver_()
 		{

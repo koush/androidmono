@@ -13,10 +13,10 @@ namespace java.lang
 		internal Runnable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run20428;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.lang.Runnable.run()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Runnable_.staticClass, "run", "()V", ref global::java.lang.Runnable_._run20428);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.lang.Runnable_.staticClass, "run", "()V", ref global::java.lang.Runnable_._m0);
 		}
 		static Runnable_()
 		{
@@ -36,13 +36,13 @@ namespace java.lang
 		protected RunnableDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _RunnableDelegateWrapper20429;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public RunnableDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429.native == global::System.IntPtr.Zero)
-				global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429 = @__env.GetMethodIDNoThrow(global::java.lang.RunnableDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RunnableDelegateWrapper.staticClass, global::java.lang.RunnableDelegateWrapper._RunnableDelegateWrapper20429);
+			if (global::java.lang.RunnableDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::java.lang.RunnableDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::java.lang.RunnableDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.RunnableDelegateWrapper.staticClass, global::java.lang.RunnableDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static RunnableDelegateWrapper()

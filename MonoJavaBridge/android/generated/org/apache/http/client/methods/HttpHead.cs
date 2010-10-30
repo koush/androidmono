@@ -14,36 +14,36 @@ namespace org.apache.http.client.methods
 				return getMethod();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMethod31925;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String getMethod()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpHead.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpHead._getMethod31925) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.client.methods.HttpHead.staticClass, "getMethod", "()Ljava/lang/String;", ref global::org.apache.http.client.methods.HttpHead._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpHead31926;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public HttpHead() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpHead._HttpHead31926.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpHead._HttpHead31926 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31926);
+			if (global::org.apache.http.client.methods.HttpHead._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpHead._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._m1);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpHead31927;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public HttpHead(java.net.URI arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpHead._HttpHead31927.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpHead._HttpHead31927 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "(Ljava/net/URI;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.methods.HttpHead._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpHead._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "(Ljava/net/URI;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HttpHead31928;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public HttpHead(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.methods.HttpHead._HttpHead31928.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.methods.HttpHead._HttpHead31928 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.methods.HttpHead._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.methods.HttpHead._m3 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.methods.HttpHead.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String METHOD_NAME

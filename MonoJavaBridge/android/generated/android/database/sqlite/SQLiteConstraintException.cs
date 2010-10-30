@@ -7,22 +7,22 @@ namespace android.database.sqlite
 		protected SQLiteConstraintException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SQLiteConstraintException4713;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SQLiteConstraintException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4713.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4713 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteConstraintException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4713);
+			if (global::android.database.sqlite.SQLiteConstraintException._m0.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteConstraintException._m0 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteConstraintException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SQLiteConstraintException4714;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public SQLiteConstraintException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4714.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4714 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteConstraintException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.database.sqlite.SQLiteConstraintException._m1.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteConstraintException._m1 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteConstraintException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static SQLiteConstraintException()

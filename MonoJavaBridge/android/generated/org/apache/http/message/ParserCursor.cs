@@ -7,10 +7,10 @@ namespace org.apache.http.message
 		protected ParserCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString33707;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.ParserCursor.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.message.ParserCursor._toString33707) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.message.ParserCursor.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.message.ParserCursor._m0) as java.lang.String;
 		}
 		public new int LowerBound
 		{
@@ -19,10 +19,10 @@ namespace org.apache.http.message
 				return getLowerBound();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLowerBound33708;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getLowerBound()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getLowerBound", "()I", ref global::org.apache.http.message.ParserCursor._getLowerBound33708);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getLowerBound", "()I", ref global::org.apache.http.message.ParserCursor._m1);
 		}
 		public new int UpperBound
 		{
@@ -31,10 +31,10 @@ namespace org.apache.http.message
 				return getUpperBound();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUpperBound33709;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getUpperBound()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getUpperBound", "()I", ref global::org.apache.http.message.ParserCursor._getUpperBound33709);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getUpperBound", "()I", ref global::org.apache.http.message.ParserCursor._m2);
 		}
 		public new int Pos
 		{
@@ -43,28 +43,28 @@ namespace org.apache.http.message
 				return getPos();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPos33710;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getPos()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getPos", "()I", ref global::org.apache.http.message.ParserCursor._getPos33710);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "getPos", "()I", ref global::org.apache.http.message.ParserCursor._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _updatePos33711;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void updatePos(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "updatePos", "(I)V", ref global::org.apache.http.message.ParserCursor._updatePos33711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "updatePos", "(I)V", ref global::org.apache.http.message.ParserCursor._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _atEnd33712;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool atEnd()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "atEnd", "()Z", ref global::org.apache.http.message.ParserCursor._atEnd33712);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.message.ParserCursor.staticClass, "atEnd", "()Z", ref global::org.apache.http.message.ParserCursor._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _ParserCursor33713;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public ParserCursor(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.message.ParserCursor._ParserCursor33713.native == global::System.IntPtr.Zero)
-				global::org.apache.http.message.ParserCursor._ParserCursor33713 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.ParserCursor.staticClass, "<init>", "(II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.ParserCursor.staticClass, global::org.apache.http.message.ParserCursor._ParserCursor33713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.message.ParserCursor._m6.native == global::System.IntPtr.Zero)
+				global::org.apache.http.message.ParserCursor._m6 = @__env.GetMethodIDNoThrow(global::org.apache.http.message.ParserCursor.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.ParserCursor.staticClass, global::org.apache.http.message.ParserCursor._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static ParserCursor()

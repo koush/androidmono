@@ -14,13 +14,13 @@ namespace java.text
 			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _Field25519;
+			private static global::MonoJavaBridge.MethodId _m0;
 			protected Field(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.text.Format.Field._Field25519.native == global::System.IntPtr.Zero)
-					global::java.text.Format.Field._Field25519 = @__env.GetMethodIDNoThrow(global::java.text.Format.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.Field.staticClass, global::java.text.Format.Field._Field25519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::java.text.Format.Field._m0.native == global::System.IntPtr.Zero)
+					global::java.text.Format.Field._m0 = @__env.GetMethodIDNoThrow(global::java.text.Format.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.Field.staticClass, global::java.text.Format.Field._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			static Field()
@@ -32,37 +32,37 @@ namespace java.text
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _clone25520;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.Format._clone25520) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.Format._m0) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25521;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String format(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.Format.staticClass, "format", "(Ljava/lang/Object;)Ljava/lang/String;", ref global::java.text.Format._format25521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.Format.staticClass, "format", "(Ljava/lang/Object;)Ljava/lang/String;", ref global::java.text.Format._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25522;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
-		internal static global::MonoJavaBridge.MethodId _parseObject25523;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.Object parseObject(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format.staticClass, "parseObject", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::java.text.Format._parseObject25523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format.staticClass, "parseObject", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::java.text.Format._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _parseObject25524;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1);
-		internal static global::MonoJavaBridge.MethodId _formatToCharacterIterator25525;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.Format.staticClass, "formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;", ref global::java.text.Format._formatToCharacterIterator25525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.text.AttributedCharacterIterator;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.text.AttributedCharacterIterator>(this, global::java.text.Format.staticClass, "formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;", ref global::java.text.Format._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.text.AttributedCharacterIterator;
 		}
-		internal static global::MonoJavaBridge.MethodId _Format25526;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected Format() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.Format._Format25526.native == global::System.IntPtr.Zero)
-				global::java.text.Format._Format25526 = @__env.GetMethodIDNoThrow(global::java.text.Format.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.staticClass, global::java.text.Format._Format25526);
+			if (global::java.text.Format._m6.native == global::System.IntPtr.Zero)
+				global::java.text.Format._m6 = @__env.GetMethodIDNoThrow(global::java.text.Format.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Format.staticClass, global::java.text.Format._m6);
 			Init(@__env, handle);
 		}
 		static Format()
@@ -82,15 +82,15 @@ namespace java.text
 		internal Format_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _format25527;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.Format_.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.Format_._format25527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.Format_.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.Format_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _parseObject25528;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format_.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", ref global::java.text.Format_._parseObject25528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.Format_.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", ref global::java.text.Format_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
 		static Format_()
 		{

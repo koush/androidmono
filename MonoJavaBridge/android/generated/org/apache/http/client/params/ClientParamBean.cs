@@ -14,10 +14,10 @@ namespace org.apache.http.client.@params
 				setConnectionManagerFactoryClassName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setConnectionManagerFactoryClassName31999;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setConnectionManagerFactoryClassName(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setConnectionManagerFactoryClassName", "(Ljava/lang/String;)V", ref global::org.apache.http.client.@params.ClientParamBean._setConnectionManagerFactoryClassName31999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setConnectionManagerFactoryClassName", "(Ljava/lang/String;)V", ref global::org.apache.http.client.@params.ClientParamBean._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.conn.ClientConnectionManagerFactory ConnectionManagerFactory
 		{
@@ -26,10 +26,10 @@ namespace org.apache.http.client.@params
 				setConnectionManagerFactory(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setConnectionManagerFactory32000;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void setConnectionManagerFactory(org.apache.http.conn.ClientConnectionManagerFactory arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setConnectionManagerFactory", "(Lorg/apache/http/conn/ClientConnectionManagerFactory;)V", ref global::org.apache.http.client.@params.ClientParamBean._setConnectionManagerFactory32000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setConnectionManagerFactory", "(Lorg/apache/http/conn/ClientConnectionManagerFactory;)V", ref global::org.apache.http.client.@params.ClientParamBean._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool HandleRedirects
 		{
@@ -38,10 +38,10 @@ namespace org.apache.http.client.@params
 				setHandleRedirects(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setHandleRedirects32001;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setHandleRedirects(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setHandleRedirects", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._setHandleRedirects32001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setHandleRedirects", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool RejectRelativeRedirect
 		{
@@ -50,10 +50,10 @@ namespace org.apache.http.client.@params
 				setRejectRelativeRedirect(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setRejectRelativeRedirect32002;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void setRejectRelativeRedirect(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setRejectRelativeRedirect", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._setRejectRelativeRedirect32002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setRejectRelativeRedirect", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaxRedirects
 		{
@@ -62,10 +62,10 @@ namespace org.apache.http.client.@params
 				setMaxRedirects(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxRedirects32003;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setMaxRedirects(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setMaxRedirects", "(I)V", ref global::org.apache.http.client.@params.ClientParamBean._setMaxRedirects32003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setMaxRedirects", "(I)V", ref global::org.apache.http.client.@params.ClientParamBean._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool AllowCircularRedirects
 		{
@@ -74,10 +74,10 @@ namespace org.apache.http.client.@params
 				setAllowCircularRedirects(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAllowCircularRedirects32004;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void setAllowCircularRedirects(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setAllowCircularRedirects", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._setAllowCircularRedirects32004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setAllowCircularRedirects", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool HandleAuthentication
 		{
@@ -86,10 +86,10 @@ namespace org.apache.http.client.@params
 				setHandleAuthentication(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setHandleAuthentication32005;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setHandleAuthentication(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setHandleAuthentication", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._setHandleAuthentication32005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setHandleAuthentication", "(Z)V", ref global::org.apache.http.client.@params.ClientParamBean._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String CookiePolicy
 		{
@@ -98,10 +98,10 @@ namespace org.apache.http.client.@params
 				setCookiePolicy(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setCookiePolicy32006;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setCookiePolicy(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setCookiePolicy", "(Ljava/lang/String;)V", ref global::org.apache.http.client.@params.ClientParamBean._setCookiePolicy32006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setCookiePolicy", "(Ljava/lang/String;)V", ref global::org.apache.http.client.@params.ClientParamBean._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.HttpHost VirtualHost
 		{
@@ -110,10 +110,10 @@ namespace org.apache.http.client.@params
 				setVirtualHost(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setVirtualHost32007;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setVirtualHost(org.apache.http.HttpHost arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setVirtualHost", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.client.@params.ClientParamBean._setVirtualHost32007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setVirtualHost", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.client.@params.ClientParamBean._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Collection DefaultHeaders
 		{
@@ -122,10 +122,10 @@ namespace org.apache.http.client.@params
 				setDefaultHeaders(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDefaultHeaders32008;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setDefaultHeaders(java.util.Collection arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHeaders", "(Ljava/util/Collection;)V", ref global::org.apache.http.client.@params.ClientParamBean._setDefaultHeaders32008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHeaders", "(Ljava/util/Collection;)V", ref global::org.apache.http.client.@params.ClientParamBean._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.HttpHost DefaultHost
 		{
@@ -134,18 +134,18 @@ namespace org.apache.http.client.@params
 				setDefaultHost(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDefaultHost32009;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setDefaultHost(org.apache.http.HttpHost arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHost", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.client.@params.ClientParamBean._setDefaultHost32009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.client.@params.ClientParamBean.staticClass, "setDefaultHost", "(Lorg/apache/http/HttpHost;)V", ref global::org.apache.http.client.@params.ClientParamBean._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ClientParamBean32010;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public ClientParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.client.@params.ClientParamBean._ClientParamBean32010.native == global::System.IntPtr.Zero)
-				global::org.apache.http.client.@params.ClientParamBean._ClientParamBean32010 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.@params.ClientParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.@params.ClientParamBean.staticClass, global::org.apache.http.client.@params.ClientParamBean._ClientParamBean32010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.client.@params.ClientParamBean._m11.native == global::System.IntPtr.Zero)
+				global::org.apache.http.client.@params.ClientParamBean._m11 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.@params.ClientParamBean.staticClass, "<init>", "(Lorg/apache/http/params/HttpParams;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.@params.ClientParamBean.staticClass, global::org.apache.http.client.@params.ClientParamBean._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ClientParamBean()

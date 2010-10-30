@@ -7,36 +7,36 @@ namespace android.view.animation
 		protected AccelerateInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterpolation15566;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual float getInterpolation(float arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.AccelerateInterpolator.staticClass, "getInterpolation", "(F)F", ref global::android.view.animation.AccelerateInterpolator._getInterpolation15566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.AccelerateInterpolator.staticClass, "getInterpolation", "(F)F", ref global::android.view.animation.AccelerateInterpolator._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AccelerateInterpolator15567;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public AccelerateInterpolator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15567.native == global::System.IntPtr.Zero)
-				global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15567 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15567);
+			if (global::android.view.animation.AccelerateInterpolator._m1.native == global::System.IntPtr.Zero)
+				global::android.view.animation.AccelerateInterpolator._m1 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._m1);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AccelerateInterpolator15568;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public AccelerateInterpolator(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15568.native == global::System.IntPtr.Zero)
-				global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15568 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(F)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.animation.AccelerateInterpolator._m2.native == global::System.IntPtr.Zero)
+				global::android.view.animation.AccelerateInterpolator._m2 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(F)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AccelerateInterpolator15569;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public AccelerateInterpolator(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15569.native == global::System.IntPtr.Zero)
-				global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15569 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator15569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.animation.AccelerateInterpolator._m3.native == global::System.IntPtr.Zero)
+				global::android.view.animation.AccelerateInterpolator._m3 = @__env.GetMethodIDNoThrow(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static AccelerateInterpolator()

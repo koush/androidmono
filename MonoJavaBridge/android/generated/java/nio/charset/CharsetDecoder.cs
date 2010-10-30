@@ -7,120 +7,120 @@ namespace java.nio.charset
 		protected CharsetDecoder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _charset22747;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.nio.charset.Charset charset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "charset", "()Ljava/nio/charset/Charset;", ref global::java.nio.charset.CharsetDecoder._charset22747) as java.nio.charset.Charset;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "charset", "()Ljava/nio/charset/Charset;", ref global::java.nio.charset.CharsetDecoder._m0) as java.nio.charset.Charset;
 		}
-		internal static global::MonoJavaBridge.MethodId _decode22748;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.nio.charset.CoderResult decode(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1, bool arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "decode", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;Z)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._decode22748, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.charset.CoderResult;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "decode", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;Z)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.nio.charset.CoderResult;
 		}
-		internal static global::MonoJavaBridge.MethodId _decode22749;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.nio.CharBuffer decode(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;", ref global::java.nio.charset.CharsetDecoder._decode22749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.CharBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;", ref global::java.nio.charset.CharsetDecoder._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.CharBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _flush22750;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.nio.charset.CoderResult flush(java.nio.CharBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "flush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._flush22750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CoderResult;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "flush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CoderResult;
 		}
-		internal static global::MonoJavaBridge.MethodId _reset22751;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.nio.charset.CharsetDecoder reset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "reset", "()Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._reset22751) as java.nio.charset.CharsetDecoder;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "reset", "()Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._m4) as java.nio.charset.CharsetDecoder;
 		}
-		internal static global::MonoJavaBridge.MethodId _onMalformedInput22752;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.nio.charset.CharsetDecoder onMalformedInput(java.nio.charset.CodingErrorAction arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "onMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._onMalformedInput22752, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "onMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
 		}
-		internal static global::MonoJavaBridge.MethodId _onUnmappableCharacter22753;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.nio.charset.CharsetDecoder onUnmappableCharacter(java.nio.charset.CodingErrorAction arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "onUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._onUnmappableCharacter22753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "onUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
 		}
-		internal static global::MonoJavaBridge.MethodId _replacement22754;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.lang.String replacement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.CharsetDecoder.staticClass, "replacement", "()Ljava/lang/String;", ref global::java.nio.charset.CharsetDecoder._replacement22754) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.charset.CharsetDecoder.staticClass, "replacement", "()Ljava/lang/String;", ref global::java.nio.charset.CharsetDecoder._m7) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _malformedInputAction22755;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::java.nio.charset.CodingErrorAction malformedInputAction()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "malformedInputAction", "()Ljava/nio/charset/CodingErrorAction;", ref global::java.nio.charset.CharsetDecoder._malformedInputAction22755) as java.nio.charset.CodingErrorAction;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "malformedInputAction", "()Ljava/nio/charset/CodingErrorAction;", ref global::java.nio.charset.CharsetDecoder._m8) as java.nio.charset.CodingErrorAction;
 		}
-		internal static global::MonoJavaBridge.MethodId _unmappableCharacterAction22756;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::java.nio.charset.CodingErrorAction unmappableCharacterAction()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "unmappableCharacterAction", "()Ljava/nio/charset/CodingErrorAction;", ref global::java.nio.charset.CharsetDecoder._unmappableCharacterAction22756) as java.nio.charset.CodingErrorAction;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "unmappableCharacterAction", "()Ljava/nio/charset/CodingErrorAction;", ref global::java.nio.charset.CharsetDecoder._m9) as java.nio.charset.CodingErrorAction;
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceWith22757;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.nio.charset.CharsetDecoder replaceWith(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "replaceWith", "(Ljava/lang/String;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._replaceWith22757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "replaceWith", "(Ljava/lang/String;)Ljava/nio/charset/CharsetDecoder;", ref global::java.nio.charset.CharsetDecoder._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CharsetDecoder;
 		}
-		internal static global::MonoJavaBridge.MethodId _implReplaceWith22758;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected virtual void implReplaceWith(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implReplaceWith", "(Ljava/lang/String;)V", ref global::java.nio.charset.CharsetDecoder._implReplaceWith22758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implReplaceWith", "(Ljava/lang/String;)V", ref global::java.nio.charset.CharsetDecoder._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _implOnMalformedInput22759;
+		private static global::MonoJavaBridge.MethodId _m12;
 		protected virtual void implOnMalformedInput(java.nio.charset.CodingErrorAction arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implOnMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)V", ref global::java.nio.charset.CharsetDecoder._implOnMalformedInput22759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implOnMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)V", ref global::java.nio.charset.CharsetDecoder._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _implOnUnmappableCharacter22760;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected virtual void implOnUnmappableCharacter(java.nio.charset.CodingErrorAction arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implOnUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)V", ref global::java.nio.charset.CharsetDecoder._implOnUnmappableCharacter22760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implOnUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)V", ref global::java.nio.charset.CharsetDecoder._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _implFlush22761;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected virtual global::java.nio.charset.CoderResult implFlush(java.nio.CharBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implFlush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._implFlush22761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CoderResult;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implFlush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.charset.CoderResult;
 		}
-		internal static global::MonoJavaBridge.MethodId _implReset22762;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected virtual void implReset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implReset", "()V", ref global::java.nio.charset.CharsetDecoder._implReset22762);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "implReset", "()V", ref global::java.nio.charset.CharsetDecoder._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _maxCharsPerByte22763;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual float maxCharsPerByte()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "maxCharsPerByte", "()F", ref global::java.nio.charset.CharsetDecoder._maxCharsPerByte22763);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "maxCharsPerByte", "()F", ref global::java.nio.charset.CharsetDecoder._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _decodeLoop22764;
+		private static global::MonoJavaBridge.MethodId _m17;
 		protected abstract global::java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1);
-		internal static global::MonoJavaBridge.MethodId _averageCharsPerByte22765;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual float averageCharsPerByte()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "averageCharsPerByte", "()F", ref global::java.nio.charset.CharsetDecoder._averageCharsPerByte22765);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "averageCharsPerByte", "()F", ref global::java.nio.charset.CharsetDecoder._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _isAutoDetecting22766;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public virtual bool isAutoDetecting()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "isAutoDetecting", "()Z", ref global::java.nio.charset.CharsetDecoder._isAutoDetecting22766);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "isAutoDetecting", "()Z", ref global::java.nio.charset.CharsetDecoder._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _isCharsetDetected22767;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual bool isCharsetDetected()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "isCharsetDetected", "()Z", ref global::java.nio.charset.CharsetDecoder._isCharsetDetected22767);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "isCharsetDetected", "()Z", ref global::java.nio.charset.CharsetDecoder._m20);
 		}
-		internal static global::MonoJavaBridge.MethodId _detectedCharset22768;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual global::java.nio.charset.Charset detectedCharset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "detectedCharset", "()Ljava/nio/charset/Charset;", ref global::java.nio.charset.CharsetDecoder._detectedCharset22768) as java.nio.charset.Charset;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, "detectedCharset", "()Ljava/nio/charset/Charset;", ref global::java.nio.charset.CharsetDecoder._m21) as java.nio.charset.Charset;
 		}
-		internal static global::MonoJavaBridge.MethodId _CharsetDecoder22769;
+		private static global::MonoJavaBridge.MethodId _m22;
 		protected CharsetDecoder(java.nio.charset.Charset arg0, float arg1, float arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.charset.CharsetDecoder._CharsetDecoder22769.native == global::System.IntPtr.Zero)
-				global::java.nio.charset.CharsetDecoder._CharsetDecoder22769 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharsetDecoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._CharsetDecoder22769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::java.nio.charset.CharsetDecoder._m22.native == global::System.IntPtr.Zero)
+				global::java.nio.charset.CharsetDecoder._m22 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharsetDecoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static CharsetDecoder()
@@ -140,10 +140,10 @@ namespace java.nio.charset
 		internal CharsetDecoder_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _decodeLoop22770;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override global::java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder_.staticClass, "decodeLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder_._decodeLoop22770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.charset.CoderResult;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.charset.CharsetDecoder_.staticClass, "decodeLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", ref global::java.nio.charset.CharsetDecoder_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.nio.charset.CoderResult;
 		}
 		static CharsetDecoder_()
 		{

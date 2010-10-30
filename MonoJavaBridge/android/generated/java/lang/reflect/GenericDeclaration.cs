@@ -13,10 +13,10 @@ namespace java.lang.reflect
 		internal GenericDeclaration_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getTypeParameters21082;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.reflect.TypeVariable[] java.lang.reflect.GenericDeclaration.getTypeParameters()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.TypeVariable>(this, global::java.lang.reflect.GenericDeclaration_.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;", ref global::java.lang.reflect.GenericDeclaration_._getTypeParameters21082) as java.lang.reflect.TypeVariable[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.reflect.TypeVariable>(this, global::java.lang.reflect.GenericDeclaration_.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;", ref global::java.lang.reflect.GenericDeclaration_._m0) as java.lang.reflect.TypeVariable[];
 		}
 		static GenericDeclaration_()
 		{

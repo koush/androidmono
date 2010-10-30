@@ -14,63 +14,63 @@ namespace android.content
 				return getNumSuccessfulYieldPoints();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNumSuccessfulYieldPoints3483;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int getNumSuccessfulYieldPoints()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I", ref global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints3483);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I", ref global::android.content.OperationApplicationException._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3484;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public OperationApplicationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3484.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3484 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3484);
+			if (global::android.content.OperationApplicationException._m1.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m1 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m1);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3485;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public OperationApplicationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3485.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3485 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.OperationApplicationException._m2.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m2 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3486;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public OperationApplicationException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3486.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3486 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.OperationApplicationException._m3.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m3 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3487;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public OperationApplicationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3487.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3487 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.OperationApplicationException._m4.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m4 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3488;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public OperationApplicationException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3488.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3488 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.content.OperationApplicationException._m5.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m5 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OperationApplicationException3489;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public OperationApplicationException(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.OperationApplicationException._OperationApplicationException3489.native == global::System.IntPtr.Zero)
-				global::android.content.OperationApplicationException._OperationApplicationException3489 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException3489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.content.OperationApplicationException._m6.native == global::System.IntPtr.Zero)
+				global::android.content.OperationApplicationException._m6 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static OperationApplicationException()

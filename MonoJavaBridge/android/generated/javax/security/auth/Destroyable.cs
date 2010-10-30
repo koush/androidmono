@@ -14,15 +14,15 @@ namespace javax.security.auth
 		internal Destroyable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _destroy30167;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void javax.security.auth.Destroyable.destroy()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V", ref global::javax.security.auth.Destroyable_._destroy30167);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V", ref global::javax.security.auth.Destroyable_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDestroyed30168;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool javax.security.auth.Destroyable.isDestroyed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z", ref global::javax.security.auth.Destroyable_._isDestroyed30168);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z", ref global::javax.security.auth.Destroyable_._m1);
 		}
 		static Destroyable_()
 		{

@@ -7,13 +7,13 @@ namespace android.os
 		protected RemoteException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _RemoteException10195;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public RemoteException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.RemoteException._RemoteException10195.native == global::System.IntPtr.Zero)
-				global::android.os.RemoteException._RemoteException10195 = @__env.GetMethodIDNoThrow(global::android.os.RemoteException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RemoteException.staticClass, global::android.os.RemoteException._RemoteException10195);
+			if (global::android.os.RemoteException._m0.native == global::System.IntPtr.Zero)
+				global::android.os.RemoteException._m0 = @__env.GetMethodIDNoThrow(global::android.os.RemoteException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RemoteException.staticClass, global::android.os.RemoteException._m0);
 			Init(@__env, handle);
 		}
 		static RemoteException()

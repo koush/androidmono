@@ -7,92 +7,92 @@ namespace android.preference
 		protected PreferenceActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate10393;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onCreate(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._onCreate10393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDestroy10394;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override void onDestroy()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onDestroy", "()V", ref global::android.preference.PreferenceActivity._onDestroy10394);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onDestroy", "()V", ref global::android.preference.PreferenceActivity._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState10395;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._onRestoreInstanceState10395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onNewIntent10396;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void onNewIntent(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onNewIntent", "(Landroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._onNewIntent10396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onNewIntent", "(Landroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState10397;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected override void onSaveInstanceState(android.os.Bundle arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onSaveInstanceState", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._onSaveInstanceState10397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onSaveInstanceState", "(Landroid/os/Bundle;)V", ref global::android.preference.PreferenceActivity._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onStop10398;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override void onStop()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onStop", "()V", ref global::android.preference.PreferenceActivity._onStop10398);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onStop", "()V", ref global::android.preference.PreferenceActivity._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _onContentChanged10399;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override void onContentChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onContentChanged", "()V", ref global::android.preference.PreferenceActivity._onContentChanged10399);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onContentChanged", "()V", ref global::android.preference.PreferenceActivity._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _onActivityResult10400;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected override void onActivityResult(int arg0, int arg1, android.content.Intent arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onActivityResult", "(IILandroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._onActivityResult10400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "onActivityResult", "(IILandroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreferenceManager10401;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::android.preference.PreferenceManager getPreferenceManager()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.preference.PreferenceActivity.staticClass, "getPreferenceManager", "()Landroid/preference/PreferenceManager;", ref global::android.preference.PreferenceActivity._getPreferenceManager10401) as android.preference.PreferenceManager;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.preference.PreferenceActivity.staticClass, "getPreferenceManager", "()Landroid/preference/PreferenceManager;", ref global::android.preference.PreferenceActivity._m8) as android.preference.PreferenceManager;
 		}
-		internal static global::MonoJavaBridge.MethodId _findPreference10402;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::android.preference.Preference findPreference(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.preference.PreferenceActivity.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", ref global::android.preference.PreferenceActivity._findPreference10402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.preference.Preference;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.preference.PreferenceActivity.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", ref global::android.preference.PreferenceActivity._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.preference.Preference;
 		}
 		public android.preference.Preference findPreference(string arg0)
 		{
 			return findPreference((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPreferenceScreen10403;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual void setPreferenceScreen(android.preference.PreferenceScreen arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", ref global::android.preference.PreferenceActivity._setPreferenceScreen10403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", ref global::android.preference.PreferenceActivity._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreferenceScreen10404;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual global::android.preference.PreferenceScreen getPreferenceScreen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.preference.PreferenceScreen>(this, global::android.preference.PreferenceActivity.staticClass, "getPreferenceScreen", "()Landroid/preference/PreferenceScreen;", ref global::android.preference.PreferenceActivity._getPreferenceScreen10404) as android.preference.PreferenceScreen;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.preference.PreferenceScreen>(this, global::android.preference.PreferenceActivity.staticClass, "getPreferenceScreen", "()Landroid/preference/PreferenceScreen;", ref global::android.preference.PreferenceActivity._m11) as android.preference.PreferenceScreen;
 		}
-		internal static global::MonoJavaBridge.MethodId _addPreferencesFromIntent10405;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void addPreferencesFromIntent(android.content.Intent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromIntent", "(Landroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._addPreferencesFromIntent10405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromIntent", "(Landroid/content/Intent;)V", ref global::android.preference.PreferenceActivity._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addPreferencesFromResource10406;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void addPreferencesFromResource(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromResource", "(I)V", ref global::android.preference.PreferenceActivity._addPreferencesFromResource10406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromResource", "(I)V", ref global::android.preference.PreferenceActivity._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onPreferenceTreeClick10407;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual bool onPreferenceTreeClick(android.preference.PreferenceScreen arg0, android.preference.Preference arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z", ref global::android.preference.PreferenceActivity._onPreferenceTreeClick10407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z", ref global::android.preference.PreferenceActivity._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _PreferenceActivity10408;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public PreferenceActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.preference.PreferenceActivity._PreferenceActivity10408.native == global::System.IntPtr.Zero)
-				global::android.preference.PreferenceActivity._PreferenceActivity10408 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._PreferenceActivity10408);
+			if (global::android.preference.PreferenceActivity._m15.native == global::System.IntPtr.Zero)
+				global::android.preference.PreferenceActivity._m15 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._m15);
 			Init(@__env, handle);
 		}
 		static PreferenceActivity()

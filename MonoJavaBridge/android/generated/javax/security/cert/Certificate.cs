@@ -7,33 +7,33 @@ namespace javax.security.cert
 		protected Certificate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals30224;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.cert.Certificate.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.security.cert.Certificate._equals30224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.security.cert.Certificate.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::javax.security.cert.Certificate._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString30225;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::java.lang.String toString();
-		internal static global::MonoJavaBridge.MethodId _hashCode30226;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.security.cert.Certificate.staticClass, "hashCode", "()I", ref global::javax.security.cert.Certificate._hashCode30226);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.security.cert.Certificate.staticClass, "hashCode", "()I", ref global::javax.security.cert.Certificate._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded30227;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract byte[] getEncoded();
-		internal static global::MonoJavaBridge.MethodId _verify30228;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract void verify(java.security.PublicKey arg0);
-		internal static global::MonoJavaBridge.MethodId _verify30229;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract void verify(java.security.PublicKey arg0, java.lang.String arg1);
-		internal static global::MonoJavaBridge.MethodId _getPublicKey30230;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract global::java.security.PublicKey getPublicKey();
-		internal static global::MonoJavaBridge.MethodId _Certificate30231;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public Certificate() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.security.cert.Certificate._Certificate30231.native == global::System.IntPtr.Zero)
-				global::javax.security.cert.Certificate._Certificate30231 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.Certificate.staticClass, global::javax.security.cert.Certificate._Certificate30231);
+			if (global::javax.security.cert.Certificate._m7.native == global::System.IntPtr.Zero)
+				global::javax.security.cert.Certificate._m7 = @__env.GetMethodIDNoThrow(global::javax.security.cert.Certificate.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.Certificate.staticClass, global::javax.security.cert.Certificate._m7);
 			Init(@__env, handle);
 		}
 		static Certificate()
@@ -53,30 +53,30 @@ namespace javax.security.cert
 		internal Certificate_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString30232;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.security.cert.Certificate_.staticClass, "toString", "()Ljava/lang/String;", ref global::javax.security.cert.Certificate_._toString30232) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.security.cert.Certificate_.staticClass, "toString", "()Ljava/lang/String;", ref global::javax.security.cert.Certificate_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded30233;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override byte[] getEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.security.cert.Certificate_.staticClass, "getEncoded", "()[B", ref global::javax.security.cert.Certificate_._getEncoded30233) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.security.cert.Certificate_.staticClass, "getEncoded", "()[B", ref global::javax.security.cert.Certificate_._m1) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _verify30234;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void verify(java.security.PublicKey arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V", ref global::javax.security.cert.Certificate_._verify30234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;)V", ref global::javax.security.cert.Certificate_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _verify30235;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void verify(java.security.PublicKey arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", ref global::javax.security.cert.Certificate_._verify30235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.cert.Certificate_.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", ref global::javax.security.cert.Certificate_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicKey30236;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::java.security.PublicKey getPublicKey()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::javax.security.cert.Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;", ref global::javax.security.cert.Certificate_._getPublicKey30236) as java.security.PublicKey;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PublicKey>(this, global::javax.security.cert.Certificate_.staticClass, "getPublicKey", "()Ljava/security/PublicKey;", ref global::javax.security.cert.Certificate_._m4) as java.security.PublicKey;
 		}
 		static Certificate_()
 		{

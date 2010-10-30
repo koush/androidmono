@@ -7,31 +7,31 @@ namespace java.lang
 		protected Number(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _byteValue20354;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual byte byteValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::java.lang.Number.staticClass, "byteValue", "()B", ref global::java.lang.Number._byteValue20354);
+			return global::MonoJavaBridge.JavaBridge.CallByteMethod(this, global::java.lang.Number.staticClass, "byteValue", "()B", ref global::java.lang.Number._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _shortValue20355;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual short shortValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.lang.Number.staticClass, "shortValue", "()S", ref global::java.lang.Number._shortValue20355);
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::java.lang.Number.staticClass, "shortValue", "()S", ref global::java.lang.Number._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _intValue20356;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract int intValue();
-		internal static global::MonoJavaBridge.MethodId _longValue20357;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract long longValue();
-		internal static global::MonoJavaBridge.MethodId _floatValue20358;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract float floatValue();
-		internal static global::MonoJavaBridge.MethodId _doubleValue20359;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract double doubleValue();
-		internal static global::MonoJavaBridge.MethodId _Number20360;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public Number() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.lang.Number._Number20360.native == global::System.IntPtr.Zero)
-				global::java.lang.Number._Number20360 = @__env.GetMethodIDNoThrow(global::java.lang.Number.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Number.staticClass, global::java.lang.Number._Number20360);
+			if (global::java.lang.Number._m6.native == global::System.IntPtr.Zero)
+				global::java.lang.Number._m6 = @__env.GetMethodIDNoThrow(global::java.lang.Number.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Number.staticClass, global::java.lang.Number._m6);
 			Init(@__env, handle);
 		}
 		static Number()
@@ -51,25 +51,25 @@ namespace java.lang
 		internal Number_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _intValue20361;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int intValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Number_.staticClass, "intValue", "()I", ref global::java.lang.Number_._intValue20361);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.Number_.staticClass, "intValue", "()I", ref global::java.lang.Number_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _longValue20362;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override long longValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.lang.Number_.staticClass, "longValue", "()J", ref global::java.lang.Number_._longValue20362);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.lang.Number_.staticClass, "longValue", "()J", ref global::java.lang.Number_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _floatValue20363;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override float floatValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.lang.Number_.staticClass, "floatValue", "()F", ref global::java.lang.Number_._floatValue20363);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::java.lang.Number_.staticClass, "floatValue", "()F", ref global::java.lang.Number_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _doubleValue20364;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override double doubleValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.lang.Number_.staticClass, "doubleValue", "()D", ref global::java.lang.Number_._doubleValue20364);
+			return global::MonoJavaBridge.JavaBridge.CallDoubleMethod(this, global::java.lang.Number_.staticClass, "doubleValue", "()D", ref global::java.lang.Number_._m3);
 		}
 		static Number_()
 		{

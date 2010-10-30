@@ -33,110 +33,110 @@ namespace javax.net.ssl
 		internal SSLSession_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue30037;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object javax.net.ssl.SSLSession.getValue(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.net.ssl.SSLSession_._getValue30037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/Object;", ref global::javax.net.ssl.SSLSession_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getId30038;
+		private static global::MonoJavaBridge.MethodId _m1;
 		byte[] javax.net.ssl.SSLSession.getId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.net.ssl.SSLSession_.staticClass, "getId", "()[B", ref global::javax.net.ssl.SSLSession_._getId30038) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.net.ssl.SSLSession_.staticClass, "getId", "()[B", ref global::javax.net.ssl.SSLSession_._m1) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getProtocol30039;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String javax.net.ssl.SSLSession.getProtocol()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getProtocol", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._getProtocol30039) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getProtocol", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._m2) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _putValue30040;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void javax.net.ssl.SSLSession.putValue(java.lang.String arg0, java.lang.Object arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "putValue", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.net.ssl.SSLSession_._putValue30040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "putValue", "(Ljava/lang/String;Ljava/lang/Object;)V", ref global::javax.net.ssl.SSLSession_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _isValid30041;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool javax.net.ssl.SSLSession.isValid()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "isValid", "()Z", ref global::javax.net.ssl.SSLSession_._isValid30041);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "isValid", "()Z", ref global::javax.net.ssl.SSLSession_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidate30042;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void javax.net.ssl.SSLSession.invalidate()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "invalidate", "()V", ref global::javax.net.ssl.SSLSession_._invalidate30042);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "invalidate", "()V", ref global::javax.net.ssl.SSLSession_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCipherSuite30043;
+		private static global::MonoJavaBridge.MethodId _m6;
 		global::java.lang.String javax.net.ssl.SSLSession.getCipherSuite()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getCipherSuite", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._getCipherSuite30043) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getCipherSuite", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._m6) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal30044;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::java.security.Principal javax.net.ssl.SSLSession.getPeerPrincipal()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;", ref global::javax.net.ssl.SSLSession_._getPeerPrincipal30044) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;", ref global::javax.net.ssl.SSLSession_._m7) as java.security.Principal;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal30045;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::java.security.Principal javax.net.ssl.SSLSession.getLocalPrincipal()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::javax.net.ssl.SSLSession_.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;", ref global::javax.net.ssl.SSLSession_._getLocalPrincipal30045) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::javax.net.ssl.SSLSession_.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;", ref global::javax.net.ssl.SSLSession_._m8) as java.security.Principal;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalCertificates30046;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::java.security.cert.Certificate[] javax.net.ssl.SSLSession.getLocalCertificates()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getLocalCertificates", "()[Ljava/security/cert/Certificate;", ref global::javax.net.ssl.SSLSession_._getLocalCertificates30046) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getLocalCertificates", "()[Ljava/security/cert/Certificate;", ref global::javax.net.ssl.SSLSession_._m9) as java.security.cert.Certificate[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerCertificates30047;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::java.security.cert.Certificate[] javax.net.ssl.SSLSession.getPeerCertificates()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerCertificates", "()[Ljava/security/cert/Certificate;", ref global::javax.net.ssl.SSLSession_._getPeerCertificates30047) as java.security.cert.Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerCertificates", "()[Ljava/security/cert/Certificate;", ref global::javax.net.ssl.SSLSession_._m10) as java.security.cert.Certificate[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerCertificateChain30048;
+		private static global::MonoJavaBridge.MethodId _m11;
 		global::javax.security.cert.X509Certificate[] javax.net.ssl.SSLSession.getPeerCertificateChain()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.security.cert.X509Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;", ref global::javax.net.ssl.SSLSession_._getPeerCertificateChain30048) as javax.security.cert.X509Certificate[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<javax.security.cert.X509Certificate>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;", ref global::javax.net.ssl.SSLSession_._m11) as javax.security.cert.X509Certificate[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getSessionContext30049;
+		private static global::MonoJavaBridge.MethodId _m12;
 		global::javax.net.ssl.SSLSessionContext javax.net.ssl.SSLSession.getSessionContext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.net.ssl.SSLSessionContext>(this, global::javax.net.ssl.SSLSession_.staticClass, "getSessionContext", "()Ljavax/net/ssl/SSLSessionContext;", ref global::javax.net.ssl.SSLSession_._getSessionContext30049) as javax.net.ssl.SSLSessionContext;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.net.ssl.SSLSessionContext>(this, global::javax.net.ssl.SSLSession_.staticClass, "getSessionContext", "()Ljavax/net/ssl/SSLSessionContext;", ref global::javax.net.ssl.SSLSession_._m12) as javax.net.ssl.SSLSessionContext;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCreationTime30050;
+		private static global::MonoJavaBridge.MethodId _m13;
 		long javax.net.ssl.SSLSession.getCreationTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getCreationTime", "()J", ref global::javax.net.ssl.SSLSession_._getCreationTime30050);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getCreationTime", "()J", ref global::javax.net.ssl.SSLSession_._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLastAccessedTime30051;
+		private static global::MonoJavaBridge.MethodId _m14;
 		long javax.net.ssl.SSLSession.getLastAccessedTime()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getLastAccessedTime", "()J", ref global::javax.net.ssl.SSLSession_._getLastAccessedTime30051);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getLastAccessedTime", "()J", ref global::javax.net.ssl.SSLSession_._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeValue30052;
+		private static global::MonoJavaBridge.MethodId _m15;
 		void javax.net.ssl.SSLSession.removeValue(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "removeValue", "(Ljava/lang/String;)V", ref global::javax.net.ssl.SSLSession_._removeValue30052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "removeValue", "(Ljava/lang/String;)V", ref global::javax.net.ssl.SSLSession_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getValueNames30053;
+		private static global::MonoJavaBridge.MethodId _m16;
 		global::java.lang.String[] javax.net.ssl.SSLSession.getValueNames()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getValueNames", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._getValueNames30053) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getValueNames", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._m16) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerHost30054;
+		private static global::MonoJavaBridge.MethodId _m17;
 		global::java.lang.String javax.net.ssl.SSLSession.getPeerHost()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerHost", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._getPeerHost30054) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerHost", "()Ljava/lang/String;", ref global::javax.net.ssl.SSLSession_._m17) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerPort30055;
+		private static global::MonoJavaBridge.MethodId _m18;
 		int javax.net.ssl.SSLSession.getPeerPort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerPort", "()I", ref global::javax.net.ssl.SSLSession_._getPeerPort30055);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getPeerPort", "()I", ref global::javax.net.ssl.SSLSession_._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPacketBufferSize30056;
+		private static global::MonoJavaBridge.MethodId _m19;
 		int javax.net.ssl.SSLSession.getPacketBufferSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getPacketBufferSize", "()I", ref global::javax.net.ssl.SSLSession_._getPacketBufferSize30056);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getPacketBufferSize", "()I", ref global::javax.net.ssl.SSLSession_._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _getApplicationBufferSize30057;
+		private static global::MonoJavaBridge.MethodId _m20;
 		int javax.net.ssl.SSLSession.getApplicationBufferSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getApplicationBufferSize", "()I", ref global::javax.net.ssl.SSLSession_._getApplicationBufferSize30057);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::javax.net.ssl.SSLSession_.staticClass, "getApplicationBufferSize", "()I", ref global::javax.net.ssl.SSLSession_._m20);
 		}
 		static SSLSession_()
 		{

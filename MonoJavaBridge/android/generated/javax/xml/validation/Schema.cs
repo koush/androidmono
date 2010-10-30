@@ -7,17 +7,17 @@ namespace javax.xml.validation
 		protected Schema(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newValidator31180;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract global::javax.xml.validation.Validator newValidator();
-		internal static global::MonoJavaBridge.MethodId _newValidatorHandler31181;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::javax.xml.validation.ValidatorHandler newValidatorHandler();
-		internal static global::MonoJavaBridge.MethodId _Schema31182;
+		private static global::MonoJavaBridge.MethodId _m2;
 		protected Schema() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.xml.validation.Schema._Schema31182.native == global::System.IntPtr.Zero)
-				global::javax.xml.validation.Schema._Schema31182 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Schema.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Schema.staticClass, global::javax.xml.validation.Schema._Schema31182);
+			if (global::javax.xml.validation.Schema._m2.native == global::System.IntPtr.Zero)
+				global::javax.xml.validation.Schema._m2 = @__env.GetMethodIDNoThrow(global::javax.xml.validation.Schema.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Schema.staticClass, global::javax.xml.validation.Schema._m2);
 			Init(@__env, handle);
 		}
 		static Schema()
@@ -37,15 +37,15 @@ namespace javax.xml.validation
 		internal Schema_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newValidator31183;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::javax.xml.validation.Validator newValidator()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidator", "()Ljavax/xml/validation/Validator;", ref global::javax.xml.validation.Schema_._newValidator31183) as javax.xml.validation.Validator;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidator", "()Ljavax/xml/validation/Validator;", ref global::javax.xml.validation.Schema_._m0) as javax.xml.validation.Validator;
 		}
-		internal static global::MonoJavaBridge.MethodId _newValidatorHandler31184;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::javax.xml.validation.ValidatorHandler newValidatorHandler()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;", ref global::javax.xml.validation.Schema_._newValidatorHandler31184) as javax.xml.validation.ValidatorHandler;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.validation.Schema_.staticClass, "newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;", ref global::javax.xml.validation.Schema_._m1) as javax.xml.validation.ValidatorHandler;
 		}
 		static Schema_()
 		{

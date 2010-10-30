@@ -7,68 +7,68 @@ namespace javax.net.ssl
 		protected SSLServerSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites29996;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract global::java.lang.String[] getSupportedCipherSuites();
-		internal static global::MonoJavaBridge.MethodId _getEnabledCipherSuites29997;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::java.lang.String[] getEnabledCipherSuites();
-		internal static global::MonoJavaBridge.MethodId _setEnabledCipherSuites29998;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract void setEnabledCipherSuites(java.lang.String[] arg0);
-		internal static global::MonoJavaBridge.MethodId _getSupportedProtocols29999;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract global::java.lang.String[] getSupportedProtocols();
-		internal static global::MonoJavaBridge.MethodId _getEnabledProtocols30000;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::java.lang.String[] getEnabledProtocols();
-		internal static global::MonoJavaBridge.MethodId _setEnabledProtocols30001;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract void setEnabledProtocols(java.lang.String[] arg0);
-		internal static global::MonoJavaBridge.MethodId _setUseClientMode30002;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract void setUseClientMode(bool arg0);
-		internal static global::MonoJavaBridge.MethodId _getUseClientMode30003;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public abstract bool getUseClientMode();
-		internal static global::MonoJavaBridge.MethodId _setNeedClientAuth30004;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract void setNeedClientAuth(bool arg0);
-		internal static global::MonoJavaBridge.MethodId _getNeedClientAuth30005;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract bool getNeedClientAuth();
-		internal static global::MonoJavaBridge.MethodId _setWantClientAuth30006;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract void setWantClientAuth(bool arg0);
-		internal static global::MonoJavaBridge.MethodId _getWantClientAuth30007;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public abstract bool getWantClientAuth();
-		internal static global::MonoJavaBridge.MethodId _setEnableSessionCreation30008;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract void setEnableSessionCreation(bool arg0);
-		internal static global::MonoJavaBridge.MethodId _getEnableSessionCreation30009;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public abstract bool getEnableSessionCreation();
-		internal static global::MonoJavaBridge.MethodId _SSLServerSocket30010;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected SSLServerSocket() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLServerSocket._SSLServerSocket30010.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLServerSocket._SSLServerSocket30010 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._SSLServerSocket30010);
+			if (global::javax.net.ssl.SSLServerSocket._m14.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLServerSocket._m14 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._m14);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SSLServerSocket30011;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected SSLServerSocket(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLServerSocket._SSLServerSocket30011.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLServerSocket._SSLServerSocket30011 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._SSLServerSocket30011, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.net.ssl.SSLServerSocket._m15.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLServerSocket._m15 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SSLServerSocket30012;
+		private static global::MonoJavaBridge.MethodId _m16;
 		protected SSLServerSocket(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLServerSocket._SSLServerSocket30012.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLServerSocket._SSLServerSocket30012 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(II)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._SSLServerSocket30012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::javax.net.ssl.SSLServerSocket._m16.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLServerSocket._m16 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SSLServerSocket30013;
+		private static global::MonoJavaBridge.MethodId _m17;
 		protected SSLServerSocket(int arg0, int arg1, java.net.InetAddress arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.net.ssl.SSLServerSocket._SSLServerSocket30013.native == global::System.IntPtr.Zero)
-				global::javax.net.ssl.SSLServerSocket._SSLServerSocket30013 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(IILjava/net/InetAddress;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._SSLServerSocket30013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::javax.net.ssl.SSLServerSocket._m17.native == global::System.IntPtr.Zero)
+				global::javax.net.ssl.SSLServerSocket._m17 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLServerSocket.staticClass, "<init>", "(IILjava/net/InetAddress;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocket.staticClass, global::javax.net.ssl.SSLServerSocket._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static SSLServerSocket()
@@ -88,75 +88,75 @@ namespace javax.net.ssl
 		internal SSLServerSocket_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites30014;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String[] getSupportedCipherSuites()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getSupportedCipherSuites", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._getSupportedCipherSuites30014) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getSupportedCipherSuites", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._m0) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getEnabledCipherSuites30015;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String[] getEnabledCipherSuites()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnabledCipherSuites", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._getEnabledCipherSuites30015) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnabledCipherSuites", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._m1) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setEnabledCipherSuites30016;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void setEnabledCipherSuites(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnabledCipherSuites", "([Ljava/lang/String;)V", ref global::javax.net.ssl.SSLServerSocket_._setEnabledCipherSuites30016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnabledCipherSuites", "([Ljava/lang/String;)V", ref global::javax.net.ssl.SSLServerSocket_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSupportedProtocols30017;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::java.lang.String[] getSupportedProtocols()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getSupportedProtocols", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._getSupportedProtocols30017) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getSupportedProtocols", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._m3) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getEnabledProtocols30018;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::java.lang.String[] getEnabledProtocols()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnabledProtocols", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._getEnabledProtocols30018) as java.lang.String[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.lang.String>(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnabledProtocols", "()[Ljava/lang/String;", ref global::javax.net.ssl.SSLServerSocket_._m4) as java.lang.String[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setEnabledProtocols30019;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override void setEnabledProtocols(java.lang.String[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnabledProtocols", "([Ljava/lang/String;)V", ref global::javax.net.ssl.SSLServerSocket_._setEnabledProtocols30019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnabledProtocols", "([Ljava/lang/String;)V", ref global::javax.net.ssl.SSLServerSocket_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setUseClientMode30020;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override void setUseClientMode(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setUseClientMode", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._setUseClientMode30020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setUseClientMode", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getUseClientMode30021;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override bool getUseClientMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getUseClientMode", "()Z", ref global::javax.net.ssl.SSLServerSocket_._getUseClientMode30021);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getUseClientMode", "()Z", ref global::javax.net.ssl.SSLServerSocket_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _setNeedClientAuth30022;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override void setNeedClientAuth(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setNeedClientAuth", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._setNeedClientAuth30022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setNeedClientAuth", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getNeedClientAuth30023;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override bool getNeedClientAuth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getNeedClientAuth", "()Z", ref global::javax.net.ssl.SSLServerSocket_._getNeedClientAuth30023);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getNeedClientAuth", "()Z", ref global::javax.net.ssl.SSLServerSocket_._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _setWantClientAuth30024;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override void setWantClientAuth(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setWantClientAuth", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._setWantClientAuth30024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setWantClientAuth", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getWantClientAuth30025;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public override bool getWantClientAuth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getWantClientAuth", "()Z", ref global::javax.net.ssl.SSLServerSocket_._getWantClientAuth30025);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getWantClientAuth", "()Z", ref global::javax.net.ssl.SSLServerSocket_._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _setEnableSessionCreation30026;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public override void setEnableSessionCreation(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnableSessionCreation", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._setEnableSessionCreation30026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "setEnableSessionCreation", "(Z)V", ref global::javax.net.ssl.SSLServerSocket_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEnableSessionCreation30027;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public override bool getEnableSessionCreation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnableSessionCreation", "()Z", ref global::javax.net.ssl.SSLServerSocket_._getEnableSessionCreation30027);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.net.ssl.SSLServerSocket_.staticClass, "getEnableSessionCreation", "()Z", ref global::javax.net.ssl.SSLServerSocket_._m13);
 		}
 		static SSLServerSocket_()
 		{

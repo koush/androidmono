@@ -14,10 +14,10 @@ namespace android.location
 				return getPrn();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrn6868;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public int getPrn()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.GpsSatellite.staticClass, "getPrn", "()I", ref global::android.location.GpsSatellite._getPrn6868);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.GpsSatellite.staticClass, "getPrn", "()I", ref global::android.location.GpsSatellite._m0);
 		}
 		public new float Snr
 		{
@@ -26,10 +26,10 @@ namespace android.location
 				return getSnr();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSnr6869;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public float getSnr()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getSnr", "()F", ref global::android.location.GpsSatellite._getSnr6869);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getSnr", "()F", ref global::android.location.GpsSatellite._m1);
 		}
 		public new float Elevation
 		{
@@ -38,10 +38,10 @@ namespace android.location
 				return getElevation();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getElevation6870;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public float getElevation()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getElevation", "()F", ref global::android.location.GpsSatellite._getElevation6870);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getElevation", "()F", ref global::android.location.GpsSatellite._m2);
 		}
 		public new float Azimuth
 		{
@@ -50,25 +50,25 @@ namespace android.location
 				return getAzimuth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAzimuth6871;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public float getAzimuth()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getAzimuth", "()F", ref global::android.location.GpsSatellite._getAzimuth6871);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.location.GpsSatellite.staticClass, "getAzimuth", "()F", ref global::android.location.GpsSatellite._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasEphemeris6872;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public bool hasEphemeris()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasEphemeris", "()Z", ref global::android.location.GpsSatellite._hasEphemeris6872);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasEphemeris", "()Z", ref global::android.location.GpsSatellite._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasAlmanac6873;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public bool hasAlmanac()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasAlmanac", "()Z", ref global::android.location.GpsSatellite._hasAlmanac6873);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "hasAlmanac", "()Z", ref global::android.location.GpsSatellite._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _usedInFix6874;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public bool usedInFix()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "usedInFix", "()Z", ref global::android.location.GpsSatellite._usedInFix6874);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.GpsSatellite.staticClass, "usedInFix", "()Z", ref global::android.location.GpsSatellite._m6);
 		}
 		static GpsSatellite()
 		{

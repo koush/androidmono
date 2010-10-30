@@ -7,13 +7,13 @@ namespace javax.sql
 		protected RowSetEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _RowSetEvent30574;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public RowSetEvent(javax.sql.RowSet arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.sql.RowSetEvent._RowSetEvent30574.native == global::System.IntPtr.Zero)
-				global::javax.sql.RowSetEvent._RowSetEvent30574 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetEvent.staticClass, "<init>", "(Ljavax/sql/RowSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.RowSetEvent.staticClass, global::javax.sql.RowSetEvent._RowSetEvent30574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.sql.RowSetEvent._m0.native == global::System.IntPtr.Zero)
+				global::javax.sql.RowSetEvent._m0 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetEvent.staticClass, "<init>", "(Ljavax/sql/RowSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.RowSetEvent.staticClass, global::javax.sql.RowSetEvent._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static RowSetEvent()

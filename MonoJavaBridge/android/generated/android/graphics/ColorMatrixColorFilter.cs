@@ -7,22 +7,22 @@ namespace android.graphics
 		protected ColorMatrixColorFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ColorMatrixColorFilter5256;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public ColorMatrixColorFilter(android.graphics.ColorMatrix arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5256.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5256 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.ColorMatrixColorFilter._m0.native == global::System.IntPtr.Zero)
+				global::android.graphics.ColorMatrixColorFilter._m0 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ColorMatrixColorFilter5257;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ColorMatrixColorFilter(float[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5257.native == global::System.IntPtr.Zero)
-				global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5257 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "([F)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.ColorMatrixColorFilter._m1.native == global::System.IntPtr.Zero)
+				global::android.graphics.ColorMatrixColorFilter._m1 = @__env.GetMethodIDNoThrow(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "([F)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static ColorMatrixColorFilter()

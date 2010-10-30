@@ -7,105 +7,105 @@ namespace android.content
 		protected ContentProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getContext2633;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.content.Context getContext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "getContext", "()Landroid/content/Context;", ref global::android.content.ContentProvider._getContext2633) as android.content.Context;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "getContext", "()Landroid/content/Context;", ref global::android.content.ContentProvider._m0) as android.content.Context;
 		}
-		internal static global::MonoJavaBridge.MethodId _getType2634;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract global::java.lang.String getType(android.net.Uri arg0);
-		internal static global::MonoJavaBridge.MethodId _delete2635;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract int delete(android.net.Uri arg0, java.lang.String arg1, java.lang.String[] arg2);
-		internal static global::MonoJavaBridge.MethodId _insert2636;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract global::android.net.Uri insert(android.net.Uri arg0, android.content.ContentValues arg1);
-		internal static global::MonoJavaBridge.MethodId _query2637;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::android.database.Cursor query(android.net.Uri arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4);
-		internal static global::MonoJavaBridge.MethodId _update2638;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract int update(android.net.Uri arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3);
-		internal static global::MonoJavaBridge.MethodId _onCreate2639;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract bool onCreate();
-		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged2640;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void onConfigurationChanged(android.content.res.Configuration arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", ref global::android.content.ContentProvider._onConfigurationChanged2640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", ref global::android.content.ContentProvider._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLowMemory2641;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void onLowMemory()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "onLowMemory", "()V", ref global::android.content.ContentProvider._onLowMemory2641);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "onLowMemory", "()V", ref global::android.content.ContentProvider._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _applyBatch2642;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::android.content.ContentProviderResult[] applyBatch(java.util.ArrayList arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.ContentProviderResult>(this, global::android.content.ContentProvider.staticClass, "applyBatch", "(Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;", ref global::android.content.ContentProvider._applyBatch2642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderResult[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.ContentProviderResult>(this, global::android.content.ContentProvider.staticClass, "applyBatch", "(Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;", ref global::android.content.ContentProvider._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.content.ContentProviderResult[];
 		}
-		internal static global::MonoJavaBridge.MethodId _bulkInsert2643;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual int bulkInsert(android.net.Uri arg0, android.content.ContentValues[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider.staticClass, "bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I", ref global::android.content.ContentProvider._bulkInsert2643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider.staticClass, "bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I", ref global::android.content.ContentProvider._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _openFile2644;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual global::android.os.ParcelFileDescriptor openFile(android.net.Uri arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", ref global::android.content.ContentProvider._openFile2644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", ref global::android.content.ContentProvider._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _openAssetFile2645;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual global::android.content.res.AssetFileDescriptor openAssetFile(android.net.Uri arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", ref global::android.content.ContentProvider._openAssetFile2645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.res.AssetFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", ref global::android.content.ContentProvider._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.content.res.AssetFileDescriptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _setReadPermission2646;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected virtual void setReadPermission(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setReadPermission", "(Ljava/lang/String;)V", ref global::android.content.ContentProvider._setReadPermission2646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setReadPermission", "(Ljava/lang/String;)V", ref global::android.content.ContentProvider._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getReadPermission2647;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.lang.String getReadPermission()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider.staticClass, "getReadPermission", "()Ljava/lang/String;", ref global::android.content.ContentProvider._getReadPermission2647) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider.staticClass, "getReadPermission", "()Ljava/lang/String;", ref global::android.content.ContentProvider._m14) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setWritePermission2648;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected virtual void setWritePermission(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setWritePermission", "(Ljava/lang/String;)V", ref global::android.content.ContentProvider._setWritePermission2648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setWritePermission", "(Ljava/lang/String;)V", ref global::android.content.ContentProvider._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getWritePermission2649;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual global::java.lang.String getWritePermission()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider.staticClass, "getWritePermission", "()Ljava/lang/String;", ref global::android.content.ContentProvider._getWritePermission2649) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider.staticClass, "getWritePermission", "()Ljava/lang/String;", ref global::android.content.ContentProvider._m16) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setPathPermissions2650;
+		private static global::MonoJavaBridge.MethodId _m17;
 		protected virtual void setPathPermissions(android.content.pm.PathPermission[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setPathPermissions", "([Landroid/content/pm/PathPermission;)V", ref global::android.content.ContentProvider._setPathPermissions2650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "setPathPermissions", "([Landroid/content/pm/PathPermission;)V", ref global::android.content.ContentProvider._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPathPermissions2651;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public virtual global::android.content.pm.PathPermission[] getPathPermissions()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.pm.PathPermission>(this, global::android.content.ContentProvider.staticClass, "getPathPermissions", "()[Landroid/content/pm/PathPermission;", ref global::android.content.ContentProvider._getPathPermissions2651) as android.content.pm.PathPermission[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<android.content.pm.PathPermission>(this, global::android.content.ContentProvider.staticClass, "getPathPermissions", "()[Landroid/content/pm/PathPermission;", ref global::android.content.ContentProvider._m18) as android.content.pm.PathPermission[];
 		}
-		internal static global::MonoJavaBridge.MethodId _openFileHelper2652;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected virtual global::android.os.ParcelFileDescriptor openFileHelper(android.net.Uri arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openFileHelper", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", ref global::android.content.ContentProvider._openFileHelper2652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider.staticClass, "openFileHelper", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", ref global::android.content.ContentProvider._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.os.ParcelFileDescriptor;
 		}
-		internal static global::MonoJavaBridge.MethodId _isTemporary2653;
+		private static global::MonoJavaBridge.MethodId _m20;
 		protected virtual bool isTemporary()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ContentProvider.staticClass, "isTemporary", "()Z", ref global::android.content.ContentProvider._isTemporary2653);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ContentProvider.staticClass, "isTemporary", "()Z", ref global::android.content.ContentProvider._m20);
 		}
-		internal static global::MonoJavaBridge.MethodId _attachInfo2654;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void attachInfo(android.content.Context arg0, android.content.pm.ProviderInfo arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "attachInfo", "(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V", ref global::android.content.ContentProvider._attachInfo2654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.ContentProvider.staticClass, "attachInfo", "(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V", ref global::android.content.ContentProvider._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _ContentProvider2655;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public ContentProvider() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.content.ContentProvider._ContentProvider2655.native == global::System.IntPtr.Zero)
-				global::android.content.ContentProvider._ContentProvider2655 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProvider.staticClass, global::android.content.ContentProvider._ContentProvider2655);
+			if (global::android.content.ContentProvider._m22.native == global::System.IntPtr.Zero)
+				global::android.content.ContentProvider._m22 = @__env.GetMethodIDNoThrow(global::android.content.ContentProvider.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentProvider.staticClass, global::android.content.ContentProvider._m22);
 			Init(@__env, handle);
 		}
 		static ContentProvider()
@@ -125,35 +125,35 @@ namespace android.content
 		internal ContentProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getType2656;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String getType(android.net.Uri arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider_.staticClass, "getType", "(Landroid/net/Uri;)Ljava/lang/String;", ref global::android.content.ContentProvider_._getType2656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.content.ContentProvider_.staticClass, "getType", "(Landroid/net/Uri;)Ljava/lang/String;", ref global::android.content.ContentProvider_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _delete2657;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int delete(android.net.Uri arg0, java.lang.String arg1, java.lang.String[] arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider_.staticClass, "delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentProvider_._delete2657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider_.staticClass, "delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentProvider_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _insert2658;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::android.net.Uri insert(android.net.Uri arg0, android.content.ContentValues arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider_.staticClass, "insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;", ref global::android.content.ContentProvider_._insert2658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.Uri;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.ContentProvider_.staticClass, "insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;", ref global::android.content.ContentProvider_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.net.Uri;
 		}
-		internal static global::MonoJavaBridge.MethodId _query2659;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override global::android.database.Cursor query(android.net.Uri arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.content.ContentProvider_.staticClass, "query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.content.ContentProvider_._query2659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.content.ContentProvider_.staticClass, "query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.content.ContentProvider_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4)) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _update2660;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int update(android.net.Uri arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider_.staticClass, "update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentProvider_._update2660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.content.ContentProvider_.staticClass, "update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.content.ContentProvider_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate2661;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool onCreate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ContentProvider_.staticClass, "onCreate", "()Z", ref global::android.content.ContentProvider_._onCreate2661);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.ContentProvider_.staticClass, "onCreate", "()Z", ref global::android.content.ContentProvider_._m5);
 		}
 		static ContentProvider_()
 		{

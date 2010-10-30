@@ -7,45 +7,45 @@ namespace dalvik.system
 		protected Zygote(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _fork18675;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int fork()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.Zygote._fork18675.native == global::System.IntPtr.Zero)
-				global::dalvik.system.Zygote._fork18675 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "fork", "()I");
-			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._fork18675);
+			if (global::dalvik.system.Zygote._m0.native == global::System.IntPtr.Zero)
+				global::dalvik.system.Zygote._m0 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "fork", "()I");
+			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _forkAndSpecialize18676;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.Zygote._forkAndSpecialize18676.native == global::System.IntPtr.Zero)
-				global::dalvik.system.Zygote._forkAndSpecialize18676 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkAndSpecialize", "(II[II[[I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkAndSpecialize18676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::dalvik.system.Zygote._m1.native == global::System.IntPtr.Zero)
+				global::dalvik.system.Zygote._m1 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkAndSpecialize", "(II[II[[I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _forkAndSpecialize18677;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.Zygote._forkAndSpecialize18677.native == global::System.IntPtr.Zero)
-				global::dalvik.system.Zygote._forkAndSpecialize18677 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkAndSpecialize", "(II[IZ[[I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkAndSpecialize18677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::dalvik.system.Zygote._m2.native == global::System.IntPtr.Zero)
+				global::dalvik.system.Zygote._m2 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkAndSpecialize", "(II[IZ[[I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _forkSystemServer18678;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int forkSystemServer(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.Zygote._forkSystemServer18678.native == global::System.IntPtr.Zero)
-				global::dalvik.system.Zygote._forkSystemServer18678 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[II[[I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkSystemServer18678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::dalvik.system.Zygote._m3.native == global::System.IntPtr.Zero)
+				global::dalvik.system.Zygote._m3 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[II[[I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _forkSystemServer18679;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int forkSystemServer(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.Zygote._forkSystemServer18679.native == global::System.IntPtr.Zero)
-				global::dalvik.system.Zygote._forkSystemServer18679 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[IZ[[I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkSystemServer18679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			if (global::dalvik.system.Zygote._m4.native == global::System.IntPtr.Zero)
+				global::dalvik.system.Zygote._m4 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.Zygote.staticClass, "forkSystemServer", "(II[IZ[[I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public static int DEBUG_ENABLE_DEBUGGER
 		{

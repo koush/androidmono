@@ -14,15 +14,15 @@ namespace javax.xml.transform
 		internal Templates_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newTransformer30957;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::javax.xml.transform.Transformer javax.xml.transform.Templates.newTransformer()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.Templates_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;", ref global::javax.xml.transform.Templates_._newTransformer30957) as javax.xml.transform.Transformer;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.Templates_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;", ref global::javax.xml.transform.Templates_._m0) as javax.xml.transform.Transformer;
 		}
-		internal static global::MonoJavaBridge.MethodId _getOutputProperties30958;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.util.Properties javax.xml.transform.Templates.getOutputProperties()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.Templates_.staticClass, "getOutputProperties", "()Ljava/util/Properties;", ref global::javax.xml.transform.Templates_._getOutputProperties30958) as java.util.Properties;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.transform.Templates_.staticClass, "getOutputProperties", "()Ljava/util/Properties;", ref global::javax.xml.transform.Templates_._m1) as java.util.Properties;
 		}
 		static Templates_()
 		{

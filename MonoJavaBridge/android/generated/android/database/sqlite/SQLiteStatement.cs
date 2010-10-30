@@ -7,25 +7,25 @@ namespace android.database.sqlite
 		protected SQLiteStatement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _execute4857;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void execute()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "execute", "()V", ref global::android.database.sqlite.SQLiteStatement._execute4857);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "execute", "()V", ref global::android.database.sqlite.SQLiteStatement._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _executeInsert4858;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual long executeInsert()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "executeInsert", "()J", ref global::android.database.sqlite.SQLiteStatement._executeInsert4858);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "executeInsert", "()J", ref global::android.database.sqlite.SQLiteStatement._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _simpleQueryForLong4859;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual long simpleQueryForLong()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForLong", "()J", ref global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForLong", "()J", ref global::android.database.sqlite.SQLiteStatement._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _simpleQueryForString4860;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String simpleQueryForString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForString", "()Ljava/lang/String;", ref global::android.database.sqlite.SQLiteStatement._simpleQueryForString4860) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteStatement.staticClass, "simpleQueryForString", "()Ljava/lang/String;", ref global::android.database.sqlite.SQLiteStatement._m3) as java.lang.String;
 		}
 		static SQLiteStatement()
 		{

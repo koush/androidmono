@@ -7,18 +7,18 @@ namespace android.net
 		protected MailTo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString7701;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.MailTo._toString7701) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "toString", "()Ljava/lang/String;", ref global::android.net.MailTo._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _parse7702;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static global::android.net.MailTo parse(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.MailTo._parse7702.native == global::System.IntPtr.Zero)
-				global::android.net.MailTo._parse7702 = @__env.GetStaticMethodIDNoThrow(global::android.net.MailTo.staticClass, "parse", "(Ljava/lang/String;)Landroid/net/MailTo;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.MailTo.staticClass, global::android.net.MailTo._parse7702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.MailTo;
+			if (global::android.net.MailTo._m1.native == global::System.IntPtr.Zero)
+				global::android.net.MailTo._m1 = @__env.GetStaticMethodIDNoThrow(global::android.net.MailTo.staticClass, "parse", "(Ljava/lang/String;)Landroid/net/MailTo;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.MailTo.staticClass, global::android.net.MailTo._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.MailTo;
 		}
 		public new global::java.util.Map Headers
 		{
@@ -27,18 +27,18 @@ namespace android.net
 				return getHeaders();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeaders7703;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.util.Map getHeaders()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.net.MailTo.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::android.net.MailTo._getHeaders7703) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.net.MailTo.staticClass, "getHeaders", "()Ljava/util/Map;", ref global::android.net.MailTo._m2) as java.util.Map;
 		}
-		internal static global::MonoJavaBridge.MethodId _isMailTo7704;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static bool isMailTo(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.net.MailTo._isMailTo7704.native == global::System.IntPtr.Zero)
-				global::android.net.MailTo._isMailTo7704 = @__env.GetStaticMethodIDNoThrow(global::android.net.MailTo.staticClass, "isMailTo", "(Ljava/lang/String;)Z");
-			return @__env.CallStaticBooleanMethod(android.net.MailTo.staticClass, global::android.net.MailTo._isMailTo7704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.net.MailTo._m3.native == global::System.IntPtr.Zero)
+				global::android.net.MailTo._m3 = @__env.GetStaticMethodIDNoThrow(global::android.net.MailTo.staticClass, "isMailTo", "(Ljava/lang/String;)Z");
+			return @__env.CallStaticBooleanMethod(android.net.MailTo.staticClass, global::android.net.MailTo._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String To
 		{
@@ -47,10 +47,10 @@ namespace android.net
 				return getTo();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTo7705;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual global::java.lang.String getTo()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getTo", "()Ljava/lang/String;", ref global::android.net.MailTo._getTo7705) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getTo", "()Ljava/lang/String;", ref global::android.net.MailTo._m4) as java.lang.String;
 		}
 		public new global::java.lang.String Cc
 		{
@@ -59,10 +59,10 @@ namespace android.net
 				return getCc();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCc7706;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::java.lang.String getCc()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getCc", "()Ljava/lang/String;", ref global::android.net.MailTo._getCc7706) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getCc", "()Ljava/lang/String;", ref global::android.net.MailTo._m5) as java.lang.String;
 		}
 		public new global::java.lang.String Subject
 		{
@@ -71,10 +71,10 @@ namespace android.net
 				return getSubject();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSubject7707;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.lang.String getSubject()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getSubject", "()Ljava/lang/String;", ref global::android.net.MailTo._getSubject7707) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getSubject", "()Ljava/lang/String;", ref global::android.net.MailTo._m6) as java.lang.String;
 		}
 		public new global::java.lang.String Body
 		{
@@ -83,10 +83,10 @@ namespace android.net
 				return getBody();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBody7708;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.lang.String getBody()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getBody", "()Ljava/lang/String;", ref global::android.net.MailTo._getBody7708) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.net.MailTo.staticClass, "getBody", "()Ljava/lang/String;", ref global::android.net.MailTo._m7) as java.lang.String;
 		}
 		public static global::java.lang.String MAILTO_SCHEME
 		{

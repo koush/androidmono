@@ -7,15 +7,15 @@ namespace android.app.backup
 		protected BackupDataOutput(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeEntityHeader2319;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int writeEntityHeader(java.lang.String arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataOutput.staticClass, "writeEntityHeader", "(Ljava/lang/String;I)I", ref global::android.app.backup.BackupDataOutput._writeEntityHeader2319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataOutput.staticClass, "writeEntityHeader", "(Ljava/lang/String;I)I", ref global::android.app.backup.BackupDataOutput._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeEntityData2320;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int writeEntityData(byte[] arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataOutput.staticClass, "writeEntityData", "([BI)I", ref global::android.app.backup.BackupDataOutput._writeEntityData2320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataOutput.staticClass, "writeEntityData", "([BI)I", ref global::android.app.backup.BackupDataOutput._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static BackupDataOutput()
 		{

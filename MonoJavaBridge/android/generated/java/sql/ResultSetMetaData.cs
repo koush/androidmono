@@ -33,110 +33,110 @@ namespace java.sql
 		internal ResultSetMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isReadOnly24943;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.sql.ResultSetMetaData.isReadOnly(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isReadOnly", "(I)Z", ref global::java.sql.ResultSetMetaData_._isReadOnly24943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isReadOnly", "(I)Z", ref global::java.sql.ResultSetMetaData_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnName24944;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.sql.ResultSetMetaData.getColumnName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getColumnName24944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnCount24945;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.sql.ResultSetMetaData.getColumnCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnCount", "()I", ref global::java.sql.ResultSetMetaData_._getColumnCount24945);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnCount", "()I", ref global::java.sql.ResultSetMetaData_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getScale24946;
+		private static global::MonoJavaBridge.MethodId _m3;
 		int java.sql.ResultSetMetaData.getScale(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getScale", "(I)I", ref global::java.sql.ResultSetMetaData_._getScale24946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getScale", "(I)I", ref global::java.sql.ResultSetMetaData_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrecision24947;
+		private static global::MonoJavaBridge.MethodId _m4;
 		int java.sql.ResultSetMetaData.getPrecision(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getPrecision", "(I)I", ref global::java.sql.ResultSetMetaData_._getPrecision24947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getPrecision", "(I)I", ref global::java.sql.ResultSetMetaData_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isWritable24948;
+		private static global::MonoJavaBridge.MethodId _m5;
 		bool java.sql.ResultSetMetaData.isWritable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isWritable", "(I)Z", ref global::java.sql.ResultSetMetaData_._isWritable24948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isWritable", "(I)Z", ref global::java.sql.ResultSetMetaData_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAutoIncrement24949;
+		private static global::MonoJavaBridge.MethodId _m6;
 		bool java.sql.ResultSetMetaData.isAutoIncrement(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isAutoIncrement", "(I)Z", ref global::java.sql.ResultSetMetaData_._isAutoIncrement24949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isAutoIncrement", "(I)Z", ref global::java.sql.ResultSetMetaData_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isCaseSensitive24950;
+		private static global::MonoJavaBridge.MethodId _m7;
 		bool java.sql.ResultSetMetaData.isCaseSensitive(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isCaseSensitive", "(I)Z", ref global::java.sql.ResultSetMetaData_._isCaseSensitive24950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isCaseSensitive", "(I)Z", ref global::java.sql.ResultSetMetaData_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSearchable24951;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool java.sql.ResultSetMetaData.isSearchable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isSearchable", "(I)Z", ref global::java.sql.ResultSetMetaData_._isSearchable24951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isSearchable", "(I)Z", ref global::java.sql.ResultSetMetaData_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isCurrency24952;
+		private static global::MonoJavaBridge.MethodId _m9;
 		bool java.sql.ResultSetMetaData.isCurrency(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isCurrency", "(I)Z", ref global::java.sql.ResultSetMetaData_._isCurrency24952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isCurrency", "(I)Z", ref global::java.sql.ResultSetMetaData_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isNullable24953;
+		private static global::MonoJavaBridge.MethodId _m10;
 		int java.sql.ResultSetMetaData.isNullable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isNullable", "(I)I", ref global::java.sql.ResultSetMetaData_._isNullable24953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isNullable", "(I)I", ref global::java.sql.ResultSetMetaData_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSigned24954;
+		private static global::MonoJavaBridge.MethodId _m11;
 		bool java.sql.ResultSetMetaData.isSigned(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isSigned", "(I)Z", ref global::java.sql.ResultSetMetaData_._isSigned24954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isSigned", "(I)Z", ref global::java.sql.ResultSetMetaData_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnDisplaySize24955;
+		private static global::MonoJavaBridge.MethodId _m12;
 		int java.sql.ResultSetMetaData.getColumnDisplaySize(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnDisplaySize", "(I)I", ref global::java.sql.ResultSetMetaData_._getColumnDisplaySize24955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnDisplaySize", "(I)I", ref global::java.sql.ResultSetMetaData_._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnLabel24956;
+		private static global::MonoJavaBridge.MethodId _m13;
 		global::java.lang.String java.sql.ResultSetMetaData.getColumnLabel(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnLabel", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getColumnLabel24956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnLabel", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSchemaName24957;
+		private static global::MonoJavaBridge.MethodId _m14;
 		global::java.lang.String java.sql.ResultSetMetaData.getSchemaName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getSchemaName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getSchemaName24957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getSchemaName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getTableName24958;
+		private static global::MonoJavaBridge.MethodId _m15;
 		global::java.lang.String java.sql.ResultSetMetaData.getTableName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getTableName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getTableName24958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getTableName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCatalogName24959;
+		private static global::MonoJavaBridge.MethodId _m16;
 		global::java.lang.String java.sql.ResultSetMetaData.getCatalogName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getCatalogName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getCatalogName24959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getCatalogName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnType24960;
+		private static global::MonoJavaBridge.MethodId _m17;
 		int java.sql.ResultSetMetaData.getColumnType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnType", "(I)I", ref global::java.sql.ResultSetMetaData_._getColumnType24960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnType", "(I)I", ref global::java.sql.ResultSetMetaData_._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnTypeName24961;
+		private static global::MonoJavaBridge.MethodId _m18;
 		global::java.lang.String java.sql.ResultSetMetaData.getColumnTypeName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnTypeName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getColumnTypeName24961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnTypeName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDefinitelyWritable24962;
+		private static global::MonoJavaBridge.MethodId _m19;
 		bool java.sql.ResultSetMetaData.isDefinitelyWritable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isDefinitelyWritable", "(I)Z", ref global::java.sql.ResultSetMetaData_._isDefinitelyWritable24962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ResultSetMetaData_.staticClass, "isDefinitelyWritable", "(I)Z", ref global::java.sql.ResultSetMetaData_._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnClassName24963;
+		private static global::MonoJavaBridge.MethodId _m20;
 		global::java.lang.String java.sql.ResultSetMetaData.getColumnClassName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnClassName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._getColumnClassName24963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ResultSetMetaData_.staticClass, "getColumnClassName", "(I)Ljava/lang/String;", ref global::java.sql.ResultSetMetaData_._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		static ResultSetMetaData_()
 		{

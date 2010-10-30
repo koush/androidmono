@@ -7,20 +7,20 @@ namespace android.view.accessibility
 		internal AccessibilityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _interrupt15559;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public void interrupt()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "interrupt", "()V", ref global::android.view.accessibility.AccessibilityManager._interrupt15559);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "interrupt", "()V", ref global::android.view.accessibility.AccessibilityManager._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEnabled15560;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public bool isEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "isEnabled", "()Z", ref global::android.view.accessibility.AccessibilityManager._isEnabled15560);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "isEnabled", "()Z", ref global::android.view.accessibility.AccessibilityManager._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEvent15561;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V", ref global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent15561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, "sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V", ref global::android.view.accessibility.AccessibilityManager._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.List AccessibilityServiceList
 		{
@@ -29,10 +29,10 @@ namespace android.view.accessibility
 				return getAccessibilityServiceList();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAccessibilityServiceList15562;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public global::java.util.List getAccessibilityServiceList()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.view.accessibility.AccessibilityManager.staticClass, "getAccessibilityServiceList", "()Ljava/util/List;", ref global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList15562) as java.util.List;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.List>(this, global::android.view.accessibility.AccessibilityManager.staticClass, "getAccessibilityServiceList", "()Ljava/util/List;", ref global::android.view.accessibility.AccessibilityManager._m3) as java.util.List;
 		}
 		static AccessibilityManager()
 		{

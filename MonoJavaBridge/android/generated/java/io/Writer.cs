@@ -7,71 +7,71 @@ namespace java.io
 		protected Writer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _append19639;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", ref global::java.io.Writer._append19639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", ref global::java.io.Writer._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
 		}
 		public java.lang.Appendable append(string arg0)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _append19640;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", ref global::java.io.Writer._append19640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", ref global::java.io.Writer._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Appendable;
 		}
 		public java.lang.Appendable append(string arg0, int arg1, int arg2)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _append19641;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::java.lang.Appendable append(char arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(C)Ljava/lang/Appendable;", ref global::java.io.Writer._append19641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.Appendable>(this, global::java.io.Writer.staticClass, "append", "(C)Ljava/lang/Appendable;", ref global::java.io.Writer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Appendable;
 		}
-		internal static global::MonoJavaBridge.MethodId _write19642;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract void write(char[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _write19643;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void write(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(I)V", ref global::java.io.Writer._write19643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(I)V", ref global::java.io.Writer._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19644;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void write(char[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "([C)V", ref global::java.io.Writer._write19644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "([C)V", ref global::java.io.Writer._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19645;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void write(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(Ljava/lang/String;)V", ref global::java.io.Writer._write19645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(Ljava/lang/String;)V", ref global::java.io.Writer._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19646;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void write(java.lang.String arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(Ljava/lang/String;II)V", ref global::java.io.Writer._write19646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer.staticClass, "write", "(Ljava/lang/String;II)V", ref global::java.io.Writer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19647;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract void flush();
-		internal static global::MonoJavaBridge.MethodId _close19648;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract void close();
-		internal static global::MonoJavaBridge.MethodId _Writer19649;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected Writer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.Writer._Writer19649.native == global::System.IntPtr.Zero)
-				global::java.io.Writer._Writer19649 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Writer.staticClass, global::java.io.Writer._Writer19649);
+			if (global::java.io.Writer._m10.native == global::System.IntPtr.Zero)
+				global::java.io.Writer._m10 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Writer.staticClass, global::java.io.Writer._m10);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Writer19650;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected Writer(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.Writer._Writer19650.native == global::System.IntPtr.Zero)
-				global::java.io.Writer._Writer19650 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "(Ljava/lang/Object;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Writer.staticClass, global::java.io.Writer._Writer19650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.io.Writer._m11.native == global::System.IntPtr.Zero)
+				global::java.io.Writer._m11 = @__env.GetMethodIDNoThrow(global::java.io.Writer.staticClass, "<init>", "(Ljava/lang/Object;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Writer.staticClass, global::java.io.Writer._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static Writer()
@@ -91,20 +91,20 @@ namespace java.io
 		internal Writer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write19651;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void write(char[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "write", "([CII)V", ref global::java.io.Writer_._write19651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "write", "([CII)V", ref global::java.io.Writer_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19652;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "flush", "()V", ref global::java.io.Writer_._flush19652);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "flush", "()V", ref global::java.io.Writer_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _close19653;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "close", "()V", ref global::java.io.Writer_._close19653);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Writer_.staticClass, "close", "()V", ref global::java.io.Writer_._m2);
 		}
 		static Writer_()
 		{

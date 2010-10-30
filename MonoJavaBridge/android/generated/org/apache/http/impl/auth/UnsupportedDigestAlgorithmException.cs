@@ -7,31 +7,31 @@ namespace org.apache.http.impl.auth
 		protected UnsupportedDigestAlgorithmException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _UnsupportedDigestAlgorithmException32759;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public UnsupportedDigestAlgorithmException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32759.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32759 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32759);
+			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m0 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _UnsupportedDigestAlgorithmException32760;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public UnsupportedDigestAlgorithmException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32760.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32760 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m1 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _UnsupportedDigestAlgorithmException32761;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public UnsupportedDigestAlgorithmException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32761.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32761 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._UnsupportedDigestAlgorithmException32761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.UnsupportedDigestAlgorithmException.staticClass, global::org.apache.http.impl.auth.UnsupportedDigestAlgorithmException._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static UnsupportedDigestAlgorithmException()

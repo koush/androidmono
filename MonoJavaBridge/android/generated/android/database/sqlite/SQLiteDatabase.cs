@@ -20,10 +20,10 @@ namespace android.database.sqlite
 			internal CursorFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _newCursor4733;
+			private static global::MonoJavaBridge.MethodId _m0;
 			global::android.database.Cursor android.database.sqlite.SQLiteDatabase.CursorFactory.newCursor(android.database.sqlite.SQLiteDatabase arg0, android.database.sqlite.SQLiteCursorDriver arg1, java.lang.String arg2, android.database.sqlite.SQLiteQuery arg3)
 			{
-				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass, "newCursor", "(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase.CursorFactory_._newCursor4733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as android.database.Cursor;
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass, "newCursor", "(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase.CursorFactory_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as android.database.Cursor;
 			}
 			static CursorFactory_()
 			{
@@ -43,13 +43,13 @@ namespace android.database.sqlite
 			protected CursorFactoryDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _CursorFactoryDelegateWrapper4734;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public CursorFactoryDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._CursorFactoryDelegateWrapper4734.native == global::System.IntPtr.Zero)
-					global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._CursorFactoryDelegateWrapper4734 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._CursorFactoryDelegateWrapper4734);
+				if (global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static CursorFactoryDelegateWrapper()
@@ -76,35 +76,35 @@ namespace android.database.sqlite
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize4735;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "finalize", "()V", ref global::android.database.sqlite.SQLiteDatabase._finalize4735);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "finalize", "()V", ref global::android.database.sqlite.SQLiteDatabase._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _replace4736;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual long replace(java.lang.String arg0, java.lang.String arg1, android.content.ContentValues arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "replace", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._replace4736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "replace", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _close4737;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "close", "()V", ref global::android.database.sqlite.SQLiteDatabase._close4737);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "close", "()V", ref global::android.database.sqlite.SQLiteDatabase._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _delete4738;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int delete(java.lang.String arg0, java.lang.String arg1, java.lang.String[] arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "delete", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.database.sqlite.SQLiteDatabase._delete4738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "delete", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.database.sqlite.SQLiteDatabase._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _insert4739;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual long insert(java.lang.String arg0, java.lang.String arg1, android.content.ContentValues arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insert", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._insert4739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insert", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _isReadOnly4740;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual bool isReadOnly()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isReadOnly", "()Z", ref global::android.database.sqlite.SQLiteDatabase._isReadOnly4740);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isReadOnly", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m5);
 		}
 		public new global::java.lang.String Path
 		{
@@ -113,47 +113,47 @@ namespace android.database.sqlite
 				return getPath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPath4741;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual global::java.lang.String getPath()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getPath", "()Ljava/lang/String;", ref global::android.database.sqlite.SQLiteDatabase._getPath4741) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getPath", "()Ljava/lang/String;", ref global::android.database.sqlite.SQLiteDatabase._m6) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _query4742;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::android.database.Cursor query(bool arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String[] arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._query4742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8)) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _query4743;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual global::android.database.Cursor query(java.lang.String arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._query4743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7)) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _query4744;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::android.database.Cursor query(java.lang.String arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._query4744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6)) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _create4745;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static global::android.database.sqlite.SQLiteDatabase create(android.database.sqlite.SQLiteDatabase.CursorFactory arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._create4745.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._create4745 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "create", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._create4745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.sqlite.SQLiteDatabase;
+			if (global::android.database.sqlite.SQLiteDatabase._m10.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m10 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "create", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.sqlite.SQLiteDatabase;
 		}
 		public static android.database.sqlite.SQLiteDatabase create(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg0)
 		{
 			return create((global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen4746;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual bool isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isOpen", "()Z", ref global::android.database.sqlite.SQLiteDatabase._isOpen4746);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isOpen", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _update4747;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int update(java.lang.String arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "update", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.database.sqlite.SQLiteDatabase._update4747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "update", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", ref global::android.database.sqlite.SQLiteDatabase._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public new int Version
 		{
@@ -166,15 +166,15 @@ namespace android.database.sqlite
 				setVersion(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion4748;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual int getVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getVersion", "()I", ref global::android.database.sqlite.SQLiteDatabase._getVersion4748);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getVersion", "()I", ref global::android.database.sqlite.SQLiteDatabase._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _setVersion4749;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setVersion(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setVersion", "(I)V", ref global::android.database.sqlite.SQLiteDatabase._setVersion4749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setVersion", "(I)V", ref global::android.database.sqlite.SQLiteDatabase._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Locale Locale
 		{
@@ -183,47 +183,47 @@ namespace android.database.sqlite
 				setLocale(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setLocale4750;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setLocale(java.util.Locale arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setLocale", "(Ljava/util/Locale;)V", ref global::android.database.sqlite.SQLiteDatabase._setLocale4750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setLocale", "(Ljava/util/Locale;)V", ref global::android.database.sqlite.SQLiteDatabase._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _openOrCreateDatabase4751;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static global::android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, android.database.sqlite.SQLiteDatabase.CursorFactory arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4751.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4751 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openOrCreateDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.sqlite.SQLiteDatabase;
+			if (global::android.database.sqlite.SQLiteDatabase._m16.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m16 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openOrCreateDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.sqlite.SQLiteDatabase;
 		}
 		public static android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg1)
 		{
 			return openOrCreateDatabase(arg0, (global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _openOrCreateDatabase4752;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static global::android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.io.File arg0, android.database.sqlite.SQLiteDatabase.CursorFactory arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4752.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4752 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openOrCreateDatabase", "(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._openOrCreateDatabase4752, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.sqlite.SQLiteDatabase;
+			if (global::android.database.sqlite.SQLiteDatabase._m17.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m17 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openOrCreateDatabase", "(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.database.sqlite.SQLiteDatabase;
 		}
 		public static android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.io.File arg0, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg1)
 		{
 			return openOrCreateDatabase(arg0, (global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased4753;
+		private static global::MonoJavaBridge.MethodId _m18;
 		protected override void onAllReferencesReleased()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "onAllReferencesReleased", "()V", ref global::android.database.sqlite.SQLiteDatabase._onAllReferencesReleased4753);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "onAllReferencesReleased", "()V", ref global::android.database.sqlite.SQLiteDatabase._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _releaseMemory4754;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static int releaseMemory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._releaseMemory4754.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._releaseMemory4754 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "releaseMemory", "()I");
-			return @__env.CallStaticIntMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._releaseMemory4754);
+			if (global::android.database.sqlite.SQLiteDatabase._m19.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m19 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "releaseMemory", "()I");
+			return @__env.CallStaticIntMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m19);
 		}
 		public new bool LockingEnabled
 		{
@@ -232,60 +232,60 @@ namespace android.database.sqlite
 				setLockingEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setLockingEnabled4755;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public virtual void setLockingEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setLockingEnabled", "(Z)V", ref global::android.database.sqlite.SQLiteDatabase._setLockingEnabled4755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setLockingEnabled", "(Z)V", ref global::android.database.sqlite.SQLiteDatabase._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _beginTransaction4756;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public virtual void beginTransaction()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "beginTransaction", "()V", ref global::android.database.sqlite.SQLiteDatabase._beginTransaction4756);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "beginTransaction", "()V", ref global::android.database.sqlite.SQLiteDatabase._m21);
 		}
-		internal static global::MonoJavaBridge.MethodId _beginTransactionWithListener4757;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual void beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "beginTransactionWithListener", "(Landroid/database/sqlite/SQLiteTransactionListener;)V", ref global::android.database.sqlite.SQLiteDatabase._beginTransactionWithListener4757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "beginTransactionWithListener", "(Landroid/database/sqlite/SQLiteTransactionListener;)V", ref global::android.database.sqlite.SQLiteDatabase._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _endTransaction4758;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void endTransaction()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "endTransaction", "()V", ref global::android.database.sqlite.SQLiteDatabase._endTransaction4758);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "endTransaction", "()V", ref global::android.database.sqlite.SQLiteDatabase._m23);
 		}
-		internal static global::MonoJavaBridge.MethodId _setTransactionSuccessful4759;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void setTransactionSuccessful()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setTransactionSuccessful", "()V", ref global::android.database.sqlite.SQLiteDatabase._setTransactionSuccessful4759);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setTransactionSuccessful", "()V", ref global::android.database.sqlite.SQLiteDatabase._m24);
 		}
-		internal static global::MonoJavaBridge.MethodId _inTransaction4760;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual bool inTransaction()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "inTransaction", "()Z", ref global::android.database.sqlite.SQLiteDatabase._inTransaction4760);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "inTransaction", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m25);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDbLockedByCurrentThread4761;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual bool isDbLockedByCurrentThread()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isDbLockedByCurrentThread", "()Z", ref global::android.database.sqlite.SQLiteDatabase._isDbLockedByCurrentThread4761);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isDbLockedByCurrentThread", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m26);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDbLockedByOtherThreads4762;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual bool isDbLockedByOtherThreads()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isDbLockedByOtherThreads", "()Z", ref global::android.database.sqlite.SQLiteDatabase._isDbLockedByOtherThreads4762);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "isDbLockedByOtherThreads", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _yieldIfContended4763;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual bool yieldIfContended()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContended", "()Z", ref global::android.database.sqlite.SQLiteDatabase._yieldIfContended4763);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContended", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m28);
 		}
-		internal static global::MonoJavaBridge.MethodId _yieldIfContendedSafely4764;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool yieldIfContendedSafely(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContendedSafely", "(J)Z", ref global::android.database.sqlite.SQLiteDatabase._yieldIfContendedSafely4764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContendedSafely", "(J)Z", ref global::android.database.sqlite.SQLiteDatabase._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _yieldIfContendedSafely4765;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual bool yieldIfContendedSafely()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContendedSafely", "()Z", ref global::android.database.sqlite.SQLiteDatabase._yieldIfContendedSafely4765);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "yieldIfContendedSafely", "()Z", ref global::android.database.sqlite.SQLiteDatabase._m30);
 		}
 		public new global::java.util.Map SyncedTables
 		{
@@ -294,18 +294,18 @@ namespace android.database.sqlite
 				return getSyncedTables();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSyncedTables4766;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual global::java.util.Map getSyncedTables()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getSyncedTables", "()Ljava/util/Map;", ref global::android.database.sqlite.SQLiteDatabase._getSyncedTables4766) as java.util.Map;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.util.Map>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getSyncedTables", "()Ljava/util/Map;", ref global::android.database.sqlite.SQLiteDatabase._m31) as java.util.Map;
 		}
-		internal static global::MonoJavaBridge.MethodId _openDatabase4767;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public static global::android.database.sqlite.SQLiteDatabase openDatabase(java.lang.String arg0, android.database.sqlite.SQLiteDatabase.CursorFactory arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._openDatabase4767.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._openDatabase4767 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._openDatabase4767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
+			if (global::android.database.sqlite.SQLiteDatabase._m32.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m32 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "openDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
 		}
 		public static android.database.sqlite.SQLiteDatabase openDatabase(java.lang.String arg0, global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg1, int arg2)
 		{
@@ -322,15 +322,15 @@ namespace android.database.sqlite
 				setMaximumSize(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumSize4768;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual long getMaximumSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getMaximumSize", "()J", ref global::android.database.sqlite.SQLiteDatabase._getMaximumSize4768);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getMaximumSize", "()J", ref global::android.database.sqlite.SQLiteDatabase._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumSize4769;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual long setMaximumSize(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setMaximumSize", "(J)J", ref global::android.database.sqlite.SQLiteDatabase._setMaximumSize4769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setMaximumSize", "(J)J", ref global::android.database.sqlite.SQLiteDatabase._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long PageSize
 		{
@@ -343,96 +343,96 @@ namespace android.database.sqlite
 				setPageSize(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPageSize4770;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual long getPageSize()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getPageSize", "()J", ref global::android.database.sqlite.SQLiteDatabase._getPageSize4770);
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "getPageSize", "()J", ref global::android.database.sqlite.SQLiteDatabase._m35);
 		}
-		internal static global::MonoJavaBridge.MethodId _setPageSize4771;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual void setPageSize(long arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setPageSize", "(J)V", ref global::android.database.sqlite.SQLiteDatabase._setPageSize4771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "setPageSize", "(J)V", ref global::android.database.sqlite.SQLiteDatabase._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _markTableSyncable4772;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual void markTableSyncable(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._markTableSyncable4772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _markTableSyncable4773;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public virtual void markTableSyncable(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._markTableSyncable4773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _findEditTable4774;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public static global::java.lang.String findEditTable(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.database.sqlite.SQLiteDatabase._findEditTable4774.native == global::System.IntPtr.Zero)
-				global::android.database.sqlite.SQLiteDatabase._findEditTable4774 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "findEditTable", "(Ljava/lang/String;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._findEditTable4774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::android.database.sqlite.SQLiteDatabase._m39.native == global::System.IntPtr.Zero)
+				global::android.database.sqlite.SQLiteDatabase._m39 = @__env.GetStaticMethodIDNoThrow(global::android.database.sqlite.SQLiteDatabase.staticClass, "findEditTable", "(Ljava/lang/String;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _compileStatement4775;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public virtual global::android.database.sqlite.SQLiteStatement compileStatement(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "compileStatement", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;", ref global::android.database.sqlite.SQLiteDatabase._compileStatement4775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.sqlite.SQLiteStatement;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "compileStatement", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;", ref global::android.database.sqlite.SQLiteDatabase._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as android.database.sqlite.SQLiteStatement;
 		}
-		internal static global::MonoJavaBridge.MethodId _queryWithFactory4776;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public virtual global::android.database.Cursor queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory arg0, bool arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String[] arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "queryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._queryWithFactory4776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "queryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9)) as android.database.Cursor;
 		}
 		public android.database.Cursor queryWithFactory(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg0, bool arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String[] arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9)
 		{
 			return queryWithFactory((global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 		}
-		internal static global::MonoJavaBridge.MethodId _rawQuery4777;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public virtual global::android.database.Cursor rawQuery(java.lang.String arg0, java.lang.String[] arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "rawQuery", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._rawQuery4777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "rawQuery", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as android.database.Cursor;
 		}
-		internal static global::MonoJavaBridge.MethodId _rawQueryWithFactory4778;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public virtual global::android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "rawQueryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._rawQueryWithFactory4778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as android.database.Cursor;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.database.Cursor>(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "rawQueryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", ref global::android.database.sqlite.SQLiteDatabase._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as android.database.Cursor;
 		}
 		public android.database.Cursor rawQueryWithFactory(global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegate arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3)
 		{
 			return rawQueryWithFactory((global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _insertOrThrow4779;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public virtual long insertOrThrow(java.lang.String arg0, java.lang.String arg1, android.content.ContentValues arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insertOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._insertOrThrow4779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insertOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceOrThrow4780;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public virtual long replaceOrThrow(java.lang.String arg0, java.lang.String arg1, android.content.ContentValues arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "replaceOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._replaceOrThrow4780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "replaceOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", ref global::android.database.sqlite.SQLiteDatabase._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _insertWithOnConflict4781;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public virtual long insertWithOnConflict(java.lang.String arg0, java.lang.String arg1, android.content.ContentValues arg2, int arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insertWithOnConflict", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;I)J", ref global::android.database.sqlite.SQLiteDatabase._insertWithOnConflict4781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "insertWithOnConflict", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;I)J", ref global::android.database.sqlite.SQLiteDatabase._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _updateWithOnConflict4782;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public virtual int updateWithOnConflict(java.lang.String arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3, int arg4)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "updateWithOnConflict", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;I)I", ref global::android.database.sqlite.SQLiteDatabase._updateWithOnConflict4782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "updateWithOnConflict", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;I)I", ref global::android.database.sqlite.SQLiteDatabase._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _execSQL4783;
+		private static global::MonoJavaBridge.MethodId _m48;
 		public virtual void execSQL(java.lang.String arg0, java.lang.Object[] arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;[Ljava/lang/Object;)V", ref global::android.database.sqlite.SQLiteDatabase._execSQL4783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;[Ljava/lang/Object;)V", ref global::android.database.sqlite.SQLiteDatabase._m48, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _execSQL4784;
+		private static global::MonoJavaBridge.MethodId _m49;
 		public virtual void execSQL(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._execSQL4784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "execSQL", "(Ljava/lang/String;)V", ref global::android.database.sqlite.SQLiteDatabase._m49, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _needUpgrade4785;
+		private static global::MonoJavaBridge.MethodId _m50;
 		public virtual bool needUpgrade(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "needUpgrade", "(I)Z", ref global::android.database.sqlite.SQLiteDatabase._needUpgrade4785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.database.sqlite.SQLiteDatabase.staticClass, "needUpgrade", "(I)Z", ref global::android.database.sqlite.SQLiteDatabase._m50, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int CONFLICT_ROLLBACK
 		{

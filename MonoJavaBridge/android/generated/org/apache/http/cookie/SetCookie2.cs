@@ -15,115 +15,115 @@ namespace org.apache.http.cookie
 		internal SetCookie2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setCommentURL32459;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.cookie.SetCookie2.setCommentURL(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setCommentURL", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._setCommentURL32459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setCommentURL", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPorts32460;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void org.apache.http.cookie.SetCookie2.setPorts(int[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setPorts", "([I)V", ref global::org.apache.http.cookie.SetCookie2_._setPorts32460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setPorts", "([I)V", ref global::org.apache.http.cookie.SetCookie2_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDiscard32461;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void org.apache.http.cookie.SetCookie2.setDiscard(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setDiscard", "(Z)V", ref global::org.apache.http.cookie.SetCookie2_._setDiscard32461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setDiscard", "(Z)V", ref global::org.apache.http.cookie.SetCookie2_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setValue32462;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void org.apache.http.cookie.SetCookie.setValue(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setValue", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._setValue32462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setValue", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setComment32463;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void org.apache.http.cookie.SetCookie.setComment(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setComment", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._setComment32463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setComment", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVersion32464;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.apache.http.cookie.SetCookie.setVersion(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setVersion", "(I)V", ref global::org.apache.http.cookie.SetCookie2_._setVersion32464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setVersion", "(I)V", ref global::org.apache.http.cookie.SetCookie2_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setPath32465;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.apache.http.cookie.SetCookie.setPath(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setPath", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._setPath32465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setPath", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setExpiryDate32466;
+		private static global::MonoJavaBridge.MethodId _m7;
 		void org.apache.http.cookie.SetCookie.setExpiryDate(java.util.Date arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setExpiryDate", "(Ljava/util/Date;)V", ref global::org.apache.http.cookie.SetCookie2_._setExpiryDate32466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setExpiryDate", "(Ljava/util/Date;)V", ref global::org.apache.http.cookie.SetCookie2_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDomain32467;
+		private static global::MonoJavaBridge.MethodId _m8;
 		void org.apache.http.cookie.SetCookie.setDomain(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setDomain", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._setDomain32467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setDomain", "(Ljava/lang/String;)V", ref global::org.apache.http.cookie.SetCookie2_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSecure32468;
+		private static global::MonoJavaBridge.MethodId _m9;
 		void org.apache.http.cookie.SetCookie.setSecure(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setSecure", "(Z)V", ref global::org.apache.http.cookie.SetCookie2_._setSecure32468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "setSecure", "(Z)V", ref global::org.apache.http.cookie.SetCookie2_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getName32469;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::java.lang.String org.apache.http.cookie.Cookie.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getName32469) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getName", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m10) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue32470;
+		private static global::MonoJavaBridge.MethodId _m11;
 		global::java.lang.String org.apache.http.cookie.Cookie.getValue()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getValue32470) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getValue", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m11) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPath32471;
+		private static global::MonoJavaBridge.MethodId _m12;
 		global::java.lang.String org.apache.http.cookie.Cookie.getPath()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getPath", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getPath32471) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getPath", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m12) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getComment32472;
+		private static global::MonoJavaBridge.MethodId _m13;
 		global::java.lang.String org.apache.http.cookie.Cookie.getComment()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getComment", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getComment32472) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getComment", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m13) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion32473;
+		private static global::MonoJavaBridge.MethodId _m14;
 		int org.apache.http.cookie.Cookie.getVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getVersion", "()I", ref global::org.apache.http.cookie.SetCookie2_._getVersion32473);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getVersion", "()I", ref global::org.apache.http.cookie.SetCookie2_._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDomain32474;
+		private static global::MonoJavaBridge.MethodId _m15;
 		global::java.lang.String org.apache.http.cookie.Cookie.getDomain()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getDomain", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getDomain32474) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getDomain", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m15) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isPersistent32475;
+		private static global::MonoJavaBridge.MethodId _m16;
 		bool org.apache.http.cookie.Cookie.isPersistent()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isPersistent", "()Z", ref global::org.apache.http.cookie.SetCookie2_._isPersistent32475);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isPersistent", "()Z", ref global::org.apache.http.cookie.SetCookie2_._m16);
 		}
-		internal static global::MonoJavaBridge.MethodId _isSecure32476;
+		private static global::MonoJavaBridge.MethodId _m17;
 		bool org.apache.http.cookie.Cookie.isSecure()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isSecure", "()Z", ref global::org.apache.http.cookie.SetCookie2_._isSecure32476);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isSecure", "()Z", ref global::org.apache.http.cookie.SetCookie2_._m17);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCommentURL32477;
+		private static global::MonoJavaBridge.MethodId _m18;
 		global::java.lang.String org.apache.http.cookie.Cookie.getCommentURL()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getCommentURL", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._getCommentURL32477) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getCommentURL", "()Ljava/lang/String;", ref global::org.apache.http.cookie.SetCookie2_._m18) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getExpiryDate32478;
+		private static global::MonoJavaBridge.MethodId _m19;
 		global::java.util.Date org.apache.http.cookie.Cookie.getExpiryDate()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getExpiryDate", "()Ljava/util/Date;", ref global::org.apache.http.cookie.SetCookie2_._getExpiryDate32478) as java.util.Date;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getExpiryDate", "()Ljava/util/Date;", ref global::org.apache.http.cookie.SetCookie2_._m19) as java.util.Date;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPorts32479;
+		private static global::MonoJavaBridge.MethodId _m20;
 		int[] org.apache.http.cookie.Cookie.getPorts()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getPorts", "()[I", ref global::org.apache.http.cookie.SetCookie2_._getPorts32479) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "getPorts", "()[I", ref global::org.apache.http.cookie.SetCookie2_._m20) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _isExpired32480;
+		private static global::MonoJavaBridge.MethodId _m21;
 		bool org.apache.http.cookie.Cookie.isExpired(java.util.Date arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isExpired", "(Ljava/util/Date;)Z", ref global::org.apache.http.cookie.SetCookie2_._isExpired32480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.cookie.SetCookie2_.staticClass, "isExpired", "(Ljava/util/Date;)Z", ref global::org.apache.http.cookie.SetCookie2_._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static SetCookie2_()
 		{

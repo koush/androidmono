@@ -7,565 +7,565 @@ namespace android.opengl
 		protected GLES11(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _glColorPointer8514;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static void glColorPointer(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glColorPointer8514.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glColorPointer8514 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glColorPointer", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glColorPointer8514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m0.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m0 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glColorPointer", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDrawElements8515;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void glDrawElements(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glDrawElements8515.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glDrawElements8515 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDrawElements", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glDrawElements8515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m1.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m1 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDrawElements", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glNormalPointer8516;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void glNormalPointer(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glNormalPointer8516.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glNormalPointer8516 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glNormalPointer", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glNormalPointer8516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m2.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m2 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glNormalPointer", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexCoordPointer8517;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static void glTexCoordPointer(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexCoordPointer8517.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexCoordPointer8517 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexCoordPointer", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexCoordPointer8517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m3.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m3 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexCoordPointer", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glVertexPointer8518;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static void glVertexPointer(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glVertexPointer8518.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glVertexPointer8518 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glVertexPointer", "(IIII)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glVertexPointer8518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m4.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m4 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glVertexPointer", "(IIII)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glBindBuffer8519;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static void glBindBuffer(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glBindBuffer8519.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glBindBuffer8519 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBindBuffer", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glBindBuffer8519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m5.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m5 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBindBuffer", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glBufferData8520;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void glBufferData(int arg0, int arg1, java.nio.Buffer arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glBufferData8520.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glBufferData8520 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBufferData", "(IILjava/nio/Buffer;I)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glBufferData8520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m6.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m6 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBufferData", "(IILjava/nio/Buffer;I)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glBufferSubData8521;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static void glBufferSubData(int arg0, int arg1, int arg2, java.nio.Buffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glBufferSubData8521.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glBufferSubData8521 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBufferSubData", "(IIILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glBufferSubData8521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m7.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m7 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glBufferSubData", "(IIILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClipPlanef8522;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static void glClipPlanef(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glClipPlanef8522.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glClipPlanef8522 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanef", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glClipPlanef8522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m8.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m8 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanef", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClipPlanef8523;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static void glClipPlanef(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glClipPlanef8523.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glClipPlanef8523 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanef", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glClipPlanef8523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m9.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m9 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanef", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClipPlanex8524;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static void glClipPlanex(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glClipPlanex8524.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glClipPlanex8524 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanex", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glClipPlanex8524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m10.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m10 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanex", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glClipPlanex8525;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static void glClipPlanex(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glClipPlanex8525.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glClipPlanex8525 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanex", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glClipPlanex8525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m11.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m11 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glClipPlanex", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glColor4ub8526;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static void glColor4ub(byte arg0, byte arg1, byte arg2, byte arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glColor4ub8526.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glColor4ub8526 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glColor4ub", "(BBBB)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glColor4ub8526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m12.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m12 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glColor4ub", "(BBBB)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDeleteBuffers8527;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static void glDeleteBuffers(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glDeleteBuffers8527.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glDeleteBuffers8527 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDeleteBuffers", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glDeleteBuffers8527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m13.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m13 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDeleteBuffers", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glDeleteBuffers8528;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static void glDeleteBuffers(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glDeleteBuffers8528.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glDeleteBuffers8528 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDeleteBuffers", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glDeleteBuffers8528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m14.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m14 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glDeleteBuffers", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGenBuffers8529;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static void glGenBuffers(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGenBuffers8529.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGenBuffers8529 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGenBuffers", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGenBuffers8529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m15.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m15 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGenBuffers", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGenBuffers8530;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static void glGenBuffers(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGenBuffers8530.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGenBuffers8530 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGenBuffers", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGenBuffers8530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m16.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m16 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGenBuffers", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetBooleanv8531;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static void glGetBooleanv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetBooleanv8531.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetBooleanv8531 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBooleanv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetBooleanv8531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m17.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m17 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBooleanv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetBooleanv8532;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static void glGetBooleanv(int arg0, bool[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetBooleanv8532.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetBooleanv8532 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBooleanv", "(I[ZI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetBooleanv8532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m18.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m18 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBooleanv", "(I[ZI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetBufferParameteriv8533;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static void glGetBufferParameteriv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetBufferParameteriv8533.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetBufferParameteriv8533 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBufferParameteriv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetBufferParameteriv8533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m19.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m19 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBufferParameteriv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetBufferParameteriv8534;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static void glGetBufferParameteriv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetBufferParameteriv8534.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetBufferParameteriv8534 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBufferParameteriv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetBufferParameteriv8534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m20.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m20 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetBufferParameteriv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetClipPlanef8535;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public static void glGetClipPlanef(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetClipPlanef8535.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetClipPlanef8535 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanef", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetClipPlanef8535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m21.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m21 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanef", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetClipPlanef8536;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public static void glGetClipPlanef(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetClipPlanef8536.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetClipPlanef8536 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanef", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetClipPlanef8536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m22.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m22 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanef", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m22, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetClipPlanex8537;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public static void glGetClipPlanex(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetClipPlanex8537.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetClipPlanex8537 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanex", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetClipPlanex8537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m23.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m23 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanex", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetClipPlanex8538;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static void glGetClipPlanex(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetClipPlanex8538.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetClipPlanex8538 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanex", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetClipPlanex8538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m24.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m24 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetClipPlanex", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetFixedv8539;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public static void glGetFixedv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetFixedv8539.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetFixedv8539 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFixedv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetFixedv8539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m25.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m25 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFixedv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m25, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetFixedv8540;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public static void glGetFixedv(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetFixedv8540.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetFixedv8540 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFixedv", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetFixedv8540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m26.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m26 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFixedv", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetFloatv8541;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public static void glGetFloatv(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetFloatv8541.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetFloatv8541 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFloatv", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetFloatv8541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m27.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m27 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFloatv", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetFloatv8542;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public static void glGetFloatv(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetFloatv8542.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetFloatv8542 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFloatv", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetFloatv8542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m28.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m28 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetFloatv", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetLightfv8543;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public static void glGetLightfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetLightfv8543.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetLightfv8543 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetLightfv8543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m29.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m29 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetLightfv8544;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public static void glGetLightfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetLightfv8544.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetLightfv8544 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetLightfv8544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m30.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m30 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetLightxv8545;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public static void glGetLightxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetLightxv8545.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetLightxv8545 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetLightxv8545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m31.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m31 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetLightxv8546;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public static void glGetLightxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetLightxv8546.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetLightxv8546 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetLightxv8546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m32.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m32 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetLightxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetMaterialfv8547;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public static void glGetMaterialfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetMaterialfv8547.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetMaterialfv8547 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetMaterialfv8547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m33.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m33 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetMaterialfv8548;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public static void glGetMaterialfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetMaterialfv8548.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetMaterialfv8548 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetMaterialfv8548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m34.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m34 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetMaterialxv8549;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public static void glGetMaterialxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetMaterialxv8549.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetMaterialxv8549 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetMaterialxv8549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m35.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m35 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetMaterialxv8550;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public static void glGetMaterialxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetMaterialxv8550.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetMaterialxv8550 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetMaterialxv8550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m36.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m36 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetMaterialxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnvfv8551;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public static void glGetTexEnvfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnvfv8551.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnvfv8551 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnvfv8551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m37.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m37 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnvfv8552;
+		private static global::MonoJavaBridge.MethodId _m38;
 		public static void glGetTexEnvfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnvfv8552.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnvfv8552 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnvfv8552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m38.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m38 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m38, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnviv8553;
+		private static global::MonoJavaBridge.MethodId _m39;
 		public static void glGetTexEnviv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnviv8553.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnviv8553 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnviv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnviv8553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m39.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m39 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnviv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m39, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnviv8554;
+		private static global::MonoJavaBridge.MethodId _m40;
 		public static void glGetTexEnviv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnviv8554.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnviv8554 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnviv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnviv8554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m40.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m40 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnviv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m40, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnvxv8555;
+		private static global::MonoJavaBridge.MethodId _m41;
 		public static void glGetTexEnvxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnvxv8555.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnvxv8555 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnvxv8555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m41.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m41 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m41, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexEnvxv8556;
+		private static global::MonoJavaBridge.MethodId _m42;
 		public static void glGetTexEnvxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexEnvxv8556.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexEnvxv8556 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexEnvxv8556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m42.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m42 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexEnvxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m42, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameterfv8557;
+		private static global::MonoJavaBridge.MethodId _m43;
 		public static void glGetTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameterfv8557.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameterfv8557 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameterfv8557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m43.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m43 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m43, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameterfv8558;
+		private static global::MonoJavaBridge.MethodId _m44;
 		public static void glGetTexParameterfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameterfv8558.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameterfv8558 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameterfv8558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m44.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m44 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m44, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameteriv8559;
+		private static global::MonoJavaBridge.MethodId _m45;
 		public static void glGetTexParameteriv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameteriv8559.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameteriv8559 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameteriv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameteriv8559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m45.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m45 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameteriv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m45, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameteriv8560;
+		private static global::MonoJavaBridge.MethodId _m46;
 		public static void glGetTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameteriv8560.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameteriv8560 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameteriv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameteriv8560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m46.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m46 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameteriv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m46, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameterxv8561;
+		private static global::MonoJavaBridge.MethodId _m47;
 		public static void glGetTexParameterxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameterxv8561.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameterxv8561 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameterxv8561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m47.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m47 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m47, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glGetTexParameterxv8562;
+		private static global::MonoJavaBridge.MethodId _m48;
 		public static void glGetTexParameterxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glGetTexParameterxv8562.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glGetTexParameterxv8562 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glGetTexParameterxv8562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m48.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m48 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glGetTexParameterxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m48, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glIsBuffer8563;
+		private static global::MonoJavaBridge.MethodId _m49;
 		public static bool glIsBuffer(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glIsBuffer8563.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glIsBuffer8563 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsBuffer", "(I)Z");
-			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glIsBuffer8563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES11._m49.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m49 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsBuffer", "(I)Z");
+			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m49, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glIsEnabled8564;
+		private static global::MonoJavaBridge.MethodId _m50;
 		public static bool glIsEnabled(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glIsEnabled8564.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glIsEnabled8564 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsEnabled", "(I)Z");
-			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glIsEnabled8564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES11._m50.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m50 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsEnabled", "(I)Z");
+			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m50, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glIsTexture8565;
+		private static global::MonoJavaBridge.MethodId _m51;
 		public static bool glIsTexture(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glIsTexture8565.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glIsTexture8565 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsTexture", "(I)Z");
-			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glIsTexture8565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.opengl.GLES11._m51.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m51 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glIsTexture", "(I)Z");
+			return @__env.CallStaticBooleanMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m51, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterf8566;
+		private static global::MonoJavaBridge.MethodId _m52;
 		public static void glPointParameterf(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterf8566.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterf8566 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterf", "(IF)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterf8566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m52.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m52 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterf", "(IF)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m52, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterfv8567;
+		private static global::MonoJavaBridge.MethodId _m53;
 		public static void glPointParameterfv(int arg0, float[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterfv8567.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterfv8567 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterfv", "(I[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterfv8567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m53.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m53 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterfv", "(I[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m53, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterfv8568;
+		private static global::MonoJavaBridge.MethodId _m54;
 		public static void glPointParameterfv(int arg0, java.nio.FloatBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterfv8568.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterfv8568 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterfv", "(ILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterfv8568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m54.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m54 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterfv", "(ILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m54, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterx8569;
+		private static global::MonoJavaBridge.MethodId _m55;
 		public static void glPointParameterx(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterx8569.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterx8569 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterx", "(II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterx8569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m55.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m55 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterx", "(II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m55, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterxv8570;
+		private static global::MonoJavaBridge.MethodId _m56;
 		public static void glPointParameterxv(int arg0, int[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterxv8570.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterxv8570 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterxv", "(I[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterxv8570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m56.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m56 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterxv", "(I[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m56, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointParameterxv8571;
+		private static global::MonoJavaBridge.MethodId _m57;
 		public static void glPointParameterxv(int arg0, java.nio.IntBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointParameterxv8571.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointParameterxv8571 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterxv", "(ILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointParameterxv8571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.opengl.GLES11._m57.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m57 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointParameterxv", "(ILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m57, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _glPointSizePointerOES8572;
+		private static global::MonoJavaBridge.MethodId _m58;
 		public static void glPointSizePointerOES(int arg0, int arg1, java.nio.Buffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glPointSizePointerOES8572.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glPointSizePointerOES8572 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointSizePointerOES", "(IILjava/nio/Buffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glPointSizePointerOES8572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m58.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m58 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glPointSizePointerOES", "(IILjava/nio/Buffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m58, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnvi8573;
+		private static global::MonoJavaBridge.MethodId _m59;
 		public static void glTexEnvi(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexEnvi8573.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexEnvi8573 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnvi", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexEnvi8573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m59.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m59 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnvi", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m59, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnviv8574;
+		private static global::MonoJavaBridge.MethodId _m60;
 		public static void glTexEnviv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexEnviv8574.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexEnviv8574 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnviv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexEnviv8574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m60.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m60 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnviv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m60, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexEnviv8575;
+		private static global::MonoJavaBridge.MethodId _m61;
 		public static void glTexEnviv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexEnviv8575.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexEnviv8575 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnviv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexEnviv8575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m61.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m61 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexEnviv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m61, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterfv8576;
+		private static global::MonoJavaBridge.MethodId _m62;
 		public static void glTexParameterfv(int arg0, int arg1, java.nio.FloatBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameterfv8576.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameterfv8576 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterfv", "(IILjava/nio/FloatBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameterfv8576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m62.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m62 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterfv", "(IILjava/nio/FloatBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m62, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterfv8577;
+		private static global::MonoJavaBridge.MethodId _m63;
 		public static void glTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameterfv8577.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameterfv8577 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterfv", "(II[FI)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameterfv8577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m63.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m63 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterfv", "(II[FI)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m63, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameteri8578;
+		private static global::MonoJavaBridge.MethodId _m64;
 		public static void glTexParameteri(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameteri8578.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameteri8578 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteri", "(III)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameteri8578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m64.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m64 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteri", "(III)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m64, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameteriv8579;
+		private static global::MonoJavaBridge.MethodId _m65;
 		public static void glTexParameteriv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameteriv8579.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameteriv8579 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteriv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameteriv8579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m65.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m65 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteriv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m65, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameteriv8580;
+		private static global::MonoJavaBridge.MethodId _m66;
 		public static void glTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameteriv8580.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameteriv8580 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteriv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameteriv8580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m66.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m66 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameteriv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m66, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterxv8581;
+		private static global::MonoJavaBridge.MethodId _m67;
 		public static void glTexParameterxv(int arg0, int arg1, java.nio.IntBuffer arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameterxv8581.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameterxv8581 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(IILjava/nio/IntBuffer;)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameterxv8581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.opengl.GLES11._m67.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m67 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(IILjava/nio/IntBuffer;)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m67, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _glTexParameterxv8582;
+		private static global::MonoJavaBridge.MethodId _m68;
 		public static void glTexParameterxv(int arg0, int arg1, int[] arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._glTexParameterxv8582.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._glTexParameterxv8582 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(II[II)V");
-			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._glTexParameterxv8582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.opengl.GLES11._m68.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m68 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "glTexParameterxv", "(II[II)V");
+			@__env.CallStaticVoidMethod(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m68, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _GLES118583;
+		private static global::MonoJavaBridge.MethodId _m69;
 		public GLES11() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.opengl.GLES11._GLES118583.native == global::System.IntPtr.Zero)
-				global::android.opengl.GLES11._GLES118583 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._GLES118583);
+			if (global::android.opengl.GLES11._m69.native == global::System.IntPtr.Zero)
+				global::android.opengl.GLES11._m69 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES11.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES11.staticClass, global::android.opengl.GLES11._m69);
 			Init(@__env, handle);
 		}
 		public static int GL_ACTIVE_TEXTURE

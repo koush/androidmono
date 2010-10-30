@@ -7,32 +7,32 @@ namespace android.widget
 		protected DigitalClock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16988;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onAttachedToWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, "onAttachedToWindow", "()V", ref global::android.widget.DigitalClock._onAttachedToWindow16988);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, "onAttachedToWindow", "()V", ref global::android.widget.DigitalClock._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16989;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected override void onDetachedFromWindow()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, "onDetachedFromWindow", "()V", ref global::android.widget.DigitalClock._onDetachedFromWindow16989);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.DigitalClock.staticClass, "onDetachedFromWindow", "()V", ref global::android.widget.DigitalClock._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _DigitalClock16990;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public DigitalClock(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.DigitalClock._DigitalClock16990.native == global::System.IntPtr.Zero)
-				global::android.widget.DigitalClock._DigitalClock16990 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock16990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.DigitalClock._m2.native == global::System.IntPtr.Zero)
+				global::android.widget.DigitalClock._m2 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DigitalClock16991;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public DigitalClock(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.DigitalClock._DigitalClock16991.native == global::System.IntPtr.Zero)
-				global::android.widget.DigitalClock._DigitalClock16991 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock16991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.DigitalClock._m3.native == global::System.IntPtr.Zero)
+				global::android.widget.DigitalClock._m3 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static DigitalClock()

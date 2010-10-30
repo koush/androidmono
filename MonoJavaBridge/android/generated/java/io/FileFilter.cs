@@ -13,10 +13,10 @@ namespace java.io
 		internal FileFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _accept19016;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.io.FileFilter.accept(java.io.File arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.FileFilter_.staticClass, "accept", "(Ljava/io/File;)Z", ref global::java.io.FileFilter_._accept19016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.io.FileFilter_.staticClass, "accept", "(Ljava/io/File;)Z", ref global::java.io.FileFilter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static FileFilter_()
 		{

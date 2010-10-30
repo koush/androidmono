@@ -24,65 +24,65 @@ namespace org.xml.sax
 		internal Attributes_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength34950;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.xml.sax.Attributes.getLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getLength", "()I", ref global::org.xml.sax.Attributes_._getLength34950);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getLength", "()I", ref global::org.xml.sax.Attributes_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue34951;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.xml.sax.Attributes.getValue(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getValue34951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue34952;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.xml.sax.Attributes.getValue(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getValue34952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue34953;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String org.xml.sax.Attributes.getValue(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getValue34953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getType34954;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.String org.xml.sax.Attributes.getType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getType34954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getType34955;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::java.lang.String org.xml.sax.Attributes.getType(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getType34955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getType34956;
+		private static global::MonoJavaBridge.MethodId _m6;
 		global::java.lang.String org.xml.sax.Attributes.getType(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getType34956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getType", "(Ljava/lang/String;)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getIndex34957;
+		private static global::MonoJavaBridge.MethodId _m7;
 		int org.xml.sax.Attributes.getIndex(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getIndex", "(Ljava/lang/String;)I", ref global::org.xml.sax.Attributes_._getIndex34957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getIndex", "(Ljava/lang/String;)I", ref global::org.xml.sax.Attributes_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getIndex34958;
+		private static global::MonoJavaBridge.MethodId _m8;
 		int org.xml.sax.Attributes.getIndex(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::org.xml.sax.Attributes_._getIndex34958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xml.sax.Attributes_.staticClass, "getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", ref global::org.xml.sax.Attributes_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getQName34959;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::java.lang.String org.xml.sax.Attributes.getQName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getQName", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getQName34959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getQName", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalName34960;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::java.lang.String org.xml.sax.Attributes.getLocalName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getLocalName", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getLocalName34960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getLocalName", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getURI34961;
+		private static global::MonoJavaBridge.MethodId _m11;
 		global::java.lang.String org.xml.sax.Attributes.getURI(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getURI", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._getURI34961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.xml.sax.Attributes_.staticClass, "getURI", "(I)Ljava/lang/String;", ref global::org.xml.sax.Attributes_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
 		static Attributes_()
 		{

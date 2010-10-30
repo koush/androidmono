@@ -21,50 +21,50 @@ namespace java.sql
 		internal ParameterMetaData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getScale24646;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int java.sql.ParameterMetaData.getScale(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getScale", "(I)I", ref global::java.sql.ParameterMetaData_._getScale24646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getScale", "(I)I", ref global::java.sql.ParameterMetaData_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getPrecision24647;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int java.sql.ParameterMetaData.getPrecision(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getPrecision", "(I)I", ref global::java.sql.ParameterMetaData_._getPrecision24647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getPrecision", "(I)I", ref global::java.sql.ParameterMetaData_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isNullable24648;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int java.sql.ParameterMetaData.isNullable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "isNullable", "(I)I", ref global::java.sql.ParameterMetaData_._isNullable24648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "isNullable", "(I)I", ref global::java.sql.ParameterMetaData_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSigned24649;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool java.sql.ParameterMetaData.isSigned(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ParameterMetaData_.staticClass, "isSigned", "(I)Z", ref global::java.sql.ParameterMetaData_._isSigned24649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.sql.ParameterMetaData_.staticClass, "isSigned", "(I)Z", ref global::java.sql.ParameterMetaData_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterCount24650;
+		private static global::MonoJavaBridge.MethodId _m4;
 		int java.sql.ParameterMetaData.getParameterCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterCount", "()I", ref global::java.sql.ParameterMetaData_._getParameterCount24650);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterCount", "()I", ref global::java.sql.ParameterMetaData_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterType24651;
+		private static global::MonoJavaBridge.MethodId _m5;
 		int java.sql.ParameterMetaData.getParameterType(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterType", "(I)I", ref global::java.sql.ParameterMetaData_._getParameterType24651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterType", "(I)I", ref global::java.sql.ParameterMetaData_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterTypeName24652;
+		private static global::MonoJavaBridge.MethodId _m6;
 		global::java.lang.String java.sql.ParameterMetaData.getParameterTypeName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterTypeName", "(I)Ljava/lang/String;", ref global::java.sql.ParameterMetaData_._getParameterTypeName24652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterTypeName", "(I)Ljava/lang/String;", ref global::java.sql.ParameterMetaData_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterClassName24653;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::java.lang.String java.sql.ParameterMetaData.getParameterClassName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterClassName", "(I)Ljava/lang/String;", ref global::java.sql.ParameterMetaData_._getParameterClassName24653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterClassName", "(I)Ljava/lang/String;", ref global::java.sql.ParameterMetaData_._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterMode24654;
+		private static global::MonoJavaBridge.MethodId _m8;
 		int java.sql.ParameterMetaData.getParameterMode(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterMode", "(I)I", ref global::java.sql.ParameterMetaData_._getParameterMode24654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.sql.ParameterMetaData_.staticClass, "getParameterMode", "(I)I", ref global::java.sql.ParameterMetaData_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ParameterMetaData_()
 		{

@@ -7,61 +7,61 @@ namespace dalvik.system
 		internal VMDebug(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isDebuggerConnected18615;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static bool isDebuggerConnected()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._isDebuggerConnected18615.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._isDebuggerConnected18615 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "isDebuggerConnected", "()Z");
-			return @__env.CallStaticBooleanMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._isDebuggerConnected18615);
+			if (global::dalvik.system.VMDebug._m0.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m0 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "isDebuggerConnected", "()Z");
+			return @__env.CallStaticBooleanMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _startMethodTracing18616;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void startMethodTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._startMethodTracing18616.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._startMethodTracing18616 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startMethodTracing", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._startMethodTracing18616);
+			if (global::dalvik.system.VMDebug._m1.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m1 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startMethodTracing", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _startMethodTracing18617;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void startMethodTracing(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._startMethodTracing18617.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._startMethodTracing18617 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startMethodTracing", "(Ljava/lang/String;II)V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._startMethodTracing18617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::dalvik.system.VMDebug._m2.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m2 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startMethodTracing", "(Ljava/lang/String;II)V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _stopMethodTracing18618;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static void stopMethodTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._stopMethodTracing18618.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._stopMethodTracing18618 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopMethodTracing", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._stopMethodTracing18618);
+			if (global::dalvik.system.VMDebug._m3.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m3 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopMethodTracing", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _threadCpuTimeNanos18619;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static long threadCpuTimeNanos()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._threadCpuTimeNanos18619.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._threadCpuTimeNanos18619 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "threadCpuTimeNanos", "()J");
-			return @__env.CallStaticLongMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._threadCpuTimeNanos18619);
+			if (global::dalvik.system.VMDebug._m4.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m4 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "threadCpuTimeNanos", "()J");
+			return @__env.CallStaticLongMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _startAllocCounting18620;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static void startAllocCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._startAllocCounting18620.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._startAllocCounting18620 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startAllocCounting", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._startAllocCounting18620);
+			if (global::dalvik.system.VMDebug._m5.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m5 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startAllocCounting", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopAllocCounting18621;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void stopAllocCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._stopAllocCounting18621.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._stopAllocCounting18621 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopAllocCounting", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._stopAllocCounting18621);
+			if (global::dalvik.system.VMDebug._m6.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m6 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopAllocCounting", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m6);
 		}
 		public static int AllocationLimit
 		{
@@ -70,13 +70,13 @@ namespace dalvik.system
 				setAllocationLimit(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setAllocationLimit18622;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static int setAllocationLimit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._setAllocationLimit18622.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._setAllocationLimit18622 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "setAllocationLimit", "(I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._setAllocationLimit18622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m7.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m7 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "setAllocationLimit", "(I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int GlobalAllocationLimit
 		{
@@ -85,21 +85,21 @@ namespace dalvik.system
 				setGlobalAllocationLimit(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setGlobalAllocationLimit18623;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static int setGlobalAllocationLimit(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._setGlobalAllocationLimit18623.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._setGlobalAllocationLimit18623 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "setGlobalAllocationLimit", "(I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._setGlobalAllocationLimit18623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m8.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m8 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "setGlobalAllocationLimit", "(I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _printLoadedClasses18624;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static void printLoadedClasses(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._printLoadedClasses18624.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._printLoadedClasses18624 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "printLoadedClasses", "(I)V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._printLoadedClasses18624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m9.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m9 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "printLoadedClasses", "(I)V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int LoadedClassCount
 		{
@@ -108,101 +108,101 @@ namespace dalvik.system
 				return getLoadedClassCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLoadedClassCount18625;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static int getLoadedClassCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._getLoadedClassCount18625.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._getLoadedClassCount18625 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getLoadedClassCount", "()I");
-			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._getLoadedClassCount18625);
+			if (global::dalvik.system.VMDebug._m10.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m10 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getLoadedClassCount", "()I");
+			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _dumpHprofData18626;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static void dumpHprofData(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._dumpHprofData18626.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._dumpHprofData18626 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "dumpHprofData", "(Ljava/lang/String;)V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._dumpHprofData18626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m11.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m11 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "dumpHprofData", "(Ljava/lang/String;)V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _lastDebuggerActivity18627;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static long lastDebuggerActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._lastDebuggerActivity18627.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._lastDebuggerActivity18627 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "lastDebuggerActivity", "()J");
-			return @__env.CallStaticLongMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._lastDebuggerActivity18627);
+			if (global::dalvik.system.VMDebug._m12.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m12 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "lastDebuggerActivity", "()J");
+			return @__env.CallStaticLongMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDebuggingEnabled18628;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static bool isDebuggingEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._isDebuggingEnabled18628.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._isDebuggingEnabled18628 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "isDebuggingEnabled", "()Z");
-			return @__env.CallStaticBooleanMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._isDebuggingEnabled18628);
+			if (global::dalvik.system.VMDebug._m13.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m13 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "isDebuggingEnabled", "()Z");
+			return @__env.CallStaticBooleanMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _startEmulatorTracing18629;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static void startEmulatorTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._startEmulatorTracing18629.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._startEmulatorTracing18629 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startEmulatorTracing", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._startEmulatorTracing18629);
+			if (global::dalvik.system.VMDebug._m14.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m14 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startEmulatorTracing", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopEmulatorTracing18630;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static void stopEmulatorTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._stopEmulatorTracing18630.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._stopEmulatorTracing18630 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopEmulatorTracing", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._stopEmulatorTracing18630);
+			if (global::dalvik.system.VMDebug._m15.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m15 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopEmulatorTracing", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _getAllocCount18631;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static int getAllocCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._getAllocCount18631.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._getAllocCount18631 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getAllocCount", "(I)I");
-			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._getAllocCount18631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m16.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m16 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getAllocCount", "(I)I");
+			return @__env.CallStaticIntMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _resetAllocCount18632;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static void resetAllocCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._resetAllocCount18632.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._resetAllocCount18632 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "resetAllocCount", "(I)V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._resetAllocCount18632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m17.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m17 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "resetAllocCount", "(I)V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startInstructionCounting18633;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static void startInstructionCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._startInstructionCounting18633.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._startInstructionCounting18633 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startInstructionCounting", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._startInstructionCounting18633);
+			if (global::dalvik.system.VMDebug._m18.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m18 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "startInstructionCounting", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m18);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopInstructionCounting18634;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static void stopInstructionCounting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._stopInstructionCounting18634.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._stopInstructionCounting18634 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopInstructionCounting", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._stopInstructionCounting18634);
+			if (global::dalvik.system.VMDebug._m19.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m19 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "stopInstructionCounting", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m19);
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstructionCount18635;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static void getInstructionCount(int[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._getInstructionCount18635.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._getInstructionCount18635 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getInstructionCount", "([I)V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._getInstructionCount18635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::dalvik.system.VMDebug._m20.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m20 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "getInstructionCount", "([I)V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _resetInstructionCount18636;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public static void resetInstructionCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::dalvik.system.VMDebug._resetInstructionCount18636.native == global::System.IntPtr.Zero)
-				global::dalvik.system.VMDebug._resetInstructionCount18636 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "resetInstructionCount", "()V");
-			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._resetInstructionCount18636);
+			if (global::dalvik.system.VMDebug._m21.native == global::System.IntPtr.Zero)
+				global::dalvik.system.VMDebug._m21 = @__env.GetStaticMethodIDNoThrow(global::dalvik.system.VMDebug.staticClass, "resetInstructionCount", "()V");
+			@__env.CallStaticVoidMethod(dalvik.system.VMDebug.staticClass, global::dalvik.system.VMDebug._m21);
 		}
 		public static global::java.lang.String DEFAULT_METHOD_TRACE_FILE_NAME
 		{

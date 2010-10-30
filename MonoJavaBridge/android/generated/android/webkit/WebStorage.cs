@@ -20,10 +20,10 @@ namespace android.webkit
 			internal QuotaUpdater_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _updateQuota16286;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.webkit.WebStorage.QuotaUpdater.updateQuota(long arg0)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.QuotaUpdater_.staticClass, "updateQuota", "(J)V", ref global::android.webkit.WebStorage.QuotaUpdater_._updateQuota16286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.QuotaUpdater_.staticClass, "updateQuota", "(J)V", ref global::android.webkit.WebStorage.QuotaUpdater_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			static QuotaUpdater_()
 			{
@@ -43,13 +43,13 @@ namespace android.webkit
 			protected QuotaUpdaterDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _QuotaUpdaterDelegateWrapper16287;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public QuotaUpdaterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._QuotaUpdaterDelegateWrapper16287.native == global::System.IntPtr.Zero)
-					global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._QuotaUpdaterDelegateWrapper16287 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._QuotaUpdaterDelegateWrapper16287);
+				if (global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass, global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static QuotaUpdaterDelegateWrapper()
@@ -83,63 +83,63 @@ namespace android.webkit
 				return getInstance();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance16288;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.webkit.WebStorage getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebStorage._getInstance16288.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebStorage._getInstance16288 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "getInstance", "()Landroid/webkit/WebStorage;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebStorage>(@__env.CallStaticObjectMethod(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getInstance16288)) as android.webkit.WebStorage;
+			if (global::android.webkit.WebStorage._m0.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebStorage._m0 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "getInstance", "()Landroid/webkit/WebStorage;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebStorage>(@__env.CallStaticObjectMethod(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._m0)) as android.webkit.WebStorage;
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrigins16289;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public void getOrigins(android.webkit.ValueCallback arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getOrigins", "(Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._getOrigins16289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getOrigins", "(Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void getOrigins(global::android.webkit.ValueCallbackDelegate arg0)
 		{
 			getOrigins((global::android.webkit.ValueCallbackDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getUsageForOrigin16290;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void getUsageForOrigin(java.lang.String arg0, android.webkit.ValueCallback arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getUsageForOrigin", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._getUsageForOrigin16290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getUsageForOrigin", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void getUsageForOrigin(java.lang.String arg0, global::android.webkit.ValueCallbackDelegate arg1)
 		{
 			getUsageForOrigin(arg0, (global::android.webkit.ValueCallbackDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getQuotaForOrigin16291;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public void getQuotaForOrigin(java.lang.String arg0, android.webkit.ValueCallback arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getQuotaForOrigin", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._getQuotaForOrigin16291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "getQuotaForOrigin", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", ref global::android.webkit.WebStorage._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void getQuotaForOrigin(java.lang.String arg0, global::android.webkit.ValueCallbackDelegate arg1)
 		{
 			getQuotaForOrigin(arg0, (global::android.webkit.ValueCallbackDelegateWrapper)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _setQuotaForOrigin16292;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public void setQuotaForOrigin(java.lang.String arg0, long arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "setQuotaForOrigin", "(Ljava/lang/String;J)V", ref global::android.webkit.WebStorage._setQuotaForOrigin16292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "setQuotaForOrigin", "(Ljava/lang/String;J)V", ref global::android.webkit.WebStorage._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteOrigin16293;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public void deleteOrigin(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "deleteOrigin", "(Ljava/lang/String;)V", ref global::android.webkit.WebStorage._deleteOrigin16293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "deleteOrigin", "(Ljava/lang/String;)V", ref global::android.webkit.WebStorage._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteAllData16294;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public void deleteAllData()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "deleteAllData", "()V", ref global::android.webkit.WebStorage._deleteAllData16294);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.webkit.WebStorage.staticClass, "deleteAllData", "()V", ref global::android.webkit.WebStorage._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _WebStorage16295;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public WebStorage() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.webkit.WebStorage._WebStorage16295.native == global::System.IntPtr.Zero)
-				global::android.webkit.WebStorage._WebStorage16295 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._WebStorage16295);
+			if (global::android.webkit.WebStorage._m7.native == global::System.IntPtr.Zero)
+				global::android.webkit.WebStorage._m7 = @__env.GetMethodIDNoThrow(global::android.webkit.WebStorage.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._m7);
 			Init(@__env, handle);
 		}
 		static WebStorage()

@@ -16,25 +16,25 @@ namespace java.lang.reflect
 		internal Member_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getModifiers21091;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int java.lang.reflect.Member.getModifiers()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Member_.staticClass, "getModifiers", "()I", ref global::java.lang.reflect.Member_._getModifiers21091);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.reflect.Member_.staticClass, "getModifiers", "()I", ref global::java.lang.reflect.Member_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getName21092;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String java.lang.reflect.Member.getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Member_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.reflect.Member_._getName21092) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.reflect.Member_.staticClass, "getName", "()Ljava/lang/String;", ref global::java.lang.reflect.Member_._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isSynthetic21093;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.lang.reflect.Member.isSynthetic()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Member_.staticClass, "isSynthetic", "()Z", ref global::java.lang.reflect.Member_._isSynthetic21093);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.lang.reflect.Member_.staticClass, "isSynthetic", "()Z", ref global::java.lang.reflect.Member_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaringClass21094;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.Class java.lang.reflect.Member.getDeclaringClass()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Member_.staticClass, "getDeclaringClass", "()Ljava/lang/Class;", ref global::java.lang.reflect.Member_._getDeclaringClass21094) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.Class>(this, global::java.lang.reflect.Member_.staticClass, "getDeclaringClass", "()Ljava/lang/Class;", ref global::java.lang.reflect.Member_._m3) as java.lang.Class;
 		}
 		static Member_()
 		{

@@ -7,190 +7,190 @@ namespace android.text
 		protected Selection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _selectAll12906;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static void selectAll(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._selectAll12906.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._selectAll12906 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "selectAll", "(Landroid/text/Spannable;)V");
-			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._selectAll12906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.Selection._m0.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "selectAll", "(Landroid/text/Spannable;)V");
+			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection12907;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void setSelection(android.text.Spannable arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._setSelection12907.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._setSelection12907 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "setSelection", "(Landroid/text/Spannable;II)V");
-			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._setSelection12907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.Selection._m1.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m1 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "setSelection", "(Landroid/text/Spannable;II)V");
+			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection12908;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void setSelection(android.text.Spannable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._setSelection12908.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._setSelection12908 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "setSelection", "(Landroid/text/Spannable;I)V");
-			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._setSelection12908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m2.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m2 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "setSelection", "(Landroid/text/Spannable;I)V");
+			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelectionStart12909;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int getSelectionStart(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._getSelectionStart12909.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._getSelectionStart12909 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "getSelectionStart", "(Ljava/lang/CharSequence;)I");
-			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._getSelectionStart12909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.Selection._m3.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m3 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "getSelectionStart", "(Ljava/lang/CharSequence;)I");
+			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int getSelectionStart(string arg0)
 		{
 			return getSelectionStart((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelectionEnd12910;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static int getSelectionEnd(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._getSelectionEnd12910.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._getSelectionEnd12910 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "getSelectionEnd", "(Ljava/lang/CharSequence;)I");
-			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._getSelectionEnd12910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.Selection._m4.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m4 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "getSelectionEnd", "(Ljava/lang/CharSequence;)I");
+			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int getSelectionEnd(string arg0)
 		{
 			return getSelectionEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _extendSelection12911;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static void extendSelection(android.text.Spannable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendSelection12911.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendSelection12911 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendSelection", "(Landroid/text/Spannable;I)V");
-			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._extendSelection12911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m5.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m5 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendSelection", "(Landroid/text/Spannable;I)V");
+			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeSelection12912;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void removeSelection(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._removeSelection12912.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._removeSelection12912 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "removeSelection", "(Landroid/text/Spannable;)V");
-			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._removeSelection12912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.Selection._m6.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m6 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "removeSelection", "(Landroid/text/Spannable;)V");
+			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveUp12913;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static bool moveUp(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveUp12913.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveUp12913 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveUp12913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m7.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m7 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveDown12914;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static bool moveDown(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveDown12914.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveDown12914 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveDown12914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m8.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m8 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveLeft12915;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static bool moveLeft(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveLeft12915.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveLeft12915 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveLeft12915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m9.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m9 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveRight12916;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public static bool moveRight(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveRight12916.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveRight12916 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveRight12916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m10.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m10 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendUp12917;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public static bool extendUp(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendUp12917.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendUp12917 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendUp12917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m11.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m11 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendDown12918;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static bool extendDown(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendDown12918.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendDown12918 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendDown12918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m12.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m12 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendLeft12919;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public static bool extendLeft(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendLeft12919.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendLeft12919 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendLeft12919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m13.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m13 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendRight12920;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public static bool extendRight(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendRight12920.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendRight12920 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendRight12920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m14.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m14 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendToLeftEdge12921;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public static bool extendToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendToLeftEdge12921.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendToLeftEdge12921 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendToLeftEdge12921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m15.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m15 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _extendToRightEdge12922;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public static bool extendToRightEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._extendToRightEdge12922.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._extendToRightEdge12922 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendToRightEdge12922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m16.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m16 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "extendToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveToLeftEdge12923;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static bool moveToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveToLeftEdge12923.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveToLeftEdge12923 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveToLeftEdge12923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m17.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m17 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _moveToRightEdge12924;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static bool moveToRightEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.Selection._moveToRightEdge12924.native == global::System.IntPtr.Zero)
-				global::android.text.Selection._moveToRightEdge12924 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveToRightEdge12924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.Selection._m18.native == global::System.IntPtr.Zero)
+				global::android.text.Selection._m18 = @__env.GetStaticMethodIDNoThrow(global::android.text.Selection.staticClass, "moveToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.FieldId _SELECTION_START12925;
+		internal static global::MonoJavaBridge.FieldId _SELECTION_START5228;
 		public static global::java.lang.Object SELECTION_START
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Selection.staticClass, _SELECTION_START12925)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Selection.staticClass, _SELECTION_START5228)) as java.lang.Object;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SELECTION_END12926;
+		internal static global::MonoJavaBridge.FieldId _SELECTION_END5229;
 		public static global::java.lang.Object SELECTION_END
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Selection.staticClass, _SELECTION_END12926)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Selection.staticClass, _SELECTION_END5229)) as java.lang.Object;
 			}
 		}
 		static Selection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Selection.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Selection"));
-			global::android.text.Selection._SELECTION_START12925 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_START", "Ljava/lang/Object;");
-			global::android.text.Selection._SELECTION_END12926 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_END", "Ljava/lang/Object;");
+			global::android.text.Selection._SELECTION_START5228 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_START", "Ljava/lang/Object;");
+			global::android.text.Selection._SELECTION_END5229 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_END", "Ljava/lang/Object;");
 		}
 		internal static void InitJNI()
 		{

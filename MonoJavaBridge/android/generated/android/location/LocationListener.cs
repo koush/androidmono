@@ -16,25 +16,25 @@ namespace android.location
 		internal LocationListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onStatusChanged6929;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.location.LocationListener.onStatusChanged(java.lang.String arg0, int arg1, android.os.Bundle arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onStatusChanged", "(Ljava/lang/String;ILandroid/os/Bundle;)V", ref global::android.location.LocationListener_._onStatusChanged6929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onStatusChanged", "(Ljava/lang/String;ILandroid/os/Bundle;)V", ref global::android.location.LocationListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLocationChanged6930;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.location.LocationListener.onLocationChanged(android.location.Location arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onLocationChanged", "(Landroid/location/Location;)V", ref global::android.location.LocationListener_._onLocationChanged6930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onLocationChanged", "(Landroid/location/Location;)V", ref global::android.location.LocationListener_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onProviderEnabled6931;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void android.location.LocationListener.onProviderEnabled(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onProviderEnabled", "(Ljava/lang/String;)V", ref global::android.location.LocationListener_._onProviderEnabled6931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onProviderEnabled", "(Ljava/lang/String;)V", ref global::android.location.LocationListener_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onProviderDisabled6932;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void android.location.LocationListener.onProviderDisabled(java.lang.String arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onProviderDisabled", "(Ljava/lang/String;)V", ref global::android.location.LocationListener_._onProviderDisabled6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.location.LocationListener_.staticClass, "onProviderDisabled", "(Ljava/lang/String;)V", ref global::android.location.LocationListener_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static LocationListener_()
 		{

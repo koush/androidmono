@@ -13,30 +13,30 @@ namespace javax.crypto.interfaces
 		internal DHPublicKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getY28743;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.math.BigInteger javax.crypto.interfaces.DHPublicKey.getY()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getY", "()Ljava/math/BigInteger;", ref global::javax.crypto.interfaces.DHPublicKey_._getY28743) as java.math.BigInteger;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getY", "()Ljava/math/BigInteger;", ref global::javax.crypto.interfaces.DHPublicKey_._m0) as java.math.BigInteger;
 		}
-		internal static global::MonoJavaBridge.MethodId _getParams28744;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;", ref global::javax.crypto.interfaces.DHPublicKey_._getParams28744) as javax.crypto.spec.DHParameterSpec;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;", ref global::javax.crypto.interfaces.DHPublicKey_._m1) as javax.crypto.spec.DHParameterSpec;
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded28745;
+		private static global::MonoJavaBridge.MethodId _m2;
 		byte[] java.security.Key.getEncoded()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getEncoded", "()[B", ref global::javax.crypto.interfaces.DHPublicKey_._getEncoded28745) as byte[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getEncoded", "()[B", ref global::javax.crypto.interfaces.DHPublicKey_._m2) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm28746;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String java.security.Key.getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.interfaces.DHPublicKey_._getAlgorithm28746) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.interfaces.DHPublicKey_._m3) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat28747;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::java.lang.String java.security.Key.getFormat()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::javax.crypto.interfaces.DHPublicKey_._getFormat28747) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.interfaces.DHPublicKey_.staticClass, "getFormat", "()Ljava/lang/String;", ref global::javax.crypto.interfaces.DHPublicKey_._m4) as java.lang.String;
 		}
 		static DHPublicKey_()
 		{

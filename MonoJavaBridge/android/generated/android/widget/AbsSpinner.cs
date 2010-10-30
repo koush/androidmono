@@ -7,96 +7,96 @@ namespace android.widget
 		protected AbsSpinner(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState16585;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void onRestoreInstanceState(android.os.Parcelable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V", ref global::android.widget.AbsSpinner._onRestoreInstanceState16585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V", ref global::android.widget.AbsSpinner._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState16586;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::android.os.Parcelable onSaveInstanceState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.widget.AbsSpinner.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;", ref global::android.widget.AbsSpinner._onSaveInstanceState16586) as android.os.Parcelable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.widget.AbsSpinner.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;", ref global::android.widget.AbsSpinner._m1) as android.os.Parcelable;
 		}
-		internal static global::MonoJavaBridge.MethodId _requestLayout16587;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void requestLayout()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "requestLayout", "()V", ref global::android.widget.AbsSpinner._requestLayout16587);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "requestLayout", "()V", ref global::android.widget.AbsSpinner._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure16588;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "onMeasure", "(II)V", ref global::android.widget.AbsSpinner._onMeasure16588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "onMeasure", "(II)V", ref global::android.widget.AbsSpinner._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount16589;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int getCount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSpinner.staticClass, "getCount", "()I", ref global::android.widget.AbsSpinner._getCount16589);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSpinner.staticClass, "getCount", "()I", ref global::android.widget.AbsSpinner._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _generateDefaultLayoutParams16590;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.AbsSpinner.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;", ref global::android.widget.AbsSpinner._generateDefaultLayoutParams16590) as android.view.ViewGroup.LayoutParams;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.AbsSpinner.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;", ref global::android.widget.AbsSpinner._m5) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _setAdapter16591;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override void setAdapter(android.widget.Adapter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V", ref global::android.widget.AbsSpinner._setAdapter16591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V", ref global::android.widget.AbsSpinner._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setAdapter16592;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual void setAdapter(android.widget.SpinnerAdapter arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setAdapter", "(Landroid/widget/SpinnerAdapter;)V", ref global::android.widget.AbsSpinner._setAdapter16592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setAdapter", "(Landroid/widget/SpinnerAdapter;)V", ref global::android.widget.AbsSpinner._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAdapter16593;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override global::android.widget.Adapter getAdapter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.Adapter>(this, global::android.widget.AbsSpinner.staticClass, "getAdapter", "()Landroid/widget/Adapter;", ref global::android.widget.AbsSpinner._getAdapter16593) as android.widget.Adapter;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.widget.Adapter>(this, global::android.widget.AbsSpinner.staticClass, "getAdapter", "()Landroid/widget/Adapter;", ref global::android.widget.AbsSpinner._m8) as android.widget.Adapter;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelectedView16594;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::android.view.View getSelectedView()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.AbsSpinner.staticClass, "getSelectedView", "()Landroid/view/View;", ref global::android.widget.AbsSpinner._getSelectedView16594) as android.view.View;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.AbsSpinner.staticClass, "getSelectedView", "()Landroid/view/View;", ref global::android.widget.AbsSpinner._m9) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection16595;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public override void setSelection(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setSelection", "(I)V", ref global::android.widget.AbsSpinner._setSelection16595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setSelection", "(I)V", ref global::android.widget.AbsSpinner._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection16596;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setSelection(int arg0, bool arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setSelection", "(IZ)V", ref global::android.widget.AbsSpinner._setSelection16596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.AbsSpinner.staticClass, "setSelection", "(IZ)V", ref global::android.widget.AbsSpinner._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _pointToPosition16597;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual int pointToPosition(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSpinner.staticClass, "pointToPosition", "(II)I", ref global::android.widget.AbsSpinner._pointToPosition16597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.AbsSpinner.staticClass, "pointToPosition", "(II)I", ref global::android.widget.AbsSpinner._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSpinner16598;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public AbsSpinner(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSpinner._AbsSpinner16598.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSpinner._AbsSpinner16598 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._AbsSpinner16598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.AbsSpinner._m13.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSpinner._m13 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSpinner16599;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public AbsSpinner(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSpinner._AbsSpinner16599.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSpinner._AbsSpinner16599 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._AbsSpinner16599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.AbsSpinner._m14.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSpinner._m14 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsSpinner16600;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public AbsSpinner(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.AbsSpinner._AbsSpinner16600.native == global::System.IntPtr.Zero)
-				global::android.widget.AbsSpinner._AbsSpinner16600 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._AbsSpinner16600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.AbsSpinner._m15.native == global::System.IntPtr.Zero)
+				global::android.widget.AbsSpinner._m15 = @__env.GetMethodIDNoThrow(global::android.widget.AbsSpinner.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static AbsSpinner()

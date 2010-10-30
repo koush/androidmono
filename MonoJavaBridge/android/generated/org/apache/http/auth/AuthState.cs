@@ -7,20 +7,20 @@ namespace org.apache.http.auth
 		protected AuthState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString31808;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthState.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthState._toString31808) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.AuthState.staticClass, "toString", "()Ljava/lang/String;", ref global::org.apache.http.auth.AuthState._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isValid31809;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool isValid()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.AuthState.staticClass, "isValid", "()Z", ref global::org.apache.http.auth.AuthState._isValid31809);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.auth.AuthState.staticClass, "isValid", "()Z", ref global::org.apache.http.auth.AuthState._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidate31810;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void invalidate()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "invalidate", "()V", ref global::org.apache.http.auth.AuthState._invalidate31810);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "invalidate", "()V", ref global::org.apache.http.auth.AuthState._m2);
 		}
 		public new global::org.apache.http.auth.AuthScheme AuthScheme
 		{
@@ -33,15 +33,15 @@ namespace org.apache.http.auth
 				setAuthScheme(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAuthScheme31811;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::org.apache.http.auth.AuthScheme getAuthScheme()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.auth.AuthScheme>(this, global::org.apache.http.auth.AuthState.staticClass, "getAuthScheme", "()Lorg/apache/http/auth/AuthScheme;", ref global::org.apache.http.auth.AuthState._getAuthScheme31811) as org.apache.http.auth.AuthScheme;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.auth.AuthScheme>(this, global::org.apache.http.auth.AuthState.staticClass, "getAuthScheme", "()Lorg/apache/http/auth/AuthScheme;", ref global::org.apache.http.auth.AuthState._m3) as org.apache.http.auth.AuthScheme;
 		}
-		internal static global::MonoJavaBridge.MethodId _setAuthScheme31812;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setAuthScheme(org.apache.http.auth.AuthScheme arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setAuthScheme", "(Lorg/apache/http/auth/AuthScheme;)V", ref global::org.apache.http.auth.AuthState._setAuthScheme31812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setAuthScheme", "(Lorg/apache/http/auth/AuthScheme;)V", ref global::org.apache.http.auth.AuthState._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.auth.Credentials Credentials
 		{
@@ -54,15 +54,15 @@ namespace org.apache.http.auth
 				setCredentials(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCredentials31813;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::org.apache.http.auth.Credentials getCredentials()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.auth.Credentials>(this, global::org.apache.http.auth.AuthState.staticClass, "getCredentials", "()Lorg/apache/http/auth/Credentials;", ref global::org.apache.http.auth.AuthState._getCredentials31813) as org.apache.http.auth.Credentials;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.auth.Credentials>(this, global::org.apache.http.auth.AuthState.staticClass, "getCredentials", "()Lorg/apache/http/auth/Credentials;", ref global::org.apache.http.auth.AuthState._m5) as org.apache.http.auth.Credentials;
 		}
-		internal static global::MonoJavaBridge.MethodId _setCredentials31814;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual void setCredentials(org.apache.http.auth.Credentials arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setCredentials", "(Lorg/apache/http/auth/Credentials;)V", ref global::org.apache.http.auth.AuthState._setCredentials31814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setCredentials", "(Lorg/apache/http/auth/Credentials;)V", ref global::org.apache.http.auth.AuthState._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::org.apache.http.auth.AuthScope AuthScope
 		{
@@ -75,23 +75,23 @@ namespace org.apache.http.auth
 				setAuthScope(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAuthScope31815;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::org.apache.http.auth.AuthScope getAuthScope()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.auth.AuthState.staticClass, "getAuthScope", "()Lorg/apache/http/auth/AuthScope;", ref global::org.apache.http.auth.AuthState._getAuthScope31815) as org.apache.http.auth.AuthScope;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.auth.AuthState.staticClass, "getAuthScope", "()Lorg/apache/http/auth/AuthScope;", ref global::org.apache.http.auth.AuthState._m7) as org.apache.http.auth.AuthScope;
 		}
-		internal static global::MonoJavaBridge.MethodId _setAuthScope31816;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setAuthScope(org.apache.http.auth.AuthScope arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setAuthScope", "(Lorg/apache/http/auth/AuthScope;)V", ref global::org.apache.http.auth.AuthState._setAuthScope31816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.auth.AuthState.staticClass, "setAuthScope", "(Lorg/apache/http/auth/AuthScope;)V", ref global::org.apache.http.auth.AuthState._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AuthState31817;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public AuthState() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.auth.AuthState._AuthState31817.native == global::System.IntPtr.Zero)
-				global::org.apache.http.auth.AuthState._AuthState31817 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthState.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthState.staticClass, global::org.apache.http.auth.AuthState._AuthState31817);
+			if (global::org.apache.http.auth.AuthState._m9.native == global::System.IntPtr.Zero)
+				global::org.apache.http.auth.AuthState._m9 = @__env.GetMethodIDNoThrow(global::org.apache.http.auth.AuthState.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthState.staticClass, global::org.apache.http.auth.AuthState._m9);
 			Init(@__env, handle);
 		}
 		static AuthState()

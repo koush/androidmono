@@ -7,15 +7,15 @@ namespace android.os
 		protected HandlerThread(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run9888;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void run()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.HandlerThread.staticClass, "run", "()V", ref global::android.os.HandlerThread._run9888);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.HandlerThread.staticClass, "run", "()V", ref global::android.os.HandlerThread._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _quit9889;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool quit()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.HandlerThread.staticClass, "quit", "()Z", ref global::android.os.HandlerThread._quit9889);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.os.HandlerThread.staticClass, "quit", "()Z", ref global::android.os.HandlerThread._m1);
 		}
 		public new global::android.os.Looper Looper
 		{
@@ -24,15 +24,15 @@ namespace android.os
 				return getLooper();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLooper9890;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::android.os.Looper getLooper()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.HandlerThread.staticClass, "getLooper", "()Landroid/os/Looper;", ref global::android.os.HandlerThread._getLooper9890) as android.os.Looper;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.os.HandlerThread.staticClass, "getLooper", "()Landroid/os/Looper;", ref global::android.os.HandlerThread._m2) as android.os.Looper;
 		}
-		internal static global::MonoJavaBridge.MethodId _onLooperPrepared9891;
+		private static global::MonoJavaBridge.MethodId _m3;
 		protected virtual void onLooperPrepared()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.HandlerThread.staticClass, "onLooperPrepared", "()V", ref global::android.os.HandlerThread._onLooperPrepared9891);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.os.HandlerThread.staticClass, "onLooperPrepared", "()V", ref global::android.os.HandlerThread._m3);
 		}
 		public new int ThreadId
 		{
@@ -41,27 +41,27 @@ namespace android.os
 				return getThreadId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getThreadId9892;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int getThreadId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.HandlerThread.staticClass, "getThreadId", "()I", ref global::android.os.HandlerThread._getThreadId9892);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.os.HandlerThread.staticClass, "getThreadId", "()I", ref global::android.os.HandlerThread._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _HandlerThread9893;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public HandlerThread(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.HandlerThread._HandlerThread9893.native == global::System.IntPtr.Zero)
-				global::android.os.HandlerThread._HandlerThread9893 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._HandlerThread9893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.os.HandlerThread._m5.native == global::System.IntPtr.Zero)
+				global::android.os.HandlerThread._m5 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HandlerThread9894;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public HandlerThread(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.HandlerThread._HandlerThread9894.native == global::System.IntPtr.Zero)
-				global::android.os.HandlerThread._HandlerThread9894 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._HandlerThread9894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.os.HandlerThread._m6.native == global::System.IntPtr.Zero)
+				global::android.os.HandlerThread._m6 = @__env.GetMethodIDNoThrow(global::android.os.HandlerThread.staticClass, "<init>", "(Ljava/lang/String;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static HandlerThread()

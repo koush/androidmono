@@ -7,50 +7,50 @@ namespace android.widget
 		protected HorizontalScrollView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent17205;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.HorizontalScrollView._onTouchEvent17205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.HorizontalScrollView._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent17206;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.HorizontalScrollView._dispatchKeyEvent17206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.HorizontalScrollView._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addView17207;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void addView(android.view.View arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;)V", ref global::android.widget.HorizontalScrollView._addView17207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;)V", ref global::android.widget.HorizontalScrollView._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addView17208;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void addView(android.view.View arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;I)V", ref global::android.widget.HorizontalScrollView._addView17208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;I)V", ref global::android.widget.HorizontalScrollView._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addView17209;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", ref global::android.widget.HorizontalScrollView._addView17209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", ref global::android.widget.HorizontalScrollView._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _addView17210;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V", ref global::android.widget.HorizontalScrollView._addView17210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V", ref global::android.widget.HorizontalScrollView._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSizeChanged17211;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onSizeChanged", "(IIII)V", ref global::android.widget.HorizontalScrollView._onSizeChanged17211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onSizeChanged", "(IIII)V", ref global::android.widget.HorizontalScrollView._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _scrollTo17212;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override void scrollTo(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "scrollTo", "(II)V", ref global::android.widget.HorizontalScrollView._scrollTo17212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "scrollTo", "(II)V", ref global::android.widget.HorizontalScrollView._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _computeScroll17213;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override void computeScroll()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeScroll", "()V", ref global::android.widget.HorizontalScrollView._computeScroll17213);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeScroll", "()V", ref global::android.widget.HorizontalScrollView._m8);
 		}
 		protected new float LeftFadingEdgeStrength
 		{
@@ -59,10 +59,10 @@ namespace android.widget
 				return getLeftFadingEdgeStrength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLeftFadingEdgeStrength17214;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override float getLeftFadingEdgeStrength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getLeftFadingEdgeStrength", "()F", ref global::android.widget.HorizontalScrollView._getLeftFadingEdgeStrength17214);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getLeftFadingEdgeStrength", "()F", ref global::android.widget.HorizontalScrollView._m9);
 		}
 		protected new float RightFadingEdgeStrength
 		{
@@ -71,65 +71,65 @@ namespace android.widget
 				return getRightFadingEdgeStrength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRightFadingEdgeStrength17215;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override float getRightFadingEdgeStrength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getRightFadingEdgeStrength", "()F", ref global::android.widget.HorizontalScrollView._getRightFadingEdgeStrength17215);
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getRightFadingEdgeStrength", "()F", ref global::android.widget.HorizontalScrollView._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollRange17216;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected override int computeHorizontalScrollRange()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeHorizontalScrollRange", "()I", ref global::android.widget.HorizontalScrollView._computeHorizontalScrollRange17216);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeHorizontalScrollRange", "()I", ref global::android.widget.HorizontalScrollView._m11);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollOffset17217;
+		private static global::MonoJavaBridge.MethodId _m12;
 		protected override int computeHorizontalScrollOffset()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeHorizontalScrollOffset", "()I", ref global::android.widget.HorizontalScrollView._computeHorizontalScrollOffset17217);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeHorizontalScrollOffset", "()I", ref global::android.widget.HorizontalScrollView._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _onLayout17218;
+		private static global::MonoJavaBridge.MethodId _m13;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onLayout", "(ZIIII)V", ref global::android.widget.HorizontalScrollView._onLayout17218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onLayout", "(ZIIII)V", ref global::android.widget.HorizontalScrollView._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestLayout17219;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public override void requestLayout()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestLayout", "()V", ref global::android.widget.HorizontalScrollView._requestLayout17219);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestLayout", "()V", ref global::android.widget.HorizontalScrollView._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure17220;
+		private static global::MonoJavaBridge.MethodId _m15;
 		protected override void onMeasure(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onMeasure", "(II)V", ref global::android.widget.HorizontalScrollView._onMeasure17220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onMeasure", "(II)V", ref global::android.widget.HorizontalScrollView._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestChildFocus17221;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public override void requestChildFocus(android.view.View arg0, android.view.View arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", ref global::android.widget.HorizontalScrollView._requestChildFocus17221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", ref global::android.widget.HorizontalScrollView._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestChildRectangleOnScreen17222;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", ref global::android.widget.HorizontalScrollView._requestChildRectangleOnScreen17222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", ref global::android.widget.HorizontalScrollView._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onInterceptTouchEvent17223;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onInterceptTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.HorizontalScrollView._onInterceptTouchEvent17223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onInterceptTouchEvent", "(Landroid/view/MotionEvent;)Z", ref global::android.widget.HorizontalScrollView._m18, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRequestFocusInDescendants17224;
+		private static global::MonoJavaBridge.MethodId _m19;
 		protected override bool onRequestFocusInDescendants(int arg0, android.graphics.Rect arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onRequestFocusInDescendants", "(ILandroid/graphics/Rect;)Z", ref global::android.widget.HorizontalScrollView._onRequestFocusInDescendants17224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "onRequestFocusInDescendants", "(ILandroid/graphics/Rect;)Z", ref global::android.widget.HorizontalScrollView._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _measureChild17225;
+		private static global::MonoJavaBridge.MethodId _m20;
 		protected override void measureChild(android.view.View arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "measureChild", "(Landroid/view/View;II)V", ref global::android.widget.HorizontalScrollView._measureChild17225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "measureChild", "(Landroid/view/View;II)V", ref global::android.widget.HorizontalScrollView._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _measureChildWithMargins17226;
+		private static global::MonoJavaBridge.MethodId _m21;
 		protected override void measureChildWithMargins(android.view.View arg0, int arg1, int arg2, int arg3, int arg4)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "measureChildWithMargins", "(Landroid/view/View;IIII)V", ref global::android.widget.HorizontalScrollView._measureChildWithMargins17226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "measureChildWithMargins", "(Landroid/view/View;IIII)V", ref global::android.widget.HorizontalScrollView._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public new int MaxScrollAmount
 		{
@@ -138,25 +138,25 @@ namespace android.widget
 				return getMaxScrollAmount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxScrollAmount17227;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public virtual int getMaxScrollAmount()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getMaxScrollAmount", "()I", ref global::android.widget.HorizontalScrollView._getMaxScrollAmount17227);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "getMaxScrollAmount", "()I", ref global::android.widget.HorizontalScrollView._m22);
 		}
-		internal static global::MonoJavaBridge.MethodId _smoothScrollBy17228;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public virtual void smoothScrollBy(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "smoothScrollBy", "(II)V", ref global::android.widget.HorizontalScrollView._smoothScrollBy17228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "smoothScrollBy", "(II)V", ref global::android.widget.HorizontalScrollView._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _fling17229;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public virtual void fling(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "fling", "(I)V", ref global::android.widget.HorizontalScrollView._fling17229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "fling", "(I)V", ref global::android.widget.HorizontalScrollView._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isFillViewport17230;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual bool isFillViewport()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "isFillViewport", "()Z", ref global::android.widget.HorizontalScrollView._isFillViewport17230);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "isFillViewport", "()Z", ref global::android.widget.HorizontalScrollView._m25);
 		}
 		public new bool FillViewport
 		{
@@ -165,15 +165,15 @@ namespace android.widget
 				setFillViewport(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setFillViewport17231;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void setFillViewport(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "setFillViewport", "(Z)V", ref global::android.widget.HorizontalScrollView._setFillViewport17231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "setFillViewport", "(Z)V", ref global::android.widget.HorizontalScrollView._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSmoothScrollingEnabled17232;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual bool isSmoothScrollingEnabled()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "isSmoothScrollingEnabled", "()Z", ref global::android.widget.HorizontalScrollView._isSmoothScrollingEnabled17232);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "isSmoothScrollingEnabled", "()Z", ref global::android.widget.HorizontalScrollView._m27);
 		}
 		public new bool SmoothScrollingEnabled
 		{
@@ -182,66 +182,66 @@ namespace android.widget
 				setSmoothScrollingEnabled(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setSmoothScrollingEnabled17233;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual void setSmoothScrollingEnabled(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "setSmoothScrollingEnabled", "(Z)V", ref global::android.widget.HorizontalScrollView._setSmoothScrollingEnabled17233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "setSmoothScrollingEnabled", "(Z)V", ref global::android.widget.HorizontalScrollView._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _executeKeyEvent17234;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual bool executeKeyEvent(android.view.KeyEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "executeKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.HorizontalScrollView._executeKeyEvent17234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "executeKeyEvent", "(Landroid/view/KeyEvent;)Z", ref global::android.widget.HorizontalScrollView._m29, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _pageScroll17235;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual bool pageScroll(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "pageScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._pageScroll17235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "pageScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _fullScroll17236;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual bool fullScroll(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "fullScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._fullScroll17236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "fullScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._m31, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _arrowScroll17237;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual bool arrowScroll(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "arrowScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._arrowScroll17237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.HorizontalScrollView.staticClass, "arrowScroll", "(I)Z", ref global::android.widget.HorizontalScrollView._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _smoothScrollTo17238;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual void smoothScrollTo(int arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "smoothScrollTo", "(II)V", ref global::android.widget.HorizontalScrollView._smoothScrollTo17238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.HorizontalScrollView.staticClass, "smoothScrollTo", "(II)V", ref global::android.widget.HorizontalScrollView._m33, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _computeScrollDeltaToGetChildRectOnScreen17239;
+		private static global::MonoJavaBridge.MethodId _m34;
 		protected virtual int computeScrollDeltaToGetChildRectOnScreen(android.graphics.Rect arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeScrollDeltaToGetChildRectOnScreen", "(Landroid/graphics/Rect;)I", ref global::android.widget.HorizontalScrollView._computeScrollDeltaToGetChildRectOnScreen17239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.widget.HorizontalScrollView.staticClass, "computeScrollDeltaToGetChildRectOnScreen", "(Landroid/graphics/Rect;)I", ref global::android.widget.HorizontalScrollView._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _HorizontalScrollView17240;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public HorizontalScrollView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HorizontalScrollView._HorizontalScrollView17240.native == global::System.IntPtr.Zero)
-				global::android.widget.HorizontalScrollView._HorizontalScrollView17240 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._HorizontalScrollView17240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.HorizontalScrollView._m35.native == global::System.IntPtr.Zero)
+				global::android.widget.HorizontalScrollView._m35 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._m35, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HorizontalScrollView17241;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public HorizontalScrollView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HorizontalScrollView._HorizontalScrollView17241.native == global::System.IntPtr.Zero)
-				global::android.widget.HorizontalScrollView._HorizontalScrollView17241 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._HorizontalScrollView17241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.HorizontalScrollView._m36.native == global::System.IntPtr.Zero)
+				global::android.widget.HorizontalScrollView._m36 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _HorizontalScrollView17242;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public HorizontalScrollView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.HorizontalScrollView._HorizontalScrollView17242.native == global::System.IntPtr.Zero)
-				global::android.widget.HorizontalScrollView._HorizontalScrollView17242 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._HorizontalScrollView17242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.HorizontalScrollView._m37.native == global::System.IntPtr.Zero)
+				global::android.widget.HorizontalScrollView._m37 = @__env.GetMethodIDNoThrow(global::android.widget.HorizontalScrollView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HorizontalScrollView.staticClass, global::android.widget.HorizontalScrollView._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static HorizontalScrollView()

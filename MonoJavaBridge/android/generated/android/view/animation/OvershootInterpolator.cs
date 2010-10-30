@@ -7,36 +7,36 @@ namespace android.view.animation
 		protected OvershootInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterpolation15740;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual float getInterpolation(float arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.OvershootInterpolator.staticClass, "getInterpolation", "(F)F", ref global::android.view.animation.OvershootInterpolator._getInterpolation15740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallFloatMethod(this, global::android.view.animation.OvershootInterpolator.staticClass, "getInterpolation", "(F)F", ref global::android.view.animation.OvershootInterpolator._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator15741;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public OvershootInterpolator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.OvershootInterpolator._OvershootInterpolator15741.native == global::System.IntPtr.Zero)
-				global::android.view.animation.OvershootInterpolator._OvershootInterpolator15741 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator15741);
+			if (global::android.view.animation.OvershootInterpolator._m1.native == global::System.IntPtr.Zero)
+				global::android.view.animation.OvershootInterpolator._m1 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._m1);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator15742;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public OvershootInterpolator(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.OvershootInterpolator._OvershootInterpolator15742.native == global::System.IntPtr.Zero)
-				global::android.view.animation.OvershootInterpolator._OvershootInterpolator15742 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(F)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator15742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.animation.OvershootInterpolator._m2.native == global::System.IntPtr.Zero)
+				global::android.view.animation.OvershootInterpolator._m2 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(F)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator15743;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public OvershootInterpolator(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.animation.OvershootInterpolator._OvershootInterpolator15743.native == global::System.IntPtr.Zero)
-				global::android.view.animation.OvershootInterpolator._OvershootInterpolator15743 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator15743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.view.animation.OvershootInterpolator._m3.native == global::System.IntPtr.Zero)
+				global::android.view.animation.OvershootInterpolator._m3 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static OvershootInterpolator()

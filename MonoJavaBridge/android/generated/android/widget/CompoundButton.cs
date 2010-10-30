@@ -20,10 +20,10 @@ namespace android.widget
 			internal OnCheckedChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onCheckedChanged16874;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.widget.CompoundButton.OnCheckedChangeListener.onCheckedChanged(android.widget.CompoundButton arg0, bool arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.OnCheckedChangeListener_.staticClass, "onCheckedChanged", "(Landroid/widget/CompoundButton;Z)V", ref global::android.widget.CompoundButton.OnCheckedChangeListener_._onCheckedChanged16874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.OnCheckedChangeListener_.staticClass, "onCheckedChanged", "(Landroid/widget/CompoundButton;Z)V", ref global::android.widget.CompoundButton.OnCheckedChangeListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnCheckedChangeListener_()
 			{
@@ -43,13 +43,13 @@ namespace android.widget
 			protected OnCheckedChangeListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnCheckedChangeListenerDelegateWrapper16875;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnCheckedChangeListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._OnCheckedChangeListenerDelegateWrapper16875.native == global::System.IntPtr.Zero)
-					global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._OnCheckedChangeListenerDelegateWrapper16875 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._OnCheckedChangeListenerDelegateWrapper16875);
+				if (global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper.staticClass, global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnCheckedChangeListenerDelegateWrapper()
@@ -76,105 +76,105 @@ namespace android.widget
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _toggle16876;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void toggle()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "toggle", "()V", ref global::android.widget.CompoundButton._toggle16876);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "toggle", "()V", ref global::android.widget.CompoundButton._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isChecked16877;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool isChecked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "isChecked", "()Z", ref global::android.widget.CompoundButton._isChecked16877);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "isChecked", "()Z", ref global::android.widget.CompoundButton._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _setChecked16878;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setChecked(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setChecked", "(Z)V", ref global::android.widget.CompoundButton._setChecked16878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setChecked", "(Z)V", ref global::android.widget.CompoundButton._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState16879;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void onRestoreInstanceState(android.os.Parcelable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V", ref global::android.widget.CompoundButton._onRestoreInstanceState16879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V", ref global::android.widget.CompoundButton._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState16880;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override global::android.os.Parcelable onSaveInstanceState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.widget.CompoundButton.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;", ref global::android.widget.CompoundButton._onSaveInstanceState16880) as android.os.Parcelable;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<android.os.Parcelable>(this, global::android.widget.CompoundButton.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;", ref global::android.widget.CompoundButton._m4) as android.os.Parcelable;
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent16881;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z", ref global::android.widget.CompoundButton._dispatchPopulateAccessibilityEvent16881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z", ref global::android.widget.CompoundButton._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _performClick16882;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool performClick()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "performClick", "()Z", ref global::android.widget.CompoundButton._performClick16882);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "performClick", "()Z", ref global::android.widget.CompoundButton._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDraw16883;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected override void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.CompoundButton._onDraw16883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.CompoundButton._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _verifyDrawable16884;
+		private static global::MonoJavaBridge.MethodId _m8;
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.CompoundButton._verifyDrawable16884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CompoundButton.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z", ref global::android.widget.CompoundButton._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16885;
+		private static global::MonoJavaBridge.MethodId _m9;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "drawableStateChanged", "()V", ref global::android.widget.CompoundButton._drawableStateChanged16885);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "drawableStateChanged", "()V", ref global::android.widget.CompoundButton._m9);
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState16886;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override int[] onCreateDrawableState(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.CompoundButton.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.CompoundButton._onCreateDrawableState16886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.CompoundButton.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.CompoundButton._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnCheckedChangeListener16887;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual void setOnCheckedChangeListener(android.widget.CompoundButton.OnCheckedChangeListener arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V", ref global::android.widget.CompoundButton._setOnCheckedChangeListener16887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V", ref global::android.widget.CompoundButton._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setOnCheckedChangeListener(global::android.widget.CompoundButton.OnCheckedChangeListenerDelegate arg0)
 		{
 			setOnCheckedChangeListener((global::android.widget.CompoundButton.OnCheckedChangeListenerDelegateWrapper)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _setButtonDrawable16888;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual void setButtonDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.CompoundButton._setButtonDrawable16888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.CompoundButton._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setButtonDrawable16889;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setButtonDrawable(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(I)V", ref global::android.widget.CompoundButton._setButtonDrawable16889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(I)V", ref global::android.widget.CompoundButton._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _CompoundButton16890;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public CompoundButton(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CompoundButton._CompoundButton16890.native == global::System.IntPtr.Zero)
-				global::android.widget.CompoundButton._CompoundButton16890 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._CompoundButton16890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.CompoundButton._m14.native == global::System.IntPtr.Zero)
+				global::android.widget.CompoundButton._m14 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CompoundButton16891;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public CompoundButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CompoundButton._CompoundButton16891.native == global::System.IntPtr.Zero)
-				global::android.widget.CompoundButton._CompoundButton16891 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._CompoundButton16891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.CompoundButton._m15.native == global::System.IntPtr.Zero)
+				global::android.widget.CompoundButton._m15 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CompoundButton16892;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public CompoundButton(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CompoundButton._CompoundButton16892.native == global::System.IntPtr.Zero)
-				global::android.widget.CompoundButton._CompoundButton16892 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._CompoundButton16892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.CompoundButton._m16.native == global::System.IntPtr.Zero)
+				global::android.widget.CompoundButton._m16 = @__env.GetMethodIDNoThrow(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static CompoundButton()

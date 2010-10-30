@@ -7,10 +7,10 @@ namespace android.app.backup
 		protected BackupDataInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _size2314;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int size()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "size", "()I", ref global::android.app.backup.BackupDataInputStream._size2314);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "size", "()I", ref global::android.app.backup.BackupDataInputStream._m0);
 		}
 		public new global::java.lang.String Key
 		{
@@ -19,25 +19,25 @@ namespace android.app.backup
 				return getKey();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKey2315;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String getKey()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.app.backup.BackupDataInputStream.staticClass, "getKey", "()Ljava/lang/String;", ref global::android.app.backup.BackupDataInputStream._getKey2315) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.app.backup.BackupDataInputStream.staticClass, "getKey", "()Ljava/lang/String;", ref global::android.app.backup.BackupDataInputStream._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _read2316;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "()I", ref global::android.app.backup.BackupDataInputStream._read2316);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "()I", ref global::android.app.backup.BackupDataInputStream._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _read2317;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override int read(byte[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "([BII)I", ref global::android.app.backup.BackupDataInputStream._read2317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "([BII)I", ref global::android.app.backup.BackupDataInputStream._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read2318;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int read(byte[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "([B)I", ref global::android.app.backup.BackupDataInputStream._read2318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.app.backup.BackupDataInputStream.staticClass, "read", "([B)I", ref global::android.app.backup.BackupDataInputStream._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static BackupDataInputStream()
 		{

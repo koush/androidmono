@@ -14,30 +14,30 @@ namespace android.content
 		internal EntityIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close3095;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void android.content.EntityIterator.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "close", "()V", ref global::android.content.EntityIterator_._close3095);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "close", "()V", ref global::android.content.EntityIterator_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _reset3096;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.content.EntityIterator.reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "reset", "()V", ref global::android.content.EntityIterator_._reset3096);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "reset", "()V", ref global::android.content.EntityIterator_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasNext3097;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool java.util.Iterator.hasNext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.EntityIterator_.staticClass, "hasNext", "()Z", ref global::android.content.EntityIterator_._hasNext3097);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.content.EntityIterator_.staticClass, "hasNext", "()Z", ref global::android.content.EntityIterator_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _next3098;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.Object java.util.Iterator.next()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.EntityIterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::android.content.EntityIterator_._next3098) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.content.EntityIterator_.staticClass, "next", "()Ljava/lang/Object;", ref global::android.content.EntityIterator_._m3) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _remove3099;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void java.util.Iterator.remove()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "remove", "()V", ref global::android.content.EntityIterator_._remove3099);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.content.EntityIterator_.staticClass, "remove", "()V", ref global::android.content.EntityIterator_._m4);
 		}
 		static EntityIterator_()
 		{

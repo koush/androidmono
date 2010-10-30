@@ -18,70 +18,70 @@ namespace org.apache.http
 		internal HttpClientConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _flush31516;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.HttpClientConnection.flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "flush", "()V", ref global::org.apache.http.HttpClientConnection_._flush31516);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "flush", "()V", ref global::org.apache.http.HttpClientConnection_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isResponseAvailable31517;
+		private static global::MonoJavaBridge.MethodId _m1;
 		bool org.apache.http.HttpClientConnection.isResponseAvailable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isResponseAvailable", "(I)Z", ref global::org.apache.http.HttpClientConnection_._isResponseAvailable31517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isResponseAvailable", "(I)Z", ref global::org.apache.http.HttpClientConnection_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sendRequestHeader31518;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void org.apache.http.HttpClientConnection.sendRequestHeader(org.apache.http.HttpRequest arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestHeader", "(Lorg/apache/http/HttpRequest;)V", ref global::org.apache.http.HttpClientConnection_._sendRequestHeader31518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestHeader", "(Lorg/apache/http/HttpRequest;)V", ref global::org.apache.http.HttpClientConnection_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sendRequestEntity31519;
+		private static global::MonoJavaBridge.MethodId _m3;
 		void org.apache.http.HttpClientConnection.sendRequestEntity(org.apache.http.HttpEntityEnclosingRequest arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestEntity", "(Lorg/apache/http/HttpEntityEnclosingRequest;)V", ref global::org.apache.http.HttpClientConnection_._sendRequestEntity31519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestEntity", "(Lorg/apache/http/HttpEntityEnclosingRequest;)V", ref global::org.apache.http.HttpClientConnection_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _receiveResponseHeader31520;
+		private static global::MonoJavaBridge.MethodId _m4;
 		global::org.apache.http.HttpResponse org.apache.http.HttpClientConnection.receiveResponseHeader()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseHeader", "()Lorg/apache/http/HttpResponse;", ref global::org.apache.http.HttpClientConnection_._receiveResponseHeader31520) as org.apache.http.HttpResponse;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpResponse>(this, global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseHeader", "()Lorg/apache/http/HttpResponse;", ref global::org.apache.http.HttpClientConnection_._m4) as org.apache.http.HttpResponse;
 		}
-		internal static global::MonoJavaBridge.MethodId _receiveResponseEntity31521;
+		private static global::MonoJavaBridge.MethodId _m5;
 		void org.apache.http.HttpClientConnection.receiveResponseEntity(org.apache.http.HttpResponse arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseEntity", "(Lorg/apache/http/HttpResponse;)V", ref global::org.apache.http.HttpClientConnection_._receiveResponseEntity31521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseEntity", "(Lorg/apache/http/HttpResponse;)V", ref global::org.apache.http.HttpClientConnection_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _shutdown31522;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void org.apache.http.HttpConnection.shutdown()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "shutdown", "()V", ref global::org.apache.http.HttpClientConnection_._shutdown31522);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "shutdown", "()V", ref global::org.apache.http.HttpClientConnection_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _close31523;
+		private static global::MonoJavaBridge.MethodId _m7;
 		void org.apache.http.HttpConnection.close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "close", "()V", ref global::org.apache.http.HttpClientConnection_._close31523);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "close", "()V", ref global::org.apache.http.HttpClientConnection_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _isOpen31524;
+		private static global::MonoJavaBridge.MethodId _m8;
 		bool org.apache.http.HttpConnection.isOpen()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isOpen", "()Z", ref global::org.apache.http.HttpClientConnection_._isOpen31524);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isOpen", "()Z", ref global::org.apache.http.HttpClientConnection_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetrics31525;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::org.apache.http.HttpConnectionMetrics org.apache.http.HttpConnection.getMetrics()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpConnectionMetrics>(this, global::org.apache.http.HttpClientConnection_.staticClass, "getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;", ref global::org.apache.http.HttpClientConnection_._getMetrics31525) as org.apache.http.HttpConnectionMetrics;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.HttpConnectionMetrics>(this, global::org.apache.http.HttpClientConnection_.staticClass, "getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;", ref global::org.apache.http.HttpClientConnection_._m9) as org.apache.http.HttpConnectionMetrics;
 		}
-		internal static global::MonoJavaBridge.MethodId _isStale31526;
+		private static global::MonoJavaBridge.MethodId _m10;
 		bool org.apache.http.HttpConnection.isStale()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isStale", "()Z", ref global::org.apache.http.HttpClientConnection_._isStale31526);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "isStale", "()Z", ref global::org.apache.http.HttpClientConnection_._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _setSocketTimeout31527;
+		private static global::MonoJavaBridge.MethodId _m11;
 		void org.apache.http.HttpConnection.setSocketTimeout(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "setSocketTimeout", "(I)V", ref global::org.apache.http.HttpClientConnection_._setSocketTimeout31527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "setSocketTimeout", "(I)V", ref global::org.apache.http.HttpClientConnection_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSocketTimeout31528;
+		private static global::MonoJavaBridge.MethodId _m12;
 		int org.apache.http.HttpConnection.getSocketTimeout()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "getSocketTimeout", "()I", ref global::org.apache.http.HttpClientConnection_._getSocketTimeout31528);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.HttpClientConnection_.staticClass, "getSocketTimeout", "()I", ref global::org.apache.http.HttpClientConnection_._m12);
 		}
 		static HttpClientConnection_()
 		{

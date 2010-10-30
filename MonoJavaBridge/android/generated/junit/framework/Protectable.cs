@@ -13,10 +13,10 @@ namespace junit.framework
 		internal Protectable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _protect31374;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void junit.framework.Protectable.protect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.Protectable_.staticClass, "protect", "()V", ref global::junit.framework.Protectable_._protect31374);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::junit.framework.Protectable_.staticClass, "protect", "()V", ref global::junit.framework.Protectable_._m0);
 		}
 		static Protectable_()
 		{

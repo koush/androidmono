@@ -13,10 +13,10 @@ namespace javax.security.auth.callback
 		internal CallbackHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handle30198;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V", ref global::javax.security.auth.callback.CallbackHandler_._handle30198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V", ref global::javax.security.auth.callback.CallbackHandler_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static CallbackHandler_()
 		{

@@ -13,10 +13,10 @@ namespace java.net
 		internal DatagramSocketImplFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createDatagramSocketImpl21465;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;", ref global::java.net.DatagramSocketImplFactory_._createDatagramSocketImpl21465) as java.net.DatagramSocketImpl;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.DatagramSocketImplFactory_.staticClass, "createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;", ref global::java.net.DatagramSocketImplFactory_._m0) as java.net.DatagramSocketImpl;
 		}
 		static DatagramSocketImplFactory_()
 		{

@@ -13,10 +13,10 @@ namespace javax.sql
 		internal RowSetWriter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeData30622;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool javax.sql.RowSetWriter.writeData(javax.sql.RowSetInternal arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.sql.RowSetWriter_.staticClass, "writeData", "(Ljavax/sql/RowSetInternal;)Z", ref global::javax.sql.RowSetWriter_._writeData30622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::javax.sql.RowSetWriter_.staticClass, "writeData", "(Ljavax/sql/RowSetInternal;)Z", ref global::javax.sql.RowSetWriter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static RowSetWriter_()
 		{

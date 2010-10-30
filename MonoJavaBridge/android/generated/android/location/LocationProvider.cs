@@ -7,33 +7,33 @@ namespace android.location
 		protected LocationProvider(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getName6968;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.String getName()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;", ref global::android.location.LocationProvider._getName6968) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;", ref global::android.location.LocationProvider._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAccuracy6969;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract int getAccuracy();
-		internal static global::MonoJavaBridge.MethodId _getPowerRequirement6970;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract int getPowerRequirement();
-		internal static global::MonoJavaBridge.MethodId _requiresNetwork6971;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract bool requiresNetwork();
-		internal static global::MonoJavaBridge.MethodId _requiresSatellite6972;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract bool requiresSatellite();
-		internal static global::MonoJavaBridge.MethodId _requiresCell6973;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract bool requiresCell();
-		internal static global::MonoJavaBridge.MethodId _hasMonetaryCost6974;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract bool hasMonetaryCost();
-		internal static global::MonoJavaBridge.MethodId _supportsAltitude6975;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public abstract bool supportsAltitude();
-		internal static global::MonoJavaBridge.MethodId _supportsSpeed6976;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract bool supportsSpeed();
-		internal static global::MonoJavaBridge.MethodId _supportsBearing6977;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract bool supportsBearing();
-		internal static global::MonoJavaBridge.MethodId _meetsCriteria6978;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual bool meetsCriteria(android.location.Criteria arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z", ref global::android.location.LocationProvider._meetsCriteria6978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z", ref global::android.location.LocationProvider._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int OUT_OF_SERVICE
 		{
@@ -73,50 +73,50 @@ namespace android.location
 		internal LocationProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getAccuracy6982;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int getAccuracy()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getAccuracy", "()I", ref global::android.location.LocationProvider_._getAccuracy6982);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getAccuracy", "()I", ref global::android.location.LocationProvider_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPowerRequirement6983;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int getPowerRequirement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getPowerRequirement", "()I", ref global::android.location.LocationProvider_._getPowerRequirement6983);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.location.LocationProvider_.staticClass, "getPowerRequirement", "()I", ref global::android.location.LocationProvider_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _requiresNetwork6984;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override bool requiresNetwork()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresNetwork", "()Z", ref global::android.location.LocationProvider_._requiresNetwork6984);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresNetwork", "()Z", ref global::android.location.LocationProvider_._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _requiresSatellite6985;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool requiresSatellite()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresSatellite", "()Z", ref global::android.location.LocationProvider_._requiresSatellite6985);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresSatellite", "()Z", ref global::android.location.LocationProvider_._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _requiresCell6986;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override bool requiresCell()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresCell", "()Z", ref global::android.location.LocationProvider_._requiresCell6986);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "requiresCell", "()Z", ref global::android.location.LocationProvider_._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasMonetaryCost6987;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override bool hasMonetaryCost()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "hasMonetaryCost", "()Z", ref global::android.location.LocationProvider_._hasMonetaryCost6987);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "hasMonetaryCost", "()Z", ref global::android.location.LocationProvider_._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _supportsAltitude6988;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override bool supportsAltitude()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsAltitude", "()Z", ref global::android.location.LocationProvider_._supportsAltitude6988);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsAltitude", "()Z", ref global::android.location.LocationProvider_._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _supportsSpeed6989;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override bool supportsSpeed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsSpeed", "()Z", ref global::android.location.LocationProvider_._supportsSpeed6989);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsSpeed", "()Z", ref global::android.location.LocationProvider_._m7);
 		}
-		internal static global::MonoJavaBridge.MethodId _supportsBearing6990;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override bool supportsBearing()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsBearing", "()Z", ref global::android.location.LocationProvider_._supportsBearing6990);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.location.LocationProvider_.staticClass, "supportsBearing", "()Z", ref global::android.location.LocationProvider_._m8);
 		}
 		static LocationProvider_()
 		{

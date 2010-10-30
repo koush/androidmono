@@ -13,10 +13,10 @@ namespace java.io
 		internal Flushable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19089;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void java.io.Flushable.flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Flushable_.staticClass, "flush", "()V", ref global::java.io.Flushable_._flush19089);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.Flushable_.staticClass, "flush", "()V", ref global::java.io.Flushable_._m0);
 		}
 		static Flushable_()
 		{

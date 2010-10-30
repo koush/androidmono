@@ -13,20 +13,20 @@ namespace android.text
 		internal ParcelableSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId12903;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int android.text.ParcelableSpan.getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.ParcelableSpan_.staticClass, "getSpanTypeId", "()I", ref global::android.text.ParcelableSpan_._getSpanTypeId12903);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.ParcelableSpan_.staticClass, "getSpanTypeId", "()I", ref global::android.text.ParcelableSpan_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel12904;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.ParcelableSpan_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.ParcelableSpan_._writeToParcel12904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.ParcelableSpan_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.ParcelableSpan_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents12905;
+		private static global::MonoJavaBridge.MethodId _m2;
 		int android.os.Parcelable.describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.ParcelableSpan_.staticClass, "describeContents", "()I", ref global::android.text.ParcelableSpan_._describeContents12905);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.ParcelableSpan_.staticClass, "describeContents", "()I", ref global::android.text.ParcelableSpan_._m2);
 		}
 		static ParcelableSpan_()
 		{

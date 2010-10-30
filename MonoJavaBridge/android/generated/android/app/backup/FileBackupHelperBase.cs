@@ -7,15 +7,15 @@ namespace android.app.backup
 		protected FileBackupHelperBase(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize2331;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.FileBackupHelperBase.staticClass, "finalize", "()V", ref global::android.app.backup.FileBackupHelperBase._finalize2331);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.FileBackupHelperBase.staticClass, "finalize", "()V", ref global::android.app.backup.FileBackupHelperBase._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeNewStateDescription2332;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void writeNewStateDescription(android.os.ParcelFileDescriptor arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.FileBackupHelperBase.staticClass, "writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.FileBackupHelperBase._writeNewStateDescription2332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.app.backup.FileBackupHelperBase.staticClass, "writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V", ref global::android.app.backup.FileBackupHelperBase._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static FileBackupHelperBase()
 		{

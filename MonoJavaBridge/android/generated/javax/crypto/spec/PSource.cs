@@ -21,34 +21,34 @@ namespace javax.crypto.spec
 					return getValue();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getValue28803;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public byte[] getValue()
 			{
-				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.PSource.PSpecified.staticClass, "getValue", "()[B", ref global::javax.crypto.spec.PSource.PSpecified._getValue28803) as byte[];
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<byte>(this, global::javax.crypto.spec.PSource.PSpecified.staticClass, "getValue", "()[B", ref global::javax.crypto.spec.PSource.PSpecified._m0) as byte[];
 			}
-			internal static global::MonoJavaBridge.MethodId _PSpecified28804;
+			private static global::MonoJavaBridge.MethodId _m1;
 			public PSpecified(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::javax.crypto.spec.PSource.PSpecified._PSpecified28804.native == global::System.IntPtr.Zero)
-					global::javax.crypto.spec.PSource.PSpecified._PSpecified28804 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "<init>", "([B)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.PSpecified.staticClass, global::javax.crypto.spec.PSource.PSpecified._PSpecified28804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				if (global::javax.crypto.spec.PSource.PSpecified._m1.native == global::System.IntPtr.Zero)
+					global::javax.crypto.spec.PSource.PSpecified._m1 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "<init>", "([B)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.PSpecified.staticClass, global::javax.crypto.spec.PSource.PSpecified._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _DEFAULT28805;
+			internal static global::MonoJavaBridge.FieldId _DEFAULT6727;
 			public static global::javax.crypto.spec.PSource.PSpecified DEFAULT
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.crypto.spec.PSource.PSpecified>(@__env.GetStaticObjectField(global::javax.crypto.spec.PSource.PSpecified.staticClass, _DEFAULT28805)) as javax.crypto.spec.PSource.PSpecified;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.crypto.spec.PSource.PSpecified>(@__env.GetStaticObjectField(global::javax.crypto.spec.PSource.PSpecified.staticClass, _DEFAULT6727)) as javax.crypto.spec.PSource.PSpecified;
 				}
 			}
 			static PSpecified()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::javax.crypto.spec.PSource.PSpecified.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/PSource$PSpecified"));
-				global::javax.crypto.spec.PSource.PSpecified._DEFAULT28805 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "DEFAULT", "Ljavax/crypto/spec/PSource$PSpecified;");
+				global::javax.crypto.spec.PSource.PSpecified._DEFAULT6727 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "DEFAULT", "Ljavax/crypto/spec/PSource$PSpecified;");
 			}
 			internal static void InitJNI()
 			{
@@ -61,18 +61,18 @@ namespace javax.crypto.spec
 				return getAlgorithm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm28806;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.String getAlgorithm()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.PSource.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.PSource._getAlgorithm28806) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.crypto.spec.PSource.staticClass, "getAlgorithm", "()Ljava/lang/String;", ref global::javax.crypto.spec.PSource._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _PSource28807;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected PSource(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::javax.crypto.spec.PSource._PSource28807.native == global::System.IntPtr.Zero)
-				global::javax.crypto.spec.PSource._PSource28807 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._PSource28807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::javax.crypto.spec.PSource._m1.native == global::System.IntPtr.Zero)
+				global::javax.crypto.spec.PSource._m1 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PSource.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static PSource()

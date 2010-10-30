@@ -7,21 +7,21 @@ namespace android.graphics
 		protected ImageFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getBitsPerPixel5267;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static int getBitsPerPixel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ImageFormat._getBitsPerPixel5267.native == global::System.IntPtr.Zero)
-				global::android.graphics.ImageFormat._getBitsPerPixel5267 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
-			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel5267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.graphics.ImageFormat._m0.native == global::System.IntPtr.Zero)
+				global::android.graphics.ImageFormat._m0 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
+			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ImageFormat5268;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public ImageFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.graphics.ImageFormat._ImageFormat5268.native == global::System.IntPtr.Zero)
-				global::android.graphics.ImageFormat._ImageFormat5268 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat5268);
+			if (global::android.graphics.ImageFormat._m1.native == global::System.IntPtr.Zero)
+				global::android.graphics.ImageFormat._m1 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._m1);
 			Init(@__env, handle);
 		}
 		public static int UNKNOWN

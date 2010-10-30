@@ -15,20 +15,20 @@ namespace org.w3c.dom.ls
 		internal LSParserFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _startElement34930;
+		private static global::MonoJavaBridge.MethodId _m0;
 		short org.w3c.dom.ls.LSParserFilter.startElement(org.w3c.dom.Element arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "startElement", "(Lorg/w3c/dom/Element;)S", ref global::org.w3c.dom.ls.LSParserFilter_._startElement34930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "startElement", "(Lorg/w3c/dom/Element;)S", ref global::org.w3c.dom.ls.LSParserFilter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getWhatToShow34931;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int org.w3c.dom.ls.LSParserFilter.getWhatToShow()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "getWhatToShow", "()I", ref global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34931);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "getWhatToShow", "()I", ref global::org.w3c.dom.ls.LSParserFilter_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _acceptNode34932;
+		private static global::MonoJavaBridge.MethodId _m2;
 		short org.w3c.dom.ls.LSParserFilter.acceptNode(org.w3c.dom.Node arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "acceptNode", "(Lorg/w3c/dom/Node;)S", ref global::org.w3c.dom.ls.LSParserFilter_._acceptNode34932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallShortMethod(this, global::org.w3c.dom.ls.LSParserFilter_.staticClass, "acceptNode", "(Lorg/w3c/dom/Node;)S", ref global::org.w3c.dom.ls.LSParserFilter_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static LSParserFilter_()
 		{

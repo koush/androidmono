@@ -13,10 +13,10 @@ namespace java.net
 		internal ContentHandlerFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createContentHandler21365;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ContentHandlerFactory_.staticClass, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;", ref global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.ContentHandler;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.net.ContentHandlerFactory_.staticClass, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;", ref global::java.net.ContentHandlerFactory_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.ContentHandler;
 		}
 		static ContentHandlerFactory_()
 		{

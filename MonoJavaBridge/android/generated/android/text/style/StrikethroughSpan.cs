@@ -7,15 +7,15 @@ namespace android.text.style
 		protected StrikethroughSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13568;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.StrikethroughSpan._writeToParcel13568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.StrikethroughSpan._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13569;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "describeContents", "()I", ref global::android.text.style.StrikethroughSpan._describeContents13569);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "describeContents", "()I", ref global::android.text.style.StrikethroughSpan._m1);
 		}
 		public new int SpanTypeId
 		{
@@ -24,32 +24,32 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13570;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.StrikethroughSpan._getSpanTypeId13570);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.StrikethroughSpan._m2);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateDrawState13571;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void updateDrawState(android.text.TextPaint arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StrikethroughSpan._updateDrawState13571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.StrikethroughSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V", ref global::android.text.style.StrikethroughSpan._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _StrikethroughSpan13572;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public StrikethroughSpan() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.StrikethroughSpan._StrikethroughSpan13572.native == global::System.IntPtr.Zero)
-				global::android.text.style.StrikethroughSpan._StrikethroughSpan13572 = @__env.GetMethodIDNoThrow(global::android.text.style.StrikethroughSpan.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StrikethroughSpan.staticClass, global::android.text.style.StrikethroughSpan._StrikethroughSpan13572);
+			if (global::android.text.style.StrikethroughSpan._m4.native == global::System.IntPtr.Zero)
+				global::android.text.style.StrikethroughSpan._m4 = @__env.GetMethodIDNoThrow(global::android.text.style.StrikethroughSpan.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StrikethroughSpan.staticClass, global::android.text.style.StrikethroughSpan._m4);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StrikethroughSpan13573;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public StrikethroughSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.StrikethroughSpan._StrikethroughSpan13573.native == global::System.IntPtr.Zero)
-				global::android.text.style.StrikethroughSpan._StrikethroughSpan13573 = @__env.GetMethodIDNoThrow(global::android.text.style.StrikethroughSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StrikethroughSpan.staticClass, global::android.text.style.StrikethroughSpan._StrikethroughSpan13573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.StrikethroughSpan._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.StrikethroughSpan._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.StrikethroughSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.StrikethroughSpan.staticClass, global::android.text.style.StrikethroughSpan._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static StrikethroughSpan()

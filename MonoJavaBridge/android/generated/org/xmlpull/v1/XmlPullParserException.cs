@@ -7,10 +7,10 @@ namespace org.xmlpull.v1
 		protected XmlPullParserException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace35365;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void printStackTrace()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "printStackTrace", "()V", ref global::org.xmlpull.v1.XmlPullParserException._printStackTrace35365);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "printStackTrace", "()V", ref global::org.xmlpull.v1.XmlPullParserException._m0);
 		}
 		public new int LineNumber
 		{
@@ -19,10 +19,10 @@ namespace org.xmlpull.v1
 				return getLineNumber();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineNumber35366;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int getLineNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getLineNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._getLineNumber35366);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getLineNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._m1);
 		}
 		public new int ColumnNumber
 		{
@@ -31,10 +31,10 @@ namespace org.xmlpull.v1
 				return getColumnNumber();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnNumber35367;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int getColumnNumber()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getColumnNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._getColumnNumber35367);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getColumnNumber", "()I", ref global::org.xmlpull.v1.XmlPullParserException._m2);
 		}
 		public new global::java.lang.Throwable Detail
 		{
@@ -43,27 +43,27 @@ namespace org.xmlpull.v1
 				return getDetail();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDetail35368;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.Throwable getDetail()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getDetail", "()Ljava/lang/Throwable;", ref global::org.xmlpull.v1.XmlPullParserException._getDetail35368) as java.lang.Throwable;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.xmlpull.v1.XmlPullParserException.staticClass, "getDetail", "()Ljava/lang/Throwable;", ref global::org.xmlpull.v1.XmlPullParserException._m3) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _XmlPullParserException35369;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public XmlPullParserException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35369.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35369 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.xmlpull.v1.XmlPullParserException._m4.native == global::System.IntPtr.Zero)
+				global::org.xmlpull.v1.XmlPullParserException._m4 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _XmlPullParserException35370;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public XmlPullParserException(java.lang.String arg0, org.xmlpull.v1.XmlPullParser arg1, java.lang.Throwable arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35370.native == global::System.IntPtr.Zero)
-				global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35370 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "<init>", "(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/Throwable;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._XmlPullParserException35370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.xmlpull.v1.XmlPullParserException._m5.native == global::System.IntPtr.Zero)
+				global::org.xmlpull.v1.XmlPullParserException._m5 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParserException.staticClass, "<init>", "(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.XmlPullParserException.staticClass, global::org.xmlpull.v1.XmlPullParserException._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static XmlPullParserException()

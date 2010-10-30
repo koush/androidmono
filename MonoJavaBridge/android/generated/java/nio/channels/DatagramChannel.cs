@@ -7,56 +7,56 @@ namespace java.nio.channels
 		protected DatagramChannel(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write22421;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual long write(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.DatagramChannel._write22421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.DatagramChannel._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22422;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public abstract int write(java.nio.ByteBuffer arg0);
-		internal static global::MonoJavaBridge.MethodId _write22423;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public abstract long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _send22424;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public abstract int send(java.nio.ByteBuffer arg0, java.net.SocketAddress arg1);
-		internal static global::MonoJavaBridge.MethodId _read22425;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _read22426;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual long read(java.nio.ByteBuffer[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.DatagramChannel._read22426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J", ref global::java.nio.channels.DatagramChannel._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22427;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public abstract int read(java.nio.ByteBuffer arg0);
-		internal static global::MonoJavaBridge.MethodId _open22428;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static global::java.nio.channels.DatagramChannel open()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.DatagramChannel._open22428.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.DatagramChannel._open22428 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "open", "()Ljava/nio/channels/DatagramChannel;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._open22428)) as java.nio.channels.DatagramChannel;
+			if (global::java.nio.channels.DatagramChannel._m7.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.DatagramChannel._m7 = @__env.GetStaticMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "open", "()Ljava/nio/channels/DatagramChannel;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._m7)) as java.nio.channels.DatagramChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _connect22429;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public abstract global::java.nio.channels.DatagramChannel connect(java.net.SocketAddress arg0);
-		internal static global::MonoJavaBridge.MethodId _socket22430;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public abstract global::java.net.DatagramSocket socket();
-		internal static global::MonoJavaBridge.MethodId _disconnect22431;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public abstract global::java.nio.channels.DatagramChannel disconnect();
-		internal static global::MonoJavaBridge.MethodId _isConnected22432;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public abstract bool isConnected();
-		internal static global::MonoJavaBridge.MethodId _receive22433;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public abstract global::java.net.SocketAddress receive(java.nio.ByteBuffer arg0);
-		internal static global::MonoJavaBridge.MethodId _validOps22434;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public sealed override int validOps()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "validOps", "()I", ref global::java.nio.channels.DatagramChannel._validOps22434);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel.staticClass, "validOps", "()I", ref global::java.nio.channels.DatagramChannel._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _DatagramChannel22435;
+		private static global::MonoJavaBridge.MethodId _m14;
 		protected DatagramChannel(java.nio.channels.spi.SelectorProvider arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.nio.channels.DatagramChannel._DatagramChannel22435.native == global::System.IntPtr.Zero)
-				global::java.nio.channels.DatagramChannel._DatagramChannel22435 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._DatagramChannel22435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.nio.channels.DatagramChannel._m14.native == global::System.IntPtr.Zero)
+				global::java.nio.channels.DatagramChannel._m14 = @__env.GetMethodIDNoThrow(global::java.nio.channels.DatagramChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._m14, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static DatagramChannel()
@@ -76,65 +76,65 @@ namespace java.nio.channels
 		internal DatagramChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write22436;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override int write(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.DatagramChannel_._write22436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "write", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.DatagramChannel_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write22437;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.DatagramChannel_._write22437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.DatagramChannel_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _send22438;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int send(java.nio.ByteBuffer arg0, java.net.SocketAddress arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "send", "(Ljava/nio/ByteBuffer;Ljava/net/SocketAddress;)I", ref global::java.nio.channels.DatagramChannel_._send22438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "send", "(Ljava/nio/ByteBuffer;Ljava/net/SocketAddress;)I", ref global::java.nio.channels.DatagramChannel_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22439;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.DatagramChannel_._read22439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallLongMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J", ref global::java.nio.channels.DatagramChannel_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read22440;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override int read(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.DatagramChannel_._read22440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I", ref global::java.nio.channels.DatagramChannel_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _connect22441;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public override global::java.nio.channels.DatagramChannel connect(java.net.SocketAddress arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "connect", "(Ljava/net/SocketAddress;)Ljava/nio/channels/DatagramChannel;", ref global::java.nio.channels.DatagramChannel_._connect22441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.DatagramChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "connect", "(Ljava/net/SocketAddress;)Ljava/nio/channels/DatagramChannel;", ref global::java.nio.channels.DatagramChannel_._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.nio.channels.DatagramChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _socket22442;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::java.net.DatagramSocket socket()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "socket", "()Ljava/net/DatagramSocket;", ref global::java.nio.channels.DatagramChannel_._socket22442) as java.net.DatagramSocket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "socket", "()Ljava/net/DatagramSocket;", ref global::java.nio.channels.DatagramChannel_._m6) as java.net.DatagramSocket;
 		}
-		internal static global::MonoJavaBridge.MethodId _disconnect22443;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override global::java.nio.channels.DatagramChannel disconnect()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "disconnect", "()Ljava/nio/channels/DatagramChannel;", ref global::java.nio.channels.DatagramChannel_._disconnect22443) as java.nio.channels.DatagramChannel;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "disconnect", "()Ljava/nio/channels/DatagramChannel;", ref global::java.nio.channels.DatagramChannel_._m7) as java.nio.channels.DatagramChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnected22444;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public override bool isConnected()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "isConnected", "()Z", ref global::java.nio.channels.DatagramChannel_._isConnected22444);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "isConnected", "()Z", ref global::java.nio.channels.DatagramChannel_._m8);
 		}
-		internal static global::MonoJavaBridge.MethodId _receive22445;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public override global::java.net.SocketAddress receive(java.nio.ByteBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "receive", "(Ljava/nio/ByteBuffer;)Ljava/net/SocketAddress;", ref global::java.nio.channels.DatagramChannel_._receive22445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.SocketAddress;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "receive", "(Ljava/nio/ByteBuffer;)Ljava/net/SocketAddress;", ref global::java.nio.channels.DatagramChannel_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.net.SocketAddress;
 		}
-		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22446;
+		private static global::MonoJavaBridge.MethodId _m10;
 		protected override void implCloseSelectableChannel()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.DatagramChannel_._implCloseSelectableChannel22446);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "implCloseSelectableChannel", "()V", ref global::java.nio.channels.DatagramChannel_._m10);
 		}
-		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22447;
+		private static global::MonoJavaBridge.MethodId _m11;
 		protected override void implConfigureBlocking(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.DatagramChannel_._implConfigureBlocking22447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.nio.channels.DatagramChannel_.staticClass, "implConfigureBlocking", "(Z)V", ref global::java.nio.channels.DatagramChannel_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static DatagramChannel_()
 		{

@@ -14,15 +14,15 @@ namespace org.apache.http.auth
 		internal Credentials_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getPassword31826;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String org.apache.http.auth.Credentials.getPassword()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.Credentials_.staticClass, "getPassword", "()Ljava/lang/String;", ref global::org.apache.http.auth.Credentials_._getPassword31826) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.auth.Credentials_.staticClass, "getPassword", "()Ljava/lang/String;", ref global::org.apache.http.auth.Credentials_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getUserPrincipal31827;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.security.Principal org.apache.http.auth.Credentials.getUserPrincipal()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::org.apache.http.auth.Credentials_.staticClass, "getUserPrincipal", "()Ljava/security/Principal;", ref global::org.apache.http.auth.Credentials_._getUserPrincipal31827) as java.security.Principal;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.Principal>(this, global::org.apache.http.auth.Credentials_.staticClass, "getUserPrincipal", "()Ljava/security/Principal;", ref global::org.apache.http.auth.Credentials_._m1) as java.security.Principal;
 		}
 		static Credentials_()
 		{

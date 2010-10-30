@@ -13,10 +13,10 @@ namespace org.apache.http.entity
 		internal ContentProducer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeTo32532;
+		private static global::MonoJavaBridge.MethodId _m0;
 		void org.apache.http.entity.ContentProducer.writeTo(java.io.OutputStream arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.ContentProducer_.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.ContentProducer_._writeTo32532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.entity.ContentProducer_.staticClass, "writeTo", "(Ljava/io/OutputStream;)V", ref global::org.apache.http.entity.ContentProducer_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static ContentProducer_()
 		{

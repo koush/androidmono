@@ -7,13 +7,13 @@ namespace android.os
 		protected BatteryManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _BatteryManager9515;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public BatteryManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.os.BatteryManager._BatteryManager9515.native == global::System.IntPtr.Zero)
-				global::android.os.BatteryManager._BatteryManager9515 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager9515);
+			if (global::android.os.BatteryManager._m0.native == global::System.IntPtr.Zero)
+				global::android.os.BatteryManager._m0 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._m0);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String EXTRA_STATUS

@@ -16,25 +16,25 @@ namespace java.lang
 		internal CharSequence_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString19761;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.String java.lang.CharSequence.toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.CharSequence_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.CharSequence_._toString19761) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.lang.CharSequence_.staticClass, "toString", "()Ljava/lang/String;", ref global::java.lang.CharSequence_._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _length19762;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int java.lang.CharSequence.length()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.CharSequence_.staticClass, "length", "()I", ref global::java.lang.CharSequence_._length19762);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.lang.CharSequence_.staticClass, "length", "()I", ref global::java.lang.CharSequence_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _charAt19763;
+		private static global::MonoJavaBridge.MethodId _m2;
 		char java.lang.CharSequence.charAt(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.lang.CharSequence_.staticClass, "charAt", "(I)C", ref global::java.lang.CharSequence_._charAt19763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallCharMethod(this, global::java.lang.CharSequence_.staticClass, "charAt", "(I)C", ref global::java.lang.CharSequence_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _subSequence19764;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::java.lang.CharSequence_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;", ref global::java.lang.CharSequence_._subSequence19764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.lang.CharSequence>(this, global::java.lang.CharSequence_.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;", ref global::java.lang.CharSequence_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.CharSequence;
 		}
 		static CharSequence_()
 		{

@@ -13,10 +13,10 @@ namespace java.security
 		internal PrivilegedExceptionAction_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run23252;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object java.security.PrivilegedExceptionAction.run()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedExceptionAction_.staticClass, "run", "()Ljava/lang/Object;", ref global::java.security.PrivilegedExceptionAction_._run23252) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.PrivilegedExceptionAction_.staticClass, "run", "()Ljava/lang/Object;", ref global::java.security.PrivilegedExceptionAction_._m0) as java.lang.Object;
 		}
 		static PrivilegedExceptionAction_()
 		{

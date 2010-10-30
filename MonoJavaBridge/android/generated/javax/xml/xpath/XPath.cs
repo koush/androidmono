@@ -24,65 +24,65 @@ namespace javax.xml.xpath
 		internal XPath_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compile31280;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::javax.xml.xpath.XPathExpression javax.xml.xpath.XPath.compile(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathExpression>(this, global::javax.xml.xpath.XPath_.staticClass, "compile", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathExpression;", ref global::javax.xml.xpath.XPath_._compile31280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.xpath.XPathExpression;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathExpression>(this, global::javax.xml.xpath.XPath_.staticClass, "compile", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathExpression;", ref global::javax.xml.xpath.XPath_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as javax.xml.xpath.XPathExpression;
 		}
-		internal static global::MonoJavaBridge.MethodId _reset31281;
+		private static global::MonoJavaBridge.MethodId _m1;
 		void javax.xml.xpath.XPath.reset()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "reset", "()V", ref global::javax.xml.xpath.XPath_._reset31281);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "reset", "()V", ref global::javax.xml.xpath.XPath_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _setXPathVariableResolver31282;
+		private static global::MonoJavaBridge.MethodId _m2;
 		void javax.xml.xpath.XPath.setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", ref global::javax.xml.xpath.XPath_._setXPathVariableResolver31282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", ref global::javax.xml.xpath.XPath_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getXPathVariableResolver31283;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::javax.xml.xpath.XPathVariableResolver javax.xml.xpath.XPath.getXPathVariableResolver()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathVariableResolver>(this, global::javax.xml.xpath.XPath_.staticClass, "getXPathVariableResolver", "()Ljavax/xml/xpath/XPathVariableResolver;", ref global::javax.xml.xpath.XPath_._getXPathVariableResolver31283) as javax.xml.xpath.XPathVariableResolver;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathVariableResolver>(this, global::javax.xml.xpath.XPath_.staticClass, "getXPathVariableResolver", "()Ljavax/xml/xpath/XPathVariableResolver;", ref global::javax.xml.xpath.XPath_._m3) as javax.xml.xpath.XPathVariableResolver;
 		}
-		internal static global::MonoJavaBridge.MethodId _setXPathFunctionResolver31284;
+		private static global::MonoJavaBridge.MethodId _m4;
 		void javax.xml.xpath.XPath.setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", ref global::javax.xml.xpath.XPath_._setXPathFunctionResolver31284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", ref global::javax.xml.xpath.XPath_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getXPathFunctionResolver31285;
+		private static global::MonoJavaBridge.MethodId _m5;
 		global::javax.xml.xpath.XPathFunctionResolver javax.xml.xpath.XPath.getXPathFunctionResolver()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathFunctionResolver>(this, global::javax.xml.xpath.XPath_.staticClass, "getXPathFunctionResolver", "()Ljavax/xml/xpath/XPathFunctionResolver;", ref global::javax.xml.xpath.XPath_._getXPathFunctionResolver31285) as javax.xml.xpath.XPathFunctionResolver;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.xpath.XPathFunctionResolver>(this, global::javax.xml.xpath.XPath_.staticClass, "getXPathFunctionResolver", "()Ljavax/xml/xpath/XPathFunctionResolver;", ref global::javax.xml.xpath.XPath_._m5) as javax.xml.xpath.XPathFunctionResolver;
 		}
-		internal static global::MonoJavaBridge.MethodId _setNamespaceContext31286;
+		private static global::MonoJavaBridge.MethodId _m6;
 		void javax.xml.xpath.XPath.setNamespaceContext(javax.xml.@namespace.NamespaceContext arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", ref global::javax.xml.xpath.XPath_._setNamespaceContext31286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::javax.xml.xpath.XPath_.staticClass, "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", ref global::javax.xml.xpath.XPath_._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getNamespaceContext31287;
+		private static global::MonoJavaBridge.MethodId _m7;
 		global::javax.xml.@namespace.NamespaceContext javax.xml.xpath.XPath.getNamespaceContext()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.@namespace.NamespaceContext>(this, global::javax.xml.xpath.XPath_.staticClass, "getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;", ref global::javax.xml.xpath.XPath_._getNamespaceContext31287) as javax.xml.@namespace.NamespaceContext;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.xml.@namespace.NamespaceContext>(this, global::javax.xml.xpath.XPath_.staticClass, "getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;", ref global::javax.xml.xpath.XPath_._m7) as javax.xml.@namespace.NamespaceContext;
 		}
-		internal static global::MonoJavaBridge.MethodId _evaluate31288;
+		private static global::MonoJavaBridge.MethodId _m8;
 		global::java.lang.Object javax.xml.xpath.XPath.evaluate(java.lang.String arg0, java.lang.Object arg1, javax.xml.@namespace.QName arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPath_._evaluate31288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPath_._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _evaluate31289;
+		private static global::MonoJavaBridge.MethodId _m9;
 		global::java.lang.String javax.xml.xpath.XPath.evaluate(java.lang.String arg0, java.lang.Object arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", ref global::javax.xml.xpath.XPath_._evaluate31289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", ref global::javax.xml.xpath.XPath_._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _evaluate31290;
+		private static global::MonoJavaBridge.MethodId _m10;
 		global::java.lang.Object javax.xml.xpath.XPath.evaluate(java.lang.String arg0, org.xml.sax.InputSource arg1, javax.xml.@namespace.QName arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPath_._evaluate31290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", ref global::javax.xml.xpath.XPath_._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _evaluate31291;
+		private static global::MonoJavaBridge.MethodId _m11;
 		global::java.lang.String javax.xml.xpath.XPath.evaluate(java.lang.String arg0, org.xml.sax.InputSource arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljava/lang/String;", ref global::javax.xml.xpath.XPath_._evaluate31291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::javax.xml.xpath.XPath_.staticClass, "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljava/lang/String;", ref global::javax.xml.xpath.XPath_._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.String;
 		}
 		static XPath_()
 		{

@@ -13,10 +13,10 @@ namespace android.widget
 		internal Filterable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter17089;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::android.widget.Filter android.widget.Filterable.getFilter()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Filterable_.staticClass, "getFilter", "()Landroid/widget/Filter;", ref global::android.widget.Filterable_._getFilter17089) as android.widget.Filter;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.widget.Filterable_.staticClass, "getFilter", "()Landroid/widget/Filter;", ref global::android.widget.Filterable_._m0) as android.widget.Filter;
 		}
 		static Filterable_()
 		{
@@ -36,13 +36,13 @@ namespace android.widget
 		protected FilterableDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _FilterableDelegateWrapper17090;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public FilterableDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.FilterableDelegateWrapper._FilterableDelegateWrapper17090.native == global::System.IntPtr.Zero)
-				global::android.widget.FilterableDelegateWrapper._FilterableDelegateWrapper17090 = @__env.GetMethodIDNoThrow(global::android.widget.FilterableDelegateWrapper.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterableDelegateWrapper.staticClass, global::android.widget.FilterableDelegateWrapper._FilterableDelegateWrapper17090);
+			if (global::android.widget.FilterableDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+				global::android.widget.FilterableDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.widget.FilterableDelegateWrapper.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterableDelegateWrapper.staticClass, global::android.widget.FilterableDelegateWrapper._m0);
 			Init(@__env, handle);
 		}
 		static FilterableDelegateWrapper()

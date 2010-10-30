@@ -13,25 +13,25 @@ namespace org.apache.http.conn.scheme
 		internal LayeredSocketFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createSocket32290;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.net.Socket org.apache.http.conn.scheme.LayeredSocketFactory.createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._createSocket32290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3)) as java.net.Socket;
 		}
-		internal static global::MonoJavaBridge.MethodId _createSocket32291;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.createSocket()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "createSocket", "()Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._createSocket32291) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "createSocket", "()Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._m1) as java.net.Socket;
 		}
-		internal static global::MonoJavaBridge.MethodId _connectSocket32292;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._connectSocket32292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.net.Socket;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "connectSocket", "(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5)) as java.net.Socket;
 		}
-		internal static global::MonoJavaBridge.MethodId _isSecure32293;
+		private static global::MonoJavaBridge.MethodId _m3;
 		bool org.apache.http.conn.scheme.SocketFactory.isSecure(java.net.Socket arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "isSecure", "(Ljava/net/Socket;)Z", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._isSecure32293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.conn.scheme.LayeredSocketFactory_.staticClass, "isSecure", "(Ljava/net/Socket;)Z", ref global::org.apache.http.conn.scheme.LayeredSocketFactory_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static LayeredSocketFactory_()
 		{

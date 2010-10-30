@@ -7,367 +7,227 @@ namespace java.text
 		protected NumberFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::MonoJavaBridge.JavaClass()]
-		public new partial class Field : java.text.Format.Field
-		{
-			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
-			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
-			{
-			}
-			internal static global::MonoJavaBridge.MethodId _readResolve25554;
-			protected override global::java.lang.Object readResolve()
-			{
-				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.text.NumberFormat.Field._readResolve25554) as java.lang.Object;
-			}
-			internal static global::MonoJavaBridge.MethodId _Field25555;
-			protected Field(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::java.text.NumberFormat.Field._Field25555.native == global::System.IntPtr.Zero)
-					global::java.text.NumberFormat.Field._Field25555 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.NumberFormat.Field.staticClass, global::java.text.NumberFormat.Field._Field25555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-				Init(@__env, handle);
-			}
-			internal static global::MonoJavaBridge.FieldId _INTEGER25556;
-			public static global::java.text.NumberFormat.Field INTEGER
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _INTEGER25556)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _FRACTION25557;
-			public static global::java.text.NumberFormat.Field FRACTION
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _FRACTION25557)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _EXPONENT25558;
-			public static global::java.text.NumberFormat.Field EXPONENT
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT25558)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _DECIMAL_SEPARATOR25559;
-			public static global::java.text.NumberFormat.Field DECIMAL_SEPARATOR
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _DECIMAL_SEPARATOR25559)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _SIGN25560;
-			public static global::java.text.NumberFormat.Field SIGN
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _SIGN25560)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _GROUPING_SEPARATOR25561;
-			public static global::java.text.NumberFormat.Field GROUPING_SEPARATOR
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _GROUPING_SEPARATOR25561)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _EXPONENT_SYMBOL25562;
-			public static global::java.text.NumberFormat.Field EXPONENT_SYMBOL
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT_SYMBOL25562)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _PERCENT25563;
-			public static global::java.text.NumberFormat.Field PERCENT
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _PERCENT25563)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _PERMILLE25564;
-			public static global::java.text.NumberFormat.Field PERMILLE
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _PERMILLE25564)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _CURRENCY25565;
-			public static global::java.text.NumberFormat.Field CURRENCY
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _CURRENCY25565)) as java.text.NumberFormat.Field;
-				}
-			}
-			internal static global::MonoJavaBridge.FieldId _EXPONENT_SIGN25566;
-			public static global::java.text.NumberFormat.Field EXPONENT_SIGN
-			{
-				get
-				{
-					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT_SIGN25566)) as java.text.NumberFormat.Field;
-				}
-			}
-			static Field()
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::java.text.NumberFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/NumberFormat$Field"));
-				global::java.text.NumberFormat.Field._INTEGER25556 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "INTEGER", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._FRACTION25557 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "FRACTION", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._EXPONENT25558 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._DECIMAL_SEPARATOR25559 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "DECIMAL_SEPARATOR", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._SIGN25560 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "SIGN", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._GROUPING_SEPARATOR25561 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "GROUPING_SEPARATOR", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._EXPONENT_SYMBOL25562 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT_SYMBOL", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._PERCENT25563 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "PERCENT", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._PERMILLE25564 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "PERMILLE", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._CURRENCY25565 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "CURRENCY", "Ljava/text/NumberFormat$Field;");
-				global::java.text.NumberFormat.Field._EXPONENT_SIGN25566 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT_SIGN", "Ljava/text/NumberFormat$Field;");
-			}
-			internal static void InitJNI()
-			{
-			}
-		}
-		internal static global::MonoJavaBridge.MethodId _equals25567;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.NumberFormat._equals25567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::java.text.NumberFormat._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode25568;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "hashCode", "()I", ref global::java.text.NumberFormat._hashCode25568);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "hashCode", "()I", ref global::java.text.NumberFormat._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _clone25569;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.Object clone()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.NumberFormat._clone25569) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "clone", "()Ljava/lang/Object;", ref global::java.text.NumberFormat._m2) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25570;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual global::java.lang.String format(long arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.NumberFormat.staticClass, "format", "(J)Ljava/lang/String;", ref global::java.text.NumberFormat._format25570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.NumberFormat.staticClass, "format", "(J)Ljava/lang/String;", ref global::java.text.NumberFormat._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25571;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public abstract global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
-		internal static global::MonoJavaBridge.MethodId _format25572;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public abstract global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
-		internal static global::MonoJavaBridge.MethodId _format25573;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat._format25573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25574;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public virtual global::java.lang.String format(double arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.NumberFormat.staticClass, "format", "(D)Ljava/lang/String;", ref global::java.text.NumberFormat._format25574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.text.NumberFormat.staticClass, "format", "(D)Ljava/lang/String;", ref global::java.text.NumberFormat._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance25575;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static global::java.text.NumberFormat getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getInstance25575.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getInstance25575 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getInstance", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getInstance25575)) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m8.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m8 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getInstance", "()Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m8)) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance25576;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static global::java.text.NumberFormat getInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getInstance25576.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getInstance25576 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getInstance25576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m9.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m9 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _parse25577;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.lang.Number parse(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/lang/Number;", ref global::java.text.NumberFormat._parse25577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Number;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/lang/Number;", ref global::java.text.NumberFormat._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Number;
 		}
-		internal static global::MonoJavaBridge.MethodId _parse25578;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public abstract global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1);
-		internal static global::MonoJavaBridge.MethodId _getAvailableLocales25579;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public static global::java.util.Locale[] getAvailableLocales()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getAvailableLocales25579.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getAvailableLocales25579 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getAvailableLocales25579)) as java.util.Locale[];
+			if (global::java.text.NumberFormat._m12.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m12 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m12)) as java.util.Locale[];
 		}
-		internal static global::MonoJavaBridge.MethodId _parseObject25580;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public sealed override global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", ref global::java.text.NumberFormat._parseObject25580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", ref global::java.text.NumberFormat._m13, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getRoundingMode25581;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual global::java.math.RoundingMode getRoundingMode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.math.RoundingMode>(this, global::java.text.NumberFormat.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;", ref global::java.text.NumberFormat._getRoundingMode25581) as java.math.RoundingMode;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.math.RoundingMode>(this, global::java.text.NumberFormat.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;", ref global::java.text.NumberFormat._m14) as java.math.RoundingMode;
 		}
-		internal static global::MonoJavaBridge.MethodId _isParseIntegerOnly25582;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual bool isParseIntegerOnly()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "isParseIntegerOnly", "()Z", ref global::java.text.NumberFormat._isParseIntegerOnly25582);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "isParseIntegerOnly", "()Z", ref global::java.text.NumberFormat._m15);
 		}
-		internal static global::MonoJavaBridge.MethodId _setParseIntegerOnly25583;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setParseIntegerOnly(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setParseIntegerOnly", "(Z)V", ref global::java.text.NumberFormat._setParseIntegerOnly25583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setParseIntegerOnly", "(Z)V", ref global::java.text.NumberFormat._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getNumberInstance25584;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public static global::java.text.NumberFormat getNumberInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getNumberInstance25584.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getNumberInstance25584 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getNumberInstance25584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m17.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m17 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNumberInstance25585;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public static global::java.text.NumberFormat getNumberInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getNumberInstance25585.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getNumberInstance25585 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getNumberInstance", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getNumberInstance25585)) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m18.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m18 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getNumberInstance", "()Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m18)) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getIntegerInstance25586;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public static global::java.text.NumberFormat getIntegerInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getIntegerInstance25586.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getIntegerInstance25586 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getIntegerInstance25586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m19.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m19 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getIntegerInstance25587;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public static global::java.text.NumberFormat getIntegerInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getIntegerInstance25587.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getIntegerInstance25587 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getIntegerInstance", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getIntegerInstance25587)) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m20.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m20 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getIntegerInstance", "()Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m20)) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrencyInstance25588;
+		private static global::MonoJavaBridge.MethodId _m21;
 		public static global::java.text.NumberFormat getCurrencyInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getCurrencyInstance25588.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getCurrencyInstance25588 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getCurrencyInstance25588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m21.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m21 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m21, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrencyInstance25589;
+		private static global::MonoJavaBridge.MethodId _m22;
 		public static global::java.text.NumberFormat getCurrencyInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getCurrencyInstance25589.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getCurrencyInstance25589 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getCurrencyInstance", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getCurrencyInstance25589)) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m22.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m22 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getCurrencyInstance", "()Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m22)) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPercentInstance25590;
+		private static global::MonoJavaBridge.MethodId _m23;
 		public static global::java.text.NumberFormat getPercentInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getPercentInstance25590.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getPercentInstance25590 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getPercentInstance25590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m23.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m23 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m23, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPercentInstance25591;
+		private static global::MonoJavaBridge.MethodId _m24;
 		public static global::java.text.NumberFormat getPercentInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._getPercentInstance25591.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._getPercentInstance25591 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getPercentInstance", "()Ljava/text/NumberFormat;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getPercentInstance25591)) as java.text.NumberFormat;
+			if (global::java.text.NumberFormat._m24.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m24 = @__env.GetStaticMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "getPercentInstance", "()Ljava/text/NumberFormat;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m24)) as java.text.NumberFormat;
 		}
-		internal static global::MonoJavaBridge.MethodId _isGroupingUsed25592;
+		private static global::MonoJavaBridge.MethodId _m25;
 		public virtual bool isGroupingUsed()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "isGroupingUsed", "()Z", ref global::java.text.NumberFormat._isGroupingUsed25592);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.text.NumberFormat.staticClass, "isGroupingUsed", "()Z", ref global::java.text.NumberFormat._m25);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGroupingUsed25593;
+		private static global::MonoJavaBridge.MethodId _m26;
 		public virtual void setGroupingUsed(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setGroupingUsed", "(Z)V", ref global::java.text.NumberFormat._setGroupingUsed25593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setGroupingUsed", "(Z)V", ref global::java.text.NumberFormat._m26, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumIntegerDigits25594;
+		private static global::MonoJavaBridge.MethodId _m27;
 		public virtual int getMaximumIntegerDigits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMaximumIntegerDigits", "()I", ref global::java.text.NumberFormat._getMaximumIntegerDigits25594);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMaximumIntegerDigits", "()I", ref global::java.text.NumberFormat._m27);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumIntegerDigits25595;
+		private static global::MonoJavaBridge.MethodId _m28;
 		public virtual void setMaximumIntegerDigits(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMaximumIntegerDigits", "(I)V", ref global::java.text.NumberFormat._setMaximumIntegerDigits25595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMaximumIntegerDigits", "(I)V", ref global::java.text.NumberFormat._m28, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumIntegerDigits25596;
+		private static global::MonoJavaBridge.MethodId _m29;
 		public virtual int getMinimumIntegerDigits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMinimumIntegerDigits", "()I", ref global::java.text.NumberFormat._getMinimumIntegerDigits25596);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMinimumIntegerDigits", "()I", ref global::java.text.NumberFormat._m29);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMinimumIntegerDigits25597;
+		private static global::MonoJavaBridge.MethodId _m30;
 		public virtual void setMinimumIntegerDigits(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMinimumIntegerDigits", "(I)V", ref global::java.text.NumberFormat._setMinimumIntegerDigits25597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMinimumIntegerDigits", "(I)V", ref global::java.text.NumberFormat._m30, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumFractionDigits25598;
+		private static global::MonoJavaBridge.MethodId _m31;
 		public virtual int getMaximumFractionDigits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMaximumFractionDigits", "()I", ref global::java.text.NumberFormat._getMaximumFractionDigits25598);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMaximumFractionDigits", "()I", ref global::java.text.NumberFormat._m31);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumFractionDigits25599;
+		private static global::MonoJavaBridge.MethodId _m32;
 		public virtual void setMaximumFractionDigits(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMaximumFractionDigits", "(I)V", ref global::java.text.NumberFormat._setMaximumFractionDigits25599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMaximumFractionDigits", "(I)V", ref global::java.text.NumberFormat._m32, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumFractionDigits25600;
+		private static global::MonoJavaBridge.MethodId _m33;
 		public virtual int getMinimumFractionDigits()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMinimumFractionDigits", "()I", ref global::java.text.NumberFormat._getMinimumFractionDigits25600);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.NumberFormat.staticClass, "getMinimumFractionDigits", "()I", ref global::java.text.NumberFormat._m33);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMinimumFractionDigits25601;
+		private static global::MonoJavaBridge.MethodId _m34;
 		public virtual void setMinimumFractionDigits(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMinimumFractionDigits", "(I)V", ref global::java.text.NumberFormat._setMinimumFractionDigits25601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setMinimumFractionDigits", "(I)V", ref global::java.text.NumberFormat._m34, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrency25602;
+		private static global::MonoJavaBridge.MethodId _m35;
 		public virtual global::java.util.Currency getCurrency()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Currency>(this, global::java.text.NumberFormat.staticClass, "getCurrency", "()Ljava/util/Currency;", ref global::java.text.NumberFormat._getCurrency25602) as java.util.Currency;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.util.Currency>(this, global::java.text.NumberFormat.staticClass, "getCurrency", "()Ljava/util/Currency;", ref global::java.text.NumberFormat._m35) as java.util.Currency;
 		}
-		internal static global::MonoJavaBridge.MethodId _setCurrency25603;
+		private static global::MonoJavaBridge.MethodId _m36;
 		public virtual void setCurrency(java.util.Currency arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setCurrency", "(Ljava/util/Currency;)V", ref global::java.text.NumberFormat._setCurrency25603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setCurrency", "(Ljava/util/Currency;)V", ref global::java.text.NumberFormat._m36, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRoundingMode25604;
+		private static global::MonoJavaBridge.MethodId _m37;
 		public virtual void setRoundingMode(java.math.RoundingMode arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setRoundingMode", "(Ljava/math/RoundingMode;)V", ref global::java.text.NumberFormat._setRoundingMode25604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.text.NumberFormat.staticClass, "setRoundingMode", "(Ljava/math/RoundingMode;)V", ref global::java.text.NumberFormat._m37, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _NumberFormat25605;
+		private static global::MonoJavaBridge.MethodId _m38;
 		protected NumberFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.text.NumberFormat._NumberFormat25605.native == global::System.IntPtr.Zero)
-				global::java.text.NumberFormat._NumberFormat25605 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._NumberFormat25605);
+			if (global::java.text.NumberFormat._m38.native == global::System.IntPtr.Zero)
+				global::java.text.NumberFormat._m38 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._m38);
 			Init(@__env, handle);
 		}
 		public static int INTEGER_FIELD
@@ -401,20 +261,20 @@ namespace java.text
 		internal NumberFormat_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _format25608;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat_.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat_._format25608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat_.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _format25609;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat_.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat_._format25609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.StringBuffer>(this, global::java.text.NumberFormat_.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", ref global::java.text.NumberFormat_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2)) as java.lang.StringBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _parse25610;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;", ref global::java.text.NumberFormat_._parse25610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Number;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat_.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;", ref global::java.text.NumberFormat_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1)) as java.lang.Number;
 		}
 		static NumberFormat_()
 		{

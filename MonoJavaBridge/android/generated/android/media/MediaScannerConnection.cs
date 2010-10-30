@@ -21,20 +21,20 @@ namespace android.media
 			internal MediaScannerConnectionClient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onMediaScannerConnected7430;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.MediaScannerConnection.MediaScannerConnectionClient.onMediaScannerConnected()
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onMediaScannerConnected", "()V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._onMediaScannerConnected7430);
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onMediaScannerConnected", "()V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._m0);
 			}
-			internal static global::MonoJavaBridge.MethodId _onScanCompleted7431;
+			private static global::MonoJavaBridge.MethodId _m1;
 			void android.media.MediaScannerConnection.MediaScannerConnectionClient.onScanCompleted(java.lang.String arg0, android.net.Uri arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._onScanCompleted7431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScanCompleted7432;
+			private static global::MonoJavaBridge.MethodId _m2;
 			void android.media.MediaScannerConnection.OnScanCompletedListener.onScanCompleted(java.lang.String arg0, android.net.Uri arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._onScanCompleted7432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.MediaScannerConnectionClient_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.MediaScannerConnectionClient_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static MediaScannerConnectionClient_()
 			{
@@ -58,10 +58,10 @@ namespace android.media
 			internal OnScanCompletedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onScanCompleted7433;
+			private static global::MonoJavaBridge.MethodId _m0;
 			void android.media.MediaScannerConnection.OnScanCompletedListener.onScanCompleted(java.lang.String arg0, android.net.Uri arg1)
 			{
-				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.OnScanCompletedListener_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.OnScanCompletedListener_._onScanCompleted7433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.OnScanCompletedListener_.staticClass, "onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", ref global::android.media.MediaScannerConnection.OnScanCompletedListener_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			static OnScanCompletedListener_()
 			{
@@ -81,13 +81,13 @@ namespace android.media
 			protected OnScanCompletedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _OnScanCompletedListenerDelegateWrapper7434;
+			private static global::MonoJavaBridge.MethodId _m0;
 			public OnScanCompletedListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._OnScanCompletedListenerDelegateWrapper7434.native == global::System.IntPtr.Zero)
-					global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._OnScanCompletedListenerDelegateWrapper7434 = @__env.GetMethodIDNoThrow(global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper.staticClass, "<init>", "()V");
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper.staticClass, global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._OnScanCompletedListenerDelegateWrapper7434);
+				if (global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._m0.native == global::System.IntPtr.Zero)
+					global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._m0 = @__env.GetMethodIDNoThrow(global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper.staticClass, global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper._m0);
 				Init(@__env, handle);
 			}
 			static OnScanCompletedListenerDelegateWrapper()
@@ -114,55 +114,55 @@ namespace android.media
 				return ret;
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _connect7435;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void connect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "connect", "()V", ref global::android.media.MediaScannerConnection._connect7435);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "connect", "()V", ref global::android.media.MediaScannerConnection._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _onServiceConnected7436;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual void onServiceConnected(android.content.ComponentName arg0, android.os.IBinder arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V", ref global::android.media.MediaScannerConnection._onServiceConnected7436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V", ref global::android.media.MediaScannerConnection._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onServiceDisconnected7437;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void onServiceDisconnected(android.content.ComponentName arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "onServiceDisconnected", "(Landroid/content/ComponentName;)V", ref global::android.media.MediaScannerConnection._onServiceDisconnected7437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "onServiceDisconnected", "(Landroid/content/ComponentName;)V", ref global::android.media.MediaScannerConnection._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _disconnect7438;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual void disconnect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "disconnect", "()V", ref global::android.media.MediaScannerConnection._disconnect7438);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "disconnect", "()V", ref global::android.media.MediaScannerConnection._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _isConnected7439;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual bool isConnected()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.MediaScannerConnection.staticClass, "isConnected", "()Z", ref global::android.media.MediaScannerConnection._isConnected7439);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.media.MediaScannerConnection.staticClass, "isConnected", "()Z", ref global::android.media.MediaScannerConnection._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _scanFile7440;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void scanFile(java.lang.String arg0, java.lang.String arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "scanFile", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.media.MediaScannerConnection._scanFile7440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, "scanFile", "(Ljava/lang/String;Ljava/lang/String;)V", ref global::android.media.MediaScannerConnection._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _scanFile7441;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void scanFile(android.content.Context arg0, java.lang.String[] arg1, java.lang.String[] arg2, android.media.MediaScannerConnection.OnScanCompletedListener arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.MediaScannerConnection._scanFile7441.native == global::System.IntPtr.Zero)
-				global::android.media.MediaScannerConnection._scanFile7441 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaScannerConnection.staticClass, "scanFile", "(Landroid/content/Context;[Ljava/lang/String;[Ljava/lang/String;Landroid/media/MediaScannerConnection$OnScanCompletedListener;)V");
-			@__env.CallStaticVoidMethod(android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._scanFile7441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.media.MediaScannerConnection._m6.native == global::System.IntPtr.Zero)
+				global::android.media.MediaScannerConnection._m6 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaScannerConnection.staticClass, "scanFile", "(Landroid/content/Context;[Ljava/lang/String;[Ljava/lang/String;Landroid/media/MediaScannerConnection$OnScanCompletedListener;)V");
+			@__env.CallStaticVoidMethod(android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public static void scanFile(android.content.Context arg0, java.lang.String[] arg1, java.lang.String[] arg2, global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegate arg3)
 		{
 			scanFile(arg0, arg1, arg2, (global::android.media.MediaScannerConnection.OnScanCompletedListenerDelegateWrapper)arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _MediaScannerConnection7442;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public MediaScannerConnection(android.content.Context arg0, android.media.MediaScannerConnection.MediaScannerConnectionClient arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.media.MediaScannerConnection._MediaScannerConnection7442.native == global::System.IntPtr.Zero)
-				global::android.media.MediaScannerConnection._MediaScannerConnection7442 = @__env.GetMethodIDNoThrow(global::android.media.MediaScannerConnection.staticClass, "<init>", "(Landroid/content/Context;Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._MediaScannerConnection7442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.media.MediaScannerConnection._m7.native == global::System.IntPtr.Zero)
+				global::android.media.MediaScannerConnection._m7 = @__env.GetMethodIDNoThrow(global::android.media.MediaScannerConnection.staticClass, "<init>", "(Landroid/content/Context;Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static MediaScannerConnection()

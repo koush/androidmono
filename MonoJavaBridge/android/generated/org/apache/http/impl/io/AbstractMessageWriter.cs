@@ -7,20 +7,20 @@ namespace org.apache.http.impl.io
 		protected AbstractMessageWriter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write33385;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void write(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.impl.io.AbstractMessageWriter._write33385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, "write", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.impl.io.AbstractMessageWriter._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeHeadLine33386;
+		private static global::MonoJavaBridge.MethodId _m1;
 		protected abstract void writeHeadLine(org.apache.http.HttpMessage arg0);
-		internal static global::MonoJavaBridge.MethodId _AbstractMessageWriter33387;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public AbstractMessageWriter(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.message.LineFormatter arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.io.AbstractMessageWriter._AbstractMessageWriter33387.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.io.AbstractMessageWriter._AbstractMessageWriter33387 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, "<init>", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/message/LineFormatter;Lorg/apache/http/params/HttpParams;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.AbstractMessageWriter.staticClass, global::org.apache.http.impl.io.AbstractMessageWriter._AbstractMessageWriter33387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::org.apache.http.impl.io.AbstractMessageWriter._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.io.AbstractMessageWriter._m2 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.io.AbstractMessageWriter.staticClass, "<init>", "(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/message/LineFormatter;Lorg/apache/http/params/HttpParams;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.AbstractMessageWriter.staticClass, global::org.apache.http.impl.io.AbstractMessageWriter._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static AbstractMessageWriter()
@@ -40,10 +40,10 @@ namespace org.apache.http.impl.io
 		internal AbstractMessageWriter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeHeadLine33388;
+		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void writeHeadLine(org.apache.http.HttpMessage arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.AbstractMessageWriter_.staticClass, "writeHeadLine", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.impl.io.AbstractMessageWriter_._writeHeadLine33388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::org.apache.http.impl.io.AbstractMessageWriter_.staticClass, "writeHeadLine", "(Lorg/apache/http/HttpMessage;)V", ref global::org.apache.http.impl.io.AbstractMessageWriter_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		static AbstractMessageWriter_()
 		{

@@ -7,10 +7,10 @@ namespace android.bluetooth
 		internal BluetoothSocket(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close2553;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "close", "()V", ref global::android.bluetooth.BluetoothSocket._close2553);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "close", "()V", ref global::android.bluetooth.BluetoothSocket._m0);
 		}
 		public new global::java.io.InputStream InputStream
 		{
@@ -19,15 +19,15 @@ namespace android.bluetooth
 				return getInputStream();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputStream2554;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public global::java.io.InputStream getInputStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::android.bluetooth.BluetoothSocket._getInputStream2554) as java.io.InputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "getInputStream", "()Ljava/io/InputStream;", ref global::android.bluetooth.BluetoothSocket._m1) as java.io.InputStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _connect2555;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public void connect()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "connect", "()V", ref global::android.bluetooth.BluetoothSocket._connect2555);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "connect", "()V", ref global::android.bluetooth.BluetoothSocket._m2);
 		}
 		public new global::java.io.OutputStream OutputStream
 		{
@@ -36,10 +36,10 @@ namespace android.bluetooth
 				return getOutputStream();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOutputStream2556;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public global::java.io.OutputStream getOutputStream()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "getOutputStream", "()Ljava/io/OutputStream;", ref global::android.bluetooth.BluetoothSocket._getOutputStream2556) as java.io.OutputStream;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::android.bluetooth.BluetoothSocket.staticClass, "getOutputStream", "()Ljava/io/OutputStream;", ref global::android.bluetooth.BluetoothSocket._m3) as java.io.OutputStream;
 		}
 		public new global::android.bluetooth.BluetoothDevice RemoteDevice
 		{
@@ -48,10 +48,10 @@ namespace android.bluetooth
 				return getRemoteDevice();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRemoteDevice2557;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public global::android.bluetooth.BluetoothDevice getRemoteDevice()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothDevice>(this, global::android.bluetooth.BluetoothSocket.staticClass, "getRemoteDevice", "()Landroid/bluetooth/BluetoothDevice;", ref global::android.bluetooth.BluetoothSocket._getRemoteDevice2557) as android.bluetooth.BluetoothDevice;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.bluetooth.BluetoothDevice>(this, global::android.bluetooth.BluetoothSocket.staticClass, "getRemoteDevice", "()Landroid/bluetooth/BluetoothDevice;", ref global::android.bluetooth.BluetoothSocket._m4) as android.bluetooth.BluetoothDevice;
 		}
 		static BluetoothSocket()
 		{

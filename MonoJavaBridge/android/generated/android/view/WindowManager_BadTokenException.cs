@@ -7,22 +7,22 @@ namespace android.view
 		protected WindowManager_BadTokenException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_BadTokenException15381;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public WindowManager_BadTokenException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15381.native == global::System.IntPtr.Zero)
-				global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15381 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_BadTokenException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15381);
+			if (global::android.view.WindowManager_BadTokenException._m0.native == global::System.IntPtr.Zero)
+				global::android.view.WindowManager_BadTokenException._m0 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_BadTokenException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_BadTokenException15382;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public WindowManager_BadTokenException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15382.native == global::System.IntPtr.Zero)
-				global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15382 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_BadTokenException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.view.WindowManager_BadTokenException._m1.native == global::System.IntPtr.Zero)
+				global::android.view.WindowManager_BadTokenException._m1 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_BadTokenException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static WindowManager_BadTokenException()

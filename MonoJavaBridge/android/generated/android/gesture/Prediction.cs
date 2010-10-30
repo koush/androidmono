@@ -7,27 +7,27 @@ namespace android.gesture
 		protected Prediction(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString5006;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;", ref global::android.gesture.Prediction._toString5006) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;", ref global::android.gesture.Prediction._m0) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.FieldId _name5007;
+		internal static global::MonoJavaBridge.FieldId _name2233;
 		public global::java.lang.String name
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _name5007)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _name2233)) as java.lang.String;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _score5008;
+		internal static global::MonoJavaBridge.FieldId _score2234;
 		public double score
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetDoubleField(this.JvmHandle, _score5008);
+				return @__env.GetDoubleField(this.JvmHandle, _score2234);
 			}
 			set
 			{
@@ -37,8 +37,8 @@ namespace android.gesture
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.Prediction.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/Prediction"));
-			global::android.gesture.Prediction._name5007 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "name", "Ljava/lang/String;");
-			global::android.gesture.Prediction._score5008 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "score", "D");
+			global::android.gesture.Prediction._name2233 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "name", "Ljava/lang/String;");
+			global::android.gesture.Prediction._score2234 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "score", "D");
 		}
 		internal static void InitJNI()
 		{

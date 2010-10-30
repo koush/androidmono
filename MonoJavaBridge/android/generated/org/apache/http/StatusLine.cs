@@ -15,20 +15,20 @@ namespace org.apache.http
 		internal StatusLine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getProtocolVersion31763;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::org.apache.http.ProtocolVersion org.apache.http.StatusLine.getProtocolVersion()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.StatusLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.StatusLine_._getProtocolVersion31763) as org.apache.http.ProtocolVersion;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.StatusLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;", ref global::org.apache.http.StatusLine_._m0) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::MonoJavaBridge.MethodId _getStatusCode31764;
+		private static global::MonoJavaBridge.MethodId _m1;
 		int org.apache.http.StatusLine.getStatusCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.StatusLine_.staticClass, "getStatusCode", "()I", ref global::org.apache.http.StatusLine_._getStatusCode31764);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.StatusLine_.staticClass, "getStatusCode", "()I", ref global::org.apache.http.StatusLine_._m1);
 		}
-		internal static global::MonoJavaBridge.MethodId _getReasonPhrase31765;
+		private static global::MonoJavaBridge.MethodId _m2;
 		global::java.lang.String org.apache.http.StatusLine.getReasonPhrase()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.StatusLine_.staticClass, "getReasonPhrase", "()Ljava/lang/String;", ref global::org.apache.http.StatusLine_._getReasonPhrase31765) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.StatusLine_.staticClass, "getReasonPhrase", "()Ljava/lang/String;", ref global::org.apache.http.StatusLine_._m2) as java.lang.String;
 		}
 		static StatusLine_()
 		{

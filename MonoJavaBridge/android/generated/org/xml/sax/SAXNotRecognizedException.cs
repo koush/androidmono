@@ -7,22 +7,22 @@ namespace org.xml.sax
 		protected SAXNotRecognizedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXNotRecognizedException35035;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public SAXNotRecognizedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35035.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35035 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXNotRecognizedException.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotRecognizedException.staticClass, global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35035);
+			if (global::org.xml.sax.SAXNotRecognizedException._m0.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXNotRecognizedException._m0 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXNotRecognizedException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotRecognizedException.staticClass, global::org.xml.sax.SAXNotRecognizedException._m0);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SAXNotRecognizedException35036;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public SAXNotRecognizedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35036.native == global::System.IntPtr.Zero)
-				global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35036 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXNotRecognizedException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotRecognizedException.staticClass, global::org.xml.sax.SAXNotRecognizedException._SAXNotRecognizedException35036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.xml.sax.SAXNotRecognizedException._m1.native == global::System.IntPtr.Zero)
+				global::org.xml.sax.SAXNotRecognizedException._m1 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXNotRecognizedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotRecognizedException.staticClass, global::org.xml.sax.SAXNotRecognizedException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static SAXNotRecognizedException()

@@ -7,20 +7,20 @@ namespace android.telephony
 		protected ServiceState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals11857;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.telephony.ServiceState._equals11857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z", ref global::android.telephony.ServiceState._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString11858;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override global::java.lang.String toString()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._toString11858) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode11859;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override int hashCode()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "hashCode", "()I", ref global::android.telephony.ServiceState._hashCode11859);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "hashCode", "()I", ref global::android.telephony.ServiceState._m2);
 		}
 		public new int State
 		{
@@ -33,30 +33,30 @@ namespace android.telephony
 				setState(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getState11860;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getState()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "getState", "()I", ref global::android.telephony.ServiceState._getState11860);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "getState", "()I", ref global::android.telephony.ServiceState._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _setState11861;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual void setState(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setState", "(I)V", ref global::android.telephony.ServiceState._setState11861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setState", "(I)V", ref global::android.telephony.ServiceState._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel11862;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.telephony.ServiceState._writeToParcel11862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.telephony.ServiceState._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents11863;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "describeContents", "()I", ref global::android.telephony.ServiceState._describeContents11863);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.telephony.ServiceState.staticClass, "describeContents", "()I", ref global::android.telephony.ServiceState._m6);
 		}
-		internal static global::MonoJavaBridge.MethodId _copyFrom11864;
+		private static global::MonoJavaBridge.MethodId _m7;
 		protected virtual void copyFrom(android.telephony.ServiceState arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "copyFrom", "(Landroid/telephony/ServiceState;)V", ref global::android.telephony.ServiceState._copyFrom11864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "copyFrom", "(Landroid/telephony/ServiceState;)V", ref global::android.telephony.ServiceState._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool Roaming
 		{
@@ -69,10 +69,10 @@ namespace android.telephony
 				setRoaming(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRoaming11865;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual bool getRoaming()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "getRoaming", "()Z", ref global::android.telephony.ServiceState._getRoaming11865);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "getRoaming", "()Z", ref global::android.telephony.ServiceState._m8);
 		}
 		public new global::java.lang.String OperatorAlphaLong
 		{
@@ -81,10 +81,10 @@ namespace android.telephony
 				return getOperatorAlphaLong();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaLong11866;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual global::java.lang.String getOperatorAlphaLong()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorAlphaLong", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._getOperatorAlphaLong11866) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorAlphaLong", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._m9) as java.lang.String;
 		}
 		public new global::java.lang.String OperatorAlphaShort
 		{
@@ -93,10 +93,10 @@ namespace android.telephony
 				return getOperatorAlphaShort();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaShort11867;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public virtual global::java.lang.String getOperatorAlphaShort()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorAlphaShort", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._getOperatorAlphaShort11867) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorAlphaShort", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._m10) as java.lang.String;
 		}
 		public new global::java.lang.String OperatorNumeric
 		{
@@ -105,10 +105,10 @@ namespace android.telephony
 				return getOperatorNumeric();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOperatorNumeric11868;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public virtual global::java.lang.String getOperatorNumeric()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorNumeric", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._getOperatorNumeric11868) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::android.telephony.ServiceState.staticClass, "getOperatorNumeric", "()Ljava/lang/String;", ref global::android.telephony.ServiceState._m11) as java.lang.String;
 		}
 		public new bool IsManualSelection
 		{
@@ -121,61 +121,61 @@ namespace android.telephony
 				setIsManualSelection(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIsManualSelection11869;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public virtual bool getIsManualSelection()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "getIsManualSelection", "()Z", ref global::android.telephony.ServiceState._getIsManualSelection11869);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.telephony.ServiceState.staticClass, "getIsManualSelection", "()Z", ref global::android.telephony.ServiceState._m12);
 		}
-		internal static global::MonoJavaBridge.MethodId _setStateOutOfService11870;
+		private static global::MonoJavaBridge.MethodId _m13;
 		public virtual void setStateOutOfService()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setStateOutOfService", "()V", ref global::android.telephony.ServiceState._setStateOutOfService11870);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setStateOutOfService", "()V", ref global::android.telephony.ServiceState._m13);
 		}
-		internal static global::MonoJavaBridge.MethodId _setStateOff11871;
+		private static global::MonoJavaBridge.MethodId _m14;
 		public virtual void setStateOff()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setStateOff", "()V", ref global::android.telephony.ServiceState._setStateOff11871);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setStateOff", "()V", ref global::android.telephony.ServiceState._m14);
 		}
-		internal static global::MonoJavaBridge.MethodId _setRoaming11872;
+		private static global::MonoJavaBridge.MethodId _m15;
 		public virtual void setRoaming(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setRoaming", "(Z)V", ref global::android.telephony.ServiceState._setRoaming11872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setRoaming", "(Z)V", ref global::android.telephony.ServiceState._m15, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOperatorName11873;
+		private static global::MonoJavaBridge.MethodId _m16;
 		public virtual void setOperatorName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setOperatorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::android.telephony.ServiceState._setOperatorName11873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setOperatorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", ref global::android.telephony.ServiceState._m16, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _setIsManualSelection11874;
+		private static global::MonoJavaBridge.MethodId _m17;
 		public virtual void setIsManualSelection(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setIsManualSelection", "(Z)V", ref global::android.telephony.ServiceState._setIsManualSelection11874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.telephony.ServiceState.staticClass, "setIsManualSelection", "(Z)V", ref global::android.telephony.ServiceState._m17, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ServiceState11875;
+		private static global::MonoJavaBridge.MethodId _m18;
 		public ServiceState() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.ServiceState._ServiceState11875.native == global::System.IntPtr.Zero)
-				global::android.telephony.ServiceState._ServiceState11875 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "()V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState11875);
+			if (global::android.telephony.ServiceState._m18.native == global::System.IntPtr.Zero)
+				global::android.telephony.ServiceState._m18 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._m18);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ServiceState11876;
+		private static global::MonoJavaBridge.MethodId _m19;
 		public ServiceState(android.telephony.ServiceState arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.ServiceState._ServiceState11876.native == global::System.IntPtr.Zero)
-				global::android.telephony.ServiceState._ServiceState11876 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/telephony/ServiceState;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState11876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.telephony.ServiceState._m19.native == global::System.IntPtr.Zero)
+				global::android.telephony.ServiceState._m19 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/telephony/ServiceState;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._m19, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ServiceState11877;
+		private static global::MonoJavaBridge.MethodId _m20;
 		public ServiceState(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.telephony.ServiceState._ServiceState11877.native == global::System.IntPtr.Zero)
-				global::android.telephony.ServiceState._ServiceState11877 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState11877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.telephony.ServiceState._m20.native == global::System.IntPtr.Zero)
+				global::android.telephony.ServiceState._m20 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._m20, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static int STATE_IN_SERVICE
@@ -206,20 +206,20 @@ namespace android.telephony
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR11882;
+		internal static global::MonoJavaBridge.FieldId _CREATOR5095;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.telephony.ServiceState.staticClass, _CREATOR11882)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.telephony.ServiceState.staticClass, _CREATOR5095)) as android.os.Parcelable_Creator;
 			}
 		}
 		static ServiceState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.ServiceState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/ServiceState"));
-			global::android.telephony.ServiceState._CREATOR11882 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.ServiceState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.telephony.ServiceState._CREATOR5095 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.ServiceState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 		internal static void InitJNI()
 		{

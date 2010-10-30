@@ -7,85 +7,85 @@ namespace org.apache.http.@params
 		internal HttpProtocolParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion33805;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::org.apache.http.ProtocolVersion getVersion(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._getVersion33805.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._getVersion33805 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getVersion", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/ProtocolVersion;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getVersion33805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.ProtocolVersion;
+			if (global::org.apache.http.@params.HttpProtocolParams._m0.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m0 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getVersion", "(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/ProtocolVersion;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::MonoJavaBridge.MethodId _setVersion33806;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void setVersion(org.apache.http.@params.HttpParams arg0, org.apache.http.ProtocolVersion arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._setVersion33806.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._setVersion33806 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setVersion", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/ProtocolVersion;)V");
-			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._setVersion33806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.@params.HttpProtocolParams._m1.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m1 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setVersion", "(Lorg/apache/http/params/HttpParams;Lorg/apache/http/ProtocolVersion;)V");
+			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setUserAgent33807;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static void setUserAgent(org.apache.http.@params.HttpParams arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._setUserAgent33807.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._setUserAgent33807 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setUserAgent", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
-			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._setUserAgent33807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.@params.HttpProtocolParams._m2.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m2 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setUserAgent", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
+			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getUserAgent33808;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static global::java.lang.String getUserAgent(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._getUserAgent33808.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._getUserAgent33808 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getUserAgent", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getUserAgent33808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::org.apache.http.@params.HttpProtocolParams._m3.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m3 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getUserAgent", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setHttpElementCharset33809;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public static void setHttpElementCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._setHttpElementCharset33809.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._setHttpElementCharset33809 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setHttpElementCharset", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
-			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._setHttpElementCharset33809, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.@params.HttpProtocolParams._m4.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m4 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setHttpElementCharset", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
+			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setContentCharset33810;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public static void setContentCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._setContentCharset33810.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._setContentCharset33810 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setContentCharset", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
-			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._setContentCharset33810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.@params.HttpProtocolParams._m5.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m5 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setContentCharset", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
+			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setUseExpectContinue33811;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public static void setUseExpectContinue(org.apache.http.@params.HttpParams arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._setUseExpectContinue33811.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._setUseExpectContinue33811 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setUseExpectContinue", "(Lorg/apache/http/params/HttpParams;Z)V");
-			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._setUseExpectContinue33811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.@params.HttpProtocolParams._m6.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m6 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "setUseExpectContinue", "(Lorg/apache/http/params/HttpParams;Z)V");
+			@__env.CallStaticVoidMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _useExpectContinue33812;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public static bool useExpectContinue(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._useExpectContinue33812.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._useExpectContinue33812 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "useExpectContinue", "(Lorg/apache/http/params/HttpParams;)Z");
-			return @__env.CallStaticBooleanMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._useExpectContinue33812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::org.apache.http.@params.HttpProtocolParams._m7.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m7 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "useExpectContinue", "(Lorg/apache/http/params/HttpParams;)Z");
+			return @__env.CallStaticBooleanMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getHttpElementCharset33813;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public static global::java.lang.String getHttpElementCharset(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33813.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33813 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getHttpElementCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::org.apache.http.@params.HttpProtocolParams._m8.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m8 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getHttpElementCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentCharset33814;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public static global::java.lang.String getContentCharset(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.@params.HttpProtocolParams._getContentCharset33814.native == global::System.IntPtr.Zero)
-				global::org.apache.http.@params.HttpProtocolParams._getContentCharset33814 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getContentCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getContentCharset33814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			if (global::org.apache.http.@params.HttpProtocolParams._m9.native == global::System.IntPtr.Zero)
+				global::org.apache.http.@params.HttpProtocolParams._m9 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.@params.HttpProtocolParams.staticClass, "getContentCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		static HttpProtocolParams()
 		{

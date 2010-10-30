@@ -7,15 +7,15 @@ namespace android.text.style
 		protected AlignmentSpan_Standard(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel13435;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.AlignmentSpan_Standard._writeToParcel13435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V", ref global::android.text.style.AlignmentSpan_Standard._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents13436;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual int describeContents()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "describeContents", "()I", ref global::android.text.style.AlignmentSpan_Standard._describeContents13436);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "describeContents", "()I", ref global::android.text.style.AlignmentSpan_Standard._m1);
 		}
 		public new global::android.text.Layout.Alignment Alignment
 		{
@@ -24,10 +24,10 @@ namespace android.text.style
 				return getAlignment();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlignment13437;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual global::android.text.Layout.Alignment getAlignment()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.text.Layout.Alignment>(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;", ref global::android.text.style.AlignmentSpan_Standard._getAlignment13437) as android.text.Layout.Alignment;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<android.text.Layout.Alignment>(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;", ref global::android.text.style.AlignmentSpan_Standard._m2) as android.text.Layout.Alignment;
 		}
 		public new int SpanTypeId
 		{
@@ -36,27 +36,27 @@ namespace android.text.style
 				return getSpanTypeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13438;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int getSpanTypeId()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.AlignmentSpan_Standard._getSpanTypeId13438);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::android.text.style.AlignmentSpan_Standard.staticClass, "getSpanTypeId", "()I", ref global::android.text.style.AlignmentSpan_Standard._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _AlignmentSpan_Standard13439;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public AlignmentSpan_Standard(android.text.Layout.Alignment arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13439.native == global::System.IntPtr.Zero)
-				global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13439 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/text/Layout$Alignment;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AlignmentSpan_Standard.staticClass, global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.AlignmentSpan_Standard._m4.native == global::System.IntPtr.Zero)
+				global::android.text.style.AlignmentSpan_Standard._m4 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/text/Layout$Alignment;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AlignmentSpan_Standard.staticClass, global::android.text.style.AlignmentSpan_Standard._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AlignmentSpan_Standard13440;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public AlignmentSpan_Standard(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13440.native == global::System.IntPtr.Zero)
-				global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13440 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AlignmentSpan_Standard.staticClass, global::android.text.style.AlignmentSpan_Standard._AlignmentSpan_Standard13440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.text.style.AlignmentSpan_Standard._m5.native == global::System.IntPtr.Zero)
+				global::android.text.style.AlignmentSpan_Standard._m5 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.AlignmentSpan_Standard.staticClass, global::android.text.style.AlignmentSpan_Standard._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static AlignmentSpan_Standard()

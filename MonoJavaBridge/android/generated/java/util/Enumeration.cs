@@ -14,15 +14,15 @@ namespace java.util
 		internal Enumeration_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _hasMoreElements26171;
+		private static global::MonoJavaBridge.MethodId _m0;
 		bool java.util.Enumeration.hasMoreElements()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Enumeration_.staticClass, "hasMoreElements", "()Z", ref global::java.util.Enumeration_._hasMoreElements26171);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.util.Enumeration_.staticClass, "hasMoreElements", "()Z", ref global::java.util.Enumeration_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _nextElement26172;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.Object java.util.Enumeration.nextElement()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Enumeration_.staticClass, "nextElement", "()Ljava/lang/Object;", ref global::java.util.Enumeration_._nextElement26172) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.util.Enumeration_.staticClass, "nextElement", "()Ljava/lang/Object;", ref global::java.util.Enumeration_._m1) as java.lang.Object;
 		}
 		static Enumeration_()
 		{

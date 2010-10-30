@@ -17,30 +17,30 @@ namespace org.w3c.dom
 		internal NameList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength34671;
+		private static global::MonoJavaBridge.MethodId _m0;
 		int org.w3c.dom.NameList.getLength()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.NameList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.NameList_._getLength34671);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.w3c.dom.NameList_.staticClass, "getLength", "()I", ref global::org.w3c.dom.NameList_._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _getName34672;
+		private static global::MonoJavaBridge.MethodId _m1;
 		global::java.lang.String org.w3c.dom.NameList.getName(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.NameList_.staticClass, "getName", "(I)Ljava/lang/String;", ref global::org.w3c.dom.NameList_._getName34672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.NameList_.staticClass, "getName", "(I)Ljava/lang/String;", ref global::org.w3c.dom.NameList_._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _contains34673;
+		private static global::MonoJavaBridge.MethodId _m2;
 		bool org.w3c.dom.NameList.contains(java.lang.String arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.NameList_.staticClass, "contains", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.NameList_._contains34673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.NameList_.staticClass, "contains", "(Ljava/lang/String;)Z", ref global::org.w3c.dom.NameList_._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getNamespaceURI34674;
+		private static global::MonoJavaBridge.MethodId _m3;
 		global::java.lang.String org.w3c.dom.NameList.getNamespaceURI(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.NameList_.staticClass, "getNamespaceURI", "(I)Ljava/lang/String;", ref global::org.w3c.dom.NameList_._getNamespaceURI34674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.w3c.dom.NameList_.staticClass, "getNamespaceURI", "(I)Ljava/lang/String;", ref global::org.w3c.dom.NameList_._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _containsNS34675;
+		private static global::MonoJavaBridge.MethodId _m4;
 		bool org.w3c.dom.NameList.containsNS(java.lang.String arg0, java.lang.String arg1)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.NameList_.staticClass, "containsNS", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::org.w3c.dom.NameList_._containsNS34675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.w3c.dom.NameList_.staticClass, "containsNS", "(Ljava/lang/String;Ljava/lang/String;)Z", ref global::org.w3c.dom.NameList_._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static NameList_()
 		{

@@ -7,37 +7,37 @@ namespace android.text.method
 		protected Touch(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent13419;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public static bool onTouchEvent(android.widget.TextView arg0, android.text.Spannable arg1, android.view.MotionEvent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.Touch._onTouchEvent13419.native == global::System.IntPtr.Zero)
-				global::android.text.method.Touch._onTouchEvent13419 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
-			return @__env.CallStaticBooleanMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._onTouchEvent13419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.text.method.Touch._m0.native == global::System.IntPtr.Zero)
+				global::android.text.method.Touch._m0 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
+			return @__env.CallStaticBooleanMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _scrollTo13420;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public static void scrollTo(android.widget.TextView arg0, android.text.Layout arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.Touch._scrollTo13420.native == global::System.IntPtr.Zero)
-				global::android.text.method.Touch._scrollTo13420 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "scrollTo", "(Landroid/widget/TextView;Landroid/text/Layout;II)V");
-			@__env.CallStaticVoidMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._scrollTo13420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			if (global::android.text.method.Touch._m1.native == global::System.IntPtr.Zero)
+				global::android.text.method.Touch._m1 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "scrollTo", "(Landroid/widget/TextView;Landroid/text/Layout;II)V");
+			@__env.CallStaticVoidMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getInitialScrollX13421;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public static int getInitialScrollX(android.widget.TextView arg0, android.text.Spannable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.Touch._getInitialScrollX13421.native == global::System.IntPtr.Zero)
-				global::android.text.method.Touch._getInitialScrollX13421 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollX", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
-			return @__env.CallStaticIntMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._getInitialScrollX13421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.Touch._m2.native == global::System.IntPtr.Zero)
+				global::android.text.method.Touch._m2 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollX", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
+			return @__env.CallStaticIntMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getInitialScrollY13422;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public static int getInitialScrollY(android.widget.TextView arg0, android.text.Spannable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.text.method.Touch._getInitialScrollY13422.native == global::System.IntPtr.Zero)
-				global::android.text.method.Touch._getInitialScrollY13422 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollY", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
-			return @__env.CallStaticIntMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._getInitialScrollY13422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.text.method.Touch._m3.native == global::System.IntPtr.Zero)
+				global::android.text.method.Touch._m3 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.Touch.staticClass, "getInitialScrollY", "(Landroid/widget/TextView;Landroid/text/Spannable;)I");
+			return @__env.CallStaticIntMethod(android.text.method.Touch.staticClass, global::android.text.method.Touch._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		static Touch()
 		{

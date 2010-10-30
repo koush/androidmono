@@ -13,10 +13,10 @@ namespace org.apache.http.client
 		internal ResponseHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handleResponse31902;
+		private static global::MonoJavaBridge.MethodId _m0;
 		global::java.lang.Object org.apache.http.client.ResponseHandler.handleResponse(org.apache.http.HttpResponse arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.client.ResponseHandler_.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;", ref global::org.apache.http.client.ResponseHandler_._handleResponse31902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::org.apache.http.client.ResponseHandler_.staticClass, "handleResponse", "(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;", ref global::org.apache.http.client.ResponseHandler_._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as java.lang.Object;
 		}
 		static ResponseHandler_()
 		{

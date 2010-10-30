@@ -7,15 +7,15 @@ namespace android.widget
 		protected CheckedTextView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toggle16846;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void toggle()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "toggle", "()V", ref global::android.widget.CheckedTextView._toggle16846);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "toggle", "()V", ref global::android.widget.CheckedTextView._m0);
 		}
-		internal static global::MonoJavaBridge.MethodId _isChecked16847;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual bool isChecked()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, "isChecked", "()Z", ref global::android.widget.CheckedTextView._isChecked16847);
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, "isChecked", "()Z", ref global::android.widget.CheckedTextView._m1);
 		}
 		public new bool Checked
 		{
@@ -24,71 +24,71 @@ namespace android.widget
 				setChecked(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setChecked16848;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual void setChecked(bool arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setChecked", "(Z)V", ref global::android.widget.CheckedTextView._setChecked16848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setChecked", "(Z)V", ref global::android.widget.CheckedTextView._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent16849;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z", ref global::android.widget.CheckedTextView._dispatchPopulateAccessibilityEvent16849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z", ref global::android.widget.CheckedTextView._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDraw16850;
+		private static global::MonoJavaBridge.MethodId _m4;
 		protected override void onDraw(android.graphics.Canvas arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.CheckedTextView._onDraw16850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V", ref global::android.widget.CheckedTextView._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16851;
+		private static global::MonoJavaBridge.MethodId _m5;
 		protected override void drawableStateChanged()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "drawableStateChanged", "()V", ref global::android.widget.CheckedTextView._drawableStateChanged16851);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "drawableStateChanged", "()V", ref global::android.widget.CheckedTextView._m5);
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState16852;
+		private static global::MonoJavaBridge.MethodId _m6;
 		protected override int[] onCreateDrawableState(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.CheckedTextView.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.CheckedTextView._onCreateDrawableState16852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
+			return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<int>(this, global::android.widget.CheckedTextView.staticClass, "onCreateDrawableState", "(I)[I", ref global::android.widget.CheckedTextView._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0)) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setPadding16853;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public override void setPadding(int arg0, int arg1, int arg2, int arg3)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setPadding", "(IIII)V", ref global::android.widget.CheckedTextView._setPadding16853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setPadding", "(IIII)V", ref global::android.widget.CheckedTextView._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _setCheckMarkDrawable16854;
+		private static global::MonoJavaBridge.MethodId _m8;
 		public virtual void setCheckMarkDrawable(android.graphics.drawable.Drawable arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setCheckMarkDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.CheckedTextView._setCheckMarkDrawable16854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setCheckMarkDrawable", "(Landroid/graphics/drawable/Drawable;)V", ref global::android.widget.CheckedTextView._m8, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setCheckMarkDrawable16855;
+		private static global::MonoJavaBridge.MethodId _m9;
 		public virtual void setCheckMarkDrawable(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setCheckMarkDrawable", "(I)V", ref global::android.widget.CheckedTextView._setCheckMarkDrawable16855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::android.widget.CheckedTextView.staticClass, "setCheckMarkDrawable", "(I)V", ref global::android.widget.CheckedTextView._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _CheckedTextView16856;
+		private static global::MonoJavaBridge.MethodId _m10;
 		public CheckedTextView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CheckedTextView._CheckedTextView16856.native == global::System.IntPtr.Zero)
-				global::android.widget.CheckedTextView._CheckedTextView16856 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::android.widget.CheckedTextView._m10.native == global::System.IntPtr.Zero)
+				global::android.widget.CheckedTextView._m10 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._m10, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CheckedTextView16857;
+		private static global::MonoJavaBridge.MethodId _m11;
 		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CheckedTextView._CheckedTextView16857.native == global::System.IntPtr.Zero)
-				global::android.widget.CheckedTextView._CheckedTextView16857 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::android.widget.CheckedTextView._m11.native == global::System.IntPtr.Zero)
+				global::android.widget.CheckedTextView._m11 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._m11, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CheckedTextView16858;
+		private static global::MonoJavaBridge.MethodId _m12;
 		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::android.widget.CheckedTextView._CheckedTextView16858.native == global::System.IntPtr.Zero)
-				global::android.widget.CheckedTextView._CheckedTextView16858 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			if (global::android.widget.CheckedTextView._m12.native == global::System.IntPtr.Zero)
+				global::android.widget.CheckedTextView._m12 = @__env.GetMethodIDNoThrow(global::android.widget.CheckedTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		static CheckedTextView()

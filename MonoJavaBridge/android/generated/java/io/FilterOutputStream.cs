@@ -7,38 +7,38 @@ namespace java.io
 		protected FilterOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _write19068;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public override void write(int arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "(I)V", ref global::java.io.FilterOutputStream._write19068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "(I)V", ref global::java.io.FilterOutputStream._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19069;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public override void write(byte[] arg0)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "([B)V", ref global::java.io.FilterOutputStream._write19069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "([B)V", ref global::java.io.FilterOutputStream._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19070;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public override void write(byte[] arg0, int arg1, int arg2)
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "([BII)V", ref global::java.io.FilterOutputStream._write19070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "write", "([BII)V", ref global::java.io.FilterOutputStream._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19071;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public override void flush()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "flush", "()V", ref global::java.io.FilterOutputStream._flush19071);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "flush", "()V", ref global::java.io.FilterOutputStream._m3);
 		}
-		internal static global::MonoJavaBridge.MethodId _close19072;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public override void close()
 		{
-			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "close", "()V", ref global::java.io.FilterOutputStream._close19072);
+			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.io.FilterOutputStream.staticClass, "close", "()V", ref global::java.io.FilterOutputStream._m4);
 		}
-		internal static global::MonoJavaBridge.MethodId _FilterOutputStream19073;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public FilterOutputStream(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::java.io.FilterOutputStream._FilterOutputStream19073.native == global::System.IntPtr.Zero)
-				global::java.io.FilterOutputStream._FilterOutputStream19073 = @__env.GetMethodIDNoThrow(global::java.io.FilterOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilterOutputStream.staticClass, global::java.io.FilterOutputStream._FilterOutputStream19073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			if (global::java.io.FilterOutputStream._m5.native == global::System.IntPtr.Zero)
+				global::java.io.FilterOutputStream._m5 = @__env.GetMethodIDNoThrow(global::java.io.FilterOutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilterOutputStream.staticClass, global::java.io.FilterOutputStream._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		static FilterOutputStream()

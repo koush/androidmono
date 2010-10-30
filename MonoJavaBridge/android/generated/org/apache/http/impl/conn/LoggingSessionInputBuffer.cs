@@ -7,30 +7,30 @@ namespace org.apache.http.impl.conn
 		protected LoggingSessionInputBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _readLine33054;
+		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int readLine(org.apache.http.util.CharArrayBuffer arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "readLine", "(Lorg/apache/http/util/CharArrayBuffer;)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._readLine33054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "readLine", "(Lorg/apache/http/util/CharArrayBuffer;)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m0, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readLine33055;
+		private static global::MonoJavaBridge.MethodId _m1;
 		public virtual global::java.lang.String readLine()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "readLine", "()Ljava/lang/String;", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._readLine33055) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "readLine", "()Ljava/lang/String;", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m1) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _read33056;
+		private static global::MonoJavaBridge.MethodId _m2;
 		public virtual int read(byte[] arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "([B)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._read33056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "([B)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read33057;
+		private static global::MonoJavaBridge.MethodId _m3;
 		public virtual int read(byte[] arg0, int arg1, int arg2)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "([BII)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._read33057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "([BII)I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read33058;
+		private static global::MonoJavaBridge.MethodId _m4;
 		public virtual int read()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "()I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._read33058);
+			return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "read", "()I", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m4);
 		}
 		public new global::org.apache.http.io.HttpTransportMetrics Metrics
 		{
@@ -39,23 +39,23 @@ namespace org.apache.http.impl.conn
 				return getMetrics();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMetrics33059;
+		private static global::MonoJavaBridge.MethodId _m5;
 		public virtual global::org.apache.http.io.HttpTransportMetrics getMetrics()
 		{
-			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.io.HttpTransportMetrics>(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._getMetrics33059) as org.apache.http.io.HttpTransportMetrics;
+			return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<org.apache.http.io.HttpTransportMetrics>(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "getMetrics", "()Lorg/apache/http/io/HttpTransportMetrics;", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m5) as org.apache.http.io.HttpTransportMetrics;
 		}
-		internal static global::MonoJavaBridge.MethodId _isDataAvailable33060;
+		private static global::MonoJavaBridge.MethodId _m6;
 		public virtual bool isDataAvailable(int arg0)
 		{
-			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "isDataAvailable", "(I)Z", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._isDataAvailable33060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "isDataAvailable", "(I)Z", ref global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m6, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _LoggingSessionInputBuffer33061;
+		private static global::MonoJavaBridge.MethodId _m7;
 		public LoggingSessionInputBuffer(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.impl.conn.Wire arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (global::org.apache.http.impl.conn.LoggingSessionInputBuffer._LoggingSessionInputBuffer33061.native == global::System.IntPtr.Zero)
-				global::org.apache.http.impl.conn.LoggingSessionInputBuffer._LoggingSessionInputBuffer33061 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "<init>", "(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/impl/conn/Wire;)V");
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, global::org.apache.http.impl.conn.LoggingSessionInputBuffer._LoggingSessionInputBuffer33061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			if (global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m7.native == global::System.IntPtr.Zero)
+				global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m7 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, "<init>", "(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/impl/conn/Wire;)V");
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.LoggingSessionInputBuffer.staticClass, global::org.apache.http.impl.conn.LoggingSessionInputBuffer._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		static LoggingSessionInputBuffer()
