@@ -63,9 +63,6 @@ namespace android.inputmethodservice
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.InputMethodService.InputMethodImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/InputMethodService$InputMethodImpl"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class InputMethodSessionImpl : android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl
@@ -122,9 +119,6 @@ namespace android.inputmethodservice
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.InputMethodService.InputMethodSessionImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/InputMethodService$InputMethodSessionImpl"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -207,9 +201,6 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.InputMethodService.Insets._contentTopInsets2557 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.InputMethodService.Insets.staticClass, "contentTopInsets", "I");
 				global::android.inputmethodservice.InputMethodService.Insets._visibleTopInsets2558 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.InputMethodService.Insets.staticClass, "visibleTopInsets", "I");
 				global::android.inputmethodservice.InputMethodService.Insets._touchableInsets2562 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.InputMethodService.Insets.staticClass, "touchableInsets", "I");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -683,9 +674,6 @@ namespace android.inputmethodservice
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.InputMethodService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/InputMethodService"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

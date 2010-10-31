@@ -117,8 +117,5 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HandshakeCompletedEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HandshakeCompletedEvent"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

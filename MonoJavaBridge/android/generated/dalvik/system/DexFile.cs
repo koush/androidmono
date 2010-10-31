@@ -73,8 +73,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.DexFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/DexFile"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

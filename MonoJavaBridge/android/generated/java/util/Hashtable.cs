@@ -148,8 +148,5 @@ namespace java.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Hashtable.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Hashtable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

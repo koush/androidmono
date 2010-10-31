@@ -29,8 +29,5 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Parcelable_Creator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcelable$Creator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

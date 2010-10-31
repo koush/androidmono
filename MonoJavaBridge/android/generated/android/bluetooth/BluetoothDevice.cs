@@ -219,8 +219,5 @@ namespace android.bluetooth
 			global::android.bluetooth.BluetoothDevice.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothDevice"));
 			global::android.bluetooth.BluetoothDevice._CREATOR1605 = @__env.GetStaticFieldIDNoThrow(global::android.bluetooth.BluetoothDevice.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

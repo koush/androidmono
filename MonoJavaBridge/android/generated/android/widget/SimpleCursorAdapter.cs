@@ -30,9 +30,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorAdapter.CursorToStringConverter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorAdapter$CursorToStringConverter"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate java.lang.CharSequence CursorToStringConverterDelegate(android.database.Cursor arg0);
@@ -56,9 +53,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorAdapter.CursorToStringConverterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorAdapter_CursorToStringConverterDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class CursorToStringConverterDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorAdapter.ViewBinder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorAdapter$ViewBinder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool ViewBinderDelegate(android.view.View arg0, android.database.Cursor arg1, int arg2);
@@ -125,9 +116,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorAdapter.ViewBinderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorAdapter_ViewBinderDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class ViewBinderDelegateWrapper
@@ -237,9 +225,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleCursorAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorAdapter"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

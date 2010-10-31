@@ -23,9 +23,6 @@ namespace android.webkit
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.ValueCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/ValueCallback"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void ValueCallbackDelegate(java.lang.Object arg0);
@@ -49,9 +46,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.ValueCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/ValueCallbackDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class ValueCallbackDelegateWrapper

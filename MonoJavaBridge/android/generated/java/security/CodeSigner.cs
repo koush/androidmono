@@ -60,8 +60,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.CodeSigner.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/CodeSigner"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

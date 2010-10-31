@@ -23,9 +23,6 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MenuItem_OnMenuItemClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuItem$OnMenuItemClickListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate bool MenuItem_OnMenuItemClickListenerDelegate(android.view.MenuItem arg0);
@@ -49,9 +46,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuItem_OnMenuItemClickListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class MenuItem_OnMenuItemClickListenerDelegateWrapper

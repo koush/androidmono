@@ -297,8 +297,5 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.Cipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/Cipher"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

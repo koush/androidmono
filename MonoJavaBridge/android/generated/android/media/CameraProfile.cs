@@ -50,8 +50,5 @@ namespace android.media
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.CameraProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CameraProfile"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

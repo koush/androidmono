@@ -197,8 +197,5 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.MenuItem_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuItem"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -55,9 +55,6 @@ namespace android.graphics
 				global::android.graphics.AvoidXfermode.Mode._AVOID2235 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "AVOID", "Landroid/graphics/AvoidXfermode$Mode;");
 				global::android.graphics.AvoidXfermode.Mode._TARGET2236 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.AvoidXfermode.Mode.staticClass, "TARGET", "Landroid/graphics/AvoidXfermode$Mode;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public AvoidXfermode(int arg0, int arg1, android.graphics.AvoidXfermode.Mode arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -72,9 +69,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.AvoidXfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/AvoidXfermode"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

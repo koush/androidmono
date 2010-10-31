@@ -117,8 +117,5 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicLineParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicLineParser"));
 			global::org.apache.http.message.BasicLineParser._DEFAULT7514 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicLineParser.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicLineParser;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,8 +23,5 @@ namespace org.apache.http.conn.routing
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.HttpRoutePlanner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/HttpRoutePlanner"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

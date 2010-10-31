@@ -65,9 +65,6 @@ namespace android.text
 				global::android.text.Layout.Alignment._ALIGN_NORMAL5224 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_NORMAL", "Landroid/text/Layout$Alignment;");
 				global::android.text.Layout.Alignment._ALIGN_OPPOSITE5225 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_OPPOSITE", "Landroid/text/Layout$Alignment;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Directions : java.lang.Object
@@ -80,9 +77,6 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Layout.Directions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout$Directions"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -333,9 +327,6 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.Layout))]
@@ -404,9 +395,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

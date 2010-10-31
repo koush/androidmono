@@ -39,8 +39,5 @@ namespace org.apache.http
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ProtocolException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

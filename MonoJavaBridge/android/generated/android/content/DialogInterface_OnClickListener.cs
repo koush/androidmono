@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnClickListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void DialogInterface_OnClickListenerDelegate(android.content.DialogInterface arg0, int arg1);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnClickListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class DialogInterface_OnClickListenerDelegateWrapper

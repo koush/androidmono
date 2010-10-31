@@ -29,9 +29,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.KeyguardManager.KeyguardLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/KeyguardManager$KeyguardLock"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.KeyguardManager.OnKeyguardExitResult_))]
 		public partial interface OnKeyguardExitResult  : global::MonoJavaBridge.IJavaObject 
@@ -56,9 +53,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.KeyguardManager.OnKeyguardExitResult_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/KeyguardManager$OnKeyguardExitResult"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnKeyguardExitResultDelegate(bool arg0);
@@ -82,9 +76,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/KeyguardManager_OnKeyguardExitResultDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnKeyguardExitResultDelegateWrapper
@@ -125,9 +116,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.KeyguardManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/KeyguardManager"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -165,8 +165,5 @@ namespace android.telephony
 			global::android.telephony.NeighboringCellInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/NeighboringCellInfo"));
 			global::android.telephony.NeighboringCellInfo._CREATOR5072 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

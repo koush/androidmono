@@ -47,8 +47,5 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteCursorDriver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteCursorDriver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -101,8 +101,5 @@ namespace android.inputmethodservice
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.ExtractEditText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/ExtractEditText"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

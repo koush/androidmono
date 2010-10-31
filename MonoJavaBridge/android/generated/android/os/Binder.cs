@@ -162,8 +162,5 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Binder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Binder"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

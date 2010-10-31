@@ -46,8 +46,5 @@ namespace org.apache.http.conn.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.X509HostnameVerifier_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/X509HostnameVerifier"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

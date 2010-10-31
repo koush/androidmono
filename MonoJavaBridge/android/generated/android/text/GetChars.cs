@@ -43,8 +43,5 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.GetChars_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/GetChars"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

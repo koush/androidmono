@@ -36,9 +36,6 @@ namespace javax.xml.datatype
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::javax.xml.datatype.DatatypeConstants.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeConstants$Field"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public static int JANUARY
 		{
@@ -347,9 +344,6 @@ namespace javax.xml.datatype
 			global::javax.xml.datatype.DatatypeConstants._DURATION7316 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.datatype.DatatypeConstants.staticClass, "DURATION", "Ljavax/xml/namespace/QName;");
 			global::javax.xml.datatype.DatatypeConstants._DURATION_DAYTIME7317 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.datatype.DatatypeConstants.staticClass, "DURATION_DAYTIME", "Ljavax/xml/namespace/QName;");
 			global::javax.xml.datatype.DatatypeConstants._DURATION_YEARMONTH7318 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.datatype.DatatypeConstants.staticClass, "DURATION_YEARMONTH", "Ljavax/xml/namespace/QName;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

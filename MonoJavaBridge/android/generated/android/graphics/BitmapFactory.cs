@@ -228,9 +228,6 @@ namespace android.graphics
 				global::android.graphics.BitmapFactory.Options._inTempStorage2258 = @__env.GetFieldIDNoThrow(global::android.graphics.BitmapFactory.Options.staticClass, "inTempStorage", "[B");
 				global::android.graphics.BitmapFactory.Options._mCancel2259 = @__env.GetFieldIDNoThrow(global::android.graphics.BitmapFactory.Options.staticClass, "mCancel", "Z");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public static global::android.graphics.Bitmap decodeStream(java.io.InputStream arg0)
@@ -333,9 +330,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.BitmapFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BitmapFactory"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

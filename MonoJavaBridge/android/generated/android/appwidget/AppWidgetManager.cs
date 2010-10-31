@@ -146,8 +146,5 @@ namespace android.appwidget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.appwidget.AppWidgetManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

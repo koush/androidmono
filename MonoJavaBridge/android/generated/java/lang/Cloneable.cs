@@ -17,8 +17,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Cloneable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Cloneable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -54,9 +54,6 @@ namespace java.nio.channels
 				global::java.nio.channels.FileChannel.MapMode._READ_WRITE6493 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_WRITE", "Ljava/nio/channels/FileChannel$MapMode;");
 				global::java.nio.channels.FileChannel.MapMode._PRIVATE6494 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "PRIVATE", "Ljava/nio/channels/FileChannel$MapMode;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract global::java.nio.channels.FileLock @lock(long arg0, long arg1, bool arg2);
@@ -123,9 +120,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileChannel.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 
@@ -225,9 +219,6 @@ namespace java.nio.channels
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -75,9 +75,6 @@ namespace android.graphics
 				global::android.graphics.Matrix.ScaleToFit._FILL2298 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Matrix.ScaleToFit.staticClass, "FILL", "Landroid/graphics/Matrix$ScaleToFit;");
 				global::android.graphics.Matrix.ScaleToFit._START2299 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Matrix.ScaleToFit.staticClass, "START", "Landroid/graphics/Matrix$ScaleToFit;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
@@ -418,9 +415,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Matrix.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Matrix"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

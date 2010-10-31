@@ -30,9 +30,6 @@ namespace android.os
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.MessageQueue.IdleHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/MessageQueue$IdleHandler"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool IdleHandlerDelegate();
@@ -56,9 +53,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.MessageQueue.IdleHandlerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/MessageQueue_IdleHandlerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class IdleHandlerDelegateWrapper
@@ -98,9 +92,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.MessageQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/MessageQueue"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

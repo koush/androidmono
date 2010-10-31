@@ -463,8 +463,5 @@ namespace android.text.format
 			global::android.text.format.DateUtils._sameYearTable5308 = @__env.GetStaticFieldIDNoThrow(global::android.text.format.DateUtils.staticClass, "sameYearTable", "[I");
 			global::android.text.format.DateUtils._sameMonthTable5309 = @__env.GetStaticFieldIDNoThrow(global::android.text.format.DateUtils.staticClass, "sameMonthTable", "[I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -243,8 +243,5 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.GridView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/GridView"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

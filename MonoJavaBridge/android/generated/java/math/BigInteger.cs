@@ -341,8 +341,5 @@ namespace java.math
 			global::java.math.BigInteger._ONE6422 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigInteger.staticClass, "ONE", "Ljava/math/BigInteger;");
 			global::java.math.BigInteger._TEN6423 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigInteger.staticClass, "TEN", "Ljava/math/BigInteger;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

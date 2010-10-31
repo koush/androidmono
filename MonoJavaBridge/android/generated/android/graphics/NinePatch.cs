@@ -102,8 +102,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.NinePatch.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/NinePatch"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

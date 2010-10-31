@@ -32,8 +32,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PublicKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PublicKey"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

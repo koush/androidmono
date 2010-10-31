@@ -30,8 +30,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.AllocationLimitError.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/AllocationLimitError"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

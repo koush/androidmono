@@ -142,8 +142,5 @@ namespace android.app
 			global::android.app.UiModeManager._ACTION_ENTER_DESK_MODE1440 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_ENTER_DESK_MODE", "Ljava/lang/String;");
 			global::android.app.UiModeManager._ACTION_EXIT_DESK_MODE1441 = @__env.GetStaticFieldIDNoThrow(global::android.app.UiModeManager.staticClass, "ACTION_EXIT_DESK_MODE", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

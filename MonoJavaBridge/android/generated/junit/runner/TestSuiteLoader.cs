@@ -29,8 +29,5 @@ namespace junit.runner
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.TestSuiteLoader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/TestSuiteLoader"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

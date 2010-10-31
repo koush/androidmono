@@ -45,8 +45,5 @@ namespace java.security.spec
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.PKCS8EncodedKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/PKCS8EncodedKeySpec"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

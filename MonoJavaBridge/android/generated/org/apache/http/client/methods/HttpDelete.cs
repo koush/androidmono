@@ -58,8 +58,5 @@ namespace org.apache.http.client.methods
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.methods.HttpDelete.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/methods/HttpDelete"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

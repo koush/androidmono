@@ -83,8 +83,5 @@ namespace android.gesture
 			global::android.gesture.GestureStroke._length2225 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "length", "F");
 			global::android.gesture.GestureStroke._points2226 = @__env.GetFieldIDNoThrow(global::android.gesture.GestureStroke.staticClass, "points", "[F");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

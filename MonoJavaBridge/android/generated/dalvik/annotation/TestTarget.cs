@@ -55,8 +55,5 @@ namespace dalvik.annotation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.annotation.TestTarget_.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/annotation/TestTarget"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

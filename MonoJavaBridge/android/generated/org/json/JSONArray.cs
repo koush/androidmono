@@ -243,8 +243,5 @@ namespace org.json
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONArray"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

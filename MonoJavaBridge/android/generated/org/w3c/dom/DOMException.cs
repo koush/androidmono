@@ -153,8 +153,5 @@ namespace org.w3c.dom
 			global::org.w3c.dom.DOMException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMException"));
 			global::org.w3c.dom.DOMException._code7582 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "code", "S");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

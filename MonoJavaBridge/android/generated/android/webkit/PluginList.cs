@@ -53,8 +53,5 @@ namespace android.webkit
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginList"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

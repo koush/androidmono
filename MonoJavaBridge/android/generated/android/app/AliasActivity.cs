@@ -26,8 +26,5 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.AliasActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AliasActivity"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

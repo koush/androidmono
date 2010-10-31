@@ -48,8 +48,5 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OperationCanceledException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OperationCanceledException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

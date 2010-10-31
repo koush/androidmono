@@ -72,9 +72,6 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.CipherSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/CipherSpi"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.CipherSpi))]
@@ -153,9 +150,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.CipherSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/CipherSpi"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

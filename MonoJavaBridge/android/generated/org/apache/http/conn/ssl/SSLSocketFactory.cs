@@ -155,8 +155,5 @@ namespace org.apache.http.conn.ssl
 			global::org.apache.http.conn.ssl.SSLSocketFactory._BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7478 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "BROWSER_COMPATIBLE_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
 			global::org.apache.http.conn.ssl.SSLSocketFactory._STRICT_HOSTNAME_VERIFIER7479 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "STRICT_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

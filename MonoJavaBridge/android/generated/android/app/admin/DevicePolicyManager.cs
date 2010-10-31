@@ -181,8 +181,5 @@ namespace android.app.admin
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.admin.DevicePolicyManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DevicePolicyManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

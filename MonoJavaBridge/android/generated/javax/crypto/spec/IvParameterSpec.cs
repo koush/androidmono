@@ -42,8 +42,5 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.IvParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/IvParameterSpec"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

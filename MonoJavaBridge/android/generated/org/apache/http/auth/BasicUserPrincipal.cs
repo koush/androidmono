@@ -48,8 +48,5 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.BasicUserPrincipal.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/BasicUserPrincipal"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -62,8 +62,5 @@ namespace android.text.style
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.SubscriptSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/SubscriptSpan"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

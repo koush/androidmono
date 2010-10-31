@@ -69,8 +69,5 @@ namespace javax.xml.xpath
 			global::javax.xml.xpath.XPathConstants._NODESET7346 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODESET", "Ljavax/xml/namespace/QName;");
 			global::javax.xml.xpath.XPathConstants._NODE7347 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODE", "Ljavax/xml/namespace/QName;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

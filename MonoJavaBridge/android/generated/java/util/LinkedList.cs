@@ -239,8 +239,5 @@ namespace java.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.LinkedList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/LinkedList"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

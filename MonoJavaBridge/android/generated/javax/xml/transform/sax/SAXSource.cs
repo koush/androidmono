@@ -117,8 +117,5 @@ namespace javax.xml.transform.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.SAXSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/SAXSource"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

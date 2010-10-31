@@ -41,8 +41,5 @@ namespace org.w3c.dom
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMImplementation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMImplementation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

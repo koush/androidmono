@@ -84,8 +84,5 @@ namespace android.content
 			global::android.content.ContentProviderResult._count1619 = @__env.GetFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "count", "Ljava/lang/Integer;");
 			global::android.content.ContentProviderResult._CREATOR1620 = @__env.GetStaticFieldIDNoThrow(global::android.content.ContentProviderResult.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

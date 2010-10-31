@@ -65,8 +65,5 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BasicNameValuePair.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicNameValuePair"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

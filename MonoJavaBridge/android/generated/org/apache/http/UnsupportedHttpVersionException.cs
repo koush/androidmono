@@ -30,8 +30,5 @@ namespace org.apache.http
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.UnsupportedHttpVersionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/UnsupportedHttpVersionException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

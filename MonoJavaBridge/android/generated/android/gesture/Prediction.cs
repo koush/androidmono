@@ -40,8 +40,5 @@ namespace android.gesture
 			global::android.gesture.Prediction._name2233 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "name", "Ljava/lang/String;");
 			global::android.gesture.Prediction._score2234 = @__env.GetFieldIDNoThrow(global::android.gesture.Prediction.staticClass, "score", "D");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

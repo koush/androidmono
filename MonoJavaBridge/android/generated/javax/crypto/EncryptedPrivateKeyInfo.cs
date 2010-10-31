@@ -107,8 +107,5 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.EncryptedPrivateKeyInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/EncryptedPrivateKeyInfo"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

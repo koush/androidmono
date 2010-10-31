@@ -23,8 +23,5 @@ namespace java.io
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FilenameFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FilenameFilter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

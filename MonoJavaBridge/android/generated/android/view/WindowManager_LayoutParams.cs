@@ -977,8 +977,5 @@ namespace android.view
 			global::android.view.WindowManager_LayoutParams._screenOrientation5851 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenOrientation", "I");
 			global::android.view.WindowManager_LayoutParams._CREATOR5852 = @__env.GetStaticFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

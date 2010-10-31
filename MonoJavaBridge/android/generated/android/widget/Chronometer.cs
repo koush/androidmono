@@ -30,9 +30,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Chronometer.OnChronometerTickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Chronometer$OnChronometerTickListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnChronometerTickListenerDelegate(android.widget.Chronometer arg0);
@@ -56,9 +53,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Chronometer.OnChronometerTickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Chronometer_OnChronometerTickListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnChronometerTickListenerDelegateWrapper
@@ -183,9 +177,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Chronometer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Chronometer"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

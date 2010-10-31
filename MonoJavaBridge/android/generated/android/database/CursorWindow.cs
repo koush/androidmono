@@ -214,8 +214,5 @@ namespace android.database
 			global::android.database.CursorWindow.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorWindow"));
 			global::android.database.CursorWindow._CREATOR2199 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorWindow.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

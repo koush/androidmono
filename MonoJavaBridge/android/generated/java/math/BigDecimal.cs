@@ -556,8 +556,5 @@ namespace java.math
 			global::java.math.BigDecimal._ONE6411 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ONE", "Ljava/math/BigDecimal;");
 			global::java.math.BigDecimal._TEN6412 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "TEN", "Ljava/math/BigDecimal;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

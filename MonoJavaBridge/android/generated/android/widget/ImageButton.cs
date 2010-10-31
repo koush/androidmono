@@ -44,8 +44,5 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ImageButton.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ImageButton"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

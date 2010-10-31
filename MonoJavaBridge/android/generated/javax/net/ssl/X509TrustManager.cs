@@ -35,8 +35,5 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.X509TrustManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/X509TrustManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

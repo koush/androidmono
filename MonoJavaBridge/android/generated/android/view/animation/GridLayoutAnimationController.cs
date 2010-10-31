@@ -80,9 +80,6 @@ namespace android.view.animation
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._columnsCount5890 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "columnsCount", "I");
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._rowsCount5891 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "rowsCount", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool willOverlap()
@@ -272,9 +269,6 @@ namespace android.view.animation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.GridLayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/GridLayoutAnimationController"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

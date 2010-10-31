@@ -71,8 +71,5 @@ namespace org.json
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONStringer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONStringer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

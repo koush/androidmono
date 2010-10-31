@@ -291,8 +291,5 @@ namespace android.bluetooth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.bluetooth.BluetoothAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothAdapter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

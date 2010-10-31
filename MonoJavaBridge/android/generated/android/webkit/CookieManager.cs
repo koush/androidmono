@@ -67,8 +67,5 @@ namespace android.webkit
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CookieManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CookieManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

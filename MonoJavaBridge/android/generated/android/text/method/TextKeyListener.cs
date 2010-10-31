@@ -75,9 +75,6 @@ namespace android.text.method
 				global::android.text.method.TextKeyListener.Capitalize._SENTENCES5356 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TextKeyListener.Capitalize.staticClass, "SENTENCES", "Landroid/text/method/TextKeyListener$Capitalize;");
 				global::android.text.method.TextKeyListener.Capitalize._WORDS5357 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TextKeyListener.Capitalize.staticClass, "WORDS", "Landroid/text/method/TextKeyListener$Capitalize;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public static void clear(android.text.Editable arg0)
@@ -182,9 +179,6 @@ namespace android.text.method
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.TextKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/TextKeyListener"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

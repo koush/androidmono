@@ -192,8 +192,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Float.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Float"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

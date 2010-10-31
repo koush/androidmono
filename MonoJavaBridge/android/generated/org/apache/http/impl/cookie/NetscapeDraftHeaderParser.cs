@@ -36,8 +36,5 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/NetscapeDraftHeaderParser"));
 			global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._DEFAULT7508 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, "DEFAULT", "Lorg/apache/http/impl/cookie/NetscapeDraftHeaderParser;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

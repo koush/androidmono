@@ -171,8 +171,5 @@ namespace javax.xml.transform.stream
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.stream.StreamSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/stream/StreamSource"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -314,8 +314,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.StringBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/StringBuffer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnCancelListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnCancelListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void DialogInterface_OnCancelListenerDelegate(android.content.DialogInterface arg0);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnCancelListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class DialogInterface_OnCancelListenerDelegateWrapper

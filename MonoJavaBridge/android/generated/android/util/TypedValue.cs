@@ -486,8 +486,5 @@ namespace android.util
 			global::android.util.TypedValue._changingConfigurations5455 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "changingConfigurations", "I");
 			global::android.util.TypedValue._density5456 = @__env.GetFieldIDNoThrow(global::android.util.TypedValue.staticClass, "density", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

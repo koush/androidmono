@@ -112,9 +112,6 @@ namespace android.bluetooth
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.bluetooth.BluetoothClass.Device.Major.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothClass$Device$Major"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			private static global::MonoJavaBridge.MethodId _m0;
 			public Device() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -480,9 +477,6 @@ namespace android.bluetooth
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.bluetooth.BluetoothClass.Device.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothClass$Device"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Service : java.lang.Object
@@ -568,9 +562,6 @@ namespace android.bluetooth
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.bluetooth.BluetoothClass.Service.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothClass$Service"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override bool equals(java.lang.Object arg0)
@@ -640,9 +631,6 @@ namespace android.bluetooth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.bluetooth.BluetoothClass.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/bluetooth/BluetoothClass"));
 			global::android.bluetooth.BluetoothClass._CREATOR1587 = @__env.GetStaticFieldIDNoThrow(global::android.bluetooth.BluetoothClass.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

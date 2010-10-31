@@ -120,8 +120,5 @@ namespace android.content.pm
 			global::android.content.pm.FeatureInfo._flags2002 = @__env.GetFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "flags", "I");
 			global::android.content.pm.FeatureInfo._CREATOR2003 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.FeatureInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

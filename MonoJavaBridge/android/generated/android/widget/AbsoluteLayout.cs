@@ -77,9 +77,6 @@ namespace android.widget
 				global::android.widget.AbsoluteLayout.LayoutParams._x6031 = @__env.GetFieldIDNoThrow(global::android.widget.AbsoluteLayout.LayoutParams.staticClass, "x", "I");
 				global::android.widget.AbsoluteLayout.LayoutParams._y6032 = @__env.GetFieldIDNoThrow(global::android.widget.AbsoluteLayout.LayoutParams.staticClass, "y", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
@@ -142,9 +139,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsoluteLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsoluteLayout"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -145,8 +145,5 @@ namespace org.apache.http.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.VersionInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/VersionInfo"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

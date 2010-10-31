@@ -87,8 +87,5 @@ namespace java.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Random.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Random"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

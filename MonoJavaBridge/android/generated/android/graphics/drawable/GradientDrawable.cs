@@ -115,9 +115,6 @@ namespace android.graphics.drawable
 				global::android.graphics.drawable.GradientDrawable.Orientation._TOP_BOTTOM2428 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "TOP_BOTTOM", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 				global::android.graphics.drawable.GradientDrawable.Orientation._TR_BL2429 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "TR_BL", "Landroid/graphics/drawable/GradientDrawable$Orientation;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setSize(int arg0, int arg1)
@@ -420,9 +417,6 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.GradientDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/GradientDrawable"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

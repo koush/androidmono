@@ -30,9 +30,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.TimePickerDialog.OnTimeSetListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/TimePickerDialog$OnTimeSetListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnTimeSetListenerDelegate(android.widget.TimePicker arg0, int arg1, int arg2);
@@ -56,9 +53,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.TimePickerDialog.OnTimeSetListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/TimePickerDialog_OnTimeSetListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnTimeSetListenerDelegateWrapper
@@ -123,9 +117,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.TimePickerDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/TimePickerDialog"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

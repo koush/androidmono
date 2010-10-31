@@ -56,8 +56,5 @@ namespace android.gesture
 			global::android.gesture.GesturePoint._y2218 = @__env.GetFieldIDNoThrow(global::android.gesture.GesturePoint.staticClass, "y", "F");
 			global::android.gesture.GesturePoint._timestamp2219 = @__env.GetFieldIDNoThrow(global::android.gesture.GesturePoint.staticClass, "timestamp", "J");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

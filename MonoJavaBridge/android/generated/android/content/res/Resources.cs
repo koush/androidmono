@@ -37,9 +37,6 @@ namespace android.content.res
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.Resources.NotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources$NotFoundException"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Theme : java.lang.Object
@@ -94,9 +91,6 @@ namespace android.content.res
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.res.Resources.Theme.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources$Theme"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -372,9 +366,6 @@ namespace android.content.res
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.Resources.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Resources"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

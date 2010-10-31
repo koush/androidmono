@@ -30,9 +30,6 @@ namespace android.text
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Html.ImageGetter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Html$ImageGetter"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate android.graphics.drawable.Drawable ImageGetterDelegate(java.lang.String arg0);
@@ -56,9 +53,6 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Html.ImageGetterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Html_ImageGetterDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class ImageGetterDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.text
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Html.TagHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Html$TagHandler"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void TagHandlerDelegate(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3);
@@ -125,9 +116,6 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Html.TagHandlerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Html_TagHandlerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class TagHandlerDelegateWrapper
@@ -177,9 +165,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Html.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Html"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

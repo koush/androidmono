@@ -60,8 +60,5 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.SerializableEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/SerializableEntity"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

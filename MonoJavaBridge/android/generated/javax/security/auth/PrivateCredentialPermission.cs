@@ -77,8 +77,5 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.PrivateCredentialPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/PrivateCredentialPermission"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

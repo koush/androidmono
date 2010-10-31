@@ -45,8 +45,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.AlphaAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/AlphaAnimation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

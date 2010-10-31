@@ -142,9 +142,6 @@ namespace android.os
 				global::android.os.DropBoxManager.Entry.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DropBoxManager$Entry"));
 				global::android.os.DropBoxManager.Entry._CREATOR3962 = @__env.GetStaticFieldIDNoThrow(global::android.os.DropBoxManager.Entry.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.os.DropBoxManager.Entry getNextEntry(java.lang.String arg0, long arg1)
@@ -205,9 +202,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.DropBoxManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DropBoxManager"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

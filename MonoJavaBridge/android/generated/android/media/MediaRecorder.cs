@@ -33,9 +33,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.AudioEncoder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$AudioEncoder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class AudioSource : java.lang.Object
@@ -98,9 +95,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.AudioSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$AudioSource"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaRecorder.OnErrorListener_))]
 		public partial interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
@@ -125,9 +119,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.OnErrorListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$OnErrorListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnErrorListenerDelegate(android.media.MediaRecorder arg0, int arg1, int arg2);
@@ -151,9 +142,6 @@ namespace android.media
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.OnErrorListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder_OnErrorListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnErrorListenerDelegateWrapper
@@ -194,9 +182,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.OnInfoListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$OnInfoListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnInfoListenerDelegate(android.media.MediaRecorder arg0, int arg1, int arg2);
@@ -220,9 +205,6 @@ namespace android.media
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.OnInfoListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder_OnInfoListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnInfoListenerDelegateWrapper
@@ -280,9 +262,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.OutputFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$OutputFormat"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class VideoEncoder : java.lang.Object
@@ -324,9 +303,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.VideoEncoder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$VideoEncoder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class VideoSource : java.lang.Object
@@ -353,9 +329,6 @@ namespace android.media
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.MediaRecorder.VideoSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder$VideoSource"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -634,9 +607,6 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.MediaRecorder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaRecorder"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -27,8 +27,5 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Vibrator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Vibrator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

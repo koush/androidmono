@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnMultiChoiceClickListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void DialogInterface_OnMultiChoiceClickListenerDelegate(android.content.DialogInterface arg0, int arg1, bool arg2);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnMultiChoiceClickListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class DialogInterface_OnMultiChoiceClickListenerDelegateWrapper

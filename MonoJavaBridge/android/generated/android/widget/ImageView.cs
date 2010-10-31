@@ -115,9 +115,6 @@ namespace android.widget
 				global::android.widget.ImageView.ScaleType._FIT_XY6069 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "FIT_XY", "Landroid/widget/ImageView$ScaleType;");
 				global::android.widget.ImageView.ScaleType._MATRIX6070 = @__env.GetStaticFieldIDNoThrow(global::android.widget.ImageView.ScaleType.staticClass, "MATRIX", "Landroid/widget/ImageView$ScaleType;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public new global::android.graphics.drawable.Drawable Drawable
 		{
@@ -390,9 +387,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ImageView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ImageView"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -23,8 +23,5 @@ namespace java.io
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Flushable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Flushable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

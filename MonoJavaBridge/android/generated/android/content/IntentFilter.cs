@@ -57,9 +57,6 @@ namespace android.content
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentFilter.AuthorityEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentFilter$AuthorityEntry"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MalformedMimeTypeException : android.util.AndroidException
@@ -90,9 +87,6 @@ namespace android.content
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentFilter.MalformedMimeTypeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentFilter$MalformedMimeTypeException"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -488,9 +482,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.IntentFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentFilter"));
 			global::android.content.IntentFilter._CREATOR1869 = @__env.GetStaticFieldIDNoThrow(global::android.content.IntentFilter.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

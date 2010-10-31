@@ -34,8 +34,5 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.Channel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/Channel"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

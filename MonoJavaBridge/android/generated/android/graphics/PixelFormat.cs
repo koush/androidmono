@@ -189,8 +189,5 @@ namespace android.graphics
 			global::android.graphics.PixelFormat._bytesPerPixel2369 = @__env.GetFieldIDNoThrow(global::android.graphics.PixelFormat.staticClass, "bytesPerPixel", "I");
 			global::android.graphics.PixelFormat._bitsPerPixel2370 = @__env.GetFieldIDNoThrow(global::android.graphics.PixelFormat.staticClass, "bitsPerPixel", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

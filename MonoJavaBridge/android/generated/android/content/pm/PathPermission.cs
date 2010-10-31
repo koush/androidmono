@@ -69,8 +69,5 @@ namespace android.content.pm
 			global::android.content.pm.PathPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PathPermission"));
 			global::android.content.pm.PathPermission._CREATOR2090 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PathPermission.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

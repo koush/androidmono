@@ -524,8 +524,5 @@ namespace android.os
 			global::android.os.Parcel.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcel"));
 			global::android.os.Parcel._STRING_CREATOR4010 = @__env.GetStaticFieldIDNoThrow(global::android.os.Parcel.staticClass, "STRING_CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

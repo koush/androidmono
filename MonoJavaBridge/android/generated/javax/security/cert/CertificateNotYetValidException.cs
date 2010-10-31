@@ -30,8 +30,5 @@ namespace javax.security.cert
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.cert.CertificateNotYetValidException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/cert/CertificateNotYetValidException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

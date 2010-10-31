@@ -41,8 +41,5 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.HeterogeneousExpandableList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/HeterogeneousExpandableList"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

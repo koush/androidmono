@@ -45,9 +45,6 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AbstractAccountAuthenticator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AbstractAccountAuthenticator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.AbstractAccountAuthenticator))]
@@ -96,9 +93,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AbstractAccountAuthenticator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AbstractAccountAuthenticator"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

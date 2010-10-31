@@ -30,9 +30,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter$ViewBinder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool ViewBinderDelegate(android.view.View arg0, android.database.Cursor arg1, int arg2);
@@ -56,9 +53,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SimpleCursorTreeAdapter.ViewBinderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter_ViewBinderDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class ViewBinderDelegateWrapper
@@ -142,9 +136,6 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleCursorTreeAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.SimpleCursorTreeAdapter))]
@@ -163,9 +154,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SimpleCursorTreeAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SimpleCursorTreeAdapter"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

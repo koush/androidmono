@@ -50,9 +50,6 @@ namespace android.view
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.CapturedViewProperty_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$CapturedViewProperty"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.ExportedProperty_))]
 		public partial interface ExportedProperty : java.lang.annotation.Annotation
@@ -127,9 +124,6 @@ namespace android.view
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.ExportedProperty_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$ExportedProperty"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.FlagToString_))]
 		public partial interface FlagToString : java.lang.annotation.Annotation
@@ -191,9 +185,6 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.FlagToString_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$FlagToString"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -304,9 +295,6 @@ namespace android.view
 				global::android.view.ViewDebug.HierarchyTraceType._ON_MEASURE5718 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "ON_MEASURE", "Landroid/view/ViewDebug$HierarchyTraceType;");
 				global::android.view.ViewDebug.HierarchyTraceType._REQUEST_LAYOUT5719 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "REQUEST_LAYOUT", "Landroid/view/ViewDebug$HierarchyTraceType;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.IntToString_))]
 		public partial interface IntToString : java.lang.annotation.Annotation
@@ -356,9 +344,6 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewDebug.IntToString_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug$IntToString"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -449,9 +434,6 @@ namespace android.view
 				global::android.view.ViewDebug.RecyclerTraceType._RECYCLE_FROM_ACTIVE_HEAP5724 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "RECYCLE_FROM_ACTIVE_HEAP", "Landroid/view/ViewDebug$RecyclerTraceType;");
 				global::android.view.ViewDebug.RecyclerTraceType._RECYCLE_FROM_SCRAP_HEAP5725 = @__env.GetStaticFieldIDNoThrow(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "RECYCLE_FROM_SCRAP_HEAP", "Landroid/view/ViewDebug$RecyclerTraceType;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public static void trace(android.view.View arg0, android.view.ViewDebug.RecyclerTraceType arg1, int[] arg2)
@@ -536,9 +518,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewDebug.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewDebug"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

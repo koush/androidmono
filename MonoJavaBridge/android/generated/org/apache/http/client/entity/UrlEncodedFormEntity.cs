@@ -30,8 +30,5 @@ namespace org.apache.http.client.entity
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.entity.UrlEncodedFormEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/entity/UrlEncodedFormEntity"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

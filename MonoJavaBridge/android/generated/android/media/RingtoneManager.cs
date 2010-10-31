@@ -278,8 +278,5 @@ namespace android.media
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.RingtoneManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/RingtoneManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

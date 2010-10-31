@@ -90,8 +90,5 @@ namespace org.apache.http.impl.conn.tsccm
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

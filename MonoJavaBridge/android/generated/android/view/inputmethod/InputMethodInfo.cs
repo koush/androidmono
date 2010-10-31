@@ -163,8 +163,5 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputMethodInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethodInfo"));
 			global::android.view.inputmethod.InputMethodInfo._CREATOR5960 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.InputMethodInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -99,9 +99,6 @@ namespace android.graphics.drawable
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer$DrawableContainerState"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.graphics.drawable.DrawableContainer.DrawableContainerState))]
@@ -120,9 +117,6 @@ namespace android.graphics.drawable
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.DrawableContainer.DrawableContainerState_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer$DrawableContainerState"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -343,9 +337,6 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.DrawableContainer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/DrawableContainer"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

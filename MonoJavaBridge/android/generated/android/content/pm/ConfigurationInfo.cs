@@ -153,8 +153,5 @@ namespace android.content.pm
 			global::android.content.pm.ConfigurationInfo._reqGlEsVersion1996 = @__env.GetFieldIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "reqGlEsVersion", "I");
 			global::android.content.pm.ConfigurationInfo._CREATOR1997 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ConfigurationInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

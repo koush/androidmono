@@ -31,8 +31,5 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.DefaultHttpRequestFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/DefaultHttpRequestFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

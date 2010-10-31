@@ -26,8 +26,5 @@ namespace org.apache.http.impl.io
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.io.HttpRequestParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/io/HttpRequestParser"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

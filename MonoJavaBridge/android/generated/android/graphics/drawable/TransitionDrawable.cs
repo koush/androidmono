@@ -58,8 +58,5 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.TransitionDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/TransitionDrawable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -96,8 +96,5 @@ namespace android.text.method
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ScrollingMovementMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ScrollingMovementMethod"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

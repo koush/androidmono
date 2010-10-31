@@ -71,8 +71,5 @@ namespace android.util
 			global::android.util.StateSet.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/StateSet"));
 			global::android.util.StateSet._WILD_CARD5411 = @__env.GetStaticFieldIDNoThrow(global::android.util.StateSet.staticClass, "WILD_CARD", "[I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

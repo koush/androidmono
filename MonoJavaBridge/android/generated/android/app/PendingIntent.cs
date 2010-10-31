@@ -46,9 +46,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.CanceledException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent$CanceledException"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.PendingIntent.OnFinished_))]
 		public partial interface OnFinished  : global::MonoJavaBridge.IJavaObject 
@@ -73,9 +70,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.OnFinished_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent$OnFinished"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnFinishedDelegate(android.app.PendingIntent arg0, android.content.Intent arg1, int arg2, java.lang.String arg3, android.os.Bundle arg4);
@@ -99,9 +93,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.PendingIntent.OnFinishedDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent_OnFinishedDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnFinishedDelegateWrapper
@@ -288,9 +279,6 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.PendingIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/PendingIntent"));
 			global::android.app.PendingIntent._CREATOR1393 = @__env.GetStaticFieldIDNoThrow(global::android.app.PendingIntent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

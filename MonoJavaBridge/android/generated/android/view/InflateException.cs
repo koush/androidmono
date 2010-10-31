@@ -48,8 +48,5 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.InflateException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/InflateException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

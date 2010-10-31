@@ -48,9 +48,6 @@ namespace android.content
 				global::android.content.Entity.NamedContentValues._uri1681 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "uri", "Landroid/net/Uri;");
 				global::android.content.Entity.NamedContentValues._values1682 = @__env.GetFieldIDNoThrow(global::android.content.Entity.NamedContentValues.staticClass, "values", "Landroid/content/ContentValues;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
@@ -99,9 +96,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.Entity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/Entity"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

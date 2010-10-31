@@ -43,8 +43,5 @@ namespace javax.crypto.interfaces
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.DHPrivateKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/DHPrivateKey"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,8 +30,5 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ActivityNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ActivityNotFoundException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

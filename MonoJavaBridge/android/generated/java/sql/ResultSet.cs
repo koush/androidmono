@@ -1067,8 +1067,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.ResultSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/ResultSet"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

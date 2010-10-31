@@ -190,8 +190,5 @@ namespace android.media
 			global::android.media.CamcorderProfile._audioSampleRate2762 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioSampleRate", "I");
 			global::android.media.CamcorderProfile._audioChannels2763 = @__env.GetFieldIDNoThrow(global::android.media.CamcorderProfile.staticClass, "audioChannels", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

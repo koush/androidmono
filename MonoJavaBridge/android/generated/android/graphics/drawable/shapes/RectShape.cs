@@ -41,8 +41,5 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.RectShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/RectShape"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

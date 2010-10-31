@@ -30,9 +30,6 @@ namespace android.webkit
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.Plugin.PreferencesClickHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin$PreferencesClickHandler"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void PreferencesClickHandlerDelegate(android.content.Context arg0);
@@ -56,9 +53,6 @@ namespace android.webkit
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin_PreferencesClickHandlerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class PreferencesClickHandlerDelegateWrapper
@@ -199,9 +193,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.Plugin.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/Plugin"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

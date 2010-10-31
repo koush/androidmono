@@ -75,8 +75,5 @@ namespace android.location
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.GpsSatellite.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsSatellite"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

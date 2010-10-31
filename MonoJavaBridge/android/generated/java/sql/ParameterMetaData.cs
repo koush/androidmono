@@ -71,8 +71,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.ParameterMetaData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/ParameterMetaData"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,9 +30,6 @@ namespace android.database.sqlite
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.sqlite.SQLiteDatabase.CursorFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase$CursorFactory"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate android.database.Cursor CursorFactoryDelegate(android.database.sqlite.SQLiteDatabase arg0, android.database.sqlite.SQLiteCursorDriver arg1, java.lang.String arg2, android.database.sqlite.SQLiteQuery arg3);
@@ -56,9 +53,6 @@ namespace android.database.sqlite
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase_CursorFactoryDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class CursorFactoryDelegateWrapper
@@ -515,9 +509,6 @@ namespace android.database.sqlite
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteDatabase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteDatabase"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -99,8 +99,5 @@ namespace org.json
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.json.JSONTokener.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONTokener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

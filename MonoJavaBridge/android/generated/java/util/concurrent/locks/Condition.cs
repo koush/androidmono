@@ -59,8 +59,5 @@ namespace java.util.concurrent.locks
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.Condition_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/Condition"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

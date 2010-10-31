@@ -50,9 +50,6 @@ namespace javax.crypto.spec
 				global::javax.crypto.spec.PSource.PSpecified.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/PSource$PSpecified"));
 				global::javax.crypto.spec.PSource.PSpecified._DEFAULT6727 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.PSource.PSpecified.staticClass, "DEFAULT", "Ljavax/crypto/spec/PSource$PSpecified;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -79,9 +76,6 @@ namespace javax.crypto.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.PSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/PSource"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

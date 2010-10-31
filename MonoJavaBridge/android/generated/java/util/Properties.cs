@@ -105,8 +105,5 @@ namespace java.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Properties.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Properties"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

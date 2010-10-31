@@ -95,8 +95,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Clob_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Clob"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,9 +23,6 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filterable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filterable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate android.widget.Filter FilterableDelegate();
@@ -49,9 +46,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FilterableDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterableDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class FilterableDelegateWrapper

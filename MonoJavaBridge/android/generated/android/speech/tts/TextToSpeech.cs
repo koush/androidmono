@@ -154,9 +154,6 @@ namespace android.speech.tts
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.Engine.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$Engine"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.tts.TextToSpeech.OnInitListener_))]
 		public partial interface OnInitListener  : global::MonoJavaBridge.IJavaObject 
@@ -181,9 +178,6 @@ namespace android.speech.tts
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnInitListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$OnInitListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnInitListenerDelegate(int arg0);
@@ -207,9 +201,6 @@ namespace android.speech.tts
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnInitListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech_OnInitListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnInitListenerDelegateWrapper
@@ -250,9 +241,6 @@ namespace android.speech.tts
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech$OnUtteranceCompletedListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnUtteranceCompletedListenerDelegate(java.lang.String arg0);
@@ -276,9 +264,6 @@ namespace android.speech.tts
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech_OnUtteranceCompletedListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnUtteranceCompletedListenerDelegateWrapper
@@ -522,9 +507,6 @@ namespace android.speech.tts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.tts.TextToSpeech.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/tts/TextToSpeech"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -221,8 +221,5 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.SpannableStringBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableStringBuilder"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

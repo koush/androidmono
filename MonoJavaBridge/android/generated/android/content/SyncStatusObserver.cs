@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncStatusObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncStatusObserver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void SyncStatusObserverDelegate(int arg0);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SyncStatusObserverDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncStatusObserverDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class SyncStatusObserverDelegateWrapper

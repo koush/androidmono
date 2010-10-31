@@ -42,9 +42,6 @@ namespace android.graphics.drawable
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.Drawable.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Drawable$Callback"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass(typeof(global::android.graphics.drawable.Drawable.ConstantState_))]
 		public abstract partial class ConstantState : java.lang.Object
@@ -76,9 +73,6 @@ namespace android.graphics.drawable
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.Drawable.ConstantState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Drawable$ConstantState"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.graphics.drawable.Drawable.ConstantState))]
@@ -102,9 +96,6 @@ namespace android.graphics.drawable
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.graphics.drawable.Drawable.ConstantState_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Drawable$ConstantState"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -368,9 +359,6 @@ namespace android.graphics.drawable
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.Drawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Drawable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.graphics.drawable.Drawable))]
@@ -404,9 +392,6 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.Drawable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/Drawable"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

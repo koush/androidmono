@@ -106,8 +106,5 @@ namespace java.io
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FileOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileOutputStream"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

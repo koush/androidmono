@@ -65,9 +65,6 @@ namespace android.widget
 				global::android.widget.TextView.BufferType._NORMAL6108 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.BufferType.staticClass, "NORMAL", "Landroid/widget/TextView$BufferType;");
 				global::android.widget.TextView.BufferType._SPANNABLE6109 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.BufferType.staticClass, "SPANNABLE", "Landroid/widget/TextView$BufferType;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.TextView.OnEditorActionListener_))]
 		public partial interface OnEditorActionListener  : global::MonoJavaBridge.IJavaObject 
@@ -92,9 +89,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.OnEditorActionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView$OnEditorActionListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool OnEditorActionListenerDelegate(android.widget.TextView arg0, int arg1, android.view.KeyEvent arg2);
@@ -118,9 +112,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.OnEditorActionListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView_OnEditorActionListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnEditorActionListenerDelegateWrapper
@@ -169,9 +160,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.TextView.SavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView$SavedState"));
 				global::android.widget.TextView.SavedState._CREATOR6110 = @__env.GetStaticFieldIDNoThrow(global::android.widget.TextView.SavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -1848,9 +1836,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TextView"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

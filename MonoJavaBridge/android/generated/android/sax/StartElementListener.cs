@@ -23,9 +23,6 @@ namespace android.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.StartElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/StartElementListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void StartElementListenerDelegate(org.xml.sax.Attributes arg0);
@@ -49,9 +46,6 @@ namespace android.sax
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.StartElementListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/StartElementListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class StartElementListenerDelegateWrapper

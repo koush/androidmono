@@ -118,8 +118,5 @@ namespace java.math
 			global::java.math.MathContext._DECIMAL646426 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL64", "Ljava/math/MathContext;");
 			global::java.math.MathContext._DECIMAL1286427 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL128", "Ljava/math/MathContext;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

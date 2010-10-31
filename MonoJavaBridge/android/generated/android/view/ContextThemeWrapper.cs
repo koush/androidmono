@@ -62,8 +62,5 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ContextThemeWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextThemeWrapper"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

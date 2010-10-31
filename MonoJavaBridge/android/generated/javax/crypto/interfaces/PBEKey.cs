@@ -50,8 +50,5 @@ namespace javax.crypto.interfaces
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.PBEKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/PBEKey"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

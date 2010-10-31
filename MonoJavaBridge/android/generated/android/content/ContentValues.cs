@@ -211,8 +211,5 @@ namespace android.content
 			global::android.content.ContentValues.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentValues"));
 			global::android.content.ContentValues._CREATOR1641 = @__env.GetStaticFieldIDNoThrow(global::android.content.ContentValues.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

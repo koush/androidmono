@@ -29,8 +29,5 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketOptions_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketOptions"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

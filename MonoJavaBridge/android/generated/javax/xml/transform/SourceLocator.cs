@@ -41,8 +41,5 @@ namespace javax.xml.transform
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.SourceLocator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/SourceLocator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

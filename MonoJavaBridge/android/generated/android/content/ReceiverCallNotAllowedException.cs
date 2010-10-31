@@ -21,8 +21,5 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ReceiverCallNotAllowedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ReceiverCallNotAllowedException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

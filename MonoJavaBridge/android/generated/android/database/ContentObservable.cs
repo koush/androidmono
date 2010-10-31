@@ -36,8 +36,5 @@ namespace android.database
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.ContentObservable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/ContentObservable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

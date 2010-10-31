@@ -78,8 +78,5 @@ namespace java.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.ParsePosition.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/ParsePosition"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

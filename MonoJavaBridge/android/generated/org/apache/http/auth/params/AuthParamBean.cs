@@ -33,8 +33,5 @@ namespace org.apache.http.auth.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.@params.AuthParamBean.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/params/AuthParamBean"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

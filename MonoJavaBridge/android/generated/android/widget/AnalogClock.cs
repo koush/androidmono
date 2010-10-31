@@ -64,8 +64,5 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AnalogClock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AnalogClock"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

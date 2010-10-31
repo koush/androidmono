@@ -65,9 +65,6 @@ namespace android.view
 			global::android.view.AbsSavedState._EMPTY_STATE5462 = @__env.GetStaticFieldIDNoThrow(global::android.view.AbsSavedState.staticClass, "EMPTY_STATE", "Landroid/view/AbsSavedState;");
 			global::android.view.AbsSavedState._CREATOR5463 = @__env.GetStaticFieldIDNoThrow(global::android.view.AbsSavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.AbsSavedState))]
@@ -81,9 +78,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.AbsSavedState_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/AbsSavedState"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

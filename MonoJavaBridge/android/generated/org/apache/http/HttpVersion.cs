@@ -63,8 +63,5 @@ namespace org.apache.http
 			global::org.apache.http.HttpVersion._HTTP_1_07403 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_0", "Lorg/apache/http/HttpVersion;");
 			global::org.apache.http.HttpVersion._HTTP_1_17404 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.HttpVersion.staticClass, "HTTP_1_1", "Lorg/apache/http/HttpVersion;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

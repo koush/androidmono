@@ -31,8 +31,5 @@ namespace android.app.backup
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.SharedPreferencesBackupHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/SharedPreferencesBackupHelper"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

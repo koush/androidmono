@@ -826,9 +826,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.Manifest.permission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class permission_group : java.lang.Object
@@ -928,9 +925,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.Manifest.permission_group.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission_group"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public Manifest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -945,9 +939,6 @@ namespace android
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.Manifest.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

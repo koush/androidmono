@@ -38,8 +38,5 @@ namespace android.text.style
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.RasterizerSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/RasterizerSpan"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -127,8 +127,5 @@ namespace android.net
 			global::android.net.DhcpInfo._serverAddress2968 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "serverAddress", "I");
 			global::android.net.DhcpInfo._leaseDuration2969 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "leaseDuration", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

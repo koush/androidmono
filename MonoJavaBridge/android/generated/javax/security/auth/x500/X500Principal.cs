@@ -118,8 +118,5 @@ namespace javax.security.auth.x500
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.x500.X500Principal.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/x500/X500Principal"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

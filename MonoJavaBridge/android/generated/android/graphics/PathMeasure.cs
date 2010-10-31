@@ -91,8 +91,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PathMeasure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathMeasure"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

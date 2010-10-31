@@ -85,9 +85,6 @@ namespace javax.net.ssl
 				global::javax.net.ssl.SSLEngineResult.HandshakeStatus._NEED_WRAP7264 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass, "NEED_WRAP", "Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;");
 				global::javax.net.ssl.SSLEngineResult.HandshakeStatus._NEED_UNWRAP7265 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.HandshakeStatus.staticClass, "NEED_UNWRAP", "Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Status : java.lang.Enum
@@ -157,9 +154,6 @@ namespace javax.net.ssl
 				global::javax.net.ssl.SSLEngineResult.Status._OK7268 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.Status.staticClass, "OK", "Ljavax/net/ssl/SSLEngineResult$Status;");
 				global::javax.net.ssl.SSLEngineResult.Status._CLOSED7269 = @__env.GetStaticFieldIDNoThrow(global::javax.net.ssl.SSLEngineResult.Status.staticClass, "CLOSED", "Ljavax/net/ssl/SSLEngineResult$Status;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
@@ -199,9 +193,6 @@ namespace javax.net.ssl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLEngineResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLEngineResult"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

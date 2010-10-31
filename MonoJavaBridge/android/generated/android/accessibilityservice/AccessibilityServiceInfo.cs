@@ -148,8 +148,5 @@ namespace android.accessibilityservice
 			global::android.accessibilityservice.AccessibilityServiceInfo._flags1229 = @__env.GetFieldIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "flags", "I");
 			global::android.accessibilityservice.AccessibilityServiceInfo._CREATOR1230 = @__env.GetStaticFieldIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

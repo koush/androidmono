@@ -50,9 +50,6 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.TokenWatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/TokenWatcher"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.TokenWatcher))]
@@ -76,9 +73,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.TokenWatcher_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/TokenWatcher"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -58,8 +58,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.RotateAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/RotateAnimation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -230,8 +230,5 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HTTP.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HTTP"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

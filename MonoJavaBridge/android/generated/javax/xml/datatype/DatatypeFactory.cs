@@ -135,9 +135,6 @@ namespace javax.xml.datatype
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.DatatypeFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.datatype.DatatypeFactory))]
@@ -186,9 +183,6 @@ namespace javax.xml.datatype
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.DatatypeFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeFactory"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

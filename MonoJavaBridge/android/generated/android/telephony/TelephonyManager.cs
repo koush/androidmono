@@ -561,8 +561,5 @@ namespace android.telephony
 			global::android.telephony.TelephonyManager._EXTRA_STATE_RINGING5123 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.TelephonyManager.staticClass, "EXTRA_STATE_RINGING", "Ljava/lang/String;");
 			global::android.telephony.TelephonyManager._EXTRA_STATE_OFFHOOK5124 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.TelephonyManager.staticClass, "EXTRA_STATE_OFFHOOK", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

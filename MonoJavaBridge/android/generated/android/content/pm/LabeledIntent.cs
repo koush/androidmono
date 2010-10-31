@@ -126,8 +126,5 @@ namespace android.content.pm
 			global::android.content.pm.LabeledIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/LabeledIntent"));
 			global::android.content.pm.LabeledIntent._CREATOR2011 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.LabeledIntent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

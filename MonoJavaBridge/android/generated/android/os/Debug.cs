@@ -48,9 +48,6 @@ namespace android.os
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Debug.InstructionCount.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug$InstructionCount"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MemoryInfo : java.lang.Object, Parcelable
@@ -250,9 +247,6 @@ namespace android.os
 				global::android.os.Debug.MemoryInfo._otherPrivateDirty3955 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "otherPrivateDirty", "I");
 				global::android.os.Debug.MemoryInfo._otherSharedDirty3956 = @__env.GetFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "otherSharedDirty", "I");
 				global::android.os.Debug.MemoryInfo._CREATOR3957 = @__env.GetStaticFieldIDNoThrow(global::android.os.Debug.MemoryInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -980,9 +974,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Debug.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Debug"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

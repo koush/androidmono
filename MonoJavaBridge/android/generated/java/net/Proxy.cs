@@ -65,9 +65,6 @@ namespace java.net
 				global::java.net.Proxy.Type._HTTP6473 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "HTTP", "Ljava/net/Proxy$Type;");
 				global::java.net.Proxy.Type._SOCKS6474 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "SOCKS", "Ljava/net/Proxy$Type;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.net.Proxy.Type type()
@@ -117,9 +114,6 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Proxy"));
 			global::java.net.Proxy._NO_PROXY6475 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.staticClass, "NO_PROXY", "Ljava/net/Proxy;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

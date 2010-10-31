@@ -30,9 +30,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void FilterListenerDelegate(int arg0);
@@ -56,9 +53,6 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.Filter.FilterListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter_FilterListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class FilterListenerDelegateWrapper
@@ -123,9 +117,6 @@ namespace android.widget
 				global::android.widget.Filter.FilterResults._values6055 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "values", "Ljava/lang/Object;");
 				global::android.widget.Filter.FilterResults._count6056 = @__env.GetFieldIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "count", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void filter(java.lang.CharSequence arg0)
@@ -168,9 +159,6 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.Filter))]
@@ -202,9 +190,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

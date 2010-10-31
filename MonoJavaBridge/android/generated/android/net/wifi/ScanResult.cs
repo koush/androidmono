@@ -92,8 +92,5 @@ namespace android.net.wifi
 			global::android.net.wifi.ScanResult._level3028 = @__env.GetFieldIDNoThrow(global::android.net.wifi.ScanResult.staticClass, "level", "I");
 			global::android.net.wifi.ScanResult._frequency3029 = @__env.GetFieldIDNoThrow(global::android.net.wifi.ScanResult.staticClass, "frequency", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -116,9 +116,6 @@ namespace android.provider
 				global::android.provider.UserDictionary.Words.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary$Words"));
 				global::android.provider.UserDictionary.Words._CONTENT_URI4989 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.Words.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public UserDictionary() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -150,9 +147,6 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.UserDictionary.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/UserDictionary"));
 			global::android.provider.UserDictionary._CONTENT_URI5001 = @__env.GetStaticFieldIDNoThrow(global::android.provider.UserDictionary.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

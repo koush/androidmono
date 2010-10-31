@@ -47,8 +47,5 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerFuture_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerFuture"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,8 +23,5 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.URLStreamHandlerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/URLStreamHandlerFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

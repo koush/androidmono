@@ -481,8 +481,5 @@ namespace android.view.accessibility
 			global::android.view.accessibility.AccessibilityEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityEvent"));
 			global::android.view.accessibility.AccessibilityEvent._CREATOR5875 = @__env.GetStaticFieldIDNoThrow(global::android.view.accessibility.AccessibilityEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

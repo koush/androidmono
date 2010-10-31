@@ -115,8 +115,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Timestamp.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Timestamp"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

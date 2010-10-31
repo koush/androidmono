@@ -180,8 +180,5 @@ namespace java.lang
 			global::java.lang.Short.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Short"));
 			global::java.lang.Short._TYPE6396 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Short.staticClass, "TYPE", "Ljava/lang/Class;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

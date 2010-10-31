@@ -149,8 +149,5 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.AttributeSet_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/AttributeSet"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

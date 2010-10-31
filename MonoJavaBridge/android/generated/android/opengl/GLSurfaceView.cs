@@ -30,9 +30,6 @@ namespace android.opengl
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.EGLConfigChooser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView$EGLConfigChooser"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate javax.microedition.khronos.egl.EGLConfig EGLConfigChooserDelegate(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1);
@@ -56,9 +53,6 @@ namespace android.opengl
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.EGLConfigChooserDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView_EGLConfigChooserDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class EGLConfigChooserDelegateWrapper
@@ -105,9 +99,6 @@ namespace android.opengl
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.EGLContextFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView$EGLContextFactory"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.EGLWindowSurfaceFactory_))]
 		public partial interface EGLWindowSurfaceFactory  : global::MonoJavaBridge.IJavaObject 
@@ -138,9 +129,6 @@ namespace android.opengl
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.EGLWindowSurfaceFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView$EGLWindowSurfaceFactory"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.GLWrapper_))]
 		public partial interface GLWrapper  : global::MonoJavaBridge.IJavaObject 
@@ -165,9 +153,6 @@ namespace android.opengl
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.GLWrapper_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView$GLWrapper"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate javax.microedition.khronos.opengles.GL GLWrapperDelegate(javax.microedition.khronos.opengles.GL arg0);
@@ -191,9 +176,6 @@ namespace android.opengl
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.GLWrapperDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView_GLWrapperDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class GLWrapperDelegateWrapper
@@ -245,9 +227,6 @@ namespace android.opengl
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.GLSurfaceView.Renderer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView$Renderer"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -441,9 +420,6 @@ namespace android.opengl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLSurfaceView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLSurfaceView"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

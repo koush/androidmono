@@ -80,8 +80,5 @@ namespace org.apache.http.conn.@params
 			global::org.apache.http.conn.@params.ConnRouteParams._NO_HOST7461 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, "NO_HOST", "Lorg/apache/http/HttpHost;");
 			global::org.apache.http.conn.@params.ConnRouteParams._NO_ROUTE7462 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, "NO_ROUTE", "Lorg/apache/http/conn/routing/HttpRoute;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -125,8 +125,5 @@ namespace android.telephony.cdma
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.cdma.CdmaCellLocation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/cdma/CdmaCellLocation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

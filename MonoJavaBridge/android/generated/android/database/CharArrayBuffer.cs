@@ -56,8 +56,5 @@ namespace android.database
 			global::android.database.CharArrayBuffer._data2194 = @__env.GetFieldIDNoThrow(global::android.database.CharArrayBuffer.staticClass, "data", "[C");
 			global::android.database.CharArrayBuffer._sizeCopied2195 = @__env.GetFieldIDNoThrow(global::android.database.CharArrayBuffer.staticClass, "sizeCopied", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

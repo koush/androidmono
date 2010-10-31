@@ -23,8 +23,5 @@ namespace org.apache.http.conn.scheme
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.HostNameResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/HostNameResolver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

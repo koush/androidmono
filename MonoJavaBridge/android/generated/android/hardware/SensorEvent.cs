@@ -61,8 +61,5 @@ namespace android.hardware
 			global::android.hardware.SensorEvent._accuracy2499 = @__env.GetFieldIDNoThrow(global::android.hardware.SensorEvent.staticClass, "accuracy", "I");
 			global::android.hardware.SensorEvent._timestamp2500 = @__env.GetFieldIDNoThrow(global::android.hardware.SensorEvent.staticClass, "timestamp", "J");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -21,8 +21,5 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.RemoteException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RemoteException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -84,8 +84,5 @@ namespace android.provider
 			global::android.provider.SearchRecentSuggestions._QUERIES_PROJECTION_1LINE4787 = @__env.GetStaticFieldIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "QUERIES_PROJECTION_1LINE", "[Ljava/lang/String;");
 			global::android.provider.SearchRecentSuggestions._QUERIES_PROJECTION_2LINE4788 = @__env.GetStaticFieldIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "QUERIES_PROJECTION_2LINE", "[Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

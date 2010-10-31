@@ -315,8 +315,5 @@ namespace android.media
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioFormat"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

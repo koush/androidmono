@@ -45,8 +45,5 @@ namespace android.location
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.Geocoder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Geocoder"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

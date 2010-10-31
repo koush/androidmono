@@ -47,8 +47,5 @@ namespace org.apache.http.client.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.@params.CookiePolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/CookiePolicy"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

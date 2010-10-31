@@ -21,8 +21,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PixelXorXfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PixelXorXfermode"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

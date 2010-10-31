@@ -30,8 +30,5 @@ namespace org.apache.http.client
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.NonRepeatableRequestException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/NonRepeatableRequestException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

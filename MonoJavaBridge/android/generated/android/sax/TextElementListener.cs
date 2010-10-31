@@ -27,8 +27,5 @@ namespace android.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.TextElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/TextElementListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

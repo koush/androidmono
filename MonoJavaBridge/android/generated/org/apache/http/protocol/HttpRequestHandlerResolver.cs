@@ -23,8 +23,5 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpRequestHandlerResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestHandlerResolver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -108,9 +108,6 @@ namespace android.net
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.Uri.Builder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Uri$Builder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public abstract void writeToParcel(android.os.Parcel arg0, int arg1);
@@ -287,9 +284,6 @@ namespace android.net
 			global::android.net.Uri._EMPTY2993 = @__env.GetStaticFieldIDNoThrow(global::android.net.Uri.staticClass, "EMPTY", "Landroid/net/Uri;");
 			global::android.net.Uri._CREATOR2994 = @__env.GetStaticFieldIDNoThrow(global::android.net.Uri.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.net.Uri))]
@@ -418,9 +412,6 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Uri_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Uri"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

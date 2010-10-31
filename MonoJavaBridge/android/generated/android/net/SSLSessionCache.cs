@@ -30,8 +30,5 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.SSLSessionCache.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/SSLSessionCache"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,8 +23,5 @@ namespace junit.framework
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.Protectable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/Protectable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -143,8 +143,5 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLSession_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLSession"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

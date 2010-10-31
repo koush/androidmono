@@ -146,8 +146,5 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Subject.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Subject"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

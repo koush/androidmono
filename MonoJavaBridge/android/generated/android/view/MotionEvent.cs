@@ -560,8 +560,5 @@ namespace android.view
 			global::android.view.MotionEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MotionEvent"));
 			global::android.view.MotionEvent._CREATOR5650 = @__env.GetStaticFieldIDNoThrow(global::android.view.MotionEvent.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

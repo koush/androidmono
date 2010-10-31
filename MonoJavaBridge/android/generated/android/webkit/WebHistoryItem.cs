@@ -77,8 +77,5 @@ namespace android.webkit
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebHistoryItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebHistoryItem"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

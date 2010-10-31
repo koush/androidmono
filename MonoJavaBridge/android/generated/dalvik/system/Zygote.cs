@@ -80,8 +80,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.Zygote.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/Zygote"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -107,8 +107,5 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.SSLCertificateSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/SSLCertificateSocketFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

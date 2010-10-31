@@ -30,9 +30,6 @@ namespace android.location
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.location.GpsStatus.Listener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus$Listener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void ListenerDelegate(int arg0);
@@ -56,9 +53,6 @@ namespace android.location
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.location.GpsStatus.ListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus_ListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class ListenerDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.location
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.location.GpsStatus.NmeaListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus$NmeaListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void NmeaListenerDelegate(long arg0, java.lang.String arg1);
@@ -125,9 +116,6 @@ namespace android.location
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.location.GpsStatus.NmeaListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus_NmeaListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class NmeaListenerDelegateWrapper
@@ -213,9 +201,6 @@ namespace android.location
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.GpsStatus.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

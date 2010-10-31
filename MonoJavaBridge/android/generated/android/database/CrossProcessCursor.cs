@@ -225,8 +225,5 @@ namespace android.database
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CrossProcessCursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CrossProcessCursor"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

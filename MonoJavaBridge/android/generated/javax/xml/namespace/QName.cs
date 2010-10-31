@@ -98,8 +98,5 @@ namespace javax.xml.@namespace
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.@namespace.QName.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/namespace/QName"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

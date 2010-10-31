@@ -146,8 +146,5 @@ namespace java.util.regex
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.regex.Pattern.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/Pattern"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -23,8 +23,5 @@ namespace java.security.cert
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.CertPathParameters_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathParameters"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

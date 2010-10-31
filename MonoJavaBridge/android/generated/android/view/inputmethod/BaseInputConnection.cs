@@ -170,8 +170,5 @@ namespace android.view.inputmethod
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.BaseInputConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/BaseInputConnection"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

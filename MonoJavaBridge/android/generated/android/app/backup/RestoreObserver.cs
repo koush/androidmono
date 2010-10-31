@@ -36,9 +36,6 @@ namespace android.app.backup
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.RestoreObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/RestoreObserver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.app.backup.RestoreObserver))]
@@ -52,9 +49,6 @@ namespace android.app.backup
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.RestoreObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/RestoreObserver"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

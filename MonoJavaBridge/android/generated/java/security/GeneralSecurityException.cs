@@ -48,8 +48,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.GeneralSecurityException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/GeneralSecurityException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

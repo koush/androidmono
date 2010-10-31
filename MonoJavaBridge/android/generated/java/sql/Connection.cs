@@ -287,8 +287,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Connection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Connection"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

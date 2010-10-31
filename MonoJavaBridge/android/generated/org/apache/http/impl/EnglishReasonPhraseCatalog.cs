@@ -36,8 +36,5 @@ namespace org.apache.http.impl
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/EnglishReasonPhraseCatalog"));
 			global::org.apache.http.impl.EnglishReasonPhraseCatalog._INSTANCE7498 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, "INSTANCE", "Lorg/apache/http/impl/EnglishReasonPhraseCatalog;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

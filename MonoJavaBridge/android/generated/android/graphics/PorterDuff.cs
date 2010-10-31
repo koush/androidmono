@@ -195,9 +195,6 @@ namespace android.graphics
 				global::android.graphics.PorterDuff.Mode._SRC_OVER2389 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "SRC_OVER", "Landroid/graphics/PorterDuff$Mode;");
 				global::android.graphics.PorterDuff.Mode._XOR2390 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.PorterDuff.Mode.staticClass, "XOR", "Landroid/graphics/PorterDuff$Mode;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public PorterDuff() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -212,9 +209,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PorterDuff.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuff"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

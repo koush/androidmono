@@ -35,8 +35,5 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteTransactionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteTransactionListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

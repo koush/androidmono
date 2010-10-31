@@ -109,8 +109,5 @@ namespace android.text
 			global::android.text.TextPaint._drawableState5249 = @__env.GetFieldIDNoThrow(global::android.text.TextPaint.staticClass, "drawableState", "[I");
 			global::android.text.TextPaint._density5250 = @__env.GetFieldIDNoThrow(global::android.text.TextPaint.staticClass, "density", "F");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -65,9 +65,6 @@ namespace android.webkit
 				global::android.webkit.WebSettings.LayoutAlgorithm._NORMAL5976 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "NORMAL", "Landroid/webkit/WebSettings$LayoutAlgorithm;");
 				global::android.webkit.WebSettings.LayoutAlgorithm._SINGLE_COLUMN5977 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "SINGLE_COLUMN", "Landroid/webkit/WebSettings$LayoutAlgorithm;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class PluginState : java.lang.Enum
@@ -127,9 +124,6 @@ namespace android.webkit
 				global::android.webkit.WebSettings.PluginState._ON5979 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.PluginState.staticClass, "ON", "Landroid/webkit/WebSettings$PluginState;");
 				global::android.webkit.WebSettings.PluginState._ON_DEMAND5980 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.PluginState.staticClass, "ON_DEMAND", "Landroid/webkit/WebSettings$PluginState;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class RenderPriority : java.lang.Enum
@@ -188,9 +182,6 @@ namespace android.webkit
 				global::android.webkit.WebSettings.RenderPriority._HIGH5981 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.RenderPriority.staticClass, "HIGH", "Landroid/webkit/WebSettings$RenderPriority;");
 				global::android.webkit.WebSettings.RenderPriority._LOW5982 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.RenderPriority.staticClass, "LOW", "Landroid/webkit/WebSettings$RenderPriority;");
 				global::android.webkit.WebSettings.RenderPriority._NORMAL5983 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.RenderPriority.staticClass, "NORMAL", "Landroid/webkit/WebSettings$RenderPriority;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -271,9 +262,6 @@ namespace android.webkit
 				global::android.webkit.WebSettings.TextSize._SMALLER5987 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.TextSize.staticClass, "SMALLER", "Landroid/webkit/WebSettings$TextSize;");
 				global::android.webkit.WebSettings.TextSize._SMALLEST5988 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.TextSize.staticClass, "SMALLEST", "Landroid/webkit/WebSettings$TextSize;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class ZoomDensity : java.lang.Enum
@@ -332,9 +320,6 @@ namespace android.webkit
 				global::android.webkit.WebSettings.ZoomDensity._CLOSE5989 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.ZoomDensity.staticClass, "CLOSE", "Landroid/webkit/WebSettings$ZoomDensity;");
 				global::android.webkit.WebSettings.ZoomDensity._FAR5990 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.ZoomDensity.staticClass, "FAR", "Landroid/webkit/WebSettings$ZoomDensity;");
 				global::android.webkit.WebSettings.ZoomDensity._MEDIUM5991 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.WebSettings.ZoomDensity.staticClass, "MEDIUM", "Landroid/webkit/WebSettings$ZoomDensity;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		public new global::java.lang.String DatabasePath
@@ -1217,9 +1202,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebSettings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebSettings"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

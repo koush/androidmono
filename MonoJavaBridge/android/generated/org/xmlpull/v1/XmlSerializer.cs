@@ -167,8 +167,5 @@ namespace org.xmlpull.v1
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.XmlSerializer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlSerializer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

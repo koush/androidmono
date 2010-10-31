@@ -94,8 +94,5 @@ namespace org.apache.http.entity
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.entity.HttpEntityWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/entity/HttpEntityWrapper"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

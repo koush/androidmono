@@ -141,8 +141,5 @@ namespace javax.xml.transform.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.sax.TransformerHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/sax/TransformerHandler"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

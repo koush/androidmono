@@ -83,8 +83,5 @@ namespace java.text
 			global::java.text.AttributedCharacterIterator_Attribute._READING6601 = @__env.GetStaticFieldIDNoThrow(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "READING", "Ljava/text/AttributedCharacterIterator$Attribute;");
 			global::java.text.AttributedCharacterIterator_Attribute._INPUT_METHOD_SEGMENT6602 = @__env.GetStaticFieldIDNoThrow(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "INPUT_METHOD_SEGMENT", "Ljava/text/AttributedCharacterIterator$Attribute;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

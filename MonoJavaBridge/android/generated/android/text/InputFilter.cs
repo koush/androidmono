@@ -23,9 +23,6 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.InputFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/InputFilter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate java.lang.CharSequence InputFilterDelegate(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5);
@@ -49,9 +46,6 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.InputFilterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/InputFilterDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class InputFilterDelegateWrapper

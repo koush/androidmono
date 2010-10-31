@@ -30,8 +30,5 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteConstraintException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteConstraintException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

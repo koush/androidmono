@@ -35,8 +35,5 @@ namespace javax.xml.@namespace
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.@namespace.NamespaceContext_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/namespace/NamespaceContext"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

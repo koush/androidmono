@@ -47,8 +47,5 @@ namespace java.nio.charset
 			global::java.nio.charset.CodingErrorAction._REPLACE6502 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPLACE", "Ljava/nio/charset/CodingErrorAction;");
 			global::java.nio.charset.CodingErrorAction._REPORT6503 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CodingErrorAction.staticClass, "REPORT", "Ljava/nio/charset/CodingErrorAction;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

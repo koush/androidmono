@@ -30,9 +30,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnCancelListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager$OnCancelListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnCancelListenerDelegate();
@@ -56,9 +53,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnCancelListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager_OnCancelListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnCancelListenerDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnDismissListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager$OnDismissListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnDismissListenerDelegate();
@@ -125,9 +116,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.SearchManager.OnDismissListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager_OnDismissListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnDismissListenerDelegateWrapper
@@ -447,9 +435,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.SearchManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchManager"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -75,9 +75,6 @@ namespace android.graphics
 				global::android.graphics.BlurMaskFilter.Blur._OUTER2262 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.BlurMaskFilter.Blur.staticClass, "OUTER", "Landroid/graphics/BlurMaskFilter$Blur;");
 				global::android.graphics.BlurMaskFilter.Blur._SOLID2263 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.BlurMaskFilter.Blur.staticClass, "SOLID", "Landroid/graphics/BlurMaskFilter$Blur;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public BlurMaskFilter(float arg0, android.graphics.BlurMaskFilter.Blur arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -92,9 +89,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.BlurMaskFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BlurMaskFilter"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

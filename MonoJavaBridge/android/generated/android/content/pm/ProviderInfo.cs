@@ -172,8 +172,5 @@ namespace android.content.pm
 			global::android.content.pm.ProviderInfo._isSyncable2111 = @__env.GetFieldIDNoThrow(global::android.content.pm.ProviderInfo.staticClass, "isSyncable", "Z");
 			global::android.content.pm.ProviderInfo._CREATOR2112 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ProviderInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

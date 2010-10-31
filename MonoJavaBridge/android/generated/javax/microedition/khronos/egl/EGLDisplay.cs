@@ -21,9 +21,6 @@ namespace javax.microedition.khronos.egl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGLDisplay.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGLDisplay"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.egl.EGLDisplay))]
@@ -37,9 +34,6 @@ namespace javax.microedition.khronos.egl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGLDisplay_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGLDisplay"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

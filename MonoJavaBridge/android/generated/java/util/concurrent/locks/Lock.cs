@@ -53,8 +53,5 @@ namespace java.util.concurrent.locks
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.Lock_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/Lock"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

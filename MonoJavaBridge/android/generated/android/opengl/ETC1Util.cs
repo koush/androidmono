@@ -64,9 +64,6 @@ namespace android.opengl
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.opengl.ETC1Util.ETC1Texture.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/ETC1Util$ETC1Texture"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public static void loadTexture(int arg0, int arg1, int arg2, int arg3, int arg4, java.io.InputStream arg5)
@@ -129,9 +126,6 @@ namespace android.opengl
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.ETC1Util.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/ETC1Util"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

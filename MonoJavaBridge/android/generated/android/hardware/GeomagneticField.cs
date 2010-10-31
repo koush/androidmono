@@ -105,8 +105,5 @@ namespace android.hardware
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.GeomagneticField.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/GeomagneticField"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -48,8 +48,5 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AuthenticatorException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AuthenticatorException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

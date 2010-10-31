@@ -240,8 +240,5 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.LocalSocket.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalSocket"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

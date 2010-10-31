@@ -51,8 +51,5 @@ namespace android.preference
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceScreen.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceScreen"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

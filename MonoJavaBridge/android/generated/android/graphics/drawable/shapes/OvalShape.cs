@@ -26,8 +26,5 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.OvalShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/OvalShape"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

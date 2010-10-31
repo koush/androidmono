@@ -48,8 +48,5 @@ namespace javax.xml.datatype
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.datatype.DatatypeConfigurationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/datatype/DatatypeConfigurationException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

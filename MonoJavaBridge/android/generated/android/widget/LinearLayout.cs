@@ -95,9 +95,6 @@ namespace android.widget
 				global::android.widget.LinearLayout.LayoutParams._weight6071 = @__env.GetFieldIDNoThrow(global::android.widget.LinearLayout.LayoutParams.staticClass, "weight", "F");
 				global::android.widget.LinearLayout.LayoutParams._gravity6072 = @__env.GetFieldIDNoThrow(global::android.widget.LinearLayout.LayoutParams.staticClass, "gravity", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public new int Gravity
 		{
@@ -293,9 +290,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.LinearLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/LinearLayout"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -30,9 +30,6 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.VirtualMachineError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/VirtualMachineError"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.VirtualMachineError))]
@@ -46,9 +43,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.VirtualMachineError_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/VirtualMachineError"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

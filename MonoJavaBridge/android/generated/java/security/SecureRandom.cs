@@ -120,8 +120,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SecureRandom.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SecureRandom"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

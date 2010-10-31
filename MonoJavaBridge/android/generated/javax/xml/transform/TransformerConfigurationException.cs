@@ -66,8 +66,5 @@ namespace javax.xml.transform
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.TransformerConfigurationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/TransformerConfigurationException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

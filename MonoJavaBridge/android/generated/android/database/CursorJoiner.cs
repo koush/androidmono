@@ -65,9 +65,6 @@ namespace android.database
 				global::android.database.CursorJoiner.Result._LEFT2197 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorJoiner.Result.staticClass, "LEFT", "Landroid/database/CursorJoiner$Result;");
 				global::android.database.CursorJoiner.Result._RIGHT2198 = @__env.GetStaticFieldIDNoThrow(global::android.database.CursorJoiner.Result.staticClass, "RIGHT", "Landroid/database/CursorJoiner$Result;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public global::System.Collections.IEnumerator GetEnumerator()
 		{
@@ -106,9 +103,6 @@ namespace android.database
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.CursorJoiner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/CursorJoiner"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

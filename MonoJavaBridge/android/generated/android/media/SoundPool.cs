@@ -30,9 +30,6 @@ namespace android.media
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.SoundPool.OnLoadCompleteListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool$OnLoadCompleteListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnLoadCompleteListenerDelegate(android.media.SoundPool arg0, int arg1, int arg2);
@@ -56,9 +53,6 @@ namespace android.media
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.media.SoundPool.OnLoadCompleteListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool_OnLoadCompleteListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnLoadCompleteListenerDelegateWrapper
@@ -183,9 +177,6 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.SoundPool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

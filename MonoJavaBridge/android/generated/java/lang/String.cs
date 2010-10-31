@@ -545,8 +545,5 @@ namespace java.lang
 			global::java.lang.String.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/String"));
 			global::java.lang.String._CASE_INSENSITIVE_ORDER6398 = @__env.GetStaticFieldIDNoThrow(global::java.lang.String.staticClass, "CASE_INSENSITIVE_ORDER", "Ljava/util/Comparator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

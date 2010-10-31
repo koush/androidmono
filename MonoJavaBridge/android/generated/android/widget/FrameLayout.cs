@@ -77,9 +77,6 @@ namespace android.widget
 				global::android.widget.FrameLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FrameLayout$LayoutParams"));
 				global::android.widget.FrameLayout.LayoutParams._gravity6057 = @__env.GetFieldIDNoThrow(global::android.widget.FrameLayout.LayoutParams.staticClass, "gravity", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setForeground(android.graphics.drawable.Drawable arg0)
@@ -224,9 +221,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FrameLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FrameLayout"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

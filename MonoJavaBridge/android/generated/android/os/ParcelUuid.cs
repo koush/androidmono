@@ -76,8 +76,5 @@ namespace android.os
 			global::android.os.ParcelUuid.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelUuid"));
 			global::android.os.ParcelUuid._CREATOR4020 = @__env.GetStaticFieldIDNoThrow(global::android.os.ParcelUuid.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

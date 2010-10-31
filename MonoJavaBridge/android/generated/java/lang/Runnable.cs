@@ -23,9 +23,6 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Runnable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Runnable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void RunnableDelegate();
@@ -49,9 +46,6 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.RunnableDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("internal/java/lang/RunnableDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class RunnableDelegateWrapper

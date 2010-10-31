@@ -65,8 +65,5 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.DESKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/DESKeySpec"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

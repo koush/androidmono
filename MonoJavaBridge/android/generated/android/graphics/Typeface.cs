@@ -165,8 +165,5 @@ namespace android.graphics
 			global::android.graphics.Typeface._SERIF2414 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Typeface.staticClass, "SERIF", "Landroid/graphics/Typeface;");
 			global::android.graphics.Typeface._MONOSPACE2415 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Typeface.staticClass, "MONOSPACE", "Landroid/graphics/Typeface;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

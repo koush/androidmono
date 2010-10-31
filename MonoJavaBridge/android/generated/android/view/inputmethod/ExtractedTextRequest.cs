@@ -93,8 +93,5 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.ExtractedTextRequest._hintMaxChars5951 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "hintMaxChars", "I");
 			global::android.view.inputmethod.ExtractedTextRequest._CREATOR5952 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.ExtractedTextRequest.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

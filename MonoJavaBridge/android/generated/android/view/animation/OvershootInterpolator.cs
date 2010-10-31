@@ -44,8 +44,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.OvershootInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/OvershootInterpolator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

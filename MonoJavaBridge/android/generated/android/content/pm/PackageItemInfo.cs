@@ -38,9 +38,6 @@ namespace android.content.pm
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.pm.PackageItemInfo.DisplayNameComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageItemInfo$DisplayNameComparator"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
@@ -189,9 +186,6 @@ namespace android.content.pm
 			global::android.content.pm.PackageItemInfo._nonLocalizedLabel2033 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "nonLocalizedLabel", "Ljava/lang/CharSequence;");
 			global::android.content.pm.PackageItemInfo._icon2034 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "icon", "I");
 			global::android.content.pm.PackageItemInfo._metaData2035 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageItemInfo.staticClass, "metaData", "Landroid/os/Bundle;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

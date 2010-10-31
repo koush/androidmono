@@ -42,8 +42,5 @@ namespace java.nio.channels
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.ByteChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ByteChannel"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

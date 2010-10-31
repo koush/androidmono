@@ -88,8 +88,5 @@ namespace java.nio.charset
 			global::java.nio.charset.CoderResult._UNDERFLOW6499 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "UNDERFLOW", "Ljava/nio/charset/CoderResult;");
 			global::java.nio.charset.CoderResult._OVERFLOW6500 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "OVERFLOW", "Ljava/nio/charset/CoderResult;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

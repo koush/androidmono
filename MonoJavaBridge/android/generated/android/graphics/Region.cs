@@ -95,9 +95,6 @@ namespace android.graphics
 				global::android.graphics.Region.Op._UNION2405 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "UNION", "Landroid/graphics/Region$Op;");
 				global::android.graphics.Region.Op._XOR2406 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.Op.staticClass, "XOR", "Landroid/graphics/Region$Op;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
@@ -313,9 +310,6 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Region.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Region"));
 			global::android.graphics.Region._CREATOR2407 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Region.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

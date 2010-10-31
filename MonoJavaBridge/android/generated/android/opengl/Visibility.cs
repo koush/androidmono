@@ -45,8 +45,5 @@ namespace android.opengl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.Visibility.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/Visibility"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

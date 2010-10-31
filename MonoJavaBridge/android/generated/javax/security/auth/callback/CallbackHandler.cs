@@ -23,8 +23,5 @@ namespace javax.security.auth.callback
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.CallbackHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/CallbackHandler"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

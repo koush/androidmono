@@ -30,8 +30,5 @@ namespace javax.security.auth.login
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.login.LoginException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/login/LoginException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

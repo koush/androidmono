@@ -77,8 +77,5 @@ namespace java.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.CharacterIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CharacterIterator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

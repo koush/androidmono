@@ -112,9 +112,6 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.AbstractHttpMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/AbstractHttpMessage"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.message.AbstractHttpMessage))]
@@ -133,9 +130,6 @@ namespace org.apache.http.message
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.AbstractHttpMessage_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/AbstractHttpMessage"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -23,8 +23,5 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.DatagramSocketImplFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/DatagramSocketImplFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

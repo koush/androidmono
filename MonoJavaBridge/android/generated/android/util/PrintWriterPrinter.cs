@@ -26,8 +26,5 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.PrintWriterPrinter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/PrintWriterPrinter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

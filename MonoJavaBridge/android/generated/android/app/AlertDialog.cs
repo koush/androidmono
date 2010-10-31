@@ -321,9 +321,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.AlertDialog.Builder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AlertDialog$Builder"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onCreate(android.os.Bundle arg0)
@@ -543,9 +540,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.AlertDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AlertDialog"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

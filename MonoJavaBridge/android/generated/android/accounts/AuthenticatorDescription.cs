@@ -124,8 +124,5 @@ namespace android.accounts
 			global::android.accounts.AuthenticatorDescription._packageName1266 = @__env.GetFieldIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "packageName", "Ljava/lang/String;");
 			global::android.accounts.AuthenticatorDescription._CREATOR1267 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.AuthenticatorDescription.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -136,9 +136,6 @@ namespace android.content
 				global::android.content.AsyncQueryHandler.WorkerArgs._cookie1614 = @__env.GetFieldIDNoThrow(global::android.content.AsyncQueryHandler.WorkerArgs.staticClass, "cookie", "Ljava/lang/Object;");
 				global::android.content.AsyncQueryHandler.WorkerArgs._values1615 = @__env.GetFieldIDNoThrow(global::android.content.AsyncQueryHandler.WorkerArgs.staticClass, "values", "Landroid/content/ContentValues;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		protected partial class WorkerHandler : android.os.Handler
@@ -165,9 +162,6 @@ namespace android.content
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.AsyncQueryHandler.WorkerHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler$WorkerHandler"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -239,9 +233,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AsyncQueryHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.AsyncQueryHandler))]
@@ -255,9 +246,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AsyncQueryHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AsyncQueryHandler"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

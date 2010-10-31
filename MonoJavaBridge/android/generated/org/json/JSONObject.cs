@@ -268,8 +268,5 @@ namespace org.json
 			global::org.json.JSONObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/json/JSONObject"));
 			global::org.json.JSONObject._NULL7578 = @__env.GetStaticFieldIDNoThrow(global::org.json.JSONObject.staticClass, "NULL", "Ljava/lang/Object;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

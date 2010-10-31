@@ -113,8 +113,5 @@ namespace android.content
 			global::android.content.SyncAdapterType._isKey1880 = @__env.GetFieldIDNoThrow(global::android.content.SyncAdapterType.staticClass, "isKey", "Z");
 			global::android.content.SyncAdapterType._CREATOR1881 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncAdapterType.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

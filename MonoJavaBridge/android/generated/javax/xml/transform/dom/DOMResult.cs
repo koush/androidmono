@@ -127,8 +127,5 @@ namespace javax.xml.transform.dom
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.dom.DOMResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/dom/DOMResult"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

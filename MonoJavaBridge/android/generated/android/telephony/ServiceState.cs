@@ -221,8 +221,5 @@ namespace android.telephony
 			global::android.telephony.ServiceState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/ServiceState"));
 			global::android.telephony.ServiceState._CREATOR5095 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.ServiceState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

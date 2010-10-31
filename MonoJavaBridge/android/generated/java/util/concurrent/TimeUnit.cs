@@ -153,9 +153,6 @@ namespace java.util.concurrent
 			global::java.util.concurrent.TimeUnit._HOURS6703 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "HOURS", "Ljava/util/concurrent/TimeUnit;");
 			global::java.util.concurrent.TimeUnit._DAYS6704 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "DAYS", "Ljava/util/concurrent/TimeUnit;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.concurrent.TimeUnit))]
@@ -169,9 +166,6 @@ namespace java.util.concurrent
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.TimeUnit_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/TimeUnit"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

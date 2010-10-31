@@ -160,8 +160,5 @@ namespace android.net.http
 			global::android.net.http.AndroidHttpClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/AndroidHttpClient"));
 			global::android.net.http.AndroidHttpClient._DEFAULT_SYNC_MIN_GZIP_BYTES3019 = @__env.GetStaticFieldIDNoThrow(global::android.net.http.AndroidHttpClient.staticClass, "DEFAULT_SYNC_MIN_GZIP_BYTES", "J");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

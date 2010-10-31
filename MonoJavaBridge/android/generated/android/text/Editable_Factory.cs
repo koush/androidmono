@@ -45,8 +45,5 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Editable_Factory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Editable$Factory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

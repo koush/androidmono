@@ -39,8 +39,5 @@ namespace android.view.accessibility
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.accessibility.AccessibilityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -137,8 +137,5 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteQueryBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteQueryBuilder"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

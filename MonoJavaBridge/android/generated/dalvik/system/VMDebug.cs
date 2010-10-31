@@ -384,8 +384,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.VMDebug.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/VMDebug"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

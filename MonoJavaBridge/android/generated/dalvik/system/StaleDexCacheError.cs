@@ -30,8 +30,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.StaleDexCacheError.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/StaleDexCacheError"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

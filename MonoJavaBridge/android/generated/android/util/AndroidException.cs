@@ -39,8 +39,5 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.AndroidException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/AndroidException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

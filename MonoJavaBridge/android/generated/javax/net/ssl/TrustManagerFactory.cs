@@ -106,8 +106,5 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.TrustManagerFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/TrustManagerFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

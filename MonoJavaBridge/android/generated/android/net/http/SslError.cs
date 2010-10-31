@@ -104,8 +104,5 @@ namespace android.net.http
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.http.SslError.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/http/SslError"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

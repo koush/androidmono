@@ -474,8 +474,5 @@ namespace android.text.format
 			global::android.text.format.Time._gmtoff5327 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "gmtoff", "J");
 			global::android.text.format.Time._timezone5328 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "timezone", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

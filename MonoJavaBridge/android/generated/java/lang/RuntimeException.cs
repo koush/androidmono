@@ -48,8 +48,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.RuntimeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/RuntimeException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

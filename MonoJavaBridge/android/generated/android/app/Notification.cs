@@ -365,8 +365,5 @@ namespace android.app
 			global::android.app.Notification._flags1387 = @__env.GetFieldIDNoThrow(global::android.app.Notification.staticClass, "flags", "I");
 			global::android.app.Notification._CREATOR1388 = @__env.GetStaticFieldIDNoThrow(global::android.app.Notification.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

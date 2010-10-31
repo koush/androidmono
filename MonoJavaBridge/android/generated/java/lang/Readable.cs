@@ -23,8 +23,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Readable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Readable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

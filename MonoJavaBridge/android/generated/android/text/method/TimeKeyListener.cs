@@ -70,8 +70,5 @@ namespace android.text.method
 			global::android.text.method.TimeKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/TimeKeyListener"));
 			global::android.text.method.TimeKeyListener._CHARACTERS5358 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.TimeKeyListener.staticClass, "CHARACTERS", "[C");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

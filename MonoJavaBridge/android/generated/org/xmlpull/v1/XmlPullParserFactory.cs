@@ -98,8 +98,5 @@ namespace org.xmlpull.v1
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.XmlPullParserFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlPullParserFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

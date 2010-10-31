@@ -65,9 +65,6 @@ namespace android.graphics
 				global::android.graphics.Shader.TileMode._MIRROR2409 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "MIRROR", "Landroid/graphics/Shader$TileMode;");
 				global::android.graphics.Shader.TileMode._REPEAT2410 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Shader.TileMode.staticClass, "REPEAT", "Landroid/graphics/Shader$TileMode;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
@@ -104,9 +101,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Shader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Shader"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

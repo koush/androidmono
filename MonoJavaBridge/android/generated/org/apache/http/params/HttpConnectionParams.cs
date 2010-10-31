@@ -108,8 +108,5 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.HttpConnectionParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/HttpConnectionParams"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

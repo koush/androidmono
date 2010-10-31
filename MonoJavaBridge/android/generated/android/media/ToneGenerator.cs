@@ -753,8 +753,5 @@ namespace android.media
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.ToneGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ToneGenerator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

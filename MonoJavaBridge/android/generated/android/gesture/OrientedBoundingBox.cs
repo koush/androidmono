@@ -72,8 +72,5 @@ namespace android.gesture
 			global::android.gesture.OrientedBoundingBox._centerX2231 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerX", "F");
 			global::android.gesture.OrientedBoundingBox._centerY2232 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerY", "F");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

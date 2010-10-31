@@ -65,9 +65,6 @@ namespace android.graphics
 				global::android.graphics.Paint.Align._LEFT2310 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Align.staticClass, "LEFT", "Landroid/graphics/Paint$Align;");
 				global::android.graphics.Paint.Align._RIGHT2311 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Align.staticClass, "RIGHT", "Landroid/graphics/Paint$Align;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Cap : java.lang.Enum
@@ -126,9 +123,6 @@ namespace android.graphics
 				global::android.graphics.Paint.Cap._BUTT2312 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Cap.staticClass, "BUTT", "Landroid/graphics/Paint$Cap;");
 				global::android.graphics.Paint.Cap._ROUND2313 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Cap.staticClass, "ROUND", "Landroid/graphics/Paint$Cap;");
 				global::android.graphics.Paint.Cap._SQUARE2314 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Cap.staticClass, "SQUARE", "Landroid/graphics/Paint$Cap;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -216,9 +210,6 @@ namespace android.graphics
 				global::android.graphics.Paint.FontMetrics._descent2317 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetrics.staticClass, "descent", "F");
 				global::android.graphics.Paint.FontMetrics._bottom2318 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetrics.staticClass, "bottom", "F");
 				global::android.graphics.Paint.FontMetrics._leading2319 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetrics.staticClass, "leading", "F");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -312,9 +303,6 @@ namespace android.graphics
 				global::android.graphics.Paint.FontMetricsInt._bottom2323 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetricsInt.staticClass, "bottom", "I");
 				global::android.graphics.Paint.FontMetricsInt._leading2324 = @__env.GetFieldIDNoThrow(global::android.graphics.Paint.FontMetricsInt.staticClass, "leading", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Join : java.lang.Enum
@@ -374,9 +362,6 @@ namespace android.graphics
 				global::android.graphics.Paint.Join._MITER2326 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Join.staticClass, "MITER", "Landroid/graphics/Paint$Join;");
 				global::android.graphics.Paint.Join._ROUND2327 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Join.staticClass, "ROUND", "Landroid/graphics/Paint$Join;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Style : java.lang.Enum
@@ -435,9 +420,6 @@ namespace android.graphics
 				global::android.graphics.Paint.Style._FILL2328 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "FILL", "Landroid/graphics/Paint$Style;");
 				global::android.graphics.Paint.Style._FILL_AND_STROKE2329 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "FILL_AND_STROKE", "Landroid/graphics/Paint$Style;");
 				global::android.graphics.Paint.Style._STROKE2330 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Paint.Style.staticClass, "STROKE", "Landroid/graphics/Paint$Style;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -1222,9 +1204,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Paint.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Paint"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

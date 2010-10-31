@@ -116,8 +116,5 @@ namespace java.math
 			global::java.math.RoundingMode._HALF_EVEN6434 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_EVEN", "Ljava/math/RoundingMode;");
 			global::java.math.RoundingMode._UNNECESSARY6435 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UNNECESSARY", "Ljava/math/RoundingMode;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

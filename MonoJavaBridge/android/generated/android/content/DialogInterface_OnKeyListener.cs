@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnKeyListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate bool DialogInterface_OnKeyListenerDelegate(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnKeyListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class DialogInterface_OnKeyListenerDelegateWrapper

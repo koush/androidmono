@@ -23,9 +23,6 @@ namespace android.widget
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FilterQueryProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterQueryProvider"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate android.database.Cursor FilterQueryProviderDelegate(java.lang.CharSequence arg0);
@@ -49,9 +46,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.FilterQueryProviderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterQueryProviderDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class FilterQueryProviderDelegateWrapper

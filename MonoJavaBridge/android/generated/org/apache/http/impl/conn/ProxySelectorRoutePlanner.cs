@@ -62,8 +62,5 @@ namespace org.apache.http.impl.conn
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/ProxySelectorRoutePlanner"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

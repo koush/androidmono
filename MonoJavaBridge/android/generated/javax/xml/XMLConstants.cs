@@ -102,8 +102,5 @@ namespace javax.xml
 			global::javax.xml.XMLConstants._NULL_NS_URI7273 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "NULL_NS_URI", "Ljava/lang/String;");
 			global::javax.xml.XMLConstants._DEFAULT_NS_PREFIX7274 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "DEFAULT_NS_PREFIX", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

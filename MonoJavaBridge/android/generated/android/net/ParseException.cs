@@ -25,8 +25,5 @@ namespace android.net
 			global::android.net.ParseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/ParseException"));
 			global::android.net.ParseException._response2990 = @__env.GetFieldIDNoThrow(global::android.net.ParseException.staticClass, "response", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

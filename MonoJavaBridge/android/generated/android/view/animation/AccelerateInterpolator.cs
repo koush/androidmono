@@ -44,8 +44,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.AccelerateInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/AccelerateInterpolator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

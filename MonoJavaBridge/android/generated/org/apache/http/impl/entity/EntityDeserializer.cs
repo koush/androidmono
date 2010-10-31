@@ -31,8 +31,5 @@ namespace org.apache.http.impl.entity
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.entity.EntityDeserializer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/entity/EntityDeserializer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

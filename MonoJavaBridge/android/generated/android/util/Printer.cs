@@ -23,9 +23,6 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Printer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Printer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void PrinterDelegate(java.lang.String arg0);
@@ -49,9 +46,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.PrinterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/PrinterDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class PrinterDelegateWrapper

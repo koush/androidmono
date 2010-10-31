@@ -77,8 +77,5 @@ namespace android.text.method
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.PasswordTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/PasswordTransformationMethod"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

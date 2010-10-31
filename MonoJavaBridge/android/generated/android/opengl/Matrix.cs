@@ -157,8 +157,5 @@ namespace android.opengl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.Matrix.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/Matrix"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -33,8 +33,5 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.MutableContextWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/MutableContextWrapper"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

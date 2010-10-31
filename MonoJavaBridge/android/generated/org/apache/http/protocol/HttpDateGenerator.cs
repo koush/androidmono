@@ -50,8 +50,5 @@ namespace org.apache.http.protocol
 			global::org.apache.http.protocol.HttpDateGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpDateGenerator"));
 			global::org.apache.http.protocol.HttpDateGenerator._GMT7570 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.protocol.HttpDateGenerator.staticClass, "GMT", "Ljava/util/TimeZone;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

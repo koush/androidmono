@@ -79,8 +79,5 @@ namespace javax.crypto.spec
 			global::javax.crypto.spec.OAEPParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/OAEPParameterSpec"));
 			global::javax.crypto.spec.OAEPParameterSpec._DEFAULT6726 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "DEFAULT", "Ljavax/crypto/spec/OAEPParameterSpec;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

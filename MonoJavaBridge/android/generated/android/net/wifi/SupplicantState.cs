@@ -156,8 +156,5 @@ namespace android.net.wifi
 			global::android.net.wifi.SupplicantState._SCANNING3039 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "SCANNING", "Landroid/net/wifi/SupplicantState;");
 			global::android.net.wifi.SupplicantState._UNINITIALIZED3040 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.SupplicantState.staticClass, "UNINITIALIZED", "Landroid/net/wifi/SupplicantState;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

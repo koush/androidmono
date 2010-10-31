@@ -39,9 +39,6 @@ namespace android.util
 				global::android.util.EventLogTags.Description._mTag5392 = @__env.GetFieldIDNoThrow(global::android.util.EventLogTags.Description.staticClass, "mTag", "I");
 				global::android.util.EventLogTags.Description._mName5393 = @__env.GetFieldIDNoThrow(global::android.util.EventLogTags.Description.staticClass, "mName", "Ljava/lang/String;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0)
@@ -75,9 +72,6 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.EventLogTags.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/EventLogTags"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

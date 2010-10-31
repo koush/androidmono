@@ -41,8 +41,5 @@ namespace java.lang.annotation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.annotation.Annotation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/annotation/Annotation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

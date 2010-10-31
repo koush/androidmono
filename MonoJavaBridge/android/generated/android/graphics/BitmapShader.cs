@@ -21,8 +21,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.BitmapShader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BitmapShader"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -17,8 +17,5 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.OpenableColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/OpenableColumns"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

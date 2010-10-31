@@ -31,9 +31,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Audio.AlbumColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$AlbumColumns"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public static partial class AlbumColumnsConstants 
@@ -172,9 +169,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Audio.Albums._INTERNAL_CONTENT_URI4636 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Albums.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Audio.Albums._EXTERNAL_CONTENT_URI4637 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Albums.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.ArtistColumns_))]
 			public partial interface ArtistColumns  : global::MonoJavaBridge.IJavaObject 
@@ -192,9 +186,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Audio.ArtistColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$ArtistColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -265,9 +256,6 @@ namespace android.provider
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::android.provider.MediaStore.Audio.Artists.Albums.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$Artists$Albums"));
 					}
-					internal static void InitJNI()
-					{
-					}
 				}
 				private static global::MonoJavaBridge.MethodId _m0;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0)
@@ -332,9 +320,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Audio.Artists._INTERNAL_CONTENT_URI4645 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Artists.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Audio.Artists._EXTERNAL_CONTENT_URI4646 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Artists.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.AudioColumns_))]
 			public partial interface AudioColumns : MediaColumns
@@ -352,9 +337,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Audio.AudioColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$AudioColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -551,9 +533,6 @@ namespace android.provider
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::android.provider.MediaStore.Audio.Genres.Members.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$Genres$Members"));
 					}
-					internal static void InitJNI()
-					{
-					}
 				}
 				private static global::MonoJavaBridge.MethodId _m0;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0)
@@ -618,9 +597,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Audio.Genres._INTERNAL_CONTENT_URI4672 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Genres.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Audio.Genres._EXTERNAL_CONTENT_URI4673 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Genres.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.GenresColumns_))]
 			public partial interface GenresColumns  : global::MonoJavaBridge.IJavaObject 
@@ -638,9 +614,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Audio.GenresColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$GenresColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -739,9 +712,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Audio.Media._INTERNAL_CONTENT_URI4678 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Media.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Audio.Media._EXTERNAL_CONTENT_URI4679 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Media.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Playlists : java.lang.Object, BaseColumns, PlaylistsColumns
@@ -829,9 +799,6 @@ namespace android.provider
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::android.provider.MediaStore.Audio.Playlists.Members.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$Playlists$Members"));
 					}
-					internal static void InitJNI()
-					{
-					}
 				}
 				private static global::MonoJavaBridge.MethodId _m0;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0)
@@ -896,9 +863,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Audio.Playlists._INTERNAL_CONTENT_URI4690 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Playlists.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Audio.Playlists._EXTERNAL_CONTENT_URI4691 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Audio.Playlists.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.PlaylistsColumns_))]
 			public partial interface PlaylistsColumns  : global::MonoJavaBridge.IJavaObject 
@@ -916,9 +880,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Audio.PlaylistsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio$PlaylistsColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -975,9 +936,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.MediaStore.Audio.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Audio"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Images : java.lang.Object
@@ -1002,9 +960,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Images.ImageColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Images$ImageColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1192,9 +1147,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Images.Media._INTERNAL_CONTENT_URI4709 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Images.Media.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Images.Media._EXTERNAL_CONTENT_URI4710 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Images.Media.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public partial class Thumbnails : java.lang.Object, BaseColumns
@@ -1371,9 +1323,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Images.Thumbnails._INTERNAL_CONTENT_URI4713 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Images.Thumbnails._EXTERNAL_CONTENT_URI4714 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			private static global::MonoJavaBridge.MethodId _m0;
 			public Images() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -1388,9 +1337,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.MediaStore.Images.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Images"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.MediaColumns_))]
@@ -1409,9 +1355,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.MediaStore.MediaColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$MediaColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -1536,9 +1479,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Video.Media.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Video$Media"));
 					global::android.provider.MediaStore.Video.Media._INTERNAL_CONTENT_URI4732 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Video.Media.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Video.Media._EXTERNAL_CONTENT_URI4733 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Video.Media.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1685,9 +1625,6 @@ namespace android.provider
 					global::android.provider.MediaStore.Video.Thumbnails._INTERNAL_CONTENT_URI4736 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "INTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.MediaStore.Video.Thumbnails._EXTERNAL_CONTENT_URI4737 = @__env.GetStaticFieldIDNoThrow(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "EXTERNAL_CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Video.VideoColumns_))]
 			public partial interface VideoColumns : MediaColumns
@@ -1705,9 +1642,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.MediaStore.Video.VideoColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Video$VideoColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1854,9 +1788,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.MediaStore.Video.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore$Video"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		public static global::android.net.Uri MediaScannerUri
@@ -2034,9 +1965,6 @@ namespace android.provider
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.MediaStore.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/MediaStore"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

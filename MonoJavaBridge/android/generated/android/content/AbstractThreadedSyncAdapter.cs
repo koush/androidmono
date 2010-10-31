@@ -45,9 +45,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AbstractThreadedSyncAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AbstractThreadedSyncAdapter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.AbstractThreadedSyncAdapter))]
@@ -66,9 +63,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.AbstractThreadedSyncAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/AbstractThreadedSyncAdapter"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

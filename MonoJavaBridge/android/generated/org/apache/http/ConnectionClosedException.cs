@@ -21,8 +21,5 @@ namespace org.apache.http
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ConnectionClosedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ConnectionClosedException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

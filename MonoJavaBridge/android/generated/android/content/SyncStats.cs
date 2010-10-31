@@ -177,8 +177,5 @@ namespace android.content
 			global::android.content.SyncStats._numSkippedEntries1904 = @__env.GetFieldIDNoThrow(global::android.content.SyncStats.staticClass, "numSkippedEntries", "J");
 			global::android.content.SyncStats._CREATOR1905 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncStats.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

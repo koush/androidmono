@@ -80,8 +80,5 @@ namespace android.content.pm
 			global::android.content.pm.Signature.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/Signature"));
 			global::android.content.pm.Signature._CREATOR2128 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.Signature.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

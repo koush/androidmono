@@ -68,8 +68,5 @@ namespace android.opengl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLUtils"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

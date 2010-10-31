@@ -30,8 +30,5 @@ namespace java.lang.@ref
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.WeakReference.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/WeakReference"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

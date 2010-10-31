@@ -111,9 +111,6 @@ namespace android.view
 				global::android.view.ViewGroup.LayoutParams._height5732 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.LayoutParams.staticClass, "height", "I");
 				global::android.view.ViewGroup.LayoutParams._layoutAnimationParameters5733 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.LayoutParams.staticClass, "layoutAnimationParameters", "Landroid/view/animation/LayoutAnimationController$AnimationParameters;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class MarginLayoutParams : android.view.ViewGroup.LayoutParams
@@ -220,9 +217,6 @@ namespace android.view
 				global::android.view.ViewGroup.MarginLayoutParams._rightMargin5736 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.MarginLayoutParams.staticClass, "rightMargin", "I");
 				global::android.view.ViewGroup.MarginLayoutParams._bottomMargin5737 = @__env.GetFieldIDNoThrow(global::android.view.ViewGroup.MarginLayoutParams.staticClass, "bottomMargin", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewGroup.OnHierarchyChangeListener_))]
 		public partial interface OnHierarchyChangeListener  : global::MonoJavaBridge.IJavaObject 
@@ -252,9 +246,6 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ViewGroup.OnHierarchyChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup$OnHierarchyChangeListener"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -933,9 +924,6 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ViewGroup))]
@@ -954,9 +942,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewGroup_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewGroup"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

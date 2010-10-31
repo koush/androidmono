@@ -146,8 +146,5 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.ExtractedText._flags5946 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.ExtractedText.staticClass, "flags", "I");
 			global::android.view.inputmethod.ExtractedText._CREATOR5947 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.ExtractedText.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -105,8 +105,5 @@ namespace android.os
 			global::android.os.PatternMatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PatternMatcher"));
 			global::android.os.PatternMatcher._CREATOR4026 = @__env.GetStaticFieldIDNoThrow(global::android.os.PatternMatcher.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

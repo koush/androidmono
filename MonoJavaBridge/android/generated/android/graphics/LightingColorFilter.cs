@@ -21,8 +21,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.LightingColorFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/LightingColorFilter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

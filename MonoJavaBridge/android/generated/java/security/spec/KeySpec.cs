@@ -17,8 +17,5 @@ namespace java.security.spec
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.KeySpec_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/KeySpec"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

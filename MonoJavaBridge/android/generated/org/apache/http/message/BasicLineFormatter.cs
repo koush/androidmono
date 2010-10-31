@@ -108,8 +108,5 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicLineFormatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicLineFormatter"));
 			global::org.apache.http.message.BasicLineFormatter._DEFAULT7513 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicLineFormatter.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicLineFormatter;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

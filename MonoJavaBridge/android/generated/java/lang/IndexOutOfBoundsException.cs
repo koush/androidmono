@@ -30,8 +30,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.IndexOutOfBoundsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/IndexOutOfBoundsException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

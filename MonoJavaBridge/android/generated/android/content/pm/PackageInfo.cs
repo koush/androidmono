@@ -267,8 +267,5 @@ namespace android.content.pm
 			global::android.content.pm.PackageInfo._reqFeatures2028 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "reqFeatures", "[Landroid/content/pm/FeatureInfo;");
 			global::android.content.pm.PackageInfo._CREATOR2029 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

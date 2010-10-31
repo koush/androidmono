@@ -257,8 +257,5 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Process.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Process"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

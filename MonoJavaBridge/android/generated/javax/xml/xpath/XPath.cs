@@ -89,8 +89,5 @@ namespace javax.xml.xpath
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPath_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPath"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,8 +30,5 @@ namespace android.opengl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

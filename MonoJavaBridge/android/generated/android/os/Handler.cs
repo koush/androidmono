@@ -30,9 +30,6 @@ namespace android.os
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Handler.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler$Callback"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool CallbackDelegate(android.os.Message arg0);
@@ -56,9 +53,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.Handler.CallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler_CallbackDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class CallbackDelegateWrapper
@@ -300,9 +294,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Handler.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Handler"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

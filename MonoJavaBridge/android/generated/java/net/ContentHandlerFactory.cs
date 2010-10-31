@@ -23,8 +23,5 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ContentHandlerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ContentHandlerFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

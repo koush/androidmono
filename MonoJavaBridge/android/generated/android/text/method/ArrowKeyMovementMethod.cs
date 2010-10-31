@@ -76,8 +76,5 @@ namespace android.text.method
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.ArrowKeyMovementMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ArrowKeyMovementMethod"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

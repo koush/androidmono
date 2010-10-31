@@ -30,9 +30,6 @@ namespace android.os
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.RecoverySystem.ProgressListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem$ProgressListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void ProgressListenerDelegate(int arg0);
@@ -56,9 +53,6 @@ namespace android.os
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.RecoverySystem.ProgressListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem_ProgressListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class ProgressListenerDelegateWrapper
@@ -117,9 +111,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.RecoverySystem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -402,9 +402,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentResolver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentResolver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.ContentResolver))]
@@ -418,9 +415,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ContentResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentResolver"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

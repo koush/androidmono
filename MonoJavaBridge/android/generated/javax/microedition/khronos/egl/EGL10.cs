@@ -161,8 +161,5 @@ namespace javax.microedition.khronos.egl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGL10_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGL10"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

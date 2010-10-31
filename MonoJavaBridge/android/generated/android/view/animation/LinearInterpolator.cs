@@ -35,8 +35,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.LinearInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LinearInterpolator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

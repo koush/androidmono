@@ -53,8 +53,5 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.AttributeList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/AttributeList"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

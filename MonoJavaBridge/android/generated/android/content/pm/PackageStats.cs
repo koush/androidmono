@@ -116,8 +116,5 @@ namespace android.content.pm
 			global::android.content.pm.PackageStats._cacheSize2088 = @__env.GetFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "cacheSize", "J");
 			global::android.content.pm.PackageStats._CREATOR2089 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PackageStats.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

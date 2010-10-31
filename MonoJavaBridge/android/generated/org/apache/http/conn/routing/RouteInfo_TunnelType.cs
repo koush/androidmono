@@ -48,8 +48,5 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType._PLAIN7472 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "PLAIN", "Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType._TUNNELLED7473 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "TUNNELLED", "Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

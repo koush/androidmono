@@ -31,8 +31,5 @@ namespace android.database
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.DataSetObservable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/DataSetObservable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

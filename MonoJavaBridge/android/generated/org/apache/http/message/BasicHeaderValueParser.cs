@@ -98,8 +98,5 @@ namespace org.apache.http.message
 			global::org.apache.http.message.BasicHeaderValueParser.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BasicHeaderValueParser"));
 			global::org.apache.http.message.BasicHeaderValueParser._DEFAULT7512 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.message.BasicHeaderValueParser.staticClass, "DEFAULT", "Lorg/apache/http/message/BasicHeaderValueParser;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

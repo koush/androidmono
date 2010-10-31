@@ -284,8 +284,5 @@ namespace android.os
 			global::android.os.Environment._DIRECTORY_DOWNLOADS3973 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_DOWNLOADS", "Ljava/lang/String;");
 			global::android.os.Environment._DIRECTORY_DCIM3974 = @__env.GetStaticFieldIDNoThrow(global::android.os.Environment.staticClass, "DIRECTORY_DCIM", "Ljava/lang/String;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

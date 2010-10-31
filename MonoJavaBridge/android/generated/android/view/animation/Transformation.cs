@@ -152,8 +152,5 @@ namespace android.view.animation
 			global::android.view.animation.Transformation._TYPE_MATRIX5908 = @__env.GetStaticFieldIDNoThrow(global::android.view.animation.Transformation.staticClass, "TYPE_MATRIX", "I");
 			global::android.view.animation.Transformation._TYPE_BOTH5909 = @__env.GetStaticFieldIDNoThrow(global::android.view.animation.Transformation.staticClass, "TYPE_BOTH", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

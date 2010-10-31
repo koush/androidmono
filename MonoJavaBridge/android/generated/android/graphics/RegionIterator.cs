@@ -31,8 +31,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.RegionIterator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/RegionIterator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -37,8 +37,5 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.NotificationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/NotificationManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

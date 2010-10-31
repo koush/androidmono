@@ -31,8 +31,5 @@ namespace android.app.backup
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.backup.FileBackupHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/FileBackupHelper"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

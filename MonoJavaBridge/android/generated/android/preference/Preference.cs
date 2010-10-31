@@ -47,9 +47,6 @@ namespace android.preference
 				global::android.preference.Preference.BaseSavedState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$BaseSavedState"));
 				global::android.preference.Preference.BaseSavedState._CREATOR4052 = @__env.GetStaticFieldIDNoThrow(global::android.preference.Preference.BaseSavedState.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.Preference.OnPreferenceChangeListener_))]
 		public partial interface OnPreferenceChangeListener  : global::MonoJavaBridge.IJavaObject 
@@ -74,9 +71,6 @@ namespace android.preference
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$OnPreferenceChangeListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool OnPreferenceChangeListenerDelegate(android.preference.Preference arg0, java.lang.Object arg1);
@@ -100,9 +94,6 @@ namespace android.preference
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference_OnPreferenceChangeListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnPreferenceChangeListenerDelegateWrapper
@@ -143,9 +134,6 @@ namespace android.preference
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference$OnPreferenceClickListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool OnPreferenceClickListenerDelegate(android.preference.Preference arg0);
@@ -169,9 +157,6 @@ namespace android.preference
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.Preference.OnPreferenceClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference_OnPreferenceClickListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnPreferenceClickListenerDelegateWrapper
@@ -753,9 +738,6 @@ namespace android.preference
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.Preference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/Preference"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

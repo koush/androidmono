@@ -23,9 +23,6 @@ namespace android.view.inputmethod
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethod_SessionCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethod$SessionCallback"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void InputMethod_SessionCallbackDelegate(android.view.inputmethod.InputMethodSession arg0);
@@ -49,9 +46,6 @@ namespace android.view.inputmethod
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethod_SessionCallbackDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class InputMethod_SessionCallbackDelegateWrapper

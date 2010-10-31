@@ -459,10 +459,12 @@ namespace MonoDroid
             }
             myIndent--;
             WriteLine("}");
-
+   
+            /*
             WriteLine("internal static void InitJNI()");
             WriteLine("{");
             WriteLine("}");
+            */
             myIndent--;
 
             myInitJni.Clear();

@@ -23,9 +23,6 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IInterface_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IInterface"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate android.os.IBinder IInterfaceDelegate();
@@ -49,9 +46,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IInterfaceDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IInterfaceDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class IInterfaceDelegateWrapper

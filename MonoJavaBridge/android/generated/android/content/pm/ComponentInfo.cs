@@ -144,8 +144,5 @@ namespace android.content.pm
 			global::android.content.pm.ComponentInfo._enabled1987 = @__env.GetFieldIDNoThrow(global::android.content.pm.ComponentInfo.staticClass, "enabled", "Z");
 			global::android.content.pm.ComponentInfo._exported1988 = @__env.GetFieldIDNoThrow(global::android.content.pm.ComponentInfo.staticClass, "exported", "Z");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

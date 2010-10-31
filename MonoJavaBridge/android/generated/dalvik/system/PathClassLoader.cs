@@ -60,8 +60,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.PathClassLoader.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/PathClassLoader"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

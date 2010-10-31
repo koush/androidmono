@@ -100,8 +100,5 @@ namespace android.graphics
 			global::android.graphics.Point._x2371 = @__env.GetFieldIDNoThrow(global::android.graphics.Point.staticClass, "x", "I");
 			global::android.graphics.Point._y2372 = @__env.GetFieldIDNoThrow(global::android.graphics.Point.staticClass, "y", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

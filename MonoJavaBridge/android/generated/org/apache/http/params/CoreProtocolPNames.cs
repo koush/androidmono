@@ -17,8 +17,5 @@ namespace org.apache.http.@params
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.@params.CoreProtocolPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/CoreProtocolPNames"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

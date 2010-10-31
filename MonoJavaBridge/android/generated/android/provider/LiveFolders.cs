@@ -103,8 +103,5 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.LiveFolders.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/LiveFolders"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -58,8 +58,5 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.ScaleAnimation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/ScaleAnimation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -173,8 +173,5 @@ namespace android.content.res
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.TypedArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/TypedArray"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

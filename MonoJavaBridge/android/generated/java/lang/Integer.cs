@@ -308,8 +308,5 @@ namespace java.lang
 			global::java.lang.Integer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Integer"));
 			global::java.lang.Integer._TYPE6388 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Integer.staticClass, "TYPE", "Ljava/lang/Class;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

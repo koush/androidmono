@@ -70,8 +70,5 @@ namespace org.apache.http.impl.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.NTLMScheme.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/NTLMScheme"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

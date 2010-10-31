@@ -479,8 +479,5 @@ namespace java.util
 			global::java.util.Locale._CANADA_FRENCH6694 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA_FRENCH", "Ljava/util/Locale;");
 			global::java.util.Locale._ROOT6695 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ROOT", "Ljava/util/Locale;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -35,8 +35,5 @@ namespace java.lang.reflect
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.TypeVariable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/TypeVariable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

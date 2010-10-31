@@ -109,8 +109,5 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.KeyAgreement.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/KeyAgreement"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -21,8 +21,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.PorterDuffXfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PorterDuffXfermode"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

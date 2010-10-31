@@ -436,8 +436,5 @@ namespace android.location
 			global::android.location.Address.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Address"));
 			global::android.location.Address._CREATOR2597 = @__env.GetStaticFieldIDNoThrow(global::android.location.Address.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

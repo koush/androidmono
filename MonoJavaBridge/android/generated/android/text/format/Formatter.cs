@@ -45,8 +45,5 @@ namespace android.text.format
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.format.Formatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/Formatter"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

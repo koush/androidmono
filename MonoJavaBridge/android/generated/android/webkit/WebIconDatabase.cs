@@ -30,9 +30,6 @@ namespace android.webkit
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebIconDatabase.IconListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase$IconListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void IconListenerDelegate(java.lang.String arg0, android.graphics.Bitmap arg1);
@@ -56,9 +53,6 @@ namespace android.webkit
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase_IconListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class IconListenerDelegateWrapper
@@ -129,9 +123,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebIconDatabase.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebIconDatabase"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

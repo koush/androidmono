@@ -38,9 +38,6 @@ namespace android.content.pm
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.pm.ResolveInfo.DisplayNameComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ResolveInfo$DisplayNameComparator"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override global::java.lang.String toString()
@@ -267,9 +264,6 @@ namespace android.content.pm
 			global::android.content.pm.ResolveInfo._icon2123 = @__env.GetFieldIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "icon", "I");
 			global::android.content.pm.ResolveInfo._resolvePackageName2124 = @__env.GetFieldIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "resolvePackageName", "Ljava/lang/String;");
 			global::android.content.pm.ResolveInfo._CREATOR2125 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ResolveInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

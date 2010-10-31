@@ -30,8 +30,5 @@ namespace javax.xml.parsers
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.ParserConfigurationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/ParserConfigurationException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

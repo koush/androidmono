@@ -113,9 +113,6 @@ namespace android.widget
 				global::android.widget.TableRow.LayoutParams._column6105 = @__env.GetFieldIDNoThrow(global::android.widget.TableRow.LayoutParams.staticClass, "column", "I");
 				global::android.widget.TableRow.LayoutParams._span6106 = @__env.GetFieldIDNoThrow(global::android.widget.TableRow.LayoutParams.staticClass, "span", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
@@ -198,9 +195,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.TableRow.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TableRow"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

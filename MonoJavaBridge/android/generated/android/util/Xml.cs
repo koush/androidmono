@@ -75,9 +75,6 @@ namespace android.util
 				global::android.util.Xml.Encoding._UTF_165459 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "UTF_16", "Landroid/util/Xml$Encoding;");
 				global::android.util.Xml.Encoding._UTF_85460 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.Encoding.staticClass, "UTF_8", "Landroid/util/Xml$Encoding;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public static void parse(java.lang.String arg0, org.xml.sax.ContentHandler arg1)
@@ -161,9 +158,6 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Xml.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Xml"));
 			global::android.util.Xml._FEATURE_RELAXED5461 = @__env.GetStaticFieldIDNoThrow(global::android.util.Xml.staticClass, "FEATURE_RELAXED", "Ljava/lang/String;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

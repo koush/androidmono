@@ -84,8 +84,5 @@ namespace android.telephony.gsm
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.GsmCellLocation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/GsmCellLocation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

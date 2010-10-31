@@ -150,8 +150,5 @@ namespace android.net.wifi
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.WifiInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiInfo"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

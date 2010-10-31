@@ -138,9 +138,6 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.FileObserver))]
@@ -159,9 +156,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

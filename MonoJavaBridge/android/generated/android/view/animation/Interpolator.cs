@@ -23,9 +23,6 @@ namespace android.view.animation
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.Interpolator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Interpolator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate float InterpolatorDelegate(float arg0);
@@ -49,9 +46,6 @@ namespace android.view.animation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.InterpolatorDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/InterpolatorDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class InterpolatorDelegateWrapper

@@ -23,9 +23,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences$OnSharedPreferenceChangeListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void SharedPreferences_OnSharedPreferenceChangeListenerDelegate(android.content.SharedPreferences arg0, java.lang.String arg1);
@@ -49,9 +46,6 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper

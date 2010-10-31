@@ -23,9 +23,6 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IBinder_DeathRecipient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder$DeathRecipient"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void IBinder_DeathRecipientDelegate();
@@ -49,9 +46,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.IBinder_DeathRecipientDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder_DeathRecipientDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class IBinder_DeathRecipientDelegateWrapper

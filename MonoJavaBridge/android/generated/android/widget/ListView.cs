@@ -67,9 +67,6 @@ namespace android.widget
 				global::android.widget.ListView.FixedViewInfo._data6076 = @__env.GetFieldIDNoThrow(global::android.widget.ListView.FixedViewInfo.staticClass, "data", "Ljava/lang/Object;");
 				global::android.widget.ListView.FixedViewInfo._isSelectable6077 = @__env.GetFieldIDNoThrow(global::android.widget.ListView.FixedViewInfo.staticClass, "isSelectable", "Z");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override void onRestoreInstanceState(android.os.Parcelable arg0)
@@ -515,9 +512,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.ListView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ListView"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -45,8 +45,5 @@ namespace java.nio
 			global::java.nio.ByteOrder._BIG_ENDIAN6490 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "BIG_ENDIAN", "Ljava/nio/ByteOrder;");
 			global::java.nio.ByteOrder._LITTLE_ENDIAN6491 = @__env.GetStaticFieldIDNoThrow(global::java.nio.ByteOrder.staticClass, "LITTLE_ENDIAN", "Ljava/nio/ByteOrder;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

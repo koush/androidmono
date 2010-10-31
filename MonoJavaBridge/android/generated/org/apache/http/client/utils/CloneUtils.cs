@@ -20,8 +20,5 @@ namespace org.apache.http.client.utils
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.utils.CloneUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/utils/CloneUtils"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

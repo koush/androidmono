@@ -122,8 +122,5 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.HttpConnectionMetricsImpl.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/HttpConnectionMetricsImpl"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

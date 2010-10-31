@@ -35,8 +35,5 @@ namespace java.lang
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Appendable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Appendable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

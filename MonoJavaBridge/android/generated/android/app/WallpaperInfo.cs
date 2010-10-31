@@ -140,8 +140,5 @@ namespace android.app
 			global::android.app.WallpaperInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/WallpaperInfo"));
 			global::android.app.WallpaperInfo._CREATOR1447 = @__env.GetStaticFieldIDNoThrow(global::android.app.WallpaperInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

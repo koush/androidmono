@@ -130,8 +130,5 @@ namespace org.apache.http.cookie
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.SetCookie2_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/SetCookie2"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

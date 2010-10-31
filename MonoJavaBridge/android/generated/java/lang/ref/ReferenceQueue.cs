@@ -36,8 +36,5 @@ namespace java.lang.@ref
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.@ref.ReferenceQueue.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ref/ReferenceQueue"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

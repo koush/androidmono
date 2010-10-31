@@ -70,8 +70,5 @@ namespace android.text.method
 			global::android.text.method.DateKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DateKeyListener"));
 			global::android.text.method.DateKeyListener._CHARACTERS5345 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DateKeyListener.staticClass, "CHARACTERS", "[C");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

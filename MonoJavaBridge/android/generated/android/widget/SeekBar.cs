@@ -42,9 +42,6 @@ namespace android.widget
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.SeekBar.OnSeekBarChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SeekBar$OnSeekBarChangeListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void setOnSeekBarChangeListener(android.widget.SeekBar.OnSeekBarChangeListener arg0)
@@ -82,9 +79,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.SeekBar.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SeekBar"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

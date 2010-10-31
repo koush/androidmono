@@ -154,9 +154,6 @@ namespace android.provider
 				global::android.provider.CallLog.Calls._CONTENT_URI4087 = @__env.GetStaticFieldIDNoThrow(global::android.provider.CallLog.Calls.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 				global::android.provider.CallLog.Calls._CONTENT_FILTER_URI4088 = @__env.GetStaticFieldIDNoThrow(global::android.provider.CallLog.Calls.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public CallLog() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -188,9 +185,6 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.CallLog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/CallLog"));
 			global::android.provider.CallLog._CONTENT_URI4104 = @__env.GetStaticFieldIDNoThrow(global::android.provider.CallLog.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

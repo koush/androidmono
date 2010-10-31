@@ -95,9 +95,6 @@ namespace android.widget
 				global::android.widget.RelativeLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout$LayoutParams"));
 				global::android.widget.RelativeLayout.LayoutParams._alignWithParent6084 = @__env.GetFieldIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "alignWithParent", "Z");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
@@ -349,9 +346,6 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.RelativeLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

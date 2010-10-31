@@ -33,9 +33,6 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.KeyAgreementSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/KeyAgreementSpi"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.KeyAgreementSpi))]
@@ -79,9 +76,6 @@ namespace javax.crypto
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.KeyAgreementSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/KeyAgreementSpi"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

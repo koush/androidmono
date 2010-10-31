@@ -93,8 +93,5 @@ namespace android.os
 			global::android.os.Messenger.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Messenger"));
 			global::android.os.Messenger._CREATOR4009 = @__env.GetStaticFieldIDNoThrow(global::android.os.Messenger.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

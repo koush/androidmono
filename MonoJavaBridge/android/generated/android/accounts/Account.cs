@@ -85,8 +85,5 @@ namespace android.accounts
 			global::android.accounts.Account._type1232 = @__env.GetFieldIDNoThrow(global::android.accounts.Account.staticClass, "type", "Ljava/lang/String;");
 			global::android.accounts.Account._CREATOR1233 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.Account.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

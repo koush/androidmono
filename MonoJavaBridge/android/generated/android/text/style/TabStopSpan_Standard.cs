@@ -33,8 +33,5 @@ namespace android.text.style
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.TabStopSpan_Standard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/TabStopSpan$Standard"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

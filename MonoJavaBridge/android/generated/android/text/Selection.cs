@@ -192,8 +192,5 @@ namespace android.text
 			global::android.text.Selection._SELECTION_START5228 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_START", "Ljava/lang/Object;");
 			global::android.text.Selection._SELECTION_END5229 = @__env.GetStaticFieldIDNoThrow(global::android.text.Selection.staticClass, "SELECTION_END", "Ljava/lang/Object;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

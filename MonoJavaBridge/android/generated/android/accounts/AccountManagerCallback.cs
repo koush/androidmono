@@ -23,9 +23,6 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerCallback"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void AccountManagerCallbackDelegate(android.accounts.AccountManagerFuture arg0);
@@ -49,9 +46,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.AccountManagerCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerCallbackDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class AccountManagerCallbackDelegateWrapper

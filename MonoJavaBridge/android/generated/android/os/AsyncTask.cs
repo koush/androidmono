@@ -65,9 +65,6 @@ namespace android.os
 				global::android.os.AsyncTask.Status._PENDING3887 = @__env.GetStaticFieldIDNoThrow(global::android.os.AsyncTask.Status.staticClass, "PENDING", "Landroid/os/AsyncTask$Status;");
 				global::android.os.AsyncTask.Status._RUNNING3888 = @__env.GetStaticFieldIDNoThrow(global::android.os.AsyncTask.Status.staticClass, "RUNNING", "Landroid/os/AsyncTask$Status;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual global::java.lang.Object get()
@@ -140,9 +137,6 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.AsyncTask.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/AsyncTask"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.AsyncTask))]
@@ -161,9 +155,6 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.AsyncTask_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/AsyncTask"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

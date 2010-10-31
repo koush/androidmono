@@ -21,8 +21,5 @@ namespace javax.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetEvent"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

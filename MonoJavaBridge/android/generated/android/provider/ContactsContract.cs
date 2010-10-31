@@ -85,9 +85,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.AggregationExceptions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$AggregationExceptions"));
 				global::android.provider.ContactsContract.AggregationExceptions._CONTENT_URI4302 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.AggregationExceptions.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.BaseSyncColumns_))]
 		protected partial interface BaseSyncColumns  : global::MonoJavaBridge.IJavaObject 
@@ -105,9 +102,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.BaseSyncColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$BaseSyncColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -166,9 +160,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.BaseTypes_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$BaseTypes"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public static partial class BaseTypesConstants 
@@ -197,9 +188,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.CommonColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$CommonColumns"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -338,9 +326,6 @@ namespace android.provider
 					global::android.provider.ContactsContract.CommonDataKinds.Email._CONTENT_LOOKUP_URI4322 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.CommonDataKinds.Email.staticClass, "CONTENT_LOOKUP_URI", "Landroid/net/Uri;");
 					global::android.provider.ContactsContract.CommonDataKinds.Email._CONTENT_FILTER_URI4323 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.CommonDataKinds.Email.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Event : java.lang.Object, DataColumnsWithJoins, CommonColumns
@@ -397,9 +382,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Event.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Event"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class GroupMembership : java.lang.Object, DataColumnsWithJoins
@@ -433,9 +415,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.GroupMembership.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$GroupMembership"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -602,9 +581,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Im.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Im"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Nickname : java.lang.Object, DataColumnsWithJoins, CommonColumns
@@ -667,9 +643,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Nickname.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Nickname"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Note : java.lang.Object, DataColumnsWithJoins
@@ -696,9 +669,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Note.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Note"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -802,9 +772,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Organization.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Organization"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1020,9 +987,6 @@ namespace android.provider
 					global::android.provider.ContactsContract.CommonDataKinds.Phone._CONTENT_URI4374 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.CommonDataKinds.Phone.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 					global::android.provider.ContactsContract.CommonDataKinds.Phone._CONTENT_FILTER_URI4375 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.CommonDataKinds.Phone.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Photo : java.lang.Object, DataColumnsWithJoins
@@ -1049,9 +1013,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Photo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Photo"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1178,9 +1139,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Relation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Relation"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class StructuredName : java.lang.Object, DataColumnsWithJoins
@@ -1263,9 +1221,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.StructuredName.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$StructuredName"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
@@ -1401,9 +1356,6 @@ namespace android.provider
 					global::android.provider.ContactsContract.CommonDataKinds.StructuredPostal.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$StructuredPostal"));
 					global::android.provider.ContactsContract.CommonDataKinds.StructuredPostal._CONTENT_URI4427 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.CommonDataKinds.StructuredPostal.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Website : java.lang.Object, DataColumnsWithJoins, CommonColumns
@@ -1480,17 +1432,11 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.CommonDataKinds.Website.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds$Website"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			static CommonDataKinds()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.CommonDataKinds.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$CommonDataKinds"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.ContactOptionsColumns_))]
@@ -1509,9 +1455,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.ContactOptionsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$ContactOptionsColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -1569,9 +1512,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.ContactStatusColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$ContactStatusColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -1646,9 +1586,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.Contacts.AggregationSuggestions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Contacts$AggregationSuggestions"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Data : java.lang.Object, BaseColumns, DataColumns
@@ -1669,9 +1606,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.Contacts.Data.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Contacts$Data"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Photo : java.lang.Object, BaseColumns, DataColumns
@@ -1691,9 +1625,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.Contacts.Photo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Contacts$Photo"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			private static global::MonoJavaBridge.MethodId _m0;
@@ -1832,9 +1763,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.Contacts._CONTENT_STREQUENT_FILTER_URI4467 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Contacts.staticClass, "CONTENT_STREQUENT_FILTER_URI", "Landroid/net/Uri;");
 				global::android.provider.ContactsContract.Contacts._CONTENT_GROUP_URI4468 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Contacts.staticClass, "CONTENT_GROUP_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.ContactsColumns_))]
 		protected partial interface ContactsColumns  : global::MonoJavaBridge.IJavaObject 
@@ -1852,9 +1780,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.ContactsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$ContactsColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -1933,9 +1858,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.Data.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Data"));
 				global::android.provider.ContactsContract.Data._CONTENT_URI4477 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Data.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.DataColumns_))]
 		protected partial interface DataColumns  : global::MonoJavaBridge.IJavaObject 
@@ -1953,9 +1875,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.DataColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$DataColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -2147,9 +2066,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.DataColumnsWithJoins_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$DataColumnsWithJoins"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Groups : java.lang.Object, BaseColumns, GroupsColumns, SyncColumns
@@ -2205,9 +2121,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.Groups._CONTENT_URI4503 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Groups.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 				global::android.provider.ContactsContract.Groups._CONTENT_SUMMARY_URI4504 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Groups.staticClass, "CONTENT_SUMMARY_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.GroupsColumns_))]
 		protected partial interface GroupsColumns  : global::MonoJavaBridge.IJavaObject 
@@ -2225,9 +2138,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.GroupsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$GroupsColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -2507,9 +2417,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.Intents.Insert.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Intents$Insert"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			private static global::MonoJavaBridge.MethodId _m0;
 			public Intents() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -2574,9 +2481,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.Intents.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Intents"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class PhoneLookup : java.lang.Object, BaseColumns, PhoneLookupColumns, ContactsColumns, ContactOptionsColumns
@@ -2600,9 +2504,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.PhoneLookup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$PhoneLookup"));
 				global::android.provider.ContactsContract.PhoneLookup._CONTENT_FILTER_URI4549 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.PhoneLookup.staticClass, "CONTENT_FILTER_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.PhoneLookupColumns_))]
 		protected partial interface PhoneLookupColumns  : global::MonoJavaBridge.IJavaObject 
@@ -2620,9 +2521,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.PhoneLookupColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$PhoneLookupColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -2671,9 +2569,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.Presence.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Presence"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.PresenceColumns_))]
 		protected partial interface PresenceColumns  : global::MonoJavaBridge.IJavaObject 
@@ -2691,9 +2586,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.PresenceColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$PresenceColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -2793,9 +2685,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.QuickContact.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$QuickContact"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class RawContacts : java.lang.Object, BaseColumns, RawContactsColumns, ContactOptionsColumns, SyncColumns
@@ -2823,9 +2712,6 @@ namespace android.provider
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.RawContacts.Data.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$RawContacts$Data"));
 				}
-				internal static void InitJNI()
-				{
-				}
 			}
 			[global::MonoJavaBridge.JavaClass()]
 			public sealed partial class Entity : java.lang.Object, BaseColumns, DataColumns
@@ -2852,9 +2738,6 @@ namespace android.provider
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::android.provider.ContactsContract.RawContacts.Entity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$RawContacts$Entity"));
-				}
-				internal static void InitJNI()
-				{
 				}
 			}
 			private static global::MonoJavaBridge.MethodId _m0;
@@ -2930,9 +2813,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.RawContacts.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$RawContacts"));
 				global::android.provider.ContactsContract.RawContacts._CONTENT_URI4564 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.RawContacts.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.RawContactsColumns_))]
 		protected partial interface RawContactsColumns  : global::MonoJavaBridge.IJavaObject 
@@ -2950,9 +2830,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.RawContactsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$RawContactsColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -3016,9 +2893,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.RawContactsEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$RawContactsEntity"));
 				global::android.provider.ContactsContract.RawContactsEntity._CONTENT_URI4574 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.RawContactsEntity.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Settings : java.lang.Object, SettingsColumns
@@ -3056,9 +2930,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.Settings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$Settings"));
 				global::android.provider.ContactsContract.Settings._CONTENT_URI4577 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.Settings.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.SettingsColumns_))]
 		protected partial interface SettingsColumns  : global::MonoJavaBridge.IJavaObject 
@@ -3076,9 +2947,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.SettingsColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$SettingsColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -3150,9 +3018,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.StatusColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$StatusColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -3309,9 +3174,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.StatusUpdates.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$StatusUpdates"));
 				global::android.provider.ContactsContract.StatusUpdates._CONTENT_URI4601 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.StatusUpdates.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.SyncColumns_))]
 		protected partial interface SyncColumns : BaseSyncColumns
@@ -3329,9 +3191,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.ContactsContract.SyncColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$SyncColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -3434,9 +3293,6 @@ namespace android.provider
 				global::android.provider.ContactsContract.SyncState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract$SyncState"));
 				global::android.provider.ContactsContract.SyncState._CONTENT_URI4610 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.SyncState.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public ContactsContract() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -3475,9 +3331,6 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.ContactsContract.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/ContactsContract"));
 			global::android.provider.ContactsContract._AUTHORITY_URI4612 = @__env.GetStaticFieldIDNoThrow(global::android.provider.ContactsContract.staticClass, "AUTHORITY_URI", "Landroid/net/Uri;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

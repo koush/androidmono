@@ -30,9 +30,6 @@ namespace android.view
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.Factory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater$Factory"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate android.view.View FactoryDelegate(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2);
@@ -56,9 +53,6 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.FactoryDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater_FactoryDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class FactoryDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.view
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater$Filter"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool FilterDelegate(java.lang.Class arg0);
@@ -125,9 +116,6 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.LayoutInflater.FilterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater_FilterDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class FilterDelegateWrapper
@@ -241,9 +229,6 @@ namespace android.view
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.LayoutInflater.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.LayoutInflater))]
@@ -262,9 +247,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.LayoutInflater_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/LayoutInflater"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

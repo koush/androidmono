@@ -26,8 +26,5 @@ namespace org.apache.http.impl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.NoConnectionReuseStrategy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/NoConnectionReuseStrategy"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

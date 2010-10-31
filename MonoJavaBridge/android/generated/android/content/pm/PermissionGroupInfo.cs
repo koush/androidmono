@@ -86,8 +86,5 @@ namespace android.content.pm
 			global::android.content.pm.PermissionGroupInfo._nonLocalizedDescription2092 = @__env.GetFieldIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "nonLocalizedDescription", "Ljava/lang/CharSequence;");
 			global::android.content.pm.PermissionGroupInfo._CREATOR2093 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -410,8 +410,5 @@ namespace android.content.pm
 			global::android.content.pm.ActivityInfo._softInputMode1946 = @__env.GetFieldIDNoThrow(global::android.content.pm.ActivityInfo.staticClass, "softInputMode", "I");
 			global::android.content.pm.ActivityInfo._CREATOR1947 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ActivityInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

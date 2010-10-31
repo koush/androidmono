@@ -33,9 +33,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.LauncherActivity.IconResizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity$IconResizer"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class ListItem : java.lang.Object
@@ -136,9 +133,6 @@ namespace android.app
 				global::android.app.LauncherActivity.ListItem._className1358 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "className", "Ljava/lang/String;");
 				global::android.app.LauncherActivity.ListItem._extras1359 = @__env.GetFieldIDNoThrow(global::android.app.LauncherActivity.ListItem.staticClass, "extras", "Landroid/os/Bundle;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void onCreate(android.os.Bundle arg0)
@@ -194,9 +188,6 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LauncherActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.app.LauncherActivity))]
@@ -210,9 +201,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.LauncherActivity_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/LauncherActivity"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

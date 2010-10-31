@@ -75,8 +75,5 @@ namespace android.text.method
 			global::android.text.method.DialerKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DialerKeyListener"));
 			global::android.text.method.DialerKeyListener._CHARACTERS5347 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "CHARACTERS", "[C");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

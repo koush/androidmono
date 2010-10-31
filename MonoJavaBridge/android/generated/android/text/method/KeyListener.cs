@@ -47,8 +47,5 @@ namespace android.text.method
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.KeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/KeyListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

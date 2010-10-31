@@ -224,8 +224,5 @@ namespace android.location
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.location.LocationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationManager"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

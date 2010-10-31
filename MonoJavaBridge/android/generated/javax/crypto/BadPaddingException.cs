@@ -30,8 +30,5 @@ namespace javax.crypto
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.BadPaddingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/BadPaddingException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

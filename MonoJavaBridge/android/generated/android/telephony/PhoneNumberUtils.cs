@@ -317,8 +317,5 @@ namespace android.telephony
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.PhoneNumberUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/PhoneNumberUtils"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

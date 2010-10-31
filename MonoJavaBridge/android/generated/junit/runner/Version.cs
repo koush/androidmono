@@ -20,8 +20,5 @@ namespace junit.runner
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.runner.Version.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/runner/Version"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -85,9 +85,6 @@ namespace android.telephony.gsm
 				global::android.telephony.gsm.SmsMessage.MessageClass._CLASS_35171 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "CLASS_3", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 				global::android.telephony.gsm.SmsMessage.MessageClass._UNKNOWN5172 = @__env.GetStaticFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.MessageClass.staticClass, "UNKNOWN", "Landroid/telephony/gsm/SmsMessage$MessageClass;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SubmitPdu : java.lang.Object
@@ -140,9 +137,6 @@ namespace android.telephony.gsm
 				global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage$SubmitPdu"));
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedScAddress5173 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedScAddress", "[B");
 				global::android.telephony.gsm.SmsMessage.SubmitPdu._encodedMessage5174 = @__env.GetFieldIDNoThrow(global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, "encodedMessage", "[B");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		public new byte[] UserData
@@ -484,9 +478,6 @@ namespace android.telephony.gsm
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.gsm.SmsMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/gsm/SmsMessage"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

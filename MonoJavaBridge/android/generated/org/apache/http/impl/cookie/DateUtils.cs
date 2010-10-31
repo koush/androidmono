@@ -83,8 +83,5 @@ namespace org.apache.http.impl.cookie
 			global::org.apache.http.impl.cookie.DateUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/cookie/DateUtils"));
 			global::org.apache.http.impl.cookie.DateUtils._GMT7507 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.impl.cookie.DateUtils.staticClass, "GMT", "Ljava/util/TimeZone;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -153,8 +153,5 @@ namespace android.gesture
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureStore.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureStore"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

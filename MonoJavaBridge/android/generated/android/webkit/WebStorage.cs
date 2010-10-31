@@ -30,9 +30,6 @@ namespace android.webkit
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebStorage.QuotaUpdater_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage$QuotaUpdater"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void QuotaUpdaterDelegate(long arg0);
@@ -56,9 +53,6 @@ namespace android.webkit
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage_QuotaUpdaterDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class QuotaUpdaterDelegateWrapper
@@ -146,9 +140,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebStorage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebStorage"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

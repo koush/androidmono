@@ -41,8 +41,5 @@ namespace java.security.cert
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.X509Extension_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509Extension"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

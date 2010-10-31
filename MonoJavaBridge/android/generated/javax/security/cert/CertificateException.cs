@@ -30,8 +30,5 @@ namespace javax.security.cert
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.cert.CertificateException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/cert/CertificateException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -119,9 +119,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.anim.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$anim"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class array : java.lang.Object
@@ -178,9 +175,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.array.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$array"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -5111,9 +5105,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.attr.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$attr"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class @bool : java.lang.Object
@@ -5135,9 +5126,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.@bool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$bool"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -5287,9 +5275,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.color.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$color"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class dimen : java.lang.Object
@@ -5332,9 +5317,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.dimen.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$dimen"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -6520,9 +6502,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.drawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$drawable"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class id : java.lang.Object
@@ -6853,9 +6832,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.id.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$id"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class integer : java.lang.Object
@@ -6898,9 +6874,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.integer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$integer"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -7064,9 +7037,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.layout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$layout"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class plurals : java.lang.Object
@@ -7089,9 +7059,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.plurals.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$plurals"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class raw : java.lang.Object
@@ -7113,9 +7080,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.raw.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$raw"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -7292,9 +7256,6 @@ namespace android
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.@string.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$string"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -8004,9 +7965,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.style.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$style"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class xml : java.lang.Object
@@ -8029,9 +7987,6 @@ namespace android
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.R.xml.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$xml"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public R() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -8046,9 +8001,6 @@ namespace android
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.R.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

@@ -81,8 +81,5 @@ namespace org.apache.http.client.protocol
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.protocol.ClientContextConfigurer.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/protocol/ClientContextConfigurer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

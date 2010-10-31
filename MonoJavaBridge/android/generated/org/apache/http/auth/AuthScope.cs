@@ -163,8 +163,5 @@ namespace org.apache.http.auth
 			global::org.apache.http.auth.AuthScope._ANY_SCHEME7412 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "ANY_SCHEME", "Ljava/lang/String;");
 			global::org.apache.http.auth.AuthScope._ANY7413 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.auth.AuthScope.staticClass, "ANY", "Lorg/apache/http/auth/AuthScope;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

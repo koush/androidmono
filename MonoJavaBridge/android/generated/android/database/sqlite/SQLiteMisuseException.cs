@@ -30,8 +30,5 @@ namespace android.database.sqlite
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteMisuseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteMisuseException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

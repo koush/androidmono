@@ -55,9 +55,6 @@ namespace android.graphics
 				global::android.graphics.Bitmap.CompressFormat._JPEG2237 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.CompressFormat.staticClass, "JPEG", "Landroid/graphics/Bitmap$CompressFormat;");
 				global::android.graphics.Bitmap.CompressFormat._PNG2238 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.CompressFormat.staticClass, "PNG", "Landroid/graphics/Bitmap$CompressFormat;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Config : java.lang.Enum
@@ -126,9 +123,6 @@ namespace android.graphics
 				global::android.graphics.Bitmap.Config._ARGB_44442240 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.Config.staticClass, "ARGB_4444", "Landroid/graphics/Bitmap$Config;");
 				global::android.graphics.Bitmap.Config._ARGB_88882241 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.Config.staticClass, "ARGB_8888", "Landroid/graphics/Bitmap$Config;");
 				global::android.graphics.Bitmap.Config._RGB_5652242 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.Config.staticClass, "RGB_565", "Landroid/graphics/Bitmap$Config;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -402,9 +396,6 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Bitmap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Bitmap"));
 			global::android.graphics.Bitmap._CREATOR2244 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Bitmap.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

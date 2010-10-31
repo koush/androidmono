@@ -55,9 +55,6 @@ namespace android.graphics
 				global::android.graphics.Canvas.EdgeType._AA2264 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.EdgeType.staticClass, "AA", "Landroid/graphics/Canvas$EdgeType;");
 				global::android.graphics.Canvas.EdgeType._BW2265 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.EdgeType.staticClass, "BW", "Landroid/graphics/Canvas$EdgeType;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class VertexMode : java.lang.Enum
@@ -116,9 +113,6 @@ namespace android.graphics
 				global::android.graphics.Canvas.VertexMode._TRIANGLES2266 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLES", "Landroid/graphics/Canvas$VertexMode;");
 				global::android.graphics.Canvas.VertexMode._TRIANGLE_FAN2267 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLE_FAN", "Landroid/graphics/Canvas$VertexMode;");
 				global::android.graphics.Canvas.VertexMode._TRIANGLE_STRIP2268 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Canvas.VertexMode.staticClass, "TRIANGLE_STRIP", "Landroid/graphics/Canvas$VertexMode;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -701,9 +695,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Canvas.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Canvas"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

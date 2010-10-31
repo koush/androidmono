@@ -31,8 +31,5 @@ namespace org.apache.http.cookie
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.CookiePathComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/CookiePathComparator"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

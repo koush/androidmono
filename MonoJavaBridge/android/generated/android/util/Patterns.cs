@@ -109,8 +109,5 @@ namespace android.util
 			global::android.util.Patterns._EMAIL_ADDRESS5409 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "EMAIL_ADDRESS", "Ljava/util/regex/Pattern;");
 			global::android.util.Patterns._PHONE5410 = @__env.GetStaticFieldIDNoThrow(global::android.util.Patterns.staticClass, "PHONE", "Ljava/util/regex/Pattern;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

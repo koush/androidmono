@@ -100,9 +100,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.Instrumentation.ActivityMonitor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation$ActivityMonitor"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class ActivityResult : java.lang.Object
@@ -148,9 +145,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.Instrumentation.ActivityResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation$ActivityResult"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -522,9 +516,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.Instrumentation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Instrumentation"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

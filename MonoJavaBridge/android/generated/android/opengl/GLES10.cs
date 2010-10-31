@@ -2664,8 +2664,5 @@ namespace android.opengl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES10.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES10"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

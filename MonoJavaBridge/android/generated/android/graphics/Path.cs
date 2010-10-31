@@ -55,9 +55,6 @@ namespace android.graphics
 				global::android.graphics.Path.Direction._CCW2340 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.Direction.staticClass, "CCW", "Landroid/graphics/Path$Direction;");
 				global::android.graphics.Path.Direction._CW2341 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.Direction.staticClass, "CW", "Landroid/graphics/Path$Direction;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class FillType : java.lang.Enum
@@ -126,9 +123,6 @@ namespace android.graphics
 				global::android.graphics.Path.FillType._INVERSE_EVEN_ODD2343 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "INVERSE_EVEN_ODD", "Landroid/graphics/Path$FillType;");
 				global::android.graphics.Path.FillType._INVERSE_WINDING2344 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "INVERSE_WINDING", "Landroid/graphics/Path$FillType;");
 				global::android.graphics.Path.FillType._WINDING2345 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Path.FillType.staticClass, "WINDING", "Landroid/graphics/Path$FillType;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -343,9 +337,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Path.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Path"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

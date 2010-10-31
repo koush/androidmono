@@ -43,8 +43,5 @@ namespace java.io
 			global::java.io.InterruptedIOException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InterruptedIOException"));
 			global::java.io.InterruptedIOException._bytesTransferred6382 = @__env.GetFieldIDNoThrow(global::java.io.InterruptedIOException.staticClass, "bytesTransferred", "I");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

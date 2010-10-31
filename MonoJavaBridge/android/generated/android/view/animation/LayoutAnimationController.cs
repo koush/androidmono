@@ -54,9 +54,6 @@ namespace android.view.animation
 				global::android.view.animation.LayoutAnimationController.AnimationParameters._count5901 = @__env.GetFieldIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "count", "I");
 				global::android.view.animation.LayoutAnimationController.AnimationParameters._index5902 = @__env.GetFieldIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "index", "I");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual void start()
@@ -238,9 +235,6 @@ namespace android.view.animation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.LayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LayoutAnimationController"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

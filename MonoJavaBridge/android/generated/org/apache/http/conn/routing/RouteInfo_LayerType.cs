@@ -48,8 +48,5 @@ namespace org.apache.http.conn.routing
 			global::org.apache.http.conn.routing.RouteInfo_LayerType._LAYERED7470 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "LAYERED", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
 			global::org.apache.http.conn.routing.RouteInfo_LayerType._PLAIN7471 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "PLAIN", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

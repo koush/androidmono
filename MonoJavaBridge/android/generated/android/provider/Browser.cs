@@ -77,9 +77,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Browser.BookmarkColumns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Browser$BookmarkColumns"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SearchColumns : java.lang.Object, BaseColumns
@@ -122,9 +119,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Browser.SearchColumns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Browser$SearchColumns"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -396,9 +390,6 @@ namespace android.provider
 			global::android.provider.Browser._TRUNCATE_HISTORY_PROJECTION4080 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "TRUNCATE_HISTORY_PROJECTION", "[Ljava/lang/String;");
 			global::android.provider.Browser._SEARCHES_URI4083 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "SEARCHES_URI", "Landroid/net/Uri;");
 			global::android.provider.Browser._SEARCHES_PROJECTION4084 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Browser.staticClass, "SEARCHES_PROJECTION", "[Ljava/lang/String;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

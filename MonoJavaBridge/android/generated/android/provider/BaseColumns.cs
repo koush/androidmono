@@ -17,8 +17,5 @@ namespace android.provider
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.BaseColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/BaseColumns"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

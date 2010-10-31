@@ -86,8 +86,5 @@ namespace android.content
 			global::android.content.PeriodicSync._period1874 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "period", "J");
 			global::android.content.PeriodicSync._CREATOR1875 = @__env.GetStaticFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

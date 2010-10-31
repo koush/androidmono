@@ -36,8 +36,5 @@ namespace org.apache.http.impl.client
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.RedirectLocations.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/RedirectLocations"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

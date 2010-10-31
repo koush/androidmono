@@ -29,8 +29,5 @@ namespace javax.security.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Destroyable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Destroyable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

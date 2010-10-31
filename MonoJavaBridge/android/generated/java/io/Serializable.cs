@@ -17,8 +17,5 @@ namespace java.io
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Serializable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Serializable"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -36,9 +36,6 @@ namespace android.database
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.ContentObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/ContentObserver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.ContentObserver))]
@@ -52,9 +49,6 @@ namespace android.database
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.ContentObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/ContentObserver"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

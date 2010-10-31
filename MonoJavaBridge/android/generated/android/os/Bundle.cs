@@ -484,8 +484,5 @@ namespace android.os
 			global::android.os.Bundle._EMPTY3946 = @__env.GetStaticFieldIDNoThrow(global::android.os.Bundle.staticClass, "EMPTY", "Landroid/os/Bundle;");
 			global::android.os.Bundle._CREATOR3947 = @__env.GetStaticFieldIDNoThrow(global::android.os.Bundle.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

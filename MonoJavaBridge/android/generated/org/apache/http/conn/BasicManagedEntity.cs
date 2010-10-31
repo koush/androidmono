@@ -78,8 +78,5 @@ namespace org.apache.http.conn
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.BasicManagedEntity.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/BasicManagedEntity"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,8 +30,5 @@ namespace android.database
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.SQLException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/SQLException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

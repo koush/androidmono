@@ -197,8 +197,5 @@ namespace android.content
 			global::android.content.SyncResult._ALREADY_IN_PROGRESS1894 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncResult.staticClass, "ALREADY_IN_PROGRESS", "Landroid/content/SyncResult;");
 			global::android.content.SyncResult._CREATOR1895 = @__env.GetStaticFieldIDNoThrow(global::android.content.SyncResult.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

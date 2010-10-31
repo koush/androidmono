@@ -36,8 +36,5 @@ namespace android.graphics.drawable.shapes
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.drawable.shapes.PathShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/PathShape"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

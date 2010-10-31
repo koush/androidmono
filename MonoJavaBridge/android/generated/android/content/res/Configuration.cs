@@ -597,8 +597,5 @@ namespace android.content.res
 			global::android.content.res.Configuration._uiMode2192 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "uiMode", "I");
 			global::android.content.res.Configuration._CREATOR2193 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

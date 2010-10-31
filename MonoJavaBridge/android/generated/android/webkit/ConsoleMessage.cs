@@ -85,9 +85,6 @@ namespace android.webkit
 				global::android.webkit.ConsoleMessage.MessageLevel._TIP5972 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "TIP", "Landroid/webkit/ConsoleMessage$MessageLevel;");
 				global::android.webkit.ConsoleMessage.MessageLevel._WARNING5973 = @__env.GetStaticFieldIDNoThrow(global::android.webkit.ConsoleMessage.MessageLevel.staticClass, "WARNING", "Landroid/webkit/ConsoleMessage$MessageLevel;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public virtual int lineNumber()
@@ -122,9 +119,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.ConsoleMessage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/ConsoleMessage"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

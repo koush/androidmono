@@ -130,8 +130,5 @@ namespace java.lang
 			global::java.lang.Boolean._FALSE6384 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "FALSE", "Ljava/lang/Boolean;");
 			global::java.lang.Boolean._TYPE6385 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TYPE", "Ljava/lang/Class;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

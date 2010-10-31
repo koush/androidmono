@@ -74,8 +74,5 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/Proxy"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

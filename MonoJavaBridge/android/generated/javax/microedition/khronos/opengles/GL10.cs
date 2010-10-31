@@ -755,8 +755,5 @@ namespace javax.microedition.khronos.opengles
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.opengles.GL10_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/opengles/GL10"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

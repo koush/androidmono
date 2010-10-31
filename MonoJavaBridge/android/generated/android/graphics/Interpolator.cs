@@ -65,9 +65,6 @@ namespace android.graphics
 				global::android.graphics.Interpolator.Result._FREEZE_START2294 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Interpolator.Result.staticClass, "FREEZE_START", "Landroid/graphics/Interpolator$Result;");
 				global::android.graphics.Interpolator.Result._NORMAL2295 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.Interpolator.Result.staticClass, "NORMAL", "Landroid/graphics/Interpolator$Result;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
@@ -155,9 +152,6 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Interpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Interpolator"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

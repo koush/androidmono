@@ -71,8 +71,5 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ImageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ImageFormat"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

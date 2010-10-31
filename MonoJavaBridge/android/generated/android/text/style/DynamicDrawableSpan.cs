@@ -69,9 +69,6 @@ namespace android.text.style
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.DynamicDrawableSpan))]
@@ -90,9 +87,6 @@ namespace android.text.style
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.DynamicDrawableSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/DynamicDrawableSpan"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

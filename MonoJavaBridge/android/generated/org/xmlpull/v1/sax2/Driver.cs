@@ -269,8 +269,5 @@ namespace org.xmlpull.v1.sax2
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xmlpull.v1.sax2.Driver.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/sax2/Driver"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -318,8 +318,5 @@ namespace android.content.res
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.XmlResourceParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/XmlResourceParser"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

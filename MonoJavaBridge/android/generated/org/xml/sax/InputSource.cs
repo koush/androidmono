@@ -153,8 +153,5 @@ namespace org.xml.sax
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.InputSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/InputSource"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

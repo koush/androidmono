@@ -91,8 +91,5 @@ namespace org.apache.http.message
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.message.BufferedHeader.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/message/BufferedHeader"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

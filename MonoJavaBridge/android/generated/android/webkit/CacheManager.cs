@@ -202,9 +202,6 @@ namespace android.webkit
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.CacheManager.CacheResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager$CacheResult"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public static global::java.io.File CacheFileBaseDir
 		{
@@ -274,9 +271,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CacheManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

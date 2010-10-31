@@ -89,8 +89,5 @@ namespace android.content.res
 			global::android.content.res.ColorStateList.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/ColorStateList"));
 			global::android.content.res.ColorStateList._CREATOR2135 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.ColorStateList.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

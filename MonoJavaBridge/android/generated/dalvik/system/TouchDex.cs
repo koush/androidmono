@@ -37,8 +37,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.TouchDex.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/TouchDex"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

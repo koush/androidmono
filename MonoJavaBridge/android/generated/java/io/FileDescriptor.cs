@@ -61,8 +61,5 @@ namespace java.io
 			global::java.io.FileDescriptor._out6380 = @__env.GetStaticFieldIDNoThrow(global::java.io.FileDescriptor.staticClass, "@out", "Ljava/io/FileDescriptor;");
 			global::java.io.FileDescriptor._err6381 = @__env.GetStaticFieldIDNoThrow(global::java.io.FileDescriptor.staticClass, "err", "Ljava/io/FileDescriptor;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

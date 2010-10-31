@@ -57,9 +57,6 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$AuthAlgorithm"));
 				global::android.net.wifi.WifiConfiguration.AuthAlgorithm._strings3045 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass, "strings", "[Ljava/lang/String;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class GroupCipher : java.lang.Object
@@ -117,9 +114,6 @@ namespace android.net.wifi
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$GroupCipher"));
 				global::android.net.wifi.WifiConfiguration.GroupCipher._strings3051 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass, "strings", "[Ljava/lang/String;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -179,9 +173,6 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$KeyMgmt"));
 				global::android.net.wifi.WifiConfiguration.KeyMgmt._strings3057 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass, "strings", "[Ljava/lang/String;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class PairwiseCipher : java.lang.Object
@@ -233,9 +224,6 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$PairwiseCipher"));
 				global::android.net.wifi.WifiConfiguration.PairwiseCipher._strings3062 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass, "strings", "[Ljava/lang/String;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Protocol : java.lang.Object
@@ -280,9 +268,6 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiConfiguration.Protocol.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Protocol"));
 				global::android.net.wifi.WifiConfiguration.Protocol._strings3066 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Protocol.staticClass, "strings", "[Ljava/lang/String;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class Status : java.lang.Object
@@ -326,9 +311,6 @@ namespace android.net.wifi
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.Status.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Status"));
 				global::android.net.wifi.WifiConfiguration.Status._strings3070 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Status.staticClass, "strings", "[Ljava/lang/String;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -541,9 +523,6 @@ namespace android.net.wifi
 			global::android.net.wifi.WifiConfiguration._allowedAuthAlgorithms3082 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedAuthAlgorithms", "Ljava/util/BitSet;");
 			global::android.net.wifi.WifiConfiguration._allowedPairwiseCiphers3083 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedPairwiseCiphers", "Ljava/util/BitSet;");
 			global::android.net.wifi.WifiConfiguration._allowedGroupCiphers3084 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedGroupCiphers", "Ljava/util/BitSet;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

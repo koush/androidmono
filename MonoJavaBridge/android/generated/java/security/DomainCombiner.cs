@@ -23,8 +23,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.DomainCombiner_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/DomainCombiner"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

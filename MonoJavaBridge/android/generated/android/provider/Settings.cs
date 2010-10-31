@@ -58,9 +58,6 @@ namespace android.provider
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.NameValueTable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$NameValueTable"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class Secure : android.provider.Settings.NameValueTable
@@ -576,9 +573,6 @@ namespace android.provider
 				global::android.provider.Settings.Secure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$Secure"));
 				global::android.provider.Settings.Secure._CONTENT_URI4796 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.Secure.staticClass, "CONTENT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public partial class SettingNotFoundException : android.util.AndroidException
@@ -600,9 +594,6 @@ namespace android.provider
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.provider.Settings.SettingNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$SettingNotFoundException"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -1504,9 +1495,6 @@ namespace android.provider
 				global::android.provider.Settings.System._DEFAULT_NOTIFICATION_URI4901 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.System.staticClass, "DEFAULT_NOTIFICATION_URI", "Landroid/net/Uri;");
 				global::android.provider.Settings.System._DEFAULT_ALARM_ALERT_URI4903 = @__env.GetStaticFieldIDNoThrow(global::android.provider.Settings.System.staticClass, "DEFAULT_ALARM_ALERT_URI", "Landroid/net/Uri;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public Settings() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
@@ -1738,9 +1726,6 @@ namespace android.provider
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.provider.Settings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

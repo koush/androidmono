@@ -168,8 +168,5 @@ namespace android.app.admin
 			global::android.app.admin.DeviceAdminInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DeviceAdminInfo"));
 			global::android.app.admin.DeviceAdminInfo._CREATOR1456 = @__env.GetStaticFieldIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

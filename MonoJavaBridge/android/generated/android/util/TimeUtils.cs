@@ -44,8 +44,5 @@ namespace android.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.TimeUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/TimeUtils"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

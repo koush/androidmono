@@ -56,8 +56,5 @@ namespace android.accounts
 			global::android.accounts.AccountAuthenticatorResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountAuthenticatorResponse"));
 			global::android.accounts.AccountAuthenticatorResponse._CREATOR1234 = @__env.GetStaticFieldIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

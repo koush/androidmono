@@ -30,9 +30,6 @@ namespace android.preference
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityDestroyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityDestroyListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnActivityDestroyListenerDelegate();
@@ -56,9 +53,6 @@ namespace android.preference
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityDestroyListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityDestroyListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnActivityDestroyListenerDelegateWrapper
@@ -99,9 +93,6 @@ namespace android.preference
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityResultListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityResultListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate bool OnActivityResultListenerDelegate(int arg0, int arg1, android.content.Intent arg2);
@@ -125,9 +116,6 @@ namespace android.preference
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityResultListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityResultListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnActivityResultListenerDelegateWrapper
@@ -168,9 +156,6 @@ namespace android.preference
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityStopListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager$OnActivityStopListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnActivityStopListenerDelegate();
@@ -194,9 +179,6 @@ namespace android.preference
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.preference.PreferenceManager.OnActivityStopListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager_OnActivityStopListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnActivityStopListenerDelegateWrapper
@@ -324,9 +306,6 @@ namespace android.preference
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.preference.PreferenceManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/PreferenceManager"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

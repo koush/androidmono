@@ -23,8 +23,5 @@ namespace com.android.@internal.util
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::com.android.@internal.util.Predicate_.staticClass = @__env.NewGlobalRef(@__env.FindClass("com/android/internal/util/Predicate"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

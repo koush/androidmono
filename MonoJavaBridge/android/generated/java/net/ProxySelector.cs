@@ -41,9 +41,6 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ProxySelector.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ProxySelector"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.ProxySelector))]
@@ -67,9 +64,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ProxySelector_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ProxySelector"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

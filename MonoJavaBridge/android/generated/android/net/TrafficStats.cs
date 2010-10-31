@@ -164,8 +164,5 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.TrafficStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/TrafficStats"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

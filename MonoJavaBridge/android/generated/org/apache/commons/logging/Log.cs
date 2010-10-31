@@ -125,8 +125,5 @@ namespace org.apache.commons.logging
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.commons.logging.Log_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/commons/logging/Log"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

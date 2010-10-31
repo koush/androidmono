@@ -77,8 +77,5 @@ namespace android.content.pm
 			global::android.content.pm.ServiceInfo._permission2126 = @__env.GetFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "permission", "Ljava/lang/String;");
 			global::android.content.pm.ServiceInfo._CREATOR2127 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.ServiceInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

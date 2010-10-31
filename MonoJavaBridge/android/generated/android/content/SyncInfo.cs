@@ -42,8 +42,5 @@ namespace android.content
 			global::android.content.SyncInfo._authority1883 = @__env.GetFieldIDNoThrow(global::android.content.SyncInfo.staticClass, "authority", "Ljava/lang/String;");
 			global::android.content.SyncInfo._startTime1884 = @__env.GetFieldIDNoThrow(global::android.content.SyncInfo.staticClass, "startTime", "J");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

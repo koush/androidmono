@@ -133,8 +133,5 @@ namespace android.content.pm
 			global::android.content.pm.InstrumentationInfo._functionalTest2009 = @__env.GetFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "functionalTest", "Z");
 			global::android.content.pm.InstrumentationInfo._CREATOR2010 = @__env.GetStaticFieldIDNoThrow(global::android.content.pm.InstrumentationInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

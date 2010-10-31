@@ -263,8 +263,5 @@ namespace android.graphics
 			global::android.graphics.RectF._bottom2399 = @__env.GetFieldIDNoThrow(global::android.graphics.RectF.staticClass, "bottom", "F");
 			global::android.graphics.RectF._CREATOR2400 = @__env.GetStaticFieldIDNoThrow(global::android.graphics.RectF.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

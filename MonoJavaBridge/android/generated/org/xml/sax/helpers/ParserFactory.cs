@@ -28,8 +28,5 @@ namespace org.xml.sax.helpers
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.ParserFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/ParserFactory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -51,8 +51,5 @@ namespace android.os
 			global::android.os.ResultReceiver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ResultReceiver"));
 			global::android.os.ResultReceiver._CREATOR4051 = @__env.GetStaticFieldIDNoThrow(global::android.os.ResultReceiver.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

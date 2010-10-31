@@ -65,9 +65,6 @@ namespace android.net
 				global::android.net.LocalSocketAddress.Namespace._FILESYSTEM2971 = @__env.GetStaticFieldIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "FILESYSTEM", "Landroid/net/LocalSocketAddress$Namespace;");
 				global::android.net.LocalSocketAddress.Namespace._RESERVED2972 = @__env.GetStaticFieldIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "RESERVED", "Landroid/net/LocalSocketAddress$Namespace;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		public new global::java.lang.String Name
 		{
@@ -108,9 +105,6 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.LocalSocketAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/LocalSocketAddress"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

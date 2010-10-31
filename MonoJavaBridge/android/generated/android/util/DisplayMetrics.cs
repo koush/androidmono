@@ -162,8 +162,5 @@ namespace android.util
 			global::android.util.DisplayMetrics._xdpi5390 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "xdpi", "F");
 			global::android.util.DisplayMetrics._ydpi5391 = @__env.GetFieldIDNoThrow(global::android.util.DisplayMetrics.staticClass, "ydpi", "F");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

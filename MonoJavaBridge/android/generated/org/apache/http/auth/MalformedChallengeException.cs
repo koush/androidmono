@@ -39,8 +39,5 @@ namespace org.apache.http.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.auth.MalformedChallengeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/MalformedChallengeException"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

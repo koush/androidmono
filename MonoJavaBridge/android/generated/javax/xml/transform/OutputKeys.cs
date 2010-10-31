@@ -82,8 +82,5 @@ namespace javax.xml.transform
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.OutputKeys.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/OutputKeys"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

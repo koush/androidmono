@@ -53,8 +53,5 @@ namespace org.w3c.dom.ls
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.ls.LSSerializer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSSerializer"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

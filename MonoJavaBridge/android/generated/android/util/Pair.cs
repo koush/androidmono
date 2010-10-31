@@ -59,8 +59,5 @@ namespace android.util
 			global::android.util.Pair._first5400 = @__env.GetFieldIDNoThrow(global::android.util.Pair.staticClass, "first", "Ljava/lang/Object;");
 			global::android.util.Pair._second5401 = @__env.GetFieldIDNoThrow(global::android.util.Pair.staticClass, "second", "Ljava/lang/Object;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

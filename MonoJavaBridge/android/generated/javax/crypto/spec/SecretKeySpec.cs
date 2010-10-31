@@ -76,8 +76,5 @@ namespace javax.crypto.spec
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.SecretKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/SecretKeySpec"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

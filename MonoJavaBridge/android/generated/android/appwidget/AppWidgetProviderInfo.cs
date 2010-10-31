@@ -159,8 +159,5 @@ namespace android.appwidget
 			global::android.appwidget.AppWidgetProviderInfo._icon1494 = @__env.GetFieldIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "icon", "I");
 			global::android.appwidget.AppWidgetProviderInfo._CREATOR1495 = @__env.GetStaticFieldIDNoThrow(global::android.appwidget.AppWidgetProviderInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

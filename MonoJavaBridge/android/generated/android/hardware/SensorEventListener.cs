@@ -29,8 +29,5 @@ namespace android.hardware
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.SensorEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorEventListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

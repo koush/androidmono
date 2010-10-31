@@ -37,8 +37,5 @@ namespace dalvik.system
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.system.TemporaryDirectory.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/system/TemporaryDirectory"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

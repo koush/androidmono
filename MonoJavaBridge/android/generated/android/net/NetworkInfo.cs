@@ -135,9 +135,6 @@ namespace android.net
 				global::android.net.NetworkInfo.DetailedState._SCANNING2982 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "SCANNING", "Landroid/net/NetworkInfo$DetailedState;");
 				global::android.net.NetworkInfo.DetailedState._SUSPENDED2983 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.DetailedState.staticClass, "SUSPENDED", "Landroid/net/NetworkInfo$DetailedState;");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
 		public sealed partial class State : java.lang.Enum
@@ -226,9 +223,6 @@ namespace android.net
 				global::android.net.NetworkInfo.State._DISCONNECTING2987 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "DISCONNECTING", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._SUSPENDED2988 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "SUSPENDED", "Landroid/net/NetworkInfo$State;");
 				global::android.net.NetworkInfo.State._UNKNOWN2989 = @__env.GetStaticFieldIDNoThrow(global::android.net.NetworkInfo.State.staticClass, "UNKNOWN", "Landroid/net/NetworkInfo$State;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -357,9 +351,6 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.NetworkInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/NetworkInfo"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

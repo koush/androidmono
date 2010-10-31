@@ -23,8 +23,5 @@ namespace java.security
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.PrivilegedAction_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/PrivilegedAction"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

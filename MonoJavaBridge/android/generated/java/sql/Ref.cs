@@ -41,8 +41,5 @@ namespace java.sql
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Ref_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Ref"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

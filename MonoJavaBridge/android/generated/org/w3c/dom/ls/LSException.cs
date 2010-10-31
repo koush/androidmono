@@ -48,8 +48,5 @@ namespace org.w3c.dom.ls
 			global::org.w3c.dom.ls.LSException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/ls/LSException"));
 			global::org.w3c.dom.ls.LSException._code7629 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.ls.LSException.staticClass, "code", "S");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

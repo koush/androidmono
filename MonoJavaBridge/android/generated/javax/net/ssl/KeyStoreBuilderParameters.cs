@@ -42,8 +42,5 @@ namespace javax.net.ssl
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.KeyStoreBuilderParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/KeyStoreBuilderParameters"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,9 +30,6 @@ namespace android.webkit
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.GeolocationPermissions.Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions$Callback"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void CallbackDelegate(java.lang.String arg0, bool arg1, bool arg2);
@@ -56,9 +53,6 @@ namespace android.webkit
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions_CallbackDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class CallbackDelegateWrapper
@@ -137,9 +131,6 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.GeolocationPermissions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/GeolocationPermissions"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

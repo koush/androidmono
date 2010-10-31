@@ -51,8 +51,5 @@ namespace junit.framework
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.TestFailure.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/TestFailure"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

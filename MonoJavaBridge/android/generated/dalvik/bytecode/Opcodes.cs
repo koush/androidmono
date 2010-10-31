@@ -17,8 +17,5 @@ namespace dalvik.bytecode
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::dalvik.bytecode.Opcodes_.staticClass = @__env.NewGlobalRef(@__env.FindClass("dalvik/bytecode/Opcodes"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

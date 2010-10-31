@@ -316,8 +316,5 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.EditorInfo._extras5936 = @__env.GetFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "extras", "Landroid/os/Bundle;");
 			global::android.view.inputmethod.EditorInfo._CREATOR5937 = @__env.GetStaticFieldIDNoThrow(global::android.view.inputmethod.EditorInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

@@ -30,9 +30,6 @@ namespace android.content
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.OnFinished_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender$OnFinished"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnFinishedDelegate(android.content.IntentSender arg0, android.content.Intent arg1, int arg2, java.lang.String arg3, android.os.Bundle arg4);
@@ -56,9 +53,6 @@ namespace android.content
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.OnFinishedDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender_OnFinishedDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnFinishedDelegateWrapper
@@ -114,9 +108,6 @@ namespace android.content
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.content.IntentSender.SendIntentException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender$SendIntentException"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -183,9 +174,6 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.IntentSender.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/IntentSender"));
 			global::android.content.IntentSender._CREATOR1870 = @__env.GetStaticFieldIDNoThrow(global::android.content.IntentSender.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

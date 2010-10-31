@@ -23,9 +23,6 @@ namespace android.accounts
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OnAccountsUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OnAccountsUpdateListener"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	public delegate void OnAccountsUpdateListenerDelegate(android.accounts.Account[] arg0);
@@ -49,9 +46,6 @@ namespace android.accounts
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OnAccountsUpdateListenerDelegateWrapper"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 	internal partial class OnAccountsUpdateListenerDelegateWrapper

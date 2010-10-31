@@ -202,8 +202,5 @@ namespace android.speech
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.speech.RecognizerIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognizerIntent"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

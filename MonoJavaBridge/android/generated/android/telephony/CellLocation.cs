@@ -37,9 +37,6 @@ namespace android.telephony
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.CellLocation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/CellLocation"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.telephony.CellLocation))]
@@ -53,9 +50,6 @@ namespace android.telephony
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.telephony.CellLocation_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/CellLocation"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

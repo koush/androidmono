@@ -41,9 +41,6 @@ namespace org.apache.http.impl.auth
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.RFC2617Scheme.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/RFC2617Scheme"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.impl.auth.RFC2617Scheme))]
@@ -77,9 +74,6 @@ namespace org.apache.http.impl.auth
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.RFC2617Scheme_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/RFC2617Scheme"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

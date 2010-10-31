@@ -30,9 +30,6 @@ namespace android.app
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.DatePickerDialog.OnDateSetListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/DatePickerDialog$OnDateSetListener"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void OnDateSetListenerDelegate(android.widget.DatePicker arg0, int arg1, int arg2, int arg3);
@@ -56,9 +53,6 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.app.DatePickerDialog.OnDateSetListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/DatePickerDialog_OnDateSetListenerDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class OnDateSetListenerDelegateWrapper
@@ -128,9 +122,6 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.DatePickerDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/DatePickerDialog"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

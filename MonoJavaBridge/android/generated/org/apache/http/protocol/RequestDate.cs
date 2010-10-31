@@ -26,8 +26,5 @@ namespace org.apache.http.protocol
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.RequestDate.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/RequestDate"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }

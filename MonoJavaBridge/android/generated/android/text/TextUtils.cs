@@ -30,9 +30,6 @@ namespace android.text
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.EllipsizeCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$EllipsizeCallback"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 
 		public delegate void EllipsizeCallbackDelegate(int arg0, int arg1);
@@ -56,9 +53,6 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils_EllipsizeCallbackDelegateWrapper"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		internal partial class EllipsizeCallbackDelegateWrapper
@@ -133,9 +127,6 @@ namespace android.text
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.SimpleStringSplitter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$SimpleStringSplitter"));
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.TextUtils.StringSplitter_))]
 		public partial interface StringSplitter : java.lang.Iterable
@@ -168,9 +159,6 @@ namespace android.text
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.TextUtils.StringSplitter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils$StringSplitter"));
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -240,9 +228,6 @@ namespace android.text
 				global::android.text.TextUtils.TruncateAt._MARQUEE5252 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MARQUEE", "Landroid/text/TextUtils$TruncateAt;");
 				global::android.text.TextUtils.TruncateAt._MIDDLE5253 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "MIDDLE", "Landroid/text/TextUtils$TruncateAt;");
 				global::android.text.TextUtils.TruncateAt._START5254 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.TruncateAt.staticClass, "START", "Landroid/text/TextUtils$TruncateAt;");
-			}
-			internal static void InitJNI()
-			{
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -700,9 +685,6 @@ namespace android.text
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.TextUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextUtils"));
 			global::android.text.TextUtils._CHAR_SEQUENCE_CREATOR5255 = @__env.GetStaticFieldIDNoThrow(global::android.text.TextUtils.staticClass, "CHAR_SEQUENCE_CREATOR", "Landroid/os/Parcelable$Creator;");
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

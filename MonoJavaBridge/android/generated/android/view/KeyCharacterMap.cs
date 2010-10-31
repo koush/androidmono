@@ -74,9 +74,6 @@ namespace android.view
 				global::android.view.KeyCharacterMap.KeyData._number5495 = @__env.GetFieldIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "number", "C");
 				global::android.view.KeyCharacterMap.KeyData._meta5496 = @__env.GetFieldIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "meta", "[C");
 			}
-			internal static void InitJNI()
-			{
-			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		protected override void finalize()
@@ -227,9 +224,6 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.KeyCharacterMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyCharacterMap"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

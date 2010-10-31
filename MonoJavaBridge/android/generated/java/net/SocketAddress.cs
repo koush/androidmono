@@ -21,9 +21,6 @@ namespace java.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketAddress.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketAddress"));
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.net.SocketAddress))]
@@ -37,9 +34,6 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SocketAddress_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SocketAddress"));
-		}
-		internal static void InitJNI()
-		{
 		}
 	}
 }

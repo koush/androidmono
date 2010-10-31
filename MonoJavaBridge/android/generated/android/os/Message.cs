@@ -265,8 +265,5 @@ namespace android.os
 			global::android.os.Message._replyTo4007 = @__env.GetFieldIDNoThrow(global::android.os.Message.staticClass, "replyTo", "Landroid/os/Messenger;");
 			global::android.os.Message._CREATOR4008 = @__env.GetStaticFieldIDNoThrow(global::android.os.Message.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
-		internal static void InitJNI()
-		{
-		}
 	}
 }
