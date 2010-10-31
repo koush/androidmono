@@ -48,6 +48,11 @@ public class MonoBridge {
 			return false;
 		}
 	}
+	
+	public static boolean getHasInitialized()
+	{
+        return mInitialized;
+	}
 
 
 	private static boolean mInitialized = false;
