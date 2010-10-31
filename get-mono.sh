@@ -95,7 +95,7 @@ fi
 make && make install
 popd
 
-if [ ! -f mono.patch ]
+if [ ! -f MonoActivity/jni/mono.patch ]
 then
     echo =====NO LOCAL MONO PATCH FOUND=====
     MONO_SKIP_PATCH=true
@@ -103,10 +103,10 @@ fi
 
 if [ -z $MONO_SKIP_PATCH ]
 then
-    pushd mono
+    pushd MonoActivity/jni/mono
     echo
     echo =====APPLYING ANDROID PATCHES FOR ARM BUILD=====
-    patch -p0 -i ../mono.patch
+    git apply ../mono.patch
     popd
 fi
 
