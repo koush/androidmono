@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <!--android-->
   <ItemGroup>
@@ -2296,6 +2297,7 @@
     <Compile Include="java\lang\Iterable.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="AndroidInitializer.cs" />
+    <Compile Include="android\view\Extensions.cs" />
   </ItemGroup>
   <!--android-->
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -2308,5 +2310,7 @@
   <ItemGroup>
     <Folder Include="java\" />
     <Folder Include="java\lang\" />
+    <Folder Include="android\" />
+    <Folder Include="android\view\" />
   </ItemGroup>
 </Project>
