@@ -10,6 +10,7 @@ namespace MonoJavaBridge
 	    JniGlobalHandle JvmHandle
         {
             get;
+            set;
         }
 
         bool IsClrObject

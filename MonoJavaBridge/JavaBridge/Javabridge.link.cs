@@ -219,17 +219,29 @@ namespace MonoJavaBridge
         {
             var env = JNIEnv.ThreadEnv;
             long handleLong  = env.CallLongMethod(obj, myGetGCHandle);
-            TRes ret;
+            TRes ret = null;
             if (handleLong != 0)
             {
-                ret = (TRes)GCHandle.FromIntPtr((IntPtr)handleLong).Target;
+                ret = (TRes)GCHandle.FromIntPtr(new IntPtr(handleLong)).Target;
+                /*
+                while (ret == null)
+                {
+                    System.Threading.Thread.Sleep(100);
+                    ret = (TRes)GCHandle.FromIntPtr(new IntPtr(handleLong)).Target;
+                    if (ret != null)
+                        Console.WriteLine("Got it!");
+                }
                 ResurrectObjectIfNeeded(ret, obj);
+                */
             }
             else
             {
                 ret = (TRes)WrapJavaObject(obj);
-                var handle = GCHandle.Alloc(ret, GCHandleType.WeakTrackResurrection);
-                env.CallVoidMethod(obj, mySetGCHandle, ConvertToValue((long)GCHandle.ToIntPtr(handle)));
+                //var handle = GCHandle.Alloc(ret, GCHandleType.WeakTrackResurrection);
+                var handle = GCHandle.Alloc(ret);
+                long longHandle = GCHandle.ToIntPtr(handle).ToInt64();
+                //Console.WriteLine("Setting long handle: {0} for object {1}", longHandle, ret.GetType());
+                env.CallVoidMethod(obj, mySetGCHandle, ConvertToValue(longHandle));
             }
             return ret;
         }
@@ -379,16 +391,18 @@ namespace MonoJavaBridge
         {
             if (handle == 0)
             {
-                Console.WriteLine("Request to release a null handle?");
+               Console.WriteLine("Request to release a null handle?");
                 return;
             }
-            var ret = GCHandle.FromIntPtr((IntPtr)handle).Target;
+            Console.WriteLine("Releasing GC Handle");
+            var ret = GCHandle.FromIntPtr(new IntPtr(handle)).Target;
             myMortuary.Remove(ret);
         }
         
         internal static void ResurrectObjectIfNeeded(IJavaObject o, JniLocalHandle obj)
         {
-            if (o.JvmHandle != null)
+            var handle = o.JvmHandle;
+            if (handle != null && !JniGlobalHandle.IsNull(handle))
                 return;
             Console.WriteLine("Resurrecting Object: " + o.GetType());
             myMortuary.Remove(o);
@@ -401,9 +415,9 @@ namespace MonoJavaBridge
             // When a CLR object is destructor is called, we need to release the reference to its JVM twin.
             // Then add the CLR object to the mortuary to keep it "alive".
             // Once the JVM cleans up the twin Java object, we remove it from the mortuary.
-            Console.WriteLine("Adding object to mortuary: " + o.GetType());
+            Console.WriteLine("Adding object to mortuary: " + o.GetType().ToString() + " " + System.Threading.Thread.CurrentThread.ManagedThreadId);
             JNIEnv.ThreadEnv.DeleteGlobalRef(o.JvmHandle);
-            o.Init(JNIEnv.ThreadEnv, JniLocalHandle.Zero);
+            o.JvmHandle = null;
             myMortuary.Add(o);
         }
 

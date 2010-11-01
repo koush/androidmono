@@ -5,7 +5,7 @@ namespace java.lang
     {
         internal Object(global::MonoJavaBridge.JniGlobalHandle handle) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
         {
-            Init(global::MonoJavaBridge.JNIEnv.ThreadEnv, handle);
+            JvmHandle = handle;
         }
         
         /*

@@ -12,6 +12,7 @@ namespace MonoJavaBridge
         public JniGlobalHandle JvmHandle
         {
             get { return mJvmHandle; }
+            set { mJvmHandle = value; }
         }
   
         bool mIsClrObject;
@@ -27,6 +28,9 @@ namespace MonoJavaBridge
         {
             Type type = GetType();
             mIsClrObject = type.GetCustomAttributes(typeof(JavaClassAttribute), false).Length == 0 && type.GetCustomAttributes(typeof(JavaProxyAttribute), false).Length == 0;
+            
+            //if (!mIsClrObject)
+            //    GC.SuppressFinalize(this);
         }
         
         public void Init(JNIEnv env, JniLocalHandle handle)
@@ -37,15 +41,12 @@ namespace MonoJavaBridge
                 mJvmHandle = env.NewGlobalRef(handle);
         }
         
-        public void Init(JNIEnv env, JniGlobalHandle handle)
-        {
-            mJvmHandle = handle;
-        }
-        
+        /*
         ~JavaObject()
         {
             if (IsClrObject)
                 MonoJavaBridge.JavaBridge.AddToMortuary(this);
         }
+        */
     }
 }
