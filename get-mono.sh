@@ -90,6 +90,7 @@ then
 fi
 if [ ! -f configure ]
 then
+    echo Running configure...
     ./autogen.sh --with-glib=embedded --with-moonlight=no --prefix=$INSTALL_PREFIX --with-monodroid=yes
 fi
 make && make install
