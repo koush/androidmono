@@ -11,7 +11,6 @@ public class SoundPool_OnLoadCompleteListenerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native void onLoadComplete(android.media.SoundPool arg0,int arg1,int arg2);
 
 

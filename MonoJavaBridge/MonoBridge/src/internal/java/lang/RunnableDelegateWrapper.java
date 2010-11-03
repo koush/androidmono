@@ -11,7 +11,6 @@ public class RunnableDelegateWrapper extends com.koushikdutta.monojavabridge.Mon
 
 	}
 
-	@Override
 	public native void run();
 
 

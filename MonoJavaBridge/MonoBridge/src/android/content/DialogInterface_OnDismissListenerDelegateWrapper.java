@@ -11,7 +11,6 @@ public class DialogInterface_OnDismissListenerDelegateWrapper extends com.koushi
 
 	}
 
-	@Override
 	public native void onDismiss(android.content.DialogInterface arg0);
 
 

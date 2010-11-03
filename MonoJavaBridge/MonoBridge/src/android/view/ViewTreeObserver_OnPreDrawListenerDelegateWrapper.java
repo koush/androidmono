@@ -11,7 +11,6 @@ public class ViewTreeObserver_OnPreDrawListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native boolean onPreDraw();
 
 

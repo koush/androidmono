@@ -11,7 +11,6 @@ public class DatePickerDialog_OnDateSetListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onDateSet(android.widget.DatePicker arg0,int arg1,int arg2,int arg3);
 
 

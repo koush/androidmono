@@ -158,13 +158,13 @@ namespace java.lang
 				return 32767;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TYPE6396;
+		internal static global::MonoJavaBridge.FieldId _TYPE6382;
 		public static global::java.lang.Class TYPE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Short.staticClass, _TYPE6396)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Short.staticClass, _TYPE6382)) as java.lang.Class;
 			}
 		}
 		public static int SIZE
@@ -178,7 +178,7 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Short.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Short"));
-			global::java.lang.Short._TYPE6396 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Short.staticClass, "TYPE", "Ljava/lang/Class;");
+			global::java.lang.Short._TYPE6382 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Short.staticClass, "TYPE", "Ljava/lang/Class;");
 		}
 	}
 }

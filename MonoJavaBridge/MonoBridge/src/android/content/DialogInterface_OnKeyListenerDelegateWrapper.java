@@ -11,7 +11,6 @@ public class DialogInterface_OnKeyListenerDelegateWrapper extends com.koushikdut
 
 	}
 
-	@Override
 	public native boolean onKey(android.content.DialogInterface arg0,int arg1,android.view.KeyEvent arg2);
 
 

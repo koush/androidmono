@@ -11,7 +11,6 @@ public class Linkify_MatchFilterDelegateWrapper extends com.koushikdutta.monojav
 
 	}
 
-	@Override
 	public native boolean acceptMatch(java.lang.CharSequence arg0,int arg1,int arg2);
 
 

@@ -19,40 +19,40 @@ namespace java.nio.channels
 			{
 				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.nio.channels.FileChannel.MapMode.staticClass, "toString", "()Ljava/lang/String;", ref global::java.nio.channels.FileChannel.MapMode._m0) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.FieldId _READ_ONLY6492;
+			internal static global::MonoJavaBridge.FieldId _READ_ONLY6509;
 			public static global::java.nio.channels.FileChannel.MapMode READ_ONLY
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _READ_ONLY6492)) as java.nio.channels.FileChannel.MapMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _READ_ONLY6509)) as java.nio.channels.FileChannel.MapMode;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _READ_WRITE6493;
+			internal static global::MonoJavaBridge.FieldId _READ_WRITE6510;
 			public static global::java.nio.channels.FileChannel.MapMode READ_WRITE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _READ_WRITE6493)) as java.nio.channels.FileChannel.MapMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _READ_WRITE6510)) as java.nio.channels.FileChannel.MapMode;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _PRIVATE6494;
+			internal static global::MonoJavaBridge.FieldId _PRIVATE6511;
 			public static global::java.nio.channels.FileChannel.MapMode PRIVATE
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _PRIVATE6494)) as java.nio.channels.FileChannel.MapMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.channels.FileChannel.MapMode.staticClass, _PRIVATE6511)) as java.nio.channels.FileChannel.MapMode;
 				}
 			}
 			static MapMode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.nio.channels.FileChannel.MapMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileChannel$MapMode"));
-				global::java.nio.channels.FileChannel.MapMode._READ_ONLY6492 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_ONLY", "Ljava/nio/channels/FileChannel$MapMode;");
-				global::java.nio.channels.FileChannel.MapMode._READ_WRITE6493 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_WRITE", "Ljava/nio/channels/FileChannel$MapMode;");
-				global::java.nio.channels.FileChannel.MapMode._PRIVATE6494 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "PRIVATE", "Ljava/nio/channels/FileChannel$MapMode;");
+				global::java.nio.channels.FileChannel.MapMode._READ_ONLY6509 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_ONLY", "Ljava/nio/channels/FileChannel$MapMode;");
+				global::java.nio.channels.FileChannel.MapMode._READ_WRITE6510 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "READ_WRITE", "Ljava/nio/channels/FileChannel$MapMode;");
+				global::java.nio.channels.FileChannel.MapMode._PRIVATE6511 = @__env.GetStaticFieldIDNoThrow(global::java.nio.channels.FileChannel.MapMode.staticClass, "PRIVATE", "Ljava/nio/channels/FileChannel$MapMode;");
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;

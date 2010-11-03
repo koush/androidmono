@@ -63,30 +63,30 @@ namespace java.nio.charset
 				global::java.nio.charset.CoderResult._m9 = @__env.GetStaticMethodIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "unmappableForLength", "(I)Ljava/nio/charset/CoderResult;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._m9, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.CoderResult;
 		}
-		internal static global::MonoJavaBridge.FieldId _UNDERFLOW6499;
+		internal static global::MonoJavaBridge.FieldId _UNDERFLOW6516;
 		public static global::java.nio.charset.CoderResult UNDERFLOW
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.charset.CoderResult.staticClass, _UNDERFLOW6499)) as java.nio.charset.CoderResult;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.charset.CoderResult.staticClass, _UNDERFLOW6516)) as java.nio.charset.CoderResult;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _OVERFLOW6500;
+		internal static global::MonoJavaBridge.FieldId _OVERFLOW6517;
 		public static global::java.nio.charset.CoderResult OVERFLOW
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.charset.CoderResult.staticClass, _OVERFLOW6500)) as java.nio.charset.CoderResult;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.charset.CoderResult.staticClass, _OVERFLOW6517)) as java.nio.charset.CoderResult;
 			}
 		}
 		static CoderResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CoderResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CoderResult"));
-			global::java.nio.charset.CoderResult._UNDERFLOW6499 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "UNDERFLOW", "Ljava/nio/charset/CoderResult;");
-			global::java.nio.charset.CoderResult._OVERFLOW6500 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "OVERFLOW", "Ljava/nio/charset/CoderResult;");
+			global::java.nio.charset.CoderResult._UNDERFLOW6516 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "UNDERFLOW", "Ljava/nio/charset/CoderResult;");
+			global::java.nio.charset.CoderResult._OVERFLOW6517 = @__env.GetStaticFieldIDNoThrow(global::java.nio.charset.CoderResult.staticClass, "OVERFLOW", "Ljava/nio/charset/CoderResult;");
 		}
 	}
 }

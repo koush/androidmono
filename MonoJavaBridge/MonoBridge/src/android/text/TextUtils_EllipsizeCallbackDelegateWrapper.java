@@ -11,7 +11,6 @@ public class TextUtils_EllipsizeCallbackDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native void ellipsized(int arg0,int arg1);
 
 

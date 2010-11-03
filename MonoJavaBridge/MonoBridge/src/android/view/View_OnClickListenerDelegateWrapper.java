@@ -11,7 +11,6 @@ public class View_OnClickListenerDelegateWrapper extends com.koushikdutta.monoja
 
 	}
 
-	@Override
 	public native void onClick(android.view.View arg0);
 
 

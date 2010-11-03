@@ -11,7 +11,6 @@ public class SimpleCursorAdapter_CursorToStringConverterDelegateWrapper extends 
 
 	}
 
-	@Override
 	public native java.lang.CharSequence convertToString(android.database.Cursor arg0);
 
 

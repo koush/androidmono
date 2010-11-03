@@ -11,7 +11,6 @@ public class WebIconDatabase_IconListenerDelegateWrapper extends com.koushikdutt
 
 	}
 
-	@Override
 	public native void onReceivedIcon(java.lang.String arg0,android.graphics.Bitmap arg1);
 
 

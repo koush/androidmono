@@ -11,7 +11,6 @@ public class MediaPlayer_OnPreparedListenerDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native void onPrepared(android.media.MediaPlayer arg0);
 
 

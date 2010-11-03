@@ -11,7 +11,6 @@ public class MediaPlayer_OnInfoListenerDelegateWrapper extends com.koushikdutta.
 
 	}
 
-	@Override
 	public native boolean onInfo(android.media.MediaPlayer arg0,int arg1,int arg2);
 
 

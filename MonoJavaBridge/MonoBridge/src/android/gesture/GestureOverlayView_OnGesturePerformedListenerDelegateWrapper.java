@@ -11,7 +11,6 @@ public class GestureOverlayView_OnGesturePerformedListenerDelegateWrapper extend
 
 	}
 
-	@Override
 	public native void onGesturePerformed(android.gesture.GestureOverlayView arg0,android.gesture.Gesture arg1);
 
 

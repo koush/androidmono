@@ -11,7 +11,6 @@ public class WebStorage_QuotaUpdaterDelegateWrapper extends com.koushikdutta.mon
 
 	}
 
-	@Override
 	public native void updateQuota(long arg0);
 
 

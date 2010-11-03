@@ -11,7 +11,6 @@ public class PreferenceManager_OnActivityDestroyListenerDelegateWrapper extends 
 
 	}
 
-	@Override
 	public native void onActivityDestroy();
 
 

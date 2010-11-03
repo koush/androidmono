@@ -11,7 +11,6 @@ public class Plugin_PreferencesClickHandlerDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native void handleClickEvent(android.content.Context arg0);
 
 

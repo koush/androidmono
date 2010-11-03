@@ -11,7 +11,6 @@ public class ViewTreeObserver_OnGlobalLayoutListenerDelegateWrapper extends com.
 
 	}
 
-	@Override
 	public native void onGlobalLayout();
 
 

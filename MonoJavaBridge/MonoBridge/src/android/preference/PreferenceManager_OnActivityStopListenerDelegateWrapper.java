@@ -11,7 +11,6 @@ public class PreferenceManager_OnActivityStopListenerDelegateWrapper extends com
 
 	}
 
-	@Override
 	public native void onActivityStop();
 
 

@@ -11,7 +11,6 @@ public class Preference_OnPreferenceChangeListenerDelegateWrapper extends com.ko
 
 	}
 
-	@Override
 	public native boolean onPreferenceChange(android.preference.Preference arg0,java.lang.Object arg1);
 
 

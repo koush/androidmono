@@ -11,7 +11,6 @@ public class SlidingDrawer_OnDrawerOpenListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onDrawerOpened();
 
 

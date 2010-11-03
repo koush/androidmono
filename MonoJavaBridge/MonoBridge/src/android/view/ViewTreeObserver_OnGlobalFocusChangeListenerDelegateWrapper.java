@@ -11,7 +11,6 @@ public class ViewTreeObserver_OnGlobalFocusChangeListenerDelegateWrapper extends
 
 	}
 
-	@Override
 	public native void onGlobalFocusChanged(android.view.View arg0,android.view.View arg1);
 
 

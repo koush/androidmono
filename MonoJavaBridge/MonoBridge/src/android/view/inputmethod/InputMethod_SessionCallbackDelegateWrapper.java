@@ -11,7 +11,6 @@ public class InputMethod_SessionCallbackDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native void sessionCreated(android.view.inputmethod.InputMethodSession arg0);
 
 

@@ -11,7 +11,6 @@ public class TimePicker_OnTimeChangedListenerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native void onTimeChanged(android.widget.TimePicker arg0,int arg1,int arg2);
 
 

@@ -11,7 +11,6 @@ public class ExpandableListView_OnGroupExpandListenerDelegateWrapper extends com
 
 	}
 
-	@Override
 	public native void onGroupExpand(int arg0);
 
 

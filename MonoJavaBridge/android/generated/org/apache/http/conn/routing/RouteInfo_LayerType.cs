@@ -23,30 +23,30 @@ namespace org.apache.http.conn.routing
 				global::org.apache.http.conn.routing.RouteInfo_LayerType._m1 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "valueOf", "(Ljava/lang/String;)Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, global::org.apache.http.conn.routing.RouteInfo_LayerType._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.RouteInfo_LayerType;
 		}
-		internal static global::MonoJavaBridge.FieldId _LAYERED7470;
+		internal static global::MonoJavaBridge.FieldId _LAYERED7236;
 		public static global::org.apache.http.conn.routing.RouteInfo_LayerType LAYERED
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.GetStaticObjectField(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, _LAYERED7470)) as org.apache.http.conn.routing.RouteInfo_LayerType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.GetStaticObjectField(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, _LAYERED7236)) as org.apache.http.conn.routing.RouteInfo_LayerType;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _PLAIN7471;
+		internal static global::MonoJavaBridge.FieldId _PLAIN7237;
 		public static global::org.apache.http.conn.routing.RouteInfo_LayerType PLAIN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.GetStaticObjectField(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, _PLAIN7471)) as org.apache.http.conn.routing.RouteInfo_LayerType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.GetStaticObjectField(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, _PLAIN7237)) as org.apache.http.conn.routing.RouteInfo_LayerType;
 			}
 		}
 		static RouteInfo_LayerType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/RouteInfo$LayerType"));
-			global::org.apache.http.conn.routing.RouteInfo_LayerType._LAYERED7470 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "LAYERED", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
-			global::org.apache.http.conn.routing.RouteInfo_LayerType._PLAIN7471 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "PLAIN", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
+			global::org.apache.http.conn.routing.RouteInfo_LayerType._LAYERED7236 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "LAYERED", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
+			global::org.apache.http.conn.routing.RouteInfo_LayerType._PLAIN7237 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, "PLAIN", "Lorg/apache/http/conn/routing/RouteInfo$LayerType;");
 		}
 	}
 }

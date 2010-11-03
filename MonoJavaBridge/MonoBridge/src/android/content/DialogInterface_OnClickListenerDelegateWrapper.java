@@ -11,7 +11,6 @@ public class DialogInterface_OnClickListenerDelegateWrapper extends com.koushikd
 
 	}
 
-	@Override
 	public native void onClick(android.content.DialogInterface arg0,int arg1);
 
 

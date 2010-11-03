@@ -11,7 +11,6 @@ public class GeolocationPermissions_CallbackDelegateWrapper extends com.koushikd
 
 	}
 
-	@Override
 	public native void invoke(java.lang.String arg0,boolean arg1,boolean arg2);
 
 

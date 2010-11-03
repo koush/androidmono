@@ -11,7 +11,6 @@ public class Camera_ErrorCallbackDelegateWrapper extends com.koushikdutta.monoja
 
 	}
 
-	@Override
 	public native void onError(int arg0,android.hardware.Camera arg1);
 
 

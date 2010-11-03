@@ -11,7 +11,6 @@ public class InterpolatorDelegateWrapper extends com.koushikdutta.monojavabridge
 
 	}
 
-	@Override
 	public native float getInterpolation(float arg0);
 
 

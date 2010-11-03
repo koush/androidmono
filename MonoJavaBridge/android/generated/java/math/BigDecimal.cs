@@ -465,31 +465,31 @@ namespace java.math
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.math.BigDecimal.staticClass, global::java.math.BigDecimal._m76, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _ZERO6410;
+		internal static global::MonoJavaBridge.FieldId _ZERO6425;
 		public static global::java.math.BigDecimal ZERO
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _ZERO6410)) as java.math.BigDecimal;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _ZERO6425)) as java.math.BigDecimal;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ONE6411;
+		internal static global::MonoJavaBridge.FieldId _ONE6426;
 		public static global::java.math.BigDecimal ONE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _ONE6411)) as java.math.BigDecimal;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _ONE6426)) as java.math.BigDecimal;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TEN6412;
+		internal static global::MonoJavaBridge.FieldId _TEN6427;
 		public static global::java.math.BigDecimal TEN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _TEN6412)) as java.math.BigDecimal;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.BigDecimal.staticClass, _TEN6427)) as java.math.BigDecimal;
 			}
 		}
 		public static int ROUND_UP
@@ -552,9 +552,9 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.BigDecimal.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/BigDecimal"));
-			global::java.math.BigDecimal._ZERO6410 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ZERO", "Ljava/math/BigDecimal;");
-			global::java.math.BigDecimal._ONE6411 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ONE", "Ljava/math/BigDecimal;");
-			global::java.math.BigDecimal._TEN6412 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "TEN", "Ljava/math/BigDecimal;");
+			global::java.math.BigDecimal._ZERO6425 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ZERO", "Ljava/math/BigDecimal;");
+			global::java.math.BigDecimal._ONE6426 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "ONE", "Ljava/math/BigDecimal;");
+			global::java.math.BigDecimal._TEN6427 = @__env.GetStaticFieldIDNoThrow(global::java.math.BigDecimal.staticClass, "TEN", "Ljava/math/BigDecimal;");
 		}
 	}
 }

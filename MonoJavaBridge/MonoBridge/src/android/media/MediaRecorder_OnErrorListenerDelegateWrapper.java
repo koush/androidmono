@@ -11,7 +11,6 @@ public class MediaRecorder_OnErrorListenerDelegateWrapper extends com.koushikdut
 
 	}
 
-	@Override
 	public native void onError(android.media.MediaRecorder arg0,int arg1,int arg2);
 
 

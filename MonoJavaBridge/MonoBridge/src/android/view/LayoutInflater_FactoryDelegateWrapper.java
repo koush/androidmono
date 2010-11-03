@@ -11,7 +11,6 @@ public class LayoutInflater_FactoryDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native android.view.View onCreateView(java.lang.String arg0,android.content.Context arg1,android.util.AttributeSet arg2);
 
 

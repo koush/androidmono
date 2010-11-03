@@ -11,7 +11,6 @@ public class KeyguardManager_OnKeyguardExitResultDelegateWrapper extends com.kou
 
 	}
 
-	@Override
 	public native void onKeyguardExitResult(boolean arg0);
 
 

@@ -78,80 +78,80 @@ namespace java.util.concurrent
 		{
 			global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.util.concurrent.TimeUnit.staticClass, "timedJoin", "(Ljava/lang/Thread;J)V", ref global::java.util.concurrent.TimeUnit._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.FieldId _NANOSECONDS6698;
+		internal static global::MonoJavaBridge.FieldId _NANOSECONDS6830;
 		public static global::java.util.concurrent.TimeUnit NANOSECONDS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _NANOSECONDS6698)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _NANOSECONDS6830)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MICROSECONDS6699;
+		internal static global::MonoJavaBridge.FieldId _MICROSECONDS6831;
 		public static global::java.util.concurrent.TimeUnit MICROSECONDS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MICROSECONDS6699)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MICROSECONDS6831)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MILLISECONDS6700;
+		internal static global::MonoJavaBridge.FieldId _MILLISECONDS6832;
 		public static global::java.util.concurrent.TimeUnit MILLISECONDS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MILLISECONDS6700)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MILLISECONDS6832)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SECONDS6701;
+		internal static global::MonoJavaBridge.FieldId _SECONDS6833;
 		public static global::java.util.concurrent.TimeUnit SECONDS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _SECONDS6701)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _SECONDS6833)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MINUTES6702;
+		internal static global::MonoJavaBridge.FieldId _MINUTES6834;
 		public static global::java.util.concurrent.TimeUnit MINUTES
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MINUTES6702)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MINUTES6834)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _HOURS6703;
+		internal static global::MonoJavaBridge.FieldId _HOURS6835;
 		public static global::java.util.concurrent.TimeUnit HOURS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _HOURS6703)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _HOURS6835)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DAYS6704;
+		internal static global::MonoJavaBridge.FieldId _DAYS6836;
 		public static global::java.util.concurrent.TimeUnit DAYS
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _DAYS6704)) as java.util.concurrent.TimeUnit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _DAYS6836)) as java.util.concurrent.TimeUnit;
 			}
 		}
 		static TimeUnit()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.TimeUnit.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/TimeUnit"));
-			global::java.util.concurrent.TimeUnit._NANOSECONDS6698 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "NANOSECONDS", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._MICROSECONDS6699 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MICROSECONDS", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._MILLISECONDS6700 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MILLISECONDS", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._SECONDS6701 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "SECONDS", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._MINUTES6702 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MINUTES", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._HOURS6703 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "HOURS", "Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._DAYS6704 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "DAYS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._NANOSECONDS6830 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "NANOSECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MICROSECONDS6831 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MICROSECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MILLISECONDS6832 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MILLISECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._SECONDS6833 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "SECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MINUTES6834 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MINUTES", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._HOURS6835 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "HOURS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._DAYS6836 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "DAYS", "Ljava/util/concurrent/TimeUnit;");
 		}
 	}
 

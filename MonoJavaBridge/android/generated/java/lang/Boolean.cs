@@ -95,40 +95,40 @@ namespace java.lang
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Boolean.staticClass, global::java.lang.Boolean._m12, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _TRUE6383;
+		internal static global::MonoJavaBridge.FieldId _TRUE6241;
 		public static global::java.lang.Boolean TRUE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _TRUE6383)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _TRUE6241)) as java.lang.Boolean;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _FALSE6384;
+		internal static global::MonoJavaBridge.FieldId _FALSE6242;
 		public static global::java.lang.Boolean FALSE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _FALSE6384)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _FALSE6242)) as java.lang.Boolean;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TYPE6385;
+		internal static global::MonoJavaBridge.FieldId _TYPE6243;
 		public static global::java.lang.Class TYPE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _TYPE6385)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Boolean.staticClass, _TYPE6243)) as java.lang.Class;
 			}
 		}
 		static Boolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Boolean.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Boolean"));
-			global::java.lang.Boolean._TRUE6383 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TRUE", "Ljava/lang/Boolean;");
-			global::java.lang.Boolean._FALSE6384 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "FALSE", "Ljava/lang/Boolean;");
-			global::java.lang.Boolean._TYPE6385 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TYPE", "Ljava/lang/Class;");
+			global::java.lang.Boolean._TRUE6241 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TRUE", "Ljava/lang/Boolean;");
+			global::java.lang.Boolean._FALSE6242 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "FALSE", "Ljava/lang/Boolean;");
+			global::java.lang.Boolean._TYPE6243 = @__env.GetStaticFieldIDNoThrow(global::java.lang.Boolean.staticClass, "TYPE", "Ljava/lang/Class;");
 		}
 	}
 }

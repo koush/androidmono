@@ -11,7 +11,6 @@ public class GLSurfaceView_GLWrapperDelegateWrapper extends com.koushikdutta.mon
 
 	}
 
-	@Override
 	public native javax.microedition.khronos.opengles.GL wrap(javax.microedition.khronos.opengles.GL arg0);
 
 

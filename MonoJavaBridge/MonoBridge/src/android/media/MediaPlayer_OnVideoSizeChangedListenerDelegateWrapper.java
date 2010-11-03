@@ -11,7 +11,6 @@ public class MediaPlayer_OnVideoSizeChangedListenerDelegateWrapper extends com.k
 
 	}
 
-	@Override
 	public native void onVideoSizeChanged(android.media.MediaPlayer arg0,int arg1,int arg2);
 
 

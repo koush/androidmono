@@ -11,7 +11,6 @@ public class ViewSwitcher_ViewFactoryDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native android.view.View makeView();
 
 

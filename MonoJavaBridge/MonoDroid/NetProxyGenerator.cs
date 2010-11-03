@@ -117,7 +117,7 @@ namespace MonoDroid
         {
             myModel = model;
             
-            var androidTypes = from type in myModel.Types where (type.Name.StartsWith("android.") || !type.Name.StartsWith("java.")) && (!type.Name.StartsWith("android.test.")) select type;
+            var androidTypes = from type in myModel.Types where (type.Name.StartsWith("android.") || type.Name.StartsWith("java.")) && (!type.Name.StartsWith("android.test.")) select type;
             foreach (var type in androidTypes)
             {
                 AddAllTypes(myModel, myTypesOfInterest, type);

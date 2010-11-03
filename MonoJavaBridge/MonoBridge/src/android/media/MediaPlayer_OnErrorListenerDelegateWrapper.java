@@ -11,7 +11,6 @@ public class MediaPlayer_OnErrorListenerDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native boolean onError(android.media.MediaPlayer arg0,int arg1,int arg2);
 
 

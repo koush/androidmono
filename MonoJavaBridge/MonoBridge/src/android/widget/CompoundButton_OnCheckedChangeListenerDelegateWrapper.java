@@ -11,7 +11,6 @@ public class CompoundButton_OnCheckedChangeListenerDelegateWrapper extends com.k
 
 	}
 
-	@Override
 	public native void onCheckedChanged(android.widget.CompoundButton arg0,boolean arg1);
 
 

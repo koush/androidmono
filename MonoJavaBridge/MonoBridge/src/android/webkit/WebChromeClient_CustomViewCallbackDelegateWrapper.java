@@ -11,7 +11,6 @@ public class WebChromeClient_CustomViewCallbackDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onCustomViewHidden();
 
 

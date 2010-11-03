@@ -11,7 +11,6 @@ public class Chronometer_OnChronometerTickListenerDelegateWrapper extends com.ko
 
 	}
 
-	@Override
 	public native void onChronometerTick(android.widget.Chronometer arg0);
 
 

@@ -11,7 +11,6 @@ public class InputMethodSession_EventCallbackDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native void finishedEvent(int arg0,boolean arg1);
 
 

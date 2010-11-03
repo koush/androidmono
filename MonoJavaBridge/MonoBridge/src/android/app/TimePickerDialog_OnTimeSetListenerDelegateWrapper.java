@@ -11,7 +11,6 @@ public class TimePickerDialog_OnTimeSetListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onTimeSet(android.widget.TimePicker arg0,int arg1,int arg2);
 
 

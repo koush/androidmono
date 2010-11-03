@@ -11,7 +11,6 @@ public class EndElementListenerDelegateWrapper extends com.koushikdutta.monojava
 
 	}
 
-	@Override
 	public native void end();
 
 

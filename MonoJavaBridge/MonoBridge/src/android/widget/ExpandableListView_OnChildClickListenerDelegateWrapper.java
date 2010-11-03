@@ -11,7 +11,6 @@ public class ExpandableListView_OnChildClickListenerDelegateWrapper extends com.
 
 	}
 
-	@Override
 	public native boolean onChildClick(android.widget.ExpandableListView arg0,android.view.View arg1,int arg2,int arg3,long arg4);
 
 

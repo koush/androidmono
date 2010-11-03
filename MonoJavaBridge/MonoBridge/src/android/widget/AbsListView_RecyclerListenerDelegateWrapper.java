@@ -11,7 +11,6 @@ public class AbsListView_RecyclerListenerDelegateWrapper extends com.koushikdutt
 
 	}
 
-	@Override
 	public native void onMovedToScrapHeap(android.view.View arg0);
 
 

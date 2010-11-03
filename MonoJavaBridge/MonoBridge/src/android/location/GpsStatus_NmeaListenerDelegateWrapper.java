@@ -11,7 +11,6 @@ public class GpsStatus_NmeaListenerDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void onNmeaReceived(long arg0,java.lang.String arg1);
 
 

@@ -11,7 +11,6 @@ public class View_OnTouchListenerDelegateWrapper extends com.koushikdutta.monoja
 
 	}
 
-	@Override
 	public native boolean onTouch(android.view.View arg0,android.view.MotionEvent arg1);
 
 

@@ -7,6 +7,233 @@ namespace java.text
 		protected DateFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		public new partial class Field : java.text.Format.Field
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			protected override global::java.lang.Object readResolve()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.DateFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.text.DateFormat.Field._m0) as java.lang.Object;
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public static global::java.text.DateFormat.Field ofCalendarField(int arg0)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.text.DateFormat.Field._m1.native == global::System.IntPtr.Zero)
+					global::java.text.DateFormat.Field._m1 = @__env.GetStaticMethodIDNoThrow(global::java.text.DateFormat.Field.staticClass, "ofCalendarField", "(I)Ljava/text/DateFormat$Field;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.DateFormat.Field.staticClass, global::java.text.DateFormat.Field._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormat.Field;
+			}
+			public new int CalendarField
+			{
+				get
+				{
+					return getCalendarField();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m2;
+			public virtual int getCalendarField()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallIntMethod(this, global::java.text.DateFormat.Field.staticClass, "getCalendarField", "()I", ref global::java.text.DateFormat.Field._m2);
+			}
+			private static global::MonoJavaBridge.MethodId _m3;
+			protected Field(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.text.DateFormat.Field._m3.native == global::System.IntPtr.Zero)
+					global::java.text.DateFormat.Field._m3 = @__env.GetMethodIDNoThrow(global::java.text.DateFormat.Field.staticClass, "<init>", "(Ljava/lang/String;I)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DateFormat.Field.staticClass, global::java.text.DateFormat.Field._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
+			}
+			internal static global::MonoJavaBridge.FieldId _ERA6694;
+			public static global::java.text.DateFormat.Field ERA
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _ERA6694)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _YEAR6695;
+			public static global::java.text.DateFormat.Field YEAR
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _YEAR6695)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _MONTH6696;
+			public static global::java.text.DateFormat.Field MONTH
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _MONTH6696)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DAY_OF_MONTH6697;
+			public static global::java.text.DateFormat.Field DAY_OF_MONTH
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _DAY_OF_MONTH6697)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _HOUR_OF_DAY16698;
+			public static global::java.text.DateFormat.Field HOUR_OF_DAY1
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _HOUR_OF_DAY16698)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _HOUR_OF_DAY06699;
+			public static global::java.text.DateFormat.Field HOUR_OF_DAY0
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _HOUR_OF_DAY06699)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _MINUTE6700;
+			public static global::java.text.DateFormat.Field MINUTE
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _MINUTE6700)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _SECOND6701;
+			public static global::java.text.DateFormat.Field SECOND
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _SECOND6701)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _MILLISECOND6702;
+			public static global::java.text.DateFormat.Field MILLISECOND
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _MILLISECOND6702)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DAY_OF_WEEK6703;
+			public static global::java.text.DateFormat.Field DAY_OF_WEEK
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _DAY_OF_WEEK6703)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DAY_OF_YEAR6704;
+			public static global::java.text.DateFormat.Field DAY_OF_YEAR
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _DAY_OF_YEAR6704)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DAY_OF_WEEK_IN_MONTH6705;
+			public static global::java.text.DateFormat.Field DAY_OF_WEEK_IN_MONTH
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _DAY_OF_WEEK_IN_MONTH6705)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _WEEK_OF_YEAR6706;
+			public static global::java.text.DateFormat.Field WEEK_OF_YEAR
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _WEEK_OF_YEAR6706)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _WEEK_OF_MONTH6707;
+			public static global::java.text.DateFormat.Field WEEK_OF_MONTH
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _WEEK_OF_MONTH6707)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _AM_PM6708;
+			public static global::java.text.DateFormat.Field AM_PM
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _AM_PM6708)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _HOUR16709;
+			public static global::java.text.DateFormat.Field HOUR1
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _HOUR16709)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _HOUR06710;
+			public static global::java.text.DateFormat.Field HOUR0
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _HOUR06710)) as java.text.DateFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _TIME_ZONE6711;
+			public static global::java.text.DateFormat.Field TIME_ZONE
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.DateFormat.Field.staticClass, _TIME_ZONE6711)) as java.text.DateFormat.Field;
+				}
+			}
+			static Field()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.text.DateFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DateFormat$Field"));
+				global::java.text.DateFormat.Field._ERA6694 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "ERA", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._YEAR6695 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "YEAR", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._MONTH6696 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "MONTH", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._DAY_OF_MONTH6697 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "DAY_OF_MONTH", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._HOUR_OF_DAY16698 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR_OF_DAY1", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._HOUR_OF_DAY06699 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR_OF_DAY0", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._MINUTE6700 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "MINUTE", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._SECOND6701 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "SECOND", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._MILLISECOND6702 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "MILLISECOND", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._DAY_OF_WEEK6703 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "DAY_OF_WEEK", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._DAY_OF_YEAR6704 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "DAY_OF_YEAR", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._DAY_OF_WEEK_IN_MONTH6705 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "DAY_OF_WEEK_IN_MONTH", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._WEEK_OF_YEAR6706 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "WEEK_OF_YEAR", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._WEEK_OF_MONTH6707 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "WEEK_OF_MONTH", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._AM_PM6708 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "AM_PM", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._HOUR16709 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR1", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._HOUR06710 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "HOUR0", "Ljava/text/DateFormat$Field;");
+				global::java.text.DateFormat.Field._TIME_ZONE6711 = @__env.GetStaticFieldIDNoThrow(global::java.text.DateFormat.Field.staticClass, "TIME_ZONE", "Ljava/text/DateFormat$Field;");
+			}
+		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{

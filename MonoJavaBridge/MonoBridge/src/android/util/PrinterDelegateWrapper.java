@@ -11,7 +11,6 @@ public class PrinterDelegateWrapper extends com.koushikdutta.monojavabridge.Mono
 
 	}
 
-	@Override
 	public native void println(java.lang.String arg0);
 
 

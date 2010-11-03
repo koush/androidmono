@@ -11,7 +11,6 @@ public class ExpandableListView_OnGroupClickListenerDelegateWrapper extends com.
 
 	}
 
-	@Override
 	public native boolean onGroupClick(android.widget.ExpandableListView arg0,android.view.View arg1,int arg2,long arg3);
 
 

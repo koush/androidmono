@@ -11,7 +11,6 @@ public class DialogInterface_OnMultiChoiceClickListenerDelegateWrapper extends c
 
 	}
 
-	@Override
 	public native void onClick(android.content.DialogInterface arg0,int arg1,boolean arg2);
 
 

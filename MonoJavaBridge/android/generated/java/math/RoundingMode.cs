@@ -31,90 +31,90 @@ namespace java.math
 				global::java.math.RoundingMode._m2 = @__env.GetStaticMethodIDNoThrow(global::java.math.RoundingMode.staticClass, "valueOf", "(I)Ljava/math/RoundingMode;");
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.RoundingMode;
 		}
-		internal static global::MonoJavaBridge.FieldId _UP6428;
+		internal static global::MonoJavaBridge.FieldId _UP6443;
 		public static global::java.math.RoundingMode UP
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _UP6428)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _UP6443)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DOWN6429;
+		internal static global::MonoJavaBridge.FieldId _DOWN6444;
 		public static global::java.math.RoundingMode DOWN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _DOWN6429)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _DOWN6444)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CEILING6430;
+		internal static global::MonoJavaBridge.FieldId _CEILING6445;
 		public static global::java.math.RoundingMode CEILING
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _CEILING6430)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _CEILING6445)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _FLOOR6431;
+		internal static global::MonoJavaBridge.FieldId _FLOOR6446;
 		public static global::java.math.RoundingMode FLOOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _FLOOR6431)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _FLOOR6446)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _HALF_UP6432;
+		internal static global::MonoJavaBridge.FieldId _HALF_UP6447;
 		public static global::java.math.RoundingMode HALF_UP
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_UP6432)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_UP6447)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _HALF_DOWN6433;
+		internal static global::MonoJavaBridge.FieldId _HALF_DOWN6448;
 		public static global::java.math.RoundingMode HALF_DOWN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_DOWN6433)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_DOWN6448)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _HALF_EVEN6434;
+		internal static global::MonoJavaBridge.FieldId _HALF_EVEN6449;
 		public static global::java.math.RoundingMode HALF_EVEN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_EVEN6434)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _HALF_EVEN6449)) as java.math.RoundingMode;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _UNNECESSARY6435;
+		internal static global::MonoJavaBridge.FieldId _UNNECESSARY6450;
 		public static global::java.math.RoundingMode UNNECESSARY
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _UNNECESSARY6435)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.GetStaticObjectField(global::java.math.RoundingMode.staticClass, _UNNECESSARY6450)) as java.math.RoundingMode;
 			}
 		}
 		static RoundingMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.RoundingMode.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/RoundingMode"));
-			global::java.math.RoundingMode._UP6428 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UP", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._DOWN6429 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "DOWN", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._CEILING6430 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "CEILING", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._FLOOR6431 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "FLOOR", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._HALF_UP6432 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_UP", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._HALF_DOWN6433 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_DOWN", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._HALF_EVEN6434 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_EVEN", "Ljava/math/RoundingMode;");
-			global::java.math.RoundingMode._UNNECESSARY6435 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UNNECESSARY", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._UP6443 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UP", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._DOWN6444 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "DOWN", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._CEILING6445 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "CEILING", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._FLOOR6446 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "FLOOR", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._HALF_UP6447 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_UP", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._HALF_DOWN6448 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_DOWN", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._HALF_EVEN6449 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "HALF_EVEN", "Ljava/math/RoundingMode;");
+			global::java.math.RoundingMode._UNNECESSARY6450 = @__env.GetStaticFieldIDNoThrow(global::java.math.RoundingMode.staticClass, "UNNECESSARY", "Ljava/math/RoundingMode;");
 		}
 	}
 }

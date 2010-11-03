@@ -11,7 +11,6 @@ public class IBinder_DeathRecipientDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void binderDied();
 
 

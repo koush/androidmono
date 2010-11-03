@@ -11,7 +11,6 @@ public class TextToSpeech_OnInitListenerDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native void onInit(int arg0);
 
 

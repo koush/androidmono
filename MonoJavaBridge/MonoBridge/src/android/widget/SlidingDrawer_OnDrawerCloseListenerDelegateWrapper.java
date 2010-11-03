@@ -11,7 +11,6 @@ public class SlidingDrawer_OnDrawerCloseListenerDelegateWrapper extends com.kous
 
 	}
 
-	@Override
 	public native void onDrawerClosed();
 
 

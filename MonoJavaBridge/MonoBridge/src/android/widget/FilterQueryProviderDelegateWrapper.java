@@ -11,7 +11,6 @@ public class FilterQueryProviderDelegateWrapper extends com.koushikdutta.monojav
 
 	}
 
-	@Override
 	public native android.database.Cursor runQuery(java.lang.CharSequence arg0);
 
 

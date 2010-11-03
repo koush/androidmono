@@ -11,7 +11,6 @@ public class View_OnFocusChangeListenerDelegateWrapper extends com.koushikdutta.
 
 	}
 
-	@Override
 	public native void onFocusChange(android.view.View arg0,boolean arg1);
 
 

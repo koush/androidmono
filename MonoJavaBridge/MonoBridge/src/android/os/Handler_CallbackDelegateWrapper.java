@@ -11,7 +11,6 @@ public class Handler_CallbackDelegateWrapper extends com.koushikdutta.monojavabr
 
 	}
 
-	@Override
 	public native boolean handleMessage(android.os.Message arg0);
 
 

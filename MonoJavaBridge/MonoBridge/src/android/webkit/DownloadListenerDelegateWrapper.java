@@ -11,7 +11,6 @@ public class DownloadListenerDelegateWrapper extends com.koushikdutta.monojavabr
 
 	}
 
-	@Override
 	public native void onDownloadStart(java.lang.String arg0,java.lang.String arg1,java.lang.String arg2,java.lang.String arg3,long arg4);
 
 

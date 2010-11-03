@@ -11,7 +11,6 @@ public class AdapterView_OnItemClickListenerDelegateWrapper extends com.koushikd
 
 	}
 
-	@Override
 	public native void onItemClick(android.widget.AdapterView arg0,android.view.View arg1,int arg2,long arg3);
 
 

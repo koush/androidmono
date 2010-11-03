@@ -7,6 +7,143 @@ namespace java.text
 		protected NumberFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		public new partial class Field : java.text.Format.Field
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected Field(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			protected override global::java.lang.Object readResolve()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.text.NumberFormat.Field.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.text.NumberFormat.Field._m0) as java.lang.Object;
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			protected Field(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.text.NumberFormat.Field._m1.native == global::System.IntPtr.Zero)
+					global::java.text.NumberFormat.Field._m1 = @__env.GetMethodIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.NumberFormat.Field.staticClass, global::java.text.NumberFormat.Field._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
+			}
+			internal static global::MonoJavaBridge.FieldId _INTEGER6736;
+			public static global::java.text.NumberFormat.Field INTEGER
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _INTEGER6736)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _FRACTION6737;
+			public static global::java.text.NumberFormat.Field FRACTION
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _FRACTION6737)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _EXPONENT6738;
+			public static global::java.text.NumberFormat.Field EXPONENT
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT6738)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DECIMAL_SEPARATOR6739;
+			public static global::java.text.NumberFormat.Field DECIMAL_SEPARATOR
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _DECIMAL_SEPARATOR6739)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _SIGN6740;
+			public static global::java.text.NumberFormat.Field SIGN
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _SIGN6740)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _GROUPING_SEPARATOR6741;
+			public static global::java.text.NumberFormat.Field GROUPING_SEPARATOR
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _GROUPING_SEPARATOR6741)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _EXPONENT_SYMBOL6742;
+			public static global::java.text.NumberFormat.Field EXPONENT_SYMBOL
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT_SYMBOL6742)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _PERCENT6743;
+			public static global::java.text.NumberFormat.Field PERCENT
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _PERCENT6743)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _PERMILLE6744;
+			public static global::java.text.NumberFormat.Field PERMILLE
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _PERMILLE6744)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _CURRENCY6745;
+			public static global::java.text.NumberFormat.Field CURRENCY
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _CURRENCY6745)) as java.text.NumberFormat.Field;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _EXPONENT_SIGN6746;
+			public static global::java.text.NumberFormat.Field EXPONENT_SIGN
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.text.NumberFormat.Field.staticClass, _EXPONENT_SIGN6746)) as java.text.NumberFormat.Field;
+				}
+			}
+			static Field()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.text.NumberFormat.Field.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/NumberFormat$Field"));
+				global::java.text.NumberFormat.Field._INTEGER6736 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "INTEGER", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._FRACTION6737 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "FRACTION", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._EXPONENT6738 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._DECIMAL_SEPARATOR6739 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "DECIMAL_SEPARATOR", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._SIGN6740 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "SIGN", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._GROUPING_SEPARATOR6741 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "GROUPING_SEPARATOR", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._EXPONENT_SYMBOL6742 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT_SYMBOL", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._PERCENT6743 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "PERCENT", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._PERMILLE6744 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "PERMILLE", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._CURRENCY6745 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "CURRENCY", "Ljava/text/NumberFormat$Field;");
+				global::java.text.NumberFormat.Field._EXPONENT_SIGN6746 = @__env.GetStaticFieldIDNoThrow(global::java.text.NumberFormat.Field.staticClass, "EXPONENT_SIGN", "Ljava/text/NumberFormat$Field;");
+			}
+		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{

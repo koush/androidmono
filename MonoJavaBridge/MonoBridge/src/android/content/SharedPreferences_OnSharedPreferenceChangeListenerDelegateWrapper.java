@@ -11,7 +11,6 @@ public class SharedPreferences_OnSharedPreferenceChangeListenerDelegateWrapper e
 
 	}
 
-	@Override
 	public native void onSharedPreferenceChanged(android.content.SharedPreferences arg0,java.lang.String arg1);
 
 

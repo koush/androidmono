@@ -11,7 +11,6 @@ public class TabHost_TabContentFactoryDelegateWrapper extends com.koushikdutta.m
 
 	}
 
-	@Override
 	public native android.view.View createTabContent(java.lang.String arg0);
 
 

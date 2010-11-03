@@ -11,7 +11,6 @@ public class Camera_ShutterCallbackDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void onShutter();
 
 

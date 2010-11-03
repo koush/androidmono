@@ -11,7 +11,6 @@ public class Html_TagHandlerDelegateWrapper extends com.koushikdutta.monojavabri
 
 	}
 
-	@Override
 	public native void handleTag(boolean arg0,java.lang.String arg1,android.text.Editable arg2,org.xml.sax.XMLReader arg3);
 
 

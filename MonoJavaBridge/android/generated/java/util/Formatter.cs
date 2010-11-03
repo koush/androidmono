@@ -7,6 +7,55 @@ namespace java.util
 		internal Formatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class BigDecimalLayoutForm : java.lang.Enum
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			internal BigDecimalLayoutForm(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public static global::java.util.Formatter.BigDecimalLayoutForm[] values()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.Formatter.BigDecimalLayoutForm._m0.native == global::System.IntPtr.Zero)
+					global::java.util.Formatter.BigDecimalLayoutForm._m0 = @__env.GetStaticMethodIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "values", "()[Ljava/util/Formatter/BigDecimalLayoutForm;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Formatter.BigDecimalLayoutForm>(@__env.CallStaticObjectMethod(java.util.Formatter.BigDecimalLayoutForm.staticClass, global::java.util.Formatter.BigDecimalLayoutForm._m0)) as java.util.Formatter.BigDecimalLayoutForm[];
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public static global::java.util.Formatter.BigDecimalLayoutForm valueOf(java.lang.String arg0)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.util.Formatter.BigDecimalLayoutForm._m1.native == global::System.IntPtr.Zero)
+					global::java.util.Formatter.BigDecimalLayoutForm._m1 = @__env.GetStaticMethodIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/Formatter$BigDecimalLayoutForm;");
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.CallStaticObjectMethod(java.util.Formatter.BigDecimalLayoutForm.staticClass, global::java.util.Formatter.BigDecimalLayoutForm._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Formatter.BigDecimalLayoutForm;
+			}
+			internal static global::MonoJavaBridge.FieldId _SCIENTIFIC6799;
+			public static global::java.util.Formatter.BigDecimalLayoutForm SCIENTIFIC
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.GetStaticObjectField(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, _SCIENTIFIC6799)) as java.util.Formatter.BigDecimalLayoutForm;
+				}
+			}
+			internal static global::MonoJavaBridge.FieldId _DECIMAL_FLOAT6800;
+			public static global::java.util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT
+			{
+				get
+				{
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Formatter.BigDecimalLayoutForm>(@__env.GetStaticObjectField(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, _DECIMAL_FLOAT6800)) as java.util.Formatter.BigDecimalLayoutForm;
+				}
+			}
+			static BigDecimalLayoutForm()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.util.Formatter.BigDecimalLayoutForm.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Formatter$BigDecimalLayoutForm"));
+				global::java.util.Formatter.BigDecimalLayoutForm._SCIENTIFIC6799 = @__env.GetStaticFieldIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "SCIENTIFIC", "Ljava/util/Formatter$BigDecimalLayoutForm;");
+				global::java.util.Formatter.BigDecimalLayoutForm._DECIMAL_FLOAT6800 = @__env.GetStaticFieldIDNoThrow(global::java.util.Formatter.BigDecimalLayoutForm.staticClass, "DECIMAL_FLOAT", "Ljava/util/Formatter$BigDecimalLayoutForm;");
+			}
+		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public sealed override global::java.lang.String toString()
 		{

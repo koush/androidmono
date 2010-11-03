@@ -73,50 +73,50 @@ namespace java.math
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.math.MathContext.staticClass, global::java.math.MathContext._m7, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _UNLIMITED6424;
+		internal static global::MonoJavaBridge.FieldId _UNLIMITED6439;
 		public static global::java.math.MathContext UNLIMITED
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _UNLIMITED6424)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _UNLIMITED6439)) as java.math.MathContext;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DECIMAL326425;
+		internal static global::MonoJavaBridge.FieldId _DECIMAL326440;
 		public static global::java.math.MathContext DECIMAL32
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL326425)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL326440)) as java.math.MathContext;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DECIMAL646426;
+		internal static global::MonoJavaBridge.FieldId _DECIMAL646441;
 		public static global::java.math.MathContext DECIMAL64
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL646426)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL646441)) as java.math.MathContext;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DECIMAL1286427;
+		internal static global::MonoJavaBridge.FieldId _DECIMAL1286442;
 		public static global::java.math.MathContext DECIMAL128
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL1286427)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL1286442)) as java.math.MathContext;
 			}
 		}
 		static MathContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.math.MathContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/math/MathContext"));
-			global::java.math.MathContext._UNLIMITED6424 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "UNLIMITED", "Ljava/math/MathContext;");
-			global::java.math.MathContext._DECIMAL326425 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL32", "Ljava/math/MathContext;");
-			global::java.math.MathContext._DECIMAL646426 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL64", "Ljava/math/MathContext;");
-			global::java.math.MathContext._DECIMAL1286427 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL128", "Ljava/math/MathContext;");
+			global::java.math.MathContext._UNLIMITED6439 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "UNLIMITED", "Ljava/math/MathContext;");
+			global::java.math.MathContext._DECIMAL326440 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL32", "Ljava/math/MathContext;");
+			global::java.math.MathContext._DECIMAL646441 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL64", "Ljava/math/MathContext;");
+			global::java.math.MathContext._DECIMAL1286442 = @__env.GetStaticFieldIDNoThrow(global::java.math.MathContext.staticClass, "DECIMAL128", "Ljava/math/MathContext;");
 		}
 	}
 }

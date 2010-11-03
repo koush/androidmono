@@ -11,7 +11,6 @@ public class MediaRecorder_OnInfoListenerDelegateWrapper extends com.koushikdutt
 
 	}
 
-	@Override
 	public native void onInfo(android.media.MediaRecorder arg0,int arg1,int arg2);
 
 

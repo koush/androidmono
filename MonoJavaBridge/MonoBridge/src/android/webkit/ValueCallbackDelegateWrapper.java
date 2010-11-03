@@ -11,7 +11,6 @@ public class ValueCallbackDelegateWrapper extends com.koushikdutta.monojavabridg
 
 	}
 
-	@Override
 	public native void onReceiveValue(java.lang.Object arg0);
 
 

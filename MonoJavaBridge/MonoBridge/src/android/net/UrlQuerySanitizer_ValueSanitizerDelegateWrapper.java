@@ -11,7 +11,6 @@ public class UrlQuerySanitizer_ValueSanitizerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native java.lang.String sanitize(java.lang.String arg0);
 
 

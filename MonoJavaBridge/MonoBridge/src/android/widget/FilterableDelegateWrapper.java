@@ -11,7 +11,6 @@ public class FilterableDelegateWrapper extends com.koushikdutta.monojavabridge.M
 
 	}
 
-	@Override
 	public native android.widget.Filter getFilter();
 
 

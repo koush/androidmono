@@ -11,7 +11,6 @@ public class Camera_PreviewCallbackDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void onPreviewFrame(byte[] arg0,android.hardware.Camera arg1);
 
 

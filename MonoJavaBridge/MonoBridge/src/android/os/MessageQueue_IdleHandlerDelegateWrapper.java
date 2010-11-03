@@ -11,7 +11,6 @@ public class MessageQueue_IdleHandlerDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native boolean queueIdle();
 
 

@@ -7,6 +7,33 @@ namespace java.security.cert
 		protected CertPath(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		protected partial class CertPathRep : java.lang.Object, java.io.Serializable
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected CertPathRep(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			protected virtual global::java.lang.Object readResolve()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.CertPath.CertPathRep.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.security.cert.CertPath.CertPathRep._m0) as java.lang.Object;
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			protected CertPathRep(java.lang.String arg0, byte[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.cert.CertPath.CertPathRep._m1.native == global::System.IntPtr.Zero)
+					global::java.security.cert.CertPath.CertPathRep._m1 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPath.CertPathRep.staticClass, "<init>", "(Ljava/lang/String;[B)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPath.CertPathRep.staticClass, global::java.security.cert.CertPath.CertPathRep._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
+			}
+			static CertPathRep()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.cert.CertPath.CertPathRep.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPath$CertPathRep"));
+			}
+		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{

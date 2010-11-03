@@ -11,7 +11,6 @@ public class RatingBar_OnRatingBarChangeListenerDelegateWrapper extends com.kous
 
 	}
 
-	@Override
 	public native void onRatingChanged(android.widget.RatingBar arg0,float arg1,boolean arg2);
 
 

@@ -11,7 +11,6 @@ public class ViewStub_OnInflateListenerDelegateWrapper extends com.koushikdutta.
 
 	}
 
-	@Override
 	public native void onInflate(android.view.ViewStub arg0,android.view.View arg1);
 
 

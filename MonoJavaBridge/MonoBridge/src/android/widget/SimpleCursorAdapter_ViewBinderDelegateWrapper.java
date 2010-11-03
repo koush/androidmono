@@ -11,7 +11,6 @@ public class SimpleCursorAdapter_ViewBinderDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native boolean setViewValue(android.view.View arg0,android.database.Cursor arg1,int arg2);
 
 

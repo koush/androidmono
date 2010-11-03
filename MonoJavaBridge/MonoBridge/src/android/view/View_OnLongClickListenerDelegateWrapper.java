@@ -11,7 +11,6 @@ public class View_OnLongClickListenerDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native boolean onLongClick(android.view.View arg0);
 
 

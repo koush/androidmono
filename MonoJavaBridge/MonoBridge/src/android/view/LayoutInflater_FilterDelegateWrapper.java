@@ -11,7 +11,6 @@ public class LayoutInflater_FilterDelegateWrapper extends com.koushikdutta.monoj
 
 	}
 
-	@Override
 	public native boolean onLoadClass(java.lang.Class arg0);
 
 

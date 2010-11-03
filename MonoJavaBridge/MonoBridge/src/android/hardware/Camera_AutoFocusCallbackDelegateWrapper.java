@@ -11,7 +11,6 @@ public class Camera_AutoFocusCallbackDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native void onAutoFocus(boolean arg0,android.hardware.Camera arg1);
 
 

@@ -11,7 +11,6 @@ public class AccountManagerCallbackDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void run(android.accounts.AccountManagerFuture arg0);
 
 

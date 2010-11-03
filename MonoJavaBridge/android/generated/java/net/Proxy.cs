@@ -30,40 +30,40 @@ namespace java.net
 					global::java.net.Proxy.Type._m1 = @__env.GetStaticMethodIDNoThrow(global::java.net.Proxy.Type.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/net/Proxy$Type;");
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.CallStaticObjectMethod(java.net.Proxy.Type.staticClass, global::java.net.Proxy.Type._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.Proxy.Type;
 			}
-			internal static global::MonoJavaBridge.FieldId _DIRECT6472;
+			internal static global::MonoJavaBridge.FieldId _DIRECT6489;
 			public static global::java.net.Proxy.Type DIRECT
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _DIRECT6472)) as java.net.Proxy.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _DIRECT6489)) as java.net.Proxy.Type;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _HTTP6473;
+			internal static global::MonoJavaBridge.FieldId _HTTP6490;
 			public static global::java.net.Proxy.Type HTTP
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _HTTP6473)) as java.net.Proxy.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _HTTP6490)) as java.net.Proxy.Type;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _SOCKS6474;
+			internal static global::MonoJavaBridge.FieldId _SOCKS6491;
 			public static global::java.net.Proxy.Type SOCKS
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _SOCKS6474)) as java.net.Proxy.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.GetStaticObjectField(global::java.net.Proxy.Type.staticClass, _SOCKS6491)) as java.net.Proxy.Type;
 				}
 			}
 			static Type()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.net.Proxy.Type.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Proxy$Type"));
-				global::java.net.Proxy.Type._DIRECT6472 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "DIRECT", "Ljava/net/Proxy$Type;");
-				global::java.net.Proxy.Type._HTTP6473 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "HTTP", "Ljava/net/Proxy$Type;");
-				global::java.net.Proxy.Type._SOCKS6474 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "SOCKS", "Ljava/net/Proxy$Type;");
+				global::java.net.Proxy.Type._DIRECT6489 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "DIRECT", "Ljava/net/Proxy$Type;");
+				global::java.net.Proxy.Type._HTTP6490 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "HTTP", "Ljava/net/Proxy$Type;");
+				global::java.net.Proxy.Type._SOCKS6491 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.Type.staticClass, "SOCKS", "Ljava/net/Proxy$Type;");
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;
@@ -100,20 +100,20 @@ namespace java.net
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.Proxy.staticClass, global::java.net.Proxy._m5, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _NO_PROXY6475;
+		internal static global::MonoJavaBridge.FieldId _NO_PROXY6492;
 		public static global::java.net.Proxy NO_PROXY
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.net.Proxy.staticClass, _NO_PROXY6475)) as java.net.Proxy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.net.Proxy.staticClass, _NO_PROXY6492)) as java.net.Proxy;
 			}
 		}
 		static Proxy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.Proxy.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/Proxy"));
-			global::java.net.Proxy._NO_PROXY6475 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.staticClass, "NO_PROXY", "Ljava/net/Proxy;");
+			global::java.net.Proxy._NO_PROXY6492 = @__env.GetStaticFieldIDNoThrow(global::java.net.Proxy.staticClass, "NO_PROXY", "Ljava/net/Proxy;");
 		}
 	}
 }

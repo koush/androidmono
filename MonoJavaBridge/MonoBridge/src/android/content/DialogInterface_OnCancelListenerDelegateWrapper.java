@@ -11,7 +11,6 @@ public class DialogInterface_OnCancelListenerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native void onCancel(android.content.DialogInterface arg0);
 
 

@@ -11,7 +11,6 @@ public class Camera_PictureCallbackDelegateWrapper extends com.koushikdutta.mono
 
 	}
 
-	@Override
 	public native void onPictureTaken(byte[] arg0,android.hardware.Camera arg1);
 
 

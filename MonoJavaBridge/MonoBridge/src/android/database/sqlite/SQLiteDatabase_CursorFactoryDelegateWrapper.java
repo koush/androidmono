@@ -11,7 +11,6 @@ public class SQLiteDatabase_CursorFactoryDelegateWrapper extends com.koushikdutt
 
 	}
 
-	@Override
 	public native android.database.Cursor newCursor(android.database.sqlite.SQLiteDatabase arg0,android.database.sqlite.SQLiteCursorDriver arg1,java.lang.String arg2,android.database.sqlite.SQLiteQuery arg3);
 
 

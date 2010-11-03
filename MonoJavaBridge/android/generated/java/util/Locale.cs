@@ -254,230 +254,230 @@ namespace java.util
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._m24, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _ENGLISH6674;
+		internal static global::MonoJavaBridge.FieldId _ENGLISH6803;
 		public static global::java.util.Locale ENGLISH
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ENGLISH6674)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ENGLISH6803)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _FRENCH6675;
+		internal static global::MonoJavaBridge.FieldId _FRENCH6804;
 		public static global::java.util.Locale FRENCH
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _FRENCH6675)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _FRENCH6804)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _GERMAN6676;
+		internal static global::MonoJavaBridge.FieldId _GERMAN6805;
 		public static global::java.util.Locale GERMAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _GERMAN6676)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _GERMAN6805)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ITALIAN6677;
+		internal static global::MonoJavaBridge.FieldId _ITALIAN6806;
 		public static global::java.util.Locale ITALIAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ITALIAN6677)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ITALIAN6806)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _JAPANESE6678;
+		internal static global::MonoJavaBridge.FieldId _JAPANESE6807;
 		public static global::java.util.Locale JAPANESE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _JAPANESE6678)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _JAPANESE6807)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _KOREAN6679;
+		internal static global::MonoJavaBridge.FieldId _KOREAN6808;
 		public static global::java.util.Locale KOREAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _KOREAN6679)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _KOREAN6808)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CHINESE6680;
+		internal static global::MonoJavaBridge.FieldId _CHINESE6809;
 		public static global::java.util.Locale CHINESE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CHINESE6680)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CHINESE6809)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SIMPLIFIED_CHINESE6681;
+		internal static global::MonoJavaBridge.FieldId _SIMPLIFIED_CHINESE6810;
 		public static global::java.util.Locale SIMPLIFIED_CHINESE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _SIMPLIFIED_CHINESE6681)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _SIMPLIFIED_CHINESE6810)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TRADITIONAL_CHINESE6682;
+		internal static global::MonoJavaBridge.FieldId _TRADITIONAL_CHINESE6811;
 		public static global::java.util.Locale TRADITIONAL_CHINESE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _TRADITIONAL_CHINESE6682)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _TRADITIONAL_CHINESE6811)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _FRANCE6683;
+		internal static global::MonoJavaBridge.FieldId _FRANCE6812;
 		public static global::java.util.Locale FRANCE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _FRANCE6683)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _FRANCE6812)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _GERMANY6684;
+		internal static global::MonoJavaBridge.FieldId _GERMANY6813;
 		public static global::java.util.Locale GERMANY
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _GERMANY6684)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _GERMANY6813)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ITALY6685;
+		internal static global::MonoJavaBridge.FieldId _ITALY6814;
 		public static global::java.util.Locale ITALY
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ITALY6685)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ITALY6814)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _JAPAN6686;
+		internal static global::MonoJavaBridge.FieldId _JAPAN6815;
 		public static global::java.util.Locale JAPAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _JAPAN6686)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _JAPAN6815)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _KOREA6687;
+		internal static global::MonoJavaBridge.FieldId _KOREA6816;
 		public static global::java.util.Locale KOREA
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _KOREA6687)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _KOREA6816)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CHINA6688;
+		internal static global::MonoJavaBridge.FieldId _CHINA6817;
 		public static global::java.util.Locale CHINA
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CHINA6688)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CHINA6817)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _PRC6689;
+		internal static global::MonoJavaBridge.FieldId _PRC6818;
 		public static global::java.util.Locale PRC
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _PRC6689)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _PRC6818)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TAIWAN6690;
+		internal static global::MonoJavaBridge.FieldId _TAIWAN6819;
 		public static global::java.util.Locale TAIWAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _TAIWAN6690)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _TAIWAN6819)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _UK6691;
+		internal static global::MonoJavaBridge.FieldId _UK6820;
 		public static global::java.util.Locale UK
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _UK6691)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _UK6820)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _US6692;
+		internal static global::MonoJavaBridge.FieldId _US6821;
 		public static global::java.util.Locale US
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _US6692)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _US6821)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CANADA6693;
+		internal static global::MonoJavaBridge.FieldId _CANADA6822;
 		public static global::java.util.Locale CANADA
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CANADA6693)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CANADA6822)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CANADA_FRENCH6694;
+		internal static global::MonoJavaBridge.FieldId _CANADA_FRENCH6823;
 		public static global::java.util.Locale CANADA_FRENCH
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CANADA_FRENCH6694)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _CANADA_FRENCH6823)) as java.util.Locale;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ROOT6695;
+		internal static global::MonoJavaBridge.FieldId _ROOT6824;
 		public static global::java.util.Locale ROOT
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ROOT6695)) as java.util.Locale;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.GetStaticObjectField(global::java.util.Locale.staticClass, _ROOT6824)) as java.util.Locale;
 			}
 		}
 		static Locale()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Locale.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Locale"));
-			global::java.util.Locale._ENGLISH6674 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ENGLISH", "Ljava/util/Locale;");
-			global::java.util.Locale._FRENCH6675 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "FRENCH", "Ljava/util/Locale;");
-			global::java.util.Locale._GERMAN6676 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "GERMAN", "Ljava/util/Locale;");
-			global::java.util.Locale._ITALIAN6677 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ITALIAN", "Ljava/util/Locale;");
-			global::java.util.Locale._JAPANESE6678 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "JAPANESE", "Ljava/util/Locale;");
-			global::java.util.Locale._KOREAN6679 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "KOREAN", "Ljava/util/Locale;");
-			global::java.util.Locale._CHINESE6680 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CHINESE", "Ljava/util/Locale;");
-			global::java.util.Locale._SIMPLIFIED_CHINESE6681 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "SIMPLIFIED_CHINESE", "Ljava/util/Locale;");
-			global::java.util.Locale._TRADITIONAL_CHINESE6682 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "TRADITIONAL_CHINESE", "Ljava/util/Locale;");
-			global::java.util.Locale._FRANCE6683 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "FRANCE", "Ljava/util/Locale;");
-			global::java.util.Locale._GERMANY6684 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "GERMANY", "Ljava/util/Locale;");
-			global::java.util.Locale._ITALY6685 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ITALY", "Ljava/util/Locale;");
-			global::java.util.Locale._JAPAN6686 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "JAPAN", "Ljava/util/Locale;");
-			global::java.util.Locale._KOREA6687 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "KOREA", "Ljava/util/Locale;");
-			global::java.util.Locale._CHINA6688 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CHINA", "Ljava/util/Locale;");
-			global::java.util.Locale._PRC6689 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "PRC", "Ljava/util/Locale;");
-			global::java.util.Locale._TAIWAN6690 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "TAIWAN", "Ljava/util/Locale;");
-			global::java.util.Locale._UK6691 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "UK", "Ljava/util/Locale;");
-			global::java.util.Locale._US6692 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "US", "Ljava/util/Locale;");
-			global::java.util.Locale._CANADA6693 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA", "Ljava/util/Locale;");
-			global::java.util.Locale._CANADA_FRENCH6694 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA_FRENCH", "Ljava/util/Locale;");
-			global::java.util.Locale._ROOT6695 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ROOT", "Ljava/util/Locale;");
+			global::java.util.Locale._ENGLISH6803 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ENGLISH", "Ljava/util/Locale;");
+			global::java.util.Locale._FRENCH6804 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "FRENCH", "Ljava/util/Locale;");
+			global::java.util.Locale._GERMAN6805 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "GERMAN", "Ljava/util/Locale;");
+			global::java.util.Locale._ITALIAN6806 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ITALIAN", "Ljava/util/Locale;");
+			global::java.util.Locale._JAPANESE6807 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "JAPANESE", "Ljava/util/Locale;");
+			global::java.util.Locale._KOREAN6808 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "KOREAN", "Ljava/util/Locale;");
+			global::java.util.Locale._CHINESE6809 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CHINESE", "Ljava/util/Locale;");
+			global::java.util.Locale._SIMPLIFIED_CHINESE6810 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "SIMPLIFIED_CHINESE", "Ljava/util/Locale;");
+			global::java.util.Locale._TRADITIONAL_CHINESE6811 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "TRADITIONAL_CHINESE", "Ljava/util/Locale;");
+			global::java.util.Locale._FRANCE6812 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "FRANCE", "Ljava/util/Locale;");
+			global::java.util.Locale._GERMANY6813 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "GERMANY", "Ljava/util/Locale;");
+			global::java.util.Locale._ITALY6814 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ITALY", "Ljava/util/Locale;");
+			global::java.util.Locale._JAPAN6815 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "JAPAN", "Ljava/util/Locale;");
+			global::java.util.Locale._KOREA6816 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "KOREA", "Ljava/util/Locale;");
+			global::java.util.Locale._CHINA6817 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CHINA", "Ljava/util/Locale;");
+			global::java.util.Locale._PRC6818 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "PRC", "Ljava/util/Locale;");
+			global::java.util.Locale._TAIWAN6819 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "TAIWAN", "Ljava/util/Locale;");
+			global::java.util.Locale._UK6820 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "UK", "Ljava/util/Locale;");
+			global::java.util.Locale._US6821 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "US", "Ljava/util/Locale;");
+			global::java.util.Locale._CANADA6822 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA", "Ljava/util/Locale;");
+			global::java.util.Locale._CANADA_FRENCH6823 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "CANADA_FRENCH", "Ljava/util/Locale;");
+			global::java.util.Locale._ROOT6824 = @__env.GetStaticFieldIDNoThrow(global::java.util.Locale.staticClass, "ROOT", "Ljava/util/Locale;");
 		}
 	}
 }

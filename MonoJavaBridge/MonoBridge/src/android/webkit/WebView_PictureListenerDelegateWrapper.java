@@ -11,7 +11,6 @@ public class WebView_PictureListenerDelegateWrapper extends com.koushikdutta.mon
 
 	}
 
-	@Override
 	public native void onNewPicture(android.webkit.WebView arg0,android.graphics.Picture arg1);
 
 

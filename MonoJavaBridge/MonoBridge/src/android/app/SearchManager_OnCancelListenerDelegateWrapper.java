@@ -11,7 +11,6 @@ public class SearchManager_OnCancelListenerDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native void onCancel();
 
 

@@ -11,7 +11,6 @@ public class ViewTreeObserver_OnScrollChangedListenerDelegateWrapper extends com
 
 	}
 
-	@Override
 	public native void onScrollChanged();
 
 

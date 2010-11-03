@@ -11,7 +11,6 @@ public class RadioGroup_OnCheckedChangeListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onCheckedChanged(android.widget.RadioGroup arg0,int arg1);
 
 

@@ -11,7 +11,6 @@ public class MediaScannerConnection_OnScanCompletedListenerDelegateWrapper exten
 
 	}
 
-	@Override
 	public native void onScanCompleted(java.lang.String arg0,android.net.Uri arg1);
 
 

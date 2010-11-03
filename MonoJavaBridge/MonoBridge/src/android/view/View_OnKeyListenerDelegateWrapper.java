@@ -11,7 +11,6 @@ public class View_OnKeyListenerDelegateWrapper extends com.koushikdutta.monojava
 
 	}
 
-	@Override
 	public native boolean onKey(android.view.View arg0,int arg1,android.view.KeyEvent arg2);
 
 

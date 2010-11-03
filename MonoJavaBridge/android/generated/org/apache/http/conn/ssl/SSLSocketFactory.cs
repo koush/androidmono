@@ -120,40 +120,40 @@ namespace org.apache.http.conn.ssl
 				return "SSLv2";
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ALLOW_ALL_HOSTNAME_VERIFIER7477;
+		internal static global::MonoJavaBridge.FieldId _ALLOW_ALL_HOSTNAME_VERIFIER7243;
 		public static global::org.apache.http.conn.ssl.X509HostnameVerifier ALLOW_ALL_HOSTNAME_VERIFIER
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _ALLOW_ALL_HOSTNAME_VERIFIER7477)) as org.apache.http.conn.ssl.X509HostnameVerifier;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _ALLOW_ALL_HOSTNAME_VERIFIER7243)) as org.apache.http.conn.ssl.X509HostnameVerifier;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7478;
+		internal static global::MonoJavaBridge.FieldId _BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7244;
 		public static global::org.apache.http.conn.ssl.X509HostnameVerifier BROWSER_COMPATIBLE_HOSTNAME_VERIFIER
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7478)) as org.apache.http.conn.ssl.X509HostnameVerifier;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7244)) as org.apache.http.conn.ssl.X509HostnameVerifier;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _STRICT_HOSTNAME_VERIFIER7479;
+		internal static global::MonoJavaBridge.FieldId _STRICT_HOSTNAME_VERIFIER7245;
 		public static global::org.apache.http.conn.ssl.X509HostnameVerifier STRICT_HOSTNAME_VERIFIER
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _STRICT_HOSTNAME_VERIFIER7479)) as org.apache.http.conn.ssl.X509HostnameVerifier;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ssl.X509HostnameVerifier>(@__env.GetStaticObjectField(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, _STRICT_HOSTNAME_VERIFIER7245)) as org.apache.http.conn.ssl.X509HostnameVerifier;
 			}
 		}
 		static SSLSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ssl/SSLSocketFactory"));
-			global::org.apache.http.conn.ssl.SSLSocketFactory._ALLOW_ALL_HOSTNAME_VERIFIER7477 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "ALLOW_ALL_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
-			global::org.apache.http.conn.ssl.SSLSocketFactory._BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7478 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "BROWSER_COMPATIBLE_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
-			global::org.apache.http.conn.ssl.SSLSocketFactory._STRICT_HOSTNAME_VERIFIER7479 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "STRICT_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
+			global::org.apache.http.conn.ssl.SSLSocketFactory._ALLOW_ALL_HOSTNAME_VERIFIER7243 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "ALLOW_ALL_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
+			global::org.apache.http.conn.ssl.SSLSocketFactory._BROWSER_COMPATIBLE_HOSTNAME_VERIFIER7244 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "BROWSER_COMPATIBLE_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
+			global::org.apache.http.conn.ssl.SSLSocketFactory._STRICT_HOSTNAME_VERIFIER7245 = @__env.GetStaticFieldIDNoThrow(global::org.apache.http.conn.ssl.SSLSocketFactory.staticClass, "STRICT_HOSTNAME_VERIFIER", "Lorg/apache/http/conn/ssl/X509HostnameVerifier;");
 		}
 	}
 }

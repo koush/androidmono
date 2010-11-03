@@ -11,7 +11,6 @@ public class SearchManager_OnDismissListenerDelegateWrapper extends com.koushikd
 
 	}
 
-	@Override
 	public native void onDismiss();
 
 

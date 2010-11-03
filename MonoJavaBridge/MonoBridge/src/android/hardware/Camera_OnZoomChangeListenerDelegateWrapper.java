@@ -11,7 +11,6 @@ public class Camera_OnZoomChangeListenerDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native void onZoomChange(int arg0,boolean arg1,android.hardware.Camera arg2);
 
 

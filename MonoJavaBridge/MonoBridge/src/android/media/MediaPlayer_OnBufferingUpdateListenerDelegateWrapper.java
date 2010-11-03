@@ -11,7 +11,6 @@ public class MediaPlayer_OnBufferingUpdateListenerDelegateWrapper extends com.ko
 
 	}
 
-	@Override
 	public native void onBufferingUpdate(android.media.MediaPlayer arg0,int arg1);
 
 

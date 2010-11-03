@@ -11,7 +11,6 @@ public class StartElementListenerDelegateWrapper extends com.koushikdutta.monoja
 
 	}
 
-	@Override
 	public native void start(org.xml.sax.Attributes arg0);
 
 

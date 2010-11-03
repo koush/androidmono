@@ -11,7 +11,6 @@ public class ViewTreeObserver_OnTouchModeChangeListenerDelegateWrapper extends c
 
 	}
 
-	@Override
 	public native void onTouchModeChanged(boolean arg0);
 
 

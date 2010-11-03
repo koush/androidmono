@@ -11,7 +11,6 @@ public class SyncStatusObserverDelegateWrapper extends com.koushikdutta.monojava
 
 	}
 
-	@Override
 	public native void onStatusChanged(int arg0);
 
 

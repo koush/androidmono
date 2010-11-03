@@ -11,7 +11,6 @@ public class PopupWindow_OnDismissListenerDelegateWrapper extends com.koushikdut
 
 	}
 
-	@Override
 	public native void onDismiss();
 
 

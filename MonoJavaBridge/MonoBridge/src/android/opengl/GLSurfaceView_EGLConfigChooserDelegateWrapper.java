@@ -11,7 +11,6 @@ public class GLSurfaceView_EGLConfigChooserDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native javax.microedition.khronos.egl.EGLConfig chooseConfig(javax.microedition.khronos.egl.EGL10 arg0,javax.microedition.khronos.egl.EGLDisplay arg1);
 
 

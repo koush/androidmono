@@ -11,7 +11,6 @@ public class PendingIntent_OnFinishedDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native void onSendFinished(android.app.PendingIntent arg0,android.content.Intent arg1,int arg2,java.lang.String arg3,android.os.Bundle arg4);
 
 

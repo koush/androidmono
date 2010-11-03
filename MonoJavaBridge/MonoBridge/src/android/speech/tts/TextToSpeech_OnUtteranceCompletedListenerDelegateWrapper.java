@@ -11,7 +11,6 @@ public class TextToSpeech_OnUtteranceCompletedListenerDelegateWrapper extends co
 
 	}
 
-	@Override
 	public native void onUtteranceCompleted(java.lang.String arg0);
 
 

@@ -11,7 +11,6 @@ public class ExpandableListView_OnGroupCollapseListenerDelegateWrapper extends c
 
 	}
 
-	@Override
 	public native void onGroupCollapse(int arg0);
 
 

@@ -11,7 +11,6 @@ public class DialogInterface_OnShowListenerDelegateWrapper extends com.koushikdu
 
 	}
 
-	@Override
 	public native void onShow(android.content.DialogInterface arg0);
 
 

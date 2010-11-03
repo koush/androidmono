@@ -11,7 +11,6 @@ public class Linkify_TransformFilterDelegateWrapper extends com.koushikdutta.mon
 
 	}
 
-	@Override
 	public native java.lang.String transformUrl(java.util.regex.Matcher arg0,java.lang.String arg1);
 
 

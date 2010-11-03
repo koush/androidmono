@@ -11,7 +11,6 @@ public class MenuItem_OnMenuItemClickListenerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native boolean onMenuItemClick(android.view.MenuItem arg0);
 
 

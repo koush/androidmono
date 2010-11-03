@@ -11,7 +11,6 @@ public class PreferenceManager_OnActivityResultListenerDelegateWrapper extends c
 
 	}
 
-	@Override
 	public native boolean onActivityResult(int arg0,int arg1,android.content.Intent arg2);
 
 

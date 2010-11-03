@@ -11,7 +11,6 @@ public class IInterfaceDelegateWrapper extends com.koushikdutta.monojavabridge.M
 
 	}
 
-	@Override
 	public native android.os.IBinder asBinder();
 
 

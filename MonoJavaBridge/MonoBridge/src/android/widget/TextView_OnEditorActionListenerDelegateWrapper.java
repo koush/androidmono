@@ -11,7 +11,6 @@ public class TextView_OnEditorActionListenerDelegateWrapper extends com.koushikd
 
 	}
 
-	@Override
 	public native boolean onEditorAction(android.widget.TextView arg0,int arg1,android.view.KeyEvent arg2);
 
 

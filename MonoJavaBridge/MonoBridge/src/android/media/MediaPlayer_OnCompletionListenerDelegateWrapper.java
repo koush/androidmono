@@ -11,7 +11,6 @@ public class MediaPlayer_OnCompletionListenerDelegateWrapper extends com.koushik
 
 	}
 
-	@Override
 	public native void onCompletion(android.media.MediaPlayer arg0);
 
 

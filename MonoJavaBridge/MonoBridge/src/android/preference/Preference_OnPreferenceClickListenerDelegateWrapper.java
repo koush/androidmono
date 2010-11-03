@@ -11,7 +11,6 @@ public class Preference_OnPreferenceClickListenerDelegateWrapper extends com.kou
 
 	}
 
-	@Override
 	public native boolean onPreferenceClick(android.preference.Preference arg0);
 
 

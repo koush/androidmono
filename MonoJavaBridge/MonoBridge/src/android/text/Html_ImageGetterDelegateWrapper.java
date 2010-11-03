@@ -11,7 +11,6 @@ public class Html_ImageGetterDelegateWrapper extends com.koushikdutta.monojavabr
 
 	}
 
-	@Override
 	public native android.graphics.drawable.Drawable getDrawable(java.lang.String arg0);
 
 

@@ -11,7 +11,6 @@ public class OnAccountsUpdateListenerDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native void onAccountsUpdated(android.accounts.Account[] arg0);
 
 

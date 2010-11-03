@@ -11,7 +11,6 @@ public class AudioManager_OnAudioFocusChangeListenerDelegateWrapper extends com.
 
 	}
 
-	@Override
 	public native void onAudioFocusChange(int arg0);
 
 

@@ -11,7 +11,6 @@ public class Filter_FilterListenerDelegateWrapper extends com.koushikdutta.monoj
 
 	}
 
-	@Override
 	public native void onFilterComplete(int arg0);
 
 

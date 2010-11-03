@@ -11,7 +11,6 @@ public class TabHost_OnTabChangeListenerDelegateWrapper extends com.koushikdutta
 
 	}
 
-	@Override
 	public native void onTabChanged(java.lang.String arg0);
 
 

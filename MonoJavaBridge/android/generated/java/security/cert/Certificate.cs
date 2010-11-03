@@ -7,6 +7,33 @@ namespace java.security.cert
 		protected Certificate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		protected partial class CertificateRep : java.lang.Object, java.io.Serializable
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected CertificateRep(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			protected virtual global::java.lang.Object readResolve()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.cert.Certificate.CertificateRep.staticClass, "readResolve", "()Ljava/lang/Object;", ref global::java.security.cert.Certificate.CertificateRep._m0) as java.lang.Object;
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			protected CertificateRep(java.lang.String arg0, byte[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.cert.Certificate.CertificateRep._m1.native == global::System.IntPtr.Zero)
+					global::java.security.cert.Certificate.CertificateRep._m1 = @__env.GetMethodIDNoThrow(global::java.security.cert.Certificate.CertificateRep.staticClass, "<init>", "(Ljava/lang/String;[B)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.Certificate.CertificateRep.staticClass, global::java.security.cert.Certificate.CertificateRep._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
+			}
+			static CertificateRep()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.cert.Certificate.CertificateRep.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/Certificate$CertificateRep"));
+			}
+		}
 		private static global::MonoJavaBridge.MethodId _m0;
 		public override bool equals(java.lang.Object arg0)
 		{

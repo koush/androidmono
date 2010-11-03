@@ -11,7 +11,6 @@ public class SimpleAdapter_ViewBinderDelegateWrapper extends com.koushikdutta.mo
 
 	}
 
-	@Override
 	public native boolean setViewValue(android.view.View arg0,java.lang.Object arg1,java.lang.String arg2);
 
 

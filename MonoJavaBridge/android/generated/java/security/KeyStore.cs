@@ -81,6 +81,40 @@ namespace java.security
 				global::java.security.KeyStore.Builder_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$Builder"));
 			}
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class CallbackHandlerProtection : java.lang.Object, ProtectionParameter
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected CallbackHandlerProtection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			public new global::javax.security.auth.callback.CallbackHandler CallbackHandler
+			{
+				get
+				{
+					return getCallbackHandler();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public virtual global::javax.security.auth.callback.CallbackHandler getCallbackHandler()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.security.auth.callback.CallbackHandler>(this, global::java.security.KeyStore.CallbackHandlerProtection.staticClass, "getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;", ref global::java.security.KeyStore.CallbackHandlerProtection._m0) as javax.security.auth.callback.CallbackHandler;
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public CallbackHandlerProtection(javax.security.auth.callback.CallbackHandler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.KeyStore.CallbackHandlerProtection._m1.native == global::System.IntPtr.Zero)
+					global::java.security.KeyStore.CallbackHandlerProtection._m1 = @__env.GetMethodIDNoThrow(global::java.security.KeyStore.CallbackHandlerProtection.staticClass, "<init>", "(Ljavax/security/auth/callback/CallbackHandler;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStore.CallbackHandlerProtection.staticClass, global::java.security.KeyStore.CallbackHandlerProtection._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
+			}
+			static CallbackHandlerProtection()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.KeyStore.CallbackHandlerProtection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$CallbackHandlerProtection"));
+			}
+		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.KeyStore.Entry_))]
 		public partial interface Entry  : global::MonoJavaBridge.IJavaObject 
 		{
@@ -123,6 +157,113 @@ namespace java.security
 				global::java.security.KeyStore.LoadStoreParameter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$LoadStoreParameter"));
 			}
 		}
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class PasswordProtection : java.lang.Object, ProtectionParameter, javax.security.auth.Destroyable
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			protected PasswordProtection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public virtual void destroy()
+			{
+				global::MonoJavaBridge.JavaBridge.CallVoidMethod(this, global::java.security.KeyStore.PasswordProtection.staticClass, "destroy", "()V", ref global::java.security.KeyStore.PasswordProtection._m0);
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public virtual bool isDestroyed()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallBooleanMethod(this, global::java.security.KeyStore.PasswordProtection.staticClass, "isDestroyed", "()Z", ref global::java.security.KeyStore.PasswordProtection._m1);
+			}
+			public new char[] Password
+			{
+				get
+				{
+					return getPassword();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m2;
+			public virtual char[] getPassword()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<char>(this, global::java.security.KeyStore.PasswordProtection.staticClass, "getPassword", "()[C", ref global::java.security.KeyStore.PasswordProtection._m2) as char[];
+			}
+			private static global::MonoJavaBridge.MethodId _m3;
+			public PasswordProtection(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.KeyStore.PasswordProtection._m3.native == global::System.IntPtr.Zero)
+					global::java.security.KeyStore.PasswordProtection._m3 = @__env.GetMethodIDNoThrow(global::java.security.KeyStore.PasswordProtection.staticClass, "<init>", "([C)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStore.PasswordProtection.staticClass, global::java.security.KeyStore.PasswordProtection._m3, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
+			}
+			static PasswordProtection()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.KeyStore.PasswordProtection.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$PasswordProtection"));
+			}
+		}
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class PrivateKeyEntry : java.lang.Object, Entry
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			internal PrivateKeyEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public sealed override global::java.lang.String toString()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.KeyStore.PrivateKeyEntry.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.KeyStore.PrivateKeyEntry._m0) as java.lang.String;
+			}
+			public new global::java.security.cert.Certificate[] CertificateChain
+			{
+				get
+				{
+					return getCertificateChain();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public global::java.security.cert.Certificate[] getCertificateChain()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallArrayObjectMethod<java.security.cert.Certificate>(this, global::java.security.KeyStore.PrivateKeyEntry.staticClass, "getCertificateChain", "()[Ljava/security/cert/Certificate;", ref global::java.security.KeyStore.PrivateKeyEntry._m1) as java.security.cert.Certificate[];
+			}
+			public new global::java.security.cert.Certificate Certificate
+			{
+				get
+				{
+					return getCertificate();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m2;
+			public global::java.security.cert.Certificate getCertificate()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.PrivateKeyEntry.staticClass, "getCertificate", "()Ljava/security/cert/Certificate;", ref global::java.security.KeyStore.PrivateKeyEntry._m2) as java.security.cert.Certificate;
+			}
+			public new global::java.security.PrivateKey PrivateKey
+			{
+				get
+				{
+					return getPrivateKey();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m3;
+			public global::java.security.PrivateKey getPrivateKey()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<java.security.PrivateKey>(this, global::java.security.KeyStore.PrivateKeyEntry.staticClass, "getPrivateKey", "()Ljava/security/PrivateKey;", ref global::java.security.KeyStore.PrivateKeyEntry._m3) as java.security.PrivateKey;
+			}
+			private static global::MonoJavaBridge.MethodId _m4;
+			public PrivateKeyEntry(java.security.PrivateKey arg0, java.security.cert.Certificate[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.KeyStore.PrivateKeyEntry._m4.native == global::System.IntPtr.Zero)
+					global::java.security.KeyStore.PrivateKeyEntry._m4 = @__env.GetMethodIDNoThrow(global::java.security.KeyStore.PrivateKeyEntry.staticClass, "<init>", "(Ljava/security/PrivateKey;[Ljava/security/cert/Certificate;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStore.PrivateKeyEntry.staticClass, global::java.security.KeyStore.PrivateKeyEntry._m4, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
+			}
+			static PrivateKeyEntry()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.KeyStore.PrivateKeyEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$PrivateKeyEntry"));
+			}
+		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.KeyStore.ProtectionParameter_))]
 		public partial interface ProtectionParameter  : global::MonoJavaBridge.IJavaObject 
 		{
@@ -139,6 +280,84 @@ namespace java.security
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.security.KeyStore.ProtectionParameter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$ProtectionParameter"));
+			}
+		}
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class SecretKeyEntry : java.lang.Object, Entry
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			internal SecretKeyEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public sealed override global::java.lang.String toString()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.KeyStore.SecretKeyEntry.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.KeyStore.SecretKeyEntry._m0) as java.lang.String;
+			}
+			public new global::javax.crypto.SecretKey SecretKey
+			{
+				get
+				{
+					return getSecretKey();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public global::javax.crypto.SecretKey getSecretKey()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallIJavaObjectMethod<javax.crypto.SecretKey>(this, global::java.security.KeyStore.SecretKeyEntry.staticClass, "getSecretKey", "()Ljavax/crypto/SecretKey;", ref global::java.security.KeyStore.SecretKeyEntry._m1) as javax.crypto.SecretKey;
+			}
+			private static global::MonoJavaBridge.MethodId _m2;
+			public SecretKeyEntry(javax.crypto.SecretKey arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.KeyStore.SecretKeyEntry._m2.native == global::System.IntPtr.Zero)
+					global::java.security.KeyStore.SecretKeyEntry._m2 = @__env.GetMethodIDNoThrow(global::java.security.KeyStore.SecretKeyEntry.staticClass, "<init>", "(Ljavax/crypto/SecretKey;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStore.SecretKeyEntry.staticClass, global::java.security.KeyStore.SecretKeyEntry._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
+			}
+			static SecretKeyEntry()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.KeyStore.SecretKeyEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$SecretKeyEntry"));
+			}
+		}
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class TrustedCertificateEntry : java.lang.Object, Entry
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			internal TrustedCertificateEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			private static global::MonoJavaBridge.MethodId _m0;
+			public sealed override global::java.lang.String toString()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallSealedClassObjectMethod<java.lang.String>(this, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, "toString", "()Ljava/lang/String;", ref global::java.security.KeyStore.TrustedCertificateEntry._m0) as java.lang.String;
+			}
+			public new global::java.security.cert.Certificate TrustedCertificate
+			{
+				get
+				{
+					return getTrustedCertificate();
+				}
+			}
+			private static global::MonoJavaBridge.MethodId _m1;
+			public global::java.security.cert.Certificate getTrustedCertificate()
+			{
+				return global::MonoJavaBridge.JavaBridge.CallObjectMethod(this, global::java.security.KeyStore.TrustedCertificateEntry.staticClass, "getTrustedCertificate", "()Ljava/security/cert/Certificate;", ref global::java.security.KeyStore.TrustedCertificateEntry._m1) as java.security.cert.Certificate;
+			}
+			private static global::MonoJavaBridge.MethodId _m2;
+			public TrustedCertificateEntry(java.security.cert.Certificate arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (global::java.security.KeyStore.TrustedCertificateEntry._m2.native == global::System.IntPtr.Zero)
+					global::java.security.KeyStore.TrustedCertificateEntry._m2 = @__env.GetMethodIDNoThrow(global::java.security.KeyStore.TrustedCertificateEntry.staticClass, "<init>", "(Ljava/security/cert/Certificate;)V");
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyStore.TrustedCertificateEntry.staticClass, global::java.security.KeyStore.TrustedCertificateEntry._m2, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
+			}
+			static TrustedCertificateEntry()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::java.security.KeyStore.TrustedCertificateEntry.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/KeyStore$TrustedCertificateEntry"));
 			}
 		}
 		private static global::MonoJavaBridge.MethodId _m0;

@@ -11,7 +11,6 @@ public class MediaPlayer_OnSeekCompleteListenerDelegateWrapper extends com.koush
 
 	}
 
-	@Override
 	public native void onSeekComplete(android.media.MediaPlayer arg0);
 
 

@@ -11,7 +11,6 @@ public class GpsStatus_ListenerDelegateWrapper extends com.koushikdutta.monojava
 
 	}
 
-	@Override
 	public native void onGpsStatusChanged(int arg0);
 
 

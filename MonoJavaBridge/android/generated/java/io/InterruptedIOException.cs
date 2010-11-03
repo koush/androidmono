@@ -25,13 +25,13 @@ namespace java.io
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InterruptedIOException.staticClass, global::java.io.InterruptedIOException._m1, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _bytesTransferred6382;
+		internal static global::MonoJavaBridge.FieldId _bytesTransferred6199;
 		public int bytesTransferred
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _bytesTransferred6382);
+				return @__env.GetIntField(this.JvmHandle, _bytesTransferred6199);
 			}
 			set
 			{
@@ -41,7 +41,7 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.InterruptedIOException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/InterruptedIOException"));
-			global::java.io.InterruptedIOException._bytesTransferred6382 = @__env.GetFieldIDNoThrow(global::java.io.InterruptedIOException.staticClass, "bytesTransferred", "I");
+			global::java.io.InterruptedIOException._bytesTransferred6199 = @__env.GetFieldIDNoThrow(global::java.io.InterruptedIOException.staticClass, "bytesTransferred", "I");
 		}
 	}
 }
