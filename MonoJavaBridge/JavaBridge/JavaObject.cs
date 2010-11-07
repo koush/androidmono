@@ -40,7 +40,7 @@ namespace MonoJavaBridge
             else
                 mJvmHandle = env.NewGlobalRef(handle);
         }
-        
+      
         /*
         ~JavaObject()
         {

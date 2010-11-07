@@ -986,7 +986,7 @@ namespace MonoJavaBridge
             JniLocalHandle occurred = ExceptionOccurred();
             if (!JniLocalHandle.IsNull(occurred))
             {
-                //ExceptionDescribe();
+                ExceptionDescribe();
                 ExceptionClear();
                 Exception ex = JavaBridge.WrapJavaObject(occurred) as Exception;
                 throw ex;
