@@ -288,3 +288,10 @@ LOCAL_STATIC_LIBRARIES := monoutils eglib monoruntime gc wapi monoruntimearm gca
 LOCAL_LDFLAGS := -Wall -L$(TARGET_OUT) -lwapiarm -lgcarm -lmonoruntimearm -lmonoutils -leglib -lmonoruntime -lgc -lwapi -lmini -lminiarm
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := mscorlib.dll
+LOCAL_ARM_MODE := arm
+LOCAL_PATH := $(BASE_PATH)
+LOCAL_SRC_FILES := aot/mscorlib.dll.S
+#include $(BUILD_SHARED_LIBRARY)

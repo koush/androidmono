@@ -306,10 +306,14 @@ namespace MonoJavaBridge
             {
                 JNIEnv.ThreadEnv.Throw(jex);
             }
+            /*
             catch (Exception ex)
             {
+                Console.WriteLine("Threw non java exception to Dalvik!");
+                Console.WriteLine(ex);
                 JNIEnv.ThreadEnv.ThrowNew(myJavaExceptionClass, ex.Message);
             }
+            */
             return default(T);
         }
 
